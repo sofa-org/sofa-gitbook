@@ -1,2 +1,0 @@
-# Learn SOFA.org
-
