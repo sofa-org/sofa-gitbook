@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Dual-token Model · GitBook</title>
+        <title>Subgraphs · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,8 +61,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="02-rch.html" />
+    <link rel="next" href="04-bug-bounty.html" />
     
+    
+    <link rel="prev" href="02-dapp-open-apis.html" />
     
 
     </head>
@@ -267,9 +269,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.4.1" data-path="01-dual-token-model.html">
+        <li class="chapter " data-level="1.4.1" data-path="../03-tokenomics/01-dual-token-model.html">
             
-                <a href="01-dual-token-model.html">
+                <a href="../03-tokenomics/01-dual-token-model.html">
             
                     
                     Dual-token Model
@@ -280,9 +282,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="02-rch.html">
+        <li class="chapter " data-level="1.4.2" data-path="../03-tokenomics/02-rch.html">
             
-                <a href="02-rch.html">
+                <a href="../03-tokenomics/02-rch.html">
             
                     
                     $RCH
@@ -293,9 +295,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="03-sofa.html">
+        <li class="chapter " data-level="1.4.3" data-path="../03-tokenomics/03-sofa.html">
             
-                <a href="03-sofa.html">
+                <a href="../03-tokenomics/03-sofa.html">
             
                     
                     $SOFA
@@ -325,9 +327,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../04-developers/01-marketmaker-open-apis.html">
+        <li class="chapter " data-level="1.5.1" data-path="01-marketmaker-open-apis.html">
             
-                <a href="../04-developers/01-marketmaker-open-apis.html">
+                <a href="01-marketmaker-open-apis.html">
             
                     
                     Open APIs for Market Maker
@@ -338,9 +340,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../04-developers/02-dapp-open-apis.html">
+        <li class="chapter " data-level="1.5.2" data-path="02-dapp-open-apis.html">
             
-                <a href="../04-developers/02-dapp-open-apis.html">
+                <a href="02-dapp-open-apis.html">
             
                     
                     Open APIs for Dapp Developer
@@ -351,9 +353,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../04-developers/03-subgraphs.html">
+        <li class="chapter active" data-level="1.5.3" data-path="03-subgraphs.html">
             
-                <a href="../04-developers/03-subgraphs.html">
+                <a href="03-subgraphs.html">
             
                     
                     Subgraphs
@@ -364,9 +366,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="../04-developers/04-bug-bounty.html">
+        <li class="chapter " data-level="1.5.4" data-path="04-bug-bounty.html">
             
-                <a href="../04-developers/04-bug-bounty.html">
+                <a href="04-bug-bounty.html">
             
                     
                     Bug Bounty
@@ -483,7 +485,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Dual-token Model</a>
+        <a href=".." >Subgraphs</a>
     </h1>
 </div>
 
@@ -498,9 +500,39 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="dual-token-model">Dual-token model</h1>
-<p>As a decentralized, non-profit, open-source technology organization, Sofa.org has meticulously designed a dual-token model for its ecosystem. This model includes a governance token (SOFA) and a utility token (RCH).</p>
-<p><img src="../../static/Wf18b0vCyoOmqJx01RRuTjSeswc.png" alt=""></p>
+                                <h1 id="subgraphs">Subgraphs</h1>
+<p>At Sofa.org, we support the development of efficient and responsive applications by providing real-time and accurate blockchain data access through the use of The Graph. Subgraphs are a powerful tool that allows us to index data stored on Ethereum and query this data via GraphQL. Here is how you can utilize custom subgraphs for Sofa.org to query related data.</p>
+<h2 id="accessing-our-subgraph">Accessing Our Subgraph</h2>
+<p>We have created specific subgraphs for Sofa.org&apos;s data. These subgraphs contain various entities indexed from the blockchain, such as transactions, accounts, and specific events related to our DeFi products. You can query data in the subgraph by following these steps:</p>
+<h3 id="step-1-find-the-endpoint">Step 1: Find the Endpoint</h3>
+<p>Locate the GraphQL endpoint URL corresponding to the subgraph you wish to interact with. This typically appears as a web address link. Ensure you are using the most up-to-date endpoint.</p>
+<h3 id="step-2-understand-the-schema">Step 2: Understand the Schema</h3>
+<p>The schema describes the entities within the subgraph and the types of queries that can be performed. Understanding the schema is crucial for writing efficient queries.</p>
+<h3 id="step-3-write-a-graphql-query">Step 3: Write a GraphQL Query</h3>
+<p>Based on the schema, you can start writing GraphQL queries to query data from the subgraph. GraphQL allows for very specific queries, requesting only the fields you are interested in. For example, if you want to query detailed information for each transaction, you might write a query like this:</p>
+<pre><code>{
+  transactions(first: 5) {
+    id
+    from
+    to
+    value
+    blockNumber
+  }
+}
+</code></pre><p>This will return transactions and their related details for the first five records on the blockchain.</p>
+<h3 id="step-4-send-the-query-request">Step 4: Send the Query Request</h3>
+<p>Send your query request using any HTTP client that supports GraphQL. You can use a command-line tool such as curl, or a library integrated into your application, like apollo-client. Typically, the request is sent as a POST request to the endpoint URL.</p>
+<p>An example code using curl is as follows:</p>
+<pre><code>curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;query&quot;: &quot;{ transactions(first: 5) { id from to value blockNumber } }&quot;}&apos; https://api.thegraph.com/subgraphs/name/sofa-org/subgraph-name
+</code></pre><p>Replace <code>subgraph-name</code> with the actual subgraph name, and determine the URL based on the actual situation.</p>
+<h3 id="step-5-analyze-and-use-the-response">Step 5: Analyze and Use the Response</h3>
+<p>After your query request is sent, the GraphQL service will return the response in JSON format. You can process this data in your application or directly display it to users on the front end.</p>
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li><strong>Use Query Variables</strong>: If you frequently need to perform queries of the same structure but with different parameters, using query variables can make it easier to reuse your queries.</li>
+<li><strong>Handle Errors</strong>: In addition to normal responses, GraphQL can also return error information. Make sure your client code can gracefully handle these situations.</li>
+</ul>
+<p>By following these steps, you can effectively use The Graph to query data on Sofa.org for your development projects. For more information, please refer to our developer documentation and Subgraph related resources.</p>
 
                                 
                                 </section>
@@ -528,8 +560,12 @@
 
             
                 
+                <a href="02-dapp-open-apis.html" class="navigation navigation-prev " aria-label="Previous page: Open APIs for Dapp Developer">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="02-rch.html" class="navigation navigation-next navigation-unique" aria-label="Next page: $RCH">
+                
+                <a href="04-bug-bounty.html" class="navigation navigation-next " aria-label="Next page: Bug Bounty">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -540,7 +576,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Dual-token Model","level":"1.4.1","depth":2,"next":{"title":"$RCH","level":"1.4.2","depth":2,"path":"03-tokenomics/02-rch.md","ref":"03-tokenomics/02-rch.md","articles":[]},"previous":{"title":"TOKENOMICS","level":"1.4","depth":1,"ref":"","articles":[{"title":"Dual-token Model","level":"1.4.1","depth":2,"path":"03-tokenomics/01-dual-token-model.md","ref":"03-tokenomics/01-dual-token-model.md","articles":[]},{"title":"$RCH","level":"1.4.2","depth":2,"path":"03-tokenomics/02-rch.md","ref":"03-tokenomics/02-rch.md","articles":[]},{"title":"$SOFA","level":"1.4.3","depth":2,"path":"03-tokenomics/03-sofa.md","ref":"03-tokenomics/03-sofa.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","languages":{"en":"English","zh":"中文"},"gitbook":"*"},"file":{"path":"03-tokenomics/01-dual-token-model.md","mtime":"2024-03-07T09:29:15.639Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-07T10:22:48.730Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Subgraphs","level":"1.5.3","depth":2,"next":{"title":"Bug Bounty","level":"1.5.4","depth":2,"path":"04-developers/04-bug-bounty.md","ref":"04-developers/04-bug-bounty.md","articles":[]},"previous":{"title":"Open APIs for Dapp Developer","level":"1.5.2","depth":2,"path":"04-developers/02-dapp-open-apis.md","ref":"04-developers/02-dapp-open-apis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","languages":{"en":"English","zh":"中文"},"gitbook":"*"},"file":{"path":"04-developers/03-subgraphs.md","mtime":"2024-03-07T09:16:15.716Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-07T10:22:48.730Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>
