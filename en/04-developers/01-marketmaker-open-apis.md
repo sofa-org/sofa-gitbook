@@ -1,215 +1,177 @@
-# MarketMaker Open APIs
+# Open APIs for Market Maker
 
-我们为 Sofa.org 提供了合约产品定价的功能，通过向 MarketMaker 询价，然后整合最优的定价结果返回给 Sofa.org，然后用户可以选择是否交易，由于需要根据合约对接不同的 MarketMaker，所以可上线的产品需要按合约类型区分。
+## Specification
 
-## 推荐 DNT RFQ 询价
+### Prefix
 
-- 说明
-  - 仅支持同一个 vault+chainId 组成的 rfq 列表
+1. To ensure transaction security, use HTTPS for transmission.
+2. JSON is the data interchange format.
+3. UTF-8 character encoding is universally applied.
+4. Interface signing algorithm utilizes HMAC-SHA256.
+5. UNIX millisecond timestamp is used, representing the number of milliseconds since January 1, 1970, 0:00:00.
+
+### Parameters
+
+1. Request
+
+| name          | type   | remark                                              |
+| ------------- | ------ | --------------------------------------------------- |
+| H-Request-Id  | string | [Header]Request ID, unique                          |
+| H-Api-Key     | string | [Header]API Key                                     |
+| H-Timestamp   | long   | [Header]Valid timestamp，e.g., 1672387200000        |
+| H-Nonce       | string | [Header]Random string                               |
+| Authorization | string | [Header]Signature，e.g.,：rfq-hmac-sha256 signature |
+
+1. Rsponse
+
+| name    | type    | ramark             |
+| ------- | ------- | ------------------ |
+| code    | integer | [Body]Error code   |
+| message | string  | [Body]Error reason |
+| value   | T       | [Body]Result       |
+
+### Signature Generation
+
+RFQ platform requires partners to sign requests. The platform verifies the signature upon receiving the request. If the verification fails, the platform rejects the request with a `401` Unauthorized response.
+
+1. Build the signature string:
+
+The signature string consists of five lines, each representing a parameter. Each line ends with a semicolon, including the last line. The valid timestamp and the request nonce are taken from the `H-Timestamp` and `H-Nonce` parameters in the header, respectively.
 
 ```
-POST /rfq/dnt/recommended-quote
+Timestamp;NonceStr;HTTP_METHOD();URI();RequestBody;
 ```
 
-**入参**
+1. Calculate the signature
 
-| 字段名               | 必填          | 类型   | 描述                                                                                                                    |
-| -------------------- | ------------- | ------ | ----------------------------------------------------------------------------------------------------------------------- |
-| list                 | array[object] |        |                                                                                                                         |
-| > vault              | true          | string | 合约信息                                                                                                                |
-| > chainId            | true          | int    | 链 ID                                                                                                                   |
-| > expiry             | true          | long   | 到期日对应的秒级时间戳，例如 1672387200                                                                                 |
-| > lowerBarrier       | true          | number | 下方价格                                                                                                                |
-| > upperBarrier       | true          | number | 上方价格                                                                                                                |
-| > depositAmount      | true          | number | rfq 申购金额                                                                                                            |
-| > inputApyDefinition | true          | string | 底层代码是 Enum 表明入参的 APY 具体是怎么计算的_OptimusDefaultAPY_, _BinanceDntAPY_, _AaveLendingAPR_, _AaveLendingAPY_ |
-| > protectedApy       | false         | number | 保底年化（RISKY 时为空，protected 时必填）                                                                              |
-| > fundingApy         | false         | number | AAVE 年化（RISKY 时为空，protected 时必填）                                                                             |
+Use the `SecretKey` to encrypt `StringToSign` using HMAC-SHA256.
 
-入参示例
+```
+StringToSign = Timestamp + ";" + NonceStr + ";" + UPPERCASE(HTTP_METHOD()) + ";" + URI() + ";" + RequestBody + ";";
+Signature = BASE64_STRING( HMAC-SHA256( BASE64_DECODE(SecretKey), StringToSign ) );
+```
+
+1. **Set HTTP Headers**
+
+The request transmits the signature through the `HTTP Authorization` header. The `Authorization header` comprises two parts: **authentication type** and **signature information**.
+
+```
+Authorization: AuthenticationType SignatureInformation
+```
+
+1. Authentication Type: rfq `-hmac-sha256`
+2. Signature Information: `Signature`
+
+```
+Authorization: rfq-hmac-sha256 Signature
+```
+
+- The request method should be in uppercase.
+- The `RequestBody` used for signing must match the content of the request's body.
+- For GET and DELETE requests, the `URI` should include the request parameters (e.g., /api/v1/result?orderId=123). If there is no request body (common for GET requests), the request body should be an empty string ("").
+- The valid timestamp (H-Timestamp) is determined by the requester; requests beyond the valid timestamp will be rejected by the RFQ server.
+
+## RFQ
+
+### Provide DNT RFQ Quote
+
+```
+GET rfq/dnt/quote
+```
+
+**Parameters**
+
+| name                              | required | type   | description                                                       |
+| --------------------------------- | -------- | ------ | ----------------------------------------------------------------- |
+| vault                             | true     | string | Vault address                                                     |
+| chainId                           | true     | int    | Chain ID                                                          |
+| expiry                            | true     | long   | Expiry time in seconds timestamp，e.g., 1672387200                |
+| lowerBarrier                      | true     | number | Lower barrier                                                     |
+| upperBarrier                      | true     | number | Upper barrier                                                     |
+| depositAmount                     | true     | number | Deposit                                                           |
+| premiumAmount                     | true     | number | Premium                                                           |
+| protectedFundingAmount            | false    | number | Protected interest（null when RISKY）                             |
+| deadline                          | true     | long   | Quote deadline，e.g., 1672387200                                  |
+| takerWallet                       | false    | string | Taker wallet address                                              |
+| anchorPricesDecimal               | true     | long   |                                                                   |
+| makerCollateralDecimal            | true     | long   |                                                                   |
+| collateralAtRiskPercentageDecimal | true     | long   |                                                                   |
+| totalCollateralDecimal            | true     | long   |                                                                   |
+| underlyingPair                    | true     | string | Underlying Pair, e.g. BTC-USDT                                    |
+| trackingSource                    | true     | string | Data sources are used to track the underlying value, e.g. DERIBIT |
+| depositCoin                       | true     | string | Currency / Coin of the premium paid to subscribe DNT              |
+| riskType                          | true     | string | Type：PROTECTED, RISKY                                            |
+
+**Response**
+
+| name                       | type         | description                        |
+| -------------------------- | ------------ | ---------------------------------- |
+| timestamp                  | long         | Quote timestamp                    |
+| vault                      | string       |                                    |
+| chainId                    | int          |                                    |
+| expiry                     | long         | Expiry timestamp，e.g., 1672387200 |
+| anchorPrices               | list[string] | 20000000000,30000000000            |
+| makerCollateral            | string       |                                    |
+| totalCollateral            | string       |                                    |
+| collateralAtRiskPercentage | string       | E18                                |
+| deadline                   | long         | Quote deadline timestamp           |
+| makerWallet                | string       |                                    |
+| signature                  | string       |                                    |
+
+Note:
+
+1. totalCollateral * collateralAtRiskPercentage - makerCollateral ==  premiumAmount
+2. totalCollateral  - makerCollateral == depositAmount
+
+**Examples**
+
+Request URL
+
+```
+rfq/dnt/quote
+```
+
+Parameters
 
 ```json
 {
-    "list":[
-        {
-            "vault":"0x0E3a24ed24fBfF5406C8529fBe3Cc4DFE12b1cDB",
-            "chainId":80001,
-            "lowerBarrier":2775,
-            "upperBarrier":2825,
-            "expiry":1708416000,
-            "depositAmount":1000,
-            "protectedApy":0.01,
-            "fundingApy":"0.1098",
-            "inputApyDefinition":"AaveLendingAPY"
-        }
-    ]
+    **"rfqId"**:**1233992,**
+    **"apy"**:**0.25,**
+    **"tenor"**:**7.9,**
+    **"fundingAmount"**:**0.01,**
+    **"depositAmount"**:**1,**
+    **"premiumCoin"**:**"BTC"**,
+    **"premiumAmount":0.05,**
+    **"bookingQuantity":1,**
+    **"totalAmount":0.05,**
+    **"payoff":1,**
+    **"deadline":1672279892000,**
+    **"signature":"dsdkksdsksdk"**
 }
 ```
 
-**出参**
+## Appendix
 
-| 字段名  | 类型         | 描述                 |
-| ------- | ------------ | -------------------- |
-| code    | int          | 0 表示返回结果正常   |
-| message | string       | 异常时返回的错误信息 |
-| value   | list[object] |                      |
+| Code | Message                                                          |
+| ---- | ---------------------------------------------------------------- |
+| 1000 | system error.                                                    |
+| 2001 | sign error.                                                      |
+| 2002 | param error.                                                     |
+| 3001 | Requested information does not exist.                            |
+| 3002 | Deposit amount is outside _depositRange_.                        |
+| 3003 | Maximum subscriptions limit is reached.                          |
+| 3004 | Subscription failed due to too much difference in premiumAmount. |
+| 3005 | Quote failed.                                                    |
+| 3006 | Temporarily do not provide service.                              |
+| 3007 | Api rate limit exceeded. Try slow down.                          |
+| 3100 | Order creation failed.                                           |
 
-Object
+**Required Functions**：
 
-| 字段名                       | 类型         | 描述                                                     |
-| ---------------------------- | ------------ | -------------------------------------------------------- |
-| vault                        | string       | 合约地址                                                 |
-| chainId                      | int          | 链 ID                                                    |
-| riskType                     | string       | 风险类型：PROTECTED,RISKY                                |
-| forCcy                       | string       | 标的物币种                                               |
-| domCcy                       | string       | 币对                                                     |
-| depositCcy                   | string       | 申购币种                                                 |
-| lowerBarrier                 | number       | 下方价格                                                 |
-| upperBarrier                 | number       | 上方价格                                                 |
-| depositAmount                | number       | rfq 申购金额                                             |
-| expiry                       | long         | 到期日对应的秒级时间戳，例如 1672387200                  |
-| protectedReturnAmount        | number       | 保底收益的总金额，单位与 depositCcy 一致                 |
-| fundingAmount                | number       | 预估的 AAVE 在该期间的收益率；非保本型为零               |
-| enhancedReturnAmount         | number       | 未敲出时额外收益的总金额，单位与 depositCcy 一致         |
-| timestamp                    | long         | 目前定价对应的触发时间；下一个观察开始时间基于此逻辑计算 |
-| observationStart             | long         | 目前产品根据 timestamp 预估的开始观察敲入敲出时间        |
-| quote                        | object       |                                                          |
-| > anchorPrices               | list[string] | 20000000000, 30000000000                                 |
-| > makerCollateral            | string       | Maker 对赌抵押的金额                                     |
-| > totalCollateral            | string       | 总的质押的金额（Taker+Maker）                            |
-| > collateralAtRiskPercentage | string       | 保底时必填（可空）                                       |
-| > deadline                   | long         | 过期时间秒级时间戳 例如 1672387200                       |
-| > makerWallet                | string       | maker 的 wallet（可空）                                  |
-| > signature                  | string       | 签名（可空）                                             |
-
-出参示例
-
-```json
-{
-    "succ":true,
-    "code":0,
-    "message":"",
-    "value":[
-        {
-            "chainId":80001,
-            "vault":"0x0E3a24ed24fBfF5406C8529fBe3Cc4DFE12b1cDB",
-            "riskType":"PROTECTED",
-            "forCcy":"WETH",
-            "domCcy":"USDT",
-            "depositCcy":"USDT",
-            "lowerBarrier":"2775",
-            "upperBarrier":"2825",
-            "depositAmount":"1000",
-            "expiry":"1708416000",
-            "timestamp":"1708142778",
-            "protectedReturnAmount":"0.08219178",
-            "fundingAmount":"0.90246575",
-            "enhancedReturnAmount":"3.69018697",
-            "observationStart":"1708156800",
-            "quote":{
-                "anchorPrices":[
-                    "2775000000",
-                    "2825000000"
-                ],
-                "makerCollateral":"2869913",
-                "totalCollateral":"1002869913",
-                "collateralAtRiskPercentage":"3631",
-                "deadline":"1708143378",
-                "makerWallet":"0xDFD6f6a6c1AB0184a483F1c7f691f1ea6B810e55",
-                "signature":null
-            }
-        },
-        {
-            "chainId":80001,
-            "vault":"0x0E3a24ed24fBfF5406C8529fBe3Cc4DFE12b1cDB",
-            "riskType":"PROTECTED",
-            "forCcy":"WETH",
-            "domCcy":"USDT",
-            "depositCcy":"USDT",
-            "lowerBarrier":"2775",
-            "upperBarrier":"2825",
-            "depositAmount":"1000",
-            "expiry":"1708761600",
-            "timestamp":"1708142781",
-            "protectedReturnAmount":"0.19178082",
-            "fundingAmount":"2.10575342",
-            "enhancedReturnAmount":"21.6891866",
-            "observationStart":"1708156800",
-            "quote":{
-                "anchorPrices":[
-                    "2775000000",
-                    "2825000000"
-                ],
-                "makerCollateral":"19775214",
-                "totalCollateral":"1019775214",
-                "collateralAtRiskPercentage":"21123",
-                "deadline":"1708143381",
-                "makerWallet":"0xDFD6f6a6c1AB0184a483F1c7f691f1ea6B810e55",
-                "signature":null
-            }
-        }
-    ]
-}
-```
-
-## 询价
-
-- 说明
-  - 仅询价时，不传用户钱包地址（wallet）
-  - 申购时，传用户钱包地址（wallet）
-
-```
-GET /rfq/dnt/quote
-```
-
-**入参**
-
-| 字段名             | 必填  | 类型   | 描述                                                                                                                    |
-| ------------------ | ----- | ------ | ----------------------------------------------------------------------------------------------------------------------- |
-| vault              | true  | string | 合约信息                                                                                                                |
-| chainId            | true  | int    | 链 ID                                                                                                                   |
-| expiry             | true  | long   | 到期日对应的秒级时间戳，例如 1672387200                                                                                 |
-| lowerBarrier       | true  | number | 下方价格                                                                                                                |
-| upperBarrier       | true  | number | 上方价格                                                                                                                |
-| depositAmount      | true  | number | rfq 申购金额                                                                                                            |
-| inputApyDefinition | true  | string | 底层代码是 Enum 表明入参的 APY 具体是怎么计算的_OptimusDefaultAPY_, _BinanceDntAPY_, _AaveLendingAPR_, _AaveLendingAPY_ |
-| protectedApy       | false | number | 保底年化（RISKY 时为空，protected 时必填）                                                                              |
-| fundingApy         | false | number | AAVE 年化（RISKY 时为空，protected 时必填）                                                                             |
-| takerWallet        | false | string | 询价方钱包公共地址信息                                                                                                  |
-
-**出参**
-
-| 字段名  | 类型         | 描述                 |
-| ------- | ------------ | -------------------- |
-| code    | int          | 0 表示返回结果正常   |
-| message | string       | 异常时返回的错误信息 |
-| value   | list[object] |                      |
-
-Object
-
-| 字段名                       | 类型         | 描述                                                     |
-| ---------------------------- | ------------ | -------------------------------------------------------- |
-| vault                        | string       | 合约地址                                                 |
-| chainId                      | int          | 链 ID                                                    |
-| riskType                     | string       | 风险类型：PROTECTED,RISKY                                |
-| forCcy                       | string       | 标的物币种                                               |
-| domCcy                       | string       | 币对                                                     |
-| depositCcy                   | string       | 申购币种                                                 |
-| lowerBarrier                 | number       | 下方价格                                                 |
-| upperBarrier                 | number       | 上方价格                                                 |
-| depositAmount                | number       | rfq 申购金额                                             |
-| expiry                       | long         | 到期日对应的秒级时间戳，例如 1672387200                  |
-| protectedReturnAmount        | number       | 保底收益的总金额，单位与 depositCcy 一致                 |
-| fundingAmount                | number       | 预估的 AAVE 在该期间的收益率；非保本型为零               |
-| enhancedReturnAmount         | number       | 未敲出时额外收益的总金额，单位与 depositCcy 一致         |
-| timestamp                    | long         | 目前定价对应的触发时间；下一个观察开始时间基于此逻辑计算 |
-| observationStart             | long         | 目前产品根据 timestamp 预估的开始观察敲入敲出时间        |
-| quote                        | object       |                                                          |
-| > anchorPrices               | list[string] | 20000000000, 30000000000                                 |
-| > makerCollateral            | string       | Maker 对赌抵押的金额                                     |
-| > totalCollateral            | string       | 总的质押的金额（Taker+Maker）                            |
-| > collateralAtRiskPercentage | string       | 保底时必填（可空）                                       |
-| > deadline                   | long         | 过期时间秒级时间戳 例如 1672387200                       |
-| > makerWallet                | string       | maker 的 wallet（可空）                                  |
-| > signature                  | string       | 签名（可空）                                             |
-
+- premiumAmount = totalCollateral * dntCollateralRatio - makerCollateral
+- depositAmount = totalCollater - makerCollateral
+- bookingQuantity = totalCollateral * dntCollateralRatio
+- projectedFundingAmount = projectedFundingAPY * (expDateTime - refDateTime) / 365
+- Tenor = (expDateTime - refDateTime) / 365
+- APY-In-Range = (projectedFundingAmount - premiumAmount + bookingQuantity) / tenor = makerCollateral / tenor
+- APY-Protected = (projectedFundingAmount - premiumAmount) / tenor

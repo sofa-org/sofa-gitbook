@@ -1,4 +1,4 @@
-# Oracles
+# 语言机
 
 在加密货币和去中心化金融（DeFi）世界中，及时、准确地获取链外数据至关重要。智能合约本身无法直接访问外部系统或数据源，而预言机（Oracles）桥梁这一缺口，将链外世界的信息带入区块链上。Sofa.org 充分利用预言机为用户提供可信赖的数据服务，确保结算过程的透明性和可追溯性。ChainLink 预言机服务因其高度去中心化、可靠性和适应性而被我们选中，成为我们获取链外数据的主要方式。
 
@@ -24,13 +24,13 @@
 
 在确定某些衍生品和财务产品的价值时，历史价格数据变得同样重要。为此，我们选用 ChainLink Functions 从 Coinbase 等知名交易平台获取历史价格。ChainLink Functions 是一种自定义的预言机功能，它允许智能合约调用单个 API 获取所需的任何数据。通过 ChainLink Functions 带来的灵活性，我们能够定制获取历史数据的方式，支撑我们复杂的金融逻辑和产品设计。
 
-![](../../static/QH32bT29Poeyr3x4aXbuqKd5sXL.png)
+![](../../static/Nv6IbAWmVolI2KxlHspuLCwPsGd.png)
 
 ## ChainLink Automation 定期推送服务
 
 为保持价格信息在链上是最新的，Sofa.org 利用 ChainLink Automation，确保价格定期自动更新推送至区块链。ChainLink Automation（之前称为 ChainLink Keepers）提供了一个去中心化的网络，智能合约可以安排和自动执行复杂的任务，例如定期更新数据、触发事件或执行重要的合约调整。这种自动化确保了链上价格总是反映近期市场状态，为使用我们平台的去中心化应用提供了必要的实时数据。
 
-![](../../static/UNncbrQncoFTamxkkcculuYus2e.png)
+![](../../static/TdtlbrrEoodDgMxysrSuCwn5sOc.png)
 
 ## 可追溯和去中心化
 
@@ -41,4 +41,3 @@
 多年的实践证明，ChainLink 的预言机服务因其可靠性和安全性而值得信赖。随着行业的发展和新技术的涌现，Sofa.org 也在积极探索和采用更多样化的预言机服务。这旨在提升数据安全性，降低单一服务依赖风险，并保证我们的服务能够贴合市场的最新发展。
 
 预言机作为链和链外世界之间的关键链接，是确保 DeFi 产品可靠性的根基。通过 ChainLink 的一系列服务，结合其他优质预言机资源，Sofa.org 为用户提供了一个强大、透明、去中心化并可持续发展的数据获取体系，保障了用户利益和平台的稳健运作。
-

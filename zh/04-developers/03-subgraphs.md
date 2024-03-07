@@ -8,11 +8,11 @@
 
 ### 步骤 1: 找到 Endpoint
 
-访问我们的开发者文档，找到与你想要交互的 subgraph 对应的 GraphQL endpoint URL。这通常看起来像是一个网址链接，请确保你使用的是最新的 endpoint。
+找到与你想要交互的 subgraph 对应的 GraphQL endpoint URL。这通常看起来像是一个网址链接，请确保你使用的是最新的 endpoint。
 
 ### 步骤 2: 理解 Schema
 
-在我们的开发者文档中，你可以找到 subgraph schema 的详细信息。Schema 描述了 subgraph 中的实体和可以执行的查询类型。理解 schema 对于编写高效的查询至关重要。
+Schema 描述了 subgraph 中的实体和可以执行的查询类型。理解 schema 对于编写高效的查询至关重要。
 
 ### 步骤 3: 编写 GraphQL 查询
 

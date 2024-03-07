@@ -1,34 +1,38 @@
 # Vaults
 
-得益于 Sofa.org 协议的精心设计，理论上我们可以支持任意类型任意抵押物的结构化产品。
+Thanks to the meticulous design of the Sofa.org protocol, in theory, we can support structured products of any type and any collateral.
 
-目前推出的产品从类型上可分成 Double No Touch 和 Smart Trend 两种，后续将会推出更多类型。
+The products currently launched can be categorized into two types: Double No Touch and Smart Trend, with plans to introduce more types in the future.
 
-从投资偏好上又可分为高收益型和保本型，其中保本型产品会将用户的本金投入到 AAVE 等协议中生息，并用利息的一部分与做市商进行对赌。
+From an investment preference perspective, they can be divided into high-return and principal-protected types. The principal-protected products invest users' principal in protocols like AAVE to earn interest, and a portion of the interest is used to place bets with market makers.
 
-在上述分类标准基础上，不同的标的物和抵押物相组合生成不同的 Vault 合约。
+Based on the above classification standards, different underlying assets and collaterals are combined to create various Vault contracts.
 
-## 按照产品类型分类
+## Classification by Product Type
 
 ### Double No Touch (DNT)
 
-Double No Touch 产品是一类基于价格边界的结构化产品。投资者可以在投资期内从未触及到预设的价格高点或低点中获利。这类产品适合预期市场将处于特定价格范围内、波动性较低的投资者。
+Double No Touch products are a type of structured product based on price boundaries. Investors can profit if the investment does not reach the preset high or low price points during the investment period. These products are suitable for investors who expect the market to stay within a specific price range with lower volatility.
 
-![](../../static/UetubokoUoN110xayEeuX0bJscb.jpg)
+![](../../static/TI67bz9AKo7cmPxfEKxuLYZ5std.png)
 
-### Smart Trend (趋势智赢)
+### Smart Trend
 
-Smart Trend 产品则是适合预期市场将处于单边行情。它也具有和高点和低点两个预设的价格。通过申购产品，您可以预测行情，并在价格向您预测的方向发展时享受增强收益。
+Smart Trend products are suitable for markets expected to move in one direction. They also feature two preset price points, high and low. By subscribing to the product, you can predict the market direction and enjoy enhanced returns if the price moves in the direction you predicted.
 
-![](../../static/Cq8RbFeweoYvIVxD3uyuQM77snb.jpg)
+![](../../static/UoHJbI5CmoMSlLxjiMxuig6Lsxf.png)
 
-## 按照风险偏好分类
+## Classification by Risk Preference
 
-### 保本型
+### Principal-Protected
 
-保本型产品则是为风险规避型投资者设计的。用户的本金将被投资于如 AAVE 这样的知名协议，以稳定的利息收入为基础，实现资产的安全增值。利息的一部分用于与做市商进行对赌，旨在在保证本金安全的同时，获取额外的收益潜力。
+Principal-protected products are designed for risk-averse investors. Users' principal is invested in well-known protocols such as AAVE, with stable interest income as the basis for safe asset appreciation. A portion of the interest is used for betting with market makers, aiming to secure the principal while tapping into additional earning potential.
 
-## 高收益型
+![](../../static/TDGfbpke4omqCExTKoOuuX14sRb.png)
 
-对于风险承受能力较高、追求最大化回报的投资者，我们提供高收益型产品。这些产品在可能带来较高回报的同时，也承担着相应的风险。
+### High-Return
+
+For investors with a higher risk tolerance pursuing maximized returns, we offer high-return products. These products may bring higher returns but also come with corresponding risks.
+
+![](../../static/S4FGbomOyoQOgQx6yISug4uGsfh.png)
 

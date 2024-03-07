@@ -1,6 +1,6 @@
 # Dual-token model
 
-Sofa.org 作为去中心化的非盈利开源技术组织，为生态精心设计了双代币模型，包含了治理代币（govern Token） SOFA，效用代币（utility Token） RCH
+As a decentralized, non-profit, open-source technology organization, Sofa.org has meticulously designed a dual-token model for its ecosystem. This model includes a governance token (SOFA) and a utility token (RCH).
 
-![](../../static/U6tUbJXwXocvvGxAcBouHJDCsYf.png)
+![](../../static/Wf18b0vCyoOmqJx01RRuTjSeswc.png)
 

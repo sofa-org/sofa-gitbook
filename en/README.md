@@ -30,11 +30,11 @@ By focusing on transparency, friendliness, composability, flexibility, and varie
 
 Sofa.org collaborates with institutional Market Makers who provide streaming market prices to the platform. When a client logs in to trade, the client's subscription assets are automatically sent to the DeFi vault as soon as they choose to trade on the quote. The market maker's premium is also automatically transferred to the vault. Once both client subscription assets and market maker premium are in the vault, it is locked, and no one can touch the assets. Both of them will get the proper amount tokens minted which stand for their positions. The position tokens can be transferred or traded like normal ERC20.
 
-![](../../static/TJ4tbyeM2oaXRAxc4kkuA8g6sVb.png)
+![](../../static/SwnnbAfCroKEm8xSEzXuJgqesjh.png)
 
 The collateral in the vault would be staked into mature and safe yield earn protocols like Compound, AAVE and etc. to earn interests for clients.
 
-![](../../static/Sh3RbVDbuoCC67x0PLBueeP2s08.png)
+![](../../static/UkyFbr85JomsQsxI49Pu8JTtslf.png)
 
 The vault contract use ERC1155 standard. Position tokens with the same strike price and expire time can be transferred like ERC20. Tokens with different strike prices or the expiration time have different token id(NFT) but in the same vault contract.
 
@@ -70,13 +70,14 @@ A variety of products can be supported by the structure of offchain RFQ + onchai
 
 ERC1155 is a token standard on the Ethereum that enables the creation of fungible and non-fungible tokens within the same smart contract. This means that developers can create a single smart contract that can manage multiple tokens, including both non-fungible tokens and fungible tokens that can be traded interchangeably. It provides a more efficient and flexible solution for managing a large number of assets while reducing gas costs and minimizing the need for multiple smart contracts.
 
-### Gas efficiency
+### Gas Efficiency
 
-我们使用 [Permit2](https://github.com/Uniswap/permit2) 降低用户的 approve 成本，不同于常见的对每个 vault 合约都要进行一次或多次授权后才能进行交易的解决方案，用户如果已经在使用其他协议时对 Uniswap 的 permit2 合约进行过授权，使用 Sofa.org 的 vaults 则无须再进行授权，如果没有，则只需要对 permit2 授权一次无须针对每个 vault 进行授权。
+We utilize Permit2 to reduce the approval cost for users. Unlike common solutions that require one or more authorizations for each vault contract before transactions can proceed, users who have already authorized the Uniswap Permit2 contract while using other protocols can interact with Sofa.org's vaults without needing further approvals. If not already authorized, users only need to grant permission to Permit2 once, eliminating the need for separate authorizations for each vault.
 
 |          | **sofa.org**                       |                                           | **Others** |              |            |
 | -------- | ---------------------------------- | ----------------------------------------- | ---------- | ------------ | ---------- |
 |          | ApexWinnings Tickets Vault Deposit | Capital Protected Earnings  Vault Deposit | Transfer   | Uniswap Swap | Curve Swap |
 | Gas Used | 154K~208K                          | 192K~298K                                 | 21K        | 105K~170K    | 114K~764K  |
 
-统计数据表明，使用 Sofa.org Vaults 铸造头寸的 Gas 消耗仅为 Uniswap 交易操作的 1-2 倍。与市场上的类似产品相比，Sofa.org 在 Gas 消耗上更为低廉和高效。
+Statistical data indicate that the gas consumption for minting positions using Sofa.org Vaults is only 1-2 times that of Uniswap transaction operations. Compared with similar products on the market, Sofa.org is more cost-effective and efficient in terms of gas consumption.
+

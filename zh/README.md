@@ -1,76 +1,70 @@
-# Introduction
+# 简介
 
-## What Are We Trying To Accomplish
+## 我们试图解决的问题
 
-### CeFi lack of transparency
+- **中心化金融（CeFi）的透明度缺失**
 
-The crashes of CeFi giants like 3AC, FTX, and Genesis have yet again brought to light the issues with centralization. Investors are now seeking greater transparency, protection of assets, and predictable outcomes without any unexpected shocks.
+  中心化金融巨头如 3AC、FTX 和 Genesis 的崩溃再次暴露了中心化的问题。投资者现在寻求更大的透明度、资产保护和可预测的结果，而不是任何意外的冲击。
+- **DeFi 缺乏用户友好、可与 CeFi 媲美的结构化产品**
 
-### Lack of user friendly, CeFi comparable structured products on DeFi
+  DeFi 中专业结构化产品的进展和采用仍处于早期阶段。尽管 DeFi 空间中的协议众多，但它们提供的收益产品大多相似，且仅限于少数类别，如 AMM LP、借贷、LSD 和现金结算期权销售。目前，很少有 DeFi 协议能够提供可与 CeFi 提供的易用性和产品复杂性相匹配的结构化产品，更不用说传统金融中普遍存在的更复杂产品了。
+- **在 DeFi 上构建透明度、友好性、可组合性、灵活性和多样性的结构化产品**
 
-The progress and adoption of professional structured products on DeFi are still in the early phases. Despite the abundance of protocols in the DeFi space, the majority of them offer yield products that are quite similar and fall within limited categories such as AMM LP, lending, LSD, and cash-settled options selling. At present, there are very few DeFi protocols that can offer structured products that can match the ease of use and complexity of products provided by CeFi, let alone the more intricate products that are prevalent in traditional finance.
+  在 DeFi 中，构建透明度、友好性、可组合性、灵活性和多样性的结构化产品至关重要。这些产品不仅为用户提供了更多的金融工具和机会，也推动了整个行业的创新和发展。
 
-### Build transparency, friendly, composability, flexibility, variety structured products on DeFi
+## 实现透明度、友好性、可组合性、灵活性和多样性的关键
 
-In DeFi, building transparency, friendliness, composability, flexibility, and variety in structured products is crucial. These products not only offer users more financial tools and opportunities but also drive innovation and development across the entire industry.
+- **透明度**：透明度是构建 DeFi 结构化产品的基石。通过区块链技术，所有交易和操作都可以被记录和追踪，允许用户随时查看和验证产品的工作原理和性能。透明度提高了用户信任，并有助于创建一个公平和公正的市场环境。
+- **友好性**：关注用户体验是一个重要因素。用户界面应直观、易于导航和操作。此外，产品应考虑用户需求和兴趣，提供清晰的解释和帮助文档，以确保用户完全理解产品的功能和风险。
+- **可组合性**：可组合性指的是 DeFi 结构化产品与其他产品和服务的无缝集成和交互。这使得用户能够根据自己的需求和投资策略组合不同的产品，实现更多的复杂性和定制化。
+- **灵活性**：在 DeFi 上的结构化产品中，灵活性至关重要。用户应有灵活性来定制和调整产品以满足其具体要求，无论是调整参数、选择风险档次还是选择不同的投资策略。提供这种灵活性能够赋予用户权力，并增强他们优化财务活动的能力。
+- **多样性**：在 DeFi 上提供一系列结构化产品中，多样性扮演了重要角色。多种选择允许用户在不同的风险水平、资产类别、投资期限和奖励结构中进行选择。这种多样性不仅迎合了不同用户的偏好，也促进了 DeFi 生态系统的整体增长和成熟。
 
-Transparency is the foundation of constructing DeFi structured products. Through blockchain technology, all transactions and operations can be recorded and traced, allowing users to view and verify the workings and performance of the products at any time. Transparency increases user trust and contributes to a fair and equitable market environment.
+通过专注于透明度、友好性、可组合性、灵活性和
 
-Friendliness is a significant factor in focusing on user experience. User interfaces should be intuitive, easy to navigate, and operate. Moreover, products should consider user needs and interests, providing clear explanations and help documentation to ensure users fully understand the product's features and risks.
+多样性，我们可以创建一个充满活力和包容性的 DeFi 景观，赋予用户权力并促进创新。
 
-Composability refers to the seamless integration and interaction of DeFi structured products with other products and services. This enables users to combine different products based on their needs and investment strategies, achieving more complexity and customization.
+## 协议实现
 
-Flexibility is essential in structured products on DeFi. Users should have the flexibility to customize and tailor the products to their specific requirements, whether it's adjusting parameters, selecting risk profiles, or choosing different investment strategies. Providing this flexibility empowers users and enhances their ability to optimize their financial activities.
+### Sofa.org 的合作
 
-Lastly, variety plays a significant role in offering a range of structured products on DeFi. Diverse options allow users to choose from various risk levels, asset classes, investment horizons, and reward structures. This variety not only caters to different user preferences but also contributes to the overall growth and maturity of the DeFi ecosystem.
+Sofa.org 与机构市场制造商合作，后者向平台提供流动的市场价格。当客户登录交易时，一旦他们选择在报价上交易，客户的订阅资产将自动发送到 DeFi 金库。市场制造商的溢价也会自动转移到金库。一旦客户订阅资产和市场制造商溢价都在金库中，金库就会被锁定，没有人能够触摸资产。双方将获得代表他们位置的适当数量代币。位置代币可以像普通 ERC20 一样转移或交易。
 
-By focusing on transparency, friendliness, composability, flexibility, and variety, we can create a vibrant and inclusive DeFi landscape that empowers users and fosters innovation.
+![](../../static/BVEYbzrFwoyRd8xtDfZuM4dZsng.png)
 
-## Protocol Implementation
+金库中的抵押品将被投入到成熟和安全的收益赚取协议中，如 Compound、AAVE 等，为客户赚取利息。
 
-Sofa.org collaborates with institutional Market Makers who provide streaming market prices to the platform. When a client logs in to trade, the client's subscription assets are automatically sent to the DeFi vault as soon as they choose to trade on the quote. The market maker's premium is also automatically transferred to the vault. Once both client subscription assets and market maker premium are in the vault, it is locked, and no one can touch the assets. Both of them will get the proper amount tokens minted which stand for their positions. The position tokens can be transferred or traded like normal ERC20.
+![](../../static/SqpNbalQmo08ahxG5tPu6FxRsu3.png)
 
-![](../../static/TJ4tbyeM2oaXRAxc4kkuA8g6sVb.png)
+金库合约使用 ERC1155 标准。具有相同执行价格和到期时间的位置代币可以像 ERC20 一样转移。具有不同执行价格或到期时间的代币具有不同的代币 id（NFT），但在同一个金库合约中。
 
-The collateral in the vault would be staked into mature and safe yield earn protocols like Compound, AAVE and etc. to earn interests for clients.
+所有具有相同到期时间的位置代币可以一次性结算，这可以显著节省 gas。
 
-![](../../static/Sh3RbVDbuoCC67x0PLBueeP2s08.png)
+### 特点
 
-The vault contract use ERC1155 standard. Position tokens with the same strike price and expire time can be transferred like ERC20. Tokens with different strike prices or the expiration time have different token id(NFT) but in the same vault contract.
+- **头寸代币化**
 
-All position tokens with the same expiration time can be settled once, which can save gas significantly.
+  客户和市场制造商都可以转移他们的头寸代币。他们可以像对待 ERC20 代币一样进行交易、质押等操作。
+- **灵活性**
 
-## Features
+  支持具有不同到期日期、执行价格、代币和策略的结构化产品，提供一站式解决方案以满足所有用户需求。
+- **可组合性**
 
-### Position Tokenlization
+  可以从 SOFA 协议构建侧协议，包括借贷、交换、质押、收益等。
+- **透明度**
 
-Both clients and market makers can transfer their position tokens. They can trade, stake or do anything as they did to their ERC20 tokens.
+  所有资产都在链上，所有交易记录都可以在链上追踪，确保了协议的透明度。
+- **友好性**
 
-### Flexibility
+  通过利用专业的产品设计和流程优化，大大降低了学习曲线，使其简单、易懂和用户友好。
+- **多样性**
 
-Support structured products with different expiration dates, strike prices, tokens, and strategies, providing a one-stop solution to meet all user needs.
+  结构化产品的结构支持通过 offchain RFQ + onchain vault 的多样化产品。
+- **ERC1155**
 
-### Composability
+  ERC1155 是一个在以太坊上创建可替代和非替代代币的标准，允许开发人员在同一个智能合约中创建多个代币，包括非替代代币和可交换的代币。这提供了一种更高效、灵活的解决方案来管理大量资产，同时减少 gas 成本和最小化多个智能合约的需求。
 
-Side protocols can be built from the SOFA protocol, including lending, swap, staking, yields and etc.
-
-### Transparency
-
-All assets are on chain, and all transaction records are traceable on the chain, ensuring the transparency of the protocol.
-
-### Friendly
-
-By utilizing professional product design and process optimization, the learning curve is greatly reduced, making it simple, easy to understand, and user-friendly.
-
-### Variety
-
-A variety of products can be supported by the structure of offchain RFQ + onchain vault.
-
-### ERC1155
-
-ERC1155 is a token standard on the Ethereum that enables the creation of fungible and non-fungible tokens within the same smart contract. This means that developers can create a single smart contract that can manage multiple tokens, including both non-fungible tokens and fungible tokens that can be traded interchangeably. It provides a more efficient and flexible solution for managing a large number of assets while reducing gas costs and minimizing the need for multiple smart contracts.
-
-### Gas efficiency
+- **Gas efficiency**
 
 我们使用 [Permit2](https://github.com/Uniswap/permit2) 降低用户的 approve 成本，不同于常见的对每个 vault 合约都要进行一次或多次授权后才能进行交易的解决方案，用户如果已经在使用其他协议时对 Uniswap 的 permit2 合约进行过授权，使用 Sofa.org 的 vaults 则无须再进行授权，如果没有，则只需要对 permit2 授权一次无须针对每个 vault 进行授权。
 
@@ -80,3 +74,4 @@ ERC1155 is a token standard on the Ethereum that enables the creation of fungibl
 | Gas Used | 154K~208K                          | 192K~298K                                 | 21K        | 105K~170K    | 114K~764K  |
 
 统计数据表明，使用 Sofa.org Vaults 铸造头寸的 Gas 消耗仅为 Uniswap 交易操作的 1-2 倍。与市场上的类似产品相比，Sofa.org 在 Gas 消耗上更为低廉和高效。
+

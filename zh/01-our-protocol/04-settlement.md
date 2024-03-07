@@ -1,6 +1,6 @@
-# Settlement
+# 结算
 
-## Settle Price
+## 结算价格
 
 到期日是期权产品里很重要的一个概念。用户和做市商在产品到期后就可以结算他们的收益或损失。用户和做市商可以选择到期后的任意时间执行结算操作，但结算依赖的 Price(s)绝不能任意时间的。他（们）必须是到期时的价格或者以到期时间为右边界的价格。因为智能合约没有 Cron 之类的设计，所以就要求我们设计一套机制保证价格可以按时被更新。那如何实现呢？
 
@@ -8,50 +8,40 @@
 
 或许有人会问，自己去定期触发更新价格的交易不可以吗？不是不行，但这样就太中心化了，万一运行程序的服务器出现故障，协议将会变得不可用。
 
-我们使用 ChainLink 提供的 Automation 服务执行 settle 更新 price。Chainlink Automation enables conditional execution of your smart contract functions through a hyper-reliable and decentralized automation platform that uses the same external network of node operators that secures billions in value.
+我们使用 ChainLink 提供的 Automation 服务执行 settle 更新 price。
+
+>Chainlink Automation enables conditional execution of your smart contract functions through a hyper-reliable and decentralized automation platform that uses the same external network of node operators that secures billions in value.
 
 价格更新后的任意时间，用户和做市商都可以调用合约 burn 自己的头寸 Token，合约会根据 Oracle 更新的价格计算应得 Payoff，完成支付。
 
-## Calculate Payoff
+## 收益计算
 
 Payoff 的计算合约是独立于 Vault 的，和 Collateral 无关。同一种类型的产品使用同一个合约计算 Payoff。
 
+```
 Burn X position tokens
+```
 
-### Double No Touch
+### 区间收益宝
 
-- $$
-  Payoff{maker} = \begin{cases}X, \quad HighSettlePrice\geq HighStrikePrice or LowSettlePrice\leq LowStrikePrice\\  0, \quad HighSettlePrice<HisghStrikePrice and LowSettlePrice>LowStrikePrice\end{cases}
-  $$
-- $$
-  Payoff {user}=X - Payoff {maker}
-  $$
+- $$Payoff{maker}=\begin{cases}X, HighSettlePrice\geq HighStrikePrice\vee LowSettlePrice\leq LowStrikePrice\\  0, HighSettlePrice<HisghStrikePrice\wedge LowSettlePrice>LowStrikePrice\end{cases}$$
+- $$Payoff {user}=X - Payoff {maker}$$
 
-### Smart Trend
+### 趋势智赢
 
-#### Smart Bull
+#### 趋势智赢（看涨）
 
-- $$
-  Payoff{maker} = \begin{cases}0, \quad SettlePrice\geq HighStrikePrice\\
-  $$
+- $$Payoff{maker}=\begin{cases}0, SettlePrice\geq HighStrikePrice\\
+X\times\frac{HighStrikePrice-SettlePrice}{HighStrikePrice-LowStrikePrice},LowStrikePrice<SettlePrice<HighStrikePrice\\
+X, SettlePrice\leq LowStrikePrice\end{cases}$$
 
-X\times\frac{HighStrikePrice-SettlePrice}{HighStrikePrice-LowStrikePrice}, \quad LowStrikePrice<SettlePrice<HighStrikePrice\\
-X,\quad SettlePrice\leq LowStrikePrice\end{cases}$$
+- $$Payoff {user}=X - Payoff {maker}$$
 
-- $$
-  Payoff {user}=X - Payoff {maker}
-  $$
+#### 趋势智赢（看跌）
 
-#### Smart Bear
+- $$Payoff{maker}=\begin{cases}X, SettlePrice\geq HighStrikePrice\\
+X\times\frac{SettlePrice-LowStrikePrice}{HighStrikePrice-LowStrikePrice},LowStrikePrice<SettlePrice<HighStrikePrice\\
+0, SettlePrice\leq LowStrikePrice\end{cases}$$
 
-- $$
-  Payoff{maker} = \begin{cases}X, \quad SettlePrice\geq HighStrikePrice\\
-  $$
-
-X\times\frac{SettlePrice-LowStrikePrice}{HighStrikePrice-LowStrikePrice}, \quad LowStrikePrice<SettlePrice<HighStrikePrice\\
-0, \quad SettlePrice\leq LowStrikePrice\end{cases}$$
-
-- $$
-  Payoff {user}=X - Payoff {maker}
-  $$
+- $$Payoff {user}=X - Payoff {maker}$$
 

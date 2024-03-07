@@ -20,7 +20,7 @@ $$
 
 ## RCH 代币经济
 
-![](../../static/N1NWb9nUqo5Bo2x7K8vuU2CksPn.png)
+![](../../static/CuBNbhvyFoQtCQxnKeDuynOMsYb.png)
 
 ### 基础金库
 
@@ -47,7 +47,7 @@ $$
 
 ## RCH 具有强大的抗风险能力和反周期能力：
 
-![](../../static/HrKCbKggHoAETPxIqFOuaHWCsed.png)
+![](../../static/DofdbT5DTobt1gxqf1HuWYmNsbe.png)
 
 ### 来自整个生态的正向循环
 
@@ -81,4 +81,3 @@ RCH 是完全的 fair launch，没有任何人或者团队在初始时刻持有 
 随着加入 sofa.org 生态的协议越来越多，会有更多的交易手续费被用于 Burn RCH 提高其币价，从而使得所有生态协议的交易者都获得更高的回报。
 
 通过 RCH，sofa.org 建造了一套完全中立的代币体系来为交易者和做市商服务，把交易创造的所有价值都通过 RCH 的方式回馈给每个参与交易的交易员。我们相信这个体系将为 true web3 的金融交易奠基，成为未来 web3 金融体系不可或缺的一部分。
-

@@ -1,16 +1,17 @@
 # Fees
 
-在 Sofa.org 上，我们致力于创造一个公平而透明的金融生态系统，用户可以参与不同的结构化金融产品，并与做市商进行对赌。为了维护和发展平台，以及为 $RCH 代币持有者创造价值，我们设定了一系列的费用结构。
+At Sofa.org, we are committed to creating a fair and transparent financial ecosystem where users can participate in various structured financial products and engage in betting with market makers. To maintain and develop the platform, as well as to create value for $RCH token holders, we have established a series of fee structures.
 
-## 协议收入
+## Protocol Revenue
 
-用户选择参与 Sofa.org 产品时，会与做市商进行对赌。协议会从对赌部分的资金中（不含本金及保本部分收益）中抽取 15% 的收入作为协议收入。
+When users choose to participate in Sofa.org products and bet with market makers, the protocol will take 15% of the revenue from the betting funds (excluding principal and guaranteed part of the income) as protocol revenue.
 
-## $RCH 回购
+## $RCH Buyback
 
-在 Sofa.org，我们认为基于协议的收入回购$RCH 代币是一种回馈用户并持续增加代币价值的有效方式。因此，我们承诺所有协议收入都将用于回购$RCH 代币。
+At Sofa.org, we believe that buying back $RCH tokens based on protocol revenue is an effective way to reward users and continuously increase the token value. Therefore, we commit that all protocol revenue will be used to buy back $RCH tokens.
 
-协议收入回购$RCH 代币的连锁效应不仅支持$RCH 的市值，并有助于减少流通中的供应量，从而可能提高每个$RCH 代币的价值。这也意味着每位$RCH 代币持有者将直接受益于 Sofa.org 协议的经济活动。
+The chain reaction of buying back $RCH tokens with protocol revenue not only supports the market value of $RCH but also helps reduce the supply in circulation, potentially increasing the value of each $RCH token. This means that every $RCH token holder directly benefits from the economic activities of the Sofa.org protocol.
 
-$RCH 代币的回购逻辑是SOFA协议智能合约的重要一部分。协议管理者将会定期触发回购逻辑通过DEX使用协议收入购买并销毁$RCH。销毁的$RCH将不再进入流通，$RCH 的总量将会越来越少。
+The logic of buying back $RCH tokens is an important part of the SOFA protocol smart contract. The protocol administrators will regularly trigger the buyback logic to purchase and burn $RCH with protocol revenue through DEX. The destroyed $RCH will no longer enter circulation, and the total amount of $RCH will gradually decrease.
+
 

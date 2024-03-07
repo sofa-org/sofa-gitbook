@@ -1,18 +1,18 @@
 # Referral
 
-在 Sofa.org，我们认识到社区成员和合作伙伴对协议推广的重要性，并欣赏他们作为 broker 在协议推广中扮演的角色。为了鼓励和回馈我们的支持者们，我们设计了一个推荐奖励机制，旨在激励更多人或机构成为我们的合作伙伴，共同促进平台的增长。
+At Sofa.org, we recognize the importance of community members and partners in promoting the protocol and appreciate their role as brokers in the promotion. To encourage and reward our supporters, we have designed a referral reward mechanism aimed at motivating more individuals or institutions to become our partners and jointly promote the platform's growth.
 
-## 操作流程
+## Operational Process
 
-当用户通过 Sofa.org 协议进行头寸的铸造时，他们可以在交互合约时，将推荐人（referrer）的钱包地址作为参数传递。这样的设计不仅便于用户操作，也使推荐人能够公开地获得奖励。
+When users mint positions through the Sofa.org protocol, they can pass the referrer's wallet address as a parameter during contract interaction. This design not only facilitates user operations but also allows the referrer to publicly receive rewards.
 
-## 奖励计算
+## Reward Calculation
 
-推荐人（referrer）的奖励将基于用户铸造头寸的名义价值（notional value）计算。协议将自动追踪这些参数，并在交易完成后为推荐人空投相应的 $RCH 代币。这些代币相当于一定比例的交易价值，具体的奖励比例和计算方法将由 Sofa.org 公布，并可能根据平台的治理决策进行调整。
+The reward for the referrer (referrer) is calculated based on the notional value of the positions minted by the user. The protocol automatically tracks these parameters and airdrops the corresponding $RCH tokens to the referrer after the transaction is completed. These tokens represent a certain percentage of the transaction value, with the specific reward ratio and calculation method to be announced by Sofa.org and subject to adjustment based on the platform's governance decisions.
 
-这一推荐机制的实施，不仅能够作为一个激励，鼓励现有用户推荐新用户加入，还能吸引潜在的机构和个人成为 broker，借此增加协议的曝光度和用户基数。它也为积极参与协议发展的成员提供了一个获得额外 $RCH 代币的机会。
+The implementation of this referral mechanism serves not only as an incentive encouraging current users to refer new users but also attracts potential institutions and individuals to become brokers, thereby increasing the protocol's exposure and user base. It also offers members who actively participate in the development of the protocol an opportunity to earn additional $RCH tokens.
 
-Sofa.org 将推荐奖励视为一种长期的市场发展战略。通过不断吸纳更多参与者入驻平台，并使他们从推荐活动中获益，我们一方面增加了流动性和市场活跃度，另一方面也构建了忠实和活跃的社区。这本质上是一个为所有参与者创造价值的可持续回馈循环。
+Sofa.org views the referral reward as a long-term market development strategy. By continuously attracting more participants to join the platform and enabling them to benefit from referral activities, we increase liquidity and market activity on one hand and build a loyal and active community on the other. This essentially creates a sustainable feedback loop that generates value for all participants.
 
-Sofa.org 的推荐奖励机制不仅是对推广工作的认可，更是平台增长的催化剂。我们欢迎每一位有意愿的支持者加入我们的行列，成为 Sofa.org 的推广大使，一起构建一个更繁荣、更坚固的 DeFi 世界。我们对于参与者的投入表示感谢，并承诺提供全力支持和相应的奖励。
+The referral reward mechanism of Sofa.org is not only a recognition of promotional efforts but also a catalyst for platform growth. We welcome every willing supporter to join our ranks, become a promoter for Sofa.org, and together build a more prosperous and robust DeFi world. We are grateful for the contributions of participants and commit to providing full support and corresponding rewards.
 

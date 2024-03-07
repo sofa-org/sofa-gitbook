@@ -1,42 +1,42 @@
 # Security
 
-在 Sofa.org，我们坚信安全性是构建和维护一个可信赖去中心化金融（DeFi）平台的基石。安全性覆盖资产安全、个人信息保护以及智能合约的可靠性等多个层面。我们采取了一系列严格的安全措施，从合约设计到持续监控，确保用户的资产和隐私得到全面保护。
+At Sofa.org, we firmly believe that security is the cornerstone of building and maintaining a trustworthy decentralized finance (DeFi) platform. Security encompasses asset safety, personal information protection, and the reliability of smart contracts, among other aspects. We have implemented a series of stringent security measures, from contract design to continuous monitoring, to ensure comprehensive protection of users' assets and privacy.
 
-## 简单即安全
+## Simplicity Equals Security
 
-Sofa.org 的智能合约是平台核心功能的载体。我们遵循“简单即安全”的设计原则，避免不必要的复杂性，减轻系统潜在的安全风险。智能合约之间的互动经过精心设计，以保证高效而清晰的逻辑流程，并通过这种方式减小错误和漏洞的可能性。合约开源透明，任何人都可对其进行审查。
+Sofa.org's smart contracts, which carry the platform's core functionalities, follow the principle of "simplicity equals security." This principle avoids unnecessary complexity, reducing potential security risks. The interaction between smart contracts is meticulously designed to ensure an efficient and clear logical process, thereby minimizing the possibility of errors and vulnerabilities. The contracts are open source and transparent, allowing anyone to review them.
 
-## 暂停机制
+## Pause Mechanism
 
-所有 Vault 合约均可在紧急情况下由协议管理者进行暂停，在暂停状态下，所有的活动均将停止进而避免资产产生损失。
+All Vault contracts can be paused by the protocol administrators in case of emergencies. In the paused state, all activities will cease, thus preventing potential asset losses.
 
-## 升级机制
+## Upgrade Mechanism
 
-所有 Vault 合约都继承了 OpenZepplin 提供的 Upgradeable 合约。在治理投票通过的情况下，合约可在不更改合约地址，完全保证资产安全的情况下进行逻辑上的升级，对漏洞进行修复或对功能进行优化。
+All Vault contracts inherit from OpenZepplin's Upgradeable contracts. With governance vote approval, contracts can be logically upgraded without changing the contract address, ensuring asset safety. This allows for the fixing of vulnerabilities or optimization of functionalities.
 
-## 头部安全公司多轮审计
+## Multiple Rounds of Audits by Top Security Firms
 
-我们认识到，第三方的专业审视对于捕捉和修复潜在的安全缺陷至关重要。因此，Sofa.org 的合约代码经过了多家头部安全公司的多轮审计。这些公司在智能合约安全领域享有盛誉，能够提供最高标准的安全审计服务。每次更新或新增功能，我们都会重新进行严格的安全审计。
+We recognize that third-party professional scrutiny is crucial for identifying and fixing potential security flaws. Therefore, Sofa.org's contract code has undergone multiple rounds of audits by top security companies known for their reputation in the smart contract security field, providing the highest standard of security audit services. With each update or addition of new functionalities, we conduct rigorous security audits again.
 
-## 7x24 异常活动监控
+## 24/7 Anomaly Activity Monitoring
 
-为持续保障资产安全，Sofa.org 实施了 7x24 小时的异常活动监控系统。该系统能够实时检测并响应不寻常的交易模式或行为，如潜在的安全攻击、资金异常流动等。在检测到威胁时，我们的监控系统可迅速触发报警，采取必要步骤以防止损失。
+To continuously ensure asset safety, Sofa.org has implemented a 24/7 anomaly activity monitoring system. This system can detect and respond to unusual transaction patterns or behaviors in real-time, such as potential security attacks or abnormal fund flows. Upon detecting threats, our monitoring system can quickly trigger alerts and take necessary steps to prevent losses.
 
-## 去中心化抗攻击
+## Decentralized Attack Resistance
 
-Sofa.org 平台运行在一个去中心化的服务器网络上，这意味着没有单点故障导致的系统停止服务的风险。在这种分布式架构中，数据被复制和分散存储于各个节点中，增强了系统的抗压性和抗攻击能力。不同于传统的集中化服务器架构，攻击者难以锁定单一的攻击目标；即使其中一个或部分节点受到攻击，网络其余部分仍然能够维持服务，保障用户资产的可用性和连续性。
+Sofa.org operates on a decentralized server network, meaning there is no risk of system downtime due to a single point of failure. In this distributed architecture, data is replicated and stored across various nodes, enhancing the system's resilience and resistance to attacks. Unlike traditional centralized server architectures, it is difficult for attackers to target a single point of attack; even if one or some nodes are compromised, the rest of the network can still maintain service, ensuring the availability and continuity of user assets.
 
-去中心化服务器为我们提供了一系列优势：
+Decentralized servers offer us a series of advantages:
 
-- **增强稳定性**：通过在全球范围内分散服务节点，我们确保了网站和应用服务的高稳定性，用户随时可以安全访问。
-- **提高可用性**：去中心化结构意味着没有中心节点会成为瓶颈或失败点，从而确保高可用性。
-- **降低被攻击的风险**：攻击者需要同时攻破多个节点才可能影响服务，这极大增加了攻击的难度，加强了安全防范。
+- **Enhanced Stability**: By dispersing service nodes worldwide, we ensure high stability for our websites and application services, allowing users to access them safely at any time.
+- **Improved Availability**: The decentralized structure means there are no central nodes that could become bottlenecks or failure points, thereby ensuring high availability.
+- **Reduced Risk of Attack**: Attackers would need to compromise multiple nodes simultaneously to impact the service, significantly increasing the difficulty of attacks and strengthening security measures.
 
-## 保护用户隐私
+## Protecting User Privacy
 
-我们在去中心化的基础上，还对用户隐私提供了深层次的保护。用户在 Sofa.org 平台上的所有操作都可以选择匿名进行，我们不收集或存储任何可用于识别用户身份的个人信息。
+On top of decentralization, we provide deep protection for user privacy. All operations conducted by users on the Sofa.org platform can be performed anonymously; we do not collect or store any personal information that can be used to identify users.
 
-通过使用区块链钱包交互，用户保持了完全的匿名性和自主性，他们可以控制自己的资金和数据，而无需担心个人信息泄露的风险。这种设计不仅保护了用户的隐私权利，同时也为其提供了一个不受外界眼光监视的安全交易环境。
+Interacting through blockchain wallets, users maintain complete anonymity and autonomy. They can control their funds and data without worrying about the risk of personal information leakage. This design not only protects users' privacy rights but also offers them a secure trading environment free from external scrutiny.
 
-Sofa.org 致力于提供一个安全、可靠、隐私保护的 DeFi 服务。通过简洁的合约设计、专业的审计合作、全天候的监控和无中心化的操作保证，我们为用户打造一个宁静安心的 DeFi 使用环境。用户的资产和隐私安全是我们的最高使命，我们将持续在技术和措施上创新，确保在整个 DeFi 领域内保持领先地位。
+Sofa.org is dedicated to providing a safe, reliable, and privacy-protecting DeFi service. With concise contract design, professional audit cooperation, round-the-clock monitoring, and decentralized operations, we create a serene and secure DeFi usage environment for users. The security of users' assets and privacy is our utmost mission, and we continue to innovate in technology and measures to maintain a leading position in the entire DeFi field.
 
