@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -328,7 +332,7 @@
                 <a href="../04-developers/01-marketmaker-open-apis.html">
             
                     
-                    MarketMaker Open APIs
+                    Open APIs for Market Maker
             
                 </a>
             
@@ -336,9 +340,22 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../04-developers/02-subgraphs.html">
+        <li class="chapter " data-level="1.5.2" data-path="../04-developers/02-dapp-open-apis.html">
             
-                <a href="../04-developers/02-subgraphs.html">
+                <a href="../04-developers/02-dapp-open-apis.html">
+            
+                    
+                    Open APIs for Dapp Developer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../04-developers/02-subgraphs.md">
+            
+                <span>
             
                     
                     Subgraphs
@@ -349,9 +366,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../04-developers/03-bug-bounty.html">
+        <li class="chapter " data-level="1.5.4" data-path="../04-developers/03-bug-bounty.md">
             
-                <a href="../04-developers/03-bug-bounty.html">
+                <span>
             
                     
                     Bug Bounty
@@ -484,29 +501,26 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="governance">Governance</h1>
-<p>&#x5728; Sofa.org&#xFF0C;&#x6211;&#x4EEC;&#x8BA4;&#x8BC6;&#x5230;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x6CBB;&#x7406;&#x5728; DeFi &#x751F;&#x6001;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x91CD;&#x8981;&#x6027;&#x3002;&#x6211;&#x4EEC;&#x7684;&#x6CBB;&#x7406;&#x6846;&#x67B6;&#x8D4B;&#x4E88; $SOFA &#x4EE3;&#x5E01;&#x6301;&#x6709;&#x8005;&#x5F71;&#x54CD;&#x51B3;&#x7B56;&#x548C;&#x5E73;&#x53F0;&#x672A;&#x6765;&#x53D1;&#x5C55;&#x65B9;&#x5411;&#x7684;&#x80FD;&#x529B;&#x3002;&#x901A;&#x8FC7;&#x7ED3;&#x5408;&#x591A;&#x7B7E;&#x94B1;&#x5305;&#x3001;Timelock&#xFF08;&#x5B9A;&#x65F6;&#x9501;&#xFF09;&#x5408;&#x7EA6;&#x4EE5;&#x53CA; Snapshot.org&#xFF0C;&#x6211;&#x4EEC;&#x786E;&#x4FDD;&#x6211;&#x4EEC;&#x7684;&#x6CBB;&#x7406;&#x8FC7;&#x7A0B;&#x662F;&#x900F;&#x660E;&#x3001;&#x5B89;&#x5168;&#x4E14;&#x5305;&#x5BB9;&#x7684;&#x3002;</p>
-<h2 id="sofa-&#x4EE3;&#x5E01;">$SOFA &#x4EE3;&#x5E01;</h2>
-<p>$SOFA &#x4EE3;&#x5E01;&#x662F; Sofa.org &#x6CBB;&#x7406;&#x7CFB;&#x7EDF;&#x7684;&#x6838;&#x5FC3;&#x3002;&#x4EE3;&#x5E01;&#x4F5C;&#x4E3A;&#x793E;&#x533A;&#x6210;&#x5458;&#x53C2;&#x4E0E;&#x6CBB;&#x7406;&#x5E76;&#x5BF9;&#x5404;&#x79CD;&#x63D0;&#x6848;&#x6216;&#x5021;&#x8BAE;&#x8FDB;&#x884C;&#x6295;&#x7968;&#x7684;&#x5DE5;&#x5177;&#x3002;&#x62E5;&#x6709; $SOFA &#x4EE3;&#x5E01;&#x7B49;&#x540C;&#x4E8E;&#x5728;&#x5E73;&#x53F0;&#x51B3;&#x7B56;&#x8FC7;&#x7A0B;&#x4E2D;&#x62E5;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x53D1;&#x8A00;&#x6743;&#x3002;</p>
-<h2 id="&#x591A;&#x7B7E;&#x94B1;&#x5305;&#x5728;&#x6CBB;&#x7406;&#x4E2D;&#x7684;&#x4F7F;&#x7528;">&#x591A;&#x7B7E;&#x94B1;&#x5305;&#x5728;&#x6CBB;&#x7406;&#x4E2D;&#x7684;&#x4F7F;&#x7528;</h2>
-<p>&#x591A;&#x7B7E;&#xFF0C;&#x5373;&#x591A;&#x91CD;&#x7B7E;&#x540D;&#xFF0C;&#x662F;&#x4E00;&#x79CD;&#x6570;&#x5B57;&#x7B7E;&#x540D;&#x65B9;&#x6848;&#xFF0C;&#x5141;&#x8BB8;&#x4E24;&#x4E2A;&#x6216;&#x66F4;&#x591A;&#x7528;&#x6237;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x7EC4;&#x6765;&#x7B7E;&#x7F72;&#x6587;&#x6863;&#x3002;&#x5BF9;&#x4E8E; Sofa.org &#x6765;&#x8BF4;&#xFF0C;&#x5173;&#x952E;&#x51B3;&#x7B56;&#x548C;&#x4EA4;&#x6613;&#x9700;&#x8981;&#x591A;&#x4E2A;&#x53D7;&#x4FE1;&#x4EFB;&#x7684;&#x793E;&#x533A;&#x6210;&#x5458;&#x7684;&#x5171;&#x8BC6;&#x3002;&#x8FD9;&#x786E;&#x4FDD;&#x4E86;&#x6CA1;&#x6709;&#x5355;&#x4E00;&#x5B9E;&#x4F53;&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x63A7;&#x5236;&#x5E73;&#x53F0;&#x8D44;&#x4EA7;&#x6216;&#x5355;&#x65B9;&#x9762;&#x4F5C;&#x51FA;&#x51B3;&#x7B56;&#x3002;</p>
-<h2 id="&#x6CBB;&#x7406;&#x4E2D;&#x7684;-timelock">&#x6CBB;&#x7406;&#x4E2D;&#x7684; Timelock</h2>
-<p>Timelock &#x662F;&#x4E00;&#x4E2A;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5B83;&#x5728;&#x63D0;&#x6848;&#x83B7;&#x6279;&#x548C;&#x6267;&#x884C;&#x4E4B;&#x95F4;&#x6DFB;&#x52A0;&#x4E86;&#x5EF6;&#x8FDF;&#x3002;&#x8FD9;&#x4E2A;&#x5EF6;&#x8FDF;&#x5BF9;&#x6240;&#x6709;&#x5229;&#x76CA;&#x76F8;&#x5173;&#x8005;&#x662F;&#x900F;&#x660E;&#x7684;&#xFF0C;&#x7ED9;&#x4E88;&#x6240;&#x6709;&#x53C2;&#x4E0E;&#x8005;&#x8DB3;&#x591F;&#x7684;&#x65F6;&#x95F4;&#x6765;&#x51C6;&#x5907;&#x5373;&#x5C06;&#x53D1;&#x751F;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x6216;&#x5728;&#x5FC5;&#x8981;&#x65F6;&#x6295;&#x7968;&#x53CD;&#x5BF9;&#x6076;&#x610F;&#x884C;&#x4E3A;&#x3002;&#x5B83;&#x4F5C;&#x4E3A;&#x4E00;&#x79CD;&#x5B89;&#x5168;&#x673A;&#x5236;&#xFF0C;&#x4FDD;&#x62A4;&#x751F;&#x6001;&#x7CFB;&#x7EDF;&#x4E2D;&#x6240;&#x6709;&#x53C2;&#x4E0E;&#x8005;&#x7684;&#x5229;&#x76CA;&#x3002;</p>
-<h2 id="&#x4F7F;&#x7528;-snapshotorg-&#x8FDB;&#x884C;&#x63D0;&#x6848;&#x6295;&#x7968;">&#x4F7F;&#x7528; Snapshot.org &#x8FDB;&#x884C;&#x63D0;&#x6848;&#x6295;&#x7968;</h2>
-<p>Snapshot.org &#x662F;&#x4E00;&#x4E2A;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x7684;&#x6295;&#x7968;&#x5E73;&#x53F0;&#xFF0C;&#x5141;&#x8BB8; $SOFA &#x4EE3;&#x5E01;&#x6301;&#x6709;&#x8005;&#x65E0;&#x9700;&#x652F;&#x4ED8;&#x4EA4;&#x6613;&#x8D39;&#xFF08;&#x56E0;&#x4E3A;&#x6295;&#x7968;&#x662F;&#x5728;&#x94FE;&#x4E0B;&#x8FDB;&#x884C;&#xFF09;&#x5C31;&#x80FD;&#x8868;&#x8FBE;&#x5BF9;&#x6CBB;&#x7406;&#x63D0;&#x6848;&#x7684;&#x504F;&#x597D;&#x3002;&#x901A;&#x8FC7; Snapshot.org&#xFF0C;&#x6295;&#x7968;&#x53D8;&#x5F97;&#x65E2;&#x65B9;&#x4FBF;&#x53C8;&#x9AD8;&#x6548;&#xFF0C;&#x4FC3;&#x8FDB;&#x4E86;&#x4EE3;&#x5E01;&#x6301;&#x6709;&#x8005;&#x793E;&#x533A;&#x7684;&#x5E7F;&#x6CDB;&#x53C2;&#x4E0E;&#x3002;</p>
-<h2 id="sofaorg-&#x6CBB;&#x7406;&#x7CFB;&#x7EDF;&#x7684;&#x4F18;&#x70B9;">Sofa.org &#x6CBB;&#x7406;&#x7CFB;&#x7EDF;&#x7684;&#x4F18;&#x70B9;</h2>
-<p>&#x6211;&#x4EEC;&#x7684;&#x6CBB;&#x7406;&#x8BBE;&#x7F6E;&#x7ED3;&#x5408;&#x4E86; $SOFA &#x4EE3;&#x5E01;&#x3001;&#x591A;&#x7B7E;&#x94B1;&#x5305;&#x3001;Timelock &#x548C; Snapshot.org&#xFF0C;&#x5177;&#x6709;&#x51E0;&#x4E2A;&#x5173;&#x952E;&#x4F18;&#x52BF;&#x3002;</p>
-<h3 id="&#x5B89;&#x5168;&#x6027;">&#x5B89;&#x5168;&#x6027;</h3>
-<p>&#x591A;&#x7B7E;&#x94B1;&#x5305;&#x7684;&#x4F7F;&#x7528;&#x8981;&#x6C42;&#x591A;&#x4E2A;&#x786E;&#x8BA4;&#x7B7E;&#x540D;&#x65B9;&#x6765;&#x6388;&#x6743;&#x4EA4;&#x6613;&#xFF0C;&#x8FD9;&#x5927;&#x5927;&#x589E;&#x5F3A;&#x4E86;&#x5B89;&#x5168;&#x6027;&#x5E76;&#x51CF;&#x5C11;&#x4E86;&#x5355;&#x4E00;&#x6545;&#x969C;&#x70B9;&#x7684;&#x98CE;&#x9669;&#x3002;</p>
-<h3 id="&#x900F;&#x660E;&#x5EA6;">&#x900F;&#x660E;&#x5EA6;</h3>
-<p>Timelock &#x5408;&#x7EA6;&#x5F3A;&#x5236;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x5BA1;&#x67E5;&#x671F;&#xFF0C;&#x5728;&#x6B64;&#x671F;&#x95F4;&#xFF0C;&#x6240;&#x6709;&#x5229;&#x76CA;&#x76F8;&#x5173;&#x8005;&#x53EF;&#x4EE5;&#x5728;&#x884C;&#x52A8;&#x6267;&#x884C;&#x4E4B;&#x524D;&#x5BA1;&#x67E5;&#x62DF;&#x8BAE;&#x7684;&#x884C;&#x52A8;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x5BA1;&#x67E5;&#x671F;&#x4F7F;&#x5F97;&#x6CBB;&#x7406;&#x8FC7;&#x7A0B;&#x5F00;&#x653E;&#x548C;&#x900F;&#x660E;&#x3002;</p>
-<h3 id="&#x6548;&#x7387;">&#x6548;&#x7387;</h3>
-<p>Snapshot.org &#x5141;&#x8BB8;&#x4EE5;&#x9AD8;&#x6548;&#x7684;&#x65B9;&#x5F0F;&#x6269;&#x5C55;&#x6CBB;&#x7406;&#x8FC7;&#x7A0B;&#x3002;&#x901A;&#x8FC7;&#x5728;&#x94FE;&#x4E0B;&#x8FDB;&#x884C;&#x6295;&#x7968;&#xFF0C;$SOFA &#x6301;&#x6709;&#x8005;&#x53EF;&#x4EE5;&#x53C2;&#x4E0E;&#x800C;&#x65E0;&#x9700;&#x652F;&#x4ED8;&#x71C3;&#x6C14;&#x8D39;&#xFF0C;&#x4ECE;&#x800C;&#x6D88;&#x9664;&#x4E86;&#x53C2;&#x4E0E;&#x7684;&#x8D22;&#x52A1;&#x969C;&#x788D;&#x3002;</p>
-<h3 id="&#x7075;&#x6D3B;&#x6027;">&#x7075;&#x6D3B;&#x6027;</h3>
-<p>&#x8FD9;&#x4E2A;&#x6CBB;&#x7406;&#x6846;&#x67B6;&#x5929;&#x751F;&#x5177;&#x6709;&#x7075;&#x6D3B;&#x6027;&#xFF0C;&#x9002;&#x5E94;&#x5E73;&#x53F0;&#x6F14;&#x53D8;&#x8FC7;&#x7A0B;&#x4E2D;&#x53EF;&#x80FD;&#x53D8;&#x5F97;&#x5FC5;&#x8981;&#x7684;&#x53D8;&#x5316;&#x3002;</p>
-<h3 id="&#x5305;&#x5BB9;&#x6027;">&#x5305;&#x5BB9;&#x6027;</h3>
-<p>&#x8BE5;&#x7CFB;&#x7EDF;&#x786E;&#x4FDD;&#x6BCF;&#x4E2A; $SOFA &#x6301;&#x6709;&#x8005;&#x5728;&#x6CBB;&#x7406;&#x8FC7;&#x7A0B;&#x4E2D;&#x90FD;&#x6709;&#x53D1;&#x8A00;&#x6743;&#xFF0C;&#x4FC3;&#x8FDB;&#x4E86;&#x4E00;&#x79CD;&#x5305;&#x5BB9;&#x6027;&#x5F3A;&#x548C;&#x793E;&#x533A;&#x9A71;&#x52A8;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x5851;&#x9020; Sofa.org &#x7684;&#x672A;&#x6765;&#x3002;</p>
-<h2 id="&#x7ED3;&#x8BBA;">&#x7ED3;&#x8BBA;</h2>
-<p>Sofa.org &#x7684;&#x6CBB;&#x7406;&#x7CFB;&#x7EDF;&#x65E8;&#x5728;&#x4F53;&#x73B0;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x548C;&#x516C;&#x5E73;&#x7684; DeFi &#x751F;&#x6001;&#x7CFB;&#x7EDF;&#x539F;&#x5219;&#xFF0C;&#x4F7F; $SOFA &#x6301;&#x6709;&#x8005;&#x80FD;&#x591F;&#x79EF;&#x6781;&#x53C2;&#x4E0E;&#x5851;&#x9020;&#x5E73;&#x53F0;&#x7684;&#x5F62;&#x6001;&#x3002;&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x591A;&#x5C42;&#x6B21;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x76F8;&#x4FE1;&#x6211;&#x4EEC;&#x4E3A;&#x6301;&#x4E45;&#x4E14;&#x53C2;&#x4E0E;&#x5F0F;&#x7684;&#x6CBB;&#x7406;&#x5EFA;&#x7ACB;&#x4E86;&#x575A;&#x5B9E;&#x7684;&#x57FA;&#x7840;&#xFF0C;&#x8FD9;&#x4E0E;&#x6211;&#x4EEC;&#x5BF9;&#x91D1;&#x878D;&#x672A;&#x6765;&#x7684;&#x613F;&#x666F;&#x662F;&#x4E00;&#x81F4;&#x7684;&#x3002;</p>
+<p>At Sofa.org, we recognize the importance of decentralized governance in the DeFi ecosystem. Our governance framework empowers $SOFA token holders with the ability to influence decisions and the future direction of the platform. By integrating multisig wallets, Timelock contracts, and Snapshot.org, we ensure that our governance process is transparent, secure, and inclusive.</p>
+<h2 id="core-mechanism">Core mechanism</h2>
+<ul>
+<li><strong>Multisig Wallets</strong>: These are used to require multiple approvals from designated community members or stakeholders before executing any transactions. This mechanism enhances security and ensures that decisions are made collectively rather than by a single entity.</li>
+<li><strong>Timelock Contracts</strong>: Timelock adds a delay between the initiation of a proposal and its execution. This delay provides a window during which the community can review and react to proposed changes, adding an additional layer of security and transparency.</li>
+<li><strong>Snapshot.org</strong>: Snapshot is a decentralized voting platform that allows $SOFA token holders to vote on proposals without spending gas fees. It facilitates community engagement and decision-making by providing a user-friendly interface for governance proposals and voting.</li>
+<li><strong>$SOFA Token</strong>: The $SOFA token is at the core of the Sofa.org governance system. The token serves as a tool for community members to participate in governance and vote on various proposals or initiatives. Holding $SOFA tokens equates to having a say in the platform&apos;s decision-making process.</li>
+</ul>
+<p>Through this combination of tools, Sofa.org&apos;s governance model ensures that every decision is made with community consensus, enhancing the democratic nature of the platform&apos;s development and ensuring that it remains aligned with the interests of its users and stakeholders. This governance model not only protects the platform from centralized points of failure but also fosters a strong sense of community and ownership among $SOFA token holders.</p>
+<h2 id="enhanced-analysis-of-sofaorg-governance-system-advantages">Enhanced Analysis of Sofa.org Governance System Advantages</h2>
+<h3 id="highly-secure-decision-making-mechanism">Highly Secure Decision-Making Mechanism</h3>
+<p>By implementing multisig wallets, Sofa.org introduces a collective decision-making process that requires multiple key holders to jointly approve significant decisions. This not only increases the security of control over funds and governance proposals but also reduces the risk of errors or malicious actions through multiparty review. For instance, any contract upgrades or fund movements necessitate approvals from several community members, ensuring decision quality and security.</p>
+<h3 id="transparency-in-proposal-review">Transparency in Proposal Review</h3>
+<p>Timelock contracts establish a mandatory waiting period before implementing proposals, during which all proposal details are open to the entire community. This allows community members ample time to discuss, review, and provide feedback on proposals, leading to more informed decision-making. For example, if there&apos;s a proposal to change the fee structure, the community will have sufficient time to analyze the impact of the proposal, raise questions, and suggest modifications.</p>
+<h3 id="barrier-free-community-participation">Barrier-Free Community Participation</h3>
+<p>The use of Snapshot.org significantly lowers the barrier to participating in governance. Through off-chain voting mechanisms, even users holding a small amount of $SOFA tokens can easily cast their votes without worrying about transaction fees. This method encourages broader community involvement and opinion expression, enhancing the democratic and inclusive nature of the governance process.</p>
+<h3 id="flexibility-and-adaptability-in-governance">Flexibility and Adaptability in Governance</h3>
+<p>The design of Sofa.org&apos;s governance structure allows for flexible adjustments to governance policies and mechanisms to accommodate evolving market and community needs. For example, through governance proposals and voting, the community can decide to introduce new governance tools or adjust existing rules, ensuring the governance system evolves with the project&apos;s growth.</p>
+<h3 id="constructing-an-integrated-governance-model">Constructing an Integrated Governance Model</h3>
+<p>Sofa.org&apos;s governance model combines several components like multisig wallets, Timelock, and Snapshot.org, forming an integrated governance ecosystem that secures both safety and transparency while maintaining high levels of participation and flexibility. This diversified governance structure provides a reliable, efficient, and dynamically adaptable governance example for the DeFi ecosystem.</p>
 
                                 
                                 </section>
@@ -550,7 +564,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Governance","level":"1.2.8","depth":2,"next":{"title":"Roadmap","level":"1.2.9","depth":2,"path":"01-our-protocol/09-roadmap.md","ref":"01-our-protocol/09-roadmap.md","articles":[]},"previous":{"title":"Security","level":"1.2.7","depth":2,"path":"01-our-protocol/07-security.md","ref":"01-our-protocol/07-security.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","languages":{"en":"English","zh":"中文"},"gitbook":"*"},"file":{"path":"01-our-protocol/08-governance.md","mtime":"2024-02-27T11:54:08.574Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-27T11:54:45.840Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Governance","level":"1.2.8","depth":2,"next":{"title":"Roadmap","level":"1.2.9","depth":2,"path":"01-our-protocol/09-roadmap.md","ref":"01-our-protocol/09-roadmap.md","articles":[]},"previous":{"title":"Security","level":"1.2.7","depth":2,"path":"01-our-protocol/07-security.md","ref":"01-our-protocol/07-security.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","languages":{"en":"English","zh":"中文"},"gitbook":"*"},"file":{"path":"01-our-protocol/08-governance.md","mtime":"2024-03-07T08:18:27.336Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-07T09:15:34.352Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>

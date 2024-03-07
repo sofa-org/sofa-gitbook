@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Oracles · GitBook</title>
+        <title>预言机 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="../../gitbook/style.css">
 
     
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
             
                 
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
@@ -107,7 +111,7 @@
                 <span>
             
                     
-                    OUR PROTOCOL
+                    我们的协议
             
                 </span>
             
@@ -121,7 +125,7 @@
                 <a href="01-vaults.html">
             
                     
-                    Vaults
+                    金库
             
                 </a>
             
@@ -134,7 +138,7 @@
                 <a href="02-positions.html">
             
                     
-                    Positions
+                    代币化头寸
             
                 </a>
             
@@ -147,7 +151,7 @@
                 <a href="03-oracles.html">
             
                     
-                    Oracles
+                    预言机
             
                 </a>
             
@@ -160,7 +164,7 @@
                 <a href="04-settlement.html">
             
                     
-                    Settlement
+                    结算
             
                 </a>
             
@@ -173,7 +177,7 @@
                 <a href="05-fees.html">
             
                     
-                    Fees
+                    手续费
             
                 </a>
             
@@ -186,7 +190,7 @@
                 <a href="06-referral.html">
             
                     
-                    Referral
+                    推荐奖励
             
                 </a>
             
@@ -199,7 +203,7 @@
                 <a href="07-security.html">
             
                     
-                    Security
+                    安全性
             
                 </a>
             
@@ -212,7 +216,7 @@
                 <a href="08-governance.html">
             
                     
-                    Governance
+                    治理
             
                 </a>
             
@@ -225,7 +229,7 @@
                 <a href="09-roadmap.html">
             
                     
-                    Roadmap
+                    路线图
             
                 </a>
             
@@ -243,7 +247,7 @@
                 <span>
             
                     
-                    Step-by-Step Guide
+                    用户手册
             
                 </span>
             
@@ -256,7 +260,7 @@
                 <span>
             
                     
-                    TOKENOMICS
+                    代币经济学
             
                 </span>
             
@@ -270,7 +274,7 @@
                 <a href="../03-tokenomics/01-dual-token-model.html">
             
                     
-                    Dual-token Model
+                    双代币模型
             
                 </a>
             
@@ -314,7 +318,7 @@
                 <span>
             
                     
-                    DEVELOPERS
+                    开发者
             
                 </span>
             
@@ -328,7 +332,7 @@
                 <a href="../04-developers/01-marketmaker-open-apis.html">
             
                     
-                    MarketMaker Open APIs
+                    面向做市商的Open APIs
             
                 </a>
             
@@ -336,9 +340,22 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../04-developers/02-subgraphs.html">
+        <li class="chapter " data-level="1.5.2" data-path="../04-developers/02-dapp-open-apis.html">
             
-                <a href="../04-developers/02-subgraphs.html">
+                <a href="../04-developers/02-dapp-open-apis.html">
+            
+                    
+                    面向DAPP开发者的Open APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../04-developers/02-subgraphs.md">
+            
+                <span>
             
                     
                     Subgraphs
@@ -349,12 +366,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../04-developers/03-bug-bounty.html">
+        <li class="chapter " data-level="1.5.4" data-path="../04-developers/03-bug-bounty.md">
             
-                <a href="../04-developers/03-bug-bounty.html">
+                <span>
             
                     
-                    Bug Bounty
+                    赏金计划
             
                 </a>
             
@@ -372,7 +389,7 @@
                 <span>
             
                     
-                    RESOURCES
+                    资源
             
                 </span>
             
@@ -386,7 +403,7 @@
                 <a href="../05-resources/01-links.html">
             
                     
-                    Links
+                    链接
             
                 </a>
             
@@ -399,7 +416,7 @@
                 <a href="../05-resources/02-audits.html">
             
                     
-                    Audits
+                    审计
             
                 </a>
             
@@ -412,7 +429,7 @@
                 <a href="../05-resources/03-deployment.html">
             
                     
-                    Deployment Address
+                    合约
             
                 </a>
             
@@ -468,7 +485,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Oracles</a>
+        <a href=".." >预言机</a>
     </h1>
 </div>
 
@@ -483,7 +500,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="oracles">Oracles</h1>
+                                <h1 id="&#x8BED;&#x8A00;&#x673A;">&#x8BED;&#x8A00;&#x673A;</h1>
 <p>&#x5728;&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x548C;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x91D1;&#x878D;&#xFF08;DeFi&#xFF09;&#x4E16;&#x754C;&#x4E2D;&#xFF0C;&#x53CA;&#x65F6;&#x3001;&#x51C6;&#x786E;&#x5730;&#x83B7;&#x53D6;&#x94FE;&#x5916;&#x6570;&#x636E;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x3002;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x672C;&#x8EAB;&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x5916;&#x90E8;&#x7CFB;&#x7EDF;&#x6216;&#x6570;&#x636E;&#x6E90;&#xFF0C;&#x800C;&#x9884;&#x8A00;&#x673A;&#xFF08;Oracles&#xFF09;&#x6865;&#x6881;&#x8FD9;&#x4E00;&#x7F3A;&#x53E3;&#xFF0C;&#x5C06;&#x94FE;&#x5916;&#x4E16;&#x754C;&#x7684;&#x4FE1;&#x606F;&#x5E26;&#x5165;&#x533A;&#x5757;&#x94FE;&#x4E0A;&#x3002;Sofa.org &#x5145;&#x5206;&#x5229;&#x7528;&#x9884;&#x8A00;&#x673A;&#x4E3A;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x53EF;&#x4FE1;&#x8D56;&#x7684;&#x6570;&#x636E;&#x670D;&#x52A1;&#xFF0C;&#x786E;&#x4FDD;&#x7ED3;&#x7B97;&#x8FC7;&#x7A0B;&#x7684;&#x900F;&#x660E;&#x6027;&#x548C;&#x53EF;&#x8FFD;&#x6EAF;&#x6027;&#x3002;ChainLink &#x9884;&#x8A00;&#x673A;&#x670D;&#x52A1;&#x56E0;&#x5176;&#x9AD8;&#x5EA6;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x3001;&#x53EF;&#x9760;&#x6027;&#x548C;&#x9002;&#x5E94;&#x6027;&#x800C;&#x88AB;&#x6211;&#x4EEC;&#x9009;&#x4E2D;&#xFF0C;&#x6210;&#x4E3A;&#x6211;&#x4EEC;&#x83B7;&#x53D6;&#x94FE;&#x5916;&#x6570;&#x636E;&#x7684;&#x4E3B;&#x8981;&#x65B9;&#x5F0F;&#x3002;</p>
 <p>&#x6BCF;&#x4E2A;&#x4EA7;&#x54C1;&#x5728;&#x5230;&#x671F;&#x65F6;&#x90FD;&#x9700;&#x8981;&#x4EF7;&#x683C;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x6700;&#x540E;&#x7684;&#x7ED3;&#x7B97;&#x3002;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x534F;&#x8BAE;&#x91CC;&#xFF0C;&#x4EF7;&#x683C;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x5206;&#x4E24;&#x79CD;&#x3002;&#x4E00;&#x79CD;&#x662F;&#x5728;&#x5230;&#x671F;&#x7684;&#x90A3;&#x4E2A;&#x65F6;&#x95F4;&#x70B9;&#x6807;&#x7684;&#x7269;&#x7684;&#x4EF7;&#x683C;&#xFF08;SmartTrend&#xFF09;&#xFF0C;&#x53E6;&#x4E00;&#x79CD;&#x662F;&#x9700;&#x8981;&#x4ECE;&#x5386;&#x53F2;&#x4EF7;&#x683C;&#x4E2D;&#x7EDF;&#x8BA1;&#x51FA;&#x6765;&#x7684;&#x4EF7;&#x683C;&#xFF08;DNT&#xFF09;&#x3002;</p>
 <h2 id="price-at-expire">Price at Expire</h2>
@@ -496,10 +513,10 @@
 <p>&#x4E3A;&#x786E;&#x4FDD;&#x4EA4;&#x6613;&#x7684;&#x7ED3;&#x7B97;&#x4EF7;&#x683C;&#x53CD;&#x6620;&#x771F;&#x5B9E;&#x5E02;&#x573A;&#x60C5;&#x51B5;&#xFF0C;Sofa.org &#x4F7F;&#x7528; ChainLink Data Feeds &#x83B7;&#x53D6;&#x73B0;&#x8D27;&#x4EF7;&#x683C;&#x3002;ChainLink Data Feeds &#x662F;&#x4E00;&#x7EC4;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x7684;&#x6570;&#x636E;&#x6E90;&#xFF0C;&#x5B83;&#x4EEC;&#x805A;&#x5408;&#x6765;&#x81EA;&#x4E0D;&#x540C;&#x4EA4;&#x6613;&#x6240;&#x7684;&#x4EF7;&#x683C;&#x4FE1;&#x606F;&#xFF0C;&#x4EE5;&#x63D0;&#x4F9B;&#x9AD8;&#x5EA6;&#x51C6;&#x786E;&#x548C;&#x7A33;&#x5B9A;&#x7684;&#x8D44;&#x4EA7;&#x4EF7;&#x683C;&#x6570;&#x636E;&#x3002;&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5B9E;&#x65F6;&#x4EF7;&#x683C;&#x6570;&#x636E;&#xFF0C;&#x786E;&#x4FDD;&#x4EA4;&#x6613;&#x548C;&#x5408;&#x7EA6;&#x6267;&#x884C;&#x57FA;&#x4E8E;&#x6700;&#x65B0;&#x548C;&#x6700;&#x516C;&#x6B63;&#x7684;&#x5E02;&#x573A;&#x60C5;&#x51B5;&#x3002;</p>
 <h2 id="chainlink-functions-&#x5386;&#x53F2;&#x4EF7;&#x683C;&#x670D;&#x52A1;">ChainLink Functions &#x5386;&#x53F2;&#x4EF7;&#x683C;&#x670D;&#x52A1;</h2>
 <p>&#x5728;&#x786E;&#x5B9A;&#x67D0;&#x4E9B;&#x884D;&#x751F;&#x54C1;&#x548C;&#x8D22;&#x52A1;&#x4EA7;&#x54C1;&#x7684;&#x4EF7;&#x503C;&#x65F6;&#xFF0C;&#x5386;&#x53F2;&#x4EF7;&#x683C;&#x6570;&#x636E;&#x53D8;&#x5F97;&#x540C;&#x6837;&#x91CD;&#x8981;&#x3002;&#x4E3A;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x9009;&#x7528; ChainLink Functions &#x4ECE; Coinbase &#x7B49;&#x77E5;&#x540D;&#x4EA4;&#x6613;&#x5E73;&#x53F0;&#x83B7;&#x53D6;&#x5386;&#x53F2;&#x4EF7;&#x683C;&#x3002;ChainLink Functions &#x662F;&#x4E00;&#x79CD;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x9884;&#x8A00;&#x673A;&#x529F;&#x80FD;&#xFF0C;&#x5B83;&#x5141;&#x8BB8;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x8C03;&#x7528;&#x5355;&#x4E2A; API &#x83B7;&#x53D6;&#x6240;&#x9700;&#x7684;&#x4EFB;&#x4F55;&#x6570;&#x636E;&#x3002;&#x901A;&#x8FC7; ChainLink Functions &#x5E26;&#x6765;&#x7684;&#x7075;&#x6D3B;&#x6027;&#xFF0C;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x5B9A;&#x5236;&#x83B7;&#x53D6;&#x5386;&#x53F2;&#x6570;&#x636E;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x652F;&#x6491;&#x6211;&#x4EEC;&#x590D;&#x6742;&#x7684;&#x91D1;&#x878D;&#x903B;&#x8F91;&#x548C;&#x4EA7;&#x54C1;&#x8BBE;&#x8BA1;&#x3002;</p>
-<p><img src="../../static/QH32bT29Poeyr3x4aXbuqKd5sXL.png" alt=""></p>
+<p><img src="../../static/Nv6IbAWmVolI2KxlHspuLCwPsGd.png" alt=""></p>
 <h2 id="chainlink-automation-&#x5B9A;&#x671F;&#x63A8;&#x9001;&#x670D;&#x52A1;">ChainLink Automation &#x5B9A;&#x671F;&#x63A8;&#x9001;&#x670D;&#x52A1;</h2>
 <p>&#x4E3A;&#x4FDD;&#x6301;&#x4EF7;&#x683C;&#x4FE1;&#x606F;&#x5728;&#x94FE;&#x4E0A;&#x662F;&#x6700;&#x65B0;&#x7684;&#xFF0C;Sofa.org &#x5229;&#x7528; ChainLink Automation&#xFF0C;&#x786E;&#x4FDD;&#x4EF7;&#x683C;&#x5B9A;&#x671F;&#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x63A8;&#x9001;&#x81F3;&#x533A;&#x5757;&#x94FE;&#x3002;ChainLink Automation&#xFF08;&#x4E4B;&#x524D;&#x79F0;&#x4E3A; ChainLink Keepers&#xFF09;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x7684;&#x7F51;&#x7EDC;&#xFF0C;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x53EF;&#x4EE5;&#x5B89;&#x6392;&#x548C;&#x81EA;&#x52A8;&#x6267;&#x884C;&#x590D;&#x6742;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x4F8B;&#x5982;&#x5B9A;&#x671F;&#x66F4;&#x65B0;&#x6570;&#x636E;&#x3001;&#x89E6;&#x53D1;&#x4E8B;&#x4EF6;&#x6216;&#x6267;&#x884C;&#x91CD;&#x8981;&#x7684;&#x5408;&#x7EA6;&#x8C03;&#x6574;&#x3002;&#x8FD9;&#x79CD;&#x81EA;&#x52A8;&#x5316;&#x786E;&#x4FDD;&#x4E86;&#x94FE;&#x4E0A;&#x4EF7;&#x683C;&#x603B;&#x662F;&#x53CD;&#x6620;&#x8FD1;&#x671F;&#x5E02;&#x573A;&#x72B6;&#x6001;&#xFF0C;&#x4E3A;&#x4F7F;&#x7528;&#x6211;&#x4EEC;&#x5E73;&#x53F0;&#x7684;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x5E94;&#x7528;&#x63D0;&#x4F9B;&#x4E86;&#x5FC5;&#x8981;&#x7684;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x3002;</p>
-<p><img src="../../static/UNncbrQncoFTamxkkcculuYus2e.png" alt=""></p>
+<p><img src="../../static/TdtlbrrEoodDgMxysrSuCwn5sOc.png" alt=""></p>
 <h2 id="&#x53EF;&#x8FFD;&#x6EAF;&#x548C;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;">&#x53EF;&#x8FFD;&#x6EAF;&#x548C;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;</h2>
 <p>&#x6574;&#x4E2A;&#x83B7;&#x53D6;&#x548C;&#x4F7F;&#x7528;&#x4EF7;&#x683C;&#x6570;&#x636E;&#x7684;&#x8FC7;&#x7A0B;&#x90FD;&#x662F;&#x5B8C;&#x5168;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x7684;&#xFF0C;&#x5728;&#x5408;&#x7EA6;&#x7EA7;&#x522B;&#x5B9E;&#x73B0;&#x4E86;&#x53EF;&#x8FFD;&#x6EAF;&#x6027;&#x3002;&#x6211;&#x4EEC;&#x4E3B;&#x5F20;&#x7684;&#x900F;&#x660E;&#x5316;&#x5904;&#x7406;&#x786E;&#x4FDD;&#x4E86;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x6B65;&#x90FD;&#x5BF9;&#x7528;&#x6237;&#x5F00;&#x653E;&#xFF0C;&#x53EF;&#x4F9B;&#x9A8C;&#x8BC1;&#x3002;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x6BCF;&#x4E00;&#x7B14;&#x4EF7;&#x683C;&#x66F4;&#x65B0;&#x7684;&#x6765;&#x6E90;&#xFF0C;&#x5305;&#x62EC;&#x5177;&#x4F53;&#x7684;&#x6570;&#x636E;&#x63D0;&#x4F9B;&#x8005;&#x548C;&#x5B83;&#x4EEC;&#x7684;&#x805A;&#x5408;&#x903B;&#x8F91;&#x3002;</p>
 <h2 id="&#x5BF9;-oracle-&#x670D;&#x52A1;&#x7684;&#x6301;&#x7EED;&#x521B;&#x65B0;">&#x5BF9; Oracle &#x670D;&#x52A1;&#x7684;&#x6301;&#x7EED;&#x521B;&#x65B0;</h2>
@@ -532,12 +549,12 @@
 
             
                 
-                <a href="02-positions.html" class="navigation navigation-prev " aria-label="Previous page: Positions">
+                <a href="02-positions.html" class="navigation navigation-prev " aria-label="Previous page: 代币化头寸">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="04-settlement.html" class="navigation navigation-next " aria-label="Next page: Settlement">
+                <a href="04-settlement.html" class="navigation navigation-next " aria-label="Next page: 结算">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -548,7 +565,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Oracles","level":"1.2.3","depth":2,"next":{"title":"Settlement","level":"1.2.4","depth":2,"path":"01-our-protocol/04-settlement.md","ref":"01-our-protocol/04-settlement.md","articles":[]},"previous":{"title":"Positions","level":"1.2.2","depth":2,"path":"01-our-protocol/02-positions.md","ref":"01-our-protocol/02-positions.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh","languages":{"en":"English","zh":"中文"},"gitbook":"*"},"file":{"path":"01-our-protocol/03-oracles.md","mtime":"2024-02-27T11:54:08.585Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-27T11:54:45.840Z"},"basePath":"..","book":{"language":"zh"}});
+            gitbook.page.hasChanged({"page":{"title":"预言机","level":"1.2.3","depth":2,"next":{"title":"结算","level":"1.2.4","depth":2,"path":"01-our-protocol/04-settlement.md","ref":"01-our-protocol/04-settlement.md","articles":[]},"previous":{"title":"代币化头寸","level":"1.2.2","depth":2,"path":"01-our-protocol/02-positions.md","ref":"01-our-protocol/02-positions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh","languages":{"en":"English","zh":"中文"},"gitbook":"*"},"file":{"path":"01-our-protocol/03-oracles.md","mtime":"2024-03-07T07:48:28.420Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-07T09:15:34.352Z"},"basePath":"..","book":{"language":"zh"}});
         });
     </script>
 </div>

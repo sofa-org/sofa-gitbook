@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -328,7 +332,7 @@
                 <a href="../04-developers/01-marketmaker-open-apis.html">
             
                     
-                    MarketMaker Open APIs
+                    Open APIs for Market Maker
             
                 </a>
             
@@ -336,9 +340,22 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../04-developers/02-subgraphs.html">
+        <li class="chapter " data-level="1.5.2" data-path="../04-developers/02-dapp-open-apis.html">
             
-                <a href="../04-developers/02-subgraphs.html">
+                <a href="../04-developers/02-dapp-open-apis.html">
+            
+                    
+                    Open APIs for Dapp Developer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../04-developers/02-subgraphs.md">
+            
+                <span>
             
                     
                     Subgraphs
@@ -349,9 +366,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../04-developers/03-bug-bounty.html">
+        <li class="chapter " data-level="1.5.4" data-path="../04-developers/03-bug-bounty.md">
             
-                <a href="../04-developers/03-bug-bounty.html">
+                <span>
             
                     
                     Bug Bounty
@@ -483,19 +500,20 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="positions">Positions</h1>
-<p>&#x5728; Sofa.org&#xFF0C;&#x6211;&#x4EEC;&#x91C7;&#x7528; ERC-1155 &#x591A;&#x4EE3;&#x5E01;&#x6807;&#x51C6;&#x5C06;&#x7528;&#x6237;&#x7684;&#x5934;&#x5BF8;&#xFF08;positions&#xFF09;&#x4EE3;&#x5E01;&#x5316;&#x3002;&#x76F8;&#x8F83;&#x4E8E;&#x4F20;&#x7EDF;&#x7684;&#x5355;&#x4E00;&#x8D44;&#x4EA7;&#x4EE3;&#x5E01;&#x6807;&#x51C6;&#xFF0C;ERC-1155 &#x5141;&#x8BB8;&#x5728;&#x5355;&#x4E00;&#x5408;&#x7EA6;&#x4E2D;&#x521B;&#x5EFA;&#x548C;&#x7BA1;&#x7406;&#x591A;&#x79CD;&#x4EE3;&#x5E01;&#xFF0C;&#x5E76;&#x4E14;&#x652F;&#x6301;&#x6BCF;&#x79CD;&#x4EE3;&#x5E01;&#x5177;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x7279;&#x6027;&#x3002;&#x8FD9;&#x79CD;&#x521B;&#x65B0;&#x4E0D;&#x4EC5;&#x8BA9;&#x7BA1;&#x7406;&#x548C;&#x4F20;&#x8F93;&#x591A;&#x79CD;&#x8D44;&#x4EA7;&#x6210;&#x4E3A;&#x53EF;&#x80FD;&#xFF0C;&#x4E5F;&#x4E3A;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x4E86;&#x989D;&#x5916;&#x7684;&#x7075;&#x6D3B;&#x6027;&#x548C;&#x6548;&#x7387;&#x3002;</p>
-<p>&#x901A;&#x8FC7; ERC-1155 &#x6807;&#x51C6;&#xFF0C;&#x76F8;&#x540C;&#x53C2;&#x6570;&#x7684;&#x5934;&#x5BF8;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x5408;&#x5E76;&#x3001;&#x62C6;&#x5206;&#xFF0C;&#x7C7B;&#x4F3C; ERC-20 &#x4EE3;&#x5E01;&#x90A3;&#x6837;&#x7B80;&#x4FBF;&#x7684;&#x8F6C;&#x8D26;&#x64CD;&#x4F5C;&#x3002;&#x8FD9;&#x5927;&#x5E45;&#x63D0;&#x5347;&#x4E86;&#x5934;&#x5BF8;&#x7684;&#x6D41;&#x901A;&#x6027;&#xFF0C;&#x4E3A;&#x7528;&#x6237;&#x6253;&#x5F00;&#x4E86;&#x8BF8;&#x5982;&#x94FE;&#x4E0A;&#x4EA4;&#x6613;&#x4EE5;&#x53CA;&#x66F4;&#x591A;&#x91D1;&#x878D;&#x64CD;&#x4F5C;&#x7684;&#x5927;&#x95E8;&#x3002;</p>
-<p><img src="../../static/QP7HbyzjwoVmvixZA7Bu5WffsIg.png" alt=""></p>
-<h2 id="&#x4EA4;&#x6613;">&#x4EA4;&#x6613;</h2>
-<p>&#x7528;&#x6237;&#x6301;&#x6709;&#x7684;&#x4EE3;&#x5E01;&#x5316;&#x5934;&#x5BF8;&#x53EF;&#x4EE5;&#x5728;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x4EA4;&#x6613;&#x6240;&#x8FDB;&#x884C;&#x4EA4;&#x6613;&#xFF0C;&#x5C31;&#x50CF;&#x4EA4;&#x6613;&#x666E;&#x901A;&#x7684; ERC-20 &#x4EE3;&#x5E01;&#x4E00;&#x6837;&#x3002;&#x8FD9;&#x4E3A;&#x5934;&#x5BF8;&#x7684;&#x4E70;&#x5356;&#x63D0;&#x4F9B;&#x4E86;&#x65E0;&#x7F1D;&#x7684;&#x5E02;&#x573A;&#x63A5;&#x5165;&#xFF0C;&#x6781;&#x5927;&#x5730;&#x63D0;&#x9AD8;&#x4E86;&#x4EA4;&#x6613;&#x6548;&#x7387;&#x548C;&#x4FBF;&#x6377;&#x6027;&#x3002;</p>
-<h2 id="&#x62B5;&#x62BC;&#x501F;&#x8D37;">&#x62B5;&#x62BC;&#x501F;&#x8D37;</h2>
-<p>&#x9664;&#x4E86;&#x94FE;&#x4E0A;&#x4EA4;&#x6613;&#xFF0C;&#x4EE3;&#x5E01;&#x5316;&#x7684;&#x5934;&#x5BF8;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x62B5;&#x62BC;&#x501F;&#x8D37;&#x3002;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x5934;&#x5BF8;&#x4F5C;&#x4E3A;&#x62B5;&#x62BC;&#x54C1;&#xFF0C;&#x4ECE;&#x800C;&#x83B7;&#x5F97;&#x5176;&#x4ED6;&#x52A0;&#x5BC6;&#x8D44;&#x4EA7;&#x6216;&#x7A33;&#x5B9A;&#x5E01;&#x7684;&#x501F;&#x8D37;&#xFF0C;&#x4E3A;&#x8D44;&#x91D1;&#x6D41;&#x52A8;&#x6027;&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x591A;&#x9009;&#x62E9;&#x3002;</p>
-<p><img src="../../static/VWtRb8qj9oTDkRxxuqluKFn9sbd.png" alt=""></p>
-<h2 id="&#x4E2D;&#x5FC3;&#x5316;&#x4EA4;&#x6613;&#x6240;">&#x4E2D;&#x5FC3;&#x5316;&#x4EA4;&#x6613;&#x6240;</h2>
-<p>&#x968F;&#x7740; DeFi &#x4E0E;&#x4E2D;&#x5FC3;&#x5316;&#x91D1;&#x878D;&#xFF08;CeFi&#xFF09;&#x4E4B;&#x95F4;&#x7684;&#x6865;&#x6881;&#x4E0D;&#x65AD;&#x5B8C;&#x5584;&#xFF0C;&#x4EE3;&#x5E01;&#x5316;&#x7684;&#x5934;&#x5BF8;&#x751A;&#x81F3;&#x6709;&#x673A;&#x4F1A;&#x88AB;&#x5145;&#x503C;&#x5230;&#x4E2D;&#x5FC3;&#x5316;&#x4EA4;&#x6613;&#x6240;&#xFF0C;&#x8FDB;&#x4E00;&#x6B65;&#x63D0;&#x9AD8;&#x8D44;&#x4EA7;&#x7684;&#x53EF;&#x6D41;&#x901A;&#x6027;&#x548C;&#x53EF;&#x5E94;&#x7528;&#x6027;&#x3002;</p>
-<p>&#x5728;&#x6211;&#x4EEC;&#x7684; vault &#x4E2D;&#xFF0C;&#x65E0;&#x6570;&#x4E2A;&#x5177;&#x6709;&#x4E0D;&#x540C;&#x53C2;&#x6570;&#x7684;&#x4EA7;&#x54C1;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x5B58;&#x5728;&#xFF0C;&#x8FD9;&#x4E3A;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x4E86;&#x4E30;&#x5BCC;&#x7684;&#x6295;&#x8D44;&#x9009;&#x62E9;&#x3002;&#x800C;&#x540C;&#x53C2;&#x6570;&#x7684;&#x4EA7;&#x54C1;&#x805A;&#x5408;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x62E5;&#x6709;&#x4E0E; ERC-20 &#x4EE3;&#x5E01;&#x76F8;&#x540C;&#x7684;&#x7075;&#x6D3B;&#x6027;&#x548C;&#x4FBF;&#x5229;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x65E0;&#x6469;&#x64E6;&#x5730;&#x8FDB;&#x884C;&#x8F6C;&#x79FB;&#x548C;&#x7BA1;&#x7406;&#x3002;</p>
-<p>&#x901A;&#x8FC7; ERC-1155 &#x6807;&#x51C6;&#x5BF9;&#x5934;&#x5BF8;&#x8FDB;&#x884C;&#x4EE3;&#x5E01;&#x5316;&#xFF0C;Sofa.org &#x5728;&#x786E;&#x4FDD;&#x6BCF;&#x4E2A;&#x6295;&#x8D44;&#x4EA7;&#x54C1;&#x7684;&#x72EC;&#x7279;&#x6027;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x4E5F;&#x5C06;&#x5408;&#x7EA6;&#x7684;&#x590D;&#x6742;&#x6027;&#x964D;&#x5230;&#x6700;&#x4F4E;&#x3002;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x4E0D;&#x4EC5;&#x4F18;&#x5316;&#x4E86;&#x5934;&#x5BF8;&#x7684;&#x7BA1;&#x7406;&#x548C;&#x6D41;&#x901A;&#xFF0C;&#x8FD8;&#x6269;&#x5C55;&#x4E86;&#x8D44;&#x4EA7;&#x7684;&#x53EF;&#x80FD;&#x7528;&#x9014;&#xFF0C;&#x5305;&#x62EC;&#x4EA4;&#x6613;&#x3001;&#x62B5;&#x62BC;&#x548C;&#x501F;&#x8D37;&#x7B49;&#xFF0C;&#x4E3A;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x4E86;&#x524D;&#x6240;&#x672A;&#x6709;&#x7684;&#x7075;&#x6D3B;&#x6027;&#x548C;&#x91D1;&#x878D;&#x64CD;&#x63A7;&#x6027;&#x3002;&#x6211;&#x4EEC;&#x81F4;&#x529B;&#x4E8E;&#x901A;&#x8FC7;&#x4E0D;&#x65AD;&#x521B;&#x65B0;&#xFF0C;&#x4E3A; Sofa.org &#x7684;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x66F4;&#x52A0;&#x4E30;&#x5BCC;&#x3001;&#x4FBF;&#x6377;&#x7684;&#x6295;&#x8D44;&#x548C;&#x4EA4;&#x6613;&#x4F53;&#x9A8C;&#x3002;</p>
+                                <h1 id="tokenized-positions">Tokenized Positions</h1>
+<p>At Sofa.org, we tokenize users&apos; positions using the ERC-1155 multi-token standard. Compared to traditional single-asset token standards, ERC-1155 allows the creation and management of multiple types of tokens within a single contract, with support for each type of token having different properties. This innovation not only makes it possible to manage and transfer a variety of assets but also offers users additional flexibility and efficiency.</p>
+<p>Through the ERC-1155 standard, positions with the same parameters can be merged or split, enabling transfers as conveniently as ERC-20 tokens. This significantly enhances the liquidity of positions, opening doors for users to engage in on-chain trading and many more financial operations.</p>
+<p><img src="../../static/Lqvlbw0ZrohWlXx6Vvou5dOtsxd.png" alt=""></p>
+<h2 id="feasible-cases-secondary-market-trading">Feasible Cases: Secondary Market Trading</h2>
+<p>Tokenized positions held by users can be traded on decentralized exchanges just like ordinary ERC-20 tokens. This provides seamless market access for buying and selling positions, greatly enhancing trading efficiency and convenience.</p>
+<h2 id="feasible-cases-collateralized-lending">Feasible Cases: Collateralized Lending</h2>
+<p>Besides on-chain trading, tokenized positions can also be used for collateralized lending. Users can use their positions as collateral to obtain loans in other cryptocurrencies or stablecoins, offering more options for liquidity.</p>
+<p><img src="../../static/P0iVbOKjAoTIq3xhnIoueHhOsVY.png" alt=""></p>
+<h2 id="feasible-cases-collateral-on-centralized-exchanges">Feasible Cases: Collateral on Centralized Exchanges</h2>
+<p>As the bridge between DeFi and centralized finance (CeFi) continues to improve, tokenized positions even have the opportunity to be deposited into centralized exchanges as collateral to support more derivative trading, further enhancing the liquidity and applicability of assets.</p>
+<h2 id="more-cases">More Cases</h2>
+<p>The above are just the three most common derivative scenarios realized through tokenized positions. In fact, in our vaults, countless products with different parameters can coexist, providing users with a wealth of investment choices. Products with the same parameters are aggregated together, offering the same flexibility and convenience as ERC-20 tokens, allowing users to transfer and manage them without friction.</p>
+<p>By tokenizing positions with the ERC-1155 standard, Sofa.org not only ensures the uniqueness of each investment product but also minimizes the complexity of contracts. This design not only optimizes the management and circulation of positions but also expands the possible uses of assets, including trading, collateralization, and lending, providing users with unprecedented flexibility and financial operability. We are committed to continuously innovating to offer Sofa.org users a richer and more convenient investment and trading experience.</p>
 
                                 
                                 </section>
@@ -539,7 +557,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Positions","level":"1.2.2","depth":2,"next":{"title":"Oracles","level":"1.2.3","depth":2,"path":"01-our-protocol/03-oracles.md","ref":"01-our-protocol/03-oracles.md","articles":[]},"previous":{"title":"Vaults","level":"1.2.1","depth":2,"path":"01-our-protocol/01-vaults.md","ref":"01-our-protocol/01-vaults.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","languages":{"en":"English","zh":"中文"},"gitbook":"*"},"file":{"path":"01-our-protocol/02-positions.md","mtime":"2024-02-27T11:54:08.573Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-27T11:54:45.840Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Positions","level":"1.2.2","depth":2,"next":{"title":"Oracles","level":"1.2.3","depth":2,"path":"01-our-protocol/03-oracles.md","ref":"01-our-protocol/03-oracles.md","articles":[]},"previous":{"title":"Vaults","level":"1.2.1","depth":2,"path":"01-our-protocol/01-vaults.md","ref":"01-our-protocol/01-vaults.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","languages":{"en":"English","zh":"中文"},"gitbook":"*"},"file":{"path":"01-our-protocol/02-positions.md","mtime":"2024-03-07T08:13:23.694Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-07T09:15:34.352Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>

@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -103,7 +107,7 @@
                 <span>
             
                     
-                    OUR PROTOCOL
+                    我们的协议
             
                 </span>
             
@@ -117,7 +121,7 @@
                 <a href="01-our-protocol/01-vaults.html">
             
                     
-                    Vaults
+                    金库
             
                 </a>
             
@@ -130,7 +134,7 @@
                 <a href="01-our-protocol/02-positions.html">
             
                     
-                    Positions
+                    代币化头寸
             
                 </a>
             
@@ -143,7 +147,7 @@
                 <a href="01-our-protocol/03-oracles.html">
             
                     
-                    Oracles
+                    预言机
             
                 </a>
             
@@ -156,7 +160,7 @@
                 <a href="01-our-protocol/04-settlement.html">
             
                     
-                    Settlement
+                    结算
             
                 </a>
             
@@ -169,7 +173,7 @@
                 <a href="01-our-protocol/05-fees.html">
             
                     
-                    Fees
+                    手续费
             
                 </a>
             
@@ -182,7 +186,7 @@
                 <a href="01-our-protocol/06-referral.html">
             
                     
-                    Referral
+                    推荐奖励
             
                 </a>
             
@@ -195,7 +199,7 @@
                 <a href="01-our-protocol/07-security.html">
             
                     
-                    Security
+                    安全性
             
                 </a>
             
@@ -208,7 +212,7 @@
                 <a href="01-our-protocol/08-governance.html">
             
                     
-                    Governance
+                    治理
             
                 </a>
             
@@ -221,7 +225,7 @@
                 <a href="01-our-protocol/09-roadmap.html">
             
                     
-                    Roadmap
+                    路线图
             
                 </a>
             
@@ -239,7 +243,7 @@
                 <span>
             
                     
-                    Step-by-Step Guide
+                    用户手册
             
                 </span>
             
@@ -252,7 +256,7 @@
                 <span>
             
                     
-                    TOKENOMICS
+                    代币经济学
             
                 </span>
             
@@ -266,7 +270,7 @@
                 <a href="03-tokenomics/01-dual-token-model.html">
             
                     
-                    Dual-token Model
+                    双代币模型
             
                 </a>
             
@@ -310,7 +314,7 @@
                 <span>
             
                     
-                    DEVELOPERS
+                    开发者
             
                 </span>
             
@@ -324,7 +328,7 @@
                 <a href="04-developers/01-marketmaker-open-apis.html">
             
                     
-                    MarketMaker Open APIs
+                    面向做市商的Open APIs
             
                 </a>
             
@@ -332,9 +336,22 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="04-developers/02-subgraphs.html">
+        <li class="chapter " data-level="1.5.2" data-path="04-developers/02-dapp-open-apis.html">
             
-                <a href="04-developers/02-subgraphs.html">
+                <a href="04-developers/02-dapp-open-apis.html">
+            
+                    
+                    面向DAPP开发者的Open APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="04-developers/02-subgraphs.md">
+            
+                <span>
             
                     
                     Subgraphs
@@ -345,12 +362,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="04-developers/03-bug-bounty.html">
+        <li class="chapter " data-level="1.5.4" data-path="04-developers/03-bug-bounty.md">
             
-                <a href="04-developers/03-bug-bounty.html">
+                <span>
             
                     
-                    Bug Bounty
+                    赏金计划
             
                 </a>
             
@@ -368,7 +385,7 @@
                 <span>
             
                     
-                    RESOURCES
+                    资源
             
                 </span>
             
@@ -382,7 +399,7 @@
                 <a href="05-resources/01-links.html">
             
                     
-                    Links
+                    链接
             
                 </a>
             
@@ -395,7 +412,7 @@
                 <a href="05-resources/02-audits.html">
             
                     
-                    Audits
+                    审计
             
                 </a>
             
@@ -408,7 +425,7 @@
                 <a href="05-resources/03-deployment.html">
             
                     
-                    Deployment Address
+                    合约
             
                 </a>
             
@@ -479,43 +496,63 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="introduction">Introduction</h1>
-<h2 id="what-are-we-trying-to-accomplish">What Are We Trying To Accomplish</h2>
-<h3 id="cefi-lack-of-transparency">CeFi lack of transparency</h3>
-<p>The crashes of CeFi giants like 3AC, FTX, and Genesis have yet again brought to light the issues with centralization. Investors are now seeking greater transparency, protection of assets, and predictable outcomes without any unexpected shocks.</p>
-<h3 id="lack-of-user-friendly-cefi-comparable-structured-products-on-defi">Lack of user friendly, CeFi comparable structured products on DeFi</h3>
-<p>The progress and adoption of professional structured products on DeFi are still in the early phases. Despite the abundance of protocols in the DeFi space, the majority of them offer yield products that are quite similar and fall within limited categories such as AMM LP, lending, LSD, and cash-settled options selling. At present, there are very few DeFi protocols that can offer structured products that can match the ease of use and complexity of products provided by CeFi, let alone the more intricate products that are prevalent in traditional finance.</p>
-<h3 id="build-transparency-friendly-composability-flexibility-variety-structured-products-on-defi">Build transparency, friendly, composability, flexibility, variety structured products on DeFi</h3>
-<p>In DeFi, building transparency, friendliness, composability, flexibility, and variety in structured products is crucial. These products not only offer users more financial tools and opportunities but also drive innovation and development across the entire industry.</p>
-<p>Transparency is the foundation of constructing DeFi structured products. Through blockchain technology, all transactions and operations can be recorded and traced, allowing users to view and verify the workings and performance of the products at any time. Transparency increases user trust and contributes to a fair and equitable market environment.</p>
-<p>Friendliness is a significant factor in focusing on user experience. User interfaces should be intuitive, easy to navigate, and operate. Moreover, products should consider user needs and interests, providing clear explanations and help documentation to ensure users fully understand the product&apos;s features and risks.</p>
-<p>Composability refers to the seamless integration and interaction of DeFi structured products with other products and services. This enables users to combine different products based on their needs and investment strategies, achieving more complexity and customization.</p>
-<p>Flexibility is essential in structured products on DeFi. Users should have the flexibility to customize and tailor the products to their specific requirements, whether it&apos;s adjusting parameters, selecting risk profiles, or choosing different investment strategies. Providing this flexibility empowers users and enhances their ability to optimize their financial activities.</p>
-<p>Lastly, variety plays a significant role in offering a range of structured products on DeFi. Diverse options allow users to choose from various risk levels, asset classes, investment horizons, and reward structures. This variety not only caters to different user preferences but also contributes to the overall growth and maturity of the DeFi ecosystem.</p>
-<p>By focusing on transparency, friendliness, composability, flexibility, and variety, we can create a vibrant and inclusive DeFi landscape that empowers users and fosters innovation.</p>
-<h2 id="protocol-implementation">Protocol Implementation</h2>
-<p>Sofa.org collaborates with institutional Market Makers who provide streaming market prices to the platform. When a client logs in to trade, the client&apos;s subscription assets are automatically sent to the DeFi vault as soon as they choose to trade on the quote. The market maker&apos;s premium is also automatically transferred to the vault. Once both client subscription assets and market maker premium are in the vault, it is locked, and no one can touch the assets. Both of them will get the proper amount tokens minted which stand for their positions. The position tokens can be transferred or traded like normal ERC20.</p>
-<p><img src="../../static/TJ4tbyeM2oaXRAxc4kkuA8g6sVb.png" alt=""></p>
-<p>The collateral in the vault would be staked into mature and safe yield earn protocols like Compound, AAVE and etc. to earn interests for clients.</p>
-<p><img src="../../static/Sh3RbVDbuoCC67x0PLBueeP2s08.png" alt=""></p>
-<p>The vault contract use ERC1155 standard. Position tokens with the same strike price and expire time can be transferred like ERC20. Tokens with different strike prices or the expiration time have different token id(NFT) but in the same vault contract.</p>
-<p>All position tokens with the same expiration time can be settled once, which can save gas significantly.</p>
-<h2 id="features">Features</h2>
-<h3 id="position-tokenlization">Position Tokenlization</h3>
-<p>Both clients and market makers can transfer their position tokens. They can trade, stake or do anything as they did to their ERC20 tokens.</p>
-<h3 id="flexibility">Flexibility</h3>
-<p>Support structured products with different expiration dates, strike prices, tokens, and strategies, providing a one-stop solution to meet all user needs.</p>
-<h3 id="composability">Composability</h3>
-<p>Side protocols can be built from the SOFA protocol, including lending, swap, staking, yields and etc.</p>
-<h3 id="transparency">Transparency</h3>
-<p>All assets are on chain, and all transaction records are traceable on the chain, ensuring the transparency of the protocol.</p>
-<h3 id="friendly">Friendly</h3>
-<p>By utilizing professional product design and process optimization, the learning curve is greatly reduced, making it simple, easy to understand, and user-friendly.</p>
-<h3 id="variety">Variety</h3>
-<p>A variety of products can be supported by the structure of offchain RFQ + onchain vault.</p>
-<h3 id="erc1155">ERC1155</h3>
-<p>ERC1155 is a token standard on the Ethereum that enables the creation of fungible and non-fungible tokens within the same smart contract. This means that developers can create a single smart contract that can manage multiple tokens, including both non-fungible tokens and fungible tokens that can be traded interchangeably. It provides a more efficient and flexible solution for managing a large number of assets while reducing gas costs and minimizing the need for multiple smart contracts.</p>
-<h3 id="gas-efficiency">Gas efficiency</h3>
+                                <h1 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h1>
+<h2 id="&#x6211;&#x4EEC;&#x8BD5;&#x56FE;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;">&#x6211;&#x4EEC;&#x8BD5;&#x56FE;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;</h2>
+<ul>
+<li><p><strong>&#x4E2D;&#x5FC3;&#x5316;&#x91D1;&#x878D;&#xFF08;CeFi&#xFF09;&#x7684;&#x900F;&#x660E;&#x5EA6;&#x7F3A;&#x5931;</strong></p>
+<p>&#x4E2D;&#x5FC3;&#x5316;&#x91D1;&#x878D;&#x5DE8;&#x5934;&#x5982; 3AC&#x3001;FTX &#x548C; Genesis &#x7684;&#x5D29;&#x6E83;&#x518D;&#x6B21;&#x66B4;&#x9732;&#x4E86;&#x4E2D;&#x5FC3;&#x5316;&#x7684;&#x95EE;&#x9898;&#x3002;&#x6295;&#x8D44;&#x8005;&#x73B0;&#x5728;&#x5BFB;&#x6C42;&#x66F4;&#x5927;&#x7684;&#x900F;&#x660E;&#x5EA6;&#x3001;&#x8D44;&#x4EA7;&#x4FDD;&#x62A4;&#x548C;&#x53EF;&#x9884;&#x6D4B;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4EFB;&#x4F55;&#x610F;&#x5916;&#x7684;&#x51B2;&#x51FB;&#x3002;</p>
+</li>
+<li><p><strong>DeFi &#x7F3A;&#x4E4F;&#x7528;&#x6237;&#x53CB;&#x597D;&#x3001;&#x53EF;&#x4E0E; CeFi &#x5AB2;&#x7F8E;&#x7684;&#x7ED3;&#x6784;&#x5316;&#x4EA7;&#x54C1;</strong></p>
+<p>DeFi &#x4E2D;&#x4E13;&#x4E1A;&#x7ED3;&#x6784;&#x5316;&#x4EA7;&#x54C1;&#x7684;&#x8FDB;&#x5C55;&#x548C;&#x91C7;&#x7528;&#x4ECD;&#x5904;&#x4E8E;&#x65E9;&#x671F;&#x9636;&#x6BB5;&#x3002;&#x5C3D;&#x7BA1; DeFi &#x7A7A;&#x95F4;&#x4E2D;&#x7684;&#x534F;&#x8BAE;&#x4F17;&#x591A;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x63D0;&#x4F9B;&#x7684;&#x6536;&#x76CA;&#x4EA7;&#x54C1;&#x5927;&#x591A;&#x76F8;&#x4F3C;&#xFF0C;&#x4E14;&#x4EC5;&#x9650;&#x4E8E;&#x5C11;&#x6570;&#x7C7B;&#x522B;&#xFF0C;&#x5982; AMM LP&#x3001;&#x501F;&#x8D37;&#x3001;LSD &#x548C;&#x73B0;&#x91D1;&#x7ED3;&#x7B97;&#x671F;&#x6743;&#x9500;&#x552E;&#x3002;&#x76EE;&#x524D;&#xFF0C;&#x5F88;&#x5C11;&#x6709; DeFi &#x534F;&#x8BAE;&#x80FD;&#x591F;&#x63D0;&#x4F9B;&#x53EF;&#x4E0E; CeFi &#x63D0;&#x4F9B;&#x7684;&#x6613;&#x7528;&#x6027;&#x548C;&#x4EA7;&#x54C1;&#x590D;&#x6742;&#x6027;&#x76F8;&#x5339;&#x914D;&#x7684;&#x7ED3;&#x6784;&#x5316;&#x4EA7;&#x54C1;&#xFF0C;&#x66F4;&#x4E0D;&#x7528;&#x8BF4;&#x4F20;&#x7EDF;&#x91D1;&#x878D;&#x4E2D;&#x666E;&#x904D;&#x5B58;&#x5728;&#x7684;&#x66F4;&#x590D;&#x6742;&#x4EA7;&#x54C1;&#x4E86;&#x3002;</p>
+</li>
+<li><p><strong>&#x5728; DeFi &#x4E0A;&#x6784;&#x5EFA;&#x900F;&#x660E;&#x5EA6;&#x3001;&#x53CB;&#x597D;&#x6027;&#x3001;&#x53EF;&#x7EC4;&#x5408;&#x6027;&#x3001;&#x7075;&#x6D3B;&#x6027;&#x548C;&#x591A;&#x6837;&#x6027;&#x7684;&#x7ED3;&#x6784;&#x5316;&#x4EA7;&#x54C1;</strong></p>
+<p>&#x5728; DeFi &#x4E2D;&#xFF0C;&#x6784;&#x5EFA;&#x900F;&#x660E;&#x5EA6;&#x3001;&#x53CB;&#x597D;&#x6027;&#x3001;&#x53EF;&#x7EC4;&#x5408;&#x6027;&#x3001;&#x7075;&#x6D3B;&#x6027;&#x548C;&#x591A;&#x6837;&#x6027;&#x7684;&#x7ED3;&#x6784;&#x5316;&#x4EA7;&#x54C1;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x3002;&#x8FD9;&#x4E9B;&#x4EA7;&#x54C1;&#x4E0D;&#x4EC5;&#x4E3A;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x591A;&#x7684;&#x91D1;&#x878D;&#x5DE5;&#x5177;&#x548C;&#x673A;&#x4F1A;&#xFF0C;&#x4E5F;&#x63A8;&#x52A8;&#x4E86;&#x6574;&#x4E2A;&#x884C;&#x4E1A;&#x7684;&#x521B;&#x65B0;&#x548C;&#x53D1;&#x5C55;&#x3002;</p>
+</li>
+</ul>
+<h2 id="&#x5B9E;&#x73B0;&#x900F;&#x660E;&#x5EA6;&#x3001;&#x53CB;&#x597D;&#x6027;&#x3001;&#x53EF;&#x7EC4;&#x5408;&#x6027;&#x3001;&#x7075;&#x6D3B;&#x6027;&#x548C;&#x591A;&#x6837;&#x6027;&#x7684;&#x5173;&#x952E;">&#x5B9E;&#x73B0;&#x900F;&#x660E;&#x5EA6;&#x3001;&#x53CB;&#x597D;&#x6027;&#x3001;&#x53EF;&#x7EC4;&#x5408;&#x6027;&#x3001;&#x7075;&#x6D3B;&#x6027;&#x548C;&#x591A;&#x6837;&#x6027;&#x7684;&#x5173;&#x952E;</h2>
+<ul>
+<li><strong>&#x900F;&#x660E;&#x5EA6;</strong>&#xFF1A;&#x900F;&#x660E;&#x5EA6;&#x662F;&#x6784;&#x5EFA; DeFi &#x7ED3;&#x6784;&#x5316;&#x4EA7;&#x54C1;&#x7684;&#x57FA;&#x77F3;&#x3002;&#x901A;&#x8FC7;&#x533A;&#x5757;&#x94FE;&#x6280;&#x672F;&#xFF0C;&#x6240;&#x6709;&#x4EA4;&#x6613;&#x548C;&#x64CD;&#x4F5C;&#x90FD;&#x53EF;&#x4EE5;&#x88AB;&#x8BB0;&#x5F55;&#x548C;&#x8FFD;&#x8E2A;&#xFF0C;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x968F;&#x65F6;&#x67E5;&#x770B;&#x548C;&#x9A8C;&#x8BC1;&#x4EA7;&#x54C1;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x548C;&#x6027;&#x80FD;&#x3002;&#x900F;&#x660E;&#x5EA6;&#x63D0;&#x9AD8;&#x4E86;&#x7528;&#x6237;&#x4FE1;&#x4EFB;&#xFF0C;&#x5E76;&#x6709;&#x52A9;&#x4E8E;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x516C;&#x5E73;&#x548C;&#x516C;&#x6B63;&#x7684;&#x5E02;&#x573A;&#x73AF;&#x5883;&#x3002;</li>
+<li><strong>&#x53CB;&#x597D;&#x6027;</strong>&#xFF1A;&#x5173;&#x6CE8;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x662F;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x56E0;&#x7D20;&#x3002;&#x7528;&#x6237;&#x754C;&#x9762;&#x5E94;&#x76F4;&#x89C2;&#x3001;&#x6613;&#x4E8E;&#x5BFC;&#x822A;&#x548C;&#x64CD;&#x4F5C;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x4EA7;&#x54C1;&#x5E94;&#x8003;&#x8651;&#x7528;&#x6237;&#x9700;&#x6C42;&#x548C;&#x5174;&#x8DA3;&#xFF0C;&#x63D0;&#x4F9B;&#x6E05;&#x6670;&#x7684;&#x89E3;&#x91CA;&#x548C;&#x5E2E;&#x52A9;&#x6587;&#x6863;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD;&#x7528;&#x6237;&#x5B8C;&#x5168;&#x7406;&#x89E3;&#x4EA7;&#x54C1;&#x7684;&#x529F;&#x80FD;&#x548C;&#x98CE;&#x9669;&#x3002;</li>
+<li><strong>&#x53EF;&#x7EC4;&#x5408;&#x6027;</strong>&#xFF1A;&#x53EF;&#x7EC4;&#x5408;&#x6027;&#x6307;&#x7684;&#x662F; DeFi &#x7ED3;&#x6784;&#x5316;&#x4EA7;&#x54C1;&#x4E0E;&#x5176;&#x4ED6;&#x4EA7;&#x54C1;&#x548C;&#x670D;&#x52A1;&#x7684;&#x65E0;&#x7F1D;&#x96C6;&#x6210;&#x548C;&#x4EA4;&#x4E92;&#x3002;&#x8FD9;&#x4F7F;&#x5F97;&#x7528;&#x6237;&#x80FD;&#x591F;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x9700;&#x6C42;&#x548C;&#x6295;&#x8D44;&#x7B56;&#x7565;&#x7EC4;&#x5408;&#x4E0D;&#x540C;&#x7684;&#x4EA7;&#x54C1;&#xFF0C;&#x5B9E;&#x73B0;&#x66F4;&#x591A;&#x7684;&#x590D;&#x6742;&#x6027;&#x548C;&#x5B9A;&#x5236;&#x5316;&#x3002;</li>
+<li><strong>&#x7075;&#x6D3B;&#x6027;</strong>&#xFF1A;&#x5728; DeFi &#x4E0A;&#x7684;&#x7ED3;&#x6784;&#x5316;&#x4EA7;&#x54C1;&#x4E2D;&#xFF0C;&#x7075;&#x6D3B;&#x6027;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x3002;&#x7528;&#x6237;&#x5E94;&#x6709;&#x7075;&#x6D3B;&#x6027;&#x6765;&#x5B9A;&#x5236;&#x548C;&#x8C03;&#x6574;&#x4EA7;&#x54C1;&#x4EE5;&#x6EE1;&#x8DB3;&#x5176;&#x5177;&#x4F53;&#x8981;&#x6C42;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x8C03;&#x6574;&#x53C2;&#x6570;&#x3001;&#x9009;&#x62E9;&#x98CE;&#x9669;&#x6863;&#x6B21;&#x8FD8;&#x662F;&#x9009;&#x62E9;&#x4E0D;&#x540C;&#x7684;&#x6295;&#x8D44;&#x7B56;&#x7565;&#x3002;&#x63D0;&#x4F9B;&#x8FD9;&#x79CD;&#x7075;&#x6D3B;&#x6027;&#x80FD;&#x591F;&#x8D4B;&#x4E88;&#x7528;&#x6237;&#x6743;&#x529B;&#xFF0C;&#x5E76;&#x589E;&#x5F3A;&#x4ED6;&#x4EEC;&#x4F18;&#x5316;&#x8D22;&#x52A1;&#x6D3B;&#x52A8;&#x7684;&#x80FD;&#x529B;&#x3002;</li>
+<li><strong>&#x591A;&#x6837;&#x6027;</strong>&#xFF1A;&#x5728; DeFi &#x4E0A;&#x63D0;&#x4F9B;&#x4E00;&#x7CFB;&#x5217;&#x7ED3;&#x6784;&#x5316;&#x4EA7;&#x54C1;&#x4E2D;&#xFF0C;&#x591A;&#x6837;&#x6027;&#x626E;&#x6F14;&#x4E86;&#x91CD;&#x8981;&#x89D2;&#x8272;&#x3002;&#x591A;&#x79CD;&#x9009;&#x62E9;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x98CE;&#x9669;&#x6C34;&#x5E73;&#x3001;&#x8D44;&#x4EA7;&#x7C7B;&#x522B;&#x3001;&#x6295;&#x8D44;&#x671F;&#x9650;&#x548C;&#x5956;&#x52B1;&#x7ED3;&#x6784;&#x4E2D;&#x8FDB;&#x884C;&#x9009;&#x62E9;&#x3002;&#x8FD9;&#x79CD;&#x591A;&#x6837;&#x6027;&#x4E0D;&#x4EC5;&#x8FCE;&#x5408;&#x4E86;&#x4E0D;&#x540C;&#x7528;&#x6237;&#x7684;&#x504F;&#x597D;&#xFF0C;&#x4E5F;&#x4FC3;&#x8FDB;&#x4E86; DeFi &#x751F;&#x6001;&#x7CFB;&#x7EDF;&#x7684;&#x6574;&#x4F53;&#x589E;&#x957F;&#x548C;&#x6210;&#x719F;&#x3002;</li>
+</ul>
+<p>&#x901A;&#x8FC7;&#x4E13;&#x6CE8;&#x4E8E;&#x900F;&#x660E;&#x5EA6;&#x3001;&#x53CB;&#x597D;&#x6027;&#x3001;&#x53EF;&#x7EC4;&#x5408;&#x6027;&#x3001;&#x7075;&#x6D3B;&#x6027;&#x548C;</p>
+<p>&#x591A;&#x6837;&#x6027;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5145;&#x6EE1;&#x6D3B;&#x529B;&#x548C;&#x5305;&#x5BB9;&#x6027;&#x7684; DeFi &#x666F;&#x89C2;&#xFF0C;&#x8D4B;&#x4E88;&#x7528;&#x6237;&#x6743;&#x529B;&#x5E76;&#x4FC3;&#x8FDB;&#x521B;&#x65B0;&#x3002;</p>
+<h2 id="&#x534F;&#x8BAE;&#x5B9E;&#x73B0;">&#x534F;&#x8BAE;&#x5B9E;&#x73B0;</h2>
+<h3 id="sofaorg-&#x7684;&#x5408;&#x4F5C;">Sofa.org &#x7684;&#x5408;&#x4F5C;</h3>
+<p>Sofa.org &#x4E0E;&#x673A;&#x6784;&#x5E02;&#x573A;&#x5236;&#x9020;&#x5546;&#x5408;&#x4F5C;&#xFF0C;&#x540E;&#x8005;&#x5411;&#x5E73;&#x53F0;&#x63D0;&#x4F9B;&#x6D41;&#x52A8;&#x7684;&#x5E02;&#x573A;&#x4EF7;&#x683C;&#x3002;&#x5F53;&#x5BA2;&#x6237;&#x767B;&#x5F55;&#x4EA4;&#x6613;&#x65F6;&#xFF0C;&#x4E00;&#x65E6;&#x4ED6;&#x4EEC;&#x9009;&#x62E9;&#x5728;&#x62A5;&#x4EF7;&#x4E0A;&#x4EA4;&#x6613;&#xFF0C;&#x5BA2;&#x6237;&#x7684;&#x8BA2;&#x9605;&#x8D44;&#x4EA7;&#x5C06;&#x81EA;&#x52A8;&#x53D1;&#x9001;&#x5230; DeFi &#x91D1;&#x5E93;&#x3002;&#x5E02;&#x573A;&#x5236;&#x9020;&#x5546;&#x7684;&#x6EA2;&#x4EF7;&#x4E5F;&#x4F1A;&#x81EA;&#x52A8;&#x8F6C;&#x79FB;&#x5230;&#x91D1;&#x5E93;&#x3002;&#x4E00;&#x65E6;&#x5BA2;&#x6237;&#x8BA2;&#x9605;&#x8D44;&#x4EA7;&#x548C;&#x5E02;&#x573A;&#x5236;&#x9020;&#x5546;&#x6EA2;&#x4EF7;&#x90FD;&#x5728;&#x91D1;&#x5E93;&#x4E2D;&#xFF0C;&#x91D1;&#x5E93;&#x5C31;&#x4F1A;&#x88AB;&#x9501;&#x5B9A;&#xFF0C;&#x6CA1;&#x6709;&#x4EBA;&#x80FD;&#x591F;&#x89E6;&#x6478;&#x8D44;&#x4EA7;&#x3002;&#x53CC;&#x65B9;&#x5C06;&#x83B7;&#x5F97;&#x4EE3;&#x8868;&#x4ED6;&#x4EEC;&#x4F4D;&#x7F6E;&#x7684;&#x9002;&#x5F53;&#x6570;&#x91CF;&#x4EE3;&#x5E01;&#x3002;&#x4F4D;&#x7F6E;&#x4EE3;&#x5E01;&#x53EF;&#x4EE5;&#x50CF;&#x666E;&#x901A; ERC20 &#x4E00;&#x6837;&#x8F6C;&#x79FB;&#x6216;&#x4EA4;&#x6613;&#x3002;</p>
+<p><img src="../../static/BVEYbzrFwoyRd8xtDfZuM4dZsng.png" alt=""></p>
+<p>&#x91D1;&#x5E93;&#x4E2D;&#x7684;&#x62B5;&#x62BC;&#x54C1;&#x5C06;&#x88AB;&#x6295;&#x5165;&#x5230;&#x6210;&#x719F;&#x548C;&#x5B89;&#x5168;&#x7684;&#x6536;&#x76CA;&#x8D5A;&#x53D6;&#x534F;&#x8BAE;&#x4E2D;&#xFF0C;&#x5982; Compound&#x3001;AAVE &#x7B49;&#xFF0C;&#x4E3A;&#x5BA2;&#x6237;&#x8D5A;&#x53D6;&#x5229;&#x606F;&#x3002;</p>
+<p><img src="../../static/SqpNbalQmo08ahxG5tPu6FxRsu3.png" alt=""></p>
+<p>&#x91D1;&#x5E93;&#x5408;&#x7EA6;&#x4F7F;&#x7528; ERC1155 &#x6807;&#x51C6;&#x3002;&#x5177;&#x6709;&#x76F8;&#x540C;&#x6267;&#x884C;&#x4EF7;&#x683C;&#x548C;&#x5230;&#x671F;&#x65F6;&#x95F4;&#x7684;&#x4F4D;&#x7F6E;&#x4EE3;&#x5E01;&#x53EF;&#x4EE5;&#x50CF; ERC20 &#x4E00;&#x6837;&#x8F6C;&#x79FB;&#x3002;&#x5177;&#x6709;&#x4E0D;&#x540C;&#x6267;&#x884C;&#x4EF7;&#x683C;&#x6216;&#x5230;&#x671F;&#x65F6;&#x95F4;&#x7684;&#x4EE3;&#x5E01;&#x5177;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x4EE3;&#x5E01; id&#xFF08;NFT&#xFF09;&#xFF0C;&#x4F46;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x91D1;&#x5E93;&#x5408;&#x7EA6;&#x4E2D;&#x3002;</p>
+<p>&#x6240;&#x6709;&#x5177;&#x6709;&#x76F8;&#x540C;&#x5230;&#x671F;&#x65F6;&#x95F4;&#x7684;&#x4F4D;&#x7F6E;&#x4EE3;&#x5E01;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x6027;&#x7ED3;&#x7B97;&#xFF0C;&#x8FD9;&#x53EF;&#x4EE5;&#x663E;&#x8457;&#x8282;&#x7701; gas&#x3002;</p>
+<h3 id="&#x7279;&#x70B9;">&#x7279;&#x70B9;</h3>
+<ul>
+<li><p><strong>&#x5934;&#x5BF8;&#x4EE3;&#x5E01;&#x5316;</strong></p>
+<p>&#x5BA2;&#x6237;&#x548C;&#x5E02;&#x573A;&#x5236;&#x9020;&#x5546;&#x90FD;&#x53EF;&#x4EE5;&#x8F6C;&#x79FB;&#x4ED6;&#x4EEC;&#x7684;&#x5934;&#x5BF8;&#x4EE3;&#x5E01;&#x3002;&#x4ED6;&#x4EEC;&#x53EF;&#x4EE5;&#x50CF;&#x5BF9;&#x5F85; ERC20 &#x4EE3;&#x5E01;&#x4E00;&#x6837;&#x8FDB;&#x884C;&#x4EA4;&#x6613;&#x3001;&#x8D28;&#x62BC;&#x7B49;&#x64CD;&#x4F5C;&#x3002;</p>
+</li>
+<li><p><strong>&#x7075;&#x6D3B;&#x6027;</strong></p>
+<p>&#x652F;&#x6301;&#x5177;&#x6709;&#x4E0D;&#x540C;&#x5230;&#x671F;&#x65E5;&#x671F;&#x3001;&#x6267;&#x884C;&#x4EF7;&#x683C;&#x3001;&#x4EE3;&#x5E01;&#x548C;&#x7B56;&#x7565;&#x7684;&#x7ED3;&#x6784;&#x5316;&#x4EA7;&#x54C1;&#xFF0C;&#x63D0;&#x4F9B;&#x4E00;&#x7AD9;&#x5F0F;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x4EE5;&#x6EE1;&#x8DB3;&#x6240;&#x6709;&#x7528;&#x6237;&#x9700;&#x6C42;&#x3002;</p>
+</li>
+<li><p><strong>&#x53EF;&#x7EC4;&#x5408;&#x6027;</strong></p>
+<p>&#x53EF;&#x4EE5;&#x4ECE; SOFA &#x534F;&#x8BAE;&#x6784;&#x5EFA;&#x4FA7;&#x534F;&#x8BAE;&#xFF0C;&#x5305;&#x62EC;&#x501F;&#x8D37;&#x3001;&#x4EA4;&#x6362;&#x3001;&#x8D28;&#x62BC;&#x3001;&#x6536;&#x76CA;&#x7B49;&#x3002;</p>
+</li>
+<li><p><strong>&#x900F;&#x660E;&#x5EA6;</strong></p>
+<p>&#x6240;&#x6709;&#x8D44;&#x4EA7;&#x90FD;&#x5728;&#x94FE;&#x4E0A;&#xFF0C;&#x6240;&#x6709;&#x4EA4;&#x6613;&#x8BB0;&#x5F55;&#x90FD;&#x53EF;&#x4EE5;&#x5728;&#x94FE;&#x4E0A;&#x8FFD;&#x8E2A;&#xFF0C;&#x786E;&#x4FDD;&#x4E86;&#x534F;&#x8BAE;&#x7684;&#x900F;&#x660E;&#x5EA6;&#x3002;</p>
+</li>
+<li><p><strong>&#x53CB;&#x597D;&#x6027;</strong></p>
+<p>&#x901A;&#x8FC7;&#x5229;&#x7528;&#x4E13;&#x4E1A;&#x7684;&#x4EA7;&#x54C1;&#x8BBE;&#x8BA1;&#x548C;&#x6D41;&#x7A0B;&#x4F18;&#x5316;&#xFF0C;&#x5927;&#x5927;&#x964D;&#x4F4E;&#x4E86;&#x5B66;&#x4E60;&#x66F2;&#x7EBF;&#xFF0C;&#x4F7F;&#x5176;&#x7B80;&#x5355;&#x3001;&#x6613;&#x61C2;&#x548C;&#x7528;&#x6237;&#x53CB;&#x597D;&#x3002;</p>
+</li>
+<li><p><strong>&#x591A;&#x6837;&#x6027;</strong></p>
+<p>&#x7ED3;&#x6784;&#x5316;&#x4EA7;&#x54C1;&#x7684;&#x7ED3;&#x6784;&#x652F;&#x6301;&#x901A;&#x8FC7; offchain RFQ + onchain vault &#x7684;&#x591A;&#x6837;&#x5316;&#x4EA7;&#x54C1;&#x3002;</p>
+</li>
+<li><p><strong>ERC1155</strong></p>
+<p>ERC1155 &#x662F;&#x4E00;&#x4E2A;&#x5728;&#x4EE5;&#x592A;&#x574A;&#x4E0A;&#x521B;&#x5EFA;&#x53EF;&#x66FF;&#x4EE3;&#x548C;&#x975E;&#x66FF;&#x4EE3;&#x4EE3;&#x5E01;&#x7684;&#x6807;&#x51C6;&#xFF0C;&#x5141;&#x8BB8;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x4E2D;&#x521B;&#x5EFA;&#x591A;&#x4E2A;&#x4EE3;&#x5E01;&#xFF0C;&#x5305;&#x62EC;&#x975E;&#x66FF;&#x4EE3;&#x4EE3;&#x5E01;&#x548C;&#x53EF;&#x4EA4;&#x6362;&#x7684;&#x4EE3;&#x5E01;&#x3002;&#x8FD9;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x66F4;&#x9AD8;&#x6548;&#x3001;&#x7075;&#x6D3B;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x6765;&#x7BA1;&#x7406;&#x5927;&#x91CF;&#x8D44;&#x4EA7;&#xFF0C;&#x540C;&#x65F6;&#x51CF;&#x5C11; gas &#x6210;&#x672C;&#x548C;&#x6700;&#x5C0F;&#x5316;&#x591A;&#x4E2A;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x7684;&#x9700;&#x6C42;&#x3002;</p>
+</li>
+<li><p><strong>Gas efficiency</strong></p>
+</li>
+</ul>
 <p>&#x6211;&#x4EEC;&#x4F7F;&#x7528; <a href="https://github.com/Uniswap/permit2" target="_blank">Permit2</a> &#x964D;&#x4F4E;&#x7528;&#x6237;&#x7684; approve &#x6210;&#x672C;&#xFF0C;&#x4E0D;&#x540C;&#x4E8E;&#x5E38;&#x89C1;&#x7684;&#x5BF9;&#x6BCF;&#x4E2A; vault &#x5408;&#x7EA6;&#x90FD;&#x8981;&#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x6216;&#x591A;&#x6B21;&#x6388;&#x6743;&#x540E;&#x624D;&#x80FD;&#x8FDB;&#x884C;&#x4EA4;&#x6613;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x7528;&#x6237;&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x5728;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x534F;&#x8BAE;&#x65F6;&#x5BF9; Uniswap &#x7684; permit2 &#x5408;&#x7EA6;&#x8FDB;&#x884C;&#x8FC7;&#x6388;&#x6743;&#xFF0C;&#x4F7F;&#x7528; Sofa.org &#x7684; vaults &#x5219;&#x65E0;&#x987B;&#x518D;&#x8FDB;&#x884C;&#x6388;&#x6743;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#xFF0C;&#x5219;&#x53EA;&#x9700;&#x8981;&#x5BF9; permit2 &#x6388;&#x6743;&#x4E00;&#x6B21;&#x65E0;&#x987B;&#x9488;&#x5BF9;&#x6BCF;&#x4E2A; vault &#x8FDB;&#x884C;&#x6388;&#x6743;&#x3002;</p>
 <table>
 <thead>
@@ -583,7 +620,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"OUR PROTOCOL","level":"1.2","depth":1,"ref":"","articles":[{"title":"Vaults","level":"1.2.1","depth":2,"path":"01-our-protocol/01-vaults.md","ref":"01-our-protocol/01-vaults.md","articles":[]},{"title":"Positions","level":"1.2.2","depth":2,"path":"01-our-protocol/02-positions.md","ref":"01-our-protocol/02-positions.md","articles":[]},{"title":"Oracles","level":"1.2.3","depth":2,"path":"01-our-protocol/03-oracles.md","ref":"01-our-protocol/03-oracles.md","articles":[]},{"title":"Settlement","level":"1.2.4","depth":2,"path":"01-our-protocol/04-settlement.md","ref":"01-our-protocol/04-settlement.md","articles":[]},{"title":"Fees","level":"1.2.5","depth":2,"path":"01-our-protocol/05-fees.md","ref":"01-our-protocol/05-fees.md","articles":[]},{"title":"Referral","level":"1.2.6","depth":2,"path":"01-our-protocol/06-referral.md","ref":"01-our-protocol/06-referral.md","articles":[]},{"title":"Security","level":"1.2.7","depth":2,"path":"01-our-protocol/07-security.md","ref":"01-our-protocol/07-security.md","articles":[]},{"title":"Governance","level":"1.2.8","depth":2,"path":"01-our-protocol/08-governance.md","ref":"01-our-protocol/08-governance.md","articles":[]},{"title":"Roadmap","level":"1.2.9","depth":2,"path":"01-our-protocol/09-roadmap.md","ref":"01-our-protocol/09-roadmap.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh","languages":{"en":"English","zh":"中文"},"gitbook":"*"},"file":{"path":"README.md","mtime":"2024-02-27T11:54:08.587Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-27T11:54:45.840Z"},"basePath":".","book":{"language":"zh"}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"我们的协议","level":"1.2","depth":1,"ref":"","articles":[{"title":"金库","level":"1.2.1","depth":2,"path":"01-our-protocol/01-vaults.md","ref":"01-our-protocol/01-vaults.md","articles":[]},{"title":"代币化头寸","level":"1.2.2","depth":2,"path":"01-our-protocol/02-positions.md","ref":"01-our-protocol/02-positions.md","articles":[]},{"title":"预言机","level":"1.2.3","depth":2,"path":"01-our-protocol/03-oracles.md","ref":"01-our-protocol/03-oracles.md","articles":[]},{"title":"结算","level":"1.2.4","depth":2,"path":"01-our-protocol/04-settlement.md","ref":"01-our-protocol/04-settlement.md","articles":[]},{"title":"手续费","level":"1.2.5","depth":2,"path":"01-our-protocol/05-fees.md","ref":"01-our-protocol/05-fees.md","articles":[]},{"title":"推荐奖励","level":"1.2.6","depth":2,"path":"01-our-protocol/06-referral.md","ref":"01-our-protocol/06-referral.md","articles":[]},{"title":"安全性","level":"1.2.7","depth":2,"path":"01-our-protocol/07-security.md","ref":"01-our-protocol/07-security.md","articles":[]},{"title":"治理","level":"1.2.8","depth":2,"path":"01-our-protocol/08-governance.md","ref":"01-our-protocol/08-governance.md","articles":[]},{"title":"路线图","level":"1.2.9","depth":2,"path":"01-our-protocol/09-roadmap.md","ref":"01-our-protocol/09-roadmap.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh","languages":{"en":"English","zh":"中文"},"gitbook":"*"},"file":{"path":"README.md","mtime":"2024-03-07T08:25:25.193Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-07T09:15:34.352Z"},"basePath":".","book":{"language":"zh"}});
         });
     </script>
 </div>

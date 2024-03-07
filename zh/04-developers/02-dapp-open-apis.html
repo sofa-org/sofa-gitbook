@@ -1,0 +1,1137 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>面向DAPP开发者的Open APIs · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02-subgraphs.md" />
+    
+    
+    <link rel="prev" href="01-marketmaker-open-apis.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    我们的协议
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../01-our-protocol/01-vaults.html">
+            
+                <a href="../01-our-protocol/01-vaults.html">
+            
+                    
+                    金库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../01-our-protocol/02-positions.html">
+            
+                <a href="../01-our-protocol/02-positions.html">
+            
+                    
+                    代币化头寸
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../01-our-protocol/03-oracles.html">
+            
+                <a href="../01-our-protocol/03-oracles.html">
+            
+                    
+                    预言机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../01-our-protocol/04-settlement.html">
+            
+                <a href="../01-our-protocol/04-settlement.html">
+            
+                    
+                    结算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../01-our-protocol/05-fees.html">
+            
+                <a href="../01-our-protocol/05-fees.html">
+            
+                    
+                    手续费
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../01-our-protocol/06-referral.html">
+            
+                <a href="../01-our-protocol/06-referral.html">
+            
+                    
+                    推荐奖励
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../01-our-protocol/07-security.html">
+            
+                <a href="../01-our-protocol/07-security.html">
+            
+                    
+                    安全性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../01-our-protocol/08-governance.html">
+            
+                <a href="../01-our-protocol/08-governance.html">
+            
+                    
+                    治理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../01-our-protocol/09-roadmap.html">
+            
+                <a href="../01-our-protocol/09-roadmap.html">
+            
+                    
+                    路线图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    用户手册
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    代币经济学
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../03-tokenomics/01-dual-token-model.html">
+            
+                <a href="../03-tokenomics/01-dual-token-model.html">
+            
+                    
+                    双代币模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../03-tokenomics/02-rch.html">
+            
+                <a href="../03-tokenomics/02-rch.html">
+            
+                    
+                    $RCH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../03-tokenomics/03-sofa.html">
+            
+                <a href="../03-tokenomics/03-sofa.html">
+            
+                    
+                    $SOFA
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    开发者
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="01-marketmaker-open-apis.html">
+            
+                <a href="01-marketmaker-open-apis.html">
+            
+                    
+                    面向做市商的Open APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="02-dapp-open-apis.html">
+            
+                <a href="02-dapp-open-apis.html">
+            
+                    
+                    面向DAPP开发者的Open APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="02-subgraphs.md">
+            
+                <span>
+            
+                    
+                    Subgraphs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="03-bug-bounty.md">
+            
+                <span>
+            
+                    
+                    赏金计划
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    资源
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../05-resources/01-links.html">
+            
+                <a href="../05-resources/01-links.html">
+            
+                    
+                    链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../05-resources/02-audits.html">
+            
+                <a href="../05-resources/02-audits.html">
+            
+                    
+                    审计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../05-resources/03-deployment.html">
+            
+                <a href="../05-resources/03-deployment.html">
+            
+                    
+                    合约
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../05-resources/04-faq.html">
+            
+                <a href="../05-resources/04-faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >面向DAPP开发者的Open APIs</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="open-apis-for-dapp&#x5F00;&#x53D1;&#x8005;">Open APIs for DAPP&#x5F00;&#x53D1;&#x8005;</h1>
+<p>&#x6211;&#x4EEC;&#x4E3A; Sofa.org &#x63D0;&#x4F9B;&#x4E86;&#x5408;&#x7EA6;&#x4EA7;&#x54C1;&#x5B9A;&#x4EF7;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x901A;&#x8FC7;&#x5411; MarketMaker &#x8BE2;&#x4EF7;&#xFF0C;&#x7136;&#x540E;&#x6574;&#x5408;&#x6700;&#x4F18;&#x7684;&#x5B9A;&#x4EF7;&#x7ED3;&#x679C;&#x8FD4;&#x56DE;&#x7ED9; Sofa.org&#xFF0C;&#x7136;&#x540E;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x662F;&#x5426;&#x4EA4;&#x6613;&#xFF0C;&#x7531;&#x4E8E;&#x9700;&#x8981;&#x6839;&#x636E;&#x5408;&#x7EA6;&#x5BF9;&#x63A5;&#x4E0D;&#x540C;&#x7684; MarketMaker&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4E0A;&#x7EBF;&#x7684;&#x4EA7;&#x54C1;&#x9700;&#x8981;&#x6309;&#x5408;&#x7EA6;&#x7C7B;&#x578B;&#x533A;&#x5206;&#x3002;</p>
+<h2 id="&#x63A8;&#x8350;-dnt-rfq-&#x8BE2;&#x4EF7;">&#x63A8;&#x8350; DNT RFQ &#x8BE2;&#x4EF7;</h2>
+<ul>
+<li>&#x8BF4;&#x660E;<ul>
+<li>&#x4EC5;&#x652F;&#x6301;&#x540C;&#x4E00;&#x4E2A; vault+chainId &#x7EC4;&#x6210;&#x7684; rfq &#x5217;&#x8868;</li>
+</ul>
+</li>
+</ul>
+<pre><code>POST /rfq/dnt/recommended-quote
+</code></pre><p><strong>&#x5165;&#x53C2;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x5FC5;&#x586B;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>list</td>
+<td>array[object]</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; vault</td>
+<td>true</td>
+<td>string</td>
+<td>&#x5408;&#x7EA6;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>&gt; chainId</td>
+<td>true</td>
+<td>int</td>
+<td>&#x94FE; ID</td>
+</tr>
+<tr>
+<td>&gt; expiry</td>
+<td>true</td>
+<td>long</td>
+<td>&#x5230;&#x671F;&#x65E5;&#x5BF9;&#x5E94;&#x7684;&#x79D2;&#x7EA7;&#x65F6;&#x95F4;&#x6233;&#xFF0C;&#x4F8B;&#x5982; 1672387200</td>
+</tr>
+<tr>
+<td>&gt; lowerBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>&#x4E0B;&#x65B9;&#x4EF7;&#x683C;</td>
+</tr>
+<tr>
+<td>&gt; upperBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>&#x4E0A;&#x65B9;&#x4EF7;&#x683C;</td>
+</tr>
+<tr>
+<td>&gt; depositAmount</td>
+<td>true</td>
+<td>number</td>
+<td>rfq &#x7533;&#x8D2D;&#x91D1;&#x989D;</td>
+</tr>
+<tr>
+<td>&gt; inputApyDefinition</td>
+<td>true</td>
+<td>string</td>
+<td>&#x5E95;&#x5C42;&#x4EE3;&#x7801;&#x662F; Enum &#x8868;&#x660E;&#x5165;&#x53C2;&#x7684; APY &#x5177;&#x4F53;&#x662F;&#x600E;&#x4E48;&#x8BA1;&#x7B97;&#x7684;<em>OptimusDefaultAPY</em>, <em>BinanceDntAPY</em>, <em>AaveLendingAPR</em>, <em>AaveLendingAPY</em></td>
+</tr>
+<tr>
+<td>&gt; protectedApy</td>
+<td>false</td>
+<td>number</td>
+<td>&#x4FDD;&#x5E95;&#x5E74;&#x5316;&#xFF08;RISKY &#x65F6;&#x4E3A;&#x7A7A;&#xFF0C;protected &#x65F6;&#x5FC5;&#x586B;&#xFF09;</td>
+</tr>
+<tr>
+<td>&gt; fundingApy</td>
+<td>false</td>
+<td>number</td>
+<td>AAVE &#x5E74;&#x5316;&#xFF08;RISKY &#x65F6;&#x4E3A;&#x7A7A;&#xFF0C;protected &#x65F6;&#x5FC5;&#x586B;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5165;&#x53C2;&#x793A;&#x4F8B;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;list&quot;</span>:[
+        {
+            <span class="hljs-string">&quot;vault&quot;</span>:<span class="hljs-string">&quot;0x0E3a24ed24fBfF5406C8529fBe3Cc4DFE12b1cDB&quot;</span>,
+            <span class="hljs-string">&quot;chainId&quot;</span>:<span class="hljs-number">80001</span>,
+            <span class="hljs-string">&quot;lowerBarrier&quot;</span>:<span class="hljs-number">2775</span>,
+            <span class="hljs-string">&quot;upperBarrier&quot;</span>:<span class="hljs-number">2825</span>,
+            <span class="hljs-string">&quot;expiry&quot;</span>:<span class="hljs-number">1708416000</span>,
+            <span class="hljs-string">&quot;depositAmount&quot;</span>:<span class="hljs-number">1000</span>,
+            <span class="hljs-string">&quot;protectedApy&quot;</span>:<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">&quot;fundingApy&quot;</span>:<span class="hljs-string">&quot;0.1098&quot;</span>,
+            <span class="hljs-string">&quot;inputApyDefinition&quot;</span>:<span class="hljs-string">&quot;AaveLendingAPY&quot;</span>
+        }
+    ]
+}
+</code></pre>
+<p><strong>&#x51FA;&#x53C2;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 &#x8868;&#x793A;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x6B63;&#x5E38;</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>&#x5F02;&#x5E38;&#x65F6;&#x8FD4;&#x56DE;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>&#x5408;&#x7EA6;&#x5730;&#x5740;</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>&#x94FE; ID</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>&#x98CE;&#x9669;&#x7C7B;&#x578B;&#xFF1A;PROTECTED,RISKY</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>&#x6807;&#x7684;&#x7269;&#x5E01;&#x79CD;</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>&#x5E01;&#x5BF9;</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>&#x7533;&#x8D2D;&#x5E01;&#x79CD;</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>&#x4E0B;&#x65B9;&#x4EF7;&#x683C;</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>&#x4E0A;&#x65B9;&#x4EF7;&#x683C;</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>rfq &#x7533;&#x8D2D;&#x91D1;&#x989D;</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>long</td>
+<td>&#x5230;&#x671F;&#x65E5;&#x5BF9;&#x5E94;&#x7684;&#x79D2;&#x7EA7;&#x65F6;&#x95F4;&#x6233;&#xFF0C;&#x4F8B;&#x5982; 1672387200</td>
+</tr>
+<tr>
+<td>protectedReturnAmount</td>
+<td>number</td>
+<td>&#x4FDD;&#x5E95;&#x6536;&#x76CA;&#x7684;&#x603B;&#x91D1;&#x989D;&#xFF0C;&#x5355;&#x4F4D;&#x4E0E; depositCcy &#x4E00;&#x81F4;</td>
+</tr>
+<tr>
+<td>fundingAmount</td>
+<td>number</td>
+<td>&#x9884;&#x4F30;&#x7684; AAVE &#x5728;&#x8BE5;&#x671F;&#x95F4;&#x7684;&#x6536;&#x76CA;&#x7387;&#xFF1B;&#x975E;&#x4FDD;&#x672C;&#x578B;&#x4E3A;&#x96F6;</td>
+</tr>
+<tr>
+<td>enhancedReturnAmount</td>
+<td>number</td>
+<td>&#x672A;&#x6572;&#x51FA;&#x65F6;&#x989D;&#x5916;&#x6536;&#x76CA;&#x7684;&#x603B;&#x91D1;&#x989D;&#xFF0C;&#x5355;&#x4F4D;&#x4E0E; depositCcy &#x4E00;&#x81F4;</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>long</td>
+<td>&#x76EE;&#x524D;&#x5B9A;&#x4EF7;&#x5BF9;&#x5E94;&#x7684;&#x89E6;&#x53D1;&#x65F6;&#x95F4;&#xFF1B;&#x4E0B;&#x4E00;&#x4E2A;&#x89C2;&#x5BDF;&#x5F00;&#x59CB;&#x65F6;&#x95F4;&#x57FA;&#x4E8E;&#x6B64;&#x903B;&#x8F91;&#x8BA1;&#x7B97;</td>
+</tr>
+<tr>
+<td>observationStart</td>
+<td>long</td>
+<td>&#x76EE;&#x524D;&#x4EA7;&#x54C1;&#x6839;&#x636E; timestamp &#x9884;&#x4F30;&#x7684;&#x5F00;&#x59CB;&#x89C2;&#x5BDF;&#x6572;&#x5165;&#x6572;&#x51FA;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000, 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>Maker &#x5BF9;&#x8D4C;&#x62B5;&#x62BC;&#x7684;&#x91D1;&#x989D;</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>&#x603B;&#x7684;&#x8D28;&#x62BC;&#x7684;&#x91D1;&#x989D;&#xFF08;Taker+Maker&#xFF09;</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRiskPercentage</td>
+<td>string</td>
+<td>&#x4FDD;&#x5E95;&#x65F6;&#x5FC5;&#x586B;&#xFF08;&#x53EF;&#x7A7A;&#xFF09;</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>long</td>
+<td>&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x79D2;&#x7EA7;&#x65F6;&#x95F4;&#x6233; &#x4F8B;&#x5982; 1672387200</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>maker &#x7684; wallet&#xFF08;&#x53EF;&#x7A7A;&#xFF09;</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>&#x7B7E;&#x540D;&#xFF08;&#x53EF;&#x7A7A;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x51FA;&#x53C2;&#x793A;&#x4F8B;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;succ&quot;</span>:<span class="hljs-literal">true</span>,
+    <span class="hljs-string">&quot;code&quot;</span>:<span class="hljs-number">0</span>,
+    <span class="hljs-string">&quot;message&quot;</span>:<span class="hljs-string">&quot;&quot;</span>,
+    <span class="hljs-string">&quot;value&quot;</span>:[
+        {
+            <span class="hljs-string">&quot;chainId&quot;</span>:<span class="hljs-number">80001</span>,
+            <span class="hljs-string">&quot;vault&quot;</span>:<span class="hljs-string">&quot;0x0E3a24ed24fBfF5406C8529fBe3Cc4DFE12b1cDB&quot;</span>,
+            <span class="hljs-string">&quot;riskType&quot;</span>:<span class="hljs-string">&quot;PROTECTED&quot;</span>,
+            <span class="hljs-string">&quot;forCcy&quot;</span>:<span class="hljs-string">&quot;WETH&quot;</span>,
+            <span class="hljs-string">&quot;domCcy&quot;</span>:<span class="hljs-string">&quot;USDT&quot;</span>,
+            <span class="hljs-string">&quot;depositCcy&quot;</span>:<span class="hljs-string">&quot;USDT&quot;</span>,
+            <span class="hljs-string">&quot;lowerBarrier&quot;</span>:<span class="hljs-string">&quot;2775&quot;</span>,
+            <span class="hljs-string">&quot;upperBarrier&quot;</span>:<span class="hljs-string">&quot;2825&quot;</span>,
+            <span class="hljs-string">&quot;depositAmount&quot;</span>:<span class="hljs-string">&quot;1000&quot;</span>,
+            <span class="hljs-string">&quot;expiry&quot;</span>:<span class="hljs-string">&quot;1708416000&quot;</span>,
+            <span class="hljs-string">&quot;timestamp&quot;</span>:<span class="hljs-string">&quot;1708142778&quot;</span>,
+            <span class="hljs-string">&quot;protectedReturnAmount&quot;</span>:<span class="hljs-string">&quot;0.08219178&quot;</span>,
+            <span class="hljs-string">&quot;fundingAmount&quot;</span>:<span class="hljs-string">&quot;0.90246575&quot;</span>,
+            <span class="hljs-string">&quot;enhancedReturnAmount&quot;</span>:<span class="hljs-string">&quot;3.69018697&quot;</span>,
+            <span class="hljs-string">&quot;observationStart&quot;</span>:<span class="hljs-string">&quot;1708156800&quot;</span>,
+            <span class="hljs-string">&quot;quote&quot;</span>:{
+                <span class="hljs-string">&quot;anchorPrices&quot;</span>:[
+                    <span class="hljs-string">&quot;2775000000&quot;</span>,
+                    <span class="hljs-string">&quot;2825000000&quot;</span>
+                ],
+                <span class="hljs-string">&quot;makerCollateral&quot;</span>:<span class="hljs-string">&quot;2869913&quot;</span>,
+                <span class="hljs-string">&quot;totalCollateral&quot;</span>:<span class="hljs-string">&quot;1002869913&quot;</span>,
+                <span class="hljs-string">&quot;collateralAtRiskPercentage&quot;</span>:<span class="hljs-string">&quot;3631&quot;</span>,
+                <span class="hljs-string">&quot;deadline&quot;</span>:<span class="hljs-string">&quot;1708143378&quot;</span>,
+                <span class="hljs-string">&quot;makerWallet&quot;</span>:<span class="hljs-string">&quot;0xDFD6f6a6c1AB0184a483F1c7f691f1ea6B810e55&quot;</span>,
+                <span class="hljs-string">&quot;signature&quot;</span>:<span class="hljs-literal">null</span>
+            }
+        },
+        {
+            <span class="hljs-string">&quot;chainId&quot;</span>:<span class="hljs-number">80001</span>,
+            <span class="hljs-string">&quot;vault&quot;</span>:<span class="hljs-string">&quot;0x0E3a24ed24fBfF5406C8529fBe3Cc4DFE12b1cDB&quot;</span>,
+            <span class="hljs-string">&quot;riskType&quot;</span>:<span class="hljs-string">&quot;PROTECTED&quot;</span>,
+            <span class="hljs-string">&quot;forCcy&quot;</span>:<span class="hljs-string">&quot;WETH&quot;</span>,
+            <span class="hljs-string">&quot;domCcy&quot;</span>:<span class="hljs-string">&quot;USDT&quot;</span>,
+            <span class="hljs-string">&quot;depositCcy&quot;</span>:<span class="hljs-string">&quot;USDT&quot;</span>,
+            <span class="hljs-string">&quot;lowerBarrier&quot;</span>:<span class="hljs-string">&quot;2775&quot;</span>,
+            <span class="hljs-string">&quot;upperBarrier&quot;</span>:<span class="hljs-string">&quot;2825&quot;</span>,
+            <span class="hljs-string">&quot;depositAmount&quot;</span>:<span class="hljs-string">&quot;1000&quot;</span>,
+            <span class="hljs-string">&quot;expiry&quot;</span>:<span class="hljs-string">&quot;1708761600&quot;</span>,
+            <span class="hljs-string">&quot;timestamp&quot;</span>:<span class="hljs-string">&quot;1708142781&quot;</span>,
+            <span class="hljs-string">&quot;protectedReturnAmount&quot;</span>:<span class="hljs-string">&quot;0.19178082&quot;</span>,
+            <span class="hljs-string">&quot;fundingAmount&quot;</span>:<span class="hljs-string">&quot;2.10575342&quot;</span>,
+            <span class="hljs-string">&quot;enhancedReturnAmount&quot;</span>:<span class="hljs-string">&quot;21.6891866&quot;</span>,
+            <span class="hljs-string">&quot;observationStart&quot;</span>:<span class="hljs-string">&quot;1708156800&quot;</span>,
+            <span class="hljs-string">&quot;quote&quot;</span>:{
+                <span class="hljs-string">&quot;anchorPrices&quot;</span>:[
+                    <span class="hljs-string">&quot;2775000000&quot;</span>,
+                    <span class="hljs-string">&quot;2825000000&quot;</span>
+                ],
+                <span class="hljs-string">&quot;makerCollateral&quot;</span>:<span class="hljs-string">&quot;19775214&quot;</span>,
+                <span class="hljs-string">&quot;totalCollateral&quot;</span>:<span class="hljs-string">&quot;1019775214&quot;</span>,
+                <span class="hljs-string">&quot;collateralAtRiskPercentage&quot;</span>:<span class="hljs-string">&quot;21123&quot;</span>,
+                <span class="hljs-string">&quot;deadline&quot;</span>:<span class="hljs-string">&quot;1708143381&quot;</span>,
+                <span class="hljs-string">&quot;makerWallet&quot;</span>:<span class="hljs-string">&quot;0xDFD6f6a6c1AB0184a483F1c7f691f1ea6B810e55&quot;</span>,
+                <span class="hljs-string">&quot;signature&quot;</span>:<span class="hljs-literal">null</span>
+            }
+        }
+    ]
+}
+</code></pre>
+<h2 id="&#x8BE2;&#x4EF7;">&#x8BE2;&#x4EF7;</h2>
+<ul>
+<li>&#x8BF4;&#x660E;<ul>
+<li>&#x4EC5;&#x8BE2;&#x4EF7;&#x65F6;&#xFF0C;&#x4E0D;&#x4F20;&#x7528;&#x6237;&#x94B1;&#x5305;&#x5730;&#x5740;&#xFF08;wallet&#xFF09;</li>
+<li>&#x7533;&#x8D2D;&#x65F6;&#xFF0C;&#x4F20;&#x7528;&#x6237;&#x94B1;&#x5305;&#x5730;&#x5740;&#xFF08;wallet&#xFF09;</li>
+</ul>
+</li>
+</ul>
+<pre><code>GET /rfq/dnt/quote
+</code></pre><p><strong>&#x5165;&#x53C2;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x5FC5;&#x586B;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>&#x5408;&#x7EA6;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>&#x94FE; ID</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>long</td>
+<td>&#x5230;&#x671F;&#x65E5;&#x5BF9;&#x5E94;&#x7684;&#x79D2;&#x7EA7;&#x65F6;&#x95F4;&#x6233;&#xFF0C;&#x4F8B;&#x5982; 1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>&#x4E0B;&#x65B9;&#x4EF7;&#x683C;</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>&#x4E0A;&#x65B9;&#x4EF7;&#x683C;</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>true</td>
+<td>number</td>
+<td>rfq &#x7533;&#x8D2D;&#x91D1;&#x989D;</td>
+</tr>
+<tr>
+<td>inputApyDefinition</td>
+<td>true</td>
+<td>string</td>
+<td>&#x5E95;&#x5C42;&#x4EE3;&#x7801;&#x662F; Enum &#x8868;&#x660E;&#x5165;&#x53C2;&#x7684; APY &#x5177;&#x4F53;&#x662F;&#x600E;&#x4E48;&#x8BA1;&#x7B97;&#x7684;<em>OptimusDefaultAPY</em>, <em>BinanceDntAPY</em>, <em>AaveLendingAPR</em>, <em>AaveLendingAPY</em></td>
+</tr>
+<tr>
+<td>protectedApy</td>
+<td>false</td>
+<td>number</td>
+<td>&#x4FDD;&#x5E95;&#x5E74;&#x5316;&#xFF08;RISKY &#x65F6;&#x4E3A;&#x7A7A;&#xFF0C;protected &#x65F6;&#x5FC5;&#x586B;&#xFF09;</td>
+</tr>
+<tr>
+<td>fundingApy</td>
+<td>false</td>
+<td>number</td>
+<td>AAVE &#x5E74;&#x5316;&#xFF08;RISKY &#x65F6;&#x4E3A;&#x7A7A;&#xFF0C;protected &#x65F6;&#x5FC5;&#x586B;&#xFF09;</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>false</td>
+<td>string</td>
+<td>&#x8BE2;&#x4EF7;&#x65B9;&#x94B1;&#x5305;&#x516C;&#x5171;&#x5730;&#x5740;&#x4FE1;&#x606F;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x51FA;&#x53C2;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 &#x8868;&#x793A;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x6B63;&#x5E38;</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>&#x5F02;&#x5E38;&#x65F6;&#x8FD4;&#x56DE;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>&#x5408;&#x7EA6;&#x5730;&#x5740;</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>&#x94FE; ID</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>&#x98CE;&#x9669;&#x7C7B;&#x578B;&#xFF1A;PROTECTED,RISKY</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>&#x6807;&#x7684;&#x7269;&#x5E01;&#x79CD;</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>&#x5E01;&#x5BF9;</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>&#x7533;&#x8D2D;&#x5E01;&#x79CD;</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>&#x4E0B;&#x65B9;&#x4EF7;&#x683C;</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>&#x4E0A;&#x65B9;&#x4EF7;&#x683C;</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>rfq &#x7533;&#x8D2D;&#x91D1;&#x989D;</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>long</td>
+<td>&#x5230;&#x671F;&#x65E5;&#x5BF9;&#x5E94;&#x7684;&#x79D2;&#x7EA7;&#x65F6;&#x95F4;&#x6233;&#xFF0C;&#x4F8B;&#x5982; 1672387200</td>
+</tr>
+<tr>
+<td>protectedReturnAmount</td>
+<td>number</td>
+<td>&#x4FDD;&#x5E95;&#x6536;&#x76CA;&#x7684;&#x603B;&#x91D1;&#x989D;&#xFF0C;&#x5355;&#x4F4D;&#x4E0E; depositCcy &#x4E00;&#x81F4;</td>
+</tr>
+<tr>
+<td>fundingAmount</td>
+<td>number</td>
+<td>&#x9884;&#x4F30;&#x7684; AAVE &#x5728;&#x8BE5;&#x671F;&#x95F4;&#x7684;&#x6536;&#x76CA;&#x7387;&#xFF1B;&#x975E;&#x4FDD;&#x672C;&#x578B;&#x4E3A;&#x96F6;</td>
+</tr>
+<tr>
+<td>enhancedReturnAmount</td>
+<td>number</td>
+<td>&#x672A;&#x6572;&#x51FA;&#x65F6;&#x989D;&#x5916;&#x6536;&#x76CA;&#x7684;&#x603B;&#x91D1;&#x989D;&#xFF0C;&#x5355;&#x4F4D;&#x4E0E; depositCcy &#x4E00;&#x81F4;</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>long</td>
+<td>&#x76EE;&#x524D;&#x5B9A;&#x4EF7;&#x5BF9;&#x5E94;&#x7684;&#x89E6;&#x53D1;&#x65F6;&#x95F4;&#xFF1B;&#x4E0B;&#x4E00;&#x4E2A;&#x89C2;&#x5BDF;&#x5F00;&#x59CB;&#x65F6;&#x95F4;&#x57FA;&#x4E8E;&#x6B64;&#x903B;&#x8F91;&#x8BA1;&#x7B97;</td>
+</tr>
+<tr>
+<td>observationStart</td>
+<td>long</td>
+<td>&#x76EE;&#x524D;&#x4EA7;&#x54C1;&#x6839;&#x636E; timestamp &#x9884;&#x4F30;&#x7684;&#x5F00;&#x59CB;&#x89C2;&#x5BDF;&#x6572;&#x5165;&#x6572;&#x51FA;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000, 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>Maker &#x5BF9;&#x8D4C;&#x62B5;&#x62BC;&#x7684;&#x91D1;&#x989D;</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>&#x603B;&#x7684;&#x8D28;&#x62BC;&#x7684;&#x91D1;&#x989D;&#xFF08;Taker+Maker&#xFF09;</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRiskPercentage</td>
+<td>string</td>
+<td>&#x4FDD;&#x5E95;&#x65F6;&#x5FC5;&#x586B;&#xFF08;&#x53EF;&#x7A7A;&#xFF09;</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>long</td>
+<td>&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x79D2;&#x7EA7;&#x65F6;&#x95F4;&#x6233; &#x4F8B;&#x5982; 1672387200</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>maker &#x7684; wallet&#xFF08;&#x53EF;&#x7A7A;&#xFF09;</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>&#x7B7E;&#x540D;&#xFF08;&#x53EF;&#x7A7A;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="01-marketmaker-open-apis.html" class="navigation navigation-prev " aria-label="Previous page: 面向做市商的Open APIs">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02-subgraphs.md" class="navigation navigation-next " aria-label="Next page: Subgraphs">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"面向DAPP开发者的Open APIs","level":"1.5.2","depth":2,"next":{"title":"Subgraphs","level":"1.5.3","depth":2,"path":"04-developers/02-subgraphs.md","ref":"04-developers/02-subgraphs.md","articles":[]},"previous":{"title":"面向做市商的Open APIs","level":"1.5.1","depth":2,"path":"04-developers/01-marketmaker-open-apis.md","ref":"04-developers/01-marketmaker-open-apis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh","languages":{"en":"English","zh":"中文"},"gitbook":"*"},"file":{"path":"04-developers/02-dapp-open-apis.md","mtime":"2024-03-07T07:05:39.072Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-07T09:15:34.352Z"},"basePath":"..","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
