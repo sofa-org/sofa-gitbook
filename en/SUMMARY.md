@@ -1,8 +1,9 @@
 # Summary
 
+* [INTRODUCTION](README.md)
 * [OUR PROTOCOL]()
   * [Vaults](01-our-protocol/01-vaults.md)
-  * [Positions](01-our-protocol/02-positions.md)
+  * [Tokenized Positions](01-our-protocol/02-positions.md)
   * [Oracles](01-our-protocol/03-oracles.md)
   * [Settlement](01-our-protocol/04-settlement.md)
   * [Fees](01-our-protocol/05-fees.md)
