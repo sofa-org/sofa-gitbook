@@ -1,3 +1,5 @@
+![](../static/3.jpg)
+
 # Protocol Premise & Vault Taxonomy
 
 SOFA.org will be **developing a series of standardized decentralized vaults** based on the underlying asset class, as well as their use-case pertaining to settlement, lending, and dynamic asset allocation.

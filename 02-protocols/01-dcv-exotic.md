@@ -81,7 +81,7 @@ A high-level run-down of a typical trade execution via **DCV-Exotic** is as foll
 
 ### Token Standards (ERC-1155)
 
-All of **SOFA.org's**** protocol****s will ****tokenize**** ****chain-locked positions via the ERC-1155 multi-token standard, **recording vital position details such as [Expiry], [Anchor Prices], [Maker/Taker Toggle] etc in the case of DCV-Exotic.
+All of **SOFA.org's protocols will tokenize chain-locked positions via the ERC-1155 multi-token standard**, recording vital position details such as [Expiry], [Anchor Prices], [Maker/Taker Toggle] etc in the case of DCV-Exotic.
 
 ![](../static/H7RDbxBTnojqLrxuMceuAuszs7b.png)
 

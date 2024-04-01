@@ -1,8 +1,8 @@
 # Summary
 
-* [SOFA.org Overview](INTRO.md)
-* [Innovating the Next Wave of DeFi](01-features/README.md)
-* [Protocol Premise & Vault Taxonomy](02-protocols/README.md)
+* [💡 SOFA.org Overview](INTRO.md)
+* [🌈 Innovating the Next Wave of DeFi](01-features/README.md)
+* [📊 Protocol Premise & Vault Taxonomy](02-protocols/README.md)
   * [DCV-Exotic (Structured Products & Clearing)](02-protocols/01-dcv-exotic.md)
     * [DCV-Exotic Details](02-protocols/01-dcv-exotic/README.md)
       * [Technical Design](02-protocols/01-dcv-exotic/01-design/README.md)
@@ -19,7 +19,7 @@
         * [Bug Bounty Program](02-protocols/01-dcv-exotic/02-developers/04-bug-bounty.md)
   * [DCV-Leverage (Leverage Structured Product)](02-protocols/02-dcv-leverage.md)
   * [DCV-WM (Dynamic Allocation Pool for DCV-EXOTIC)](02-protocols/03-dcv-wm.md)
-* [Protocol Security Considerations](03-security/README.md)
-* [Tokenomics and Governance](04-tokenomics/README.md)
+* [🔐 Protocol Security Considerations](03-security/README.md)
+* [⚖ Tokenomics and Governance](04-tokenomics/README.md)
   * [$RCH Utility Token](04-tokenomics/01-rch.md)
   * [$SOFA Governance Token](04-tokenomics/02-sofa.md)

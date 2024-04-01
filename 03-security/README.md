@@ -1,3 +1,5 @@
+![](../static/4.jpg)
+
 # Protocol Security Considerations
 
 Security is the cornerstone and bedrock behind any decentralized platform. We define protocol security as encompassing asset safety, personal information protection, and smart contract reliability.  In response to these considerations, we have implemented a series of stringent security measures, from contract design to protocol monitoring.

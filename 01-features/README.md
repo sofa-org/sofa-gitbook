@@ -1,3 +1,5 @@
+![](../static/2.jpg)
+
 # Innovating the Next Wave of DeFi
 
 ## Counterparty Defaults Served a Stark Reminder to the Importance of Decentralisation
@@ -10,7 +12,7 @@ Fast forward to today, imagine if the world had a widely available technology so
 
 ## Rekindling the 'Trustless' Spirit as the Core Value of Blockchain
 
-Decentralization.  Transparency.  Immutability.  Exensibility.  Authenticity.  These are some of the common words most often uttered as the main advantages provided by blockchain.  However, we feel that **'Trustless' ****offers the best personification of crypto's core values**, as blockchain has enabled complete strangers to execute valid transactions without the reliance on arbitrary middleman or gated privileged groups.
+Decentralization.  Transparency.  Immutability.  Exensibility.  Authenticity.  These are some of the common words most often uttered as the main advantages provided by blockchain.  However, we feel that **'Trustless' offers the best personification of crypto's core values**, as blockchain has enabled complete strangers to execute valid transactions without the reliance on arbitrary middleman or gated privileged groups.
 
 Furthermore, smart contract immutability allows one to place their absolute faith in code instead of the goodwill of your counterparty.  As such, **the foundation of trustlessness is built on the uncompromisable pillars of 1) contract immutability and 2) on-chain asset settlement**.  These core principles will be our driving force in developing a protocol that can truly be free from the confines of centralization.
 

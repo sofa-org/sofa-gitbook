@@ -1,3 +1,5 @@
+![](static/1.jpg)
+
 # SOFA.org Overview
 
 SOFA.org is a decentralized, non-profit, open-source technology organization dedicated to **building a trustless DeFi ecosystem that can handle the true atomic settlement of all financial assets** on the blockchain, while supporting DeFi practitioners and stakeholders around the world.  Some of the association's core mission goals include:
