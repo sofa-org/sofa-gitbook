@@ -4,5 +4,5 @@ The DCV-Exotic protocol is designed with the flexibility **to support any struct
 
 Example Vault Taxonomy at DCV-Exotic Launch
 
-![](../../../static/Al2YbwCoOo4xM1xVNwPuz3oLsgb.png)
+![](../../../static/vaults.png)
 

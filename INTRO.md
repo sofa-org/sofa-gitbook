@@ -21,18 +21,18 @@ As our inaugural contribution, SOFA.org will develop (and continue to develop) a
 
 We cordially invite all passionate DeFi contributors and any organizations that are excited about the future of DeFi become a part of SOFA.org.
 
-Join us:
++ Join us:
 
-[contact@sofa.org](mailto:contact@sofa.org)
+    [contact@sofa.org](mailto:contact@sofa.org)
 
-Welcome everyone interested in DeFi to join our community.
++ Welcome everyone interested in DeFi to join our community. 
+    
+    Reach out to us:
 
-Reach out to us:
+    [Telegram](https://t.me/sofa_org)
 
-Telegram：[https://t.me/sofa_org](https://t.me/sofa_org)
+    [Twitter](https://twitter.com/SOFA_org_Web3)
 
-Twitter: [https://twitter.com/SOFA_org_Web3](https://twitter.com/SOFA_org_Web3)
-
-Discord: [https://discord.gg/SXe4YJCEX2](https://discord.gg/SXe4YJCEX2)
+    [Discord](https://discord.gg/SXe4YJCEX2)
 
 
