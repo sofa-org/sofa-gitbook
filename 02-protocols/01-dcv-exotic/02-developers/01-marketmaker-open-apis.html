@@ -1,0 +1,958 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Open APIs for Market Maker · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02-dapp-open-apis.html" />
+    
+    
+    <link rel="prev" href="../01-design/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    SOFA.org Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../01-features/">
+            
+                <a href="../../../01-features/">
+            
+                    
+                    Innovating the Next Wave of DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Protocol Premise & Vault Taxonomy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../01-dcv-exotic.html">
+            
+                <a href="../../01-dcv-exotic.html">
+            
+                    
+                    DCV-Exotic (Structured Products & Clearing)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    DCV-Exotic Details
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.1" data-path="../01-design/">
+            
+                <a href="../01-design/">
+            
+                    
+                    Technical Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.1.1" data-path="../01-design/01-vaults.html">
+            
+                <a href="../01-design/01-vaults.html">
+            
+                    
+                    Vault Classification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.1.2" data-path="../01-design/02-oracles.html">
+            
+                <a href="../01-design/02-oracles.html">
+            
+                    
+                    Oracle Construction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.1.3" data-path="../01-design/03-settlement.html">
+            
+                <a href="../01-design/03-settlement.html">
+            
+                    
+                    On-Chain Settlement Considerations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.1.4" data-path="../01-design/04-fees.html">
+            
+                <a href="../01-design/04-fees.html">
+            
+                    
+                    Protocol Fees
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.1.5" data-path="../01-design/05-referral.html">
+            
+                <a href="../01-design/05-referral.html">
+            
+                    
+                    Referral Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.1.6" data-path="../01-design/06-governance.html">
+            
+                <a href="../01-design/06-governance.html">
+            
+                    
+                    Decentralized Governance Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2" data-path="../01-design/">
+            
+                <a href="../01-design/">
+            
+                    
+                    Developer Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1.1.2.1" data-path="01-marketmaker-open-apis.html">
+            
+                <a href="01-marketmaker-open-apis.html">
+            
+                    
+                    Open APIs for Market Maker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2.2" data-path="02-dapp-open-apis.html">
+            
+                <a href="02-dapp-open-apis.html">
+            
+                    
+                    Open APIs for Dapp Developer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2.3" data-path="03-subgraphs.html">
+            
+                <a href="03-subgraphs.html">
+            
+                    
+                    Subgraphs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2.4" data-path="04-bug-bounty.html">
+            
+                <a href="04-bug-bounty.html">
+            
+                    
+                    Bug Bounty Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../02-dcv-leverage.html">
+            
+                <a href="../../02-dcv-leverage.html">
+            
+                    
+                    DCV-Leverage (Leverage Structured Product)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../03-dcv-wm.html">
+            
+                <a href="../../03-dcv-wm.html">
+            
+                    
+                    DCV-WM (Dynamic Allocation Pool for DCV-EXOTIC)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../03-security/">
+            
+                <a href="../../../03-security/">
+            
+                    
+                    Protocol Security Considerations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Tokenomics and Governance
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../../04-tokenomics/01-dual-token-model.html">
+            
+                <a href="../../../04-tokenomics/01-dual-token-model.html">
+            
+                    
+                    Dual-token Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../../04-tokenomics/02-rch.html">
+            
+                <a href="../../../04-tokenomics/02-rch.html">
+            
+                    
+                    $RCH Utility Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../../04-tokenomics/03-sofa.html">
+            
+                <a href="../../../04-tokenomics/03-sofa.html">
+            
+                    
+                    $SOFA Governance Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Open APIs for Market Maker</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="open-apis-for-market-maker">Open APIs for Market Maker</h1>
+<h2 id="specification">Specification</h2>
+<h3 id="prefix">Prefix</h3>
+<ol>
+<li>To ensure transaction security, use HTTPS for transmission.</li>
+<li>JSON is the data interchange format.</li>
+<li>UTF-8 character encoding is universally applied.</li>
+<li>Interface signing algorithm utilizes HMAC-SHA256.</li>
+<li>UNIX millisecond timestamp is used, representing the number of milliseconds since January 1, 1970, 0:00:00.</li>
+</ol>
+<h3 id="parameters">Parameters</h3>
+<ol>
+<li>Request</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+<th>remark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H-Request-Id</td>
+<td>string</td>
+<td>[Header]Request ID, unique</td>
+</tr>
+<tr>
+<td>H-Api-Key</td>
+<td>string</td>
+<td>[Header]API Key</td>
+</tr>
+<tr>
+<td>H-Timestamp</td>
+<td>long</td>
+<td>[Header]Valid timestamp&#xFF0C;e.g., 1672387200000</td>
+</tr>
+<tr>
+<td>H-Nonce</td>
+<td>string</td>
+<td>[Header]Random string</td>
+</tr>
+<tr>
+<td>Authorization</td>
+<td>string</td>
+<td>[Header]Signature&#xFF0C;e.g.,&#xFF1A;rfq-hmac-sha256 signature</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Rsponse</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+<th>ramark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>integer</td>
+<td>[Body]Error code</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>[Body]Error reason</td>
+</tr>
+<tr>
+<td>value</td>
+<td>T</td>
+<td>[Body]Result</td>
+</tr>
+</tbody>
+</table>
+<h3 id="signature-generation">Signature Generation</h3>
+<p>Our RFQ platform requires partner signatures to approve requests, followed by a verification procedure.  A verification failure will lead to a platform rejection with a <code>401</code> Unauthorized response.</p>
+<ol>
+<li>Building the signature string:</li>
+</ol>
+<p>The signature string consists of five lines, each representing a parameter.  Each line ends with a semicolon, including the last line.  The valid timestamp and the request nonce are taken from the <code>H-Timestamp</code> and <code>H-Nonce</code> parameters in the header, respectively.</p>
+<pre><code>Timestamp;NonceStr;HTTP_METHOD();URI();RequestBody;
+</code></pre><ol>
+<li>Populating the signature</li>
+</ol>
+<p>Use the <code>SecretKey</code> to encrypt <code>StringToSign</code> using HMAC-SHA256.</p>
+<pre><code>StringToSign = Timestamp + &quot;;&quot; + NonceStr + &quot;;&quot; + UPPERCASE(HTTP_METHOD()) + &quot;;&quot; + URI() + &quot;;&quot; + RequestBody + &quot;;&quot;;
+Signature = BASE64_STRING( HMAC-SHA256( BASE64_DECODE(SecretKey), StringToSign ) );
+</code></pre><ol>
+<li>Setting HTTP Headers</li>
+</ol>
+<p>The request transmits the signature through the <code>HTTP Authorization</code> header. The <code>Authorization header</code> comprises of two parts: <strong>authentication type</strong> and <strong>signature information</strong>.</p>
+<pre><code>Authorization: AuthenticationType SignatureInformation
+</code></pre><pre><code>1. Authentication Type: rfq `-hmac-sha256`
+2. Signature Information: `Signature`
+</code></pre><pre><code>Authorization: rfq-hmac-sha256 Signature
+</code></pre><p><em>Note:</em></p>
+<ul>
+<li>The request method should be in UPPERCASE.</li>
+<li>The <code>RequestBody</code> used for the signature must match the content of the request&apos;s body.</li>
+<li><p>For GET and DELETE requests, the <code>URI</code> should include the request parameters (e.g., /api/v1/result?orderId=123).</p>
+<ul>
+<li>If there is no request body (common for GET requests), the request body should be an empty string (&quot;&quot;).</li>
+</ul>
+</li>
+<li>The valid timestamp (H-Timestamp) is determined by the requester; requests extending beyond the valid timestamp will be rejected by the RFQ server.</li>
+</ul>
+<h2 id="rfq">RFQ</h2>
+<h3 id="provide-dnt-rfq-quote">Provide DNT RFQ Quote</h3>
+<pre><code>GET rfq/dnt/quote
+</code></pre><p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>required</th>
+<th>type</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>Vault address</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>Chain ID</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>long</td>
+<td>Expiry time in seconds timestamp&#xFF0C;e.g., 1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>Lower barrier</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>Upper barrier</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>true</td>
+<td>number</td>
+<td>Deposit</td>
+</tr>
+<tr>
+<td>premiumAmount</td>
+<td>true</td>
+<td>number</td>
+<td>Premium</td>
+</tr>
+<tr>
+<td>protectedFundingAmount</td>
+<td>false</td>
+<td>number</td>
+<td>Protected interest&#xFF08;null when RISKY&#xFF09;</td>
+</tr>
+<tr>
+<td>deadline</td>
+<td>true</td>
+<td>long</td>
+<td>Quote deadline&#xFF0C;e.g., 1672387200</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>false</td>
+<td>string</td>
+<td>Taker wallet address</td>
+</tr>
+<tr>
+<td>anchorPricesDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>makerCollateralDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>collateralAtRiskPercentageDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>totalCollateralDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>underlyingPair</td>
+<td>true</td>
+<td>string</td>
+<td>Underlying Pair, e.g. BTC-USDT</td>
+</tr>
+<tr>
+<td>trackingSource</td>
+<td>true</td>
+<td>string</td>
+<td>Data sources are used to track the underlying value, e.g. DERIBIT</td>
+</tr>
+<tr>
+<td>depositCoin</td>
+<td>true</td>
+<td>string</td>
+<td>Currency / Coin of the premium paid to subscribe DNT</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>true</td>
+<td>string</td>
+<td>Type&#xFF1A;PROTECTED, RISKY</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response</strong></p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timestamp</td>
+<td>long</td>
+<td>Quote timestamp</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td></td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>long</td>
+<td>Expiry timestamp&#xFF0C;e.g., 1672387200</td>
+</tr>
+<tr>
+<td>anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000,30000000000</td>
+</tr>
+<tr>
+<td>makerCollateral</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>totalCollateral</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>collateralAtRiskPercentage</td>
+<td>string</td>
+<td>E18</td>
+</tr>
+<tr>
+<td>deadline</td>
+<td>long</td>
+<td>Quote deadline timestamp</td>
+</tr>
+<tr>
+<td>makerWallet</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>signature</td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+<p>Note:</p>
+<ol>
+<li>totalCollateral * collateralAtRiskPercentage - makerCollateral ==  premiumAmount</li>
+<li>totalCollateral  - makerCollateral == depositAmount</li>
+</ol>
+<p><strong>Examples</strong></p>
+<p>Request URL</p>
+<pre><code>rfq/dnt/quote
+</code></pre><p>Parameters</p>
+<pre><code class="lang-json">{
+    **<span class="hljs-string">&quot;rfqId&quot;</span>**:**<span class="hljs-number">1233992</span>,**
+    **<span class="hljs-string">&quot;apy&quot;</span>**:**<span class="hljs-number">0.25</span>,**
+    **<span class="hljs-string">&quot;tenor&quot;</span>**:**<span class="hljs-number">7.9</span>,**
+    **<span class="hljs-string">&quot;fundingAmount&quot;</span>**:**<span class="hljs-number">0.01</span>,**
+    **<span class="hljs-string">&quot;depositAmount&quot;</span>**:**<span class="hljs-number">1</span>,**
+    **<span class="hljs-string">&quot;premiumCoin&quot;</span>**:**<span class="hljs-string">&quot;BTC&quot;</span>**,
+    **<span class="hljs-string">&quot;premiumAmount&quot;</span>:<span class="hljs-number">0.05</span>,**
+    **<span class="hljs-string">&quot;bookingQuantity&quot;</span>:<span class="hljs-number">1</span>,**
+    **<span class="hljs-string">&quot;totalAmount&quot;</span>:<span class="hljs-number">0.05</span>,**
+    **<span class="hljs-string">&quot;payoff&quot;</span>:<span class="hljs-number">1</span>,**
+    **<span class="hljs-string">&quot;deadline&quot;</span>:<span class="hljs-number">1672279892000</span>,**
+    **<span class="hljs-string">&quot;signature&quot;</span>:<span class="hljs-string">&quot;dsdkksdsksdk&quot;</span>**
+}
+</code></pre>
+<h2 id="appendix">Appendix</h2>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1000</td>
+<td>system error.</td>
+</tr>
+<tr>
+<td>2001</td>
+<td>sign error.</td>
+</tr>
+<tr>
+<td>2002</td>
+<td>param error.</td>
+</tr>
+<tr>
+<td>3001</td>
+<td>Requested information does not exist.</td>
+</tr>
+<tr>
+<td>3002</td>
+<td>Deposit amount is outside <em>depositRange</em>.</td>
+</tr>
+<tr>
+<td>3003</td>
+<td>Maximum subscriptions limit is reached.</td>
+</tr>
+<tr>
+<td>3004</td>
+<td>Subscription failed due to too much difference in premiumAmount.</td>
+</tr>
+<tr>
+<td>3005</td>
+<td>Quote failed.</td>
+</tr>
+<tr>
+<td>3006</td>
+<td>Temporarily do not provide service.</td>
+</tr>
+<tr>
+<td>3007</td>
+<td>Api rate limit exceeded. Try slow down.</td>
+</tr>
+<tr>
+<td>3100</td>
+<td>Order creation failed.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Required Functions</strong>&#xFF1A;</p>
+<ul>
+<li>premiumAmount = totalCollateral * dntCollateralRatio - makerCollateral</li>
+<li>depositAmount = totalCollater - makerCollateral</li>
+<li>bookingQuantity = totalCollateral * dntCollateralRatio</li>
+<li>projectedFundingAmount = projectedFundingAPY * (expDateTime - refDateTime) / 365</li>
+<li>Tenor = (expDateTime - refDateTime) / 365</li>
+<li>APY-In-Range = (projectedFundingAmount - premiumAmount + bookingQuantity) / tenor = makerCollateral / tenor</li>
+<li>APY-Protected = (projectedFundingAmount - premiumAmount) / tenor</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../01-design/" class="navigation navigation-prev " aria-label="Previous page: Developer Documentation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02-dapp-open-apis.html" class="navigation navigation-next " aria-label="Next page: Open APIs for Dapp Developer">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Open APIs for Market Maker","level":"1.3.1.1.2.1","depth":5,"next":{"title":"Open APIs for Dapp Developer","level":"1.3.1.1.2.2","depth":5,"path":"02-protocols/01-dcv-exotic/02-developers/02-dapp-open-apis.md","ref":"02-protocols/01-dcv-exotic/02-developers/02-dapp-open-apis.md","articles":[]},"previous":{"title":"Developer Documentation","level":"1.3.1.1.2","depth":4,"path":"02-protocols/01-dcv-exotic/01-design/README.md","ref":"02-protocols/01-dcv-exotic/01-design/README.md","articles":[{"title":"Open APIs for Market Maker","level":"1.3.1.1.2.1","depth":5,"path":"02-protocols/01-dcv-exotic/02-developers/01-marketmaker-open-apis.md","ref":"02-protocols/01-dcv-exotic/02-developers/01-marketmaker-open-apis.md","articles":[]},{"title":"Open APIs for Dapp Developer","level":"1.3.1.1.2.2","depth":5,"path":"02-protocols/01-dcv-exotic/02-developers/02-dapp-open-apis.md","ref":"02-protocols/01-dcv-exotic/02-developers/02-dapp-open-apis.md","articles":[]},{"title":"Subgraphs","level":"1.3.1.1.2.3","depth":5,"path":"02-protocols/01-dcv-exotic/02-developers/03-subgraphs.md","ref":"02-protocols/01-dcv-exotic/02-developers/03-subgraphs.md","articles":[]},{"title":"Bug Bounty Program","level":"1.3.1.1.2.4","depth":5,"path":"02-protocols/01-dcv-exotic/02-developers/04-bug-bounty.md","ref":"02-protocols/01-dcv-exotic/02-developers/04-bug-bounty.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex"],"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"02-protocols/01-dcv-exotic/02-developers/01-marketmaker-open-apis.md","mtime":"2024-04-01T07:23:13.833Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-04-01T09:02:48.952Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

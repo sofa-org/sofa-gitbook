@@ -1,0 +1,592 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Protocol Fees · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="05-referral.html" />
+    
+    
+    <link rel="prev" href="03-settlement.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    SOFA.org Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../01-features/">
+            
+                <a href="../../../01-features/">
+            
+                    
+                    Innovating the Next Wave of DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Protocol Premise & Vault Taxonomy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../01-dcv-exotic.html">
+            
+                <a href="../../01-dcv-exotic.html">
+            
+                    
+                    DCV-Exotic (Structured Products & Clearing)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    DCV-Exotic Details
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Technical Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.1.1" data-path="01-vaults.html">
+            
+                <a href="01-vaults.html">
+            
+                    
+                    Vault Classification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.1.2" data-path="02-oracles.html">
+            
+                <a href="02-oracles.html">
+            
+                    
+                    Oracle Construction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.1.3" data-path="03-settlement.html">
+            
+                <a href="03-settlement.html">
+            
+                    
+                    On-Chain Settlement Considerations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.1.1.1.4" data-path="04-fees.html">
+            
+                <a href="04-fees.html">
+            
+                    
+                    Protocol Fees
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.1.5" data-path="05-referral.html">
+            
+                <a href="05-referral.html">
+            
+                    
+                    Referral Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.1.6" data-path="06-governance.html">
+            
+                <a href="06-governance.html">
+            
+                    
+                    Decentralized Governance Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Developer Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.2.1" data-path="../02-developers/01-marketmaker-open-apis.html">
+            
+                <a href="../02-developers/01-marketmaker-open-apis.html">
+            
+                    
+                    Open APIs for Market Maker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2.2" data-path="../02-developers/02-dapp-open-apis.html">
+            
+                <a href="../02-developers/02-dapp-open-apis.html">
+            
+                    
+                    Open APIs for Dapp Developer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2.3" data-path="../02-developers/03-subgraphs.html">
+            
+                <a href="../02-developers/03-subgraphs.html">
+            
+                    
+                    Subgraphs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2.4" data-path="../02-developers/04-bug-bounty.html">
+            
+                <a href="../02-developers/04-bug-bounty.html">
+            
+                    
+                    Bug Bounty Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../02-dcv-leverage.html">
+            
+                <a href="../../02-dcv-leverage.html">
+            
+                    
+                    DCV-Leverage (Leverage Structured Product)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../03-dcv-wm.html">
+            
+                <a href="../../03-dcv-wm.html">
+            
+                    
+                    DCV-WM (Dynamic Allocation Pool for DCV-EXOTIC)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../03-security/">
+            
+                <a href="../../../03-security/">
+            
+                    
+                    Protocol Security Considerations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Tokenomics and Governance
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../../04-tokenomics/01-dual-token-model.html">
+            
+                <a href="../../../04-tokenomics/01-dual-token-model.html">
+            
+                    
+                    Dual-token Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../../04-tokenomics/02-rch.html">
+            
+                <a href="../../../04-tokenomics/02-rch.html">
+            
+                    
+                    $RCH Utility Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../../04-tokenomics/03-sofa.html">
+            
+                <a href="../../../04-tokenomics/03-sofa.html">
+            
+                    
+                    $SOFA Governance Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Protocol Fees</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="protocol-fees">Protocol Fees</h1>
+<p>At SOFA.org, we are committed to creating a fair and transparent financial ecosystem where users can democratically invest in a wide gamut of structured products with transparent and fair pricing from market makers.  Furthermore, <strong>as a fully decentralized project, we want to ensure that any protocol gains are primarily shared with our underlying users</strong>, ensuring full incentive alignment rather than privileged payouts to special interest groups.  As such, we have devised a series of fee structures with <strong>&apos;fair-launch&apos; tokenomics to ensure proper value-accrual and support long-term platform longevity</strong>.  There will be no VC joy-riding or exit-liquidity dumps within SOFA.org.</p>
+<h2 id="protocol-revenue">Protocol Revenue</h2>
+<blockquote>
+<p>SOFA will charge 15% of the income generated from the &apos;value-at-risk&apos; part of the invested capital, which excludes the principal-protected &amp; base yield components, as our protocol revenue.</p>
+</blockquote>
+<p>Example:</p>
+<ul>
+<li>User purchases 10,000 USDT worth of Structured Products, maturing in 14 days at a price of 100</li>
+<li>Product pays out [Principal + 2% interest] as a worst case downside scenario</li>
+<li>AAVE APY = 10%</li>
+<li>Excess Interest = [10% - 2%] = 8% APY</li>
+<li>User Option Premium = 10,000 <em> 8% </em> (14/365) days = 30.68 USDT</li>
+<li>Market Maker Premium = 100 USDT</li>
+<li><strong>Protocol Revenue = **</strong>(<strong><strong>30.68 USDT</strong></strong> + <strong><strong>100</strong></strong> USDT)<strong>*</strong> 15% = 19.6 USDT**</li>
+</ul>
+<h2 id="native-token-rch-buyback">Native Token ($RCH) Buyback</h2>
+<blockquote>
+<p><strong>Aligning protocol success with Token performance</strong></p>
+</blockquote>
+<p>At SOFA, we believe that the<strong> most straight-forward way to align user and hodler incentives are through token buybacks</strong>, with $RCH being our native utility token.  We will <strong>commit all protocol income to be exclusively used for $RCH buybacks</strong>, creating a virtuous loop of token price gains being driven off protocol usage.</p>
+<p>With a <strong>fixed deflationary supply, methodical release schedule, and usage-driven airdops, the long-term value accretion for $RCH is largely a function of protocol revenue,</strong> which in itself is a direct measure of adoption success.  Furthermore, with <strong>Token airdrops exclusively limited to protocol users and supporters</strong>, we can ensure that they stand best to benefit from SOFA&apos;s long-term success, staying true to DeFi&apos;s commerical ideals of &apos;giving back&apos; to true core users and early adopters.</p>
+<p><strong>The token buyback logic is an integral part of the SOFA protocol smart contract</strong>.  Protocol administrators will regularly trigger this process to purchase and burn $RCH with protocol revenue through supported DEX venues.  Destroyed $RCH will be no longer enter circulation, and the total amount of $RCH will gradually decrease over time on rising protocol usage.</p>
+<p>More details of our Tokenomics model will be covered in its own dedicated section below.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="03-settlement.html" class="navigation navigation-prev " aria-label="Previous page: On-Chain Settlement Considerations">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="05-referral.html" class="navigation navigation-next " aria-label="Next page: Referral Model">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Protocol Fees","level":"1.3.1.1.1.4","depth":5,"next":{"title":"Referral Model","level":"1.3.1.1.1.5","depth":5,"path":"02-protocols/01-dcv-exotic/01-design/05-referral.md","ref":"02-protocols/01-dcv-exotic/01-design/05-referral.md","articles":[]},"previous":{"title":"On-Chain Settlement Considerations","level":"1.3.1.1.1.3","depth":5,"path":"02-protocols/01-dcv-exotic/01-design/03-settlement.md","ref":"02-protocols/01-dcv-exotic/01-design/03-settlement.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex"],"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"02-protocols/01-dcv-exotic/01-design/04-fees.md","mtime":"2024-04-01T07:47:17.114Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-04-01T09:02:48.952Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

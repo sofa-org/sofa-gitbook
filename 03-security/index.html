@@ -1,0 +1,583 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Protocol Security Considerations · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../02-protocols/03-dcv-wm.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01-features/">
+            
+                <a href="../01-features/">
+            
+                    
+                    Innovating the Next Wave of DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02-protocols/">
+            
+                <a href="../02-protocols/">
+            
+                    
+                    Protocol Premise & Vault Taxonomy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../02-protocols/01-dcv-exotic.html">
+            
+                <a href="../02-protocols/01-dcv-exotic.html">
+            
+                    
+                    DCV-Exotic (Structured Products & Clearing)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../02-protocols/01-dcv-exotic/">
+            
+                <a href="../02-protocols/01-dcv-exotic/">
+            
+                    
+                    DCV-Exotic Details
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.1" data-path="../02-protocols/01-dcv-exotic/01-design/">
+            
+                <a href="../02-protocols/01-dcv-exotic/01-design/">
+            
+                    
+                    Technical Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.1.1" data-path="../02-protocols/01-dcv-exotic/01-design/01-vaults.html">
+            
+                <a href="../02-protocols/01-dcv-exotic/01-design/01-vaults.html">
+            
+                    
+                    Vault Classification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.1.2" data-path="../02-protocols/01-dcv-exotic/01-design/02-oracles.html">
+            
+                <a href="../02-protocols/01-dcv-exotic/01-design/02-oracles.html">
+            
+                    
+                    Oracle Construction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.1.3" data-path="../02-protocols/01-dcv-exotic/01-design/03-settlement.html">
+            
+                <a href="../02-protocols/01-dcv-exotic/01-design/03-settlement.html">
+            
+                    
+                    On-Chain Settlement Considerations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.1.4" data-path="../02-protocols/01-dcv-exotic/01-design/04-fees.html">
+            
+                <a href="../02-protocols/01-dcv-exotic/01-design/04-fees.html">
+            
+                    
+                    Protocol Fees
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.1.5" data-path="../02-protocols/01-dcv-exotic/01-design/05-referral.html">
+            
+                <a href="../02-protocols/01-dcv-exotic/01-design/05-referral.html">
+            
+                    
+                    Referral Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.1.6" data-path="../02-protocols/01-dcv-exotic/01-design/06-governance.html">
+            
+                <a href="../02-protocols/01-dcv-exotic/01-design/06-governance.html">
+            
+                    
+                    Decentralized Governance Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2" data-path="../02-protocols/01-dcv-exotic/01-design/">
+            
+                <a href="../02-protocols/01-dcv-exotic/01-design/">
+            
+                    
+                    Developer Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.2.1" data-path="../02-protocols/01-dcv-exotic/02-developers/01-marketmaker-open-apis.html">
+            
+                <a href="../02-protocols/01-dcv-exotic/02-developers/01-marketmaker-open-apis.html">
+            
+                    
+                    Open APIs for Market Maker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2.2" data-path="../02-protocols/01-dcv-exotic/02-developers/02-dapp-open-apis.html">
+            
+                <a href="../02-protocols/01-dcv-exotic/02-developers/02-dapp-open-apis.html">
+            
+                    
+                    Open APIs for Dapp Developer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2.3" data-path="../02-protocols/01-dcv-exotic/02-developers/03-subgraphs.html">
+            
+                <a href="../02-protocols/01-dcv-exotic/02-developers/03-subgraphs.html">
+            
+                    
+                    Subgraphs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2.4" data-path="../02-protocols/01-dcv-exotic/02-developers/04-bug-bounty.html">
+            
+                <a href="../02-protocols/01-dcv-exotic/02-developers/04-bug-bounty.html">
+            
+                    
+                    Bug Bounty Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../02-protocols/02-dcv-leverage.html">
+            
+                <a href="../02-protocols/02-dcv-leverage.html">
+            
+                    
+                    DCV-Leverage (Leverage Structured Product)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../02-protocols/03-dcv-wm.html">
+            
+                <a href="../02-protocols/03-dcv-wm.html">
+            
+                    
+                    DCV-WM (Dynamic Allocation Pool for DCV-EXOTIC)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Protocol Security Considerations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Tokenomics and Governance
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../04-tokenomics/01-dual-token-model.html">
+            
+                <a href="../04-tokenomics/01-dual-token-model.html">
+            
+                    
+                    Dual-token Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../04-tokenomics/02-rch.html">
+            
+                <a href="../04-tokenomics/02-rch.html">
+            
+                    
+                    $RCH Utility Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../04-tokenomics/03-sofa.html">
+            
+                <a href="../04-tokenomics/03-sofa.html">
+            
+                    
+                    $SOFA Governance Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Protocol Security Considerations</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="protocol-security-considerations">Protocol Security Considerations</h1>
+<p>Security is the cornerstone and bedrock behind any decentralized platform. We define protocol security as encompassing asset safety, personal information protection, and smart contract reliability.  In response to these considerations, we have implemented a series of stringent security measures, from contract design to protocol monitoring.</p>
+<h2 id="simple-is-more-secure">Simple is More Secure</h2>
+<p>SOFA.org&apos;s core smart contracts will universally follow the principle of &quot;<strong>simple is more secure</strong>&quot;.  This principle seeks to avoid unnecessary complexity to reduce potential security risks.  The interaction between smart contracts is meticulously designed to ensure a streamlined and clear logical process, thereby minimizing the possibility of errors and vulnerabilities.  Furthermore, <strong>all of the protocol&apos;s smart contracts are open source and transparent, providing a full auditable trial</strong> to any 3rd party observer.</p>
+<h2 id="upgrade-mechanism">Upgrade Mechanism</h2>
+<p>All Vault contracts will inherit OpenZepplin&apos;s Upgradeable contracts.  Upon governance vote approval, <strong>contracts can be logically upgraded without changing the contract wallet address to ensure asset safety</strong>.  This mechanism allows vulnerability fixes and function optimization with minimal disruption.</p>
+<h2 id="multiple-chain-audits">Multiple Chain-Audits</h2>
+<p><strong>SOFA.org will seek professional chain-audit confirmations from the industry&apos;s top security firms</strong> to identify and fix potential security flaws.  By the project launch, SOFA.org&apos;s contract code would have undergone several rounds of stringent inspections to meet the highest standard of security audits available.  Furthermore, the same rigorous audit process will be repeated upon any significant protocol or functionality upgrades.</p>
+<h2 id="247-monitoring-for-anomalous-activity">24/7 Monitoring for Anomalous Activity</h2>
+<p>To continuously ensure asset safety, <strong>SOFA.org has implemented a 24/7 anomalous activity monitoring system</strong> under all of its protocols.  This system can detect and respond to unusual transaction patterns or behaviors in real-time, such as potential security attacks or abnormal fund flows. Upon detecting threats, our monitoring system can quickly trigger alerts and take necessary steps to prevent protocol damage.</p>
+<h2 id="decentralized-attack-resistance">Decentralized Attack Resistance</h2>
+<p>All of SOFA.org&apos;s protocols will operate over a decentralized server network, meaning there is <strong>minimal risk of system downtime due to a single point of failure</strong>.  With blockchain&apos;s distributed architecture, data is replicated and stored across various nodes, enhancing the system&apos;s resilience and resistance to cyber attacks.</p>
+<p>Decentralized server solutions offer the following advantages over conventional data servers:</p>
+<ul>
+<li><strong>Enhanced Stability</strong>:  By dispersing service nodes worldwide, we can ensure high reliability for our websites and dApp services, providing undisrupted services to protocol users.</li>
+<li><strong>Improved Availability</strong>:  Decentralized structure ensures that there are no central nodes that could become bottlenecks or single points of failure.</li>
+<li><strong>Attack Resistance</strong>:  Malefactors would need to compromise multiple nodes simultaneously to impact the service, significantly lowering the chance of success and bolstering protocol safety.</li>
+</ul>
+<h2 id="protecting-user-privacy">Protecting User Privacy</h2>
+<p>In addition to upholding our decentralisation principles, SOFA.org is a big proponent of user privacy and data protection.  None of our <strong>protocols collect or store any personal information that can be used to identify users outside of their wallet addresses</strong>.</p>
+<p>With judicious contract design, professional audit validation, around-the-clock monitoring, and decentralized operations, SOFA.org is dedicated to providing a safe, reliable, and privacy-protecting environment for all DeFi users.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../02-protocols/03-dcv-wm.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: DCV-WM (Dynamic Allocation Pool for DCV-EXOTIC)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Protocol Security Considerations","level":"1.4","depth":1,"next":{"title":"Tokenomics and Governance","level":"1.5","depth":1,"ref":"","articles":[{"title":"Dual-token Model","level":"1.5.1","depth":2,"path":"04-tokenomics/01-dual-token-model.md","ref":"04-tokenomics/01-dual-token-model.md","articles":[]},{"title":"$RCH Utility Token","level":"1.5.2","depth":2,"path":"04-tokenomics/02-rch.md","ref":"04-tokenomics/02-rch.md","articles":[]},{"title":"$SOFA Governance Token","level":"1.5.3","depth":2,"path":"04-tokenomics/03-sofa.md","ref":"04-tokenomics/03-sofa.md","articles":[]}]},"previous":{"title":"DCV-WM (Dynamic Allocation Pool for DCV-EXOTIC)","level":"1.3.3","depth":2,"path":"02-protocols/03-dcv-wm.md","ref":"02-protocols/03-dcv-wm.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex"],"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"03-security/README.md","mtime":"2024-04-01T08:30:23.974Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-04-01T09:02:48.952Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
