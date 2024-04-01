@@ -14,7 +14,7 @@
         * [Decentralized Governance Framework](02-protocols/01-dcv-exotic/01-design/06-governance.md)
       * [Developer Documentation](02-protocols/01-dcv-exotic/01-design/README.md)
         * [Open APIs for Market Maker](02-protocols/01-dcv-exotic/02-developers/01-marketmaker-open-apis.md)
-        * [Open APIs for Dapp Developer](02-protocols/01-dcv-exotic/02-developers/02-dapp-open-apis.md)
+        * [Open APIs for DAPP Developer](02-protocols/01-dcv-exotic/02-developers/02-dapp-open-apis.md)
         * [Subgraphs](02-protocols/01-dcv-exotic/02-developers/03-subgraphs.md)
         * [Bug Bounty Program](02-protocols/01-dcv-exotic/02-developers/04-bug-bounty.md)
   * [DCV-Leverage (Leverage Structured Product)](02-protocols/02-dcv-leverage.md)

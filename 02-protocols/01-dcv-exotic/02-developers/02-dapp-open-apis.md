@@ -1,4 +1,4 @@
-# MarketMaker Open APIs
+# Open APIs for DAPP Developer
 
 We offer a 'contract product pricing feature' for the protocol, which involves soliciting quotes from MarketMakers and then returning the best pricing results back to SOFA.  Users will subsequently have a choice to execute or reject the trade.  Given the need to interface with different MarketMakers depending on the underlying contract, products will distinguished by contract type.
 
@@ -16,15 +16,15 @@ POST /rfq/dnt/recommended-quote
 | **Field Name**       | **Required**  | **Type** | **Description**                                                                                                        |
 | -------------------- | ------------- | -------- | ---------------------------------------------------------------------------------------------------------------------- |
 | list                 | array[object] |          |                                                                                                                        |
-| > vault              | true          | string   | Contract information                                                                                                   |
-| > chainId            | true          | int      | Chain ID                                                                                                               |
-| > expiry             | true          | long     | Second-level timestamp for the expiry date, e.g., 1672387200                                                           |
-| > lowerBarrier       | true          | number   | Lower price                                                                                                            |
-| > upperBarrier       | true          | number   | Upper price                                                                                                            |
-| > depositAmount      | true          | number   | RFQ purchase amount                                                                                                    |
-| > inputApyDefinition | true          | string   | The underlying code is Enum indicating how the input APY is calculatedOptimusDefaultAPY, BinanceDntAPY, AaveLendingAPY |
-| > protectedApy       | false         | number   | Guaranteed annual yield (empty for RISKY, required for protected)                                                      |
-| > fundingApy         | false         | number   | AAVE annual yield (empty for RISKY, required for protected)                                                            |
+| vault              | true          | string   | Contract information                                                                                                   |
+| chainId            | true          | int      | Chain ID                                                                                                               |
+| expiry             | true          | long     | Second-level timestamp for the expiry date, e.g., 1672387200                                                           |
+| lowerBarrier       | true          | number   | Lower price                                                                                                            |
+| upperBarrier       | true          | number   | Upper price                                                                                                            |
+| depositAmount      | true          | number   | RFQ purchase amount                                                                                                    |
+| inputApyDefinition | true          | string   | The underlying code is Enum indicating how the input APY is calculatedOptimusDefaultAPY, BinanceDntAPY, AaveLendingAPY |
+| protectedApy       | false         | number   | Guaranteed annual yield (empty for RISKY, required for protected)                                                      |
+| fundingApy         | false         | number   | AAVE annual yield (empty for RISKY, required for protected)                                                            |
 
 **Input Parameter Example**
 
@@ -74,13 +74,13 @@ Object
 | timestamp                    | long         | Current pricing's trigger time; the next observation start time is calculated based on this logic |
 | observationStart             | long         | Estimated start time of observation for knocking in/out based on timestamp                        |
 | quote                        | object       |                                                                                                   |
-| > anchorPrices               | list[string] | 20000000000, 30000000000                                                                          |
-| > makerCollateral            | string       | Maker's collateral amount                                                                         |
-| > totalCollateral            | string       | Total collateral amount (Taker+Maker)                                                             |
-| > collateralAtRiskPercentage | string       | Required when guaranteed (can be empty)                                                           |
-| > deadline                   | long         | Expiration timestamp (e.g., 1672387200)                                                           |
-| > makerWallet                | string       | Maker's wallet (can be empty)                                                                     |
-| > signature                  | string       | Signature (can be empty)                                                                          |
+| anchorPrices               | list[string] | 20000000000, 30000000000                                                                          |
+| makerCollateral            | string       | Maker's collateral amount                                                                         |
+| totalCollateral            | string       | Total collateral amount (Taker+Maker)                                                             |
+| collateralAtRiskPercentage | string       | Required when guaranteed (can be empty)                                                           |
+| deadline                   | long         | Expiration timestamp (e.g., 1672387200)                                                           |
+| makerWallet                | string       | Maker's wallet (can be empty)                                                                     |
+| signature                  | string       | Signature (can be empty)                                                                          |
 
 Output Parameters example
 
@@ -205,10 +205,10 @@ Object
 | timestamp                    | long         | Current pricing's trigger time; the next observation start time is calculated based on this logic |
 | observationStart             | long         | Estimated start time of observation for knocking in/out based on timestamp                        |
 | quote                        | object       |                                                                                                   |
-| > anchorPrices               | list[string] | 20000000000, 30000000000                                                                          |
-| > makerCollateral            | string       | Maker's collateral amount                                                                         |
-| > totalCollateral            | string       | Total collateral amount (Taker+Maker)                                                             |
-| > collateralAtRiskPercentage | string       | Required when guaranteed (can be empty)                                                           |
-| > deadline                   | long         | Expiration timestamp (e.g., 1672387200)                                                           |
-| > makerWallet                | string       | Maker's wallet (can be empty)                                                                     |
-| > signature                  | string       | Signature (can be empty)                                                                          |
+| anchorPrices               | list[string] | 20000000000, 30000000000                                                                          |
+| makerCollateral            | string       | Maker's collateral amount                                                                         |
+| totalCollateral            | string       | Total collateral amount (Taker+Maker)                                                             |
+| collateralAtRiskPercentage | string       | Required when guaranteed (can be empty)                                                           |
+| deadline                   | long         | Expiration timestamp (e.g., 1672387200)                                                           |
+| makerWallet                | string       | Maker's wallet (can be empty)                                                                     |
+| signature                  | string       | Signature (can be empty)                                                                          |
