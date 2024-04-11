@@ -2,37 +2,78 @@
 
 # Protocol Security Considerations
 
-Security is the cornerstone and bedrock behind any decentralized platform. We define protocol security as encompassing asset safety, personal information protection, and smart contract reliability.  In response to these considerations, we have implemented a series of stringent security measures, from contract design to protocol monitoring.
+Security has been our primary and utmost focus since inception.  The spirit of blockchain is trustless decentralisation, with the trustless component contingent on air-tight security and asset safety.  Ultimately, the core of the entire DeFi ecosystem hinges on asset safety, so ensuring zero-risk to user funds is the primary driver behind every part of our design.
 
-## Simple is More Secure
+In the spirit of full transparency, we have written a FAQ to cover some of the common questions on and decisions behind our protocol architectural, code implementation, testing, contract audits, time locks, and bug bounty programs, particularly in terms of how they contribute to maximizing the security and safety of the SOFA.org protocols.
 
-SOFA.org's core smart contracts will universally follow the principle of "**simple is more secure**".  This principle seeks to avoid unnecessary complexity to reduce potential security risks.  The interaction between smart contracts is meticulously designed to ensure a streamlined and clear logical process, thereby minimizing the possibility of errors and vulnerabilities.  Furthermore, **all of the protocol's smart contracts are open source and transparent, providing a full auditable trial** to any 3rd party observer.
+## Frequently Asked Questions (FAQ):
 
-## Upgrade Mechanism
+### _Protocol Architecture_
 
-All Vault contracts will inherit OpenZepplin's Upgradeable contracts.  Upon governance vote approval, **contracts can be logically upgraded without changing the contract wallet address to ensure asset safety**.  This mechanism allows vulnerability fixes and function optimization with minimal disruption.
+1. **How do you handle collateral management and liquidation risks as a settlement and clearing platform?**
 
-## Multiple Chain-Audits
+   - The SOFA.org protocols work off an innovative, fully funded model which requires both entities to pre-fund their maximum exposures into the vault upon execution.  The net exposures are zero-sum by nature, so the capital at risk never exceeds what's originally deposited at trade inception.  No margin calculations are required in the interim, with no risks of flash loan attacks either.  Liquidty is unlocked via the use of replicating Position Tokens (ERC-1155), allowing the transfer of the _ownership claim_ without infringing on the underlying collateral.
 
-**SOFA.org will seek professional chain-audit confirmations from the industry's top security firms** to identify and fix potential security flaws.  By the project launch, SOFA.org's contract code would have undergone several rounds of stringent inspections to meet the highest standard of security audits available.  Furthermore, the same rigorous audit process will be repeated upon any significant protocol or functionality upgrades.
+2. **How are the different vaults and contracts interconnected?  Are locked assets properly segregated?  How are assets transferred upon final settlement?**
 
-## 24/7 Monitoring for Anomalous Activity
+   - Individual vaults are built to serve each individual structured product type and its associated collateral.  Vaults exist individually without cross-dependencies on each other.  Locked assets are contained within the specific vault contract linked to its traded product type, and can only be redeemed by the holders of Position Tokens, or converted into fees and repurchased into the $RCH pool by the FeeCollector contract.  There are no other ways to transfer assets within the contract otherwise.
 
-To continuously ensure asset safety, **SOFA.org has implemented a 24/7 anomalous activity monitoring system** under all of its protocols.  This system can detect and respond to unusual transaction patterns or behaviors in real-time, such as potential security attacks or abnormal fund flows. Upon detecting threats, our monitoring system can quickly trigger alerts and take necessary steps to prevent protocol damage.
+    ![](../static/Ara4bkW3ToRCfCxTM4Cuou8cswc.png)
 
-## Decentralized Attack Resistance
+3. **How does SOFA.org ensure the accuracy and integrity of its pricing data to mitigate pricing discrepancy or manipulation concerns on settlement fixing calculations?**
 
-All of SOFA.org's protocols will operate over a decentralized server network, meaning there is **minimal risk of system downtime due to a single point of failure**.  With blockchain's distributed architecture, data is replicated and stored across various nodes, enhancing the system's resilience and resistance to cyber attacks.
+   - We will utilize ChainLink's services to provide decentralized pricing references, via their time-tested DataFeeds (for spot) and Functions (for historical) methods.  The Functions method will publish Coinbase API data directly on the contract on-chain, with the underlying code being fully transparent and verifiable by anyone in the public domain.
+   - Additionally, the protocol will also use TheGraph to synchronize historical data from the dAPP, with the query service also being a transparent and inspectable code that is visible to everyone.
 
-Decentralized server solutions offer the following advantages over conventional data servers:
+4. **Can you please explain what you mean by a "fair launch" of the protocol's native $RCH tokens?**
 
-- **Enhanced Stability**:  By dispersing service nodes worldwide, we can ensure high reliability for our websites and dApp services, providing undisrupted services to protocol users.
-- **Improved Availability**:  Decentralized structure ensures that there are no central nodes that could become bottlenecks or single points of failure.
-- **Attack Resistance**:  Malefactors would need to compromise multiple nodes simultaneously to impact the service, significantly lowering the chance of success and bolstering protocol safety.
+   - The protocol's tokenomics model will be a 'fair launch' format where no participant, not even the core development team, will be allocated any tokens ahead of time.  Out of the fixed 37M float, the initial 25M of $RCH tokens will minted into a Uniswap pool along with burned LP tokens (ie. captive liquidity), while the final remaining 12M of $RCH tokens can _only_ be obtained through transaction (usage) airdrops.  The lack of up-front allocation, and the steady usage-based accumulation should ensure a more balanced token supply/demand picture upon TGE.  This should help minimize the risks of 'liquidity dumps' and other typical 'post-cliff' exit liquidity issues that have plagued many other token projects.
 
-## Protecting User Privacy
+### _Smart Contract Code_
 
-In addition to upholding our decentralisation principles, SOFA.org is a big proponent of user privacy and data protection.  None of our **protocols collect or store any personal information that can be used to identify users outside of their wallet addresses**.
+- All of our smart contract code will be publicly released on Github under sofa-org, allowing full public access and validation.
+- We have adopted the MIT permissive software license, encouraging and inviting more collaborative development efforts on expanding the protocol's ecosystem.
+- Added reentrancy checks to all methods involving fund transfers to minimize vulnerability.
+- Reduced all bloated and unnecessary permission management processes over the multi-sig process, minimizing human errors over permission mis-use or private key leakage.
+- Full Solidity (0.8.10) adoption to ensure compatibility in compiling all contracts while preventing vulnerabilities due to different compiler versions.
+- Used OpenZeppelin's standard contracts to avoid introducing vulnerabilities through development redundancies.
 
-With judicious contract design, professional audit validation, around-the-clock monitoring, and decentralized operations, SOFA.org is dedicated to providing a safe, reliable, and privacy-protecting environment for all DeFi users.
+### DNTVault Design
+
+![](../static/UhLWbUK3boKbNFx0bKJuejnis3d.png)
+
+### AAVEDNTVault Design
+
+![](../static/W8g6byCAQo0iUNxFY1Bu5dL4s7d.png)
+
+### SmartTrendVault Design
+
+![](../static/DLysbNsygoOOrOxL4JbuzDw2sRe.png)
+
+### AAVESmartTrendVault Design
+
+![](../static/Lw0abNq2foT3bix6G43u1k1Dsbb.png)
+
+## Testing
+
+- Tested coverage for non-mock contracts, demonstrating that statements, functions, and lines coverage all reached 100%.
+- Used a variety of automated contract audit tools, such as Slither.
+
+![](../static/NzBebF89coZj3fxTJVduc8vQsVd.png)
+
+## Audit
+
+- SOFA.org has invited the most reputable and professional security firms in the industry to audit our contracts.  We view auditing as an ongoing process and will continue to invite more auditors into the mix as the protocol evolves.
+
+## Timelock
+
+- All owner permissions for deployed contracts will be on Timelock contracts.  As such, any changes submitted by developers will only take effect after 24 hours, giving ample reaction time for users to withdraw their funds should there be issues introduced with a code update.
+- Changes to submitted Timelock contracts will require approval from multi-signature wallets, ensuring that all code changes will be reviewed and scrutinized by multiple participants before being pushed.
+
+## Bug Bounty
+
+- We have launched a bug bounty program on ImmuneFi's platform. This program offers generous rewards to those who find and identify vulnerabilities, helping reinforce the security foundation of the SOFA.org ecosystem.
+
+
+In summary, SOFA.org wants to foster a fair, decentralized, open-source and transparent working community striking for the common goal of building a better DeFi system.  We hope and encourage every member of the community to join and contribute on this journey together.  As always, we are looking for better ways to enhance the security foundation of our protocol, and we are open to and welcome your valuable suggestions on this front.
 

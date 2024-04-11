@@ -36,7 +36,7 @@ In response, SOFA.org will be deploying a 100% fair-launch tokenomics model, wit
 
 ## Decentralized Clearing Vaults (DCV) as a New Settlement Foundation
 
-With the wisdom gained from the past cycle, we are directly addressing some of the structural shortcomings in DeFi while iterating on its key innovations.  Specifically, **the** **creation of the Decentralized Clear Vaults (DCV) is our ambitious attempt to establish standards of how financial assets can be atomically settled on-chain, while simultaneously catalyzing DeFi capital liquidity through transferrable Position Tokens.**
+With the wisdom gained from the past cycle, we are directly addressing some of the structural shortcomings in DeFi while iterating on its key innovations.  Specifically, **the creation of the Decentralized Clear Vaults (DCV) is our ambitious attempt to establish standards of how financial assets can be atomically settled on-chain, while simultaneously catalyzing DeFi capital liquidity through transferrable Position Tokens.**
 
 By recording relevant instrument details directly on the smart contract, not only can we settle these assets on-chain, but the protocol can also mint matching Position Tokens as a definitive digital proof of claim.  Furthermore, these Positions Token can be pledged to other DeFi protocols and even CeFi platforms as secure collateral, greatly enhancing capital velocity across the entire ecosystem.  Finally, **by having DCV vaults as a secure, transparent, and 'neutral' settlement option on the blockchain, we have eliminated asset custody concerns across crypto intermediaries, offering users complete ease of mind to focus on return ON capital rather than return OF capital**.
 

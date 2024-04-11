@@ -93,7 +93,7 @@ The Vault contract uses the ERC-1155 standard to **support fungibility of Positi
 
 ### Additional Technical Details
 
-[DCH-Exotic Details](https://ainxbawxjd.larksuite.com/docx/QLJEdtfZdoJOEaxeQFMu9CjxsdV)
+[DCH-Exotic Details](02-protocols/01-dcv-exotic/README.md)
 
 ## Immediate Position Token Use-Cases
 
@@ -194,9 +194,9 @@ With that being said, please note that a **critical design component requires th
 
 ![](../static/P6sSbS9U0ozgqCxuTZOuSiSLsof.jpg)
 
-![](../static/principal_usdt.png)
+![](../static/protected_usdt.png)
 
-![](../static/principal_eth.png)
+![](../static/protected_eth.png)
 
 #### All-or-None
 

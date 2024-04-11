@@ -15,7 +15,7 @@ $$
 ## $RCH Token Float
 
 1. Total supply of $RCH is capped at 37,000,000.
-2. 60% of $RCH supply (25 million) is pre-mined and locked in a Uniswap liquidity pool (vs ETH), while the remaining 40% will be released on a pre-determined airdrop schedule to protocol users and supporters.
+2. 60% of $RCH supply (25 million) is pre-minted and locked in a Uniswap liquidity pool (vs ETH), while the remaining 40% will be released on a pre-determined airdrop schedule to protocol users and supporters.
 3. **100% of all SOFA.org protocol revenues will be used to purchase** and burn $RCH from Uniswap's LP pool.
 4. **As transaction volumes increase, the outstanding float of $RCH will decrease as burn rates overwhelm the daily airdrops.**  This creates a net deflationary supply drain, pushing up the price of $RCH into a higher equilibrium, with benefits accuring completely to token holders (users).
 5. Over the long-term, **price accretion on RCH should be a direct reflection of the protocol's accumulated usage**, aligning the success of the protocol with significant capital gains to our core users and token holders.
@@ -26,7 +26,7 @@ $$
 
 ![](../static/VCZVbokALotMwwxcyk5uJng9syd.png)
 
-At project launch, **60% of $RCH (25 million tokens) is pre-mined and placed into Uniswap's L3 pool on Ethereum along with $500,000 of ETH**.  This pool of $RCH and ETH is referred to as the 'Basic Vault'.
+At project launch, **60% of $RCH (25 million tokens) is pre-minted and placed into Uniswap's L3 pool on Ethereum along with $500,000 of ETH**.  This pool of $RCH and ETH is referred to as the 'Basic Vault'.
 
 Please note, the Basic Vault is not owned by anyone.  After depositing into the LP, the corresponding Uniswap LP tokens are promptly destroyed, ensuring that the **initial liquidity of the Basic Vault can never be withdrawn**.
 

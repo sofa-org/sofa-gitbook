@@ -8,9 +8,9 @@ With trivial for conventional systems, **time-scheduled data retrievals are chal
 
 Crypto 'algo-stables' such as Basis Cash or ESD once swept through the DeFi sector, deploying an 'epoch' interval approach which required a _manual_ trigger to advance operations at the end of each epoch and establish a new settlement price.  **Reward mechanisms were built-in to smart contract code to compel volunteers to 'trigger the advance'** and keep the protocols in smooth operation.  Similarly, a popular project called Keep3r founded by Andre Cronje (Yearn Finance, Fantom) created a virtual job board where one would post advance requests and specified job awards for this very specific purpose.
 
-Neither solution was far from perfect as they **ultimately relied on human intervention** (motivated self-interests), not to mention **uncertainties over the ****actual ****final execution time**, given the manual efforts required.  This can lead to uncomfortable situations where the settlement fixing isn't updated until well after the expiry, leading to a less than satisfactory user-experience.
+Neither solution was far from perfect as they **ultimately relied on human intervention** (motivated self-interests), not to mention **uncertainties over the actual final execution time**, given the manual efforts required.  This can lead to uncomfortable situations where the settlement fixing isn't updated until well after the expiry, leading to a less than satisfactory user-experience.
 
-Could we create and rely on off-chain solutions that call for a periodic triggering of price updates?  While possible, **we** **remain disinterested in centralized 'shortcuts'** where the protocol could be critically impaired by risks such as a server failure.
+Could we create and rely on off-chain solutions that call for a periodic triggering of price updates?  While possible, **we remain disinterested in centralized 'shortcuts'** where the protocol could be critically impaired by risks such as a server failure.
 
 As covered in our oracle section, SOFA utilizes** ChainLink's Automation service as our settlement pricing source**.  Their service enables conditional execution of smart contract functions through a reliable and decentralized automation platform with a proven network of external node operations, currently securing over billions in TVL.
 

@@ -1,6 +1,6 @@
 # $SOFA Governance token
 
-The **$SOFA token is the governance token of the ****SOFA****.org ecosystem**.  As a decentralized, non-profit, open-source technology organization, all decisions within the SOFA.org ecosystem are determined by votes from $SOFA token holders.
+The **$SOFA token is the governance token of the SOFA.org ecosystem**.  As a decentralized, non-profit, open-source technology organization, all decisions within the SOFA.org ecosystem are determined by votes from $SOFA token holders.
 
 ## Uses of the $SOFA Token
 
