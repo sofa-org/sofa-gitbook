@@ -475,26 +475,72 @@
                                 
                                 <p><img src="../static/4.jpg" alt=""></p>
 <h1 id="protocol-security-considerations">Protocol Security Considerations</h1>
-<p>Security is the cornerstone and bedrock behind any decentralized platform. We define protocol security as encompassing asset safety, personal information protection, and smart contract reliability.  In response to these considerations, we have implemented a series of stringent security measures, from contract design to protocol monitoring.</p>
-<h2 id="simple-is-more-secure">Simple is More Secure</h2>
-<p>SOFA.org&apos;s core smart contracts will universally follow the principle of &quot;<strong>simple is more secure</strong>&quot;.  This principle seeks to avoid unnecessary complexity to reduce potential security risks.  The interaction between smart contracts is meticulously designed to ensure a streamlined and clear logical process, thereby minimizing the possibility of errors and vulnerabilities.  Furthermore, <strong>all of the protocol&apos;s smart contracts are open source and transparent, providing a full auditable trial</strong> to any 3rd party observer.</p>
-<h2 id="upgrade-mechanism">Upgrade Mechanism</h2>
-<p>All Vault contracts will inherit OpenZepplin&apos;s Upgradeable contracts.  Upon governance vote approval, <strong>contracts can be logically upgraded without changing the contract wallet address to ensure asset safety</strong>.  This mechanism allows vulnerability fixes and function optimization with minimal disruption.</p>
-<h2 id="multiple-chain-audits">Multiple Chain-Audits</h2>
-<p><strong>SOFA.org will seek professional chain-audit confirmations from the industry&apos;s top security firms</strong> to identify and fix potential security flaws.  By the project launch, SOFA.org&apos;s contract code would have undergone several rounds of stringent inspections to meet the highest standard of security audits available.  Furthermore, the same rigorous audit process will be repeated upon any significant protocol or functionality upgrades.</p>
-<h2 id="247-monitoring-for-anomalous-activity">24/7 Monitoring for Anomalous Activity</h2>
-<p>To continuously ensure asset safety, <strong>SOFA.org has implemented a 24/7 anomalous activity monitoring system</strong> under all of its protocols.  This system can detect and respond to unusual transaction patterns or behaviors in real-time, such as potential security attacks or abnormal fund flows. Upon detecting threats, our monitoring system can quickly trigger alerts and take necessary steps to prevent protocol damage.</p>
-<h2 id="decentralized-attack-resistance">Decentralized Attack Resistance</h2>
-<p>All of SOFA.org&apos;s protocols will operate over a decentralized server network, meaning there is <strong>minimal risk of system downtime due to a single point of failure</strong>.  With blockchain&apos;s distributed architecture, data is replicated and stored across various nodes, enhancing the system&apos;s resilience and resistance to cyber attacks.</p>
-<p>Decentralized server solutions offer the following advantages over conventional data servers:</p>
+<p>Security has been our primary and utmost focus since inception.  The spirit of blockchain is trustless decentralisation, with the trustless component contingent on air-tight security and asset safety.  Ultimately, the core of the entire DeFi ecosystem hinges on asset safety, so ensuring zero-risk to user funds is the primary driver behind every part of our design.</p>
+<p>In the spirit of full transparency, we have written a FAQ to cover some of the common questions on and decisions behind our protocol architectural, code implementation, testing, contract audits, time locks, and bug bounty programs, particularly in terms of how they contribute to maximizing the security and safety of the SOFA.org protocols.</p>
+<h2 id="frequently-asked-questions-faq">Frequently Asked Questions (FAQ):</h2>
+<h3 id="protocol-architecture"><em>Protocol Architecture</em></h3>
+<ol>
+<li><p><strong>How do you handle collateral management and liquidation risks as a settlement and clearing platform?</strong></p>
 <ul>
-<li><strong>Enhanced Stability</strong>:  By dispersing service nodes worldwide, we can ensure high reliability for our websites and dApp services, providing undisrupted services to protocol users.</li>
-<li><strong>Improved Availability</strong>:  Decentralized structure ensures that there are no central nodes that could become bottlenecks or single points of failure.</li>
-<li><strong>Attack Resistance</strong>:  Malefactors would need to compromise multiple nodes simultaneously to impact the service, significantly lowering the chance of success and bolstering protocol safety.</li>
+<li>The SOFA.org protocols work off an innovative, fully funded model which requires both entities to pre-fund their maximum exposures into the vault upon execution.  The net exposures are zero-sum by nature, so the capital at risk never exceeds what&apos;s originally deposited at trade inception.  No margin calculations are required in the interim, with no risks of flash loan attacks either.  Liquidty is unlocked via the use of replicating Position Tokens (ERC-1155), allowing the transfer of the <em>ownership claim</em> without infringing on the underlying collateral.</li>
 </ul>
-<h2 id="protecting-user-privacy">Protecting User Privacy</h2>
-<p>In addition to upholding our decentralisation principles, SOFA.org is a big proponent of user privacy and data protection.  None of our <strong>protocols collect or store any personal information that can be used to identify users outside of their wallet addresses</strong>.</p>
-<p>With judicious contract design, professional audit validation, around-the-clock monitoring, and decentralized operations, SOFA.org is dedicated to providing a safe, reliable, and privacy-protecting environment for all DeFi users.</p>
+</li>
+<li><p><strong>How are the different vaults and contracts interconnected?  Are locked assets properly segregated?  How are assets transferred upon final settlement?</strong></p>
+<ul>
+<li><p>Individual vaults are built to serve each individual structured product type and its associated collateral.  Vaults exist individually without cross-dependencies on each other.  Locked assets are contained within the specific vault contract linked to its traded product type, and can only be redeemed by the holders of Position Tokens, or converted into fees and repurchased into the $RCH pool by the FeeCollector contract.  There are no other ways to transfer assets within the contract otherwise.</p>
+<p><img src="../static/Ara4bkW3ToRCfCxTM4Cuou8cswc.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li><p><strong>How does SOFA.org ensure the accuracy and integrity of its pricing data to mitigate pricing discrepancy or manipulation concerns on settlement fixing calculations?</strong></p>
+<ul>
+<li>We will utilize ChainLink&apos;s services to provide decentralized pricing references, via their time-tested DataFeeds (for spot) and Functions (for historical) methods.  The Functions method will publish Coinbase API data directly on the contract on-chain, with the underlying code being fully transparent and verifiable by anyone in the public domain.</li>
+<li>Additionally, the protocol will also use TheGraph to synchronize historical data from the dAPP, with the query service also being a transparent and inspectable code that is visible to everyone.</li>
+</ul>
+</li>
+<li><p><strong>Can you please explain what you mean by a &quot;fair launch&quot; of the protocol&apos;s native $RCH tokens?</strong></p>
+<ul>
+<li>The protocol&apos;s tokenomics model will be a &apos;fair launch&apos; format where no participant, not even the core development team, will be allocated any tokens ahead of time.  Out of the fixed 37M float, the initial 25M of $RCH tokens will minted into a Uniswap pool along with burned LP tokens (ie. captive liquidity), while the final remaining 12M of $RCH tokens can <em>only</em> be obtained through transaction (usage) airdrops.  The lack of up-front allocation, and the steady usage-based accumulation should ensure a more balanced token supply/demand picture upon TGE.  This should help minimize the risks of &apos;liquidity dumps&apos; and other typical &apos;post-cliff&apos; exit liquidity issues that have plagued many other token projects.</li>
+</ul>
+</li>
+</ol>
+<h3 id="smart-contract-code"><em>Smart Contract Code</em></h3>
+<ul>
+<li>All of our smart contract code will be publicly released on Github under sofa-org, allowing full public access and validation.</li>
+<li>We have adopted the MIT permissive software license, encouraging and inviting more collaborative development efforts on expanding the protocol&apos;s ecosystem.</li>
+<li>Added reentrancy checks to all methods involving fund transfers to minimize vulnerability.</li>
+<li>Reduced all bloated and unnecessary permission management processes over the multi-sig process, minimizing human errors over permission mis-use or private key leakage.</li>
+<li>Full Solidity (0.8.10) adoption to ensure compatibility in compiling all contracts while preventing vulnerabilities due to different compiler versions.</li>
+<li>Used OpenZeppelin&apos;s standard contracts to avoid introducing vulnerabilities through development redundancies.</li>
+</ul>
+<h3 id="dntvault-design">DNTVault Design</h3>
+<p><img src="../static/UhLWbUK3boKbNFx0bKJuejnis3d.png" alt=""></p>
+<h3 id="aavedntvault-design">AAVEDNTVault Design</h3>
+<p><img src="../static/W8g6byCAQo0iUNxFY1Bu5dL4s7d.png" alt=""></p>
+<h3 id="smarttrendvault-design">SmartTrendVault Design</h3>
+<p><img src="../static/DLysbNsygoOOrOxL4JbuzDw2sRe.png" alt=""></p>
+<h3 id="aavesmarttrendvault-design">AAVESmartTrendVault Design</h3>
+<p><img src="../static/Lw0abNq2foT3bix6G43u1k1Dsbb.png" alt=""></p>
+<h2 id="testing">Testing</h2>
+<ul>
+<li>Tested coverage for non-mock contracts, demonstrating that statements, functions, and lines coverage all reached 100%.</li>
+<li>Used a variety of automated contract audit tools, such as Slither.</li>
+</ul>
+<p><img src="../static/NzBebF89coZj3fxTJVduc8vQsVd.png" alt=""></p>
+<h2 id="audit">Audit</h2>
+<ul>
+<li>SOFA.org has invited the most reputable and professional security firms in the industry to audit our contracts.  We view auditing as an ongoing process and will continue to invite more auditors into the mix as the protocol evolves.</li>
+</ul>
+<h2 id="timelock">Timelock</h2>
+<ul>
+<li>All owner permissions for deployed contracts will be on Timelock contracts.  As such, any changes submitted by developers will only take effect after 24 hours, giving ample reaction time for users to withdraw their funds should there be issues introduced with a code update.</li>
+<li>Changes to submitted Timelock contracts will require approval from multi-signature wallets, ensuring that all code changes will be reviewed and scrutinized by multiple participants before being pushed.</li>
+</ul>
+<h2 id="bug-bounty">Bug Bounty</h2>
+<ul>
+<li>We have launched a bug bounty program on ImmuneFi&apos;s platform. This program offers generous rewards to those who find and identify vulnerabilities, helping reinforce the security foundation of the SOFA.org ecosystem.</li>
+</ul>
+<p>In summary, SOFA.org wants to foster a fair, decentralized, open-source and transparent working community striking for the common goal of building a better DeFi system.  We hope and encourage every member of the community to join and contribute on this journey together.  As always, we are looking for better ways to enhance the security foundation of our protocol, and we are open to and welcome your valuable suggestions on this front.</p>
 
                                 
                                 </section>
@@ -538,7 +584,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"🔐 Protocol Security Considerations","level":"1.4","depth":1,"next":{"title":"📈 Tokenomics and Governance","level":"1.5","depth":1,"path":"04-tokenomics/README.md","ref":"04-tokenomics/README.md","articles":[{"title":"$RCH Utility Token","level":"1.5.1","depth":2,"path":"04-tokenomics/01-rch.md","ref":"04-tokenomics/01-rch.md","articles":[]},{"title":"$SOFA Governance Token","level":"1.5.2","depth":2,"path":"04-tokenomics/02-sofa.md","ref":"04-tokenomics/02-sofa.md","articles":[]}]},"previous":{"title":"DCV-WM (Dynamic Allocation Pool for DCV-EXOTIC)","level":"1.3.3","depth":2,"path":"02-protocols/03-dcv-wm.md","ref":"02-protocols/03-dcv-wm.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex","-sharing"],"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"}},"file":{"path":"03-security/README.md","mtime":"2024-04-02T09:36:38.119Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-04-05T03:50:18.319Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"🔐 Protocol Security Considerations","level":"1.4","depth":1,"next":{"title":"📈 Tokenomics and Governance","level":"1.5","depth":1,"path":"04-tokenomics/README.md","ref":"04-tokenomics/README.md","articles":[{"title":"$RCH Utility Token","level":"1.5.1","depth":2,"path":"04-tokenomics/01-rch.md","ref":"04-tokenomics/01-rch.md","articles":[]},{"title":"$SOFA Governance Token","level":"1.5.2","depth":2,"path":"04-tokenomics/02-sofa.md","ref":"04-tokenomics/02-sofa.md","articles":[]}]},"previous":{"title":"DCV-WM (Dynamic Allocation Pool for DCV-EXOTIC)","level":"1.3.3","depth":2,"path":"02-protocols/03-dcv-wm.md","ref":"02-protocols/03-dcv-wm.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex","-sharing"],"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"}},"file":{"path":"03-security/README.md","mtime":"2024-04-11T09:35:46.934Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-04-11T09:36:37.587Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
