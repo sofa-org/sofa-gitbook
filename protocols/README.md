@@ -1,5 +1,3 @@
-![](../static/3.jpg)
-
 # 🌏 **Welcome To the SOFA Protocols **🌏
 
 ## **🏗️ What’s A Structured Product? **

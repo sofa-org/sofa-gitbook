@@ -1,4 +1,4 @@
-![](static/1.jpg)
+![](static/1.png)
 
 # SOFA.org Overview
 

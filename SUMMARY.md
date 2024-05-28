@@ -4,7 +4,7 @@
 * [Innovating the Next Wave of DeFi](innovating/README.md)
 * [🌏 Welcome To the SOFA Protocols 🌏](protocols/README.md)
 * [Referral Model](referral/README.md)
-* Technical Design
+* [Technical Design](technical-design/product-scope.md)
   * [Product Scope](technical-design/product-scope.md)
   * [Oracle Construction](technical-design/oracle.md)
   * [On-Chain Settlement Considerations](technical-design/settlement.md)

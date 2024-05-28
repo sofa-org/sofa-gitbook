@@ -1,7 +1,5 @@
 # Referral Model
 
-> **Strength in numbers**
-
 At SOFA, we recognize the importance of having a vibrant network of DeFi community members and partners to promote and ensure the long-term success of the protocol.  As such, **we have designed a referral reward mechanism aimed at growing both our individual and institutional partnerships** for the SOFA ecosystem.
 
 ## Operational Process
