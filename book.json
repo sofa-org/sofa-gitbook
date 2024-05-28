@@ -9,5 +9,5 @@
         "mobi": "styles/mobi.css",
         "epub": "styles/epub.css"
     },
-    "plugins": ["katex", "-sharing"]
+    "plugins": ["katex", "-sharing", "-lunr", "-search", "search-pro", "back-to-top-button", "code"]
 }

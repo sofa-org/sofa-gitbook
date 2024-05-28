@@ -63,7 +63,9 @@ In the spirit of full transparency, we have written a FAQ to cover some of the c
 
 ## Audit
 
-- SOFA.org has invited the most reputable and professional security firms in the industry to audit our contracts.  We view auditing as an ongoing process and will continue to invite more auditors into the mix as the protocol evolves.
+SOFA.org has invited the most reputable and professional security firms in the industry to audit our contracts.  We view auditing as an ongoing process and will continue to invite more auditors into the mix as the protocol evolves.
+
+- [PeckShield](https://github.com/peckshield/publications/tree/master/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf) 
 
 ## Timelock
 
@@ -72,7 +74,7 @@ In the spirit of full transparency, we have written a FAQ to cover some of the c
 
 ## Bug Bounty
 
-- We have launched a bug bounty program on ImmuneFi's platform. This program offers generous rewards to those who find and identify vulnerabilities, helping reinforce the security foundation of the SOFA.org ecosystem.
+- We will bug bounty programs on security platforms. These programs offer generous rewards to those who find and identify vulnerabilities, helping reinforce the security foundation of the SOFA.org ecosystem.
 
 
 In summary, SOFA.org wants to foster a fair, decentralized, open-source and transparent working community striking for the common goal of building a better DeFi system.  We hope and encourage every member of the community to join and contribute on this journey together.  As always, we are looking for better ways to enhance the security foundation of our protocol, and we are open to and welcome your valuable suggestions on this front.
