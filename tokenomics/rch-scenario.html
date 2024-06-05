@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Subgraphs · SOFA.org Documentation</title>
+        <title>Hypothetical $RCH Float Scenario (LP + Cumulative Airdrops) · SOFA.org Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,8 +73,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="../developer/" />
     
-    <link rel="prev" href="dapp-open-apis.html" />
+    
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -355,9 +357,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="../tokenomics/">
+        <li class="chapter " data-level="1.7" data-path="./">
             
-                <a href="../tokenomics/">
+                <a href="./">
             
                     
                     Tokenomics
@@ -369,9 +371,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.7.1" data-path="../tokenomics/rch-scenario.html">
+        <li class="chapter active" data-level="1.7.1" data-path="rch-scenario.html">
             
-                <a href="../tokenomics/rch-scenario.html">
+                <a href="rch-scenario.html">
             
                     
                     Hypothetical $RCH Float Scenario (LP + Cumulative Airdrops)
@@ -387,9 +389,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="./">
+        <li class="chapter " data-level="1.8" data-path="../developer/">
             
-                <a href="./">
+                <a href="../developer/">
             
                     
                     Developer Documentation
@@ -401,9 +403,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="marketmaker-open-apis.html">
+        <li class="chapter " data-level="1.8.1" data-path="../developer/marketmaker-open-apis.html">
             
-                <a href="marketmaker-open-apis.html">
+                <a href="../developer/marketmaker-open-apis.html">
             
                     
                     Market Maker Open APIs
@@ -414,9 +416,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="dapp-open-apis.html">
+        <li class="chapter " data-level="1.8.2" data-path="../developer/dapp-open-apis.html">
             
-                <a href="dapp-open-apis.html">
+                <a href="../developer/dapp-open-apis.html">
             
                     
                     DAPP Open APIs
@@ -427,9 +429,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.8.3" data-path="subgraphs.html">
+        <li class="chapter " data-level="1.8.3" data-path="../developer/subgraphs.html">
             
-                <a href="subgraphs.html">
+                <a href="../developer/subgraphs.html">
             
                     
                     Subgraphs
@@ -475,7 +477,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Subgraphs</a>
+        <a href=".." >Hypothetical $RCH Float Scenario (LP + Cumulative Airdrops)</a>
     </h1>
 </div>
 
@@ -490,40 +492,33 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="subgraphs">Subgraphs</h1>
-<p>We support the development of efficient and responsive applications by providing real-time and accurate blockchain data access through the use of The Graph&apos;s indexing protocol.  Subgraphs are a powerful tool that allows us to index data stored on Ethereum and query this data via GraphQL.</p>
-<p>Here is how you can utilize custom subgraphs to query related data within the protocol:</p>
-<h2 id="accessing-our-subgraph">Accessing Our Subgraph</h2>
-<p>We have created specific subgraphs for the protocol&apos;s data. These subgraphs contain various entities indexed from the blockchain, such as transactions, accounts, and specific events related to our DeFi products.  You can query data in the subgraph via the following steps:</p>
-<h3 id="step-1-find-the-endpoint">Step 1: Find the Endpoint</h3>
-<p>Locate the GraphQL endpoint URL corresponding to the subgraph you wish to interact with.  This typically appears as a web address link.  Please ensure you are using the most up-to-date endpoint.</p>
-<h3 id="step-2-understand-the-schema">Step 2: Understand the Schema</h3>
-<p>The schema describes the entities within the subgraph and the types of queries that can be performed. Understanding the schema is crucial for writing efficient queries.</p>
-<h3 id="step-3-write-a-graphql-query">Step 3: Write a GraphQL Query</h3>
-<p>Based on the schema, you can start writing GraphQL queries to query data from the subgraph. GraphQL allows for very specific queries, requesting only the fields you are interested in.  For example, if you want to query detailed information for each transaction, you might write a query like this:</p>
-<pre><code>{
-  transactions(first: 5) {
-    id
-    from
-    to
-    value
-    blockNumber
-  }
-}
-</code></pre><p>This will return transactions and their related details for the first five records on the blockchain.</p>
-<h3 id="step-4-send-the-query-request">Step 4: Send the Query Request</h3>
-<p>Send your query request using any HTTP client that supports GraphQL. You can use a command-line tool such as curl, or a library integrated into your application, like apollo-client.  Typically, the request is sent as a POST request to the endpoint URL.</p>
-<p>An example code using curl is as follows:</p>
-<pre><code>curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;query&quot;: &quot;{ transactions(first: 5) { id from to value blockNumber } }&quot;}&apos; https://api.thegraph.com/subgraphs/name/sofa-org/subgraph-name
-</code></pre><p>Replace <code>subgraph-name</code> with the actual subgraph name, and determine the URL based on the actual situation.</p>
-<h3 id="step-5-analyze-and-use-the-response">Step 5: Analyze and Use the Response</h3>
-<p>After your query request is sent, the GraphQL service will return the response in JSON format. You can process this data in your application or directly display it to users on the front end.</p>
-<h2 id="best-practices">Best Practices</h2>
+                                <h1 id="hypothetical-rch-float-scenario-lp--cumulative-airdrops">Hypothetical $RCH Float Scenario (LP + Cumulative Airdrops)</h1>
+<p><em>Base assumptions</em></p>
 <ul>
-<li><strong>Use Query Variables</strong>:  If you frequently need to perform queries of the same structure but with different parameters, using query variables can make it easier to reuse your queries.</li>
-<li><strong>Handle Errors</strong>:  In addition to normal responses, GraphQL can also return error information. Make sure your client code can gracefully handle these situations.</li>
+<li>0.02% protocol service fee, 1,000,000 USDT in day 1 protocol TVL with 2% daily growth, 12.5k in daily notional $RCH airdrops with 50% sold back into LP pool</li>
 </ul>
-<p>By following the above steps, you can effectively use The Graph to query data on the SOFA protocol to support your development projects.   Please refer to the rest of our developer documentation and Subgraph related resources for further information.</p>
+<p><img src="../static/TmEMbRxJvoqcdxxRvPYuSA3Csce.png" alt=""></p>
+<h2 id="positive-reflexivity-with-self-correcting-downside-adjustments">Positive Reflexivity with Self-Correcting Downside Adjustments</h2>
+<p><img src="../static/X1htbkA9AoMbiSxc8rxud0mJsbh.png" alt=""></p>
+<p>Given its deflationary supply model, increased protocol transactions should lead to a higher $RCH price.  <strong>As the utility token&apos;s price increases, so does the value of the upcoming airdrops</strong>, which encourages additional transactions and <strong>creates a positive feedback loop for the entire ecosystem.</strong></p>
+<p>On the other hand, should the token price fall precipitously for whatever reason, the <strong>USDT based protocol transaction fees will be able to burn a greater quantity of $RCH</strong> tokens from the daily buyback operations.  This serves as a <strong>powerful, self-correcting adjustment to stabilize the token price</strong>, until the daily transactions can catch-up to resume a net supply deficit and restart the upward $RCH price trajectory.</p>
+<h2 id="no-exit-liquidity-dumps">No Exit-Liquidity Dumps</h2>
+<p>Learning from the experience of prior projects, <strong>$RCH&apos;s fair launch mechanism will eliminate any negative &apos;cliff vesting&apos; impacts</strong> or insider liquidity dumps as no party is entitled to any $RCH at launch.  Furthermore, the utility token&apos;s <strong>initial liquidity is locked and cannot be withdrawn by its contributors</strong>, ensuring a minimum level of liquidity regardless of market developments.  Finally, as long as protocol transactions continue to happen, this should be a <strong>net deflationary supply impact on $RCH</strong>, granting the token price a very strong tailwind for the long-haul.</p>
+<h2 id="infinitely-scalable-ecosystem">Infinitely Scalable Ecosystem</h2>
+<p><img src="../static/draw9.png" alt=""></p>
+<p>In the future, any aspiring DeFi project that <strong>meets the standards of SOFA.org can apply to join the ecosystem as a protocol partner</strong>.</p>
+<h2 id="benefits-of-joining-the-ecosystem">Benefits of Joining the Ecosystem</h2>
+<ol>
+<li>Recommendation by SOFA.org as a DeFi project that observes and upholds the association&apos;s decentralized values and design, serving as an expedited pathway to connect with rest of the SOFA ecosystem.</li>
+<li>Transactions within the greater SOFA ecosystem also qualify for the daily $RCH airdrops.</li>
+</ol>
+<h2 id="prerequisites-for-joining-the-ecosystem">Prerequisites for Joining the Ecosystem</h2>
+<ol>
+<li>Adherence to True DeFi Standards:  Projects must meet the true DeFi standards set forth by SOFA.org, supporting the continued growth of the decentralisation mission.</li>
+<li>Allocation of Fees to Burn the Native Token:  Projects should allocate all or a portion of their transaction fees to burn the $RCH token, contributing to the deflationary mechanism and accelerating the value creep to our loyal users.</li>
+<li>Approval through Collective Voting by $SOFA Holders:  Projects must be approved to join the ecosystem through a collective voting process by $SOFA token holders as a form of community endorsement.</li>
+</ol>
+<p>As more protocols join the SOFA.org ecosystem, more transaction fees will be allocated towards token buybacks, creating profound gains for our token holders.  At the same time, we would also have <strong>succeeded in breaking new grounds on how digital assets can be settled on-chain, while offering a robust tri-party solution for mitigating counterparty risks across both DeFi and CeFi platforms.</strong></p>
 
                                 
                                 </section>
@@ -551,10 +546,14 @@
 
             
                 
-                <a href="dapp-open-apis.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: DAPP Open APIs">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Tokenomics">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="../developer/" class="navigation navigation-next " aria-label="Next page: Developer Documentation">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -563,7 +562,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Subgraphs","level":"1.8.3","depth":2,"previous":{"title":"DAPP Open APIs","level":"1.8.2","depth":2,"path":"developer/dapp-open-apis.md","ref":"developer/dapp-open-apis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"katex":{},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"developer/subgraphs.md","mtime":"2024-05-31T15:47:47.675Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-05T16:18:21.700Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Hypothetical $RCH Float Scenario (LP + Cumulative Airdrops)","level":"1.7.1","depth":2,"next":{"title":"Developer Documentation","level":"1.8","depth":1,"path":"developer/README.md","ref":"developer/README.md","articles":[{"title":"Market Maker Open APIs","level":"1.8.1","depth":2,"path":"developer/marketmaker-open-apis.md","ref":"developer/marketmaker-open-apis.md","articles":[]},{"title":"DAPP Open APIs","level":"1.8.2","depth":2,"path":"developer/dapp-open-apis.md","ref":"developer/dapp-open-apis.md","articles":[]},{"title":"Subgraphs","level":"1.8.3","depth":2,"path":"developer/subgraphs.md","ref":"developer/subgraphs.md","articles":[]}]},"previous":{"title":"Tokenomics","level":"1.7","depth":1,"path":"tokenomics/README.md","ref":"tokenomics/README.md","articles":[{"title":"Hypothetical $RCH Float Scenario (LP + Cumulative Airdrops)","level":"1.7.1","depth":2,"path":"tokenomics/rch-scenario.md","ref":"tokenomics/rch-scenario.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"katex":{},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"tokenomics/rch-scenario.md","mtime":"2024-06-05T15:44:29.153Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-05T16:18:21.700Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

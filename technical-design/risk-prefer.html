@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Subgraphs · SOFA.org Documentation</title>
+        <title>Defining Your Risk Preference · SOFA.org Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,8 +73,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="oracle.html" />
     
-    <link rel="prev" href="dapp-open-apis.html" />
+    
+    <link rel="prev" href="vault-classification.html" />
     
 
     </head>
@@ -200,9 +202,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../technical-design/">
+        <li class="chapter " data-level="1.5" data-path="./">
             
-                <a href="../technical-design/">
+                <a href="./">
             
                     
                     Technical Design
@@ -214,9 +216,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../technical-design/vault-classification.html">
+        <li class="chapter " data-level="1.5.1" data-path="vault-classification.html">
             
-                <a href="../technical-design/vault-classification.html">
+                <a href="vault-classification.html">
             
                     
                     Vault Classification
@@ -227,9 +229,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../technical-design/risk-prefer.html">
+        <li class="chapter active" data-level="1.5.2" data-path="risk-prefer.html">
             
-                <a href="../technical-design/risk-prefer.html">
+                <a href="risk-prefer.html">
             
                     
                     Defining Your Risk Preference
@@ -240,9 +242,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../technical-design/oracle.html">
+        <li class="chapter " data-level="1.5.3" data-path="oracle.html">
             
-                <a href="../technical-design/oracle.html">
+                <a href="oracle.html">
             
                     
                     Oracle Construction
@@ -253,9 +255,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="../technical-design/settlement.html">
+        <li class="chapter " data-level="1.5.4" data-path="settlement.html">
             
-                <a href="../technical-design/settlement.html">
+                <a href="settlement.html">
             
                     
                     On-Chain Settlement Considerations
@@ -266,9 +268,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.5" data-path="../technical-design/early-settlement.html">
+        <li class="chapter " data-level="1.5.5" data-path="early-settlement.html">
             
-                <a href="../technical-design/early-settlement.html">
+                <a href="early-settlement.html">
             
                     
                     Early Settlement Considerations
@@ -279,9 +281,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.6" data-path="../technical-design/fees.html">
+        <li class="chapter " data-level="1.5.6" data-path="fees.html">
             
-                <a href="../technical-design/fees.html">
+                <a href="fees.html">
             
                     
                     Protocol Fees
@@ -387,9 +389,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="./">
+        <li class="chapter " data-level="1.8" data-path="../developer/">
             
-                <a href="./">
+                <a href="../developer/">
             
                     
                     Developer Documentation
@@ -401,9 +403,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="marketmaker-open-apis.html">
+        <li class="chapter " data-level="1.8.1" data-path="../developer/marketmaker-open-apis.html">
             
-                <a href="marketmaker-open-apis.html">
+                <a href="../developer/marketmaker-open-apis.html">
             
                     
                     Market Maker Open APIs
@@ -414,9 +416,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="dapp-open-apis.html">
+        <li class="chapter " data-level="1.8.2" data-path="../developer/dapp-open-apis.html">
             
-                <a href="dapp-open-apis.html">
+                <a href="../developer/dapp-open-apis.html">
             
                     
                     DAPP Open APIs
@@ -427,9 +429,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.8.3" data-path="subgraphs.html">
+        <li class="chapter " data-level="1.8.3" data-path="../developer/subgraphs.html">
             
-                <a href="subgraphs.html">
+                <a href="../developer/subgraphs.html">
             
                     
                     Subgraphs
@@ -475,7 +477,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Subgraphs</a>
+        <a href=".." >Defining Your Risk Preference</a>
     </h1>
 </div>
 
@@ -490,40 +492,22 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="subgraphs">Subgraphs</h1>
-<p>We support the development of efficient and responsive applications by providing real-time and accurate blockchain data access through the use of The Graph&apos;s indexing protocol.  Subgraphs are a powerful tool that allows us to index data stored on Ethereum and query this data via GraphQL.</p>
-<p>Here is how you can utilize custom subgraphs to query related data within the protocol:</p>
-<h2 id="accessing-our-subgraph">Accessing Our Subgraph</h2>
-<p>We have created specific subgraphs for the protocol&apos;s data. These subgraphs contain various entities indexed from the blockchain, such as transactions, accounts, and specific events related to our DeFi products.  You can query data in the subgraph via the following steps:</p>
-<h3 id="step-1-find-the-endpoint">Step 1: Find the Endpoint</h3>
-<p>Locate the GraphQL endpoint URL corresponding to the subgraph you wish to interact with.  This typically appears as a web address link.  Please ensure you are using the most up-to-date endpoint.</p>
-<h3 id="step-2-understand-the-schema">Step 2: Understand the Schema</h3>
-<p>The schema describes the entities within the subgraph and the types of queries that can be performed. Understanding the schema is crucial for writing efficient queries.</p>
-<h3 id="step-3-write-a-graphql-query">Step 3: Write a GraphQL Query</h3>
-<p>Based on the schema, you can start writing GraphQL queries to query data from the subgraph. GraphQL allows for very specific queries, requesting only the fields you are interested in.  For example, if you want to query detailed information for each transaction, you might write a query like this:</p>
-<pre><code>{
-  transactions(first: 5) {
-    id
-    from
-    to
-    value
-    blockNumber
-  }
-}
-</code></pre><p>This will return transactions and their related details for the first five records on the blockchain.</p>
-<h3 id="step-4-send-the-query-request">Step 4: Send the Query Request</h3>
-<p>Send your query request using any HTTP client that supports GraphQL. You can use a command-line tool such as curl, or a library integrated into your application, like apollo-client.  Typically, the request is sent as a POST request to the endpoint URL.</p>
-<p>An example code using curl is as follows:</p>
-<pre><code>curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;query&quot;: &quot;{ transactions(first: 5) { id from to value blockNumber } }&quot;}&apos; https://api.thegraph.com/subgraphs/name/sofa-org/subgraph-name
-</code></pre><p>Replace <code>subgraph-name</code> with the actual subgraph name, and determine the URL based on the actual situation.</p>
-<h3 id="step-5-analyze-and-use-the-response">Step 5: Analyze and Use the Response</h3>
-<p>After your query request is sent, the GraphQL service will return the response in JSON format. You can process this data in your application or directly display it to users on the front end.</p>
-<h2 id="best-practices">Best Practices</h2>
-<ul>
-<li><strong>Use Query Variables</strong>:  If you frequently need to perform queries of the same structure but with different parameters, using query variables can make it easier to reuse your queries.</li>
-<li><strong>Handle Errors</strong>:  In addition to normal responses, GraphQL can also return error information. Make sure your client code can gracefully handle these situations.</li>
-</ul>
-<p>By following the above steps, you can effectively use The Graph to query data on the SOFA protocol to support your development projects.   Please refer to the rest of our developer documentation and Subgraph related resources for further information.</p>
+                                <h1 id="defining-your-risk-preference">Defining Your Risk Preference</h1>
+<blockquote>
+<p><strong>How much downside risk do you wish to take?</strong></p>
+</blockquote>
+<h2 id="earn-protocol">Earn Protocol</h2>
+<p>The &apos;Earn&apos; protocol category is designed for risk-averse depositors looking for the utmost downside protection of their capital.  Earn vaults will<strong> </strong>stake<strong> users&apos; deposited capital in safe-yielding protocols (eg. AAVE) to generate a base level of interest</strong>, and utilize a portion of that guaranteed income to fund option premium with market makers for upside potential.</p>
+<p>The end result will <strong>maximize downside protection</strong>, while still maintaining some upside potential should the market move favourably in the user&apos;s direction.</p>
+<p>With that being said, please note that a <strong>critical design component requires the passive yields offered by the eligible staking protocols to be meaningfully above the product&apos;s worst-case payout, in order to properly fund the option premium to generate the upside return</strong>.  As such, should the user be holding ETH instead of USDT, he/she will need to convert the ETH into stETH in a liquid staking protocol such as Lido, before locking the stETH into the protocol vaults to benefit from the extra yield accretion.</p>
+<p><img src="../static/draw6.png" alt=""></p>
+<p><img src="../static/draw7.png" alt=""></p>
+<h2 id="surge-protocol">Surge Protocol</h2>
+<p>For users with a greater risk-reward tolerance, the <strong>protocol also offers higher-return structures with an upfront capital &apos;ante&apos;</strong>.  Surge protocols are solely targeted at aggressive users who are desirious of substantially high returns in exchange for capital losses.</p>
+<p><img src="../static/draw8.png" alt=""></p>
+<p>With these Surge-based products, the <strong>protocol vault will lock in both the user&apos;s principal as well as the market makers&apos; premium at trade inception, </strong>analogous to a &apos;poker-ante&apos; of sorts**. The locked capital positions will <em>not</em> be restaked to any other protocols, and it serves as the committed-ante against the final payoff.</p>
+<p>Let&apos;s use the Surge-Rangebound product as an example.  Should the price of the underlying asset remain strictly within the barriers by final maturity, the user will receive an exponentially higher return than he would have under the Earn version.  However, should the opposite happen, the structure will be early-terminated, with the locked principal being transferred to the market maker as the &apos;winner&apos; of this strategy.</p>
+<p>Once again, <strong>these products are intended for users holding a very strong market conviction, and would like to put that confidence to test in hopes of earning a very high rate of return in exchange for principal losses.</strong></p>
 
                                 
                                 </section>
@@ -551,10 +535,14 @@
 
             
                 
-                <a href="dapp-open-apis.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: DAPP Open APIs">
+                <a href="vault-classification.html" class="navigation navigation-prev " aria-label="Previous page: Vault Classification">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="oracle.html" class="navigation navigation-next " aria-label="Next page: Oracle Construction">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -563,7 +551,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Subgraphs","level":"1.8.3","depth":2,"previous":{"title":"DAPP Open APIs","level":"1.8.2","depth":2,"path":"developer/dapp-open-apis.md","ref":"developer/dapp-open-apis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"katex":{},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"developer/subgraphs.md","mtime":"2024-05-31T15:47:47.675Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-05T16:18:21.700Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Defining Your Risk Preference","level":"1.5.2","depth":2,"next":{"title":"Oracle Construction","level":"1.5.3","depth":2,"path":"technical-design/oracle.md","ref":"technical-design/oracle.md","articles":[]},"previous":{"title":"Vault Classification","level":"1.5.1","depth":2,"path":"technical-design/vault-classification.md","ref":"technical-design/vault-classification.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"katex":{},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"technical-design/risk-prefer.md","mtime":"2024-06-05T15:12:22.249Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-05T16:18:21.700Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Subgraphs · SOFA.org Documentation</title>
+        <title>Vault Classification · SOFA.org Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,8 +73,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="risk-prefer.html" />
     
-    <link rel="prev" href="dapp-open-apis.html" />
+    
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -200,9 +202,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../technical-design/">
+        <li class="chapter " data-level="1.5" data-path="./">
             
-                <a href="../technical-design/">
+                <a href="./">
             
                     
                     Technical Design
@@ -214,9 +216,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../technical-design/vault-classification.html">
+        <li class="chapter active" data-level="1.5.1" data-path="vault-classification.html">
             
-                <a href="../technical-design/vault-classification.html">
+                <a href="vault-classification.html">
             
                     
                     Vault Classification
@@ -227,9 +229,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../technical-design/risk-prefer.html">
+        <li class="chapter " data-level="1.5.2" data-path="risk-prefer.html">
             
-                <a href="../technical-design/risk-prefer.html">
+                <a href="risk-prefer.html">
             
                     
                     Defining Your Risk Preference
@@ -240,9 +242,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../technical-design/oracle.html">
+        <li class="chapter " data-level="1.5.3" data-path="oracle.html">
             
-                <a href="../technical-design/oracle.html">
+                <a href="oracle.html">
             
                     
                     Oracle Construction
@@ -253,9 +255,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="../technical-design/settlement.html">
+        <li class="chapter " data-level="1.5.4" data-path="settlement.html">
             
-                <a href="../technical-design/settlement.html">
+                <a href="settlement.html">
             
                     
                     On-Chain Settlement Considerations
@@ -266,9 +268,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.5" data-path="../technical-design/early-settlement.html">
+        <li class="chapter " data-level="1.5.5" data-path="early-settlement.html">
             
-                <a href="../technical-design/early-settlement.html">
+                <a href="early-settlement.html">
             
                     
                     Early Settlement Considerations
@@ -279,9 +281,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.6" data-path="../technical-design/fees.html">
+        <li class="chapter " data-level="1.5.6" data-path="fees.html">
             
-                <a href="../technical-design/fees.html">
+                <a href="fees.html">
             
                     
                     Protocol Fees
@@ -387,9 +389,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="./">
+        <li class="chapter " data-level="1.8" data-path="../developer/">
             
-                <a href="./">
+                <a href="../developer/">
             
                     
                     Developer Documentation
@@ -401,9 +403,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="marketmaker-open-apis.html">
+        <li class="chapter " data-level="1.8.1" data-path="../developer/marketmaker-open-apis.html">
             
-                <a href="marketmaker-open-apis.html">
+                <a href="../developer/marketmaker-open-apis.html">
             
                     
                     Market Maker Open APIs
@@ -414,9 +416,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="dapp-open-apis.html">
+        <li class="chapter " data-level="1.8.2" data-path="../developer/dapp-open-apis.html">
             
-                <a href="dapp-open-apis.html">
+                <a href="../developer/dapp-open-apis.html">
             
                     
                     DAPP Open APIs
@@ -427,9 +429,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.8.3" data-path="subgraphs.html">
+        <li class="chapter " data-level="1.8.3" data-path="../developer/subgraphs.html">
             
-                <a href="subgraphs.html">
+                <a href="../developer/subgraphs.html">
             
                     
                     Subgraphs
@@ -475,7 +477,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Subgraphs</a>
+        <a href=".." >Vault Classification</a>
     </h1>
 </div>
 
@@ -490,40 +492,34 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="subgraphs">Subgraphs</h1>
-<p>We support the development of efficient and responsive applications by providing real-time and accurate blockchain data access through the use of The Graph&apos;s indexing protocol.  Subgraphs are a powerful tool that allows us to index data stored on Ethereum and query this data via GraphQL.</p>
-<p>Here is how you can utilize custom subgraphs to query related data within the protocol:</p>
-<h2 id="accessing-our-subgraph">Accessing Our Subgraph</h2>
-<p>We have created specific subgraphs for the protocol&apos;s data. These subgraphs contain various entities indexed from the blockchain, such as transactions, accounts, and specific events related to our DeFi products.  You can query data in the subgraph via the following steps:</p>
-<h3 id="step-1-find-the-endpoint">Step 1: Find the Endpoint</h3>
-<p>Locate the GraphQL endpoint URL corresponding to the subgraph you wish to interact with.  This typically appears as a web address link.  Please ensure you are using the most up-to-date endpoint.</p>
-<h3 id="step-2-understand-the-schema">Step 2: Understand the Schema</h3>
-<p>The schema describes the entities within the subgraph and the types of queries that can be performed. Understanding the schema is crucial for writing efficient queries.</p>
-<h3 id="step-3-write-a-graphql-query">Step 3: Write a GraphQL Query</h3>
-<p>Based on the schema, you can start writing GraphQL queries to query data from the subgraph. GraphQL allows for very specific queries, requesting only the fields you are interested in.  For example, if you want to query detailed information for each transaction, you might write a query like this:</p>
-<pre><code>{
-  transactions(first: 5) {
-    id
-    from
-    to
-    value
-    blockNumber
-  }
-}
-</code></pre><p>This will return transactions and their related details for the first five records on the blockchain.</p>
-<h3 id="step-4-send-the-query-request">Step 4: Send the Query Request</h3>
-<p>Send your query request using any HTTP client that supports GraphQL. You can use a command-line tool such as curl, or a library integrated into your application, like apollo-client.  Typically, the request is sent as a POST request to the endpoint URL.</p>
-<p>An example code using curl is as follows:</p>
-<pre><code>curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;query&quot;: &quot;{ transactions(first: 5) { id from to value blockNumber } }&quot;}&apos; https://api.thegraph.com/subgraphs/name/sofa-org/subgraph-name
-</code></pre><p>Replace <code>subgraph-name</code> with the actual subgraph name, and determine the URL based on the actual situation.</p>
-<h3 id="step-5-analyze-and-use-the-response">Step 5: Analyze and Use the Response</h3>
-<p>After your query request is sent, the GraphQL service will return the response in JSON format. You can process this data in your application or directly display it to users on the front end.</p>
-<h2 id="best-practices">Best Practices</h2>
-<ul>
-<li><strong>Use Query Variables</strong>:  If you frequently need to perform queries of the same structure but with different parameters, using query variables can make it easier to reuse your queries.</li>
-<li><strong>Handle Errors</strong>:  In addition to normal responses, GraphQL can also return error information. Make sure your client code can gracefully handle these situations.</li>
-</ul>
-<p>By following the above steps, you can effectively use The Graph to query data on the SOFA protocol to support your development projects.   Please refer to the rest of our developer documentation and Subgraph related resources for further information.</p>
+                                <h1 id="vault-classification">Vault Classification</h1>
+<p>The Vault contract uses the ERC-1155 standard to <strong>support fungibility of Position Tokens with the same strike price and expiry time</strong>.  Tokens with different strike prices or the expiration time will have different Token IDs (ie. like a NFT) while still contained under the same Vault contract.</p>
+<p>The SOFA protocol is designed with the flexibility <strong>to support any structured product type and collateral denomination</strong>, though a distinction will be made on whether the underlying product contains a &apos;principal protection&apos; feature or not.  As such, our <strong>Vault designs are split into 2 major, self-explanatory product categories called &apos;Earn&apos; and &apos;Surge&apos;</strong>.</p>
+<p>Example Vault Taxonomy at SOFA Launch</p>
+<p><img src="../static/NON1bznnEocSeJxK0mAuxBR0sqh.png" alt=""></p>
+<h2 id="available-products-at-launch">Available Products at Launch</h2>
+<p>As our inaugural proof-of-concept, we will initially focus on three popular product structures called <strong>&apos;Rangebound&apos; and &apos;Trend&apos;</strong>. Furthermore, all of these products are available in either Earn or Surge protocols.  Moreover, additional product types will be continually added based on user demand and ecosystem feedback.</p>
+<h2 id="rangebond-products">Rangebond Products</h2>
+<h3 id="product-overview">Product Overview</h3>
+<p>Rangebound products are a type of structured product based on price boundaries. <strong>Depositors can profit if the underlying asset does not touch the preset barriers during the maturity period</strong>.  These products are suitable for users who expect the market to stay in a sideways consolidation phase with subdued volatility.</p>
+<p>Referring to the payoff diagram below, a user believes that BTC will be stuck between a range as defined by the lower and upper barriers, but does not want to incur much downside even if the view proves to be wrong.  The Rangebound product will guarantee the user a minimum base yield of (A) even if the price of Range breaks out from either side, but the user will be entitled to an extra profit return equivalent to (A+B) should prices stay contained within the barriers.</p>
+<p>For customization options, the <strong>user is free to adjust the width of the price range, which would incur a different profile of base and upside profits depending on the levels chosen</strong>.  Naturally, specifying a tighter price range represents a more aggressive bet on low volatility, which would lead to higher upside returns.  Conversely, a wider price range would lower excess profits in return a higher probability of winning.  Finally, for ease of management, the product can specified to be automatically &apos;re-rolled&apos; upon maturity as a continuation bet at a later protocol upgrade . (The &apos;re-roll&apos; function will be rolled out in the next phase of the upgrade).</p>
+<p><img src="../static/Yfu7bNF7soTStDxRAp7u4g31sTe.png" alt=""></p>
+<h2 id="trend-products">Trend Products</h2>
+<h3 id="product-overview">Product Overview</h3>
+<p>The <strong>Trend product is suitable for depositors who expect that the market will soon undergo a smooth and steady trend, but still desires some downside protection</strong>.  By defining both a lower and upper price barrier, users will start accruing income gains as soon as the underlying instrument crosses the initial price threshold, with increasing payouts until we hit a maximum at the 2nd boundary.</p>
+<p>Moreover, unlike the Rangebound product, the Trend product only observes at the time of settlement whether the price of the underlying asset falls within the set range to determine the final profit (ie. European option).  <strong>This product is available via both Bullish and Bearish expressions</strong>.</p>
+<p>As an example, if a user is bullish on BTC and predicts that in the next seven days, the price of BTC will remain above $68,500 but will not exceed $71,500, they can choose to buy a Bull Trend product, setting $68,500 as the lower limit and $71,500 as the upper limit of the profit range.  Referring to the diagram below, at the time of settlement, the user will be eligible for a payout between base profit of (A) to and upper limit of (A+B), depending on what the price of BTC is at the time.</p>
+<p><img src="../static/VPCFbWcRso4WYsxeEExu2Wrjsyv.png" alt=""></p>
+<h3 id="applicable-scenarios">Applicable Scenarios</h3>
+<p>The product might be <strong>suitable for depositors who believe that an asset will see a strong reaction to a specific economic event, but is also concerned about the risk of a price decline should they be wrong</strong> in their market prognosis.</p>
+<p>For example, the user might desire to speculate on BTC prices on the next FOMC decision, the having event, or the next ETF approval announcement.  This strategy is <strong>appropriate for users holding a strong market conviction into these important but risky events, and wants to remain disciplined in managing downside losses</strong> should his/her view turn out to be wrong.</p>
+<h2 id="shark-fin-for-later">Shark Fin (For Later)</h2>
+<h3 id="product-overview">Product Overview</h3>
+<p>Compared to Rangebound and Trend products, the &apos;Shark Fin&apos; product is relatively more well-known in TradFi markets thanks to its memorable moniker.  Its design and payoff are similar to Trend (ie. European option), with the <strong>main exception being that the depositor is speculating much more aggressively on prices being within a particular range</strong>.</p>
+<p>Said in another way, the Shark Fin product <strong>adopts a more conservative view on market volatility by sacrificing more upside on a large market move, in return for more aggressive profits within the lower price boundaries</strong>.</p>
+<p>As example, let&apos;s say an user is bullish on BTC, but holds a high conviction that it will not breach a certain upper bound at some strong technical resistance level.  In such a scenario, the user can choose to buy a Bullish Shark Fin product with a payoff profile as per the diagram below.  At product settlement, the user will receive a return ranging from (A) to (A+B) depending on where spot BTC is; however, unlike in Trend products, note that the return <em>drops</em> to (A+C) upon a breach of the upper price barrier, offering a trade-off in exchange for more aggressive profits in the preceding range.</p>
+<p><img src="../static/LaiabPyJAokoogxs2luuq7hsslb.png" alt=""></p>
 
                                 
                                 </section>
@@ -551,10 +547,14 @@
 
             
                 
-                <a href="dapp-open-apis.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: DAPP Open APIs">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Technical Design">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="risk-prefer.html" class="navigation navigation-next " aria-label="Next page: Defining Your Risk Preference">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -563,7 +563,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Subgraphs","level":"1.8.3","depth":2,"previous":{"title":"DAPP Open APIs","level":"1.8.2","depth":2,"path":"developer/dapp-open-apis.md","ref":"developer/dapp-open-apis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"katex":{},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"developer/subgraphs.md","mtime":"2024-05-31T15:47:47.675Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-05T16:18:21.700Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Vault Classification","level":"1.5.1","depth":2,"next":{"title":"Defining Your Risk Preference","level":"1.5.2","depth":2,"path":"technical-design/risk-prefer.md","ref":"technical-design/risk-prefer.md","articles":[]},"previous":{"title":"Technical Design","level":"1.5","depth":1,"path":"technical-design/README.md","ref":"technical-design/README.md","articles":[{"title":"Vault Classification","level":"1.5.1","depth":2,"path":"technical-design/vault-classification.md","ref":"technical-design/vault-classification.md","articles":[]},{"title":"Defining Your Risk Preference","level":"1.5.2","depth":2,"path":"technical-design/risk-prefer.md","ref":"technical-design/risk-prefer.md","articles":[]},{"title":"Oracle Construction","level":"1.5.3","depth":2,"path":"technical-design/oracle.md","ref":"technical-design/oracle.md","articles":[]},{"title":"On-Chain Settlement Considerations","level":"1.5.4","depth":2,"path":"technical-design/settlement.md","ref":"technical-design/settlement.md","articles":[]},{"title":"Early Settlement Considerations","level":"1.5.5","depth":2,"path":"technical-design/early-settlement.md","ref":"technical-design/early-settlement.md","articles":[]},{"title":"Protocol Fees","level":"1.5.6","depth":2,"path":"technical-design/fees.md","ref":"technical-design/fees.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"katex":{},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"technical-design/vault-classification.md","mtime":"2024-06-05T16:16:16.047Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-05T16:18:21.700Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

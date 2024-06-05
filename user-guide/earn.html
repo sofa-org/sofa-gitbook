@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Subgraphs · SOFA.org Documentation</title>
+        <title>Earn · SOFA.org Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,8 +73,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="surge.html" />
     
-    <link rel="prev" href="dapp-open-apis.html" />
+    
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -142,9 +144,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../user-guide/">
+        <li class="chapter " data-level="1.4" data-path="./">
             
-                <a href="../user-guide/">
+                <a href="./">
             
                     
                     User Guide
@@ -156,9 +158,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../user-guide/earn.html">
+        <li class="chapter active" data-level="1.4.1" data-path="earn.html">
             
-                <a href="../user-guide/earn.html">
+                <a href="earn.html">
             
                     
                     Earn
@@ -169,9 +171,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../user-guide/surge.html">
+        <li class="chapter " data-level="1.4.2" data-path="surge.html">
             
-                <a href="../user-guide/surge.html">
+                <a href="surge.html">
             
                     
                     Surge
@@ -182,9 +184,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="../user-guide/claim.html">
+        <li class="chapter " data-level="1.4.3" data-path="claim.html">
             
-                <a href="../user-guide/claim.html">
+                <a href="claim.html">
             
                     
                     Claiming Your $RCH Rewards! 🎁
@@ -387,9 +389,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="./">
+        <li class="chapter " data-level="1.8" data-path="../developer/">
             
-                <a href="./">
+                <a href="../developer/">
             
                     
                     Developer Documentation
@@ -401,9 +403,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="marketmaker-open-apis.html">
+        <li class="chapter " data-level="1.8.1" data-path="../developer/marketmaker-open-apis.html">
             
-                <a href="marketmaker-open-apis.html">
+                <a href="../developer/marketmaker-open-apis.html">
             
                     
                     Market Maker Open APIs
@@ -414,9 +416,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="dapp-open-apis.html">
+        <li class="chapter " data-level="1.8.2" data-path="../developer/dapp-open-apis.html">
             
-                <a href="dapp-open-apis.html">
+                <a href="../developer/dapp-open-apis.html">
             
                     
                     DAPP Open APIs
@@ -427,9 +429,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.8.3" data-path="subgraphs.html">
+        <li class="chapter " data-level="1.8.3" data-path="../developer/subgraphs.html">
             
-                <a href="subgraphs.html">
+                <a href="../developer/subgraphs.html">
             
                     
                     Subgraphs
@@ -475,7 +477,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Subgraphs</a>
+        <a href=".." >Earn</a>
     </h1>
 </div>
 
@@ -490,40 +492,99 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="subgraphs">Subgraphs</h1>
-<p>We support the development of efficient and responsive applications by providing real-time and accurate blockchain data access through the use of The Graph&apos;s indexing protocol.  Subgraphs are a powerful tool that allows us to index data stored on Ethereum and query this data via GraphQL.</p>
-<p>Here is how you can utilize custom subgraphs to query related data within the protocol:</p>
-<h2 id="accessing-our-subgraph">Accessing Our Subgraph</h2>
-<p>We have created specific subgraphs for the protocol&apos;s data. These subgraphs contain various entities indexed from the blockchain, such as transactions, accounts, and specific events related to our DeFi products.  You can query data in the subgraph via the following steps:</p>
-<h3 id="step-1-find-the-endpoint">Step 1: Find the Endpoint</h3>
-<p>Locate the GraphQL endpoint URL corresponding to the subgraph you wish to interact with.  This typically appears as a web address link.  Please ensure you are using the most up-to-date endpoint.</p>
-<h3 id="step-2-understand-the-schema">Step 2: Understand the Schema</h3>
-<p>The schema describes the entities within the subgraph and the types of queries that can be performed. Understanding the schema is crucial for writing efficient queries.</p>
-<h3 id="step-3-write-a-graphql-query">Step 3: Write a GraphQL Query</h3>
-<p>Based on the schema, you can start writing GraphQL queries to query data from the subgraph. GraphQL allows for very specific queries, requesting only the fields you are interested in.  For example, if you want to query detailed information for each transaction, you might write a query like this:</p>
-<pre><code>{
-  transactions(first: 5) {
-    id
-    from
-    to
-    value
-    blockNumber
-  }
-}
-</code></pre><p>This will return transactions and their related details for the first five records on the blockchain.</p>
-<h3 id="step-4-send-the-query-request">Step 4: Send the Query Request</h3>
-<p>Send your query request using any HTTP client that supports GraphQL. You can use a command-line tool such as curl, or a library integrated into your application, like apollo-client.  Typically, the request is sent as a POST request to the endpoint URL.</p>
-<p>An example code using curl is as follows:</p>
-<pre><code>curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;query&quot;: &quot;{ transactions(first: 5) { id from to value blockNumber } }&quot;}&apos; https://api.thegraph.com/subgraphs/name/sofa-org/subgraph-name
-</code></pre><p>Replace <code>subgraph-name</code> with the actual subgraph name, and determine the URL based on the actual situation.</p>
-<h3 id="step-5-analyze-and-use-the-response">Step 5: Analyze and Use the Response</h3>
-<p>After your query request is sent, the GraphQL service will return the response in JSON format. You can process this data in your application or directly display it to users on the front end.</p>
-<h2 id="best-practices">Best Practices</h2>
-<ul>
-<li><strong>Use Query Variables</strong>:  If you frequently need to perform queries of the same structure but with different parameters, using query variables can make it easier to reuse your queries.</li>
-<li><strong>Handle Errors</strong>:  In addition to normal responses, GraphQL can also return error information. Make sure your client code can gracefully handle these situations.</li>
-</ul>
-<p>By following the above steps, you can effectively use The Graph to query data on the SOFA protocol to support your development projects.   Please refer to the rest of our developer documentation and Subgraph related resources for further information.</p>
+                                <h1 id="earn">Earn</h1>
+<h2 id="rangebound"><strong>Rangebound</strong></h2>
+<h3 id="step-1-selecting-your-product"><strong>Step 1: Selecting Your Product</strong></h3>
+<p>&#x2192; Navigate to the Protocol tab and click on Earn.
+&#x2192; Choose the <strong>Rangebound</strong> structured product.</p>
+<p>&#x2192; Select the underlying asset you prefer&#x2014;BTC or ETH.</p>
+<p>&#x2192; Select one of the Top Pick Trades listed for your chosen asset.</p>
+<p><img src="../static/Rw2ObN8mhoHykWx7xJduHjstsag.png" alt=""></p>
+<h3 id="step-2-reviewing-trade-details"><strong>Step 2: Reviewing Trade Details</strong></h3>
+<p>&#x2192; A popup will display all relevant trade information, including Settlement Date, Lower and Upper Barriers, Base Yield, Base+ RCH, Potential Yield, and the potential outcomes under various scenarios.</p>
+<p>&#x2192; Enter your desired amount in USDT in the <strong>Deposit Amount</strong> box
+&#x2192; click<strong> Deposit</strong>
+&#x2192; your wallet will pop up a confirmation window.</p>
+<p><img src="../static/OobQbfpSpokzqBxylDYuQFgZsTf.png" alt=""></p>
+<p><strong>If you wish to customize any details, proceed to Step 3.</strong></p>
+<h3 id="step-3-customizing-your-trade-"><strong>Step 3: Customizing Your Trade </strong></h3>
+<p>&#x2192; Click on the <strong>Customize</strong> icon either from the Earn homepage or from the product details page mentioned in Step 2</p>
+<p>&#x2192; On the Customize page, you can modify your trade settings. Select your desired parameters:</p>
+<p><strong>Base Yield</strong>
+<strong>Expiry Date (i.e., Settlement Date)</strong>
+<strong>Lower Barrier Price (B1) and Upper Barrier Price (B2)</strong>
+<strong>Deposit Amount</strong></p>
+<p>and click <strong>Request For Quote.</strong></p>
+<p>&#x2192; After setting the parameters, click <strong>Deposit</strong> to proceed.</p>
+<p><img src="../static/W9VVbd93fo8OaYxz699uGa3bsDd.png" alt=""></p>
+<h3 id="step-4-confirming-your-trade"><strong>Step 4: Confirming Your Trade</strong></h3>
+<p>When prompted, engage with the following windows for trade confirmation:</p>
+<ol>
+<li><strong>Signature Request</strong>: A signature request window will appear first. Click <strong>Sign</strong> to authorize.</li>
+<li><strong>Trade Execution</strong>: After signing, a confirmation window will appear. Click <strong>Confirm</strong> to finalize the trade.</li>
+</ol>
+<p>&#x2705;Ensure both actions are completed to successfully carry out your trade.</p>
+<p><img src="../static/Qbdbb1dHgo6wCVx0SYeuN4Dhsyc.png" alt=""></p>
+<p><img src="../static/D6g0bGMRroELTZxO0JruvNvFsBc.png" alt=""></p>
+<h3 id="step-5-trade-execution"><strong>Step 5: Trade Execution</strong></h3>
+<p>&#x2192; Congratulations! Your transaction has been successfully submitted on-chain. &#x2705;</p>
+<p><img src="../static/GHHVbPI0royh5RxSOxHuYgtBsOe.png" alt=""></p>
+<h3 id="step-6-monitoring-your-position"><strong>Step 6: Monitoring Your Position</strong></h3>
+<p>&#x2192; Access the <strong>Position</strong> tab to view your trade details post trade-execution.</p>
+<p><img src="../static/AgV8bAYbVotrzBxs0uauHKnOszg.png" alt=""></p>
+<p><img src="../static/GDLhboxXDoQ7VGxjZAgupxnYsKc.png" alt=""></p>
+<h3 id="step-7-claiming-your-payouts"><strong>Step 7: Claiming Your Payouts</strong></h3>
+<p>&#x2192; On settlement (expiry) date, go to the <strong>Position</strong> tab, open your trade ticket, and click <strong>Claim</strong> to receive your payouts.</p>
+<p><strong>Note:</strong></p>
+<p>For Earn products (secured), all invested amounts will be staked in the Aave protocol to generate passive returns. Moreover, a portion of the Aave returns will be retained as Base Yield, and the remaining part will be deployed to option strategies to generate potential Upside returns.</p>
+<h2 id="bull-trend"><strong>Bull Trend</strong></h2>
+<h3 id="step-1-selecting-your-product"><strong>Step 1: Selecting Your Product</strong></h3>
+<p>&#x2192; Navigate to the Protocol tab and click on Earn.</p>
+<p>&#x2192; Choose the <strong>Bull Trend</strong> structured product.</p>
+<p>&#x2192; Select the underlying asset you prefer&#x2014;BTC or ETH.</p>
+<p>&#x2192; Select one of the Top Pick Trades listed for your chosen asset.</p>
+<p><img src="../static/Zxlnb2K2zoiuyoxjKAyu2Ocpskc.png" alt=""></p>
+<h3 id="step-2-reviewing-trade-details"><strong>Step 2: Reviewing Trade Details</strong></h3>
+<p>&#x2192; A popup will display all relevant trade information, including Settlement Date, Lower and Upper Strikes, Base Yield, Base+ RCH, Potential Yield, and the potential outcomes under various scenarios.</p>
+<p>&#x2192; Enter your desired amount in USDT in the <strong>Deposit Amount</strong> box
+&#x2192; click<strong> Deposit</strong>
+&#x2192; your wallet will pop up a confirmation window.</p>
+<p><strong>If you wish to customize any details, proceed to Step 3.</strong></p>
+<p><img src="../static/L1XkbcRFMoFBeoxcW6nu2bLmscb.png" alt=""></p>
+<h3 id="step-3-customizing-your-trade-"><strong>Step 3: Customizing Your Trade </strong></h3>
+<p>&#x2192; Click on the <strong>Customize</strong> icon either from the Earn homepage or from the product details page mentioned in Step 2</p>
+<p>&#x2192; On the Customize page, you can modify your trade settings. Select your desired parameters:
+<strong>Base Yield</strong>
+<strong>Expire Date (i.e., Settlement Date)</strong>
+<strong>Lower Strike Price (K1) and Upper Strike Price (K2)</strong>
+<strong>Deposit Amount</strong></p>
+<p>and click <strong>Request For Quote.</strong></p>
+<p>&#x2192; After setting the parameters, click <strong>Deposit</strong> to proceed</p>
+<p><img src="../static/WbHdbcj6foI3QTx0BmZuBQGSsAf.png" alt=""></p>
+<h3 id="step-4-confirming-your-trade"><strong>Step 4: Confirming Your Trade</strong></h3>
+<p>When prompted, engage with the following windows for trade confirmation:</p>
+<ol>
+<li><strong>Signature Request</strong>: A signature request window will appear first. Click <strong>Sign</strong> to authorize.</li>
+<li><strong>Trade Execution</strong>: After signing, a confirmation window will appear. Click <strong>Confirm</strong> to finalize the trade.</li>
+</ol>
+<p>&#x2705;Ensure both actions are completed to successfully carry out your trade.</p>
+<p><img src="../static/YqE3bsFF8o6RKGxGrDwu5to0s5b.png" alt=""></p>
+<p><img src="../static/EncvbtyNco9nngxnLflu0Q0asdf.png" alt=""></p>
+<h3 id="step-5-trade-execution"><strong>Step 5: Trade Execution</strong></h3>
+<p>&#x2192; Congratulations! Your transaction has been successfully submitted on-chain. &#x2705;</p>
+<p><img src="../static/WsV9bT399ooDd4xMrjDuScz9seb.png" alt=""></p>
+<h3 id="step-6-monitoring-your-position"><strong>Step 6: Monitoring Your Position</strong></h3>
+<p>&#x2192; Access the <strong>Position</strong> tab to view your trade details post trade-execution.</p>
+<p><img src="../static/TkaKbxeE6o9ifxxNLtiuoqbTsSe.png" alt=""></p>
+<p><img src="../static/AGc2bUsKqoZMMexoBPPuTZnqsVb.png" alt=""></p>
+<h3 id="step-7-claiming-your-payouts"><strong>Step 7: Claiming Your Payouts</strong></h3>
+<p>&#x2192; On settlement (expiry) date, go to the <strong>Position</strong> tab, open your trade ticket, and click <strong>Claim</strong> to receive your payouts.</p>
+<p><strong>Note:</strong></p>
+<blockquote>
+<p>For Earn products (secured), all invested amounts will be staked in the Aave protocol to generate passive returns. Moreover, a portion of the Aave returns will be retained as Base Yield, and the remaining part will be deployed to option strategies to generate potential Upside returns.</p>
+</blockquote>
+<h2 id="bear-trend"><strong>Bear Trend</strong></h2>
+<p>Follows the same steps as outlined for the Bull Trend product</p>
 
                                 
                                 </section>
@@ -551,10 +612,14 @@
 
             
                 
-                <a href="dapp-open-apis.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: DAPP Open APIs">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: User Guide">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="surge.html" class="navigation navigation-next " aria-label="Next page: Surge">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -563,7 +628,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Subgraphs","level":"1.8.3","depth":2,"previous":{"title":"DAPP Open APIs","level":"1.8.2","depth":2,"path":"developer/dapp-open-apis.md","ref":"developer/dapp-open-apis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"katex":{},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"developer/subgraphs.md","mtime":"2024-05-31T15:47:47.675Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-05T16:18:21.700Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Earn","level":"1.4.1","depth":2,"next":{"title":"Surge","level":"1.4.2","depth":2,"path":"user-guide/surge.md","ref":"user-guide/surge.md","articles":[]},"previous":{"title":"User Guide","level":"1.4","depth":1,"path":"user-guide/README.md","ref":"user-guide/README.md","articles":[{"title":"Earn","level":"1.4.1","depth":2,"path":"user-guide/earn.md","ref":"user-guide/earn.md","articles":[]},{"title":"Surge","level":"1.4.2","depth":2,"path":"user-guide/surge.md","ref":"user-guide/surge.md","articles":[]},{"title":"Claiming Your $RCH Rewards! 🎁","level":"1.4.3","depth":2,"path":"user-guide/claim.md","ref":"user-guide/claim.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"katex":{},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"user-guide/earn.md","mtime":"2024-06-05T16:07:09.741Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-05T16:18:21.700Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

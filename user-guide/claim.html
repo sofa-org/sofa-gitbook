@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Subgraphs · SOFA.org Documentation</title>
+        <title>Claiming Your $RCH Rewards! 🎁 · SOFA.org Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,8 +73,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="../technical-design/" />
     
-    <link rel="prev" href="dapp-open-apis.html" />
+    
+    <link rel="prev" href="surge.html" />
     
 
     </head>
@@ -142,9 +144,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../user-guide/">
+        <li class="chapter " data-level="1.4" data-path="./">
             
-                <a href="../user-guide/">
+                <a href="./">
             
                     
                     User Guide
@@ -156,9 +158,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../user-guide/earn.html">
+        <li class="chapter " data-level="1.4.1" data-path="earn.html">
             
-                <a href="../user-guide/earn.html">
+                <a href="earn.html">
             
                     
                     Earn
@@ -169,9 +171,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../user-guide/surge.html">
+        <li class="chapter " data-level="1.4.2" data-path="surge.html">
             
-                <a href="../user-guide/surge.html">
+                <a href="surge.html">
             
                     
                     Surge
@@ -182,9 +184,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="../user-guide/claim.html">
+        <li class="chapter active" data-level="1.4.3" data-path="claim.html">
             
-                <a href="../user-guide/claim.html">
+                <a href="claim.html">
             
                     
                     Claiming Your $RCH Rewards! 🎁
@@ -387,9 +389,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="./">
+        <li class="chapter " data-level="1.8" data-path="../developer/">
             
-                <a href="./">
+                <a href="../developer/">
             
                     
                     Developer Documentation
@@ -401,9 +403,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="marketmaker-open-apis.html">
+        <li class="chapter " data-level="1.8.1" data-path="../developer/marketmaker-open-apis.html">
             
-                <a href="marketmaker-open-apis.html">
+                <a href="../developer/marketmaker-open-apis.html">
             
                     
                     Market Maker Open APIs
@@ -414,9 +416,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="dapp-open-apis.html">
+        <li class="chapter " data-level="1.8.2" data-path="../developer/dapp-open-apis.html">
             
-                <a href="dapp-open-apis.html">
+                <a href="../developer/dapp-open-apis.html">
             
                     
                     DAPP Open APIs
@@ -427,9 +429,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.8.3" data-path="subgraphs.html">
+        <li class="chapter " data-level="1.8.3" data-path="../developer/subgraphs.html">
             
-                <a href="subgraphs.html">
+                <a href="../developer/subgraphs.html">
             
                     
                     Subgraphs
@@ -475,7 +477,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Subgraphs</a>
+        <a href=".." >Claiming Your $RCH Rewards! 🎁</a>
     </h1>
 </div>
 
@@ -490,40 +492,15 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="subgraphs">Subgraphs</h1>
-<p>We support the development of efficient and responsive applications by providing real-time and accurate blockchain data access through the use of The Graph&apos;s indexing protocol.  Subgraphs are a powerful tool that allows us to index data stored on Ethereum and query this data via GraphQL.</p>
-<p>Here is how you can utilize custom subgraphs to query related data within the protocol:</p>
-<h2 id="accessing-our-subgraph">Accessing Our Subgraph</h2>
-<p>We have created specific subgraphs for the protocol&apos;s data. These subgraphs contain various entities indexed from the blockchain, such as transactions, accounts, and specific events related to our DeFi products.  You can query data in the subgraph via the following steps:</p>
-<h3 id="step-1-find-the-endpoint">Step 1: Find the Endpoint</h3>
-<p>Locate the GraphQL endpoint URL corresponding to the subgraph you wish to interact with.  This typically appears as a web address link.  Please ensure you are using the most up-to-date endpoint.</p>
-<h3 id="step-2-understand-the-schema">Step 2: Understand the Schema</h3>
-<p>The schema describes the entities within the subgraph and the types of queries that can be performed. Understanding the schema is crucial for writing efficient queries.</p>
-<h3 id="step-3-write-a-graphql-query">Step 3: Write a GraphQL Query</h3>
-<p>Based on the schema, you can start writing GraphQL queries to query data from the subgraph. GraphQL allows for very specific queries, requesting only the fields you are interested in.  For example, if you want to query detailed information for each transaction, you might write a query like this:</p>
-<pre><code>{
-  transactions(first: 5) {
-    id
-    from
-    to
-    value
-    blockNumber
-  }
-}
-</code></pre><p>This will return transactions and their related details for the first five records on the blockchain.</p>
-<h3 id="step-4-send-the-query-request">Step 4: Send the Query Request</h3>
-<p>Send your query request using any HTTP client that supports GraphQL. You can use a command-line tool such as curl, or a library integrated into your application, like apollo-client.  Typically, the request is sent as a POST request to the endpoint URL.</p>
-<p>An example code using curl is as follows:</p>
-<pre><code>curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;query&quot;: &quot;{ transactions(first: 5) { id from to value blockNumber } }&quot;}&apos; https://api.thegraph.com/subgraphs/name/sofa-org/subgraph-name
-</code></pre><p>Replace <code>subgraph-name</code> with the actual subgraph name, and determine the URL based on the actual situation.</p>
-<h3 id="step-5-analyze-and-use-the-response">Step 5: Analyze and Use the Response</h3>
-<p>After your query request is sent, the GraphQL service will return the response in JSON format. You can process this data in your application or directly display it to users on the front end.</p>
-<h2 id="best-practices">Best Practices</h2>
+                                <h1 id="claiming-your-rch-rewards-&#x1F381;">Claiming your $RCH Rewards! &#x1F381;</h1>
 <ul>
-<li><strong>Use Query Variables</strong>:  If you frequently need to perform queries of the same structure but with different parameters, using query variables can make it easier to reuse your queries.</li>
-<li><strong>Handle Errors</strong>:  In addition to normal responses, GraphQL can also return error information. Make sure your client code can gracefully handle these situations.</li>
+<li>Click the <strong>Claim RCH</strong> button located at the upper right corner of the page.</li>
+<li>Then, press the <strong>Claim</strong> button to receive your $RCH token reward.</li>
 </ul>
-<p>By following the above steps, you can effectively use The Graph to query data on the SOFA protocol to support your development projects.   Please refer to the rest of our developer documentation and Subgraph related resources for further information.</p>
+<blockquote>
+<p><em>Note: The system captures daily snapshots. $RCH tokens are available for claim every day at UTC 08:00 following the execution of your trade.</em></p>
+</blockquote>
+<p><img src="../static/Py51bpAZUohImCx207PuleE0slc.png" alt=""></p>
 
                                 
                                 </section>
@@ -551,10 +528,14 @@
 
             
                 
-                <a href="dapp-open-apis.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: DAPP Open APIs">
+                <a href="surge.html" class="navigation navigation-prev " aria-label="Previous page: Surge">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="../technical-design/" class="navigation navigation-next " aria-label="Next page: Technical Design">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -563,7 +544,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Subgraphs","level":"1.8.3","depth":2,"previous":{"title":"DAPP Open APIs","level":"1.8.2","depth":2,"path":"developer/dapp-open-apis.md","ref":"developer/dapp-open-apis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"katex":{},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"developer/subgraphs.md","mtime":"2024-05-31T15:47:47.675Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-05T16:18:21.700Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Claiming Your $RCH Rewards! 🎁","level":"1.4.3","depth":2,"next":{"title":"Technical Design","level":"1.5","depth":1,"path":"technical-design/README.md","ref":"technical-design/README.md","articles":[{"title":"Vault Classification","level":"1.5.1","depth":2,"path":"technical-design/vault-classification.md","ref":"technical-design/vault-classification.md","articles":[]},{"title":"Defining Your Risk Preference","level":"1.5.2","depth":2,"path":"technical-design/risk-prefer.md","ref":"technical-design/risk-prefer.md","articles":[]},{"title":"Oracle Construction","level":"1.5.3","depth":2,"path":"technical-design/oracle.md","ref":"technical-design/oracle.md","articles":[]},{"title":"On-Chain Settlement Considerations","level":"1.5.4","depth":2,"path":"technical-design/settlement.md","ref":"technical-design/settlement.md","articles":[]},{"title":"Early Settlement Considerations","level":"1.5.5","depth":2,"path":"technical-design/early-settlement.md","ref":"technical-design/early-settlement.md","articles":[]},{"title":"Protocol Fees","level":"1.5.6","depth":2,"path":"technical-design/fees.md","ref":"technical-design/fees.md","articles":[]}]},"previous":{"title":"Surge","level":"1.4.2","depth":2,"path":"user-guide/surge.md","ref":"user-guide/surge.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"katex":{},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"user-guide/claim.md","mtime":"2024-06-05T16:08:08.067Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-05T16:18:21.700Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

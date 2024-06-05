@@ -76,7 +76,7 @@
     <link rel="next" href="settlement.html" />
     
     
-    <link rel="prev" href="product-scope.html" />
+    <link rel="prev" href="risk-prefer.html" />
     
 
     </head>
@@ -144,12 +144,26 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../referral/">
+        <li class="chapter " data-level="1.4" data-path="../user-guide/">
             
-                <a href="../referral/">
+                <a href="../user-guide/">
             
                     
-                    Referral Model
+                    User Guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    Earn
             
                 </a>
             
@@ -157,9 +171,40 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="product-scope.html">
+        <li class="chapter " data-level="1.4.2" data-path="../user-guide/surge.html">
             
-                <a href="product-scope.html">
+                <a href="../user-guide/surge.html">
+            
+                    
+                    Surge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    Claiming Your $RCH Rewards! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
             
                     
                     Technical Design
@@ -171,12 +216,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="product-scope.html">
+        <li class="chapter " data-level="1.5.1" data-path="vault-classification.html">
             
-                <a href="product-scope.html">
+                <a href="vault-classification.html">
             
                     
-                    Product Scope
+                    Vault Classification
             
                 </a>
             
@@ -184,7 +229,20 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5.2" data-path="oracle.html">
+        <li class="chapter " data-level="1.5.2" data-path="risk-prefer.html">
+            
+                <a href="risk-prefer.html">
+            
+                    
+                    Defining Your Risk Preference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3" data-path="oracle.html">
             
                 <a href="oracle.html">
             
@@ -197,7 +255,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="settlement.html">
+        <li class="chapter " data-level="1.5.4" data-path="settlement.html">
             
                 <a href="settlement.html">
             
@@ -210,7 +268,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="early-settlement.html">
+        <li class="chapter " data-level="1.5.5" data-path="early-settlement.html">
             
                 <a href="early-settlement.html">
             
@@ -223,7 +281,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.5" data-path="fees.html">
+        <li class="chapter " data-level="1.5.6" data-path="fees.html">
             
                 <a href="fees.html">
             
@@ -309,6 +367,25 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    Hypothetical $RCH Float Scenario (LP + Cumulative Airdrops)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -427,7 +504,7 @@
 <p>Considering the need for the Settlement Price to be as close as possible to CeFi exchange prices (for ease of hedging by users or market makers) and for security reasons (to avoid manipulation and attacks), we have <strong>chosen ChainLink&apos;s Data Feeds as the oracle source for our Price at Expiry</strong>.</p>
 <p>With ChainLink&apos;s decentralized data sources that aggregate pricing information from different exchanges, we ensure that our smart contract executions are based on up-to-date, reliable, and fairest sets of pricing data publicly available.</p>
 <h2 id="calculated-price-derived-from-historical-closes">Calculated Price Derived from Historical Closes</h2>
-<p>For products like Range, it is necessary to know the highest and lowest prices of the underlying token from mint inception to expiry in order to calculate the final payout.  Common on-chain typically cannot provide this data, given that on-chain oracles do not provide continuous time-series data.</p>
+<p>For products like Rangebound, it is necessary to know the highest and lowest prices of the underlying token from mint inception to expiry in order to calculate the final payout.  Common on-chain typically cannot provide this data, given that on-chain oracles do not provide continuous time-series data.</p>
 <p>Instead of deploying our own oracle contracts as a (common) centralization compromise, we have found a solution in <strong>ChainLink&apos;s Functions product</strong>.  Thanks to the latest innovations, we are able to call off-chain APIs in a decentralized manner, and publish the obtained data on-chain through decentralized nodes like a typical data feed.</p>
 <p><img src="../static/KxYlbnS0IoEtX6xAxV1uB0WKsLg.png" alt=""></p>
 <h2 id="automation-regular-update-service">Automation Regular Update Service</h2>
@@ -465,7 +542,7 @@
 
             
                 
-                <a href="product-scope.html" class="navigation navigation-prev " aria-label="Previous page: Product Scope">
+                <a href="risk-prefer.html" class="navigation navigation-prev " aria-label="Previous page: Defining Your Risk Preference">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -481,7 +558,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Oracle Construction","level":"1.5.2","depth":2,"next":{"title":"On-Chain Settlement Considerations","level":"1.5.3","depth":2,"path":"technical-design/settlement.md","ref":"technical-design/settlement.md","articles":[]},"previous":{"title":"Product Scope","level":"1.5.1","depth":2,"path":"technical-design/product-scope.md","ref":"technical-design/product-scope.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"katex":{},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"technical-design/oracle.md","mtime":"2024-05-29T04:25:19.588Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-31T15:25:30.631Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Oracle Construction","level":"1.5.3","depth":2,"next":{"title":"On-Chain Settlement Considerations","level":"1.5.4","depth":2,"path":"technical-design/settlement.md","ref":"technical-design/settlement.md","articles":[]},"previous":{"title":"Defining Your Risk Preference","level":"1.5.2","depth":2,"path":"technical-design/risk-prefer.md","ref":"technical-design/risk-prefer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"katex":{},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"technical-design/oracle.md","mtime":"2024-06-05T15:13:58.932Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-05T16:18:21.700Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
