@@ -38,9 +38,9 @@ Furthermore, platform users are directly rewarded through the native utility tok
 
 ## **🤑 $RCH Utility Token**
 
-**$RCH is the core utility token within the SOFA ecosystem**. It is designed to reward users for transacting within the ecosystem and participating in its growth.
+$RCH is the core utility token within the SOFA ecosystem. It is designed to reward users for transacting within the ecosystem and participating in its growth.
 
-$RCH has a total supply of 37 million tokens, with 25 million (~67%) pre-minted and locked in a Uniswap liquidity pool. The remaining 12mm (33%) are earmarked to be airdropped to protocol users.  The long-term deflationary design ensures that** **the token value appreciates hand-in-hand with rising transaction volumes.
+$RCH has a total supply of 37 million tokens, with 25 million (~67%) pre-minted and locked in a Uniswap liquidity pool. The remaining 12mm (33%) are earmarked to be airdropped to protocol users and supporters.  The long-term deflationary design ensures that the token value appreciates hand-in-hand with rising transaction volumes.
 
 ## **🚀 EARN WITH US**
 
@@ -48,13 +48,16 @@ $RCH has a total supply of 37 million tokens, with 25 million (~67%) pre-minted 
 
 $SOFA tokens can be **earned through contributions to the community and participation in governance activities**. Users can also burn $RCH to get $SOFA.
 
-Remember, users earn $RCH through daily airdrops based on their transaction volume. **The only way to obtain $RCH is through active use of the protocol.**
+Remember, users earn $RCH through daily airdrops based on their transaction volume,** allowing active users to earn substantial airdrops, **on top of the potential yield they receive from purchasing structured products.**
 
-### 🗣 Referral Program
+![](static/Wu3Qb2plXomo5oxBdZ6uNAg9sEj.png)
 
-We recognize that there is strength in numbers, so we have designed a referral reward mechanism aimed at growing both our individual and institutional partnerships for the SOFA ecosystem.
+### 🗣 Broker Referral Program (dApp)
 
-This referral mechanism is done to incentivize true ecosystem users and supporters to continually expand the platform's user base.
+We recognize that there is strength in numbers, so we have designed a broker referral reward mechanism aimed at enabling the accessibility and infrastructure of the SOFA ecosystem.
+
+Participating brokers who build and enable end-user access to the underlying SOFA protocols, such as through the development of supporting dAPPs, will be entitled to receive 5% of the end user's airdrop rewards, paid directly from the protocol.
+
 
 Come join the SOFA.org Community today!
 

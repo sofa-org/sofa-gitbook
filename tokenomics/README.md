@@ -10,7 +10,7 @@ $RCH is SOFA’s main token, and you can’t just buy it early or get it from th
 
 **Total Supply:** Capped at 37,000,000 $RCH.
 
-**Pre-Minted Supply:** 67.6% (25 million) locked in a Uniswap liquidity pool with ETH.
+**Pre-Minted Supply:** 67% (25 million) locked in a Uniswap liquidity pool with ETH.
 
 **Airdrop Supply:** 32.3% released to users on a set schedule.
 
@@ -20,7 +20,7 @@ $RCH is SOFA’s main token, and you can’t just buy it early or get it from th
 
 **Long-Term Value:** $RCH price rises with protocol usage, benefiting active users and holders.
 
-At project launch, **67.6% of $RCH (25 million tokens) is pre-minted and placed into Uniswap's V3 pool on Ethereum along with $500,000 of ETH** as the initial liquidity pool
+At project launch, **67% of $RCH (25 million tokens) is pre-minted and placed into Uniswap's V3 pool on Ethereum along with ~725 ETH** (~$2.7M) as the initial liquidity pool
 
 Please note, **this initial liquidity is not owned by anyone**. After depositing into the LP,** the corresponding Uniswap LP tokens are promptly destroyed, ensuring that the token’s initial liquidity pool can never be withdrawn.**
 
@@ -28,7 +28,7 @@ This ensures that the $RCH float available will eventually be far less than what
 
 ### 🪂 Did Someone Say Airdrops?!?!
 
-Furthermore, **the remaining 32.3% (12 million tokens) of $RCH will be airdropped to ecosystem users** according to a predetermined release schedule.
+Furthermore, **the remaining 33% (12 million tokens) of $RCH will be airdropped to ecosystem users** according to a predetermined release schedule.
 
 Initially, **12,500 of $RCH tokens will be airdropped daily over the first 180 days.** After which, the airdropped amounts will decrease by an incremental 20% every 180 days ad infinitum.
 
@@ -52,11 +52,30 @@ Initially, **12,500 of $RCH tokens will be airdropped daily over the first 180 d
 
 **Future Growth: **New DeFi projects can join the SOFA.org ecosystem as partners.
 
+## Acquiring $RCH Tokens & Airdrop Math
+
+**The best way to obtain $RCH is to transact** and execute transactions with the SOFA ecosystem.  A set amount of $RCH will be airdropped daily to our protocol users, with **received rewards to be split pro-rata based on the user's transaction volumes on the day**.
+
+> 💰 RCH = User Executed Premium (on the day) / Total Premium Handled by SOFA (on the day) * [Vault Weight] * 95% (dApp Access)
+
+## Option Premium Approximation
+
+For **Earn based products**, given that the option premium will be funded by the deposit interest savings from Aave, only a **small portion of the user's deposit total will be considered "premium'** for airdrop calculations. On the contrary, the **entire ****purchase amount from Surge products** will be eligible for consideration, as it will be fully deployed to underlying option strategies.  An _approximate_ premium estimate is as follows:
+
+| **Protocol** | **Premium (Approximation)**                                                             | **Comment**                                                                                                     |
+| ------------ | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Earn         | (Aave’s Savings Rate – Product Base Yield) * Maturity (in Days) / 365 * Deposit Value | SOFA uses only a portion of Aave’s interest income to risk as option premium to maintain a minimum base return |
+| Surge        | The Entire Purchased Amount                                                             | The entire purchase is spent as an option premium to speculate on high upsides.                                 |
+
+Moreover, as an attempt to incentivize activities across both protocols, we have included a **[Vault Weight]** at the end of the formula, currently set to [50] for Earn, and [1] for Surge at our initial launch.  Finally, a final [95%] adjustment factor is applied to account for the airdrop haircut paid to the **dApp broker**.
+
+As SOFA grows and additional protocols come in, you can appreciate how important this variable will be in driving TVL, and this is going to be one of the vital parameters that can be voted on by our **$SOFA governance token** holders.
+
 ## 🤝 **Meet $SOFA: The Governance Token**
 
 The **$SOFA token is the governance token of the SOFA.org ecosystem**. As a decentralized, non-profit, open-source technology organization, all decisions within the SOFA.org ecosystem are determined by votes from $SOFA token holders. **As a pure governance token, $SOFA does not participate in any profit sharing within the ecosystem.**
 
-### 🎤 The Voice of the Community
+## 🎤 The Voice of the Community
 
 **Subject Matters Pertaining to Governance Votes:**
 
@@ -68,7 +87,7 @@ The **$SOFA token is the governance token of the SOFA.org ecosystem**. As a dece
 6. Pace of $RCH airdrops
 7. And other decisions to come as the ecosystem matures
 
-### Acquiring $SOFA Tokens
+## Acquiring $SOFA Tokens
 
 ▶️ **Early Association Members and Developers**: SOFA.org is well-attended and supported by some of the most influential Web3 institutions and builders, who will be providing the initial as well as on-going infrastructure support of the ecosystem.
 

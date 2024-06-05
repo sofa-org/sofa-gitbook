@@ -2,7 +2,7 @@
 
 > 💰 SOFA will collect 15% of the user's option premium as a base trading fee.  Furthermore, in the event of a 'winning' payout occurring for the user, a further 15% settlement fee will be charged against the total Gross Upside Payout.
 
-At SOFA, we are committed to creating a fair and transparent financial ecosystem where users can democratically invest in a wide gamut of structured products with transparent and fair pricing from market makers.  Furthermore, **as a fully decentralized project, we want to ensure that any protocol gains are primarily shared with our underlying users**, ensuring full incentive alignment rather than privileged payouts to special interest groups.  As such, we have devised a series of fee structures with **'fair-launch' tokenomics to ensure proper value-accrual and support long-term platform longevity**.  There will be no VC joy-riding or exit-liquidity dumps within SOFA.
+At SOFA, we are committed to creating a fair and transparent financial ecosystem where users can democratically purchase in a wide gamut of structured products with transparent and fair pricing from market makers.  Furthermore, **as a fully decentralized project, we want to ensure that any protocol gains are primarily shared with our underlying users**, ensuring full incentive alignment rather than privileged payouts to special interest groups.  As such, we have devised a series of fee structures with **'fair-launch' tokenomics to ensure proper value-accrual and support long-term platform longevity**.  There will be no VC joy-riding or exit-liquidity dumps within SOFA.
 
 ## Protocol Revenue
 
@@ -16,8 +16,9 @@ Example:
 - Market Maker Premium = 100 USDT
 - **Base Trading Fee = 30.68USDT * 15% = 4.602USDT**
 - **Gross Upside Payout = (30.68 USDT + 100 USDT)**
-- **Upside Settlement Fee = (30.68USDT + 100USDT) * 15% = 19.6USDT (only in the event of a winning payout)**
-- **Total Protocol Revenue = 4.602USDT + 19.6 USDT = 24.202USDT**
+- **Upside Settlement Fee = (30.68USDT + 100USDT) * 5% = 6.534 USDT (only in the event of a winning payout)**
+- **Total Protocol Revenue = 4.602USDT + 6.534 USDT = 11.136 USDT**
+
 
 ## Native Token ($RCH) Buyback
 

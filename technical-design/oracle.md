@@ -17,7 +17,7 @@ With ChainLink's decentralized data sources that aggregate pricing information f
 
 ## Calculated Price Derived from Historical Closes
 
-For products like Range, it is necessary to know the highest and lowest prices of the underlying token from mint inception to expiry in order to calculate the final payout.  Common on-chain typically cannot provide this data, given that on-chain oracles do not provide continuous time-series data.
+For products like Rangebound, it is necessary to know the highest and lowest prices of the underlying token from mint inception to expiry in order to calculate the final payout.  Common on-chain typically cannot provide this data, given that on-chain oracles do not provide continuous time-series data.
 
 Instead of deploying our own oracle contracts as a (common) centralization compromise, we have found a solution in **ChainLink's Functions product**.  Thanks to the latest innovations, we are able to call off-chain APIs in a decentralized manner, and publish the obtained data on-chain through decentralized nodes like a typical data feed.
 

@@ -1,4 +1,4 @@
-# Product Scope
+## Product Scope
 
 The SOFA protocol will** initially be focused on settling and tokenizing crypto structured products** as our proof-of-concept.  We are taking the 'road less travelled' to attack the most complex products first, where a successful deployment will see rapid expansion into all other crypto asset classes. The SOFA protocol will be launched on **Ethereum and other L1 EVM blockchains** to start.
 
@@ -36,14 +36,4 @@ Compared to conventional single-asset token standards, ERC-1155 allows the creat
 ![](../static/DkgrbQ5FDo5ZyxxdZvmuoixCsee.png)
 
 Position Tokens with the same Strike Price and Expiry Time are fungible like any standard token, and can be batch settled in a single operation to allow significant gas savings.
-
-## Vault Classification
-
-The Vault contract uses the ERC-1155 standard to **support fungibility of Position Tokens with the same strike price and expiry time**.  Tokens with different strike prices or the expiration time will have different Token IDs (ie. like a NFT) while still contained under the same Vault contract.
-
-The SOFA protocol is designed with the flexibility **to support any structured product type and collateral denomination**, though a distinction will be made on the capital risk-tolerance level of the user.  As such, our **Vault designs are split into 2 major, self-explanatory product categories called 'Earn' and 'Surge'**.
-
-Example Vault Taxonomy at SOFA Launch
-
-![](../static/NON1bznnEocSeJxK0mAuxBR0sqh.png)
 

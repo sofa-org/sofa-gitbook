@@ -12,7 +12,7 @@ Fast forward to today, imagine if the world had a widely available technology so
 
 ## Rekindling the 'Trustless' Spirit as the Core Value of Blockchain
 
-Decentralization.  Transparency.  Immutability.  Exensibility.  Authenticity.  These are some of the common words most often uttered as the main advantages provided by blockchain.  However, we feel that **'Trustless'** offers the best personification of crypto's core values**, as blockchain has enabled complete strangers to execute valid transactions without the reliance on arbitrary middleman or gated privileged groups.
+Decentralization.  Transparency.  Immutability.  Exensibility.  Authenticity.  These are some of the common words most often uttered as the main advantages provided by blockchain.  However, we feel that **'Trustless'** offers the best personification of crypto's core values, as blockchain has enabled complete strangers to execute valid transactions without the reliance on arbitrary middleman or gated privileged groups.
 
 Furthermore, smart contract immutability allows one to place their absolute faith in code instead of the goodwill of your counterparty.  As such, **the foundation of trustlessness is built on the uncompromisable pillars of 1) contract immutability and 2) on-chain asset settlement**.  These core principles will be our driving force in developing a protocol that can truly be free from the confines of centralization.
 
@@ -26,7 +26,7 @@ At their core, **financial instruments are ultimately nothing more than monetary
 
 Crypto has made tremendous progress in the area of on-chain safety, 'code is law' smart contract frameworks, transferrable digital currencies, and tokenization of RWAs.  We are taking the last part one step further with our innovative product vaults, where we are recording not just the notional amount, but also **transcribing other vital instrument parameters on-chain**, so that they can be **authentically replicated and referenced upon in a process we call Risk Tokenization.  **The resulting output will be contained in something called **'Position Tokens'**, which can be thought of as **ownership claims on chain-locked assets, but can be freely transferred between users like a standard ERC-20 tokens**.
 
-![](static/draw3.png)
+![](../static/draw3.png)
 
 ## A Sustainable Tokenomics Model with Usage Driven Rewards
 

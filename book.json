@@ -1,4 +1,6 @@
 {
+    "title": "SOFA.org Documentation",
+    "author": "SOFA.org",
     "structure" : {
         "readme" : "INTRO.md"
     },

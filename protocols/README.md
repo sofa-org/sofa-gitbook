@@ -2,7 +2,7 @@
 
 ## **🏗️ What’s A Structured Product? **
 
-In a nutshell, a **Structured Product is a hybrid derivative that combines the features of multiple financial products into one. **Think of it as a financial smoothie. It blends different financial goodies (like bonds and options) into one tasty package. It offers downside protection and potential profits based on market conditions.
+In a nutshell, a **Structured Product is a hybrid derivative that combines the features of multiple financial products into one.** Think of it as a financial smoothie. It blends different financial goodies (like bonds and options) into one tasty package. It offers protection and potential profits based on market conditions.
 
 **🤔 Why Should You Care?**
 
@@ -10,13 +10,13 @@ In a nutshell, a **Structured Product is a hybrid derivative that combines the f
 
 **▶️ Simple Management:** One product, no hassle.
 
-**▶️ Flexibility:** Customize your investments based on your risk tolerance.
+**▶️ Flexibility:** Customize your purchases based on your risk tolerance.
 
 **▶️ High Yields:** Crypto’s volatility means potentially higher returns.
 
 ## ⛓️ **Going On-Chain **
 
-In the traditional finance world, getting access to structured products is like navigating a maze filled with gatekeepers who care more about making money off you than helping you grow your investments. This process is opaque, expensive, and exclusive to the wealthy.
+In the traditional finance world, getting access to structured products is like navigating a maze filled with gatekeepers who care more about making money off you than helping you grow your savings. This process is opaque, expensive, and exclusive to the wealthy.
 
 **Transparency**: No more middlemen; clear pricing for all.
 
@@ -26,7 +26,7 @@ In the traditional finance world, getting access to structured products is like 
 
 The SOFA protocols will be launched on **Ethereum and other L1 EVM** blockchains to start.
 
-**🔁 How a Trade Works in the SOFA Protocols**
+## 🔁 How a Trade Works in the SOFA Protocols**
 
 **1️⃣ Market Prices:** Supporting market makers stream live prices for different products.
 
@@ -62,25 +62,24 @@ You can trade Position Tokens like regular tokens. Owners of the position tokens
 
 ## 🏦 **A New Standard for Vault Design**
 
-The SOFA protocols offer a new way to handle crypto by making transactions clear and safe. It lets you invest based on benefits without worrying about asset safety. All details are recorded transparently on the blockchain, supporting various products. Tokenized positions improve capital efficiency and can be used across DeFi and centralized platforms. Using ERC-1155 tokens saves on costs, and the system is designed to be sustainable and user-friendly.
+The SOFA protocols offer a new way to handle crypto by making transactions clear and safe. It lets you earn based on benefits without worrying about asset safety. All details are recorded transparently on the blockchain, supporting various products. Tokenized positions improve capital efficiency and can be used across DeFi and centralized platforms. Using ERC-1155 tokens saves on costs, and the system is designed to be sustainable and user-friendly.
 
-As our inaugural proof-of-concept, **we will initially focus on three popular product structures called Range, Bull Trend, and Bear Trend**. All of these products are available in either 'Earn' or 'Surge' formats. Moreover, additional product types will be continually added based on user demand and ecosystem feedback.
+As our inaugural proof-of-concept, **we will initially focus on three popular product structures called Rangebound, Bull Trend, and Bear Trend**. All of these products are available in either 'Earn' or 'Surge' formats. Moreover, additional product types will be continually added based on user demand and ecosystem feedback.
 
-### Range Product Overview
+### Rangebound Product Overview
 
-A Range product helps you make money if an asset, like Bitcoin, **stays between two set prices during the investment period**. If the price stays within this range, you get an extra profit. You can customize the range: a narrow range means more profit but more risk, while a wider range means less profit but higher chances of winning. If the asset  goes outside the range, you still get a guaranteed minimum yield.
+A Rangebound product helps you make money if an asset, like Bitcoin, **stays between two set prices during the maturity period**. If the price stays within this range, you get an extra profit. You can customize the range: a narrow range means more profit but more risk, while a wider range means less profit but higher chances of winning. If the asset  goes outside the range, you still get a guaranteed minimum yield.
 
 ### Trend Product Overview (Bullish/Bearish)
 
 A Trend product helps you make money if an asset, like Bitcoin,** moves smoothly within a set price range. You set a lower and upper price limit with a certain direction (bullish / bearish). If the asset stays within this range at the end, you get a profit based on where the price falls**. This product works for both bullish (price going up) and bearish (price going down) scenarios. It also offers some base protection if the price doesn't move as expected.
 
-## ⚖️ **Risk Preference **
+## ⚖️ **Risk Preference**
 
 ### Earn
 
-If you don't like risk, choose this option. Your initial investment is safe and earns a small, steady interest. If the market does well, you get extra profit, but your money stays secured.
+If you don't like risk, choose this protocol. Take comfort with maximum downside protection while your deposit earns a steady interest, while enjoying a bonus profit if the market moves in your favor. What's there not to like?
 
 ### Surge
 
-If you like taking risks, this option offers higher rewards but with the chance of losing all your money. If the market stays within your chosen range, you earn a lot. If not, you lose your investment.
-
+If you like taking risks, this protocol offers higher rewards but with the chance of losing your entire deposit. If the market stays within your chosen range, you earn a lot. If not, you lose your purchase amount. Go big or go home?

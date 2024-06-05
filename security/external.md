@@ -2,7 +2,7 @@
 
 As much as we have endeavoured to design the SOFA protocols to be 'risk-free', we are cognizant that unforeseen "force majeure" type of risks are always a distant possibility.  Furthermore, every design decision naturally comes with some form of compromise as a trade-off, and we have tried our best to list out some expected and 'edge case' risk factors here below.
 
-1. **Unfavourable** **Payoff Outcomes & Variability**
+1. **Unfavourable Payoff Outcomes & Variability**
     - For Surge-based products, if the actual asset price movement moves unfavourably against the terms of product (e.g. outside the barriers), there is a risk of losing the entire principal.
     - For Earn-based products, the exact interest payout of the structure is dependent on the underlying asset's price movement and value at expiry date.
 
@@ -25,6 +25,7 @@ As much as we have endeavoured to design the SOFA protocols to be 'risk-free', w
 
 6. **Smart Contract Code Integrity**
     - [SOFA.org](http://SOFA.org) has engaged and will be engaging with the most reputable and professional security firms in the industry to audit our contracts. We view auditing as an ongoing process and will continue to invite more auditors as the protocol evolves.
-    - The initial SOFA protocols have passed a full chain audit from Peckshield as of May 2024.
+    - The initial SOFA protocols have passed a full chain audit from [Peckshield](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf) as of May 2024.
+    - The audits from **Code4rena** and **SigmaPrime** will be finished before mainnet launch.
 
 
