@@ -24,3 +24,4 @@
   * [Market Maker Open APIs](developer/marketmaker-open-apis.md)
   * [DAPP Open APIs](developer/dapp-open-apis.md)
   * [Subgraphs](developer/subgraphs.md)
+  * [Deployment Contracts](developer/contracts.md)

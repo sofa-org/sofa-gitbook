@@ -4,6 +4,9 @@ We support the development of efficient and responsive applications by providing
 
 Here is how you can utilize custom subgraphs to query related data within the protocol:
 
+- [Mainnet](https://api.thegraph.com/subgraphs/name/aave/protocol-v3)
+- [Arbitrum](https://api.thegraph.com/subgraphs/name/aave/protocol-v3-arbitrum)
+
 ## Accessing Our Subgraph
 
 We have created specific subgraphs for the protocol's data. These subgraphs contain various entities indexed from the blockchain, such as transactions, accounts, and specific events related to our DeFi products.  You can query data in the subgraph via the following steps:
@@ -22,13 +25,39 @@ Based on the schema, you can start writing GraphQL queries to query data from th
 
 ```
 {
-  transactions(first: 5) {
+  position(id: "") {
+    anchorPrices
+    collateralAtRiskPercentage
+    createdAt
+    expiry
     id
-    from
-    to
-    value
-    blockNumber
+    isMaker
+    makerCollateral
+    owner
+    payoff
+    productId
+    term
+    timestamp
+    totalCollateral
+    vault
   }
+  positions
+  transaction(id: "") {
+    anchorPrices
+    collateralAtRiskPercentage
+    expiry
+    hash
+    id
+    maker
+    makerCollateral
+    minter
+    referral
+    term
+    timestamp
+    totalCollateral
+    vault
+  }
+  transactions
 }
 ```
 
@@ -41,10 +70,10 @@ Send your query request using any HTTP client that supports GraphQL. You can use
 An example code using curl is as follows:
 
 ```
-curl -X POST -H "Content-Type: application/json" --data '{"query": "{ transactions(first: 5) { id from to value blockNumber } }"}' https://api.thegraph.com/subgraphs/name/sofa-org/subgraph-name
+curl -X POST -H "Content-Type: application/json" --data '{"query": "{ transactions(first: 5) { id from to value blockNumber } }"}'  https://api.studio.thegraph.com/query/77961/sofa-mainnet/version/latest
 ```
 
-Replace `subgraph-name` with the actual subgraph name, and determine the URL based on the actual situation.
+Replace the url with the actual subgraph name, and determine the URL based on the actual situation.
 
 ### Step 5: Analyze and Use the Response
 

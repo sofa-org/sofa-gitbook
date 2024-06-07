@@ -12,7 +12,7 @@ $RCH is SOFA’s main token, and you can’t just buy it early or get it from th
 
 **Pre-Minted Supply:** 67% (25 million) locked in a Uniswap liquidity pool with ETH.
 
-**Airdrop Supply:** 32.3% released to users on a set schedule.
+**Airdrop Supply:** 33% released to users on a set schedule.
 
 **Revenue Usage:** All SOFA protocol revenue buys and burns $RCH from Uniswap.
 

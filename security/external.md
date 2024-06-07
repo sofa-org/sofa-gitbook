@@ -25,7 +25,9 @@ As much as we have endeavoured to design the SOFA protocols to be 'risk-free', w
 
 6. **Smart Contract Code Integrity**
     - [SOFA.org](http://SOFA.org) has engaged and will be engaging with the most reputable and professional security firms in the industry to audit our contracts. We view auditing as an ongoing process and will continue to invite more auditors as the protocol evolves.
-    - The initial SOFA protocols have passed a full chain audit from [Peckshield](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf) as of May 2024.
-    - The audits from **Code4rena** and **SigmaPrime** will be finished before mainnet launch.
+    - The initial SOFA protocols have passed a full chain audit.
+      - [Peckshield](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf)
+      - [Code4rena](https://code4rena.com/reports/2024-05-sofa-pro-league)
+      - **SigmaPrime** will be published soon.
 
 
