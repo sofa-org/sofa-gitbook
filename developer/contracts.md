@@ -1,5 +1,4 @@
 # Contracts
-Here is the table converted to Markdown format:
 
 ## Mainnet
 
