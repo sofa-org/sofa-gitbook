@@ -28,6 +28,6 @@ As much as we have endeavoured to design the SOFA protocols to be 'risk-free', w
     - The initial SOFA protocols have passed a full chain audit.
       - [Peckshield](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf)
       - [Code4rena](https://code4rena.com/reports/2024-05-sofa-pro-league)
-      - **SigmaPrime** will be published soon.
+      - [SigmaPrime](https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf )
 
 
