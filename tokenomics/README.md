@@ -56,41 +56,6 @@ Initially, **12,500 of $RCH tokens will be airdropped daily over the first 180 d
 
 **The best way to obtain $RCH is to transact** and execute transactions with the SOFA ecosystem.  A set amount of $RCH will be airdropped daily to our protocol users, with **received rewards to be split pro-rata based on the user's transaction volumes on the day**.
 
-> 💰 RCH = User Executed Premium (on the day) / Total Premium Handled by SOFA (on the day) * [Vault Weight] * 95% (dApp Access)
-
-## Option Premium Approximation
-
-For **Earn based products**, given that the option premium will be funded by the deposit interest savings from Aave, only a **small portion of the user's deposit total will be considered "premium'** for airdrop calculations. On the contrary, the **entire ****purchase amount from Surge products** will be eligible for consideration, as it will be fully deployed to underlying option strategies.  An _approximate_ premium estimate is as follows:
-
-| **Protocol** | **Premium (Approximation)**                                                             | **Comment**                                                                                                     |
-| ------------ | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Earn         | (Aave’s Savings Rate – Product Base Yield) * Maturity (in Days) / 365 * Deposit Value | SOFA uses only a portion of Aave’s interest income to risk as option premium to maintain a minimum base return |
-| Surge        | The Entire Purchased Amount                                                             | The entire purchase is spent as an option premium to speculate on high upsides.                                 |
-
-Moreover, as an attempt to incentivize activities across both protocols, we have included a **[Vault Weight]** at the end of the formula, currently set to [50] for Earn, and [1] for Surge at our initial launch.  Finally, a final [95%] adjustment factor is applied to account for the airdrop haircut paid to the **dApp broker**.
-
-As SOFA grows and additional protocols come in, you can appreciate how important this variable will be in driving TVL, and this is going to be one of the vital parameters that can be voted on by our **$SOFA governance token** holders.
-
-## 🤝 **Meet $SOFA: The Governance Token**
-
-The **$SOFA token is the governance token of the SOFA.org ecosystem**. As a decentralized, non-profit, open-source technology organization, all decisions within the SOFA.org ecosystem are determined by votes from $SOFA token holders. **As a pure governance token, $SOFA does not participate in any profit sharing within the ecosystem.**
-
-## 🎤 The Voice of the Community
-
-**Subject Matters Pertaining to Governance Votes:**
-
-1. Types of financial products to be onboarded
-2. Determination of the eligible basket of supported collateral (USDT etc.)
-3. Admission of new partner protocols into the SOFA.org ecosystem
-4. Distribution mix % of daily $RCH airdrops between the various on-boarded products
-5. Distribution mix % of daily $RCH airdrops amongst ecosystem protocols
-6. Pace of $RCH airdrops
-7. And other decisions to come as the ecosystem matures
-
-## Acquiring $RCH Tokens & Airdrop Math
-
-**The best way to obtain $RCH is to transact** and execute transactions with the SOFA ecosystem.  A set amount of $RCH will be airdropped daily to our protocol users, with **received rewards to be split pro-rata based on the user's transaction volumes on the day**.
-
 > 💰 RCH = (User Executed Premium (on the day) * [Vault Weight]) / Total Vault Weighted Premium Handled by SOFA (on the day) * 95% (dApp Access)
 
 > 💰 Total Vault Weighted Premium = (Total Earn Premium * Earn Weight) + (Total Surge Premium * Surge Weight)
@@ -111,3 +76,20 @@ Moreover, as an attempt to incentivize activities across both protocols, we have
 As SOFA grows and additional protocols come in, you can appreciate how important this variable will be in driving TVL, and this is going to be one of the vital parameters that can be voted on by our [$SOFA governance token](https://ainxbawxjd.larksuite.com/docx/Nh5VdSBNaoiSG7xX0lQuukPWsWd#doxusfrl6Z1n2pCyGcT7NdRNLWb) holders.
 
 _Note: The system captures daily snapshots. $RCH tokens are available for claim every day at UTC 08:00 following the execution of your trade._
+
+## 🤝 **Meet $SOFA: The Governance Token**
+
+The **$SOFA token is the governance token of the SOFA.org ecosystem**. As a decentralized, non-profit, open-source technology organization, all decisions within the SOFA.org ecosystem are determined by votes from $SOFA token holders. **As a pure governance token, $SOFA does not participate in any profit sharing within the ecosystem.**
+
+## 🎤 The Voice of the Community
+
+**Subject Matters Pertaining to Governance Votes:**
+
+1. Types of financial products to be onboarded
+2. Determination of the eligible basket of supported collateral (USDT etc.)
+3. Admission of new partner protocols into the SOFA.org ecosystem
+4. Distribution mix % of daily $RCH airdrops between the various on-boarded products
+5. Distribution mix % of daily $RCH airdrops amongst ecosystem protocols
+6. Pace of $RCH airdrops
+7. And other decisions to come as the ecosystem matures
+
