@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Subgraphs · SOFA.org Documentation</title>
+        <title>Roadmap · SOFA.org Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,10 +73,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="contracts.html" />
+    <link rel="next" href="../user-guide/" />
     
     
-    <link rel="prev" href="dapp-open-apis.html" />
+    <link rel="prev" href="../protocols/" />
     
 
     </head>
@@ -144,9 +144,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+        <li class="chapter active" data-level="1.4" data-path="./">
             
-                <a href="../roadmap/">
+                <a href="./">
             
                     
                     Roadmap
@@ -389,9 +389,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="./">
+        <li class="chapter " data-level="1.9" data-path="../developer/">
             
-                <a href="./">
+                <a href="../developer/">
             
                     
                     Developer Documentation
@@ -403,9 +403,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.1" data-path="marketmaker-open-apis.html">
+        <li class="chapter " data-level="1.9.1" data-path="../developer/marketmaker-open-apis.html">
             
-                <a href="marketmaker-open-apis.html">
+                <a href="../developer/marketmaker-open-apis.html">
             
                     
                     Market Maker Open APIs
@@ -416,9 +416,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.2" data-path="dapp-open-apis.html">
+        <li class="chapter " data-level="1.9.2" data-path="../developer/dapp-open-apis.html">
             
-                <a href="dapp-open-apis.html">
+                <a href="../developer/dapp-open-apis.html">
             
                     
                     DAPP Open APIs
@@ -429,9 +429,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.9.3" data-path="subgraphs.html">
+        <li class="chapter " data-level="1.9.3" data-path="../developer/subgraphs.html">
             
-                <a href="subgraphs.html">
+                <a href="../developer/subgraphs.html">
             
                     
                     Subgraphs
@@ -442,9 +442,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.4" data-path="contracts.html">
+        <li class="chapter " data-level="1.9.4" data-path="../developer/contracts.html">
             
-                <a href="contracts.html">
+                <a href="../developer/contracts.html">
             
                     
                     Deployment Contracts
@@ -490,7 +490,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Subgraphs</a>
+        <a href=".." >Roadmap</a>
     </h1>
 </div>
 
@@ -505,70 +505,31 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="subgraphs">Subgraphs</h1>
-<p>We support the development of efficient and responsive applications by providing real-time and accurate blockchain data access through the use of The Graph&apos;s indexing protocol.  Subgraphs are a powerful tool that allows us to index data stored on Ethereum and query this data via GraphQL.</p>
-<p>Here is how you can utilize custom subgraphs to query related data within the protocol:</p>
+                                <h1 id="roadmap">Roadmap</h1>
+<h2 id="&#x1F3AF;may-2024">&#x1F3AF;May 2024</h2>
 <ul>
-<li><a href="https://api.thegraph.com/subgraphs/name/aave/protocol-v3" target="_blank">Mainnet</a></li>
-<li><a href="https://api.thegraph.com/subgraphs/name/aave/protocol-v3-arbitrum" target="_blank">Arbitrum</a></li>
+<li><p>Launch SOFA protocols on test-net</p>
+</li>
+<li><p>Complete audits with <strong>PeckShield</strong></p>
+</li>
 </ul>
-<h2 id="accessing-our-subgraph">Accessing Our Subgraph</h2>
-<p>We have created specific subgraphs for the protocol&apos;s data. These subgraphs contain various entities indexed from the blockchain, such as transactions, accounts, and specific events related to our DeFi products.  You can query data in the subgraph via the following steps:</p>
-<h3 id="step-1-find-the-endpoint">Step 1: Find the Endpoint</h3>
-<p>Locate the GraphQL endpoint URL corresponding to the subgraph you wish to interact with.  This typically appears as a web address link.  Please ensure you are using the most up-to-date endpoint.</p>
-<h3 id="step-2-understand-the-schema">Step 2: Understand the Schema</h3>
-<p>The schema describes the entities within the subgraph and the types of queries that can be performed. Understanding the schema is crucial for writing efficient queries.</p>
-<h3 id="step-3-write-a-graphql-query">Step 3: Write a GraphQL Query</h3>
-<p>Based on the schema, you can start writing GraphQL queries to query data from the subgraph. GraphQL allows for very specific queries, requesting only the fields you are interested in.  For example, if you want to query detailed information for each transaction, you might write a query like this:</p>
-<pre><code>{
-  position(id: &quot;&quot;) {
-    anchorPrices
-    collateralAtRiskPercentage
-    createdAt
-    expiry
-    id
-    isMaker
-    makerCollateral
-    owner
-    payoff
-    productId
-    term
-    timestamp
-    totalCollateral
-    vault
-  }
-  positions
-  transaction(id: &quot;&quot;) {
-    anchorPrices
-    collateralAtRiskPercentage
-    expiry
-    hash
-    id
-    maker
-    makerCollateral
-    minter
-    referral
-    term
-    timestamp
-    totalCollateral
-    vault
-  }
-  transactions
-}
-</code></pre><p>This will return transactions and their related details for the first five records on the blockchain.</p>
-<h3 id="step-4-send-the-query-request">Step 4: Send the Query Request</h3>
-<p>Send your query request using any HTTP client that supports GraphQL. You can use a command-line tool such as curl, or a library integrated into your application, like apollo-client.  Typically, the request is sent as a POST request to the endpoint URL.</p>
-<p>An example code using curl is as follows:</p>
-<pre><code>curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;query&quot;: &quot;{ transactions(first: 5) { id from to value blockNumber } }&quot;}&apos;  https://api.studio.thegraph.com/query/77961/sofa-mainnet/version/latest
-</code></pre><p>Replace the url with the actual subgraph name, and determine the URL based on the actual situation.</p>
-<h3 id="step-5-analyze-and-use-the-response">Step 5: Analyze and Use the Response</h3>
-<p>After your query request is sent, the GraphQL service will return the response in JSON format. You can process this data in your application or directly display it to users on the front end.</p>
-<h2 id="best-practices">Best Practices</h2>
+<h2 id="&#x1F3AF;june-2024">&#x1F3AF;June 2024</h2>
 <ul>
-<li><strong>Use Query Variables</strong>:  If you frequently need to perform queries of the same structure but with different parameters, using query variables can make it easier to reuse your queries.</li>
-<li><strong>Handle Errors</strong>:  In addition to normal responses, GraphQL can also return error information. Make sure your client code can gracefully handle these situations.</li>
+<li><p>SOFA protocols go live on main-net</p>
+</li>
+<li><p>100% fair launch of utility token $RCH</p>
+</li>
+<li><p>Complete Audits with <strong>Code4rena</strong> and <strong>SigmaPrime</strong></p>
+</li>
 </ul>
-<p>By following the above steps, you can effectively use The Graph to query data on the SOFA protocol to support your development projects.   Please refer to the rest of our developer documentation and Subgraph related resources for further information.</p>
+<h2 id="&#x1F4C3;july-2024">&#x1F4C3;July 2024</h2>
+<p>Expand support for additional token denominations</p>
+<h2 id="&#x1F4C3;august-2024">&#x1F4C3;August 2024</h2>
+<p>Launch of new Structured Product type</p>
+<h2 id="&#x1F4C3;october-2024">&#x1F4C3;October 2024</h2>
+<p>Use-case expansion for $RCH</p>
+<h2 id="&#x1F4C3;q4-and-beyond">&#x1F4C3;Q4 and Beyond</h2>
+<p>Significant ecosystem expansion with new partner protocols</p>
 
                                 
                                 </section>
@@ -596,12 +557,12 @@
 
             
                 
-                <a href="dapp-open-apis.html" class="navigation navigation-prev " aria-label="Previous page: DAPP Open APIs">
+                <a href="../protocols/" class="navigation navigation-prev " aria-label="Previous page: 🌏 Welcome To the SOFA Protocols 🌏">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="contracts.html" class="navigation navigation-next " aria-label="Next page: Deployment Contracts">
+                <a href="../user-guide/" class="navigation navigation-next " aria-label="Next page: User Guide">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -612,7 +573,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Subgraphs","level":"1.9.3","depth":2,"next":{"title":"Deployment Contracts","level":"1.9.4","depth":2,"path":"developer/contracts.md","ref":"developer/contracts.md","articles":[]},"previous":{"title":"DAPP Open APIs","level":"1.9.2","depth":2,"path":"developer/dapp-open-apis.md","ref":"developer/dapp-open-apis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"katex":{},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"developer/subgraphs.md","mtime":"2024-06-11T06:29:31.955Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-13T15:16:48.450Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Roadmap","level":"1.4","depth":1,"next":{"title":"User Guide","level":"1.5","depth":1,"path":"user-guide/README.md","ref":"user-guide/README.md","articles":[{"title":"Earn","level":"1.5.1","depth":2,"path":"user-guide/earn.md","ref":"user-guide/earn.md","articles":[]},{"title":"Surge","level":"1.5.2","depth":2,"path":"user-guide/surge.md","ref":"user-guide/surge.md","articles":[]},{"title":"Claiming Your $RCH Rewards! 🎁","level":"1.5.3","depth":2,"path":"user-guide/claim.md","ref":"user-guide/claim.md","articles":[]}]},"previous":{"title":"🌏 Welcome To the SOFA Protocols 🌏","level":"1.3","depth":1,"path":"protocols/README.md","ref":"protocols/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"katex":{},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"roadmap/README.md","mtime":"2024-06-13T14:54:42.278Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-13T15:16:48.450Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
