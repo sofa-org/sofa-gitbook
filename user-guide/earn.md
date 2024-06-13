@@ -75,7 +75,7 @@ When prompted, engage with the following windows for trade confirmation:
 
 **Note:**
 
-For Earn products (secured), all invested amounts will be staked in the Aave protocol to generate passive returns. Moreover, a portion of the Aave returns will be retained as Base Yield, and the remaining part will be deployed to option strategies to generate potential Upside returns.
+For Earn products (secured), all deposited amounts will be staked in the Aave protocol to generate passive returns. Moreover, a portion of the Aave returns will be retained as Base Yield, and the remaining part will be deployed to option strategies to generate potential Upside returns.
 
 ## **Bull Trend**
 
@@ -152,7 +152,7 @@ When prompted, engage with the following windows for trade confirmation:
 
 **Note:**
 
->For Earn products (secured), all invested amounts will be staked in the Aave protocol to generate passive returns. Moreover, a portion of the Aave returns will be retained as Base Yield, and the remaining part will be deployed to option strategies to generate potential Upside returns.
+>For Earn products (secured), all deposited amounts will be staked in the Aave protocol to generate passive returns. Moreover, a portion of the Aave returns will be retained as Base Yield, and the remaining part will be deployed to option strategies to generate potential Upside returns.
 
 ## **Bear Trend**
 

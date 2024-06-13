@@ -16,7 +16,7 @@ As our inaugural proof-of-concept, we will initially focus on three popular prod
 
 ### Product Overview
 
-Rangebound products are a type of structured product based on price boundaries. **Depositors can profit if the underlying asset does not touch the preset barriers during the maturity period**.  These products are suitable for users who expect the market to stay in a sideways consolidation phase with subdued volatility.
+Rangebound products are a type of structured product based on price boundaries. **Depositors can profit if the underlying asset does not touch the preset barriers during the observation period before maturity**.  These products are suitable for users who expect the market to stay in a sideways consolidation phase with subdued volatility.
 
 Referring to the payoff diagram below, a user believes that BTC will be stuck between a range as defined by the lower and upper barriers, but does not want to incur much downside even if the view proves to be wrong.  The Rangebound product will guarantee the user a minimum base yield of (A) even if the price of Range breaks out from either side, but the user will be entitled to an extra profit return equivalent to (A+B) should prices stay contained within the barriers.
 

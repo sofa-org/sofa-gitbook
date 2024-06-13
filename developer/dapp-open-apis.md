@@ -1,8 +1,8 @@
-# Open APIs for DAPP Developer
+# dApp Open APIs (ie. Broker)
 
-We offer a 'contract product pricing feature' for the protocol, which involves soliciting quotes from MarketMakers and then returning the best pricing results back to SOFA.  Users will subsequently have a choice to execute or reject the trade.  Given the need to interface with different MarketMakers depending on the underlying contract, products will distinguished by contract type.
+Our existing dApp on sofa.org is a critical workflow feature and is the main way for users to interact with the SOFA protocols.  However, we encourage other developers to enable access and connect to SOFA via their own dApps as well to maximize our ecosystem growth.  We consider these to be our 'Broker' partners and encourage interested parties to contact the SOFA team for further API information.
 
-## Recommended DNT RFQ Inquiry
+## Recommended Range (DNT) RFQ Inquiry
 
 - Description
   - Supports a list of RFQs composed of the same vault+chainId.

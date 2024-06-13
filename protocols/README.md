@@ -68,7 +68,7 @@ As our inaugural proof-of-concept, **we will initially focus on three popular pr
 
 ### Rangebound Product Overview
 
-A Rangebound product helps you make money if an asset, like Bitcoin, **stays between two set prices during the maturity period**. If the price stays within this range, you get an extra profit. You can customize the range: a narrow range means more profit but more risk, while a wider range means less profit but higher chances of winning. If the asset  goes outside the range, you still get a guaranteed minimum yield.
+A Rangebound product helps you make money if an asset, like Bitcoin, **stays between two set prices during the observation period**. If the price stays within this range, you get an extra profit. You can customize the range: a narrow range means more profit but more risk, while a wider range means less profit but higher chances of winning. If the asset  goes outside the range, you still get a guaranteed minimum yield.
 
 ### Trend Product Overview (Bullish/Bearish)
 

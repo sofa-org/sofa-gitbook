@@ -6,7 +6,7 @@ If you have not installed the Web3 wallet, please use a browser that supports pl
 
 ![](../static/X26obcTsxo9MvXxLWr1uQh1psFg.png)
 
-Once your wallet is ready, navigate directly to the **SOFA APP** and connect your wallet. SOFA is on both Ethereum and Arbitrum.
+Once your wallet is ready, navigate directly to the [**SOFA APP**](https://earn.sofa.org/products) and connect your wallet. SOFA is on both Ethereum and Arbitrum.
 
 ## Start a trade on Earn and Surge Protocols 📢
 

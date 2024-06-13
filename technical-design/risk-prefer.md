@@ -26,4 +26,30 @@ Let's use the Surge-Rangebound product as an example.  Should the price of the u
 
 Once again, **these products are intended for users holding a very strong market conviction, and would like to put that confidence to test in hopes of earning a very high rate of return in exchange for principal losses.**
 
+## PSA: Special Note on Rangebound Products
 
+Pictorial Illustration of How Rangebound Works in Practice
+
+While simple in theory, the Rangebound product actually has some design challenges, especially when it comes to DeFi on-chain compatibility:
+
+- The product references a _series_ of historical prices, rather than a 'point-in-time' check at expiry.
+- The product can be 'knocked-out' should the price barriers get breached.
+- The product can be knocked-out at _any second_, but it's technically unfeasible to refresh on-chain price references continuously throughout the day.
+
+  - By extension, range-checks are "backward-looking" out of necessity.
+
+The team has made the following design compromises against the preceding challenges:
+
+1. **Daily Range Checks:**
+
+  - In the interest of gas fees and on-chain TPS, our Rangebound product will only do a _daily_** **price check (at 4pm OTC+8) of whether the product has been knocked out over the past 24 hours.
+  - Knocked-out products will terminate with no more exposure going forward.
+
+2. **Daily Product Cycles:**
+
+  - Consistent with the daily range checks and settlement cadence, our observation cycle will always begin from the _next _4pm (OTC+8) period
+  - Nevertheless, users are free to subscribe and purchase a Rangebound product at anytime, and their Base+ Yield will start accruing immediately.
+
+3. **Early Termination vs Final Withdrawal:**
+
+  - Rangebound products which are 'knocked out' are effectively 'game over'; however, user deposits remain staked in Aave, and we must wait until final maturity for users to withdraw the principal in our current iteration.

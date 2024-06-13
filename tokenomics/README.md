@@ -87,14 +87,27 @@ The **$SOFA token is the governance token of the SOFA.org ecosystem**. As a dece
 6. Pace of $RCH airdrops
 7. And other decisions to come as the ecosystem matures
 
-## Acquiring $SOFA Tokens
+## Acquiring $RCH Tokens & Airdrop Math
 
-▶️ **Early Association Members and Developers**: SOFA.org is well-attended and supported by some of the most influential Web3 institutions and builders, who will be providing the initial as well as on-going infrastructure support of the ecosystem.
+**The best way to obtain $RCH is to transact** and execute transactions with the SOFA ecosystem.  A set amount of $RCH will be airdropped daily to our protocol users, with **received rewards to be split pro-rata based on the user's transaction volumes on the day**.
 
-▶️ **Ecosystem Advisors**: Web3 industry and thought leaders who are sharing their wisdom for the continued betterment of the project.
+> 💰 RCH = (User Executed Premium (on the day) * [Vault Weight]) / Total Vault Weighted Premium Handled by SOFA (on the day) * 95% (dApp Access)
 
-▶️ **Active Community Members**: Users and members who are actively participating in our public community activities during the initial stages of the project.
+> 💰 Total Vault Weighted Premium = (Total Earn Premium * Earn Weight) + (Total Surge Premium * Surge Weight)
 
-▶️ **Early Position Token Recognition**: For both CeFi and DeFi partners who are able to early-adopt and recognize our Position Tokens as eligible collateral on their platforms.
+### Option Premium Approximation
 
-▶️ **Early AMM Liquidity Contributors**: Project supporters who graciously contributed non-withdrawable ETH liquidity to the initial Uniswap LP for the $RCH pool.
+_Please be sure to read the [protocol fees section](../technical-design/fees.md) for more information on premium calculations._
+
+For **Earn based products**, given that the option premium will be funded by the deposit interest savings from Aave, only a **small portion of the user's deposit total will be considered 'premium'** for airdrop calculations. On the contrary, the **entire purchase amount from Surge products** will be eligible for consideration, as it will be fully deployed to underlying option strategies.  An _approximate_ premium estimate is as follows:
+
+| **Protocol** | **Premium (Approximation)**                                                             | **Comment**                                                                                                     |
+| ------------ | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Earn         | (Aave’s Savings Rate – Product Base Yield) * Maturity (in Days) / 365 * Deposit Value | SOFA uses only a portion of Aave’s interest income to risk as option premium to maintain a minimum base return |
+| Surge        | The Entire Purchased Amount                                                             | The entire purchase is spent as an option premium to speculate on high upsides.                                 |
+
+Moreover, as an attempt to incentivize activities across both protocols, we have included a **[Vault Weight]** at the end of the formula, currently set to [50] for Earn, and [1] for Surge at our initial launch.  Finally, a final [95%] adjustment factor is applied to account for the airdrop haircut paid to the [dApp broker](https://ainxbawxjd.larksuite.com/docx/Nh5VdSBNaoiSG7xX0lQuukPWsWd#Ahowd455xoIOMfxyAa3uXxrVsnd).
+
+As SOFA grows and additional protocols come in, you can appreciate how important this variable will be in driving TVL, and this is going to be one of the vital parameters that can be voted on by our [$SOFA governance token](https://ainxbawxjd.larksuite.com/docx/Nh5VdSBNaoiSG7xX0lQuukPWsWd#doxusfrl6Z1n2pCyGcT7NdRNLWb) holders.
+
+_Note: The system captures daily snapshots. $RCH tokens are available for claim every day at UTC 08:00 following the execution of your trade._
