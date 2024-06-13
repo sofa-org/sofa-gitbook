@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Oracle Construction · SOFA.org Documentation</title>
+        <title>Links · SOFA.org Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,10 +73,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="settlement.html" />
     
-    
-    <link rel="prev" href="risk-prefer.html" />
+    <link rel="prev" href="../developer/contracts.html" />
     
 
     </head>
@@ -215,9 +213,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="./">
+        <li class="chapter " data-level="1.6" data-path="../technical-design/">
             
-                <a href="./">
+                <a href="../technical-design/">
             
                     
                     Technical Design
@@ -229,9 +227,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" data-path="vault-classification.html">
+        <li class="chapter " data-level="1.6.1" data-path="../technical-design/vault-classification.html">
             
-                <a href="vault-classification.html">
+                <a href="../technical-design/vault-classification.html">
             
                     
                     Vault Classification
@@ -242,9 +240,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.2" data-path="risk-prefer.html">
+        <li class="chapter " data-level="1.6.2" data-path="../technical-design/risk-prefer.html">
             
-                <a href="risk-prefer.html">
+                <a href="../technical-design/risk-prefer.html">
             
                     
                     Defining Your Risk Preference
@@ -255,9 +253,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6.3" data-path="oracle.html">
+        <li class="chapter " data-level="1.6.3" data-path="../technical-design/oracle.html">
             
-                <a href="oracle.html">
+                <a href="../technical-design/oracle.html">
             
                     
                     Oracle Construction
@@ -268,9 +266,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.4" data-path="settlement.html">
+        <li class="chapter " data-level="1.6.4" data-path="../technical-design/settlement.html">
             
-                <a href="settlement.html">
+                <a href="../technical-design/settlement.html">
             
                     
                     On-Chain Settlement Considerations
@@ -281,9 +279,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.5" data-path="fees.html">
+        <li class="chapter " data-level="1.6.5" data-path="../technical-design/fees.html">
             
-                <a href="fees.html">
+                <a href="../technical-design/fees.html">
             
                     
                     Protocol Fees
@@ -460,9 +458,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../links/">
+        <li class="chapter active" data-level="1.10" data-path="./">
             
-                <a href="../links/">
+                <a href="./">
             
                     
                     Links
@@ -503,7 +501,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Oracle Construction</a>
+        <a href=".." >Links</a>
     </h1>
 </div>
 
@@ -518,29 +516,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="oracle-construction">Oracle Construction</h1>
-<p>In the world of cryptocurrencies and DeFi, <strong>obtaining off-chain data in a timely and accurate manner is crucial.</strong>  As smart contracts cannot directly access external systems or data sources, oracles serve to bridge this gap by bringing outside information onto the blockchain.  The trustworthy data service must be provided to ensure full settlement transparency and traceability in settlement, while minimizing possible disputes.</p>
-<p>The <strong>ChainLink</strong> oracle service, known for its high degree of decentralization, reliability, and adaptability, has been chosen as SOFA&apos;s primary means of accessing off-chain data.  Furthermore, the use of ChainLink price feeds has the <strong>additional benefit of protecting the protocol against &apos;flash loan attacks&apos;</strong>, while the <strong>source of data feeds will be from reputable trading platforms such as Coinbase</strong> to ensure sanctity of data.</p>
-<h2 id="spot-price--price-at-expiry">Spot Price / Price at Expiry</h2>
-<p>Obtaining the current price of an underlying asset on-chain through an oracle is typically done in one of two ways:</p>
+                                <h1 id="links">Links</h1>
 <ul>
-<li>calling contracts from DEXs like Uniswap to get the Price or TWAP Price of the underlying asset</li>
-<li>obtaining the asset price through data feeds provided by an oracle service like ChainLink</li>
+<li><a href="https://x.com/SOFAorgDAO" target="_blank">Twitter</a> </li>
+<li><a href="https://discord.gg/sofaorg" target="_blank">Discord</a> </li>
+<li><a href="http://t.me/SOFAorg" target="_blank">Telegram</a> </li>
+<li><a href="https://medium.com/sofaorg" target="_blank">Medium</a></li>
+<li><a href="mailto:contact@sofa.org" target="_blank">Contact us</a></li>
+<li><a href="https://dune.com/sofaorg/sofaorg-dashboard" target="_blank">Dune Analysis</a></li>
+<li><a href="https://etherscan.io/token/0x57b96d4af698605563a4653d882635da59bf11af" target="_blank">RCH Token</a></li>
 </ul>
-<p>Considering the need for the Settlement Price to be as close as possible to CeFi exchange prices (for ease of hedging by users or market makers) and for security reasons (to avoid manipulation and attacks), we have <strong>chosen ChainLink&apos;s Data Feeds as the oracle source for our Price at Expiry</strong>.</p>
-<p>With ChainLink&apos;s decentralized data sources that aggregate pricing information from different exchanges, we ensure that our smart contract executions are based on up-to-date, reliable, and fairest sets of pricing data publicly available.</p>
-<h2 id="calculated-price-derived-from-historical-closes">Calculated Price Derived from Historical Closes</h2>
-<p>For products like Rangebound, it is necessary to know the highest and lowest prices of the underlying token from mint inception to expiry in order to calculate the final payout.  Common on-chain typically cannot provide this data, given that on-chain oracles do not provide continuous time-series data.</p>
-<p>Instead of deploying our own oracle contracts as a (common) centralization compromise, we have found a solution in <strong>ChainLink&apos;s Functions product</strong>.  Thanks to the latest innovations, we are able to call off-chain APIs in a decentralized manner, and publish the obtained data on-chain through decentralized nodes like a typical data feed.</p>
-<p><img src="../static/KxYlbnS0IoEtX6xAxV1uB0WKsLg.png" alt=""></p>
-<h2 id="automation-regular-update-service">Automation Regular Update Service</h2>
-<p>SOFA utilizes ChainLink Automation to guarantee that prices are automatically updated and pushed to the blockchain on a regular basis. ChainLink Automation offers a decentralized network where smart contracts can schedule and automatically execute complex tasks, including interval data updates, trigger events, and even critical contract adjustments.  This <strong>ensures that on-chain prices remain constantly up to date, and offers data confidence to SOFA&apos;s network of connected dApps</strong>.</p>
-<p><img src="../static/FESNbrjpEobC0DxtBz5u6Og0sgf.png" alt=""></p>
-<h2 id="decentralization-and-traceability">Decentralization and Traceability</h2>
-<p>Staying true to our core DeFi spirit, <strong>SOFA&apos;s price data retrieval process will always be fully decentralized</strong>, offering full audit traceability at the contract level.  Our advocacy for transparent processing ensures that every step within the system is openly verifiable by users, with pricing data details such as provider source and aggregation logic fully observable at all times.</p>
-<h2 id="continuous-innovation-in-oracle-services">Continuous Innovation in Oracle Services</h2>
-<p>While ChainLink remains a gold standard for DeFi data reliability, SOFA is continuously exploring and staying informed of the latest innovations in oracle services.  We are cognizant of over-reliance on limited provider sources and will<strong> strive to diversify our protocol inputs as much as technologically possible</strong>.</p>
-<p>In the long-run, SOFA strives to offer users a robust, transparent, decentralized, and sustainable data acquisition system that can safeguard user interests while ensuring operational longevity.</p>
 
                                 
                                 </section>
@@ -568,14 +553,10 @@
 
             
                 
-                <a href="risk-prefer.html" class="navigation navigation-prev " aria-label="Previous page: Defining Your Risk Preference">
+                <a href="../developer/contracts.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Deployment Contracts">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="settlement.html" class="navigation navigation-next " aria-label="Next page: On-Chain Settlement Considerations">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -584,7 +565,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Oracle Construction","level":"1.6.3","depth":2,"next":{"title":"On-Chain Settlement Considerations","level":"1.6.4","depth":2,"path":"technical-design/settlement.md","ref":"technical-design/settlement.md","articles":[]},"previous":{"title":"Defining Your Risk Preference","level":"1.6.2","depth":2,"path":"technical-design/risk-prefer.md","ref":"technical-design/risk-prefer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"katex":{},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"technical-design/oracle.md","mtime":"2024-06-13T15:49:55.728Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-13T15:50:00.185Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Links","level":"1.10","depth":1,"previous":{"title":"Deployment Contracts","level":"1.9.4","depth":2,"path":"developer/contracts.md","ref":"developer/contracts.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"katex":{},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"links/README.md","mtime":"2024-06-13T15:49:55.726Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-13T15:50:00.185Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
