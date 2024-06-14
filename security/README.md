@@ -17,7 +17,7 @@ All Vault contracts will inherit OpenZepplin's Upgradeable contracts.  Upon gove
 Find our audit reports here.
   - [Peckshield](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf)
   - [Code4rena](https://code4rena.com/reports/2024-05-sofa-pro-league)
-  - [SigmaPrime](https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf )
+  - [SigmaPrime](https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf)
 
 ## 24/7 Monitoring for Anomalous Activity
 

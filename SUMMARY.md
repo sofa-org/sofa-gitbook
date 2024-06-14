@@ -20,6 +20,7 @@
   * [External Contingencies & Risk Factors](security/external.md)
 * [Tokenomics](tokenomics/README.md)
   * [Hypothetical $RCH Float Scenario (LP + Cumulative Airdrops)](tokenomics/rch-scenario.md)
+* [SOFA FAQs](faq/README.md)
 * [Developer Documentation](developer/README.md)
   * [Market Maker Open APIs](developer/marketmaker-open-apis.md)
   * [DAPP Open APIs](developer/dapp-open-apis.md)

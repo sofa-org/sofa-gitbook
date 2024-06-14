@@ -1,10 +1,21 @@
 # Links
 
+- [Official Website](https://sofa.org)
+  - [SOFA Earn](https://earn.sofa.org/products)
+  - [SOFA Surge](https://surge.sofa.org/products)
 - [Twitter](https://x.com/SOFAorgDAO) 
 - [Discord](https://discord.gg/sofaorg) 
 - [Telegram](http://t.me/SOFAorg) 
 - [Medium](https://medium.com/sofaorg)
 - [Contact us](mailto:contact@sofa.org)
-- [Dune Analysis](https://dune.com/sofaorg/sofaorg-dashboard)
 - [RCH Token](https://etherscan.io/token/0x57b96d4af698605563a4653d882635da59bf11af)
-
+- [RCH Swap](https://app.uniswap.org/explore/tokens/ethereum/0x57b96d4af698605563a4653d882635da59bf11af)
+- Audits
+  - [Peckshield](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf)
+  - [Code4rena](https://code4rena.com/reports/2024-05-sofa-pro-league)
+  - [SigmaPrime](https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf)
+- Dune Analysis
+  - [SOFA.org Dashboard](https://dune.com/sofaorg/sofaorg-dashboard)
+  - [SOFA Dashboard@davidbigc](https://dune.com/davidbigc/sofa-info)
+  - [SOFA Dashboard@chinpaca](https://dune.com/chinpaca/sofa-dashboard)
+  - [SOFA@tobyleung](https://dune.com/tobyleung/sofa)

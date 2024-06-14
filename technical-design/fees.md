@@ -4,7 +4,7 @@ At SOFA, we are committed to creating a fair and transparent financial ecosystem
 
 ## Protocol Fees
 
-> 💰 SOFA will collect 15% of the user's option premium as a base trading fee.  Furthermore, in the event of a 'winning' payout occurring for the user, a further 15% settlement fee will be charged against the total Gross Upside Payout.
+> 💰 SOFA will collect 15% of the user's option premium as a base trading fee.  Furthermore, in the event of a 'winning' payout occurring for the user, a further 5% settlement fee will be charged against the total Gross Upside Payout.
 
 ## Fee Calculations
 
