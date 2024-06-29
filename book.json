@@ -11,5 +11,11 @@
         "mobi": "styles/mobi.css",
         "epub": "styles/epub.css"
     },
-    "plugins": ["-sharing", "-lunr", "-search", "search-pro", "back-to-top-button", "code", "chapter-fold", "mathjax-pro"]
+    "plugins": ["-sharing", "-lunr", "-search", "search-pro", "back-to-top-button", "code", "chapter-fold", "mathjax-pro"],
+    "pluginsConfig": {
+        "fontsettings": {
+            "theme": "white",
+            "family": "sans"
+        }
+    }
 }
