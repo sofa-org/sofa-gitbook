@@ -530,39 +530,43 @@
                                 <h1 id="external-contingencies--risk-factors">External Contingencies &amp; Risk Factors</h1>
 <p>As much as we have endeavoured to design the SOFA protocols to be &apos;risk-free&apos;, we are cognizant that unforeseen &quot;force majeure&quot; type of risks are always a distant possibility.  Furthermore, every design decision naturally comes with some form of compromise as a trade-off, and we have tried our best to list out some expected and &apos;edge case&apos; risk factors here below.</p>
 <ol>
-<li><p><strong>Unfavourable Payoff Outcomes &amp; Variability</strong></p>
-<ul>
+<li><strong>Unfavourable Payoff Outcomes &amp; Variability</strong><ul>
 <li>For Surge-based products, if the actual asset price movement moves unfavourably against the terms of product (e.g. outside the barriers), there is a risk of losing the entire principal.</li>
 <li>For Earn-based products, the exact interest payout of the structure is dependent on the underlying asset&apos;s price movement and value at expiry date.</li>
 </ul>
 </li>
-<li><p><strong>Early Withdrawal Considerations</strong></p>
-<ul>
+</ol>
+<ol>
+<li><strong>Early Withdrawal Considerations</strong><ul>
 <li>For specific products with an early termination feature (i.e. if the price touches or exceeds either barrier, aka. Knock-out), such as with the Rangebound product, there is a chance that the transaction will &apos;early-terminate&apos; before the stated maturity date.</li>
 <li>Should the user decide to withdraw their deposited capital early from the vault, and we reiterate - it&apos;s an option, <strong>not</strong> an obligation - there&apos;s a chance for the returned capital to be less than the expected base return, and in some rare cases even below the original deposited amount.</li>
 <li>The derived payout is wholly determined by when the transaction is &apos;knocked-out&apos; versus the maturity length, as well as what the prevailing interest rate is at Aave for the purpose of the interest calculation.</li>
 </ul>
 </li>
-<li><p><strong>DeFi Extensibility Risks with External Protocols</strong></p>
-<ul>
+</ol>
+<ol>
+<li><strong>DeFi Extensibility Risks with External Protocols</strong><ul>
 <li>SOFA.org adopts a very conservative and measured approach with using reputable, secure, and battle-tested protocols such as Aave for our staking activities; however, external 3rd party risks and exploits could always happen with these established protocols beyond our control.</li>
 <li>The network of partner protocols will likely grow along with the SOFA ecosystem and DeFi industry in general.</li>
 </ul>
 </li>
-<li><p><strong>Staking Yield Deficit</strong></p>
-<ul>
+</ol>
+<ol>
+<li><strong>Staking Yield Deficit</strong><ul>
 <li>For most of the Earn-based products, the &apos;Base Yield&apos; return and the embedded option premium is directly funded by the staking-income earned from Aave.  While the SOFA protocols will only use a _portion _of the expected income to fund the option premium as buffer, the product could still suffer from an income deficit should Aave yields collapse to say 0% as an unimaginable, &apos;black-swan&apos; type of event.</li>
 <li>In that case, the deposit returned to the user could be very slightly less than what they put in, with the difference being attributable to the Aave yield short-fall.</li>
 </ul>
 </li>
-<li><p><strong>Blockchain Systemic Risks</strong></p>
-<ul>
+</ol>
+<ol>
+<li><strong>Blockchain Systemic Risks</strong><ul>
 <li>The initial SOFA protocol will be initially deployed on Etherum and EVM compatible blockchains, and is naturally reliant on their Proof-of-Staking frameworks</li>
 <li>An unfamothable compromise in blockchain security or other hacks would jeopardize the integrity of all DeFi protocols, including SOFA.</li>
 </ul>
 </li>
-<li><p><strong>Smart Contract Code Integrity</strong></p>
-<ul>
+</ol>
+<ol>
+<li><strong>Smart Contract Code Integrity</strong><ul>
 <li><a href="http://SOFA.org" target="_blank">SOFA.org</a> has engaged and will be engaging with the most reputable and professional security firms in the industry to audit our contracts. We view auditing as an ongoing process and will continue to invite more auditors as the protocol evolves.</li>
 <li>The initial SOFA protocols have passed a full chain audit.<ul>
 <li><a href="https://code4rena.com/reports/2024-05-sofa-pro-league" target="_blank">Code4rena</a></li>
@@ -616,7 +620,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"External Contingencies & Risk Factors","level":"1.7.3","depth":2,"next":{"title":"Tokenomics","level":"1.8","depth":1,"path":"tokenomics/README.md","ref":"tokenomics/README.md","articles":[{"title":"Hypothetical $RCH Float Scenario (LP + Cumulative Airdrops)","level":"1.8.1","depth":2,"path":"tokenomics/rch-scenario.md","ref":"tokenomics/rch-scenario.md","articles":[]}]},"previous":{"title":"Governance Framework","level":"1.7.2","depth":2,"path":"security/governance.md","ref":"security/governance.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold","mathjax-pro"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"security/external.md","mtime":"2024-06-19T07:44:37.289Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-29T18:28:16.651Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"External Contingencies & Risk Factors","level":"1.7.3","depth":2,"next":{"title":"Tokenomics","level":"1.8","depth":1,"path":"tokenomics/README.md","ref":"tokenomics/README.md","articles":[{"title":"Hypothetical $RCH Float Scenario (LP + Cumulative Airdrops)","level":"1.8.1","depth":2,"path":"tokenomics/rch-scenario.md","ref":"tokenomics/rch-scenario.md","articles":[]}]},"previous":{"title":"Governance Framework","level":"1.7.2","depth":2,"path":"security/governance.md","ref":"security/governance.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold","mathjax-pro"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"security/external.md","mtime":"2024-06-29T18:57:22.345Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-29T18:58:53.185Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
