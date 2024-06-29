@@ -17,10 +17,6 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
-                
-            
-                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
@@ -542,9 +538,7 @@
 <li>UNIX millisecond timestamp is used, representing the number of milliseconds since January 1, 1970, 0:00:00.</li>
 </ol>
 <h3 id="parameters">Parameters</h3>
-<ol>
-<li>Request</li>
-</ol>
+<h4 id="request">Request</h4>
 <table>
 <thead>
 <tr>
@@ -577,13 +571,11 @@
 <tr>
 <td>Authorization</td>
 <td>string</td>
-<td>[Header]Signature&#xFF0C;e.g.,&#xFF1A;rfq-hmac-sha256 signature</td>
+<td>[Header]Signature&#xFF0C;e.g.,&#xFF1A;[mm_id]-hmac-sha256 signature</td>
 </tr>
 </tbody>
 </table>
-<ol>
-<li>Rsponse</li>
-</ol>
+<h4 id="rsponse">Rsponse</h4>
 <table>
 <thead>
 <tr>
@@ -612,31 +604,26 @@
 </table>
 <h3 id="signature-generation">Signature Generation</h3>
 <p>Our RFQ platform requires partner signatures to approve requests, followed by a verification procedure.  A verification failure will lead to a platform rejection with a <code>401</code> Unauthorized response.</p>
-<ol>
-<li>Building the signature string:</li>
-</ol>
+<h4 id="building-the-signature-string">Building the signature string:</h4>
 <p>The signature string consists of five lines, each representing a parameter.  Each line ends with a semicolon, including the last line.  The valid timestamp and the request nonce are taken from the <code>H-Timestamp</code> and <code>H-Nonce</code> parameters in the header, respectively.</p>
 <pre><code>Timestamp;NonceStr;HTTP_METHOD();URI();RequestBody;
-</code></pre><ol>
-<li>Populating the signature</li>
-</ol>
-<p>Use the <code>SecretKey</code> to encrypt <code>StringToSign</code> using HMAC-SHA256.</p>
+</code></pre><h4 id="populating-the-signature">Populating the signature</h4>
+<p>Use the <code>SecretKey</code> to encrypt <code>StringToSign</code> using <code>HMAC-SHA256</code>.</p>
 <pre><code>StringToSign = Timestamp + &quot;;&quot; + NonceStr + &quot;;&quot; + UPPERCASE(HTTP_METHOD()) + &quot;;&quot; + URI() + &quot;;&quot; + RequestBody + &quot;;&quot;;
 Signature = BASE64_STRING( HMAC-SHA256( BASE64_DECODE(SecretKey), StringToSign ) );
-</code></pre><ol>
-<li>Setting HTTP Headers</li>
-</ol>
+</code></pre><h4 id="setting-http-headers">Setting HTTP Headers</h4>
 <p>The request transmits the signature through the <code>HTTP Authorization</code> header. The <code>Authorization header</code> comprises of two parts: <strong>authentication type</strong> and <strong>signature information</strong>.</p>
 <pre><code>Authorization: AuthenticationType SignatureInformation
-</code></pre><pre><code>1. Authentication Type: rfq `-hmac-sha256`
-2. Signature Information: `Signature`
-</code></pre><pre><code>Authorization: rfq-hmac-sha256 Signature
+</code></pre><ol>
+<li>Authentication Type: <code>[mm_id]-hmac-sha256</code></li>
+<li>Signature Information: <code>Signature</code></li>
+</ol>
+<pre><code>Authorization: [mm_id]-hmac-sha256 Signature
 </code></pre><p><em>Note:</em></p>
 <ul>
 <li>The request method should be in UPPERCASE.</li>
 <li>The <code>RequestBody</code> used for the signature must match the content of the request&apos;s body.</li>
-<li><p>For GET and DELETE requests, the <code>URI</code> should include the request parameters (e.g., /api/v1/result?orderId=123).</p>
-<ul>
+<li>For GET and DELETE requests, the <code>URI</code> should include the request parameters (e.g., /api/v1/result?orderId=123).<ul>
 <li>If there is no request body (common for GET requests), the request body should be an empty string (&quot;&quot;).</li>
 </ul>
 </li>
@@ -729,7 +716,7 @@ Signature = BASE64_STRING( HMAC-SHA256( BASE64_DECODE(SecretKey), StringToSign )
 <td></td>
 </tr>
 <tr>
-<td>collateralAtRiskPercentageDecimal</td>
+<td>collateralAtRiskDecimal</td>
 <td>true</td>
 <td>long</td>
 <td></td>
@@ -751,6 +738,249 @@ Signature = BASE64_STRING( HMAC-SHA256( BASE64_DECODE(SecretKey), StringToSign )
 <td>true</td>
 <td>string</td>
 <td>Data sources are used to track the underlying value, e.g. DERIBIT</td>
+</tr>
+<tr>
+<td>depositCoin</td>
+<td>true</td>
+<td>string</td>
+<td>Currency / Coin of the premium paid to subscribe DNT</td>
+</tr>
+<tr>
+<td>tradingFeeRate</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>settlementFeeRate</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>true</td>
+<td>string</td>
+<td>Type&#xFF1A;PROTECTED, RISKY</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response</strong></p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timestamp</td>
+<td>long</td>
+<td>Quote timestamp</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td></td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>long</td>
+<td>Expiry timestamp&#xFF0C;e.g., 1672387200</td>
+</tr>
+<tr>
+<td>anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000,30000000000</td>
+</tr>
+<tr>
+<td>makerCollateral</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>totalCollateral</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>collateralAtRisk</td>
+<td>string</td>
+<td>E18</td>
+</tr>
+<tr>
+<td>deadline</td>
+<td>long</td>
+<td>Quote deadline timestamp</td>
+</tr>
+<tr>
+<td>makerWallet</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>signature</td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+<p>Note:</p>
+<ol>
+<li><script type="math/tex; ">collateralAtRisk - makerCollateral ==  premiumAmount</script></li>
+<li><script type="math/tex; ">totalCollateral - makerCollateral == depositAmount</script></li>
+</ol>
+<p><strong>Examples</strong></p>
+<p>Request URL</p>
+<pre><code>rfq/dnt/quote
+</code></pre><p>Parameters</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;rfqId&quot;</span>:<span class="hljs-number">1233992</span>,
+    <span class="hljs-string">&quot;apy&quot;</span>:<span class="hljs-number">0.25</span>,
+    <span class="hljs-string">&quot;tenor&quot;</span>:<span class="hljs-number">7.9</span>,
+    <span class="hljs-string">&quot;fundingAmount&quot;</span>:<span class="hljs-number">0.01</span>,
+    <span class="hljs-string">&quot;depositAmount&quot;</span>:<span class="hljs-number">1</span>,
+    <span class="hljs-string">&quot;premiumCoin&quot;</span>:<span class="hljs-string">&quot;BTC&quot;</span>,
+    <span class="hljs-string">&quot;premiumAmount&quot;</span>:<span class="hljs-number">0.05</span>,
+    <span class="hljs-string">&quot;bookingQuantity&quot;</span>:<span class="hljs-number">1</span>,
+    <span class="hljs-string">&quot;totalAmount&quot;</span>:<span class="hljs-number">0.05</span>,
+    <span class="hljs-string">&quot;payoff&quot;</span>:<span class="hljs-number">1</span>,
+    <span class="hljs-string">&quot;deadline&quot;</span>:<span class="hljs-number">1672279892000</span>,
+    <span class="hljs-string">&quot;signature&quot;</span>:<span class="hljs-string">&quot;dsdkksdsksdk&quot;</span>
+}
+</code></pre>
+<h2 id="provide-bullbear-trend-rfq-quote">Provide Bull/Bear Trend RFQ Quote</h2>
+<pre><code>GET rfq/smart-trend/quote
+</code></pre><p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>required</th>
+<th>type</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>Vault address</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>Chain ID</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>long</td>
+<td>Expiry time in seconds timestamp&#xFF0C;e.g., 1672387200</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>true</td>
+<td>string</td>
+<td>BULLISH / BEARISH</td>
+</tr>
+<tr>
+<td>lowerStrike</td>
+<td>true</td>
+<td>number</td>
+<td>Lower barrier</td>
+</tr>
+<tr>
+<td>upperStrike</td>
+<td>true</td>
+<td>number</td>
+<td>Upper barrier</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>true</td>
+<td>number</td>
+<td>Deposit</td>
+</tr>
+<tr>
+<td>premiumAmount</td>
+<td>true</td>
+<td>number</td>
+<td>Premium</td>
+</tr>
+<tr>
+<td>protectedFundingAmount</td>
+<td>false</td>
+<td>number</td>
+<td>Protected interest&#xFF08;null when RISKY&#xFF09;</td>
+</tr>
+<tr>
+<td>deadline</td>
+<td>true</td>
+<td>long</td>
+<td>Quote deadline&#xFF0C;e.g., 1672387200</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>false</td>
+<td>string</td>
+<td>Taker wallet address</td>
+</tr>
+<tr>
+<td>anchorPricesDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>makerCollateralDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>collateralAtRiskDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>totalCollateralDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>underlyingPair</td>
+<td>true</td>
+<td>string</td>
+<td>Underlying Pair, e.g. BTC-USDT</td>
+</tr>
+<tr>
+<td>trackingSource</td>
+<td>true</td>
+<td>string</td>
+<td>Data sources are used to track the underlying value, e.g. DERIBIT</td>
+</tr>
+<tr>
+<td>tradingFeeRate</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>settlementFeeRate</td>
+<td>true</td>
+<td>number</td>
+<td></td>
 </tr>
 <tr>
 <td>depositCoin</td>
@@ -812,7 +1042,7 @@ Signature = BASE64_STRING( HMAC-SHA256( BASE64_DECODE(SecretKey), StringToSign )
 <td></td>
 </tr>
 <tr>
-<td>collateralAtRiskPercentage</td>
+<td>collateralAtRisk</td>
 <td>string</td>
 <td>E18</td>
 </tr>
@@ -833,29 +1063,16 @@ Signature = BASE64_STRING( HMAC-SHA256( BASE64_DECODE(SecretKey), StringToSign )
 </tbody>
 </table>
 <p>Note:</p>
-<ol>
-<li>totalCollateral * collateralAtRiskPercentage - makerCollateral ==  premiumAmount</li>
-<li>totalCollateral  - makerCollateral == depositAmount</li>
-</ol>
-<p><strong>Examples</strong></p>
-<p>Request URL</p>
-<pre><code>rfq/dnt/quote
-</code></pre><p>Parameters</p>
-<pre><code class="lang-json">{
-    **<span class="hljs-string">&quot;rfqId&quot;</span>**:**<span class="hljs-number">1233992</span>,**
-    **<span class="hljs-string">&quot;apy&quot;</span>**:**<span class="hljs-number">0.25</span>,**
-    **<span class="hljs-string">&quot;tenor&quot;</span>**:**<span class="hljs-number">7.9</span>,**
-    **<span class="hljs-string">&quot;fundingAmount&quot;</span>**:**<span class="hljs-number">0.01</span>,**
-    **<span class="hljs-string">&quot;depositAmount&quot;</span>**:**<span class="hljs-number">1</span>,**
-    **<span class="hljs-string">&quot;premiumCoin&quot;</span>**:**<span class="hljs-string">&quot;BTC&quot;</span>**,
-    **<span class="hljs-string">&quot;premiumAmount&quot;</span>:<span class="hljs-number">0.05</span>,**
-    **<span class="hljs-string">&quot;bookingQuantity&quot;</span>:<span class="hljs-number">1</span>,**
-    **<span class="hljs-string">&quot;totalAmount&quot;</span>:<span class="hljs-number">0.05</span>,**
-    **<span class="hljs-string">&quot;payoff&quot;</span>:<span class="hljs-number">1</span>,**
-    **<span class="hljs-string">&quot;deadline&quot;</span>:<span class="hljs-number">1672279892000</span>,**
-    **<span class="hljs-string">&quot;signature&quot;</span>:<span class="hljs-string">&quot;dsdkksdsksdk&quot;</span>**
-}
-</code></pre>
+<ul>
+<li><script type="math/tex; ">PremiumAmount = BookingQuantity * UnitQuotePrice</script></li>
+<li><script type="math/tex; ">MaxPayoutAmount = BookingQuantity * (upperStrike - lowerStrike)</script></li>
+<li><script type="math/tex; ">MinAPYAmount == projectedFundingAmount - premiumAmount</script></li>
+<li><script type="math/tex; ">MaxAPYAmount == MinAPYAmount + MaxPayoutAmount</script></li>
+<li><script type="math/tex; ">makerCollateral = MaxPayoutAmount - premiumAmount</script></li>
+<li><script type="math/tex; ">collateralAtRisk = MaxPayoutAmount</script></li>
+<li><script type="math/tex; ">totalCollateral = depositAmount + makerCollateral</script></li>
+<li><script type="math/tex; ">anchorPrices = [lowerStrike, upperStrike]</script></li>
+</ul>
 <h2 id="appendix">Appendix</h2>
 <table>
 <thead>
@@ -913,13 +1130,13 @@ Signature = BASE64_STRING( HMAC-SHA256( BASE64_DECODE(SecretKey), StringToSign )
 </table>
 <p><strong>Required Functions</strong>&#xFF1A;</p>
 <ul>
-<li>premiumAmount = totalCollateral * dntCollateralRatio - makerCollateral</li>
-<li>depositAmount = totalCollater - makerCollateral</li>
-<li>bookingQuantity = totalCollateral * dntCollateralRatio</li>
-<li>projectedFundingAmount = projectedFundingAPY * (expDateTime - refDateTime) / 365</li>
-<li>Tenor = (expDateTime - refDateTime) / 365</li>
-<li>APY-In-Range = (projectedFundingAmount - premiumAmount + bookingQuantity) / tenor = makerCollateral / tenor</li>
-<li>APY-Protected = (projectedFundingAmount - premiumAmount) / tenor</li>
+<li><script type="math/tex; ">premiumAmount = collateralAtRisk - makerCollateral</script></li>
+<li><script type="math/tex; ">depositAmount = totalCollater - makerCollateral</script></li>
+<li><script type="math/tex; ">bookingQuantity = collateralAtRisk</script></li>
+<li><script type="math/tex; ">projectedFundingAmount = projectedFundingAPY * (expDateTime - refDateTime) / 365</script></li>
+<li><script type="math/tex; ">Tenor = (expDateTime - refDateTime) / 365</script></li>
+<li><script type="math/tex; ">APYInRange = (projectedFundingAmount - premiumAmount + bookingQuantity) / tenor = makerCollateral / tenor</script></li>
+<li><script type="math/tex; ">APY-Protected = (projectedFundingAmount - premiumAmount) / tenor</script></li>
 </ul>
 
                                 
@@ -964,7 +1181,7 @@ Signature = BASE64_STRING( HMAC-SHA256( BASE64_DECODE(SecretKey), StringToSign )
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Market Maker Open APIs","level":"1.10.1","depth":2,"next":{"title":"DAPP Open APIs","level":"1.10.2","depth":2,"path":"developer/dapp-open-apis.md","ref":"developer/dapp-open-apis.md","articles":[]},"previous":{"title":"Developer Documentation","level":"1.10","depth":1,"path":"developer/README.md","ref":"developer/README.md","articles":[{"title":"Market Maker Open APIs","level":"1.10.1","depth":2,"path":"developer/marketmaker-open-apis.md","ref":"developer/marketmaker-open-apis.md","articles":[]},{"title":"DAPP Open APIs","level":"1.10.2","depth":2,"path":"developer/dapp-open-apis.md","ref":"developer/dapp-open-apis.md","articles":[]},{"title":"Subgraphs","level":"1.10.3","depth":2,"path":"developer/subgraphs.md","ref":"developer/subgraphs.md","articles":[]},{"title":"Deployment Contracts","level":"1.10.4","depth":2,"path":"developer/contracts.md","ref":"developer/contracts.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"katex":{},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"developer/marketmaker-open-apis.md","mtime":"2024-06-14T05:36:24.057Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-14T08:30:21.569Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Market Maker Open APIs","level":"1.10.1","depth":2,"next":{"title":"DAPP Open APIs","level":"1.10.2","depth":2,"path":"developer/dapp-open-apis.md","ref":"developer/dapp-open-apis.md","articles":[]},"previous":{"title":"Developer Documentation","level":"1.10","depth":1,"path":"developer/README.md","ref":"developer/README.md","articles":[{"title":"Market Maker Open APIs","level":"1.10.1","depth":2,"path":"developer/marketmaker-open-apis.md","ref":"developer/marketmaker-open-apis.md","articles":[]},{"title":"DAPP Open APIs","level":"1.10.2","depth":2,"path":"developer/dapp-open-apis.md","ref":"developer/dapp-open-apis.md","articles":[]},{"title":"Subgraphs","level":"1.10.3","depth":2,"path":"developer/subgraphs.md","ref":"developer/subgraphs.md","articles":[]},{"title":"Deployment Contracts","level":"1.10.4","depth":2,"path":"developer/contracts.md","ref":"developer/contracts.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold","mathjax-pro"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"developer/marketmaker-open-apis.md","mtime":"2024-06-29T18:28:10.113Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-29T18:28:16.651Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -991,6 +1208,14 @@ Signature = BASE64_STRING( HMAC-SHA256( BASE64_DECODE(SecretKey), StringToSign )
     
         
         <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
         
     
         
