@@ -11,5 +11,5 @@
         "mobi": "styles/mobi.css",
         "epub": "styles/epub.css"
     },
-    "plugins": ["katex", "-sharing", "-lunr", "-search", "search-pro", "back-to-top-button", "code", "chapter-fold"]
+    "plugins": ["-sharing", "-lunr", "-search", "search-pro", "back-to-top-button", "code", "chapter-fold", "mathjax-pro"]
 }

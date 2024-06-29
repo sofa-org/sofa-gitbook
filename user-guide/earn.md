@@ -49,7 +49,7 @@ When prompted, engage with the following windows for trade confirmation:
 1. **Signature Request**: A signature request window will appear first. Click **Sign** to authorize.
 2. **Trade Execution**: After signing, a confirmation window will appear. Click **Confirm** to finalize the trade.
 
-✅Ensure both actions are completed to successfully carry out your trade.
+✅ Ensure both actions are completed to successfully carry out your trade.
 
 ![](../static/Qbdbb1dHgo6wCVx0SYeuN4Dhsyc.png)
 
@@ -126,7 +126,7 @@ When prompted, engage with the following windows for trade confirmation:
 1. **Signature Request**: A signature request window will appear first. Click **Sign** to authorize.
 2. **Trade Execution**: After signing, a confirmation window will appear. Click **Confirm** to finalize the trade.
 
-✅Ensure both actions are completed to successfully carry out your trade.
+✅ Ensure both actions are completed to successfully carry out your trade.
 
 ![](../static/YqE3bsFF8o6RKGxGrDwu5to0s5b.png)
 
