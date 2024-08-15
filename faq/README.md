@@ -2,36 +2,36 @@
 
 ## Background
 
-### What is SOFA.org's mission statement?
+### 1. What is [SOFA.org](https://www.sofa.org/)'s mission statement?
 
-SOFA.org is a **decentralized, non-profit organization** focused on advancing the DeFi ecosystem. Our modus operandi is to promote the highest DeFi standards, support high-quality projects, and promote adoption of blockchain technologies across mainstream finance.
+[SOFA.org](https://www.sofa.org/) is a **decentralized, non-profit organization** focused on advancing the DeFi ecosystem. Our modus operandi is to promote the highest DeFi standards, support high-quality projects, and promote adoption of blockchain technologies across mainstream finance.
 
-### What exactly is SOFA.org trying to build?
+### 2. What exactly is [SOFA.org](https://www.sofa.org/) trying to build?
 
 We are trying to develop a base-layer, settlement framework to handle the settlement of all financial assets on-chain.  Our landing protocols will focus on crypto Structured Products as an asset class.
 
-### Structured What?
+### 3. Structured What?
 
 Structured products are really just packaged products where users get to enjoy high potential yield with strong capital protection.  They usually involve selling options and monetizing volatility, but it is too complicated for the average person.  So the entire structure is wrapped as a simple product for users to pick and choose from our easy to use dApp, and supported by any interested market makers.
 
-### Is it safe?  Is my money going to be stolen?
+### 4. Is it safe?  Is my money going to be stolen?
 
 Your assets (and the market maker's) will always be safe and visible on-chain in transparent smart contract vaults.
 
 The dApp simply connects the user to the product market maker, and an execution is not done until the user commits and the protocol confirms that both sides have the requisite assets.  Upon successful execution, all the assets will be locked in our ERC-1155 vaults on Ethereum.  All of our code is open source and verifiable by anyone.
 
-### Are the SOFA protocols audited?
+### 5. Are the SOFA protocols audited?
 
 The initial SOFA protocols have passed a full chain audit with Peckshield, Code4rena, and SigmaPrime.
   - [Peckshield](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf)
   - [Code4rena](https://code4rena.com/reports/2024-05-sofa-pro-league)
   - [SigmaPrime](https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf)
 
-### Is SOFA.org a market maker?
+### 6. Is [SOFA.org](https://www.sofa.org/) a market maker?
 
 No, we are infrastructure and protocol builders, pure and simple.
 
-### Aren't other projects doing something similar using exotic products?
+### 7. Aren't other projects doing something similar using exotic products?
 
 Somewhat, but not quite to the scale of our ambition.
 
@@ -45,35 +45,35 @@ There are certainly other protocols which promise high yielding structures using
 - Our authentic position risk tokens, representing secure and transferrable collateral claims that can be recognized on partner DeFi and CeFi platforms in the future.
 - We provide open APIs for market makers and developments to encourage maximum participation and growth of the SOFA protocols.
 
-### Who are you guys anyway?
+### 8. Who are you guys anyway?
 
-SOFA.org is supported by an experienced team of finance veterans, technology experts, and repeat entrepreneurs who are looking to build a meaningful project that can stand the test of time.  Most of us have been blessed with relatively successful careers and understand the power of the 'long-game' over short-term gains.
+[SOFA.org](https://www.sofa.org/) is supported by an experienced team of finance veterans, technology experts, and repeat entrepreneurs who are looking to build a meaningful project that can stand the test of time.  Most of us have been blessed with relatively successful careers and understand the power of the 'long-game' over short-term gains.
 
 Furthermore, many of us are also natural disrupters with a desire to shake-up the stale financial system, and DeFi offers us that perfect venue to showcase our work in a transparent and verifiable manner.  LFG!
 
-### Developer documentation / Git-hub?
+### 9. Developer documentation / Git-hub?
 
 Please see [https://docs.sofa.org/developer/](https://docs.sofa.org/developer/) and [https://github.com/sofa-org/sofa-protocol](https://github.com/sofa-org/sofa-protocol)
 
 ### Protocol Explanation
 
-### What's the protocol use-case?
+### 10. What's the protocol use-case?
 
 Users are able to earn attractive yields / income on their deposits & purchases of structured products on the SOFA protocols.  There will be additional utility token airdrops rewarded exclusively to users as well.
 
-### What are your unique selling points?
+### 11. What are your unique selling points?
 
 Users have wide latitude over their product customization, pricing is fair due to openness to any and all 3rd party market maker, products cater to both risk-averse as well as speculative users across different structures, protocol integrity is ensured through multiple audits, and asset security is maximized through the use of transparent smart contract vaults.
 
 Most importantly, protocol users are heavily rewarded with an innovative, user-centric token airdrop and a tokenomics model emphasizing long-term sustainability above short-term profits.
 
-### How do the SOFA protocols make money?
+### 12. How do the SOFA protocols make money?
 
 Settlement fees.  Please see [https://docs.sofa.org/technical-design/fees.html](https://docs.sofa.org/technical-design/fees.html)
 
 The protocol charges users a base fee (based on their option premium) for using our dApp for execution and smart contracts for settlement.  The protocol makes an additional upside fee if (and only if) the user 'wins' from a further upside outcome.
 
-### What does the protocol do with its income?
+### 13. What does the protocol do with its income?
 
 All protocol earnings are fully recycled to burn RCH tokens daily; there is no protocol 'treasury', so to speak.
 
@@ -81,7 +81,7 @@ We are generous to a fault.  We know.  Wait until you see our tokenomics.
 
 ## Tokenomics
 
-### Did you really 'fair launch' the $RCH utility tokens?  Like, literally all of it?
+### 14. Did you really 'fair launch' the $RCH utility tokens?  Like, literally all of it?
 
 Yeah we did.  No VCs, no insider allocations.  The core team basically worked _pro-bono_ to accomplish our long-term mission.  See question 8 above.
 
@@ -91,21 +91,21 @@ Mint TX here:
 
 [https://etherscan.io/tx/0x03c5d2569d9d7d9cf79111aa4afda3dea5b7e4e3bb77c580caf75a88fc08eeb2](https://etherscan.io/tx/0x03c5d2569d9d7d9cf79111aa4afda3dea5b7e4e3bb77c580caf75a88fc08eeb2)
 
-### What's this about burning 750 ETH of initial liquidity at launch?
+### 15. What's this about burning 750 ETH of initial liquidity at launch?
 
 Yeah, as if the fair launch wasn't enough.  The DAO agreed to burn the initial 750 ETH of Uniswap LP to lock-in the initial liquidity.
 
 Burn TX here: [https://etherscan.io/tx/0x3c0ab9ce92e466d1882a83b79f34aa879ba7845bf028779f71390e882f6733e7](https://etherscan.io/tx/0x3c0ab9ce92e466d1882a83b79f34aa879ba7845bf028779f71390e882f6733e7)
 
-### You guys crazy.  How are you funded?
+### 16. You guys crazy.  How are you funded?
 
 Out of pocket.  Initial development expenses were funded by our core founding DAO members.
 
-### ... Ok really.  What's the catch?
+### 17. ... Ok really.  What's the catch?
 
 ... We _really_ wish there was one.
 
-### OK fine.  What's this $RCH token good for?
+### 18. OK fine.  What's this $RCH token good for?
 
 Please see [https://docs.sofa.org/tokenomics/](https://docs.sofa.org/tokenomics/)
 
@@ -123,15 +123,15 @@ The idea of the utility token is to reward our users and long term token hodlers
 
 **Said in another way, the long-term success of our token is contingent on accumulated use of the SOFA protocols in the long-run.  **Sounds pretty fair right?
 
-### Hey I actually read your docs.  What's this Dual Token system?
+### 19. Hey I actually read your docs.  What's this Dual Token system?
 
 Please see [https://docs.sofa.org/tokenomics/](https://docs.sofa.org/tokenomics/)
 
 $RCH rewards our users and long-term hodlers from protocol earnings being recycled to burn the coins.  Effectively, we are accruing all the protocol income directly to our end users and token holders by raising the scarcity of the remaining tokens.
 
-$SOFA is our governance token which will have its own TGE later (<6 months hopefully).  As a decentralized, non-profit, open-source technology organization, all decisions within the SOFA.org ecosystem are determined by $SOFA token votes.  _To be clear, as a pure governance token, $SOFA does not participate in any profit sharing within the ecosystem._
+$SOFA is our governance token which will have its own TGE later (<6 months hopefully).  As a decentralized, non-profit, open-source technology organization, all decisions within the [SOFA.org](https://www.sofa.org/) ecosystem are determined by $SOFA token votes.  _To be clear, as a pure governance token, $SOFA does not participate in any profit sharing within the ecosystem._
 
-### What can the governance tokens vote on?
+### 20. What can the governance tokens vote on?
 
 Please see [https://docs.sofa.org/tokenomics/](https://docs.sofa.org/tokenomics/)
 
@@ -139,13 +139,13 @@ _A sample but non-exhaustive list of voting measures includes:_
 
 1. Types of new products to be onboarded
 2. Determination of the eligible basket of supported collateral (USDT etc.)
-3. Admission of new partner protocols into the SOFA.org ecosystem
+3. Admission of new partner protocols into the [SOFA.org](https://www.sofa.org/) ecosystem
 4. Distribution mix % of daily $RCH airdrops between the various on-boarded products
 5. Distribution mix % of daily $RCH airdrops amongst ecosystem protocols
 6. Pace of $RCH airdrops
 7. And other decisions to come as the ecosystem matures
 
-### How can I earn more $RCH and $SOFA
+### 21. How can I earn more $RCH and $SOFA
 
 **$RCH:**
 
@@ -156,7 +156,7 @@ _A sample but non-exhaustive list of voting measures includes:_
 
 They were awarded to our early DAO members, builders, advisors, and core community members that worked tirelessly to make our project a success.  Please contact the SOFA team if you would like to join our ever-growing community if you think you can make a material and positive contribution to our cause.
 
-### How can I optimize $RCH airdrop farming?
+### 22. How can I optimize $RCH airdrop farming?
 
 TL;DR.  Keep purchasing products on the SOFA protocols!
 
@@ -166,7 +166,7 @@ Please focus on buying the right product with the risk profile that suits your n
 
 For more calculation details, please see [https://docs.sofa.org/tokenomics/](https://docs.sofa.org/tokenomics/)
 
-### Exchange Listing?
+### 23. Exchange Listing?
 
 $RCH was fair-launched on Uniswap without any prior CEX-listing discussions.  With that being said, a number of CEX have started to list $RCH voluntarily out of their own will.  Please see the Coingecko website for a full list of current markets:
 

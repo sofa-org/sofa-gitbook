@@ -26,4 +26,5 @@
   * [DAPP Open APIs](developer/dapp-open-apis.md)
   * [Subgraphs](developer/subgraphs.md)
   * [Deployment Contracts](developer/contracts.md)
+  * [Market Maker Onboarding Process](developer/marketmaker-onboarding-process.md)
 * [Links](links/README.md)
