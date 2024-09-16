@@ -4,10 +4,11 @@
 
 ### Tokenomics
 
-| Name                          | Address                                      |
-|-------------------------------|----------------------------------------------|
-| RCH                           | 0x57B96D4aF698605563A4653D882635da59Bf11AF   |
-| FeeCollector                  | 0x4140AB4AFc36B93270a9659BD8387660cC6509b5   |
+| Name         | Address                                    |
+|--------------|--------------------------------------------|
+| RCH          | 0x57B96D4aF698605563A4653D882635da59Bf11AF |
+| StRCH        | 0x2B9aeA129B85F51A468274e7271434A83c3BB6b4 |
+| FeeCollector | 0x4140AB4AFc36B93270a9659BD8387660cC6509b5 |
 
 ### USDT
 
@@ -46,6 +47,17 @@
 | SmartBullVault(WBTC/RCH) | 0x94Fe821E8Adde08aB97530D432Ff34A724FD7830 |
 | SmartBearVault(ETH/RCH)  | 0x4a5B4049a4aFae31278d36768704872f73dA67D1 |
 | SmartBearVault(WBTC/RCH) | 0x08c57aE48a89b6876A76dC618972Ef1602da7ED8 |
+
+### RCH Earn
+
+| Name                        | Address                                    |
+|-----------------------------|--------------------------------------------|
+| RCHDNTVault(ETH/RCH)        | 0xe517772Fa1EeDAF3F69917240Da5f6dC3294499D |
+| RCHDNTVault(WBTC/RCH)       | 0x53EE67c562A7e933679425e6C0070E2b810387A3 |
+| RCHBearTrendVault(ETH/RCH)  | 0xf07d6B83433876e79b656c008034c687509d77a7 |
+| RCHBearTrendVault(WBTC/RCH) | 0xc0BAA3440F14137e4Af0C60cf181812ddF791f38 |
+| RCHBullTrendVault(ETH/RCH)  | 0x13Ef7013E98197Ef850969a21ef1b42e71dD6cfa |
+| RCHBullTrendVault(WBTC/RCH) | 0x4cFc3A41d652af5Cd5f1c3E729048890B0173123 |
 
 ### stETH
 
@@ -113,3 +125,24 @@
 | LeverageBullSpreadVault(USDC/WBTC) | 0x94Fe821E8Adde08aB97530D432Ff34A724FD7830 |
 | LeverageBearSpreadVault(ETH/USDC)  | 0x4a5B4049a4aFae31278d36768704872f73dA67D1 |
 | LeverageBearSpreadVault(WBTC/USDC) | 0x08c57aE48a89b6876A76dC618972Ef1602da7ED8 |
+
+## BSC
+
+### Tokenomics
+
+| Name         | Address                                    |
+|--------------|--------------------------------------------|
+| FeeCollector | 0xEC722a53Efee08ebFF8d2C61622991a33705fA79 |
+
+### USDT
+
+| Name                              | Address                                    |
+|-----------------------------------|--------------------------------------------|
+| AAVESmartBullVault(ETH/USDT)      | 0x89c82D1B7616B0a465311FF077db6Bc21d43eA22 |
+| AAVESmartBullVault(BTC/USDT)      | 0x842E97BaA96cFE1534F1A50Da112C7800134656A |
+| AAVESmartBearVault(ETH/USDT)      | 0x5DcEFCa5207c58dCbcf41eF017D1D0EB42d83701 |
+| AAVESmartBearVault(BTC/USDT)      | 0x4573382A9d101EB6DFa1C4B448f939c41fF3e81d |
+| LeverageBullSpreadVault(ETH/USDT) | 0x40144BC227f78A288FE9Ae6F4C7389C92C5aD9CF |
+| LeverageBullSpreadVault(BTC/USDT) | 0x41Df07a5E58D551164fCAEaD4c1ee67B77a84776 |
+| LeverageBearSpreadVault(ETH/USDT) | 0xD0fb7977df47d7Fe946A21679DAbCe877f7A3a05 |
+| LeverageBearSpreadVault(BTC/USDT) | 0xab08fF5dd91636fE556f692825Cadd7bA04A4c97 |
