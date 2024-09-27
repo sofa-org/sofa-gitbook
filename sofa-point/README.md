@@ -74,5 +74,3 @@ For each 1 RCH burned, 50 $SOFA Points will be awarded. When this part of $SOFA 
 
   - Participate in community events for rewards.
 
-
-
