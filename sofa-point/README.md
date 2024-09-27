@@ -73,4 +73,3 @@ For each 1 RCH burned, 50 $SOFA Points will be awarded. When this part of $SOFA 
 ### Telegram Game Raffle: 
 
   - Participate in community events for rewards.
-
