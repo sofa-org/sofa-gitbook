@@ -16,6 +16,5 @@
   - [SigmaPrime](https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf)
 - Dune Analysis
   - [SOFA.org Dashboard](https://dune.com/sofaorg/sofaorg-dashboard)
-  - [SOFA Dashboard@davidbigc](https://dune.com/davidbigc/sofa-info)
   - [SOFA Dashboard@chinpaca](https://dune.com/chinpaca/sofa-dashboard)
-  - [SOFA@tobyleung](https://dune.com/tobyleung/sofa)
+  - [RCH Burn Only@shing3e](https://dune.com/shing3e/rch-burn-only)
