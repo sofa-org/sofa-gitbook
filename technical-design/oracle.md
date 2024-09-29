@@ -4,6 +4,12 @@ In the world of cryptocurrencies and DeFi, **obtaining off-chain data in a timel
 
 The **ChainLink** oracle service, known for its high degree of decentralization, reliability, and adaptability, has been chosen as SOFA's primary means of accessing off-chain data.  Furthermore, the use of ChainLink price feeds has the **additional benefit of protecting the protocol against 'flash loan attacks'**, while the **source of data feeds will be from reputable trading platforms such as Coinbase** to ensure sanctity of data.
 
+![](../static/chainlink.png)
+
+SOFA utilizes [APRO Oracle](https://www.apro.com) to protect our assets on multiple chains. The support and protection from **APRO Oracle** allow us to maintain the stability and security of our on-chain assets. For more information, please refer to the [APRO Oracle documentation](https://docs.apro.com/en).
+
+![](../static/apro.jpg)
+
 ## Spot Price / Price at Expiry
 
 Obtaining the current price of an underlying asset on-chain through an oracle is typically done in one of two ways:
