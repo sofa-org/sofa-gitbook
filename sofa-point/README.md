@@ -24,11 +24,11 @@
 
   - Every time a user deposits $RCH into Earn, they will receive $SOFA Points based on the duration the deposit is held.
 
-    - For deposits held ≤14 days: $SOFA Points = Amount of $RCH deposited * price * days * 0.2.
+    - For deposits held ≤14 days: $SOFA Points = Amount of $RCH deposited \* price \* days \* 0.2.
 
-    - For deposits held (14, 35) days: $SOFA Points = Amount of $RCH deposited * price * days * 0.4.
+    - For deposits held (14, 35) days: $SOFA Points = Amount of $RCH deposited \* price \* days \* 0.4.
 
-    - For deposits held ≥35 days: $SOFA Points = Amount of $RCH deposited * price * days * 0.6. (Not available yet, stay tuned for future updates)
+    - For deposits held ≥35 days: $SOFA Points = Amount of $RCH deposited \* price \* days \* 0.6. (Not available yet, stay tuned for future updates)
 
 ### $RCH Surge Trading Users
   
@@ -36,7 +36,7 @@
 
   - Every time a user buys $RCH surge, they will receive $SOFA Points.
 
-    - $SOFA Points earned = Amount of $RCH deposited * price * 10.
+    - $SOFA Points earned = Amount of $RCH deposited \* price \* 10.
 
 ### Users Trading Earn With Other Tokens
 
@@ -44,11 +44,11 @@
 
   - Each time a user deposits into non-$RCH Earn, they will receive $SOFA Points. The points are calculated as follows:
 
-    - For deposits held ≤14 days: $SOFA Points = amount of tokens deposited * price * days * 0.02.
+    - For deposits held ≤14 days: $SOFA Points = amount of tokens deposited \* price \* days \* 0.02.
 
-    - For deposits held (14, 35) days: $SOFA Points = amount of tokens deposited * price * days * 0.04.
+    - For deposits held (14, 35) days: $SOFA Points = amount of tokens deposited \* price \* days \* 0.04.
 
-    - For deposits held ≥35 days: $SOFA Points = amount of tokens deposited * price * days * 0.06. (Not available yet, stay tuned for future updates)
+    - For deposits held ≥35 days: $SOFA Points = amount of tokens deposited \* price \* days \* 0.06. (Not available yet, stay tuned for future updates)
 
 ### Users Trading Surge With Other Tokens
   
@@ -56,7 +56,7 @@
 
   - Each time a user buys non-$RCH surge, they will receive $SOFA Points.
 
-    - $SOFA Points earned = amount of tokens deposited * price * 2.  
+    - $SOFA Points earned = amount of tokens deposited \* price \* 2.  
 
 ## Game Center $RCH Burn
 
