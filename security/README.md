@@ -15,7 +15,7 @@ All Vault contracts will inherit OpenZepplin's Upgradeable contracts.  Upon gove
 **SOFA will continue to seek professional smart contract audits confirmations from the industry's top security firms** to identify and fix potential security flaws.  By the project launch, SOFA's contract code would have undergone several rounds of stringent inspections to meet the highest standard of security audits available.  Furthermore, the same rigorous audit process will be repeated upon any significant protocol or functionality upgrades.
 
 Find our audit reports here.
-  - [Code4rena](https://code4rena.com/reports/2024-05-sofa-pro-league)
+  - [Code4rena](https://code4rena.com/reports/2024-05-sofa-zenith)
   - [Peckshield](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf)
   - [SigmaPrime](https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf)
 
