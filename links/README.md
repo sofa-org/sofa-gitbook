@@ -14,6 +14,7 @@
   - [Code4rena](https://code4rena.com/reports/2024-05-sofa-zenith)
   - [Peckshield](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf)
   - [SigmaPrime](https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf)
+  - [Automator audited by Code4rena](https://code4rena.com/reports/2024-10-sofa-zenith)
 - Dune Analysis
   - [SOFA.org Dashboard](https://dune.com/sofaorg/sofaorg-dashboard)
   - [SOFA Dashboard@chinpaca](https://dune.com/chinpaca/sofa-dashboard)
