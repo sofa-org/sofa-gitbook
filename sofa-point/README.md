@@ -2,6 +2,10 @@
 
 ## $RCH Holder Distribution Plan
 
+### Update-2024/11/26
+
+  - Add Automator trading rules
+
 ### Historical (Around October 10)
 
   - **Snapshot on October 1, 2024, at UTC+0 00:00:** A snapshot will be taken to record how much $RCH (including in earn) each wallet address holds. For every 1 $RCH held (Including Earn Product), 0.1 $SOFA Point will be awarded. The $SOFA Points for each address based on this October 1 snapshot will be recorded.
@@ -17,6 +21,14 @@
   - **Snapshot on November 1, 2024, at UTC+0 00:00:** Another snapshot will be taken, awarding 0.1 $SOFA Point per 1 $RCH held (Including Earn Product).
 
 ## Trading
+
+### Automator
+
+  - Starting from November 25
+
+  - If users purchase Automator’s products, they will earn points daily.
+
+    - Daily points = position（actual equity）x price x 0.015.
 
 ### $RCH Earn Trading Users
 
