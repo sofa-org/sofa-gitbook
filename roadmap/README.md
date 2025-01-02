@@ -14,19 +14,24 @@
 
   - Complete Audits with **Code4rena** and **SigmaPrime**
 
-## 📃July 2024
+## 🎯July 2024
+
 
 Expand support for additional token denominations
 
-## 📃August 2024
+## 🎯August 2024
 
 Launch of new Structured Product type
 
-## 📃October 2024
+## 🎯October 2024
 
 Use-case expansion for $RCH
 
-## 📃Q4 and Beyond
+## 🎯Q4 and Beyond
 
 Significant ecosystem expansion with new partner protocols
 
+## 📃Q1 2025
+
+- Automators
+- Dual Currency Investment

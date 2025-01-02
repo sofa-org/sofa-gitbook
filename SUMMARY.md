@@ -14,6 +14,7 @@
   * [Oracle Construction](technical-design/oracle.md)
   * [On-Chain Settlement Considerations](technical-design/settlement.md)
   * [Protocol Fees](technical-design/fees.md)
+  * [Automators](technical-design/automators.md)
 * [Security](security/README.md)
   * [Bug Bounty Program](security/bug-bounty.md)
   * [Governance Framework](security/governance.md)
