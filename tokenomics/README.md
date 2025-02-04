@@ -72,7 +72,7 @@ For **Earn based products**, given that the option premium will be funded by the
 | Surge        | The Entire Purchased Amount                                                             | The entire purchase is spent as an option premium to speculate on high upsides.                                 |
 | Automator    | Min(takerCollateral, makerCollateral) of mintProducts  | takerCollateral = totalCollateral - makerCollateral  |
 
-Moreover, as an attempt to incentivize activities across both protocols, we have included a **[Vault Weight]** at the end of the formula, currently set to [15] for Earn, [15] for Leverage Earn, [1] for Surge, [2] for RCH Surge and [2] for Automator. [15%] of the Automator adirdop will be charged to RCH Deployer for RCH burning purposes.  Finally, a final [95%] universal adjustment factor is applied to account for the airdrop haircut paid to the [dApp broker](../INTRO.md).
+Moreover, as an attempt to incentivize activities across both protocols, we have included a **[Vault Weight]** at the end of the formula, currently set to [15] for Earn, [15] for Leverage Earn, [1] for Surge, [2] for RCH Surge and [2] for Automator. [15%] of the Automator airdrop will be charged to RCH Deployer for RCH burning purposes.  Finally, a final [95%] universal adjustment factor is applied to account for the airdrop haircut paid to the [dApp broker](../INTRO.md).
 
 As SOFA grows and additional protocols come in, you can appreciate how important this variable will be in driving TVL, and this is going to be one of the vital parameters that can be voted on by our $SOFA governance token holders.
 
