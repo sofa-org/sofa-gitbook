@@ -40,7 +40,7 @@
 
     - For deposits held (14, 35) days: $SOFA Points = Amount of $RCH deposited x price x days x 0.2.
 
-    - For deposits held ≥35 days: $SOFA Points = Amount of $RCH deposited x price x days x 0.3. (Not available yet, stay tuned for future updates)
+    - For deposits held ≥35 days: $SOFA Points = Amount of $RCH deposited x price x days x 0.3. 
 
 ### $RCH Surge Trading Users
   
@@ -60,7 +60,7 @@
 
     - For deposits held (14, 35) days: $SOFA Points = amount of tokens deposited x price x days x 0.02.
 
-    - For deposits held ≥35 days: $SOFA Points = amount of tokens deposited x price x days x 0.03. (Not available yet, stay tuned for future updates)
+    - For deposits held ≥35 days: $SOFA Points = amount of tokens deposited x price x days x 0.03.
 
 ### Users Trading Surge With Other Tokens
   
