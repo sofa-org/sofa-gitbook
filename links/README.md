@@ -11,10 +11,12 @@
 - [RCH Token](https://etherscan.io/token/0x57b96d4af698605563a4653d882635da59bf11af)
 - [RCH Swap](https://app.uniswap.org/explore/tokens/ethereum/0x57b96d4af698605563a4653d882635da59bf11af)
 - Audits
-  - [Code4rena](https://code4rena.com/reports/2024-05-sofa-zenith)
+  - [Code4rena(Zenith)](https://github.com/zenith-security/reports/blob/main/reports/Audit%20Report%20-%20Sofa%20%28May%202024%29.pdf)
   - [Peckshield](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf)
   - [SigmaPrime](https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf)
-  - [Automator audited by Code4rena](https://code4rena.com/reports/2024-10-sofa-zenith)
+  - [Automator audited by Code4rena(Zenith)](https://github.com/zenith-security/reports/blob/main/reports/Audit%20Report%20-%20Sofa%20Automator%28Oct%202024%29.pdf)
+  - [Automator2.0 audited by Code4rena(Zenith)](https://github.com/zenith-security/reports/blob/main/reports/Zenith%20Audit%20Report%20-%20Sofa%20Automator%202.0.pdf)
+  - [Automator2.0 & Dual Currency audited by yAudit](https://reports.electisec.tech/reports/01-2025-Sofa-Protocol)
 - Dune Analysis
   - [SOFA.org Dashboard](https://dune.com/sofaorg/sofaorg-dashboard)
   - [SOFA Dashboard@chinpaca](https://dune.com/chinpaca/sofa-dashboard)

@@ -15,10 +15,12 @@ All Vault contracts will inherit OpenZepplin's Upgradeable contracts.  Upon gove
 **SOFA will continue to seek professional smart contract audits confirmations from the industry's top security firms** to identify and fix potential security flaws.  By the project launch, SOFA's contract code would have undergone several rounds of stringent inspections to meet the highest standard of security audits available.  Furthermore, the same rigorous audit process will be repeated upon any significant protocol or functionality upgrades.
 
 Find our audit reports here.
-  - [Code4rena](https://code4rena.com/reports/2024-05-sofa-zenith)
+  - [Code4rena(Zenith)](https://github.com/zenith-security/reports/blob/main/reports/Audit%20Report%20-%20Sofa%20%28May%202024%29.pdf)
   - [Peckshield](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf)
   - [SigmaPrime](https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf)
-  - [Automator audited by Code4rena](https://code4rena.com/reports/2024-10-sofa-zenith)
+  - [Automator audited by Code4rena(Zenith)](https://github.com/zenith-security/reports/blob/main/reports/Audit%20Report%20-%20Sofa%20Automator%28Oct%202024%29.pdf)
+  - [Automator2.0 audited by Code4rena(Zenith)](https://github.com/zenith-security/reports/blob/main/reports/Zenith%20Audit%20Report%20-%20Sofa%20Automator%202.0.pdf)
+  - [Automator2.0 & Dual Currency audited by yAudit](https://reports.electisec.tech/reports/01-2025-Sofa-Protocol)
 
 ## 24/7 Monitoring for Anomalous Activity
 
