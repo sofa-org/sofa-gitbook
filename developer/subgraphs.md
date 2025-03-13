@@ -1,22 +1,22 @@
 # Subgraphs
 
-We support the development of efficient and responsive applications by providing real-time and accurate blockchain data access through the use of The Graph's indexing protocol. Subgraphs are a powerful tool that allows us to index data stored on Ethereum and query this data via GraphQL.
+We support the development of efficient and responsive applications by providing real-time and accurate blockchain data access through the use of [The Graph](https://thegraph.com/)'s indexing protocol. Subgraphs are a powerful tool that allows us to index data stored on Ethereum and query this data via GraphQL.
 
 Here is how you can utilize custom subgraphs to query related data within the protocol.
 
 | Subgraph                | Query URL                                  |
 |-------------------------|--------------------------------------------|
-| SOFA Mainnet            | https://api.studio.thegraph.com/query/77961/sofa-mainnet/version/latest |
-| SOFA Arbitrum           | https://api.studio.thegraph.com/query/77961/sofa-arbitrum/version/latest |
-| SOFA BSC                | https://api.studio.thegraph.com/query/77961/sofa-bsc/version/latest |
-| SOFA Polygon            | https://api.studio.thegraph.com/query/77961/sofa-polygon/version/latest |
-| SOFA Sei                | https://api.studio.thegraph.com/query/77961/sofa-sei/version/latest |
-| SOFA Automator Mainnet  | https://api.studio.thegraph.com/query/77961/sofa-automator-mainnet/version/latest |
-| SOFA Automator Arbitrum | https://api.studio.thegraph.com/query/77961/sofa-automator-arbitrum/version/latest |
+| SOFA Mainnet            | https://gateway.thegraph.com/api/your-api-key/subgraphs/id/5Po2c7F3DiGty1pCRpsDF9yURbpapiWXmkw9ckbafLqe |
+| SOFA Arbitrum           | https://gateway.thegraph.com/api/your-api-key/subgraphs/id/HcQUG7TbdiSUpsNd4QxJ54iAHvD4TjmkUxsTfkgFdhmC |
+| SOFA BSC                | https://gateway.thegraph.com/api/your-api-key/subgraphs/id/88UgiNTsJjJ15V1GXTRnUxJBza3ZsrYZyUdAiVuRwQbX |
+| SOFA Polygon            | https://gateway.thegraph.com/api/your-api-key/subgraphs/id/5AyRj7tY5HsXznUBCQMKuVbbdcBXQfSRQ5K77wMBwER1 |
+| SOFA Sei                | https://gateway.thegraph.com/api/your-api-key/subgraphs/id/9NTKYrnPsZASfbe8gx55ZqmViWLwEZNArbkQbC6cXRVb |
+| SOFA Automator Mainnet  | https://gateway.thegraph.com/api/your-api-key/subgraphs/id/Ao7xxFupmSqH8imXCCLKK8KJnBwkMrTrkGtFfP78Mqr |
+| SOFA Automator Arbitrum | https://gateway.thegraph.com/api/your-api-key/subgraphs/id/7DKnoe1Hqek8BWrmMFKJF6RfNTH9z8th7yHqM7MCYjCt |
 
 ## Accessing Our Subgraph
 
-We have created specific subgraphs for the protocol's data. These subgraphs contain various entities indexed from the blockchain, such as transactions, accounts, and specific events related to our DeFi products.  You can query data in the subgraph via the following steps:
+We have created specific subgraphs for the protocol's data. These subgraphs contain various entities indexed from the blockchain, such as transactions, accounts, and specific events related to our DeFi products. You can query data in the subgraph via the following steps:
 
 ### Step 1: Find the Endpoint
 
