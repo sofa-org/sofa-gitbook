@@ -22,7 +22,7 @@
 | H-Nonce       | string | [Header]Random string                                   |
 | Authorization | string | [Header]Signature，e.g.,：[mm_id]-hmac-sha256 signature |
 
-#### Rsponse
+#### Response
 
 | name    | type    | ramark             |
 | ------- | ------- | ------------------ |
@@ -118,10 +118,11 @@ GET rfq/dnt/quote
 | anchorPrices               | list[string] | 20000000000,30000000000            |
 | makerCollateral            | string       |                                    |
 | totalCollateral            | string       |                                    |
-| collateralAtRisk| string       | E18                                |
+| collateralAtRisk           | string       | E18                                |
+| makerBalanceThreshold      | string       |                                    |
 | deadline                   | long         | Quote deadline timestamp           |
 | makerWallet                | string       |                                    |
-| signature                  | string       |                                    |
+| signature                  | string       | .                                   |
 
 Note:
 
@@ -154,7 +155,7 @@ Parameters
     "signature":"dsdkksdsksdk"
 }
 ```
-## Provide Bull/Bear Trend RFQ Quote
+### Provide Bull/Bear Trend RFQ Quote
 
 ```
 GET rfq/smart-trend/quote
@@ -183,7 +184,7 @@ GET rfq/smart-trend/quote
 | trackingSource          | true     | string | Data sources are used to track the underlying value, e.g. DERIBIT |
 | tradingFeeRate          | true     | number |                                                                   |
 | settlementFeeRate       | true     | number |                                                                   |
-| depositCoin             | true     | string | Currency / Coin of the premium paid to subscribe DNT              |
+| depositCoin             | true     | string | Currency / Coin of the premium paid to subscribe Smart Trend      |
 | riskType                | true     | string | Type：PROTECTED, RISKY                                            |
 
 **Response**
@@ -200,7 +201,7 @@ GET rfq/smart-trend/quote
 | collateralAtRisk | string       | E18                                |
 | deadline         | long         | Quote deadline timestamp           |
 | makerWallet      | string       |                                    |
-| signature        | string       |                                    |
+| signature        | string       | .                                   |
 
 Note:
 
@@ -212,6 +213,50 @@ Note:
 - $$collateralAtRisk = MaxPayoutAmount$$
 - $$totalCollateral = depositAmount + makerCollateral$$
 - $$anchorPrices = [lowerStrike, upperStrike]$$
+
+### Provide Dual RFQ Quote
+
+```
+GET rfq/dual/quote
+```
+
+**Parameters**
+
+| name                    | required | type   | description                                                       |
+| ----------------------- | -------- | ------ | ----------------------------------------------------------------- |
+| vault                   | true     | string | Vault address                                                     |
+| chainId                 | true     | int    | Chain ID                                                          |
+| expiry                  | true     | long   | Expiry time in seconds timestamp，e.g., 1672387200                |
+| strike                  | true     | number | Strike price                                                      |
+| type                    | true     | string | CALL or PUT                                                       |
+| depositAmount           | true     | number | Deposit                                                           |
+| deadline                | true     | long   | Quote deadline，e.g., 1672387200                                  |
+| refDateTime             | true     | long   | current request time                                              |
+| takerWallet             | false    | string | Taker wallet address                                              |
+| anchorPriceDecimal      | true     | long   |                                                                   |
+| makerCollateralDecimal  | true     | long   |                                                                   |
+| totalCollateralDecimal  | true     | long   |                                                                   |
+| underlyingPair          | true     | string | Underlying Pair, e.g. BTC-USDT                                    |
+| trackingSource          | true     | string | Data sources are used to track the underlying value, e.g. DERIBIT |
+| depositCoin             | true     | string | Currency / Coin of the premium paid to subscribe Dual             |
+| depositCoinTokenAddress | true     | string |                                                                   |
+| depositCoinTokenDecimal | true     | long   |                                                                   |
+| tradingFeeRate          | true     | number | .                                                                  |
+
+**Response**
+
+| name             | type         | description                        |
+| ---------------- | ------------ | ---------------------------------- |
+| timestamp        | long         | Quote timestamp                    |
+| vault            | string       |                                    |
+| chainId          | int          |                                    |
+| expiry           | long         | Expiry timestamp，e.g., 1672387200 |
+| anchorPrice      | string       | 20000000000                        |
+| makerCollateral  | string       |                                    |
+| totalCollateral  | string       |                                    |
+| deadline         | long         | Quote deadline timestamp           |
+| makerWallet      | string       |                                    |
+| signature        | string       | .                                   |
 
 ## Appendix
 

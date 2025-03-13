@@ -1,11 +1,18 @@
 # Subgraphs
 
-We support the development of efficient and responsive applications by providing real-time and accurate blockchain data access through the use of The Graph's indexing protocol.  Subgraphs are a powerful tool that allows us to index data stored on Ethereum and query this data via GraphQL.
+We support the development of efficient and responsive applications by providing real-time and accurate blockchain data access through the use of The Graph's indexing protocol. Subgraphs are a powerful tool that allows us to index data stored on Ethereum and query this data via GraphQL.
 
-Here is how you can utilize custom subgraphs to query related data within the protocol:
+Here is how you can utilize custom subgraphs to query related data within the protocol.
 
-- [Mainnet](https://api.thegraph.com/subgraphs/name/aave/protocol-v3)
-- [Arbitrum](https://api.thegraph.com/subgraphs/name/aave/protocol-v3-arbitrum)
+| Subgraph                | Query URL                                  |
+|-------------------------|--------------------------------------------|
+| SOFA Mainnet            | https://api.studio.thegraph.com/query/77961/sofa-mainnet/version/latest |
+| SOFA Arbitrum           | https://api.studio.thegraph.com/query/77961/sofa-arbitrum/version/latest |
+| SOFA BSC                | https://api.studio.thegraph.com/query/77961/sofa-bsc/version/latest |
+| SOFA Polygon            | https://api.studio.thegraph.com/query/77961/sofa-polygon/version/latest |
+| SOFA Sei                | https://api.studio.thegraph.com/query/77961/sofa-sei/version/latest |
+| SOFA Automator Mainnet  | https://api.studio.thegraph.com/query/77961/sofa-automator-mainnet/version/latest |
+| SOFA Automator Arbitrum | https://api.studio.thegraph.com/query/77961/sofa-automator-arbitrum/version/latest |
 
 ## Accessing Our Subgraph
 
@@ -13,7 +20,7 @@ We have created specific subgraphs for the protocol's data. These subgraphs cont
 
 ### Step 1: Find the Endpoint
 
-Locate the GraphQL endpoint URL corresponding to the subgraph you wish to interact with.  This typically appears as a web address link.  Please ensure you are using the most up-to-date endpoint.
+Locate the GraphQL endpoint URL corresponding to the subgraph you wish to interact with. This typically appears as a web address link. Please ensure you are using the most up-to-date endpoint.
 
 ### Step 2: Understand the Schema
 
@@ -25,39 +32,24 @@ Based on the schema, you can start writing GraphQL queries to query data from th
 
 ```
 {
-  position(id: "") {
-    anchorPrices
-    collateralAtRiskPercentage
-    createdAt
-    expiry
-    id
-    isMaker
-    makerCollateral
-    owner
-    payoff
-    productId
-    term
-    timestamp
-    totalCollateral
+  transactions(first: 5) {
     vault
-  }
-  positions
-  transaction(id: "") {
-    anchorPrices
-    collateralAtRiskPercentage
-    expiry
-    hash
-    id
-    maker
-    makerCollateral
-    minter
+    tradingFeeRate
+    totalCollateral
+    timestamp
+    term
+    spreadAPR
     referral
-    term
-    timestamp
-    totalCollateral
-    vault
+    minter
+    makerCollateral
+    maker
+    id
+    hash
+    expiry
+    collateralAtRiskPercentage
+    borrowAPR
+    anchorPrices
   }
-  transactions
 }
 ```
 
@@ -70,10 +62,10 @@ Send your query request using any HTTP client that supports GraphQL. You can use
 An example code using curl is as follows:
 
 ```
-curl -X POST -H "Content-Type: application/json" --data '{"query": "{ transactions(first: 5) { id from to value blockNumber } }"}'  https://api.studio.thegraph.com/query/77961/sofa-mainnet/version/latest
+curl -X POST -H "Content-Type: application/json" --data '{"query": "{ transactions(first: 5) { id vault totalCollateral minter timestamp } }"}'  https://api.studio.thegraph.com/query/77961/sofa-mainnet/version/latest
 ```
 
-Replace the url with the actual subgraph name, and determine the URL based on the actual situation.
+Replace the the URL based on the actual situation.
 
 ### Step 5: Analyze and Use the Response
 
