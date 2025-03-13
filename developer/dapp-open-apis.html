@@ -559,16 +559,11 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="dapp-open-apis-ie-broker">dApp Open APIs (ie. Broker)</h1>
+                                <h1 id="dapp-open-apis">DApp Open APIs</h1>
 <p>Our existing dApp on sofa.org is a critical workflow feature and is the main way for users to interact with the SOFA protocols.  However, we encourage other developers to enable access and connect to SOFA via their own dApps as well to maximize our ecosystem growth.  We consider these to be our &apos;Broker&apos; partners and encourage interested parties to contact the SOFA team for further API information.</p>
-<h2 id="recommended-range-dnt-rfq-inquiry">Recommended Range (DNT) RFQ Inquiry</h2>
-<ul>
-<li>Description<ul>
-<li>Supports a list of RFQs composed of the same vault+chainId.</li>
-</ul>
-</li>
-</ul>
-<pre><code>POST /rfq/dnt/recommended-quote
+<h2 id="dnt">DNT</h2>
+<h3 id="recommended-dnt-rfq-list-inquiry">Recommended DNT RFQ list Inquiry</h3>
+<pre><code>GET /rfq/dnt/recommended-list
 </code></pre><p><strong>Input parameters</strong></p>
 <table>
 <thead>
@@ -581,12 +576,6 @@
 </thead>
 <tbody>
 <tr>
-<td>list</td>
-<td>array[object]</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
 <td>vault</td>
 <td>true</td>
 <td>string</td>
@@ -598,68 +587,9 @@
 <td>int</td>
 <td>Chain ID</td>
 </tr>
-<tr>
-<td>expiry</td>
-<td>true</td>
-<td>long</td>
-<td>Second-level timestamp for the expiry date, e.g., 1672387200</td>
-</tr>
-<tr>
-<td>lowerBarrier</td>
-<td>true</td>
-<td>number</td>
-<td>Lower price</td>
-</tr>
-<tr>
-<td>upperBarrier</td>
-<td>true</td>
-<td>number</td>
-<td>Upper price</td>
-</tr>
-<tr>
-<td>depositAmount</td>
-<td>true</td>
-<td>number</td>
-<td>RFQ purchase amount</td>
-</tr>
-<tr>
-<td>inputApyDefinition</td>
-<td>true</td>
-<td>string</td>
-<td>The underlying code is Enum indicating how the input APY is calculatedOptimusDefaultAPY, BinanceDntAPY, AaveLendingAPY</td>
-</tr>
-<tr>
-<td>protectedApy</td>
-<td>false</td>
-<td>number</td>
-<td>Guaranteed annual yield (empty for RISKY, required for protected)</td>
-</tr>
-<tr>
-<td>fundingApy</td>
-<td>false</td>
-<td>number</td>
-<td>AAVE annual yield (empty for RISKY, required for protected)</td>
-</tr>
 </tbody>
 </table>
-<p><strong>Input Parameter Example</strong></p>
-<pre><code class="lang-json">{
-    <span class="hljs-string">&quot;list&quot;</span>:[
-        {
-            <span class="hljs-string">&quot;vault&quot;</span>:<span class="hljs-string">&quot;0x0E3a24ed24fBfF5406C8529fBe3Cc4DFE12b1cDB&quot;</span>,
-            <span class="hljs-string">&quot;chainId&quot;</span>:<span class="hljs-number">80001</span>,
-            <span class="hljs-string">&quot;lowerBarrier&quot;</span>:<span class="hljs-number">2775</span>,
-            <span class="hljs-string">&quot;upperBarrier&quot;</span>:<span class="hljs-number">2825</span>,
-            <span class="hljs-string">&quot;expiry&quot;</span>:<span class="hljs-number">1708416000</span>,
-            <span class="hljs-string">&quot;depositAmount&quot;</span>:<span class="hljs-number">1000</span>,
-            <span class="hljs-string">&quot;protectedApy&quot;</span>:<span class="hljs-number">0.01</span>,
-            <span class="hljs-string">&quot;fundingApy&quot;</span>:<span class="hljs-string">&quot;0.1098&quot;</span>,
-            <span class="hljs-string">&quot;inputApyDefinition&quot;</span>:<span class="hljs-string">&quot;AaveLendingAPY&quot;</span>
-        }
-    ]
-}
-</code></pre>
-<p><strong>Output Parameters</strong></p>
+<p><strong>Response Parameters</strong></p>
 <table>
 <thead>
 <tr>
@@ -682,6 +612,7 @@
 <tr>
 <td>value</td>
 <td>list[object]</td>
+<td>As shown below</td>
 </tr>
 </tbody>
 </table>
@@ -696,14 +627,19 @@
 </thead>
 <tbody>
 <tr>
-<td>vault</td>
-<td>string</td>
-<td>Contract address</td>
+<td>rfqId</td>
+<td>number</td>
+<td>RFQ ID</td>
 </tr>
 <tr>
 <td>chainId</td>
 <td>int</td>
 <td>Chain ID</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>Contract address</td>
 </tr>
 <tr>
 <td>riskType</td>
@@ -742,33 +678,48 @@
 </tr>
 <tr>
 <td>expiry</td>
-<td>long</td>
+<td>number</td>
 <td>Expiry timestamp (e.g., 1672387200)</td>
 </tr>
 <tr>
-<td>protectedReturnAmount</td>
-<td>number</td>
-<td>Total amount of guaranteed return, in the same unit as depositCcy</td>
-</tr>
-<tr>
-<td>fundingAmount</td>
-<td>number</td>
-<td>Estimated yield for the period; zero for non-guaranteed types</td>
-</tr>
-<tr>
-<td>enhancedReturnAmount</td>
-<td>number</td>
-<td>Total amount of extra return when not knocked out, in the same unit as depositCcy</td>
-</tr>
-<tr>
 <td>timestamp</td>
-<td>long</td>
+<td>number</td>
 <td>Current pricing&apos;s trigger time; the next observation start time is calculated based on this logic</td>
 </tr>
 <tr>
 <td>observationStart</td>
-<td>long</td>
+<td>number</td>
 <td>Estimated start time of observation for knocking in/out based on timestamp</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>trading and settlement fee rate (optional)</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>Loan information (optional)</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>Token price required for RCH price conversion and airdrop calculation (optional)</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>Calculated amounts (optional)</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>Annualized information, available for non-Surge products (optional)</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>Odds information, available for Surge products (optional)</td>
 </tr>
 <tr>
 <td>quote</td>
@@ -776,110 +727,87 @@
 <td></td>
 </tr>
 <tr>
-<td>anchorPrices</td>
+<td>&gt; anchorPrices</td>
 <td>list[string]</td>
 <td>20000000000, 30000000000</td>
 </tr>
 <tr>
-<td>makerCollateral</td>
+<td>&gt; makerCollateral</td>
 <td>string</td>
 <td>Maker&apos;s collateral amount</td>
 </tr>
 <tr>
-<td>totalCollateral</td>
+<td>&gt; totalCollateral</td>
 <td>string</td>
 <td>Total collateral amount (Taker+Maker)</td>
 </tr>
 <tr>
-<td>collateralAtRiskPercentage</td>
+<td>&gt; collateralAtRisk</td>
 <td>string</td>
-<td>Required when guaranteed (can be empty)</td>
+<td>Required when guaranteed (optional)</td>
 </tr>
 <tr>
-<td>deadline</td>
-<td>long</td>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>maker balance threshold</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
 <td>Expiration timestamp (e.g., 1672387200)</td>
 </tr>
 <tr>
-<td>makerWallet</td>
+<td>&gt; makerWallet</td>
 <td>string</td>
-<td>Maker&apos;s wallet (can be empty)</td>
+<td>Maker&apos;s wallet (optional)</td>
 </tr>
 <tr>
-<td>signature</td>
+<td>&gt; signature</td>
 <td>string</td>
-<td>Signature (can be empty)</td>
+<td>Signature (optional)</td>
 </tr>
 </tbody>
 </table>
-<p>Output Parameters example</p>
+<p><strong>Request Example</strong></p>
+<pre><code>GET rfq/dnt/recommended-list?vault=xxxxxx&amp;chainId=1
+</code></pre><p><strong>Response</strong></p>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;succ&quot;</span>:<span class="hljs-literal">true</span>,
     <span class="hljs-string">&quot;code&quot;</span>:<span class="hljs-number">0</span>,
     <span class="hljs-string">&quot;message&quot;</span>:<span class="hljs-string">&quot;&quot;</span>,
     <span class="hljs-string">&quot;value&quot;</span>:[
         {
-            <span class="hljs-string">&quot;chainId&quot;</span>:<span class="hljs-number">80001</span>,
-            <span class="hljs-string">&quot;vault&quot;</span>:<span class="hljs-string">&quot;0x0E3a24ed24fBfF5406C8529fBe3Cc4DFE12b1cDB&quot;</span>,
+            <span class="hljs-string">&quot;rfqId&quot;</span>:<span class="hljs-number">1233992</span>,
             <span class="hljs-string">&quot;riskType&quot;</span>:<span class="hljs-string">&quot;PROTECTED&quot;</span>,
-            <span class="hljs-string">&quot;forCcy&quot;</span>:<span class="hljs-string">&quot;WETH&quot;</span>,
-            <span class="hljs-string">&quot;domCcy&quot;</span>:<span class="hljs-string">&quot;USDT&quot;</span>,
-            <span class="hljs-string">&quot;depositCcy&quot;</span>:<span class="hljs-string">&quot;USDT&quot;</span>,
-            <span class="hljs-string">&quot;lowerBarrier&quot;</span>:<span class="hljs-string">&quot;2775&quot;</span>,
-            <span class="hljs-string">&quot;upperBarrier&quot;</span>:<span class="hljs-string">&quot;2825&quot;</span>,
-            <span class="hljs-string">&quot;depositAmount&quot;</span>:<span class="hljs-string">&quot;1000&quot;</span>,
-            <span class="hljs-string">&quot;expiry&quot;</span>:<span class="hljs-string">&quot;1708416000&quot;</span>,
-            <span class="hljs-string">&quot;timestamp&quot;</span>:<span class="hljs-string">&quot;1708142778&quot;</span>,
-            <span class="hljs-string">&quot;protectedReturnAmount&quot;</span>:<span class="hljs-string">&quot;0.08219178&quot;</span>,
-            <span class="hljs-string">&quot;fundingAmount&quot;</span>:<span class="hljs-string">&quot;0.90246575&quot;</span>,
-            <span class="hljs-string">&quot;enhancedReturnAmount&quot;</span>:<span class="hljs-string">&quot;3.69018697&quot;</span>,
-            <span class="hljs-string">&quot;observationStart&quot;</span>:<span class="hljs-string">&quot;1708156800&quot;</span>,
-            <span class="hljs-string">&quot;quote&quot;</span>:{
-                <span class="hljs-string">&quot;anchorPrices&quot;</span>:[
-                    <span class="hljs-string">&quot;2775000000&quot;</span>,
-                    <span class="hljs-string">&quot;2825000000&quot;</span>
-                ],
-                <span class="hljs-string">&quot;makerCollateral&quot;</span>:<span class="hljs-string">&quot;2869913&quot;</span>,
-                <span class="hljs-string">&quot;totalCollateral&quot;</span>:<span class="hljs-string">&quot;1002869913&quot;</span>,
-                <span class="hljs-string">&quot;collateralAtRiskPercentage&quot;</span>:<span class="hljs-string">&quot;3631&quot;</span>,
-                <span class="hljs-string">&quot;deadline&quot;</span>:<span class="hljs-string">&quot;1708143378&quot;</span>,
-                <span class="hljs-string">&quot;makerWallet&quot;</span>:<span class="hljs-string">&quot;0xDFD6f6a6c1AB0184a483F1c7f691f1ea6B810e55&quot;</span>,
-                <span class="hljs-string">&quot;signature&quot;</span>:<span class="hljs-literal">null</span>
-            }
-        },
-        {
-            <span class="hljs-string">&quot;chainId&quot;</span>:<span class="hljs-number">80001</span>,
-            <span class="hljs-string">&quot;vault&quot;</span>:<span class="hljs-string">&quot;0x0E3a24ed24fBfF5406C8529fBe3Cc4DFE12b1cDB&quot;</span>,
-            <span class="hljs-string">&quot;riskType&quot;</span>:<span class="hljs-string">&quot;PROTECTED&quot;</span>,
-            <span class="hljs-string">&quot;forCcy&quot;</span>:<span class="hljs-string">&quot;WETH&quot;</span>,
-            <span class="hljs-string">&quot;domCcy&quot;</span>:<span class="hljs-string">&quot;USDT&quot;</span>,
-            <span class="hljs-string">&quot;depositCcy&quot;</span>:<span class="hljs-string">&quot;USDT&quot;</span>,
-            <span class="hljs-string">&quot;lowerBarrier&quot;</span>:<span class="hljs-string">&quot;2775&quot;</span>,
-            <span class="hljs-string">&quot;upperBarrier&quot;</span>:<span class="hljs-string">&quot;2825&quot;</span>,
-            <span class="hljs-string">&quot;depositAmount&quot;</span>:<span class="hljs-string">&quot;1000&quot;</span>,
-            <span class="hljs-string">&quot;expiry&quot;</span>:<span class="hljs-string">&quot;1708761600&quot;</span>,
-            <span class="hljs-string">&quot;timestamp&quot;</span>:<span class="hljs-string">&quot;1708142781&quot;</span>,
-            <span class="hljs-string">&quot;protectedReturnAmount&quot;</span>:<span class="hljs-string">&quot;0.19178082&quot;</span>,
-            <span class="hljs-string">&quot;fundingAmount&quot;</span>:<span class="hljs-string">&quot;2.10575342&quot;</span>,
-            <span class="hljs-string">&quot;enhancedReturnAmount&quot;</span>:<span class="hljs-string">&quot;21.6891866&quot;</span>,
-            <span class="hljs-string">&quot;observationStart&quot;</span>:<span class="hljs-string">&quot;1708156800&quot;</span>,
-            <span class="hljs-string">&quot;quote&quot;</span>:{
-                <span class="hljs-string">&quot;anchorPrices&quot;</span>:[
-                    <span class="hljs-string">&quot;2775000000&quot;</span>,
-                    <span class="hljs-string">&quot;2825000000&quot;</span>
-                ],
-                <span class="hljs-string">&quot;makerCollateral&quot;</span>:<span class="hljs-string">&quot;19775214&quot;</span>,
-                <span class="hljs-string">&quot;totalCollateral&quot;</span>:<span class="hljs-string">&quot;1019775214&quot;</span>,
-                <span class="hljs-string">&quot;collateralAtRiskPercentage&quot;</span>:<span class="hljs-string">&quot;21123&quot;</span>,
-                <span class="hljs-string">&quot;deadline&quot;</span>:<span class="hljs-string">&quot;1708143381&quot;</span>,
-                <span class="hljs-string">&quot;makerWallet&quot;</span>:<span class="hljs-string">&quot;0xDFD6f6a6c1AB0184a483F1c7f691f1ea6B810e55&quot;</span>,
-                <span class="hljs-string">&quot;signature&quot;</span>:<span class="hljs-literal">null</span>
-            }
+            <span class="hljs-string">&quot;forCcy&quot;</span>:<span class="hljs-string">&quot;BTC&quot;</span>,
+            <span class="hljs-string">&quot;expiry&quot;</span>:<span class="hljs-number">1672387200</span>,
+            <span class="hljs-string">&quot;lowerBarrier&quot;</span>:<span class="hljs-number">18000</span>,
+            <span class="hljs-string">&quot;upperBarrier&quot;</span>:<span class="hljs-number">24000</span>,
+            <span class="hljs-string">&quot;depositCcy&quot;</span>:<span class="hljs-string">&quot;BTC&quot;</span>,
+            <span class="hljs-string">&quot;depositAmount&quot;</span>: <span class="hljs-number">0.05</span>,
+            <span class="hljs-string">&quot;protectedApy&quot;</span>:<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">&quot;deadline&quot;</span>:<span class="hljs-number">1672279892</span>,
+            <span class="hljs-string">&quot;recommended&quot;</span>:<span class="hljs-literal">true</span>,
+            <span class="hljs-string">&quot;quote&quot;</span>:
+                {
+                    <span class="hljs-string">&quot;rfqId&quot;</span>:<span class="hljs-number">1233992</span>,
+                    <span class="hljs-string">&quot;inRangeApy&quot;</span>:<span class="hljs-number">0.25</span>,
+                    <span class="hljs-string">&quot;tenor&quot;</span>:<span class="hljs-number">7.9</span>,
+                    <span class="hljs-string">&quot;fundingAmount&quot;</span>:<span class="hljs-number">0.25</span>,
+                    <span class="hljs-string">&quot;depositAmount&quot;</span>:<span class="hljs-number">1</span>,
+                    <span class="hljs-string">&quot;premiumCoin&quot;</span>:<span class="hljs-string">&quot;BTC&quot;</span>,
+                    <span class="hljs-string">&quot;premiumAmount&quot;</span>:<span class="hljs-number">0.05</span>,
+                    <span class="hljs-string">&quot;bookingQuantity&quot;</span>:<span class="hljs-number">0.3</span>,
+                    <span class="hljs-string">&quot;totalAmount&quot;</span>:<span class="hljs-number">0.05</span>,
+                    <span class="hljs-string">&quot;payoff&quot;</span>:<span class="hljs-number">0.3</span>,
+                    <span class="hljs-string">&quot;deadline&quot;</span>:<span class="hljs-number">1672279892</span>,
+                    <span class="hljs-string">&quot;signature&quot;</span>:<span class="hljs-string">&quot;dsdkksdsksdk&quot;</span>
+                }
+
         }
     ]
 }
 </code></pre>
-<h2 id="inquiry">Inquiry</h2>
+<h3 id="dnt-inquiry">DNT Inquiry</h3>
 <ul>
 <li>Notes:<ul>
 <li>Please do not pass the user&apos;s wallet address on a pure inquiry request.</li>
@@ -914,7 +842,7 @@
 <tr>
 <td>expiry</td>
 <td>true</td>
-<td>long</td>
+<td>number</td>
 <td>Second-level timestamp for the expiry date, e.g., 1672387200</td>
 </tr>
 <tr>
@@ -939,7 +867,7 @@
 <td>inputApyDefinition</td>
 <td>true</td>
 <td>string</td>
-<td>The underlying code is Enum indicating how the input APY is calculatedOptimusDefaultAPY, BinanceDntAPY, AaveLendingAPY</td>
+<td>The underlying code is Enum indicating how the input APY is calculated: OptimusDefaultAPY, BinanceDntAPY, AaveLendingAPY</td>
 </tr>
 <tr>
 <td>protectedApy</td>
@@ -961,7 +889,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Output Parameters</strong></p>
+<p><strong>Response Parameters</strong></p>
 <table>
 <thead>
 <tr>
@@ -983,7 +911,8 @@
 </tr>
 <tr>
 <td>value</td>
-<td>list[object]</td>
+<td>object</td>
+<td>As shown below</td>
 </tr>
 </tbody>
 </table>
@@ -997,6 +926,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>rfqId</td>
+<td>number</td>
+<td>RFQ ID</td>
+</tr>
 <tr>
 <td>vault</td>
 <td>string</td>
@@ -1044,33 +978,48 @@
 </tr>
 <tr>
 <td>expiry</td>
-<td>long</td>
+<td>number</td>
 <td>Expiry timestamp (e.g., 1672387200)</td>
 </tr>
 <tr>
-<td>protectedReturnAmount</td>
-<td>number</td>
-<td>Total amount of guaranteed return, in the same unit as depositCcy</td>
-</tr>
-<tr>
-<td>fundingAmount</td>
-<td>number</td>
-<td>Estimated yield for the period; zero for non-guaranteed types</td>
-</tr>
-<tr>
-<td>enhancedReturnAmount</td>
-<td>number</td>
-<td>Total amount of extra return when not knocked out, in the same unit as depositCcy</td>
-</tr>
-<tr>
 <td>timestamp</td>
-<td>long</td>
+<td>number</td>
 <td>Current pricing&apos;s trigger time; the next observation start time is calculated based on this logic</td>
 </tr>
 <tr>
 <td>observationStart</td>
-<td>long</td>
+<td>number</td>
 <td>Estimated start time of observation for knocking in/out based on timestamp</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>trading and settlement fee rate (optional)</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>Loan information (optional)</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>Token price required for RCH price conversion and airdrop calculation (optional)</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>Calculated amounts (optional)</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>Annualized information, available for non-Surge products (optional)</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>Odds information, available for Surge products (optional)</td>
 </tr>
 <tr>
 <td>quote</td>
@@ -1078,39 +1027,1909 @@
 <td></td>
 </tr>
 <tr>
-<td>anchorPrices</td>
+<td>&gt; quoteId</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
 <td>list[string]</td>
 <td>20000000000, 30000000000</td>
 </tr>
 <tr>
-<td>makerCollateral</td>
+<td>&gt; makerCollateral</td>
 <td>string</td>
 <td>Maker&apos;s collateral amount</td>
 </tr>
 <tr>
-<td>totalCollateral</td>
+<td>&gt; totalCollateral</td>
 <td>string</td>
 <td>Total collateral amount (Taker+Maker)</td>
 </tr>
 <tr>
-<td>collateralAtRiskPercentage</td>
+<td>&gt; collateralAtRisk</td>
 <td>string</td>
-<td>Required when guaranteed (can be empty)</td>
+<td>Required when guaranteed (optional)</td>
 </tr>
 <tr>
-<td>deadline</td>
-<td>long</td>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>maker balance threshold</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
 <td>Expiration timestamp (e.g., 1672387200)</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>Maker&apos;s wallet (optional)</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>Signature (optional)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dnt-winning-probability">DNT Winning Probability</h3>
+<p>Probability of staying within the boundaries until expiry</p>
+<pre><code>GET rfq/dnt/winning-probabilities
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>forCcy</td>
+<td>true</td>
+<td>string</td>
+<td>Underlying currency</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>number</td>
+<td>Second-level timestamp for the expiry date, e.g., 1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>Lower price</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>Upper price</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 indicates that the return result is normal</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Error message returned in case of an exception</td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>As shown below</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>spotPrice</td>
+<td>number</td>
+<td>Spot price</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>probabilities</td>
+<td>object</td>
+<td>Winning probability</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Request Example</strong></p>
+<pre><code>GET rfq/dnt/winning-probabilities?forCcy=BTC&amp;expiry=xxxx&amp;lowerBarrier=xxx&amp;upperBarrier=xxx
+</code></pre><p><strong>Response</strong></p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;code&quot;</span>:<span class="hljs-number">0</span>,
+    <span class="hljs-string">&quot;message&quot;</span>:<span class="hljs-string">&quot;&quot;</span>,
+    <span class="hljs-string">&quot;value&quot;</span>: {
+        <span class="hljs-string">&quot;spotPrice&quot;</span>: <span class="hljs-number">62121</span>,
+        <span class="hljs-string">&quot;timestamp&quot;</span>: <span class="hljs-number">1727080594</span>,
+        <span class="hljs-string">&quot;probabilities&quot;</span>: {
+            <span class="hljs-string">&quot;probDntStayInRange&quot;</span>: <span class="hljs-number">0.4</span>
+            <span class="hljs-string">&quot;probBullTrendItmLowerStrike&quot;</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">&quot;probBullTrendItmUpperStrike&quot;</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">&quot;probBearTrendItmLowerStrike&quot;</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">&quot;probBearTrendItmUpperStrike&quot;</span>: <span class="hljs-literal">null</span>,
+        }
+    }
+}
+</code></pre>
+<h2 id="smart-trend">Smart Trend</h2>
+<h3 id="recommended-smart-trend-rfq-list-inquiry">Recommended Smart Trend RFQ list Inquiry</h3>
+<pre><code>GET rfq/smart-trend/recommended-list
+</code></pre><p><strong>Input parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>Contract information</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>Chain ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 indicates that the return result is normal</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Error message returned in case of an exception</td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>As shown below</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>number</td>
+<td>RFQ ID</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>Chain ID</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>Contract address</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>Risk type: PROTECTED, RISKY</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>string</td>
+<td>BULLISH,BEARISH</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>Underlying currency</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>Currency pair</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>Subscription currency</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>Lower price</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>Upper price</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>RFQ purchase amount</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>number</td>
+<td>Expiry timestamp (e.g., 1672387200)</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>Current pricing&apos;s trigger time; the next observation start time is calculated based on this logic</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>trading and settlement fee rate (optional)</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>Loan information (optional)</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>Token price required for RCH price conversion and airdrop calculation (optional)</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>Calculated amounts (optional)</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>Annualized information, available for non-Surge products (optional)</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>Odds information, available for Surge products (optional)</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000, 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>Maker&apos;s collateral amount</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>Total collateral amount (Taker+Maker)</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRisk</td>
+<td>string</td>
+<td>Required when guaranteed (optional)</td>
+</tr>
+<tr>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>maker balance threshold</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
+<td>Expiration timestamp (e.g., 1672387200)</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>Maker&apos;s wallet (optional)</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>Signature (optional)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Request Example</strong></p>
+<pre><code>GET rfq/smart-trend/recommended-list?vault=xxxxxx
+</code></pre><h3 id="smart-trend-inquiry">Smart Trend Inquiry</h3>
+<ul>
+<li>Notes:<ul>
+<li>Please do not pass the user&apos;s wallet address on a pure inquiry request.</li>
+<li>A user&apos;s wallet address should be passed on only upon subscribing.</li>
+</ul>
+</li>
+</ul>
+<pre><code>GET /rfq/smart-trend/quote
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>Contract information</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>Chain ID</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>number</td>
+<td>Second-level timestamp for the expiry date, e.g., 1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>Lower price</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>Upper price</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>true</td>
+<td>number</td>
+<td>RFQ purchase amount</td>
+</tr>
+<tr>
+<td>inputApyDefinition</td>
+<td>true</td>
+<td>string</td>
+<td>The underlying code is Enum indicating how the input APY is calculated: OptimusDefaultAPY, BinanceDntAPY, AaveLendingAPY</td>
+</tr>
+<tr>
+<td>protectedApy</td>
+<td>false</td>
+<td>number</td>
+<td>Guaranteed annual yield (empty for RISKY, required for protected)</td>
+</tr>
+<tr>
+<td>fundingApy</td>
+<td>false</td>
+<td>number</td>
+<td>AAVE annual yield (empty for RISKY, required for protected)</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>false</td>
+<td>string</td>
+<td>Inquirer&apos;s wallet public address information</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 indicates that the return result is normal</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Error message returned in case of an exception</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>As shown below</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>number</td>
+<td>RFQ ID</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>Contract address</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>Chain ID</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>Risk type: PROTECTED, RISKY</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>string</td>
+<td>BULLISH,BEARISH</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>Underlying currency</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>Currency pair</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>Subscription currency</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>Lower price</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>Upper price</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>RFQ purchase amount</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>number</td>
+<td>Expiry timestamp (e.g., 1672387200)</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>Current pricing&apos;s trigger time; the next observation start time is calculated based on this logic</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>trading and settlement fee rate (optional)</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>Loan information (optional)</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>Token price required for RCH price conversion and airdrop calculation (optional)</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>Calculated amounts (optional)</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>Annualized information, available for non-Surge products (optional)</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>Odds information, available for Surge products (optional)</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; quoteId</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000, 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>Maker&apos;s collateral amount</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>Total collateral amount (Taker+Maker)</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRisk</td>
+<td>string</td>
+<td>Required when guaranteed (optional)</td>
+</tr>
+<tr>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>maker balance threshold</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
+<td>Expiration timestamp (e.g., 1672387200)</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>Maker&apos;s wallet (optional)</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>Signature (optional)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="smart-trend-winning-probability">Smart Trend Winning Probability</h3>
+<p>Probability of staying within the boundaries until expiry</p>
+<pre><code>GET rfq/smart-trend/winning-probabilities
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>forCcy</td>
+<td>true</td>
+<td>string</td>
+<td>Underlying currency</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>number</td>
+<td>Second-level timestamp for the expiry date, e.g., 1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>Lower price</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>Upper price</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 indicates that the return result is normal</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Error message returned in case of an exception</td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>As shown below</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>spotPrice</td>
+<td>number</td>
+<td>Spot price</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>probabilities</td>
+<td>object</td>
+<td>Winning probability</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Request Example</strong></p>
+<pre><code>GET rfq/smart-trend/winning-probabilities?forCcy=BTC&amp;expiry=xxxx&amp;lowerStrike=xxx&amp;upperStrike=xxx
+</code></pre><p><strong>Response</strong></p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;code&quot;</span>:<span class="hljs-number">0</span>,
+    <span class="hljs-string">&quot;message&quot;</span>:<span class="hljs-string">&quot;&quot;</span>,
+    <span class="hljs-string">&quot;value&quot;</span>: {
+        <span class="hljs-string">&quot;spotPrice&quot;</span>: <span class="hljs-number">62121</span>,
+        <span class="hljs-string">&quot;timestamp&quot;</span>: <span class="hljs-number">1727080594</span>,
+        <span class="hljs-string">&quot;probabilities&quot;</span>: {
+            <span class="hljs-string">&quot;probDntStayInRange&quot;</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">&quot;probBullTrendItmLowerStrike&quot;</span>: <span class="hljs-number">0.4</span>,
+            <span class="hljs-string">&quot;probBullTrendItmUpperStrike&quot;</span>: <span class="hljs-number">0.4</span>,
+            <span class="hljs-string">&quot;probBearTrendItmLowerStrike&quot;</span>: <span class="hljs-number">0.6</span>,
+            <span class="hljs-string">&quot;probBearTrendItmUpperStrike&quot;</span>: <span class="hljs-number">0.6</span>,
+        }
+    }
+}
+</code></pre>
+<h2 id="generic-interface">Generic Interface</h2>
+<h3 id="delete-rfq">Delete RFQ</h3>
+<p>Delete the RFQ that has been on-chain</p>
+<pre><code>POST rfq/remove
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>true</td>
+<td>number</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Request Example</strong></p>
+<pre><code>{  
+&quot;rfqId&quot;:123456  
+}
+</code></pre><p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 indicates that the return result is normal</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Error message returned in case of an exception</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="transaction-notification">Transaction notification</h3>
+<pre><code>POST rfq/trade
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>quotes</td>
+<td>true</td>
+<td>list[object]</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; rfqId</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; quoteId</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; txId</td>
+<td>true</td>
+<td>string</td>
+<td>Transaction hash</td>
+</tr>
+<tr>
+<td>code</td>
+<td>false</td>
+<td>string</td>
+<td>Invitation code</td>
+</tr>
+<tr>
+<td>walletType</td>
+<td>false</td>
+<td>string</td>
+<td>Wallet type, such as MetaMask, OKX Wallet, Coinbase, etc.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Request Example</strong></p>
+<pre><code>{
+    &quot;quotes&quot;: [
+        {
+            &quot;rfqId&quot;: 123456,
+            &quot;quoteId&quot;: 333,
+            &quot;txId&quot;: &quot;adsswe&quot;
+        }
+    ],
+    &quot;code&quot;: &quot;adsswe&quot;
+}
+</code></pre><p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 indicates that the return result is normal</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Error message returned in case of an exception</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="strike-list">Strike list</h3>
+<pre><code>GET rfq/strike-list
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>indexPrice</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>false</td>
+<td>string</td>
+<td>For the BTC-USDT trading pair, enter BTC here; if not provided, the default configuration will be used.</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>false</td>
+<td>string</td>
+<td>For the BTC-USDT trading pair, enter USDT here; if not provided, it defaults to USDT.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Request Example</strong></p>
+<pre><code>{  
+&quot;indexPrice&quot;: 3750.8&#xFF0C;  
+&quot;forCcy&quot;: &quot;WBTC&quot;,  
+}
+</code></pre><p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strikes</td>
+<td>list[number]</td>
+<td>Default recommended strike price list</td>
+</tr>
+</tbody>
+</table>
+<h3 id="expiry-list">Expiry list</h3>
+<pre><code>GET rfq/expiry-list
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>Contract address</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>Chain ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Request Example</strong></p>
+<pre><code>{  
+&quot;vault&quot;: &quot;XXXXXXXXXXXXXX&quot;,  
+&quot;chainId&quot;: 1,  
+}
+</code></pre><p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>Baseline start time in seconds timestamp</td>
+</tr>
+<tr>
+<td>expiries</td>
+<td>list[number]</td>
+<td>Supported expiry list in seconds timestamp, e.g., 1672387200</td>
+</tr>
+</tbody>
+</table>
+<h3 id="aave-apy">Aave apy</h3>
+<pre><code>GET rfq/aave-apy
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>true</td>
+<td>string</td>
+<td>USDT</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>number</td>
+<td>Chain ID</td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>string</td>
+<td>Deposit currency</td>
+</tr>
+<tr>
+<td>avgApy</td>
+<td>string</td>
+<td>Average APY recorded on-chain over the past 30 days</td>
+</tr>
+<tr>
+<td>currentApy</td>
+<td>string</td>
+<td>Latest AAVE APY</td>
+</tr>
+<tr>
+<td>apyUsed</td>
+<td>string</td>
+<td>The APY actually used in SofaServer to estimate future interest income</td>
+</tr>
+<tr>
+<td>apyDefinition</td>
+<td>string</td>
+<td>Calculation definition corresponding to APY</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Example</strong></p>
+<pre><code>{  
+&quot;chainId&quot;: 1,  
+&quot;ccy&quot;:&quot;USDT&quot;,  
+&quot;avgApy&quot;:&quot;0.23442&quot;,  
+&quot;currentApy&quot;:&quot;0.23442&quot;,  
+&quot;apyUsed&quot;:&quot;0.23442&quot;,  
+&quot;apyDefinition&quot;:&quot;AAVE_LENDING_APY&quot;  
+}
+</code></pre><h3 id="apy">Apy</h3>
+<pre><code>GET rfq/apy
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>true</td>
+<td>string</td>
+<td>USDT</td>
+</tr>
+<tr>
+<td>apyDefinition</td>
+<td>false</td>
+<td>string</td>
+<td>Calculation definition corresponding to APY; defaults to AaveLendingApy</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>number</td>
+<td>Chain ID</td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>string</td>
+<td>Deposit currency</td>
+</tr>
+<tr>
+<td>avgApy</td>
+<td>string</td>
+<td>Average APY recorded on-chain over the past 30 days</td>
+</tr>
+<tr>
+<td>currentApy</td>
+<td>string</td>
+<td>Latest APY</td>
+</tr>
+<tr>
+<td>apyUsed</td>
+<td>string</td>
+<td>The APY actually used in SofaServer to estimate future interest income</td>
+</tr>
+<tr>
+<td>apyDefinition</td>
+<td>string</td>
+<td>Calculation definition corresponding to APY</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Example</strong></p>
+<pre><code>{  
+&quot;chainId&quot;: 1,  
+&quot;ccy&quot;:&quot;USDT&quot;,  
+&quot;avgApy&quot;:&quot;0.23442&quot;,  
+&quot;currentApy&quot;:&quot;0.23442&quot;,  
+&quot;apyUsed&quot;:&quot;0.23442&quot;,  
+&quot;apyDefinition&quot;:&quot;AAVE_LENDING_APY&quot;  
+}
+</code></pre><h3 id="get-wallet-positions">Get Wallet Positions</h3>
+<pre><code>POST /rfq/position-list
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>Int</td>
+<td></td>
+</tr>
+<tr>
+<td>vaults</td>
+<td>false</td>
+<td>list[string]</td>
+<td>Set of contract addresses; if not provided, all contracts will be queried.</td>
+</tr>
+<tr>
+<td>claimed</td>
+<td>false</td>
+<td>boolean</td>
+<td>Whether it has been redeemed; if not provided, positions of all statuses will be queried.</td>
+</tr>
+<tr>
+<td>expired</td>
+<td>false</td>
+<td>boolean</td>
+<td>Whether it has expired; if not provided, positions of all statuses will be queried.</td>
+</tr>
+<tr>
+<td>concealed</td>
+<td>false</td>
+<td>boolean</td>
+<td>Whether it is hidden; if not provided, positions of all statuses will be queried.</td>
+</tr>
+<tr>
+<td>positiveReturn</td>
+<td>false</td>
+<td>boolean</td>
+<td>Whether the redemption amount is greater than 0; if not provided, all positions will be queried.</td>
+</tr>
+<tr>
+<td>positiveProfit</td>
+<td>false</td>
+<td>boolean</td>
+<td>Whether the return exceeds the principal; if not provided, all positions will be queried.</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>false</td>
+<td>Int</td>
+<td>Number of queries; defaults to 100, maximum is 300.</td>
+</tr>
+<tr>
+<td>startDateTime</td>
+<td>false</td>
+<td>number</td>
+<td>Corresponding timestamp in seconds (inclusive), e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>endDateTime</td>
+<td>false</td>
+<td>number</td>
+<td>Corresponding timestamp in seconds (inclusive), e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>orderBy</td>
+<td>false</td>
+<td>string</td>
+<td>&quot;createdAt&quot; or &quot;return&quot;, sorting method: &quot;createdAt&quot; (update time, default) or &quot;return&quot; (returns).</td>
+</tr>
+<tr>
+<td>orderDirection</td>
+<td>false</td>
+<td>string</td>
+<td>&quot;desc&quot; or &quot;asc&quot;, defaults to &quot;desc&quot; (descending order).</td>
+</tr>
+<tr>
+<td>wallet</td>
+<td>false</td>
+<td>string</td>
+<td>Wallet address (if empty, all wallet addresses are queried).</td>
+</tr>
+</tbody>
+</table>
+<p>Note: If the number of results exceeds 300 within the specified <code>startDateTime</code> and <code>endDateTime</code>, polling can be used (in this case, <code>orderBy</code> must be set to <code>&quot;createdAt&quot;</code>) to continue querying. The <code>endDateTime</code> parameter for the nth polling request should be set to the <code>createdAt</code> of the last record from the (n-1)th polling result. After retrieving all data, duplicates should be removed based on the <code>id</code> field.</p>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>As shown below</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>Product ID corresponding to the position (matches <code>productId</code> in The Graph data). This ID is unique within the chain + vault dimension and can be used to query position balances.</td>
+</tr>
+<tr>
+<td>positionId</td>
+<td>string</td>
+<td>Position ID, which is unique within the chain dimension.</td>
+</tr>
+<tr>
+<td>product</td>
+<td>object</td>
+<td>Product information.</td>
+</tr>
+<tr>
+<td>wallet</td>
+<td>string</td>
+<td>Wallet address.</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>number</td>
+<td>Corresponding timestamp in seconds, e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>updatedAt</td>
+<td>number</td>
+<td>Corresponding timestamp in seconds, e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>claimed</td>
+<td>boolean</td>
+<td>Whether the position has been redeemed.</td>
+</tr>
+<tr>
+<td>takerAllocationRate</td>
+<td>number</td>
+<td>Based on the calculation time, estimates the proportion the owner can take from the betting pool. Before expiry, this is an estimated value.</td>
+</tr>
+<tr>
+<td>triggerTime</td>
+<td>number</td>
+<td>For Rangebound, the first breakout time; for non-Rangebound, the settlement time, in seconds.</td>
+</tr>
+<tr>
+<td>triggerPrice</td>
+<td>number</td>
+<td>For Rangebound, the first breakout price; for non-Rangebound, the settlement price.</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>Fee rate.</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>Loan information (optional).</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>Token prices required for RCH price conversion and airdrop calculation.</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>Calculated amounts.</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>Annualized information, available for non-Surge products.</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>Odds information, available for Surge products.</td>
+</tr>
+<tr>
+<td>claimParams</td>
+<td>object</td>
+<td>Claim parameter information.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Example</strong></p>
+<pre><code>{
+    &quot;value&quot;: [{
+        ...
+    }]
+}
+</code></pre><h3 id="get-wallet-transactions">Get Wallet Transactions</h3>
+<pre><code>POST /rfq/transaction-list
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>Int</td>
+<td></td>
+</tr>
+<tr>
+<td>vaults</td>
+<td>false</td>
+<td>list[string]</td>
+<td>Set of contract addresses; if not provided, all contracts will be queried.</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>false</td>
+<td>Int</td>
+<td>Number of queries; defaults to 100, maximum is 300.</td>
+</tr>
+<tr>
+<td>startDateTime</td>
+<td>false</td>
+<td>number</td>
+<td>Corresponding timestamp in seconds (inclusive), e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>endDateTime</td>
+<td>false</td>
+<td>number</td>
+<td>Corresponding timestamp in seconds (inclusive), e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>orderDirection</td>
+<td>false</td>
+<td>string</td>
+<td>&quot;desc&quot; or &quot;asc&quot;, defaults to &quot;desc&quot; (descending order).</td>
+</tr>
+<tr>
+<td>taker</td>
+<td>false</td>
+<td>string</td>
+<td>Taker wallet address</td>
+</tr>
+<tr>
+<td>maker</td>
+<td>false</td>
+<td>string</td>
+<td>Maker wallet address</td>
+</tr>
+<tr>
+<td>claimParams</td>
+<td>false</td>
+<td>object</td>
+<td>The redemption parameters, corresponding to the claimParams field in the position-list data.</td>
+</tr>
+<tr>
+<td>hash</td>
+<td>false</td>
+<td>string</td>
+<td>Transaction hash</td>
+</tr>
+</tbody>
+</table>
+<p>Note: Taker, maker, and claimParams parameters can be used for a joint query to find the trade records corresponding to a position (a position may correspond to multiple trades) (not all parameters are required).
+If the number of results exceeds 300 within the specified <code>startDateTime</code> and <code>endDateTime</code>, polling can be used (in this case, <code>orderBy</code> must be set to <code>&quot;createdAt&quot;</code>) to continue querying. The <code>endDateTime</code> parameter for the nth polling request should be set to the <code>createdAt</code> of the last record from the (n-1)th polling result. After retrieving all data, duplicates should be removed based on the <code>id</code> field.</p>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>As shown below</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>hash</td>
+<td>string</td>
+<td>Transaction hash</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>string</td>
+<td>taker wallet address.</td>
 </tr>
 <tr>
 <td>makerWallet</td>
 <td>string</td>
-<td>Maker&apos;s wallet (can be empty)</td>
+<td>maker wallet address.</td>
 </tr>
 <tr>
-<td>signature</td>
+<td>product</td>
+<td>object</td>
+<td>Product information.</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>number</td>
+<td>Corresponding timestamp in seconds, e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>takerAllocationRate</td>
+<td>number</td>
+<td>Based on the calculation time, estimates the proportion the owner can take from the betting pool. Before expiry, this is an estimated value.</td>
+</tr>
+<tr>
+<td>triggerTime</td>
+<td>number</td>
+<td>For Rangebound, the first breakout time; for non-Rangebound, the settlement time, in seconds.</td>
+</tr>
+<tr>
+<td>triggerPrice</td>
+<td>number</td>
+<td>For Rangebound, the first breakout price; for non-Rangebound, the settlement price.</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>Fee rate.</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>Loan information (optional).</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>Token prices required for RCH price conversion and airdrop calculation.</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>Calculated amounts.</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>Annualized information, available for non-Surge products.</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>Odds information, available for Surge products.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Example</strong></p>
+<pre><code>{
+    &quot;value&quot;: [{
+        ...
+    }]
+}
+</code></pre><h3 id="conceal-loss-positions">Conceal loss positions</h3>
+<pre><code>POST rfq/position/conceal
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>Chain ID</td>
+</tr>
+<tr>
+<td>positionIds</td>
+<td>true</td>
+<td>List[string]</td>
+<td>positionId list&#xFF0C;up to 20</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Request Example</strong></p>
+<pre><code>{
+    &quot;positionIds&quot;: [
+        &quot;aaaa&quot;,&quot;bbbb&quot;
+    ],
+    &quot;chainId&quot;: 1
+}
+</code></pre><p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 indicates that the return result is normal</td>
+</tr>
+<tr>
+<td>message</td>
 <td>string</td>
-<td>Signature (can be empty)</td>
+<td>Error message returned in case of an exception</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="get-pending-transactions">Get Pending Transactions</h3>
+<p>This is mainly to address the underlying position data synchronization issue. The data retrieved here may disappear (due to blockchain fork competition).</p>
+<pre><code>POST rfq/transactions/pending
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>Int</td>
+<td></td>
+</tr>
+<tr>
+<td>vaults</td>
+<td>false</td>
+<td>list[string]</td>
+<td>Set of contract addresses; if not provided, all contracts will be queried.</td>
+</tr>
+<tr>
+<td>taker</td>
+<td>false</td>
+<td>string</td>
+<td>Taker wallet address</td>
+</tr>
+<tr>
+<td>maker</td>
+<td>false</td>
+<td>string</td>
+<td>Maker wallet address</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>As shown below</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>hash</td>
+<td>string</td>
+<td>Transaction hash</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>string</td>
+<td>taker wallet address.</td>
+</tr>
+<tr>
+<td>makerWallet</td>
+<td>string</td>
+<td>maker wallet address.</td>
+</tr>
+<tr>
+<td>product</td>
+<td>object</td>
+<td>Product information.</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>number</td>
+<td>Corresponding timestamp in seconds, e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>takerAllocationRate</td>
+<td>number</td>
+<td>Based on the calculation time, estimates the proportion the owner can take from the betting pool. Before expiry, this is an estimated value.</td>
+</tr>
+<tr>
+<td>triggerTime</td>
+<td>number</td>
+<td>For Rangebound, the first breakout time; for non-Rangebound, the settlement time, in seconds.</td>
+</tr>
+<tr>
+<td>triggerPrice</td>
+<td>number</td>
+<td>For Rangebound, the first breakout price; for non-Rangebound, the settlement price.</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>Fee rate.</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>Loan information (optional).</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>Token prices required for RCH price conversion and airdrop calculation.</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>Calculated amounts.</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>Annualized information, available for non-Surge products.</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>Odds information, available for Surge products.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="get-rch-airdrop-history">Get RCH Airdrop History</h3>
+<pre><code>GET rfq/airdrop/history
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wallet</td>
+<td>true</td>
+<td>string</td>
+<td>Wallet address</td>
+</tr>
+<tr>
+<td>startDateTime</td>
+<td>true</td>
+<td>number</td>
+<td>Corresponding timestamp in seconds (inclusive), e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>endDateTime</td>
+<td>true</td>
+<td>number</td>
+<td>Corresponding timestamp in seconds (inclusive), e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>orderBy</td>
+<td>false</td>
+<td>string</td>
+<td>&quot;dateTime&quot; or &quot;rch&quot;, sorting method: &quot;dateTime&quot; (airdrop time, default) or &quot;rch&quot; (amount).</td>
+</tr>
+<tr>
+<td>orderDirection</td>
+<td>false</td>
+<td>string</td>
+<td>&quot;desc&quot; or &quot;asc&quot;, defaults to &quot;desc&quot; (descending order).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>As shown below</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dateTime</td>
+<td>long</td>
+<td>The current timestamp in seconds, for example, 1672387200.</td>
+</tr>
+<tr>
+<td>wallet</td>
+<td>string</td>
+<td>Wallet address</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>string</td>
+<td>trading volume</td>
+</tr>
+<tr>
+<td>rch</td>
+<td>string</td>
+<td>Airdrop amount, the raw value, needs to be divided by 1e18</td>
+</tr>
+<tr>
+<td>merkleProof</td>
+<td>string</td>
+<td>Merkle proof</td>
 </tr>
 </tbody>
 </table>
@@ -1141,7 +2960,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"DAPP Open APIs","level":"1.11.2","depth":2,"next":{"title":"Subgraphs","level":"1.11.3","depth":2,"path":"developer/subgraphs.md","ref":"developer/subgraphs.md","articles":[]},"previous":{"title":"Market Maker Open APIs","level":"1.11.1","depth":2,"path":"developer/marketmaker-open-apis.md","ref":"developer/marketmaker-open-apis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold","mathjax-pro"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"developer/dapp-open-apis.md","mtime":"2025-02-26T09:40:58.662Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-03-12T07:31:00.460Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"DAPP Open APIs","level":"1.11.2","depth":2,"next":{"title":"Subgraphs","level":"1.11.3","depth":2,"path":"developer/subgraphs.md","ref":"developer/subgraphs.md","articles":[]},"previous":{"title":"Market Maker Open APIs","level":"1.11.1","depth":2,"path":"developer/marketmaker-open-apis.md","ref":"developer/marketmaker-open-apis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold","mathjax-pro"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"developer/dapp-open-apis.md","mtime":"2025-03-13T06:27:15.138Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-03-13T06:27:45.381Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

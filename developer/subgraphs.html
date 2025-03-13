@@ -560,61 +560,80 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="subgraphs">Subgraphs</h1>
-<p>We support the development of efficient and responsive applications by providing real-time and accurate blockchain data access through the use of The Graph&apos;s indexing protocol.  Subgraphs are a powerful tool that allows us to index data stored on Ethereum and query this data via GraphQL.</p>
-<p>Here is how you can utilize custom subgraphs to query related data within the protocol:</p>
-<ul>
-<li><a href="https://api.thegraph.com/subgraphs/name/aave/protocol-v3" target="_blank">Mainnet</a></li>
-<li><a href="https://api.thegraph.com/subgraphs/name/aave/protocol-v3-arbitrum" target="_blank">Arbitrum</a></li>
-</ul>
+<p>We support the development of efficient and responsive applications by providing real-time and accurate blockchain data access through the use of The Graph&apos;s indexing protocol. Subgraphs are a powerful tool that allows us to index data stored on Ethereum and query this data via GraphQL.</p>
+<p>Here is how you can utilize custom subgraphs to query related data within the protocol.</p>
+<table>
+<thead>
+<tr>
+<th>Subgraph</th>
+<th>Query URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SOFA Mainnet</td>
+<td><a href="https://api.studio.thegraph.com/query/77961/sofa-mainnet/version/latest" target="_blank">https://api.studio.thegraph.com/query/77961/sofa-mainnet/version/latest</a></td>
+</tr>
+<tr>
+<td>SOFA Arbitrum</td>
+<td><a href="https://api.studio.thegraph.com/query/77961/sofa-arbitrum/version/latest" target="_blank">https://api.studio.thegraph.com/query/77961/sofa-arbitrum/version/latest</a></td>
+</tr>
+<tr>
+<td>SOFA BSC</td>
+<td><a href="https://api.studio.thegraph.com/query/77961/sofa-bsc/version/latest" target="_blank">https://api.studio.thegraph.com/query/77961/sofa-bsc/version/latest</a></td>
+</tr>
+<tr>
+<td>SOFA Polygon</td>
+<td><a href="https://api.studio.thegraph.com/query/77961/sofa-polygon/version/latest" target="_blank">https://api.studio.thegraph.com/query/77961/sofa-polygon/version/latest</a></td>
+</tr>
+<tr>
+<td>SOFA Sei</td>
+<td><a href="https://api.studio.thegraph.com/query/77961/sofa-sei/version/latest" target="_blank">https://api.studio.thegraph.com/query/77961/sofa-sei/version/latest</a></td>
+</tr>
+<tr>
+<td>SOFA Automator Mainnet</td>
+<td><a href="https://api.studio.thegraph.com/query/77961/sofa-automator-mainnet/version/latest" target="_blank">https://api.studio.thegraph.com/query/77961/sofa-automator-mainnet/version/latest</a></td>
+</tr>
+<tr>
+<td>SOFA Automator Arbitrum</td>
+<td><a href="https://api.studio.thegraph.com/query/77961/sofa-automator-arbitrum/version/latest" target="_blank">https://api.studio.thegraph.com/query/77961/sofa-automator-arbitrum/version/latest</a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="accessing-our-subgraph">Accessing Our Subgraph</h2>
 <p>We have created specific subgraphs for the protocol&apos;s data. These subgraphs contain various entities indexed from the blockchain, such as transactions, accounts, and specific events related to our DeFi products.  You can query data in the subgraph via the following steps:</p>
 <h3 id="step-1-find-the-endpoint">Step 1: Find the Endpoint</h3>
-<p>Locate the GraphQL endpoint URL corresponding to the subgraph you wish to interact with.  This typically appears as a web address link.  Please ensure you are using the most up-to-date endpoint.</p>
+<p>Locate the GraphQL endpoint URL corresponding to the subgraph you wish to interact with. This typically appears as a web address link. Please ensure you are using the most up-to-date endpoint.</p>
 <h3 id="step-2-understand-the-schema">Step 2: Understand the Schema</h3>
 <p>The schema describes the entities within the subgraph and the types of queries that can be performed. Understanding the schema is crucial for writing efficient queries.</p>
 <h3 id="step-3-write-a-graphql-query">Step 3: Write a GraphQL Query</h3>
 <p>Based on the schema, you can start writing GraphQL queries to query data from the subgraph. GraphQL allows for very specific queries, requesting only the fields you are interested in.  For example, if you want to query detailed information for each transaction, you might write a query like this:</p>
 <pre><code>{
-  position(id: &quot;&quot;) {
-    anchorPrices
-    collateralAtRiskPercentage
-    createdAt
-    expiry
-    id
-    isMaker
-    makerCollateral
-    owner
-    payoff
-    productId
-    term
-    timestamp
-    totalCollateral
+  transactions(first: 5) {
     vault
-  }
-  positions
-  transaction(id: &quot;&quot;) {
-    anchorPrices
-    collateralAtRiskPercentage
-    expiry
-    hash
-    id
-    maker
-    makerCollateral
-    minter
+    tradingFeeRate
+    totalCollateral
+    timestamp
+    term
+    spreadAPR
     referral
-    term
-    timestamp
-    totalCollateral
-    vault
+    minter
+    makerCollateral
+    maker
+    id
+    hash
+    expiry
+    collateralAtRiskPercentage
+    borrowAPR
+    anchorPrices
   }
-  transactions
 }
 </code></pre><p>This will return transactions and their related details for the first five records on the blockchain.</p>
 <h3 id="step-4-send-the-query-request">Step 4: Send the Query Request</h3>
 <p>Send your query request using any HTTP client that supports GraphQL. You can use a command-line tool such as curl, or a library integrated into your application, like apollo-client.  Typically, the request is sent as a POST request to the endpoint URL.</p>
 <p>An example code using curl is as follows:</p>
-<pre><code>curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;query&quot;: &quot;{ transactions(first: 5) { id from to value blockNumber } }&quot;}&apos;  https://api.studio.thegraph.com/query/77961/sofa-mainnet/version/latest
-</code></pre><p>Replace the url with the actual subgraph name, and determine the URL based on the actual situation.</p>
+<pre><code>curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;query&quot;: &quot;{ transactions(first: 5) { id vault totalCollateral minter timestamp } }&quot;}&apos;  https://api.studio.thegraph.com/query/77961/sofa-mainnet/version/latest
+</code></pre><p>Replace the the URL based on the actual situation.</p>
 <h3 id="step-5-analyze-and-use-the-response">Step 5: Analyze and Use the Response</h3>
 <p>After your query request is sent, the GraphQL service will return the response in JSON format. You can process this data in your application or directly display it to users on the front end.</p>
 <h2 id="best-practices">Best Practices</h2>
@@ -650,7 +669,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Subgraphs","level":"1.11.3","depth":2,"next":{"title":"Deployment Contracts","level":"1.11.4","depth":2,"path":"developer/contracts.md","ref":"developer/contracts.md","articles":[]},"previous":{"title":"DAPP Open APIs","level":"1.11.2","depth":2,"path":"developer/dapp-open-apis.md","ref":"developer/dapp-open-apis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold","mathjax-pro"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"developer/subgraphs.md","mtime":"2025-02-26T09:40:58.664Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-03-12T07:31:00.460Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Subgraphs","level":"1.11.3","depth":2,"next":{"title":"Deployment Contracts","level":"1.11.4","depth":2,"path":"developer/contracts.md","ref":"developer/contracts.md","articles":[]},"previous":{"title":"DAPP Open APIs","level":"1.11.2","depth":2,"path":"developer/dapp-open-apis.md","ref":"developer/dapp-open-apis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold","mathjax-pro"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"developer/subgraphs.md","mtime":"2025-03-13T06:27:15.139Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-03-13T06:27:45.381Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
