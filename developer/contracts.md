@@ -98,18 +98,8 @@
 |-----------------------------------|--------------------------------------------|
 | Automator(lbcrvUSD)               | 0x267adC3E106b72ce3b0F2BbDb6c638A12110CF8C |
 | Automator(lecrvUSD)               | 0x31D22b4afEC06e67A37AF38A62a6ec9546c1bF8A |
-| SimpleSmartBullVault(ETH/scrvUSD) | 0x5e5E689284a614127Af9deA546b8D943B8b80e5c |
-| SimpleSmartBullVault(BTC/scrvUSD) | 0x4A1Bc9d8B2eD7BF9B9C1979037992Cff064E4F40 |
 | AutomatorFactory(AAVE)            | 0x438b597bdc946dB1Bd62c2BB32CcEc7742Be720b |
-| RebaseSmartBullVault(ETH/aUSDT)   | 0x550cceC27639E01C5d9adE39f75e1351F791d2C2 |
-| RebaseSmartBullVault(BTC/aUSDT)   | 0x622ccb3C38502DD9175B347FD32bb327A7175ffD |
-| RebaseSmartBearVault(ETH/aUSDT)   | 0x26E9aA240070d37C109E976b688E9B05C6Bd946b |
-| RebaseSmartBearVault(BTC/aUSDT)   | 0xA86dC0E47697D23469C1804a3a40021BEfCd89A2 |
-| RCHAutomatorFactory               | 0x3079993B5BE4D18d504a6e58939aC6637d47Dc1A |
-| SimpleSmartBullVault(ETH/zRCH)    | 0x829f4309b664a8977CC325363454b87Ce7dD1184 |
-| SimpleSmartBullVault(BTC/zRCH)    | 0x2BDbDb994FB7e7772EAa16Ccc41430e095D0706a |
-| SimpleSmartBearVault(ETH/zRCH)    | 0x6D05Eba244fb40B4Db1df9d66103735b90733F67 |
-| SimpleSmartBearVault(BTC/zRCH)    | 0xde417ea3a884A34A8f2DC32B4B0A1a9c3C9B61A0 |
+| AutomatorFactory(RCH)               | 0x3079993B5BE4D18d504a6e58939aC6637d47Dc1A |
 
 ## Arbitrum
 
@@ -166,15 +156,7 @@
 | Name                            | Address                                    |
 |---------------------------------|--------------------------------------------|
 | Automator(USDT)                 | 0x4C241483B4a85e44C59bcEcFe17A4E7d0A073CDB |
-| AAVESmartBullVault(ETH/USDT)    | 0x986Fa0383C39dBdA1B3A29Ac536fe5Df354Ed160 |
-| AAVESmartBullVault(BTC/USDT)    | 0x770f7fcEce69C68B208B80bBc4e3d1Bf8f9c0672 |
-| AAVESmartBearVault(ETH/USDT)    | 0x1e5A684d263F42BaC1f2bAd6fB379277D4D6c28C |
-| AAVESmartBearVault(BTC/USDT)    | 0xBF898C0C2E7d415dE8FCcc78d1200D029a060560 |
 | AutomatorFactory(AAVE)          | 0x1893B75A9711E1c84BE86a81Edc7f2929d6E5aFf |
-| RebaseSmartBullVault(ETH/aUSDT) | 0x3d5489b9846cD3BC3e05D32d46C51d50fA37c049 |
-| RebaseSmartBullVault(BTC/aUSDT) | 0x40e439cb71379eE5fF6b914313c11A792A385e93 |
-| RebaseSmartBearVault(ETH/aUSDT) | 0x68C91Df6ecBa6c697217d747f04B72EEDc6af1e7 |
-| RebaseSmartBearVault(BTC/aUSDT) | 0xC914Ba8F6393cC611BD1d207e317C68BE27943eB |
 
 ## BSC
 
