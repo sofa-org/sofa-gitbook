@@ -66,17 +66,22 @@ _Please be sure to read the [protocol fees section](../technical-design/fees.md)
 
 For **Earn based products**, given that the option premium will be funded by the deposit interest savings from Aave, only a **small portion of the user's deposit total will be considered 'premium'** for airdrop calculations. On the contrary, the **entire purchase amount from Surge products** will be eligible for consideration, as it will be fully deployed to underlying option strategies.  An _approximate_ premium estimate is as follows:
 
-| **Protocol** | **Premium (Approximation)**                                                             | **Comment**                                                                                                     |
-| ------------ | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Earn         | (Aave’s Savings Rate – Product Base Yield) * Maturity (in Days) / 365 * Deposit Value | SOFA uses only a portion of Aave’s interest income to risk as option premium to maintain a minimum base return |
-| Surge        | The Entire Purchased Amount                                                             | The entire purchase is spent as an option premium to speculate on high upsides.                                 |
-| Automator    | Min(takerCollateral, makerCollateral) of mintProducts  | takerCollateral = totalCollateral - makerCollateral  |
+| **Protocol**            | **Premium (Approximation)**                                                           | **Comment**                                                                                                    |
+|-------------------------|---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| Earn                    | (Aave’s Savings Rate – Product Base Yield) * Maturity (in Days) / 365 * Deposit Value | SOFA uses only a portion of Aave’s interest income to risk as option premium to maintain a minimum base return |
+| Surge                   | The Entire Purchased Amount                                                           | The entire purchase is spent as an option premium to speculate on high upsides.                                |
+| Automator               | Min(takerCollateral, makerCollateral) of mintProducts                                 | takerCollateral = totalCollateral - makerCollateral                                                            |
+| Dual(CRV)               | makerCollateral                                                                       |                                                                                                                |
+| Dual(RCH, USDT, crvUSD) | Yields from RCH Staking, AAVE, crvSUD Staking / tradingFeeRate                        |                                                                                                                |
 
 Moreover, as an attempt to incentivize activities across both protocols, we have included a **Vault Weight** at the end of the formula:
 
 Before 2025/02/18 8:00 UTC, they are set to **15** for Earn, **15** for Leverage Earn, **1** for Surge, **2** for RCH Surge and **2** for Automator. 
 
-After that, they are set to **min(days to expiry, 20)** for Earn, **min(days to expiry, 20)** for Leverage Earn, **1** for Surge, **2** for RCH Surge and **abs(0.5 - takerCollateral / (takerCollateral + makerCollateral)) / 0.5 * 4** for Automator.
+2025/02/18 8:00 UTC - 2025/04/07 8:00 UTC, they are set to **min(days to expiry, 20)** for Earn, **min(days to expiry, 20)** for Leverage Earn, **1** for Surge, **2** for RCH Surge and **abs(0.5 - takerCollateral / (takerCollateral + makerCollateral)) / 0.5 * 4** for Automator.
+
+After that, they are set to **min(days to expiry, 20)** for Earn, **min(days to expiry, 20)** for Leverage Earn, **1** for Surge, **2** for RCH Surge, **abs(0.5 - takerCollateral / (takerCollateral + makerCollateral)) / 0.5 * 2** for Automator and **2** for Dual.
+
 
 **15%** of the Automator airdrop will be charged to RCH Deployer for RCH burning purposes.  Finally, a final **95%** universal adjustment factor is applied to account for the airdrop haircut paid to the [dApp broker](../INTRO.md).
 
