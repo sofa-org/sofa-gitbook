@@ -2,9 +2,15 @@
 
 ## $RCH Holder Distribution Plan
 
-### Update-2024/11/26
+### Updates
 
-  - Add Automator trading rules
+#### 2025/05/26
+
+  - Update Dual trading rules
+
+#### 2024/11/26
+
+  - Update Automator trading rules
 
 ### Historical (Around October 10)
 
@@ -16,11 +22,21 @@
 
   - **Snapshot on July 1, 2024, at UTC+0 00:00:** Each address will receive 0.1 $SOFA Point for every 1 $RCH held, with the same limitation: $SOFA Points earned in July cannot exceed the points earned in October.
 
-### Future (Around November 10)
-
   - **Snapshot on November 1, 2024, at UTC+0 00:00:** Another snapshot will be taken, awarding 0.1 $SOFA Point per 1 $RCH held (Including Earn Product).
 
 ## Trading
+
+### Dual
+
+- Starting from April 05, 2025.
+
+- Each time a user deposits into a Dual product, they will receive $SOFA Points. The points are calculated as follows:
+
+  - For deposits held ≤14 days: $SOFA Points = amount of tokens deposited x price x days x 0.015.
+
+  - For deposits held (14, 35) days: $SOFA Points = Amount of tokens deposited x price x days x 0.025.
+
+  - For deposits held ≥35 days: $SOFA Points = amount of tokens deposited x price x days x 0.035.
 
 ### Automator
 
