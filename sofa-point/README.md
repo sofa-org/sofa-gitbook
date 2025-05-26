@@ -1,16 +1,12 @@
 # $SOFA Points
 
+## Updates
+
+  - 2025/05/26 Add Dual trading rules
+
+  - 2024/11/26 Add Automator trading rules
+
 ## $RCH Holder Distribution Plan
-
-### Updates
-
-#### 2025/05/26
-
-  - Update Dual trading rules
-
-#### 2024/11/26
-
-  - Update Automator trading rules
 
 ### Historical (Around October 10)
 
