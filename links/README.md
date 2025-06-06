@@ -16,7 +16,7 @@
   - [SigmaPrime](https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf)
   - [Automator audited by Code4rena(Zenith)](https://github.com/zenith-security/reports/blob/main/reports/Audit%20Report%20-%20Sofa%20Automator%28Oct%202024%29.pdf)
   - [Automator2.0 audited by Code4rena(Zenith)](https://github.com/zenith-security/reports/blob/main/reports/Zenith%20Audit%20Report%20-%20Sofa%20Automator%202.0.pdf)
-  - [Automator2.0 & Dual Currency audited by yAudit](https://reports.electisec.tech/reports/01-2025-Sofa-Protocol)
+  - [Automator2.0 & Dual Currency audited by yAudit](https://reports.electisec.com/reports/01-2025-Sofa-Protocol)
 - Dune Analysis
   - [SOFA.org Dashboard](https://dune.com/sofaorg/sofaorg-dashboard)
   - [SOFA Dashboard@chinpaca](https://dune.com/chinpaca/sofa-dashboard)
