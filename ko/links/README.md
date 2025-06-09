@@ -1,0 +1,23 @@
+# 링크
+
+- [공식 웹사이트](https://sofa.org)
+  - [SOFA 수익](https://earn.sofa.org/products)
+  - [SOFA 서지](https://surge.sofa.org/products)
+- [트위터](https://x.com/SOFAorgDAO) 
+- [디스코드](https://discord.gg/sofaorg) 
+- [텔레그램](http://t.me/SOFAorg) 
+- [미디엄](https://medium.com/sofaorg)
+- [문의하기](mailto:contact@sofa.org)
+- [RCH 토큰](https://etherscan.io/token/0x57b96d4af698605563a4653d882635da59bf11af)
+- [RCH 스왑](https://app.uniswap.org/explore/tokens/ethereum/0x57b96d4af698605563a4653d882635da59bf11af)
+- 감사
+  - [Code4rena(제니스)](https://github.com/zenith-security/reports/blob/main/reports/Audit%20Report%20-%20Sofa%20%28May%202024%29.pdf)
+  - [Peckshield](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf)
+  - [SigmaPrime](https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf)
+  - [Code4rena(제니스)에서 감사한 자동화기](https://github.com/zenith-security/reports/blob/main/reports/Audit%20Report%20-%20Sofa%20Automator%28Oct%202024%29.pdf)
+  - [Code4rena(제니스)에서 감사한 자동화기 2.0](https://github.com/zenith-security/reports/blob/main/reports/Zenith%20Audit%20Report%20-%20Sofa%20Automator%202.0.pdf)
+  - [yAudit에서 감사한 자동화기 2.0 및 이중 통화](https://reports.electisec.com/reports/01-2025-Sofa-Protocol)
+- 듀네 분석
+  - [SOFA.org 대시보드](https://dune.com/sofaorg/sofaorg-dashboard)
+  - [SOFA 대시보드@chinpaca](https://dune.com/chinpaca/sofa-dashboard)
+  - [RCH 소각 전용@shing3e](https://dune.com/shing3e/rch-burn-only)
