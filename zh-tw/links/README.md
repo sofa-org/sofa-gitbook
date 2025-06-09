@@ -1,0 +1,23 @@
+# 連結
+
+- [官方網站](https://sofa.org)
+  - [SOFA 賺取](https://earn.sofa.org/products)
+  - [SOFA 激增](https://surge.sofa.org/products)
+- [Twitter](https://x.com/SOFAorgDAO) 
+- [Discord](https://discord.gg/sofaorg) 
+- [Telegram](http://t.me/SOFAorg) 
+- [Medium](https://medium.com/sofaorg)
+- [聯絡我們](mailto:contact@sofa.org)
+- [RCH 代幣](https://etherscan.io/token/0x57b96d4af698605563a4653d882635da59bf11af)
+- [RCH 交換](https://app.uniswap.org/explore/tokens/ethereum/0x57b96d4af698605563a4653d882635da59bf11af)
+- 審計
+  - [Code4rena(Zenith)](https://github.com/zenith-security/reports/blob/main/reports/Audit%20Report%20-%20Sofa%20%28May%202024%29.pdf)
+  - [Peckshield](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf)
+  - [SigmaPrime](https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf)
+  - [由 Code4rena(Zenith) 審計的 Automator](https://github.com/zenith-security/reports/blob/main/reports/Audit%20Report%20-%20Sofa%20Automator%28Oct%202024%29.pdf)
+  - [由 Code4rena(Zenith) 審計的 Automator2.0](https://github.com/zenith-security/reports/blob/main/reports/Zenith%20Audit%20Report%20-%20Sofa%20Automator%202.0.pdf)
+  - [由 yAudit 審計的 Automator2.0 & 雙幣](https://reports.electisec.com/reports/01-2025-Sofa-Protocol)
+- Dune 分析
+  - [SOFA.org 儀表板](https://dune.com/sofaorg/sofaorg-dashboard)
+  - [SOFA 儀表板@chinpaca](https://dune.com/chinpaca/sofa-dashboard)
+  - [RCH 燒毀專用@shing3e](https://dune.com/shing3e/rch-burn-only)

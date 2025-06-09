@@ -1,0 +1,41 @@
+![](../../static/2.jpg)
+
+# Innover la Prochaine Vague de DeFi
+
+## Les Défaillances des Contreparties ont Servi de Rappel Brut à l'Importance de la Décentralisation
+
+2022 a fourni un rude rappel de la réalité pour la crypto, avec la chute de Genesis, Celsius, 3AC et FTX choquant le cœur même de notre écosystème, et **nous a rappelé l'importance de la décentralisation** que beaucoup d'entre nous avaient oubliée dans notre quête de profits. La finance traditionnelle a traversé un examen similaire avec la chute de Lehman, où une chaîne de défaillances de contreparties (trop endettées) a failli faire s'effondrer le système financier mondial.
+
+En conséquence, **l'ère post-GFC a légiféré l'utilisation de chambres de compensation centralisées et d'arrangements de compensation tripartites, isolant et concentrant effectivement le risque de garde d'actifs dans des entités tierces bien financées (et hautement réglementées)**. Les régulateurs avaient jugé qu'il était plus sûr et plus efficace de gérer les risques de garantie au sein de points de contact ciblés, tout en empêchant les intermédiaires malveillants de jouer 'fast-and-loose' avec la gestion des bilans.
+
+Avançons jusqu'à aujourd'hui, imaginez si le monde avait une solution technologique largement disponible qui fournissait **des enregistrements de données immuables, des transactions traçables, des paramètres définissables, une transparence opérationnelle et une sécurité réseau exceptionnelle** ; une technologie comme celle-là fournirait sûrement **la solution idéale pour un dépôt de règlement mondial,** n'est-ce pas ?
+
+## Raviver l'Esprit 'Sans Confiance' comme Valeur Fondamentale de la Blockchain
+
+Décentralisation. Transparence. Immutabilité. Extensibilité. Authenticité. Ce sont quelques-uns des mots couramment prononcés comme les principaux avantages offerts par la blockchain. Cependant, nous pensons que **'Sans Confiance'** offre la meilleure personnification des valeurs fondamentales de la crypto, car la blockchain a permis à des étrangers complets d'exécuter des transactions valides sans dépendre d'un intermédiaire arbitraire ou de groupes privilégiés.
+
+De plus, l'immuabilité des contrats intelligents permet de placer sa foi absolue dans le code plutôt que dans la bonne volonté de votre contrepartie. En tant que tel, **la fondation de la confiance est construite sur les piliers intransigeants de 1) l'immuabilité des contrats et 2) le règlement des actifs sur la chaîne**. Ces principes fondamentaux seront notre force motrice dans le développement d'un protocole qui peut vraiment être libéré des contraintes de la centralisation.
+
+Cependant, soyons clairs que **l'esprit de décentralisation doit viser à promouvoir l'accès et la participation des utilisateurs, plutôt qu'à absoudre la responsabilité** dans une forme extrême d'anarchie financière. Bien que les exécutions de blockchain puissent être anonymes, il y a généralement un être humain social à l'autre bout de votre transaction que nous devrions traiter avec respect.
+
+Le **développement des protocoles collectifs SOFA est notre tentative de promouvoir l'esprit de décentralisation sans confiance, mais il est tout aussi important pour nous d'établir un ensemble de lignes directrices de 'meilleures pratiques' pour maintenir la responsabilité professionnelle, même si elles sont auto-imposées ou auto-régulées**. Chaque partie de notre conception de protocole, y compris la transparence des contrats, la classification des coffres et la tokenomics de lancement équitable, démontre notre détermination et notre engagement à construire une DeFi plus responsable. En montrant l'exemple, nous espérons montrer au monde qu'il existe une meilleure voie à suivre, avec la décentralisation sans confiance comme pierre angulaire de cet avenir.
+
+## Tokenisation des Risques
+
+Au fond, **les instruments financiers ne sont finalement rien d'autre que des contrats monétaires contre une contrepartie sur certaines revendications de paiements et de propriété**. Ils sont régis par diverses couches de réglementation humaines (& centralisées), et légalement mémorisés par des documents physiques et électroniques. Sans surprise, nous pouvons substituer beaucoup des mots précédents par "numérique" et "grand livre blockchain" sans perdre l'essence de leurs significations.
+
+La crypto a fait d'énormes progrès dans le domaine de la sécurité sur la chaîne, des cadres de contrats intelligents 'le code est la loi', des monnaies numériques transférables et de la tokenisation des RWAs. Nous faisons un pas de plus avec nos coffres de produits innovants, où nous enregistrons non seulement le montant notionnel, mais aussi **transcrivons d'autres paramètres vitaux des instruments sur la chaîne**, afin qu'ils puissent être **authentiquement reproduits et référencés dans un processus que nous appelons la Tokenisation des Risques.** Le résultat sera contenu dans quelque chose appelé **'Tokens de Position'**, qui peuvent être considérés comme **des revendications de propriété sur des actifs verrouillés sur la chaîne, mais peuvent être librement transférés entre utilisateurs comme des tokens ERC-20 standard**.
+
+![](../../static/draw3.png)
+
+## Un Modèle de Tokenomics Durable avec des Récompenses Basées sur l'Utilisation
+
+Regardez, l'argent fait tourner le monde, et la maximisation de l'intérêt personnel comme résultat d'équilibre stable est une force motrice fondamentale derrière la DeFi. Cependant, lors du dernier cycle, nous avons vu un certain nombre d'échecs (très) médiatisés de projets autrefois prometteurs en raison de tokenomics mal construites. Que ce soit à cause de dumps de liquidité de sortie (par des initiés et des VC), d'expériences inflationnistes gimmick, de modèles de demande réflexifs de prix, ou d'un trop grand accent sur les gains à court terme, il reste encore beaucoup de travail à faire pour promouvoir un modèle monétaire plus durable.
+
+En réponse, SOFA.org déploiera un modèle de tokenomics de lancement équitable à 100 %, avec un token utilitaire déflationniste à offre fixe qui ne peut _être gagné_ que par l'utilisation du protocole. De plus, tous les bénéfices du protocole seront utilisés pour des opérations de brûlage de tokens quotidiennes, garantissant que tous les profits sont _directement_ recyclés dans les poches de nos utilisateurs et hodlers principaux. **À long terme, le prix du token sera une représentation fondamentale de la valeur (de règlement) que nos protocoles ont contribué à l'écosystème. 'Échanger pour Gagner', quelqu'un ?**
+
+## Compensation Décentralisée comme Nouvelle Fondation de Règlement
+
+Avec la sagesse acquise lors du dernier cycle, nous abordons directement certaines des lacunes structurelles de la DeFi tout en itérant sur ses innovations clés. Plus précisément, **la création des coffres de compensation décentralisés de SOFA.org est notre tentative ambitieuse d'établir des normes sur la manière dont les actifs financiers peuvent être réglés de manière atomique sur la chaîne, tout en catalysant simultanément la liquidité du capital DeFi grâce à des Tokens de Position transférables.**
+
+En enregistrant les détails pertinents des instruments directement sur le contrat intelligent, non seulement nous pouvons régler ces actifs sur la chaîne, mais le protocole peut également frapper des jetons de position correspondants en tant que preuve numérique définitive de réclamation. De plus, ces jetons de position peuvent être engagés auprès d'autres protocoles DeFi et même de plateformes CeFi en tant que garantie sécurisée, améliorant considérablement la vélocité du capital dans l'ensemble de l'écosystème. Enfin, **en ayant nos coffres DeFi soigneusement conçus comme une option de règlement sécurisée, transparente et 'neutre' sur la blockchain, nous avons éliminé les préoccupations liées à la garde des actifs à travers les intermédiaires crypto, offrant aux utilisateurs une tranquillité d'esprit totale pour se concentrer sur le retour SUR le capital plutôt que sur le retour DE capital**.

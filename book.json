@@ -2,7 +2,6 @@
     "title": "SOFA.org Documentation",
     "author": "SOFA.org",
     "structure" : {
-        "readme" : "INTRO.md"
     },
     "styles": {
         "website": "styles/website.css",
@@ -11,11 +10,29 @@
         "mobi": "styles/mobi.css",
         "epub": "styles/epub.css"
     },
-    "plugins": ["-sharing", "-lunr", "-search", "search-pro", "back-to-top-button", "code", "chapter-fold", "mathjax-pro"],
+    "plugins": [
+        "katex",
+        "-lunr",
+        "-search",
+        "search-plus",
+        "back-to-top-button",
+        "chapter-fold"
+    ],
     "pluginsConfig": {
         "fontsettings": {
             "theme": "white",
             "family": "sans"
-        }
+        },
+        "back-to-top-button": {},
+        "chapter-fold": {},
+        "katex": {
+            "delimiters": [
+                { "left": "$$", "right": "$$", "display": true },
+                { "left": "\\[", "right": "\\]", "display": true },
+                { "left": "\\(", "right": "\\)", "display": false },
+                { "left": "$", "right": "$", "display": false }
+            ]
+        },
+        "search-plus": {}
     }
 }
