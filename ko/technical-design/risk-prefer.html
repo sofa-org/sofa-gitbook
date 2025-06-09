@@ -1,0 +1,733 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <title>위험 선호도 정의하기 · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="oracle.html" />
+    
+    
+    <link rel="prev" href="vault-classification.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org 개요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    다음 DeFi 혁신
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 SOFA 프로토콜에 오신 것을 환영합니다 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    로드맵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    사용자 가이드
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    수익 얻기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    서지
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    $RCH 보상 청구하기! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    기술 설계
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="vault-classification.html">
+            
+                <a href="vault-classification.html">
+            
+                    
+                    금고 분류
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="risk-prefer.html">
+            
+                <a href="risk-prefer.html">
+            
+                    
+                    위험 선호도 정의하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="oracle.html">
+            
+                <a href="oracle.html">
+            
+                    
+                    오라클 구축
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="settlement.html">
+            
+                <a href="settlement.html">
+            
+                    
+                    온체인 정산 고려사항
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="fees.html">
+            
+                <a href="fees.html">
+            
+                    
+                    프로토콜 수수료
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="automator.html">
+            
+                <a href="automator.html">
+            
+                    
+                    자동화기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    보안
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    버그 바운티 프로그램
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    거버넌스 프레임워크
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    외부 비상 사태 및 위험 요소
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    토큰 경제학
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    가상의 $RCH 유동성 시나리오 (LP + 누적 에어드랍)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA 포인트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    개발자 문서
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    시장 조성자 공개 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    DAPP 공개 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    서브그래프
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    배포 계약
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    시장 조성자 온보딩 프로세스
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    링크
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >위험 선호도 정의하기</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="리스크-선호도-정의하기">리스크 선호도 정의하기</h1>
+<blockquote>
+<p><strong>얼마나 많은 하락 리스크를 감수하고 싶으신가요?</strong></p>
+</blockquote>
+<h2 id="earn-프로토콜">Earn 프로토콜</h2>
+<p>'Earn' 프로토콜 카테고리는 자본의 최대 하락 보호를 원하는 리스크 회피형 예금자를 위해 설계되었습니다. Earn 금고는 사용자가 예치한 자본을 안전한 수익 프로토콜(예: AAVE)에 <strong>스테이킹</strong>하여 기본 수준의 이자를 생성하고, 그 보장된 수익의 일부를 옵션 프리미엄을 시장 조성자에게 자금 지원하여 상승 잠재력을 위해 활용합니다.</p>
+<p>최종 결과는 <strong>하락 보호를 극대화</strong>하면서도 시장이 사용자에게 유리하게 움직일 경우 일부 상승 잠재력을 유지합니다.</p>
+<p>그렇긴 하지만, <strong>중요한 설계 요소는 적격 스테이킹 프로토콜이 제공하는 수동 수익이 제품의 최악의 경우 지급액보다 의미 있게 높아야 옵션 프리미엄을 적절히 자금 지원하여 상승 수익을 생성할 수 있다는 점을 요구합니다</strong>. 따라서 사용자가 USDT 대신 ETH를 보유하고 있다면, Lido와 같은 유동 스테이킹 프로토콜에서 ETH를 stETH로 변환한 후, 추가 수익 축적의 혜택을 받기 위해 stETH를 프로토콜 금고에 잠가야 합니다.</p>
+<p><img src="../../static/draw6.png" alt=""></img></p>
+<p><img src="../../static/draw7.png" alt=""></img></p>
+<h2 id="surge-프로토콜">Surge 프로토콜</h2>
+<p>더 큰 리스크-보상 허용 범위를 가진 사용자를 위해, <strong>프로토콜은 선불 자본 '안테'가 있는 더 높은 수익 구조도 제공합니다</strong>. Surge 프로토콜은 자본 손실에 대한 대가로 상당히 높은 수익을 원하는 공격적인 사용자만을 대상으로 합니다.</p>
+<p><img src="../../static/draw8.png" alt=""></img></p>
+<p>이 Surge 기반 제품을 사용하면, <strong>프로토콜 금고는 거래 시작 시 사용자의 원금과 시장 조성자의 프리미엄을 모두 잠급니다. 이는 일종의 '포커 안테'와 유사합니다</strong>. 잠긴 자본 포지션은 다른 프로토콜에 재스테이킹되지 않으며, 최종 지급에 대한 약속된 안테 역할을 합니다.</p>
+<p>Surge-Rangebound 제품을 예로 들어 보겠습니다. 기초 자산의 가격이 최종 만기까지 엄격히 장벽 내에 유지된다면, 사용자는 Earn 버전에서보다 기하급수적으로 높은 수익을 받을 것입니다. 그러나 반대의 상황이 발생할 경우, 구조는 조기 종료되며, 잠긴 원금은 이 전략의 '승자'인 시장 조성자에게 이전됩니다.</p>
+<p>다시 한 번, <strong>이 제품은 매우 강한 시장 확신을 가진 사용자를 위해 설계되었으며, 원금 손실에 대한 대가로 매우 높은 수익률을 얻기 위해 그 확신을 시험하고자 합니다.</strong></p>
+<h2 id="psa-rangebound-제품에-대한-특별-참고-사항">PSA: Rangebound 제품에 대한 특별 참고 사항</h2>
+<p>Rangebound가 실제로 작동하는 방식에 대한 그림 설명</p>
+<p>이론적으로 간단하지만, Rangebound 제품은 실제로 몇 가지 설계 문제를 가지고 있으며, 특히 DeFi 온체인 호환성에 관한 것입니다:</p>
+<ul>
+<li>이 제품은 만기 시 '시점' 확인이 아닌 <em>일련의</em> 역사적 가격을 참조합니다.</li>
+<li>가격 장벽이 침해될 경우 제품이 '타격'을 받을 수 있습니다.</li>
+<li><p>제품은 <em>어떤 순간</em>에도 타격을 받을 수 있지만, 기술적으로 하루 종일 온체인 가격 참조를 지속적으로 새로 고치는 것은 불가능합니다.</p>
+<ul>
+<li>따라서, 범위 확인은 필연적으로 "과거 지향적"입니다.</li>
+</ul>
+</li>
+</ul>
+<p>팀은 이전의 도전에 대한 다음과 같은 디자인 타협을 했습니다:</p>
+<ol>
+<li><p><strong>일일 범위 확인:</strong></p>
+<ul>
+<li>가스 요금과 온체인 TPS를 고려하여, 우리의 Rangebound 제품은 지난 24시간 동안 제품이 탈락되었는지를 확인하기 위해 <em>일일</em><strong> </strong>가격 확인(오후 4시 OTC+8)만 수행합니다.</li>
+<li>탈락된 제품은 더 이상 노출 없이 종료됩니다.</li>
+</ul>
+</li>
+<li><p><strong>일일 제품 주기:</strong></p>
+<ul>
+<li>일일 범위 확인 및 정산 주기와 일관되게, 우리의 관찰 주기는 항상 <em>다음</em> 오후 4시(OTC+8) 기간부터 시작됩니다.</li>
+<li>그럼에도 불구하고, 사용자는 언제든지 Rangebound 제품을 구독하고 구매할 수 있으며, 그들의 Base+ 수익은 즉시 발생하기 시작합니다.</li>
+</ul>
+</li>
+<li><p><strong>조기 종료 대 최종 인출:</strong></p>
+<ul>
+<li>'탈락'된 Rangebound 제품은 사실상 '게임 오버'입니다; 그러나 사용자 예치는 Aave에 스테이킹된 상태로 남아 있으며, 현재 버전에서는 사용자가 원금을 인출하기 위해 최종 만기를 기다려야 합니다.</li>
+</ul>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="vault-classification.html" class="navigation navigation-prev " aria-label="Previous page: 금고 분류">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="oracle.html" class="navigation navigation-next " aria-label="Next page: 오라클 구축">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"위험 선호도 정의하기","level":"1.6.2","depth":2,"next":{"title":"오라클 구축","level":"1.6.3","depth":2,"path":"technical-design/oracle.md","ref":"technical-design/oracle.md","articles":[]},"previous":{"title":"금고 분류","level":"1.6.1","depth":2,"path":"technical-design/vault-classification.md","ref":"technical-design/vault-classification.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"ko","gitbook":"*"},"file":{"path":"technical-design/risk-prefer.md","mtime":"2025-06-06T17:53:22.126Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"ko"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

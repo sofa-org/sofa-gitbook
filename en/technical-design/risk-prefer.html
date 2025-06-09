@@ -1,0 +1,733 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Defining Your Risk Preference · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="oracle.html" />
+    
+    
+    <link rel="prev" href="vault-classification.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    Innovating the Next Wave of DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 Welcome To the SOFA Protocols 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    Roadmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    User Guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    Earn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    Surge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    Claiming Your $RCH Rewards! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Technical Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="vault-classification.html">
+            
+                <a href="vault-classification.html">
+            
+                    
+                    Vault Classification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="risk-prefer.html">
+            
+                <a href="risk-prefer.html">
+            
+                    
+                    Defining Your Risk Preference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="oracle.html">
+            
+                <a href="oracle.html">
+            
+                    
+                    Oracle Construction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="settlement.html">
+            
+                <a href="settlement.html">
+            
+                    
+                    On-Chain Settlement Considerations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="fees.html">
+            
+                <a href="fees.html">
+            
+                    
+                    Protocol Fees
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="automator.html">
+            
+                <a href="automator.html">
+            
+                    
+                    Automator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    Bug Bounty Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    Governance Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    External Contingencies & Risk Factors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    Tokenomics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    Hypothetical $RCH Float Scenario (LP + Cumulative Airdrops)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA Points
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA FAQs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    Developer Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    Market Maker Open APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    DAPP Open APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    Subgraphs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    Deployment Contracts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    Market Maker Onboarding Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    Links
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Defining Your Risk Preference</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="defining-your-risk-preference">Defining Your Risk Preference</h1>
+<blockquote>
+<p><strong>How much downside risk do you wish to take?</strong></p>
+</blockquote>
+<h2 id="earn-protocol">Earn Protocol</h2>
+<p>The 'Earn' protocol category is designed for risk-averse depositors looking for the utmost downside protection of their capital.  Earn vaults will<strong> </strong>stake<strong> users' deposited capital in safe-yielding protocols (eg. AAVE) to generate a base level of interest</strong>, and utilize a portion of that guaranteed income to fund option premium with market makers for upside potential.</p>
+<p>The end result will <strong>maximize downside protection</strong>, while still maintaining some upside potential should the market move favourably in the user's direction.</p>
+<p>With that being said, please note that a <strong>critical design component requires the passive yields offered by the eligible staking protocols to be meaningfully above the product's worst-case payout, in order to properly fund the option premium to generate the upside return</strong>.  As such, should the user be holding ETH instead of USDT, he/she will need to convert the ETH into stETH in a liquid staking protocol such as Lido, before locking the stETH into the protocol vaults to benefit from the extra yield accretion.</p>
+<p><img src="../../static/draw6.png" alt=""></img></p>
+<p><img src="../../static/draw7.png" alt=""></img></p>
+<h2 id="surge-protocol">Surge Protocol</h2>
+<p>For users with a greater risk-reward tolerance, the <strong>protocol also offers higher-return structures with an upfront capital 'ante'</strong>.  Surge protocols are solely targeted at aggressive users who are desirious of substantially high returns in exchange for capital losses.</p>
+<p><img src="../../static/draw8.png" alt=""></img></p>
+<p>With these Surge-based products, the <strong>protocol vault will lock in both the user's principal as well as the market makers' premium at trade inception, </strong>analogous to a 'poker-ante' of sorts**. The locked capital positions will <em>not</em> be restaked to any other protocols, and it serves as the committed-ante against the final payoff.</p>
+<p>Let's use the Surge-Rangebound product as an example.  Should the price of the underlying asset remain strictly within the barriers by final maturity, the user will receive an exponentially higher return than he would have under the Earn version.  However, should the opposite happen, the structure will be early-terminated, with the locked principal being transferred to the market maker as the 'winner' of this strategy.</p>
+<p>Once again, <strong>these products are intended for users holding a very strong market conviction, and would like to put that confidence to test in hopes of earning a very high rate of return in exchange for principal losses.</strong></p>
+<h2 id="psa-special-note-on-rangebound-products">PSA: Special Note on Rangebound Products</h2>
+<p>Pictorial Illustration of How Rangebound Works in Practice</p>
+<p>While simple in theory, the Rangebound product actually has some design challenges, especially when it comes to DeFi on-chain compatibility:</p>
+<ul>
+<li>The product references a <em>series</em> of historical prices, rather than a 'point-in-time' check at expiry.</li>
+<li>The product can be 'knocked-out' should the price barriers get breached.</li>
+<li><p>The product can be knocked-out at <em>any second</em>, but it's technically unfeasible to refresh on-chain price references continuously throughout the day.</p>
+<ul>
+<li>By extension, range-checks are "backward-looking" out of necessity.</li>
+</ul>
+</li>
+</ul>
+<p>The team has made the following design compromises against the preceding challenges:</p>
+<ol>
+<li><p><strong>Daily Range Checks:</strong></p>
+<ul>
+<li>In the interest of gas fees and on-chain TPS, our Rangebound product will only do a <em>daily</em><strong> </strong>price check (at 4pm OTC+8) of whether the product has been knocked out over the past 24 hours.</li>
+<li>Knocked-out products will terminate with no more exposure going forward.</li>
+</ul>
+</li>
+<li><p><strong>Daily Product Cycles:</strong></p>
+<ul>
+<li>Consistent with the daily range checks and settlement cadence, our observation cycle will always begin from the _next _4pm (OTC+8) period</li>
+<li>Nevertheless, users are free to subscribe and purchase a Rangebound product at anytime, and their Base+ Yield will start accruing immediately.</li>
+</ul>
+</li>
+<li><p><strong>Early Termination vs Final Withdrawal:</strong></p>
+<ul>
+<li>Rangebound products which are 'knocked out' are effectively 'game over'; however, user deposits remain staked in Aave, and we must wait until final maturity for users to withdraw the principal in our current iteration.</li>
+</ul>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="vault-classification.html" class="navigation navigation-prev " aria-label="Previous page: Vault Classification">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="oracle.html" class="navigation navigation-next " aria-label="Next page: Oracle Construction">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Defining Your Risk Preference","level":"1.6.2","depth":2,"next":{"title":"Oracle Construction","level":"1.6.3","depth":2,"path":"technical-design/oracle.md","ref":"technical-design/oracle.md","articles":[]},"previous":{"title":"Vault Classification","level":"1.6.1","depth":2,"path":"technical-design/vault-classification.md","ref":"technical-design/vault-classification.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"en","gitbook":"*"},"file":{"path":"technical-design/risk-prefer.md","mtime":"2025-06-06T11:38:17.486Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

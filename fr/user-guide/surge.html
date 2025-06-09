@@ -1,0 +1,718 @@
+
+<!DOCTYPE HTML>
+<html lang="fr" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Surge · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="claim.html" />
+    
+    
+    <link rel="prev" href="earn.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Tapez pour rechercher" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Présentation de SOFA.org
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    Innover la prochaine vague de DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 Bienvenue dans les Protocoles SOFA 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    Feuille de route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Guide de l'utilisateur
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="earn.html">
+            
+                <a href="earn.html">
+            
+                    
+                    Gagner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="surge.html">
+            
+                <a href="surge.html">
+            
+                    
+                    Surge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="claim.html">
+            
+                <a href="claim.html">
+            
+                    
+                    Réclamer vos récompenses $RCH ! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../technical-design/">
+            
+                <a href="../technical-design/">
+            
+                    
+                    Conception technique
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../technical-design/vault-classification.html">
+            
+                <a href="../technical-design/vault-classification.html">
+            
+                    
+                    Classification des coffres
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../technical-design/risk-prefer.html">
+            
+                <a href="../technical-design/risk-prefer.html">
+            
+                    
+                    Définir votre préférence de risque
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../technical-design/oracle.html">
+            
+                <a href="../technical-design/oracle.html">
+            
+                    
+                    Construction d'oracle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../technical-design/settlement.html">
+            
+                <a href="../technical-design/settlement.html">
+            
+                    
+                    Considérations sur le règlement en chaîne
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../technical-design/fees.html">
+            
+                <a href="../technical-design/fees.html">
+            
+                    
+                    Frais de protocole
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../technical-design/automator.html">
+            
+                <a href="../technical-design/automator.html">
+            
+                    
+                    Automatisateur
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    Sécurité
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    Programme de récompense pour bugs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    Cadre de gouvernance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    Contingences externes et facteurs de risque
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    Tokenomics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    Scénario hypothétique de flottement $RCH (LP + Airdrops cumulés)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    Points $SOFA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    FAQ SOFA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    Documentation pour les développeurs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    APIs ouvertes pour les market makers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    APIs ouvertes pour DAPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    Sous-graphes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    Contrats de déploiement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    Processus d'intégration des market makers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    Liens
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Publié avec HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Surge</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="surge">Surge</h1>
+<h2 id="rangebound"><strong>Rangebound</strong></h2>
+<h3 id="étape-1--sélectionner-votre-produit"><strong>Étape 1 : Sélectionner votre produit</strong></h3>
+<p>→ Naviguez vers l'onglet Protocole et cliquez sur Surge.</p>
+<p>→ Choisissez le produit structuré <strong>Rangebound</strong>.</p>
+<p>→ Sélectionnez l'actif sous-jacent que vous préférez : BTC ou ETH.</p>
+<p>→ Sélectionnez l'une des meilleures transactions recommandées pour l'actif choisi.</p>
+<p><img src="../../static/D5kEbfGCroUXUbxsASLuvX8asmh.png" alt=""></img></p>
+<h3 id="étape-2--définir-les-détails-de-la-transaction"><strong>Étape 2 : Définir les détails de la transaction</strong></h3>
+<p>→ Les sélections rapides sont affichées en haut pour une sélection rapide.</p>
+<p>→ Alternativement, personnalisez votre transaction en définissant la <strong>Plage de Prix</strong>, la <strong>Date d'Expiration</strong> et le <strong>Nombre de Billets</strong>. Chaque billet est évalué à <strong>20 USDT</strong>.</p>
+<p>→ Ajoutez des transactions supplémentaires pour différents produits en cliquant sur le bouton <strong>+</strong>.</p>
+<p>→ Passez en revue vos sélections et cliquez sur <strong>Acheter Tous les Billets</strong> pour continuer.</p>
+<p><img src="../../static/K4nfbKWLQoD1tNxcYt5uVYs5ssd.png" alt=""></img></p>
+<h3 id="étape-3--confirmer-votre-transaction"><strong>Étape 3 : Confirmer votre transaction</strong></h3>
+<p>Lorsque vous y êtes invité, interagissez avec les fenêtres suivantes pour confirmer la transaction :</p>
+<ol>
+<li><strong>Demande de Signature</strong> : Une fenêtre de demande de signature apparaîtra en premier. Cliquez sur <strong>Signer</strong> pour autoriser.</li>
+<li><strong>Exécution de la Transaction</strong> : Après avoir signé, une fenêtre de confirmation apparaîtra. Cliquez sur <strong>Confirmer</strong> pour finaliser la transaction.</li>
+</ol>
+<p>✅ Assurez-vous que les deux actions sont complétées pour réaliser votre transaction avec succès.</p>
+<p><img src="../../static/MNn5b6amVo2vDqxlgGyuZEjEsic.png" alt=""></img></p>
+<p><img src="../../static/NcKjbHhfVoXaJgxVOkPuX1Isswh.png" alt=""></img></p>
+<h3 id="étape-4--exécution-de-la-transaction"><strong>Étape 4 : Exécution de la Transaction</strong></h3>
+<p>→ Félicitations ! Votre transaction a été soumise avec succès sur la chaîne. ✅</p>
+<p><img src="../../static/JDidb7C0Go1YWLxacZ1umoO5sMg.png" alt=""></img></p>
+<h3 id="étape-5--suivi-de-votre-position"><strong>Étape 5 : Suivi de Votre Position</strong></h3>
+<p>→ Accédez à l'onglet <strong>Position</strong> pour voir les détails de votre trade après l'exécution de la transaction.</p>
+<p><img src="../../static/ImXVbPatdoZlP1xbtoauuLXOsag.png" alt=""></img></p>
+<h3 id="étape-6--réclamation-de-vos-paiements"><strong>Étape 6 : Réclamation de Vos Paiements</strong></h3>
+<p>→ À la date de règlement (d'échéance), allez à l'onglet <strong>Position</strong>, ouvrez votre ticket de trade et cliquez sur <strong>Réclamer</strong> pour recevoir vos paiements.</p>
+<h2 id="tendance-haussière--tendance-baissière"><strong>Tendance Haussière &amp; Tendance Baissière</strong></h2>
+<p>Suit les mêmes étapes que celles décrites pour le produit Rangebound.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="earn.html" class="navigation navigation-prev " aria-label="Previous page: Gagner">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="claim.html" class="navigation navigation-next " aria-label="Next page: Réclamer vos récompenses $RCH ! 🎁">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Surge","level":"1.5.2","depth":2,"next":{"title":"Réclamer vos récompenses $RCH ! 🎁","level":"1.5.3","depth":2,"path":"user-guide/claim.md","ref":"user-guide/claim.md","articles":[]},"previous":{"title":"Gagner","level":"1.5.1","depth":2,"path":"user-guide/earn.md","ref":"user-guide/earn.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"fr","gitbook":"*"},"file":{"path":"user-guide/surge.md","mtime":"2025-06-06T19:09:48.995Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"fr"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

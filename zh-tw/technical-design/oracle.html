@@ -1,0 +1,711 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    <head>
+        <meta charset="UTF-8">
+        <title>預言機構建 · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="settlement.html" />
+    
+    
+    <link rel="prev" href="risk-prefer.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org 概覽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    創新下一波 DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 歡迎來到 SOFA 協議 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    路線圖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    用戶指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    賺取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    激增
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    領取您的 $RCH 獎勵！🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    技術設計
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="vault-classification.html">
+            
+                <a href="vault-classification.html">
+            
+                    
+                    保險庫分類
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="risk-prefer.html">
+            
+                <a href="risk-prefer.html">
+            
+                    
+                    定義您的風險偏好
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.3" data-path="oracle.html">
+            
+                <a href="oracle.html">
+            
+                    
+                    預言機構建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="settlement.html">
+            
+                <a href="settlement.html">
+            
+                    
+                    鏈上結算考量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="fees.html">
+            
+                <a href="fees.html">
+            
+                    
+                    協議費用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="automator.html">
+            
+                <a href="automator.html">
+            
+                    
+                    自動化器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    安全性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    漏洞賞金計劃
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    治理框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    外部應急措施與風險因素
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    代幣經濟學
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    假設的 $RCH 流通情境 (LP + 累積空投)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA 積分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA 常見問題
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    開發者文檔
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    做市商開放 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    DAPP 開放 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    子圖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    部署合約
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    做市商入駐流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    連結
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >預言機構建</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="oracle-construction">Oracle Construction</h1>
+<p>在加密貨幣和去中心化金融（DeFi）的世界中，<strong>及時且準確地獲取鏈外數據至關重要。</strong> 由於智能合約無法直接訪問外部系統或數據來源，預言機充當了這一差距的橋樑，將外部信息帶入區塊鏈。必須提供可信賴的數據服務，以確保結算的完全透明和可追溯性，同時最大限度地減少可能的爭議。</p>
+<p>以高度去中心化、可靠性和適應性著稱的<strong>ChainLink</strong>預言機服務已被選為SOFA獲取鏈外數據的主要方式。此外，使用ChainLink價格饋送還有<strong>保護協議免受“閃電貸攻擊”的額外好處</strong>，而<strong>數據饋送的來源將來自Coinbase等知名交易平台</strong>，以確保數據的神聖性。</p>
+<p><img src="../../static/chainlink.png" alt=""></img></p>
+<p>SOFA利用<a href="https://www.apro.com" target="_blank">APRO Oracle</a>來保護我們在多條鏈上的資產。來自<strong>APRO Oracle</strong>的支持和保護使我們能夠維持鏈上資產的穩定性和安全性。欲了解更多信息，請參閱<a href="https://docs.apro.com/en" target="_blank">APRO Oracle文檔</a>。</p>
+<p><img src="../../static/apro.jpg" alt=""></img></p>
+<h2 id="現貨價格--到期價格">現貨價格 / 到期價格</h2>
+<p>通過預言機在鏈上獲取標的資產的當前價格通常有兩種方式：</p>
+<ul>
+<li>調用像Uniswap這樣的去中心化交易所（DEX）的合約來獲取標的資產的價格或時間加權平均價格（TWAP）</li>
+<li>通過像ChainLink這樣的預言機服務提供的數據饋送獲取資產價格</li>
+</ul>
+<p>考慮到結算價格需要盡可能接近CeFi交易所的價格（以便用戶或做市商進行對沖）以及安全原因（避免操縱和攻擊），我們<strong>選擇ChainLink的數據饋送作為我們到期價格的預言機來源</strong>。</p>
+<p>通過ChainLink的去中心化數據來源，這些來源從不同的交易所聚合價格信息，我們確保我們的智能合約執行基於最新、可靠且最公平的公開可用價格數據集。</p>
+<h2 id="從歷史收盤價計算的價格">從歷史收盤價計算的價格</h2>
+<p>對於像Rangebound這樣的產品，需要知道從鑄造開始到到期的標的代幣的最高和最低價格，以計算最終支付。常見的鏈上通常無法提供此數據，因為鏈上預言機不提供連續的時間序列數據。</p>
+<p>我們沒有部署自己的預言機合約作為（常見的）中心化妥協，而是在<strong>ChainLink的Functions產品</strong>中找到了答案。得益於最新的創新，我們能夠以去中心化的方式調用鏈外API，並通過像典型數據饋送一樣的去中心化節點將獲得的數據發布到鏈上。</p>
+<p><img src="../../static/KxYlbnS0IoEtX6xAxV1uB0WKsLg.png" alt=""></img></p>
+<h2 id="自動化定期更新服務">自動化定期更新服務</h2>
+<p>SOFA利用ChainLink Automation來保證價格定期自動更新並推送到區塊鏈。ChainLink Automation提供了一個去中心化網絡，智能合約可以在其中安排並自動執行複雜任務，包括間隔數據更新、觸發事件，甚至是關鍵合約調整。這<strong>確保鏈上價格始終保持最新，並為SOFA的連接dApps網絡提供數據信心</strong>。</p>
+<p><img src="../../static/FESNbrjpEobC0DxtBz5u6Og0sgf.png" alt=""></img></p>
+<h2 id="去中心化和可追溯性">去中心化和可追溯性</h2>
+<p>忠於我們的核心DeFi精神，<strong>SOFA的價格數據檢索過程將始終完全去中心化</strong>，在合約層面提供完整的審計可追溯性。我們對透明處理的倡導確保系統中的每一步都可以由用戶公開驗證，價格數據細節如提供者來源和聚合邏輯始終可觀察。</p>
+<h2 id="預言機服務的持續創新">預言機服務的持續創新</h2>
+<p>雖然ChainLink仍然是DeFi數據可靠性的黃金標準，但SOFA不斷探索並保持對預言機服務最新創新的了解。我們意識到過度依賴有限的提供者來源，將<strong>努力在技術上盡可能多樣化我們的協議輸入</strong>。</p>
+<p>從長遠來看，SOFA致力於為用戶提供一個強大、透明、去中心化和可持續的數據獲取系統，能夠保護用戶利益，同時確保運營的長久性。</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="risk-prefer.html" class="navigation navigation-prev " aria-label="Previous page: 定義您的風險偏好">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="settlement.html" class="navigation navigation-next " aria-label="Next page: 鏈上結算考量">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"預言機構建","level":"1.6.3","depth":2,"next":{"title":"鏈上結算考量","level":"1.6.4","depth":2,"path":"technical-design/settlement.md","ref":"technical-design/settlement.md","articles":[]},"previous":{"title":"定義您的風險偏好","level":"1.6.2","depth":2,"path":"technical-design/risk-prefer.md","ref":"technical-design/risk-prefer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"zh-tw","gitbook":"*"},"file":{"path":"technical-design/oracle.md","mtime":"2025-06-07T05:11:13.007Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"zh-tw"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

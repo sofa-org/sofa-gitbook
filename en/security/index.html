@@ -1,0 +1,715 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Security · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="bug-bounty.html" />
+    
+    
+    <link rel="prev" href="../technical-design/automator.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    Innovating the Next Wave of DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 Welcome To the SOFA Protocols 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    Roadmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    User Guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    Earn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    Surge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    Claiming Your $RCH Rewards! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../technical-design/">
+            
+                <a href="../technical-design/">
+            
+                    
+                    Technical Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../technical-design/vault-classification.html">
+            
+                <a href="../technical-design/vault-classification.html">
+            
+                    
+                    Vault Classification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../technical-design/risk-prefer.html">
+            
+                <a href="../technical-design/risk-prefer.html">
+            
+                    
+                    Defining Your Risk Preference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../technical-design/oracle.html">
+            
+                <a href="../technical-design/oracle.html">
+            
+                    
+                    Oracle Construction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../technical-design/settlement.html">
+            
+                <a href="../technical-design/settlement.html">
+            
+                    
+                    On-Chain Settlement Considerations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../technical-design/fees.html">
+            
+                <a href="../technical-design/fees.html">
+            
+                    
+                    Protocol Fees
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../technical-design/automator.html">
+            
+                <a href="../technical-design/automator.html">
+            
+                    
+                    Automator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="bug-bounty.html">
+            
+                <a href="bug-bounty.html">
+            
+                    
+                    Bug Bounty Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="governance.html">
+            
+                <a href="governance.html">
+            
+                    
+                    Governance Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="external.html">
+            
+                <a href="external.html">
+            
+                    
+                    External Contingencies & Risk Factors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    Tokenomics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    Hypothetical $RCH Float Scenario (LP + Cumulative Airdrops)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA Points
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA FAQs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    Developer Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    Market Maker Open APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    DAPP Open APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    Subgraphs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    Deployment Contracts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    Market Maker Onboarding Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    Links
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Security</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="security">Security</h1>
+<p>Security is the cornerstone and bedrock behind any decentralized platform.  We define protocol security as encompassing asset safety, personal information protection, and smart contract reliability.  In response to these considerations, we have implemented a series of stringent security measures, from contract design to protocol monitoring.</p>
+<h2 id="simple-is-more-secure">Simple is More Secure</h2>
+<p>SOFA's smart contracts, which carry the platform's core functionalities, follow the principle of "<strong>simple is more secure</strong>".  This principle seeks to avoid unnecessary complexity to reduce potential security risks.  The interaction between smart contracts is meticulously designed to ensure a streamlined and clear logical process, thereby minimizing the possibility of errors and vulnerabilities.  Furthermore, <strong>all of the protocol's smart contracts are open source and transparent, providing a full auditable trial</strong> to any 3rd party observer.</p>
+<h2 id="upgrade-mechanism">Upgrade Mechanism</h2>
+<p>All Vault contracts will inherit OpenZepplin's Upgradeable contracts.  Upon governance vote approval, <strong>contracts can be logically upgraded without changing the contract wallet address to ensure asset safety</strong>.  This mechanism allows vulnerability fixes and function optimization with minimal disruption.</p>
+<h3 id="multiple-smart-contract-audits">Multiple Smart Contract Audits</h3>
+<p><strong>SOFA will continue to seek professional smart contract audits confirmations from the industry's top security firms</strong> to identify and fix potential security flaws.  By the project launch, SOFA's contract code would have undergone several rounds of stringent inspections to meet the highest standard of security audits available.  Furthermore, the same rigorous audit process will be repeated upon any significant protocol or functionality upgrades.</p>
+<p>Find our audit reports here.</p>
+<ul>
+<li><a href="https://github.com/zenith-security/reports/blob/main/reports/Audit%20Report%20-%20Sofa%20%28May%202024%29.pdf" target="_blank">Code4rena(Zenith)</a></li>
+<li><a href="https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf" target="_blank">Peckshield</a></li>
+<li><a href="https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf" target="_blank">SigmaPrime</a></li>
+<li><a href="https://github.com/zenith-security/reports/blob/main/reports/Audit%20Report%20-%20Sofa%20Automator%28Oct%202024%29.pdf" target="_blank">Automator audited by Code4rena(Zenith)</a></li>
+<li><a href="https://github.com/zenith-security/reports/blob/main/reports/Zenith%20Audit%20Report%20-%20Sofa%20Automator%202.0.pdf" target="_blank">Automator2.0 audited by Code4rena(Zenith)</a></li>
+<li><a href="https://reports.electisec.com/reports/01-2025-Sofa-Protocol" target="_blank">Automator2.0 &amp; Dual Currency audited by yAudit</a></li>
+</ul>
+<h2 id="247-monitoring-for-anomalous-activity">24/7 Monitoring for Anomalous Activity</h2>
+<p>To continuously ensure asset safety, <strong>SOFA has implemented a 24/7 anomalous activity monitoring system</strong> for the entire protocol.  This system can detect and respond to unusual transaction patterns or behaviors in real-time, such as potential security attacks or abnormal fund flows. Upon detecting threats, our monitoring system can quickly trigger alerts and take necessary steps to prevent protocol damage.</p>
+<h2 id="decentralized-attack-resistance">Decentralized Attack Resistance</h2>
+<p>As a native DeFi protocol, SOFA operates over a decentralized server network, meaning there is <strong>minimal risk of system downtime due to a single point of failure</strong>.  With blockchain's distributed architecture, data is replicated and stored across various nodes, enhancing the system's resilience and resistance to cyber attacks.</p>
+<p>Decentralized server solutions offer the following advantages over conventional data servers:</p>
+<ul>
+<li><strong>Enhanced Stability</strong>:  By dispersing service nodes worldwide, we can ensure high reliability for our websites and dApp services, providing undisrupted services to protocol users.</li>
+<li><strong>Improved Availability</strong>:  Decentralized structure ensures that there are no central nodes that could become bottlenecks or single points of failure.</li>
+<li><strong>Attack Resistance</strong>:  Malefactors would need to compromise multiple nodes simultaneously to impact the service, significantly lowering the chance of success and bolstering protocol safety.</li>
+</ul>
+<h2 id="protecting-user-privacy">Protecting User Privacy</h2>
+<p>In addition to upholding our decentralisation principles, SOFA is a big proponent of user privacy and data protection.  <strong>The protocol does not collect or store any personal information that can be used to identify users outside of their wallet addresses</strong>.</p>
+<p>With judicious contract design, professional audit validation, around-the-clock monitoring, and decentralized operations, SOFA is dedicated to providing a safe, reliable, and privacy-protecting environment for all DeFi users.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../technical-design/automator.html" class="navigation navigation-prev " aria-label="Previous page: Automator">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="bug-bounty.html" class="navigation navigation-next " aria-label="Next page: Bug Bounty Program">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Security","level":"1.7","depth":1,"next":{"title":"Bug Bounty Program","level":"1.7.1","depth":2,"path":"security/bug-bounty.md","ref":"security/bug-bounty.md","articles":[]},"previous":{"title":"Automator","level":"1.6.6","depth":2,"path":"technical-design/automator.md","ref":"technical-design/automator.md","articles":[]},"articles":[{"title":"Bug Bounty Program","level":"1.7.1","depth":2,"path":"security/bug-bounty.md","ref":"security/bug-bounty.md","articles":[]},{"title":"Governance Framework","level":"1.7.2","depth":2,"path":"security/governance.md","ref":"security/governance.md","articles":[]},{"title":"External Contingencies & Risk Factors","level":"1.7.3","depth":2,"path":"security/external.md","ref":"security/external.md","articles":[]}],"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"en","gitbook":"*"},"file":{"path":"security/README.md","mtime":"2025-06-06T10:17:15.407Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

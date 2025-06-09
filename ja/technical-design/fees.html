@@ -1,0 +1,719 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>プロトコル手数料 · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="automator.html" />
+    
+    
+    <link rel="prev" href="settlement.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org 概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    次世代 DeFi の革新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 SOFA プロトコルへようこそ 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    ロードマップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    ユーザーガイド
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    稼ぐ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    サージ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    $RCH 報酬の請求！ 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    技術設計
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="vault-classification.html">
+            
+                <a href="vault-classification.html">
+            
+                    
+                    ボールト分類
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="risk-prefer.html">
+            
+                <a href="risk-prefer.html">
+            
+                    
+                    リスク嗜好の定義
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="oracle.html">
+            
+                <a href="oracle.html">
+            
+                    
+                    オラクル構築
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="settlement.html">
+            
+                <a href="settlement.html">
+            
+                    
+                    オンチェーン決済の考慮事項
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.5" data-path="fees.html">
+            
+                <a href="fees.html">
+            
+                    
+                    プロトコル手数料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="automator.html">
+            
+                <a href="automator.html">
+            
+                    
+                    オートメーター
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    セキュリティ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    バグバウンティプログラム
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    ガバナンスフレームワーク
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    外部の不測の事態とリスク要因
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    トークノミクス
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    仮想の $RCH フロートシナリオ (LP + 累積エアドロップ)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA ポイント
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA よくある質問
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    開発者ドキュメント
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    マーケットメイカーオープンAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    DAPP オープンAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    サブグラフ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    デプロイメント契約
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    マーケットメイカーのオンボーディングプロセス
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    リンク
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >プロトコル手数料</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="プロトコル手数料">プロトコル手数料</h1>
+<p>SOFAでは、ユーザーが市場メーカーから透明で公正な価格で幅広い構造化商品を民主的に購入できる、公正で透明な金融エコシステムの構築に取り組んでいます。さらに、<strong>完全に分散型のプロジェクトとして、プロトコルの利益が主に私たちの基盤ユーザーと共有されることを確保したいと考えています</strong>。これにより、特定の利害関係者への特権的な支払いではなく、完全なインセンティブの整合性が保証されます。そのため、<strong>適切な価値の蓄積を確保し、長期的なプラットフォームの持続可能性を支援するために、'フェアローンチ'トークノミクスを用いた一連の手数料構造を考案しました</strong>。SOFA内でのVCの喜び乗車や出口流動性のダンプはありません。</p>
+<h2 id="プロトコル手数料">プロトコル手数料</h2>
+<blockquote>
+<p>💰 SOFAは、ユーザーのオプションプレミアムの15%を基本取引手数料として徴収します。さらに、ユーザーに対して「勝利」支払いが発生した場合、総グロスアップサイドペイアウトに対してさらに5%の決済手数料が課されます。</p>
+</blockquote>
+<h2 id="手数料計算">手数料計算</h2>
+<p>完全な透明性のために、私たちのプロトコルにおける手数料とペイオフの計算方法の例を以下に示します。</p>
+<p><strong>定義:</strong></p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mi>r</mi><mi>e</mi><mi>m</mi><mi>i</mi><mi>u</mi><mi>m</mi><mo>=</mo><mi>N</mi><mi>o</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mi>a</mi><msub><mi>l</mi><mrow><mi>D</mi><mi>e</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi></mrow></msub><mo>∗</mo><mo>(</mo><mn>1</mn><mo>+</mo><mi>A</mi><mi>A</mi><mi>V</mi><msub><mi>E</mi><mrow><mn>1</mn><mi>M</mi><mi>o</mi><mi>n</mi><mi>t</mi><mi>h</mi><mi>A</mi><mi>v</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>g</mi><mi>e</mi></mrow></msub><mo>−</mo><mi>B</mi><mi>a</mi><mi>s</mi><mi>e</mi><mi>Y</mi><mi>i</mi><mi>e</mi><mi>l</mi><mi>d</mi><msup><mo>)</mo><mrow><mi>F</mi><mi>u</mi><mi>l</mi><mi>l</mi><mi>D</mi><mi>a</mi><mi>y</mi><mi>s</mi><mi mathvariant="normal">/</mi><mn>3</mn><mn>6</mn><mn>5</mn></mrow></msup><mo>−</mo><mi>N</mi><mi>o</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mi>a</mi><msub><mi>l</mi><mrow><mi>D</mi><mi>e</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">Premium = Notional_{Deposit} * (1 + AAVE_{1MonthAverage} - BaseYield)^{Full Days/365} - Notional_{Deposit}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8879999999999999em;"></span><span class="strut bottom" style="height:1.174108em;vertical-align:-0.286108em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">u</span><span class="mord mathit">m</span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mord mathit">o</span><span class="mord mathit">t</span><span class="mord mathit">i</span><span class="mord mathit">o</span><span class="mord mathit">n</span><span class="mord mathit">a</span><span class="mord"><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.01968em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.02778em;">D</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight">p</span><span class="mord mathit mtight">o</span><span class="mord mathit mtight">s</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">t</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">∗</span><span class="mopen">(</span><span class="mord mathrm">1</span><span class="mbin">+</span><span class="mord mathit">A</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.22222em;">V</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathrm mtight">1</span><span class="mord mathit mtight" style="margin-right:0.10903em;">M</span><span class="mord mathit mtight">o</span><span class="mord mathit mtight">n</span><span class="mord mathit mtight">t</span><span class="mord mathit mtight">h</span><span class="mord mathit mtight">A</span><span class="mord mathit mtight" style="margin-right:0.03588em;">v</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span><span class="mord mathit mtight">a</span><span class="mord mathit mtight" style="margin-right:0.03588em;">g</span><span class="mord mathit mtight">e</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">−</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mord mathit">a</span><span class="mord mathit">s</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.22222em;">Y</span><span class="mord mathit">i</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">d</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathit mtight" style="margin-right:0.13889em;">F</span><span class="mord mathit mtight">u</span><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span><span class="mord mathit mtight" style="margin-right:0.02778em;">D</span><span class="mord mathit mtight">a</span><span class="mord mathit mtight" style="margin-right:0.03588em;">y</span><span class="mord mathit mtight">s</span><span class="mord mathrm mtight">/</span><span class="mord mathrm mtight">3</span><span class="mord mathrm mtight">6</span><span class="mord mathrm mtight">5</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">−</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mord mathit">o</span><span class="mord mathit">t</span><span class="mord mathit">i</span><span class="mord mathit">o</span><span class="mord mathit">n</span><span class="mord mathit">a</span><span class="mord"><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.01968em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.02778em;">D</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight">p</span><span class="mord mathit mtight">o</span><span class="mord mathit mtight">s</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">t</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></p>
+<p><em>MMの担保 = 市場メーカーからのボールトロック担保</em></p>
+<p><strong>観察ウィンドウ:</strong></p>
+<p><em>次の16:00 (UTC+8) から満期日16:00 (UTC+8) まで</em></p>
+<p><strong>満期時のユーザーペイオフ:</strong></p>
+<ol>
+<li><p>ノックアウトされた場合</p>
+<p> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mi>a</mi><mi>y</mi><mi>o</mi><mi>f</mi><msub><mi>f</mi><mrow><mi>i</mi><mi>n</mi><mi>U</mi><mi>S</mi><mi>D</mi><mi>T</mi></mrow></msub><mo>=</mo><mi>N</mi><mi>o</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mi>a</mi><msub><mi>l</mi><mrow><mi>D</mi><mi>e</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi></mrow></msub><mo>+</mo><mi>A</mi><mi>A</mi><mi>V</mi><mi>E</mi><mi>I</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>e</mi><mi>s</mi><msub><mi>t</mi><mrow><mi>A</mi><mi>c</mi><mi>t</mi><mi>u</mi><mi>a</mi><mi>l</mi></mrow></msub><mo>−</mo><mi>P</mi><mi>r</mi><mi>e</mi><mi>m</mi><mi>i</mi><mi>u</mi><mi>m</mi><mo>∗</mo><mo>(</mo><mn>1</mn><mo>+</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>1</mn><mn>5</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">Payoff_{inUSDT} = Notional_{Deposit} + AAVEInterest_{Actual} - Premium * (1 + 0.15)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.10764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mord mathit mtight">n</span><span class="mord mathit mtight" style="margin-right:0.10903em;">U</span><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="mord mathit mtight" style="margin-right:0.02778em;">D</span><span class="mord mathit mtight" style="margin-right:0.13889em;">T</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mord mathit">o</span><span class="mord mathit">t</span><span class="mord mathit">i</span><span class="mord mathit">o</span><span class="mord mathit">n</span><span class="mord mathit">a</span><span class="mord"><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.01968em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.02778em;">D</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight">p</span><span class="mord mathit mtight">o</span><span class="mord mathit mtight">s</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">t</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">+</span><span class="mord mathit">A</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.22222em;">V</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathit" style="margin-right:0.07847em;">I</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">s</span><span class="mord"><span class="mord mathit">t</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">A</span><span class="mord mathit mtight">c</span><span class="mord mathit mtight">t</span><span class="mord mathit mtight">u</span><span class="mord mathit mtight">a</span><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">−</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">u</span><span class="mord mathit">m</span><span class="mbin">∗</span><span class="mopen">(</span><span class="mord mathrm">1</span><span class="mbin">+</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">1</span><span class="mord mathrm">5</span><span class="mclose">)</span></span></span></span></p>
+</li>
+<li><p>ノックアウトされなかった場合</p>
+<p> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mi>a</mi><mi>y</mi><mi>o</mi><mi>f</mi><msub><mi>f</mi><mrow><mi>i</mi><mi>n</mi><mi>U</mi><mi>S</mi><mi>D</mi><mi>T</mi></mrow></msub><mo>=</mo><mi>N</mi><mi>o</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mi>a</mi><msub><mi>l</mi><mrow><mi>D</mi><mi>e</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi></mrow></msub><mo>+</mo><mi>A</mi><mi>A</mi><mi>V</mi><mi>E</mi><mi>I</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>e</mi><mi>s</mi><msub><mi>t</mi><mrow><mi>A</mi><mi>c</mi><mi>t</mi><mi>u</mi><mi>a</mi><mi>l</mi></mrow></msub><mo>+</mo><mi>P</mi><mi>r</mi><mi>e</mi><mi>m</mi><mi>i</mi><mi>u</mi><mi>m</mi><mo>∗</mo><mo>(</mo><mn>1</mn><mo>−</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>1</mn><mn>5</mn><mo>−</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>0</mn><mn>5</mn><mo>)</mo><mo>+</mo><mi>M</mi><msup><mi>M</mi><mrow><mi mathvariant="normal">′</mi></mrow></msup><mi>s</mi><mi>C</mi><mi>o</mi><mi>l</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>l</mi><mo>∗</mo><mo>(</mo><mn>1</mn><mo>−</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>0</mn><mn>5</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">Payoff_{inUSDT} = Notional_{Deposit} + AAVEInterest_{Actual} + Premium * (1 - 0.15 - 0.05) + MM'sCollateral * (1 - 0.05)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.751892em;"></span><span class="strut bottom" style="height:1.038em;vertical-align:-0.286108em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.10764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mord mathit mtight">n</span><span class="mord mathit mtight" style="margin-right:0.10903em;">U</span><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="mord mathit mtight" style="margin-right:0.02778em;">D</span><span class="mord mathit mtight" style="margin-right:0.13889em;">T</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mord mathit">o</span><span class="mord mathit">t</span><span class="mord mathit">i</span><span class="mord mathit">o</span><span class="mord mathit">n</span><span class="mord mathit">a</span><span class="mord"><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.01968em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.02778em;">D</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight">p</span><span class="mord mathit mtight">o</span><span class="mord mathit mtight">s</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">t</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">+</span><span class="mord mathit">A</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.22222em;">V</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathit" style="margin-right:0.07847em;">I</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">s</span><span class="mord"><span class="mord mathit">t</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">A</span><span class="mord mathit mtight">c</span><span class="mord mathit mtight">t</span><span class="mord mathit mtight">u</span><span class="mord mathit mtight">a</span><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">+</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">u</span><span class="mord mathit">m</span><span class="mbin">∗</span><span class="mopen">(</span><span class="mord mathrm">1</span><span class="mbin">−</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">1</span><span class="mord mathrm">5</span><span class="mbin">−</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">0</span><span class="mord mathrm">5</span><span class="mclose">)</span><span class="mbin">+</span><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="mord"><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathrm mtight">′</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mord mathit">s</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mbin">∗</span><span class="mopen">(</span><span class="mord mathrm">1</span><span class="mbin">−</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">0</span><span class="mord mathrm">5</span><span class="mclose">)</span></span></span></span></p>
+</li>
+</ol>
+<h3 id="数値例-レンジバウンド">数値例 (レンジバウンド)</h3>
+<p><img src="../../static/fees_formula.png" alt=""></img></p>
+<h3 id="配分ウォーターフォール-usdt">配分ウォーターフォール (USDT)</h3>
+<p><img src="../../static/distribution_waterfall.png" alt=""></img></p>
+<h3 id="ネイティブトークン-rch-バイバック">ネイティブトークン ($RCH) バイバック</h3>
+<blockquote>
+<p><strong>プロトコルの成功とトークンのパフォーマンスを一致させる</strong></p>
+</blockquote>
+<p>SOFAでは、<strong>ユーザーとホルダーのインセンティブを一致させる最も簡単な方法はトークンのバイバックであると考えています</strong>。$RCHは私たちのネイティブユーティリティトークンです。私たちは<strong>プロトコルの収入をすべて$RCHのバイバックに専念することを約束します</strong>。これにより、プロトコルの使用に基づいてトークン価格の上昇を促進する好循環が生まれます。</p>
+<p><strong>固定されたデフレ供給、計画的なリリーススケジュール、および使用に基づくエアドロップにより、$RCHの長期的な価値の蓄積は主にプロトコルの収益の影響を受けます</strong>。これは、採用の成功を直接測る指標でもあります。さらに、<strong>トークンのエアドロップはプロトコルのユーザーとサポーターに限定されるため</strong>、彼らがSOFAの長期的な成功から最も恩恵を受けることを保証できます。これは、真のコアユーザーや初期採用者に「還元する」というDeFiの商業的理想に忠実です。</p>
+<p><strong>トークンのバイバックロジックはSOFAプロトコルのスマートコントラクトの不可欠な部分です</strong>。プロトコルの管理者は、定期的にこのプロセスをトリガーし、プロトコルの収益を通じてサポートされたDEXで$RCHを購入して焼却します。焼却された$RCHはもはや流通に入ることはなく、$RCHの総量はプロトコルの使用が増加するにつれて徐々に減少します。</p>
+<p>私たちのトークノミクスモデルの詳細は、以下の専用セクションで説明します。</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="settlement.html" class="navigation navigation-prev " aria-label="Previous page: オンチェーン決済の考慮事項">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="automator.html" class="navigation navigation-next " aria-label="Next page: オートメーター">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"プロトコル手数料","level":"1.6.5","depth":2,"next":{"title":"オートメーター","level":"1.6.6","depth":2,"path":"technical-design/automator.md","ref":"technical-design/automator.md","articles":[]},"previous":{"title":"オンチェーン決済の考慮事項","level":"1.6.4","depth":2,"path":"technical-design/settlement.md","ref":"technical-design/settlement.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"ja","gitbook":"*"},"file":{"path":"technical-design/fees.md","mtime":"2025-06-06T18:08:28.510Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"ja"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

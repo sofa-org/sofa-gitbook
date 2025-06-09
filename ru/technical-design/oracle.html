@@ -1,0 +1,711 @@
+
+<!DOCTYPE HTML>
+<html lang="ru" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Конструкция оракула · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="settlement.html" />
+    
+    
+    <link rel="prev" href="risk-prefer.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Введите условия поиска" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Обзор SOFA.org
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    Инновации следующей волны DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 Добро пожаловать в протоколы SOFA 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    Дорожная карта
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    Руководство пользователя
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    Заработок
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    Скачок
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    Получение ваших вознаграждений $RCH! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Технический дизайн
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="vault-classification.html">
+            
+                <a href="vault-classification.html">
+            
+                    
+                    Классификация хранилищ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="risk-prefer.html">
+            
+                <a href="risk-prefer.html">
+            
+                    
+                    Определение вашего уровня риска
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.3" data-path="oracle.html">
+            
+                <a href="oracle.html">
+            
+                    
+                    Конструкция оракула
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="settlement.html">
+            
+                <a href="settlement.html">
+            
+                    
+                    Соображения по расчетам в блокчейне
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="fees.html">
+            
+                <a href="fees.html">
+            
+                    
+                    Комиссии протокола
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="automator.html">
+            
+                <a href="automator.html">
+            
+                    
+                    Автоматизатор
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    Безопасность
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    Программа поощрения за обнаружение ошибок
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    Рамки управления
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    Внешние непредвиденные обстоятельства и факторы риска
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    Токеномика
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    Гипотетический сценарий $RCH (LP + Кумулятивныеairdrops)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA Очки
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    Часто задаваемые вопросы SOFA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    Документация для разработчиков
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    Открытые API для маркетмейкеров
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    Открытые API для DAPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    Субграфы
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    Контракты на развертывание
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    Процесс подключения маркетмейкеров
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    Ссылки
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Опубликовано с помощью HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Конструкция оракула</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="oracle-construction">Oracle Construction</h1>
+<p>В мире криптовалют и DeFi, <strong>получение оффчейн данных своевременно и точно имеет решающее значение.</strong> Поскольку смарт-контракты не могут напрямую получать доступ к внешним системам или источникам данных, оракулы служат для преодоления этого разрыва, предоставляя внешнюю информацию на блокчейн. Должен быть предоставлен надежный сервис данных, чтобы обеспечить полную прозрачность расчетов и отслеживаемость, минимизируя возможные споры.</p>
+<p>Сервис оракулов <strong>ChainLink</strong>, известный своей высокой степенью децентрализации, надежности и адаптивности, был выбран в качестве основного средства доступа SOFA к оффчейн данным. Более того, использование ценовых потоков ChainLink имеет <strong>дополнительное преимущество защиты протокола от 'атаки с использованием флеш-кредитов'</strong>, в то время как <strong>источник ценовых потоков будет из авторитетных торговых платформ, таких как Coinbase</strong>, чтобы обеспечить святость данных.</p>
+<p><img src="../../static/chainlink.png" alt=""></img></p>
+<p>SOFA использует <a href="https://www.apro.com" target="_blank">APRO Oracle</a> для защиты наших активов на нескольких цепочках. Поддержка и защита от <strong>APRO Oracle</strong> позволяют нам поддерживать стабильность и безопасность наших активов на блокчейне. Для получения дополнительной информации, пожалуйста, обратитесь к <a href="https://docs.apro.com/en" target="_blank">документации APRO Oracle</a>.</p>
+<p><img src="../../static/apro.jpg" alt=""></img></p>
+<h2 id="спотовая-цена--цена-на-момент-истечения">Спотовая цена / Цена на момент истечения</h2>
+<p>Получение текущей цены базового актива на блокчейне через оракул обычно осуществляется одним из двух способов:</p>
+<ul>
+<li>вызов контрактов с DEX, таких как Uniswap, для получения цены или TWAP цены базового актива</li>
+<li>получение цены актива через ценовые потоки, предоставляемые сервисом оракулов, таким как ChainLink</li>
+</ul>
+<p>Учитывая необходимость, чтобы цена расчетов была как можно ближе к ценам CeFi бирж (для удобства хеджирования пользователями или маркет-мейкерами) и по соображениям безопасности (чтобы избежать манипуляций и атак), мы <strong>выбрали ценовые потоки ChainLink в качестве источника оракула для нашей цены на момент истечения</strong>.</p>
+<p>С децентрализованными источниками данных ChainLink, которые агрегируют информацию о ценах с различных бирж, мы гарантируем, что выполнение наших смарт-контрактов основано на актуальных, надежных и самых справедливых наборах данных о ценах, доступных публично.</p>
+<h2 id="рассчитанная-цена-полученная-из-исторических-закрытий">Рассчитанная цена, полученная из исторических закрытий</h2>
+<p>Для таких продуктов, как Rangebound, необходимо знать самые высокие и низкие цены базового токена с момента его создания до истечения, чтобы рассчитать окончательный платеж. Обычные данные на блокчейне обычно не могут предоставить эту информацию, поскольку оракулы на блокчейне не предоставляют непрерывные временные ряды данных.</p>
+<p>Вместо развертывания собственных контрактов оракула в качестве (обычного) компромисса централизации, мы нашли решение в <strong>продукте ChainLink's Functions</strong>. Благодаря последним инновациям мы можем вызывать оффчейн API децентрализованным образом и публиковать полученные данные на блокчейне через децентрализованные узлы, как это делается в типичном ценовом потоке.</p>
+<p><img src="../../static/KxYlbnS0IoEtX6xAxV1uB0WKsLg.png" alt=""></img></p>
+<h2 id="автоматизированный-регулярный-сервис-обновления">Автоматизированный регулярный сервис обновления</h2>
+<p>SOFA использует ChainLink Automation, чтобы гарантировать, что цены автоматически обновляются и регулярно передаются на блокчейн. ChainLink Automation предлагает децентрализованную сеть, где смарт-контракты могут планировать и автоматически выполнять сложные задачи, включая обновления данных по интервалам, триггерные события и даже критические корректировки контрактов. Это <strong>обеспечивает постоянное обновление цен на блокчейне и предлагает уверенность в данных для сети связанных dApp SOFA</strong>.</p>
+<p><img src="../../static/FESNbrjpEobC0DxtBz5u6Og0sgf.png" alt=""></img></p>
+<h2 id="децентрализация-и-отслеживаемость">Децентрализация и отслеживаемость</h2>
+<p>Оставаясь верными нашему основному духу DeFi, <strong>процесс получения ценовых данных SOFA всегда будет полностью децентрализованным</strong>, предлагая полную аудиторскую отслеживаемость на уровне контракта. Наша защита прозрачной обработки гарантирует, что каждый шаг в системе открыто проверяем пользователями, с деталями данных о ценах, такими как источник поставщика и логика агрегации, которые всегда полностью наблюдаемы.</p>
+<h2 id="непрерывные-инновации-в-сервисах-oracle">Непрерывные инновации в сервисах Oracle</h2>
+<p>Хотя ChainLink остается золотым стандартом надежности данных DeFi, SOFA постоянно исследует и следит за последними инновациями в сервисах ораклов. Мы осознаем чрезмерную зависимость от ограниченных источников поставщиков и <strong>будем стремиться диверсифицировать наши протокольные входы настолько, насколько это возможно с технологической точки зрения</strong>.</p>
+<p>В долгосрочной перспективе SOFA стремится предложить пользователям надежную, прозрачную, децентрализованную и устойчивую систему получения данных, которая может защитить интересы пользователей, обеспечивая при этом долговечность операций.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="risk-prefer.html" class="navigation navigation-prev " aria-label="Previous page: Определение вашего уровня риска">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="settlement.html" class="navigation navigation-next " aria-label="Next page: Соображения по расчетам в блокчейне">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Конструкция оракула","level":"1.6.3","depth":2,"next":{"title":"Соображения по расчетам в блокчейне","level":"1.6.4","depth":2,"path":"technical-design/settlement.md","ref":"technical-design/settlement.md","articles":[]},"previous":{"title":"Определение вашего уровня риска","level":"1.6.2","depth":2,"path":"technical-design/risk-prefer.md","ref":"technical-design/risk-prefer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"ru","gitbook":"*"},"file":{"path":"technical-design/oracle.md","mtime":"2025-06-06T18:55:00.228Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"ru"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

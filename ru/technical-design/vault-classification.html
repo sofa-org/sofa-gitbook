@@ -1,0 +1,713 @@
+
+<!DOCTYPE HTML>
+<html lang="ru" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Классификация хранилищ · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="risk-prefer.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Введите условия поиска" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Обзор SOFA.org
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    Инновации следующей волны DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 Добро пожаловать в протоколы SOFA 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    Дорожная карта
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    Руководство пользователя
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    Заработок
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    Скачок
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    Получение ваших вознаграждений $RCH! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Технический дизайн
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="vault-classification.html">
+            
+                <a href="vault-classification.html">
+            
+                    
+                    Классификация хранилищ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="risk-prefer.html">
+            
+                <a href="risk-prefer.html">
+            
+                    
+                    Определение вашего уровня риска
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="oracle.html">
+            
+                <a href="oracle.html">
+            
+                    
+                    Конструкция оракула
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="settlement.html">
+            
+                <a href="settlement.html">
+            
+                    
+                    Соображения по расчетам в блокчейне
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="fees.html">
+            
+                <a href="fees.html">
+            
+                    
+                    Комиссии протокола
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="automator.html">
+            
+                <a href="automator.html">
+            
+                    
+                    Автоматизатор
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    Безопасность
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    Программа поощрения за обнаружение ошибок
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    Рамки управления
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    Внешние непредвиденные обстоятельства и факторы риска
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    Токеномика
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    Гипотетический сценарий $RCH (LP + Кумулятивныеairdrops)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA Очки
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    Часто задаваемые вопросы SOFA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    Документация для разработчиков
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    Открытые API для маркетмейкеров
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    Открытые API для DAPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    Субграфы
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    Контракты на развертывание
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    Процесс подключения маркетмейкеров
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    Ссылки
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Опубликовано с помощью HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Классификация хранилищ</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="классификация-хранилищ">Классификация Хранилищ</h1>
+<p>Контракт Хранилища использует стандарт ERC-1155 для <strong>поддержки взаимозаменяемости Токенов Позиции с одинаковой ценой исполнения и временем истечения</strong>. Токены с разными ценами исполнения или временем истечения будут иметь разные идентификаторы токенов (т.е. как NFT), оставаясь при этом под одним и тем же контрактом Хранилища.</p>
+<p>Протокол SOFA разработан с гибкостью <strong>для поддержки любого типа структурированного продукта и деноминации обеспечения</strong>, хотя будет сделано различие в том, содержит ли основной продукт функцию 'защиты капитала' или нет. Таким образом, наши <strong>дизайны Хранилищ разделены на 2 основные, самопоясняющиеся категории продуктов под названием 'Заработок' и 'Увеличение'</strong>.</p>
+<p>Пример Таксономии Хранилищ на Запуске SOFA</p>
+<p><img src="../../static/NON1bznnEocSeJxK0mAuxBR0sqh.png" alt=""></img></p>
+<h2 id="доступные-продукты-на-запуске">Доступные Продукты на Запуске</h2>
+<p>В качестве нашего первоначального доказательства концепции мы сначала сосредоточимся на трех популярных структурах продуктов под названием <strong>'Диапазонный' и 'Тренд'</strong>. Более того, все эти продукты доступны как в протоколах Заработка, так и Увеличения. Более того, дополнительные типы продуктов будут постоянно добавляться на основе спроса пользователей и отзывов экосистемы.</p>
+<h2 id="диапазонные-продукты">Диапазонные Продукты</h2>
+<h3 id="обзор-продукта">Обзор Продукта</h3>
+<p>Диапазонные продукты представляют собой тип структурированного продукта, основанного на ценовых границах. <strong>Депозиторы могут получать прибыль, если основной актив не коснется заранее установленных барьеров в течение наблюдательного периода до истечения срока</strong>. Эти продукты подходят для пользователей, которые ожидают, что рынок останется в фазе боковой консолидации с низкой волатильностью.</p>
+<p>Ссылаясь на диаграмму выплат ниже, пользователь считает, что BTC будет находиться в диапазоне, определенном нижним и верхним барьерами, но не хочет нести значительные убытки, даже если его мнение окажется неверным. Продукт Диапазонный гарантирует пользователю минимальную базовую доходность (A), даже если цена диапазона вырвется с любой стороны, но пользователь будет иметь право на дополнительную прибыль, эквивалентную (A+B), если цены останутся в пределах барьеров.</p>
+<p>Что касается вариантов настройки, <strong>пользователь может свободно регулировать ширину ценового диапазона, что приведет к различному профилю базовой и верхней прибыли в зависимости от выбранных уровней</strong>. Естественно, указание более узкого ценового диапазона представляет собой более агрессивную ставку на низкую волатильность, что приведет к более высоким доходам. Напротив, более широкий ценовой диапазон снизит избыточную прибыль в обмен на более высокую вероятность выигрыша. Наконец, для удобства управления продукт может быть настроен на автоматическое 'перекатывание' по истечении срока как продолжение ставки при следующем обновлении протокола. (Функция 'перекатывания' будет внедрена на следующем этапе обновления).</p>
+<p><img src="../../static/Yfu7bNF7soTStDxRAp7u4g31sTe.png" alt=""></img></p>
+<h2 id="трендовые-продукты">Трендовые Продукты</h2>
+<h3 id="обзор-продукта">Обзор Продукта</h3>
+<p><strong>Трендовый продукт подходит для депозиторов, которые ожидают, что рынок вскоре пройдет через плавный и стабильный тренд, но все же желают некоторой защиты от убытков</strong>. Определяя как нижнюю, так и верхнюю ценовую границу, пользователи начнут накапливать доходы, как только основной инструмент пересечет начальный ценовой порог, с увеличением выплат до достижения максимума на 2-й границе.</p>
+<p>Более того, в отличие от Диапазонного продукта, Трендовый продукт только наблюдает на момент расчета, попадает ли цена основного актива в установленный диапазон, чтобы определить окончательную прибыль (т.е. европейский опцион). <strong>Этот продукт доступен как через Бычьи, так и через Медвежьи выражения</strong>.</p>
+<p>В качестве примера, если пользователь настроен на рост BTC и предсказывает, что в течение следующих семи дней цена BTC останется выше $68,500, но не превысит $71,500, он может выбрать покупку Бычьего Трендового продукта, установив $68,500 как нижний предел и $71,500 как верхний предел диапазона прибыли. Ссылаясь на диаграмму ниже, на момент расчета пользователь будет иметь право на выплату от базовой прибыли (A) до верхнего предела (A+B), в зависимости от того, какова цена BTC на тот момент.</p>
+<p><img src="../../static/VPCFbWcRso4WYsxeEExu2Wrjsyv.png" alt=""></img></p>
+<h3 id="применимые-сценарии">Применимые Сценарии</h3>
+<p>Продукт может быть <strong>подходящим для вкладчиков, которые верят, что актив отреагирует на конкретное экономическое событие, но также обеспокоены риском снижения цены, если они окажутся неправы</strong> в своем рыночном прогнозе.</p>
+<p>Например, пользователь может желать спекулировать на ценах BTC на следующем решении FOMC, событии халвинга или объявлении о следующем одобрении ETF. Эта стратегия <strong>подходит для пользователей, которые уверены в рынке в отношении этих важных, но рискованных событий, и хотят оставаться дисциплинированными в управлении убытками на случай, если их мнение окажется неверным</strong>.</p>
+<h2 id="shark-fin-для-позже">Shark Fin (Для позже)</h2>
+<h3 id="обзор-продукта">Обзор продукта</h3>
+<p>По сравнению с продуктами Rangebound и Trend, продукт 'Shark Fin' относительно более известен на рынках TradFi благодаря своему запоминающемуся названию. Его дизайн и выплаты схожи с Trend (т.е. европейский опцион), с <strong>главным исключением, что вкладчик спекулирует гораздо более агрессивно на цены, находящиеся в определенном диапазоне</strong>.</p>
+<p>Иными словами, продукт Shark Fin <strong>принимает более консервативный взгляд на рыночную волатильность, жертвуя большей прибылью при большом движении рынка в обмен на более агрессивные прибыли в пределах нижних ценовых границ</strong>.</p>
+<p>Например, предположим, что пользователь оптимистично настроен по отношению к BTC, но уверен, что он не преодолеет определенную верхнюю границу на уровне сильного технического сопротивления. В таком сценарии пользователь может выбрать покупку продукта Bullish Shark Fin с профилем выплат, как показано на диаграмме ниже. При расчете продукта пользователь получит доход в диапазоне от (A) до (A+B) в зависимости от того, где находится спотовый BTC; однако, в отличие от продуктов Trend, обратите внимание, что доход <em>снижается</em> до (A+C) при пробитии верхней ценовой границы, предлагая компромисс в обмен на более агрессивные прибыли в предыдущем диапазоне.</p>
+<p><img src="../../static/LaiabPyJAokoogxs2luuq7hsslb.png" alt=""></img></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Технический дизайн">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="risk-prefer.html" class="navigation navigation-next " aria-label="Next page: Определение вашего уровня риска">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Классификация хранилищ","level":"1.6.1","depth":2,"next":{"title":"Определение вашего уровня риска","level":"1.6.2","depth":2,"path":"technical-design/risk-prefer.md","ref":"technical-design/risk-prefer.md","articles":[]},"previous":{"title":"Технический дизайн","level":"1.6","depth":1,"path":"technical-design/README.md","ref":"technical-design/README.md","articles":[{"title":"Классификация хранилищ","level":"1.6.1","depth":2,"path":"technical-design/vault-classification.md","ref":"technical-design/vault-classification.md","articles":[]},{"title":"Определение вашего уровня риска","level":"1.6.2","depth":2,"path":"technical-design/risk-prefer.md","ref":"technical-design/risk-prefer.md","articles":[]},{"title":"Конструкция оракула","level":"1.6.3","depth":2,"path":"technical-design/oracle.md","ref":"technical-design/oracle.md","articles":[]},{"title":"Соображения по расчетам в блокчейне","level":"1.6.4","depth":2,"path":"technical-design/settlement.md","ref":"technical-design/settlement.md","articles":[]},{"title":"Комиссии протокола","level":"1.6.5","depth":2,"path":"technical-design/fees.md","ref":"technical-design/fees.md","articles":[]},{"title":"Автоматизатор","level":"1.6.6","depth":2,"path":"technical-design/automator.md","ref":"technical-design/automator.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"ru","gitbook":"*"},"file":{"path":"technical-design/vault-classification.md","mtime":"2025-06-06T18:55:58.416Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"ru"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

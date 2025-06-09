@@ -1,0 +1,3059 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    <head>
+        <meta charset="UTF-8">
+        <title>DAPP 開放 API · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="subgraphs.html" />
+    
+    
+    <link rel="prev" href="marketmaker-open-apis.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org 概覽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    創新下一波 DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 歡迎來到 SOFA 協議 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    路線圖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    用戶指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    賺取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    激增
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    領取您的 $RCH 獎勵！🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../technical-design/">
+            
+                <a href="../technical-design/">
+            
+                    
+                    技術設計
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../technical-design/vault-classification.html">
+            
+                <a href="../technical-design/vault-classification.html">
+            
+                    
+                    保險庫分類
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../technical-design/risk-prefer.html">
+            
+                <a href="../technical-design/risk-prefer.html">
+            
+                    
+                    定義您的風險偏好
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../technical-design/oracle.html">
+            
+                <a href="../technical-design/oracle.html">
+            
+                    
+                    預言機構建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../technical-design/settlement.html">
+            
+                <a href="../technical-design/settlement.html">
+            
+                    
+                    鏈上結算考量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../technical-design/fees.html">
+            
+                <a href="../technical-design/fees.html">
+            
+                    
+                    協議費用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../technical-design/automator.html">
+            
+                <a href="../technical-design/automator.html">
+            
+                    
+                    自動化器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    安全性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    漏洞賞金計劃
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    治理框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    外部應急措施與風險因素
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    代幣經濟學
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    假設的 $RCH 流通情境 (LP + 累積空投)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA 積分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA 常見問題
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    開發者文檔
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="marketmaker-open-apis.html">
+            
+                <a href="marketmaker-open-apis.html">
+            
+                    
+                    做市商開放 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.2" data-path="dapp-open-apis.html">
+            
+                <a href="dapp-open-apis.html">
+            
+                    
+                    DAPP 開放 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="subgraphs.html">
+            
+                <a href="subgraphs.html">
+            
+                    
+                    子圖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="contracts.html">
+            
+                <a href="contracts.html">
+            
+                    
+                    部署合約
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="marketmaker-onboarding-process.html">
+            
+                <a href="marketmaker-onboarding-process.html">
+            
+                    
+                    做市商入駐流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    連結
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >DAPP 開放 API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="dapp-開放-api">DApp 開放 API</h1>
+<p>我們現有的 dApp 在 sofa.org 上是一個關鍵的工作流程功能，也是用戶與 SOFA 協議互動的主要方式。然而，我們鼓勵其他開發者通過他們自己的 dApp 來啟用訪問並連接到 SOFA，以最大化我們生態系統的增長。我們將這些視為我們的「經紀人」合作夥伴，並鼓勵有興趣的各方聯繫 SOFA 團隊以獲取進一步的 API 信息。</p>
+<h2 id="dnt">DNT</h2>
+<h3 id="推薦的-dnt-rfq-列表查詢">推薦的 DNT RFQ 列表查詢</h3>
+<pre><code>GET /rfq/dnt/recommended-list
+</code></pre><p><strong>輸入參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>必需</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>合約信息</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>鏈 ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>回應參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 表示返回結果正常</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>異常情況下返回的錯誤信息</td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>如下所示</td>
+</tr>
+</tbody>
+</table>
+<p>物件</p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>number</td>
+<td>RFQ ID</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>鏈 ID</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>合約地址</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>風險類型：PROTECTED, RISKY</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>標的貨幣</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>貨幣對</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>認購貨幣</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>下限價格</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>上限價格</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>RFQ 購買金額</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>number</td>
+<td>到期時間戳（例如，1672387200）</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>當前定價的觸發時間；下一次觀察開始時間基於此邏輯計算</td>
+</tr>
+<tr>
+<td>observationStart</td>
+<td>number</td>
+<td>根據時間戳估算的敲入/敲出觀察開始時間</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>交易和結算費率（可選）</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>貸款信息（可選）</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>RCH 價格轉換和空投計算所需的代幣價格（可選）</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>計算的金額（可選）</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>年化信息，適用於非 Surge 產品（可選）</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>賠率信息，適用於 Surge 產品（可選）</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000, 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>做市商的抵押金額</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>總抵押金額（Taker+Maker）</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRisk</td>
+<td>string</td>
+<td>保證時需要（可選）</td>
+</tr>
+<tr>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>做市商餘額門檻</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
+<td>到期時間戳（例如，1672387200）</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>做市商錢包（可選）</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>簽名（可選）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>請求範例</strong></p>
+<pre><code>GET rfq/dnt/recommended-list?vault=xxxxxx&amp;chainId=1
+</code></pre><p><strong>回應</strong></p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">"code"</span>:<span class="hljs-number">0</span>,
+    <span class="hljs-string">"message"</span>:<span class="hljs-string">""</span>,
+    <span class="hljs-string">"value"</span>:[
+        {
+            <span class="hljs-string">"rfqId"</span>:<span class="hljs-number">1233992</span>,
+            <span class="hljs-string">"riskType"</span>:<span class="hljs-string">"PROTECTED"</span>,
+            <span class="hljs-string">"forCcy"</span>:<span class="hljs-string">"BTC"</span>,
+            <span class="hljs-string">"expiry"</span>:<span class="hljs-number">1672387200</span>,
+            <span class="hljs-string">"lowerBarrier"</span>:<span class="hljs-number">18000</span>,
+            <span class="hljs-string">"upperBarrier"</span>:<span class="hljs-number">24000</span>,
+            <span class="hljs-string">"depositCcy"</span>:<span class="hljs-string">"BTC"</span>,
+            <span class="hljs-string">"depositAmount"</span>: <span class="hljs-number">0.05</span>,
+            <span class="hljs-string">"protectedApy"</span>:<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"deadline"</span>:<span class="hljs-number">1672279892</span>,
+            <span class="hljs-string">"recommended"</span>:<span class="hljs-literal">true</span>,
+            <span class="hljs-string">"quote"</span>:
+                {
+                    <span class="hljs-string">"rfqId"</span>:<span class="hljs-number">1233992</span>,
+                    <span class="hljs-string">"inRangeApy"</span>:<span class="hljs-number">0.25</span>,
+                    <span class="hljs-string">"tenor"</span>:<span class="hljs-number">7.9</span>,
+                    <span class="hljs-string">"fundingAmount"</span>:<span class="hljs-number">0.25</span>,
+                    <span class="hljs-string">"depositAmount"</span>:<span class="hljs-number">1</span>,
+                    <span class="hljs-string">"premiumCoin"</span>:<span class="hljs-string">"BTC"</span>,
+                    <span class="hljs-string">"premiumAmount"</span>:<span class="hljs-number">0.05</span>,
+                    <span class="hljs-string">"bookingQuantity"</span>:<span class="hljs-number">0.3</span>,
+                    <span class="hljs-string">"totalAmount"</span>:<span class="hljs-number">0.05</span>,
+                    <span class="hljs-string">"payoff"</span>:<span class="hljs-number">0.3</span>,
+                    <span class="hljs-string">"deadline"</span>:<span class="hljs-number">1672279892</span>,
+                    <span class="hljs-string">"signature"</span>:<span class="hljs-string">"dsdkksdsksdk"</span>
+                }
+
+        }
+    ]
+}
+</code></pre>
+<h3 id="dnt-查詢">DNT 查詢</h3>
+<ul>
+<li>注意事項：<ul>
+<li>請不要在純查詢請求中傳遞用戶的錢包地址。</li>
+<li>只有在訂閱時才應傳遞用戶的錢包地址。</li>
+</ul>
+</li>
+</ul>
+<pre><code>GET /rfq/dnt/quote
+</code></pre><p><strong>輸入參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>必需</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>合約信息</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>鏈 ID</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>number</td>
+<td>到期日期的秒級時間戳，例如，1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>下限價格</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>上限價格</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>true</td>
+<td>number</td>
+<td>RFQ 購買金額</td>
+</tr>
+<tr>
+<td>inputApyDefinition</td>
+<td>true</td>
+<td>string</td>
+<td>底層代碼是 Enum，指示如何計算輸入的 APY：OptimusDefaultAPY, BinanceDntAPY, AaveLendingAPY</td>
+</tr>
+<tr>
+<td>protectedApy</td>
+<td>false</td>
+<td>number</td>
+<td>保證年收益率（RISKY 為空，protected 必填）</td>
+</tr>
+<tr>
+<td>fundingApy</td>
+<td>false</td>
+<td>number</td>
+<td>AAVE 年收益率（RISKY 為空，protected 必填）</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>false</td>
+<td>string</td>
+<td>查詢者的錢包公鑰信息</td>
+</tr>
+</tbody>
+</table>
+<p><strong>回應參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 表示返回結果正常</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>異常情況下返回的錯誤信息</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>如下所示</td>
+</tr>
+</tbody>
+</table>
+<p>物件</p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>number</td>
+<td>RFQ ID</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>合約地址</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>鏈 ID</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>風險類型：PROTECTED, RISKY</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>標的貨幣</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>貨幣對</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>認購貨幣</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>下限價格</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>上限價格</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>RFQ 購買金額</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>number</td>
+<td>到期時間戳（例如，1672387200）</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>當前定價的觸發時間；下一次觀察開始時間基於此邏輯計算</td>
+</tr>
+<tr>
+<td>observationStart</td>
+<td>number</td>
+<td>根據時間戳估算的敲入/敲出觀察開始時間</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>交易和結算費率（可選）</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>貸款信息（可選）</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>RCH 價格轉換和空投計算所需的代幣價格（可選）</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>計算的金額（可選）</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>年化信息，適用於非 Surge 產品（可選）</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>賠率信息，適用於 Surge 產品（可選）</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; quoteId</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000, 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>做市商的抵押金額</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>總抵押金額（Taker+Maker）</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRisk</td>
+<td>string</td>
+<td>保證時需要（可選）</td>
+</tr>
+<tr>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>做市商餘額門檻</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
+<td>到期時間戳（例如，1672387200）</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>做市商錢包（可選）</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>簽名（可選）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dnt-贏的概率">DNT 贏的概率</h3>
+<p>在到期前保持在界限內的概率</p>
+<pre><code>GET rfq/dnt/winning-probabilities
+</code></pre><p><strong>輸入參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>必需</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>forCcy</td>
+<td>true</td>
+<td>string</td>
+<td>標的貨幣</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>number</td>
+<td>到期日期的秒級時間戳，例如，1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>下限價格</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>上限價格</td>
+</tr>
+</tbody>
+</table>
+<p><strong>回應參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 表示返回結果正常</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>異常情況下返回的錯誤信息</td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>如下所示</td>
+</tr>
+</tbody>
+</table>
+<p>物件</p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>spotPrice</td>
+<td>number</td>
+<td>現貨價格</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>probabilities</td>
+<td>object</td>
+<td>贏的概率</td>
+</tr>
+</tbody>
+</table>
+<p><strong>請求範例</strong></p>
+<pre><code>GET rfq/dnt/winning-probabilities?forCcy=BTC&amp;expiry=xxxx&amp;lowerBarrier=xxx&amp;upperBarrier=xxx
+</code></pre><p><strong>回應</strong></p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">"code"</span>:<span class="hljs-number">0</span>,
+    <span class="hljs-string">"message"</span>:<span class="hljs-string">""</span>,
+    <span class="hljs-string">"value"</span>: {
+        <span class="hljs-string">"spotPrice"</span>: <span class="hljs-number">62121</span>,
+        <span class="hljs-string">"timestamp"</span>: <span class="hljs-number">1727080594</span>,
+        <span class="hljs-string">"probabilities"</span>: {
+            <span class="hljs-string">"probDntStayInRange"</span>: <span class="hljs-number">0.4</span>
+            <span class="hljs-string">"probBullTrendItmLowerStrike"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBullTrendItmUpperStrike"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBearTrendItmLowerStrike"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBearTrendItmUpperStrike"</span>: <span class="hljs-literal">null</span>,
+        }
+    }
+}
+</code></pre>
+<h2 id="智能趨勢">智能趨勢</h2>
+<h3 id="推薦的智能趨勢-rfq-列表查詢">推薦的智能趨勢 RFQ 列表查詢</h3>
+<pre><code>GET rfq/smart-trend/recommended-list
+</code></pre><p><strong>輸入參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>必需</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>合約信息</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>鏈 ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>回應參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 表示返回結果正常</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>異常情況下返回的錯誤信息</td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>如下所示</td>
+</tr>
+</tbody>
+</table>
+<p>物件</p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>number</td>
+<td>RFQ ID</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>鏈 ID</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>合約地址</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>風險類型：PROTECTED, RISKY</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>string</td>
+<td>BULLISH,BEARISH</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>標的貨幣</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>貨幣對</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>認購貨幣</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>下限價格</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>上限價格</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>RFQ 購買金額</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>number</td>
+<td>到期時間戳（例如，1672387200）</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>當前定價的觸發時間；下一次觀察開始時間基於此邏輯計算</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>交易和結算費率（可選）</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>貸款信息（可選）</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>RCH 價格轉換和空投計算所需的代幣價格（可選）</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>計算的金額（可選）</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>年化信息，適用於非 Surge 產品（可選）</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>賠率信息，適用於 Surge 產品（可選）</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000, 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>做市商的抵押金額</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>總抵押金額（Taker+Maker）</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRisk</td>
+<td>string</td>
+<td>保證時需要（可選）</td>
+</tr>
+<tr>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>做市商餘額門檻</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
+<td>到期時間戳（例如，1672387200）</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>做市商錢包（可選）</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>簽名（可選）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>請求範例</strong></p>
+<pre><code>GET rfq/smart-trend/recommended-list?vault=xxxxxx
+</code></pre><h3 id="智能趨勢查詢">智能趨勢查詢</h3>
+<ul>
+<li>注意事項：<ul>
+<li>請不要在純查詢請求中傳遞用戶的錢包地址。</li>
+<li>只有在訂閱時才應傳遞用戶的錢包地址。</li>
+</ul>
+</li>
+</ul>
+<pre><code>GET /rfq/smart-trend/quote
+</code></pre><p><strong>輸入參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>必需</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>合約信息</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>鏈 ID</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>number</td>
+<td>到期日期的秒級時間戳，例如，1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>下限價格</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>上限價格</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>true</td>
+<td>number</td>
+<td>RFQ 購買金額</td>
+</tr>
+<tr>
+<td>inputApyDefinition</td>
+<td>true</td>
+<td>string</td>
+<td>底層代碼是 Enum，指示如何計算輸入的 APY：OptimusDefaultAPY, BinanceDntAPY, AaveLendingAPY</td>
+</tr>
+<tr>
+<td>protectedApy</td>
+<td>false</td>
+<td>number</td>
+<td>保證年收益率（RISKY 為空，protected 必填）</td>
+</tr>
+<tr>
+<td>fundingApy</td>
+<td>false</td>
+<td>number</td>
+<td>AAVE 年收益率（RISKY 為空，protected 必填）</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>false</td>
+<td>string</td>
+<td>查詢者的錢包公鑰信息</td>
+</tr>
+</tbody>
+</table>
+<p><strong>回應參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 表示返回結果正常</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>異常情況下返回的錯誤信息</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>如下所示</td>
+</tr>
+</tbody>
+</table>
+<p>物件</p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>number</td>
+<td>RFQ ID</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>合約地址</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>鏈 ID</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>風險類型：PROTECTED, RISKY</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>string</td>
+<td>BULLISH,BEARISH</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>標的貨幣</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>貨幣對</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>認購貨幣</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>下限價格</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>上限價格</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>RFQ 購買金額</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>number</td>
+<td>到期時間戳（例如，1672387200）</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>當前定價的觸發時間；下一次觀察開始時間基於此邏輯計算</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>交易和結算費率（可選）</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>貸款信息（可選）</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>RCH 價格轉換和空投計算所需的代幣價格（可選）</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>計算的金額（可選）</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>年化信息，適用於非 Surge 產品（可選）</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>賠率信息，適用於 Surge 產品（可選）</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; quoteId</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000, 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>做市商的抵押金額</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>總抵押金額（Taker+Maker）</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRisk</td>
+<td>string</td>
+<td>保證時需要（可選）</td>
+</tr>
+<tr>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>做市商餘額門檻</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
+<td>到期時間戳（例如，1672387200）</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>做市商錢包（可選）</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>簽名（可選）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="智能趨勢贏的概率">智能趨勢贏的概率</h3>
+<p>在到期前保持在界限內的概率</p>
+<pre><code>GET rfq/smart-trend/winning-probabilities
+</code></pre><p><strong>輸入參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>必需</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>forCcy</td>
+<td>true</td>
+<td>string</td>
+<td>標的貨幣</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>number</td>
+<td>到期日期的秒級時間戳，例如，1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>下限價格</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>上限價格</td>
+</tr>
+</tbody>
+</table>
+<p><strong>回應參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 表示返回結果正常</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>異常情況下返回的錯誤信息</td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>如下所示</td>
+</tr>
+</tbody>
+</table>
+<p>物件</p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>spotPrice</td>
+<td>number</td>
+<td>現貨價格</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>probabilities</td>
+<td>object</td>
+<td>贏的概率</td>
+</tr>
+</tbody>
+</table>
+<p><strong>請求範例</strong></p>
+<pre><code>GET rfq/smart-trend/winning-probabilities?forCcy=BTC&amp;expiry=xxxx&amp;lowerStrike=xxx&amp;upperStrike=xxx
+</code></pre><p><strong>回應</strong></p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">"code"</span>:<span class="hljs-number">0</span>,
+    <span class="hljs-string">"message"</span>:<span class="hljs-string">""</span>,
+    <span class="hljs-string">"value"</span>: {
+        <span class="hljs-string">"spotPrice"</span>: <span class="hljs-number">62121</span>,
+        <span class="hljs-string">"timestamp"</span>: <span class="hljs-number">1727080594</span>,
+        <span class="hljs-string">"probabilities"</span>: {
+            <span class="hljs-string">"probDntStayInRange"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBullTrendItmLowerStrike"</span>: <span class="hljs-number">0.4</span>,
+            <span class="hljs-string">"probBullTrendItmUpperStrike"</span>: <span class="hljs-number">0.4</span>,
+            <span class="hljs-string">"probBearTrendItmLowerStrike"</span>: <span class="hljs-number">0.6</span>,
+            <span class="hljs-string">"probBearTrendItmUpperStrike"</span>: <span class="hljs-number">0.6</span>,
+        }
+    }
+}
+</code></pre>
+<h2 id="通用介面">通用介面</h2>
+<h3 id="刪除-rfq">刪除 RFQ</h3>
+<p>刪除已上鏈的 RFQ</p>
+<pre><code>POST rfq/remove
+</code></pre><p><strong>輸入參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>必需</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>true</td>
+<td>number</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>請求範例</strong></p>
+<pre><code>{  
+"rfqId":123456  
+}
+</code></pre><p><strong>回應參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 表示返回結果正常</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>異常情況下返回的錯誤信息</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="交易通知">交易通知</h3>
+<pre><code>POST rfq/trade
+</code></pre><p><strong>輸入參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>必需</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>quotes</td>
+<td>true</td>
+<td>list[object]</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; rfqId</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; quoteId</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; txId</td>
+<td>true</td>
+<td>string</td>
+<td>交易哈希</td>
+</tr>
+<tr>
+<td>code</td>
+<td>false</td>
+<td>string</td>
+<td>邀請碼</td>
+</tr>
+<tr>
+<td>walletType</td>
+<td>false</td>
+<td>string</td>
+<td>錢包類型，如 MetaMask、OKX Wallet、Coinbase 等。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>請求範例</strong></p>
+<pre><code>{
+    "quotes": [
+        {
+            "rfqId": 123456,
+            "quoteId": 333,
+            "txId": "adsswe"
+        }
+    ],
+    "code": "adsswe"
+}
+</code></pre><p><strong>回應參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 表示返回結果正常</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>異常情況下返回的錯誤信息</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="行權價列表">行權價列表</h3>
+<pre><code>GET rfq/strike-list
+</code></pre><p><strong>輸入參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>必需</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>indexPrice</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>false</td>
+<td>string</td>
+<td>對於 BTC-USDT 交易對，這裡輸入 BTC；如果未提供，將使用默認配置。</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>false</td>
+<td>string</td>
+<td>對於 BTC-USDT 交易對，這裡輸入 USDT；如果未提供，默認為 USDT。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>請求範例</strong></p>
+<pre><code>{  
+"indexPrice": 3750.8，  
+"forCcy": "WBTC",  
+}
+</code></pre><p><strong>回應參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strikes</td>
+<td>list[number]</td>
+<td>默認推薦的行權價列表</td>
+</tr>
+</tbody>
+</table>
+<h3 id="到期列表">到期列表</h3>
+<pre><code>GET rfq/expiry-list
+</code></pre><p><strong>輸入參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>必需</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>合約地址</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>鏈 ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>請求範例</strong></p>
+<pre><code>{  
+"vault": "XXXXXXXXXXXXXX",  
+"chainId": 1,  
+}
+</code></pre><p><strong>回應參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>基準開始時間的秒級時間戳</td>
+</tr>
+<tr>
+<td>expiries</td>
+<td>list[number]</td>
+<td>支持的到期列表的秒級時間戳，例如，1672387200</td>
+</tr>
+</tbody>
+</table>
+<h3 id="aave-apy">Aave apy</h3>
+<pre><code>GET rfq/aave-apy
+</code></pre><p><strong>輸入參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>必需</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>true</td>
+<td>string</td>
+<td>USDT</td>
+</tr>
+</tbody>
+</table>
+<p><strong>回應參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>number</td>
+<td>鏈 ID</td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>string</td>
+<td>存款貨幣</td>
+</tr>
+<tr>
+<td>avgApy</td>
+<td>string</td>
+<td>過去 30 天在鏈上記錄的平均 APY</td>
+</tr>
+<tr>
+<td>currentApy</td>
+<td>string</td>
+<td>最新的 AAVE APY</td>
+</tr>
+<tr>
+<td>apyUsed</td>
+<td>string</td>
+<td>SofaServer 實際用於估算未來利息收入的 APY</td>
+</tr>
+<tr>
+<td>apyDefinition</td>
+<td>string</td>
+<td>對應於 APY 的計算定義</td>
+</tr>
+</tbody>
+</table>
+<p><strong>回應範例</strong></p>
+<pre><code>{  
+"chainId": 1,  
+"ccy":"USDT",  
+"avgApy":"0.23442",  
+"currentApy":"0.23442",  
+"apyUsed":"0.23442",  
+"apyDefinition":"AAVE_LENDING_APY"  
+}
+</code></pre><h3 id="apy">Apy</h3>
+<pre><code>GET rfq/apy
+</code></pre><p><strong>輸入參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>必需</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>true</td>
+<td>string</td>
+<td>USDT</td>
+</tr>
+<tr>
+<td>apyDefinition</td>
+<td>false</td>
+<td>string</td>
+<td>對應於 APY 的計算定義；默認為 AaveLendingApy</td>
+</tr>
+</tbody>
+</table>
+<p><strong>回應參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>number</td>
+<td>鏈 ID</td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>string</td>
+<td>存款貨幣</td>
+</tr>
+<tr>
+<td>avgApy</td>
+<td>string</td>
+<td>過去 30 天在鏈上記錄的平均 APY</td>
+</tr>
+<tr>
+<td>currentApy</td>
+<td>string</td>
+<td>最新的 APY</td>
+</tr>
+<tr>
+<td>apyUsed</td>
+<td>string</td>
+<td>SofaServer 實際用於估算未來利息收入的 APY</td>
+</tr>
+<tr>
+<td>apyDefinition</td>
+<td>string</td>
+<td>對應於 APY 的計算定義</td>
+</tr>
+</tbody>
+</table>
+<p><strong>回應範例</strong></p>
+<pre><code>{  
+"chainId": 1,  
+"ccy":"USDT",  
+"avgApy":"0.23442",  
+"currentApy":"0.23442",  
+"apyUsed":"0.23442",  
+"apyDefinition":"AAVE_LENDING_APY"  
+}
+</code></pre><h3 id="獲取錢包持倉">獲取錢包持倉</h3>
+<pre><code>POST /rfq/position-list
+</code></pre><p><strong>輸入參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>必需</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>Int</td>
+<td></td>
+</tr>
+<tr>
+<td>vaults</td>
+<td>false</td>
+<td>list[string]</td>
+<td>合約地址集合；如果未提供，將查詢所有合約。</td>
+</tr>
+<tr>
+<td>claimed</td>
+<td>false</td>
+<td>boolean</td>
+<td>是否已贖回；如果未提供，將查詢所有狀態的持倉。</td>
+</tr>
+<tr>
+<td>expired</td>
+<td>false</td>
+<td>boolean</td>
+<td>是否已過期；如果未提供，將查詢所有狀態的持倉。</td>
+</tr>
+<tr>
+<td>concealed</td>
+<td>false</td>
+<td>boolean</td>
+<td>是否隱藏；如果未提供，將查詢所有狀態的持倉。</td>
+</tr>
+<tr>
+<td>positiveReturn</td>
+<td>false</td>
+<td>boolean</td>
+<td>贖回金額是否大於 0；如果未提供，將查詢所有持倉。</td>
+</tr>
+<tr>
+<td>positiveProfit</td>
+<td>false</td>
+<td>boolean</td>
+<td>回報是否超過本金；如果未提供，將查詢所有持倉。</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>false</td>
+<td>Int</td>
+<td>查詢數量；默認為 100，最大為 300。</td>
+</tr>
+<tr>
+<td>startDateTime</td>
+<td>false</td>
+<td>number</td>
+<td>對應的秒級時間戳（包含），例如，1672387200。</td>
+</tr>
+<tr>
+<td>endDateTime</td>
+<td>false</td>
+<td>number</td>
+<td>對應的秒級時間戳（包含），例如，1672387200。</td>
+</tr>
+<tr>
+<td>orderBy</td>
+<td>false</td>
+<td>string</td>
+<td>"createdAt" 或 "return"，排序方式："createdAt"（更新時間，默認）或 "return"（回報）。</td>
+</tr>
+<tr>
+<td>orderDirection</td>
+<td>false</td>
+<td>string</td>
+<td>"desc" 或 "asc"，默認為 "desc"（降序）。</td>
+</tr>
+<tr>
+<td>wallet</td>
+<td>false</td>
+<td>string</td>
+<td>錢包地址（如果為空，將查詢所有錢包地址）。</td>
+</tr>
+</tbody>
+</table>
+<p>注意：如果在指定的 <code>startDateTime</code> 和 <code>endDateTime</code> 內的結果數量超過 300，可以使用輪詢（此時 <code>orderBy</code> 必須設置為 <code>"createdAt"</code>）繼續查詢。第 n 次輪詢請求的 <code>endDateTime</code> 參數應設置為 (n-1) 次輪詢結果中最後一條記錄的 <code>createdAt</code>。獲取所有數據後，應根據 <code>id</code> 字段去重。</p>
+<p><strong>回應參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>如下所示</td>
+</tr>
+</tbody>
+</table>
+<p>物件</p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>與持倉對應的產品 ID（與 The Graph 數據中的 <code>productId</code> 匹配）。此 ID 在鏈 + vault 維度內唯一，可用於查詢持倉餘額。</td>
+</tr>
+<tr>
+<td>positionId</td>
+<td>string</td>
+<td>持倉 ID，在鏈維度內唯一。</td>
+</tr>
+<tr>
+<td>product</td>
+<td>object</td>
+<td>產品信息。</td>
+</tr>
+<tr>
+<td>wallet</td>
+<td>string</td>
+<td>錢包地址。</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>number</td>
+<td>對應的秒級時間戳，例如，1672387200。</td>
+</tr>
+<tr>
+<td>updatedAt</td>
+<td>number</td>
+<td>對應的秒級時間戳，例如，1672387200。</td>
+</tr>
+<tr>
+<td>claimed</td>
+<td>boolean</td>
+<td>持倉是否已贖回。</td>
+</tr>
+<tr>
+<td>takerAllocationRate</td>
+<td>number</td>
+<td>根據計算時間，估算持有人可從投注池中獲得的比例。到期前，這是估算值。</td>
+</tr>
+<tr>
+<td>triggerTime</td>
+<td>number</td>
+<td>對於 Rangebound，首次突破時間；對於非 Rangebound，結算時間，單位為秒。</td>
+</tr>
+<tr>
+<td>triggerPrice</td>
+<td>number</td>
+<td>對於 Rangebound，首次突破價格；對於非 Rangebound，結算價格。</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>費率。</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>貸款信息（可選）。</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>RCH 價格轉換和空投計算所需的代幣價格。</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>計算的金額。</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>年化信息，適用於非 Surge 產品。</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>賠率信息，適用於 Surge 產品。</td>
+</tr>
+<tr>
+<td>claimParams</td>
+<td>object</td>
+<td>贖回參數信息。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>回應範例</strong></p>
+<pre><code>{
+    "value": [{
+        ...
+    }]
+}
+</code></pre><h3 id="獲取錢包交易">獲取錢包交易</h3>
+<pre><code>POST /rfq/transaction-list
+</code></pre><p><strong>輸入參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>必需</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>Int</td>
+<td></td>
+</tr>
+<tr>
+<td>vaults</td>
+<td>false</td>
+<td>list[string]</td>
+<td>合約地址集合；如果未提供，將查詢所有合約。</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>false</td>
+<td>Int</td>
+<td>查詢數量；默認為 100，最大為 300。</td>
+</tr>
+<tr>
+<td>startDateTime</td>
+<td>false</td>
+<td>number</td>
+<td>對應的秒級時間戳（包含），例如，1672387200。</td>
+</tr>
+<tr>
+<td>endDateTime</td>
+<td>false</td>
+<td>number</td>
+<td>對應的秒級時間戳（包含），例如，1672387200。</td>
+</tr>
+<tr>
+<td>orderDirection</td>
+<td>false</td>
+<td>string</td>
+<td>"desc" 或 "asc"，默認為 "desc"（降序）。</td>
+</tr>
+<tr>
+<td>taker</td>
+<td>false</td>
+<td>string</td>
+<td>Taker 錢包地址</td>
+</tr>
+<tr>
+<td>maker</td>
+<td>false</td>
+<td>string</td>
+<td>Maker 錢包地址</td>
+</tr>
+<tr>
+<td>claimParams</td>
+<td>false</td>
+<td>object</td>
+<td>贖回參數，對應於 position-list 數據中的 claimParams 字段。</td>
+</tr>
+<tr>
+<td>hash</td>
+<td>false</td>
+<td>string</td>
+<td>交易哈希</td>
+</tr>
+</tbody>
+</table>
+<p>注意：Taker、maker 和 claimParams 參數可用於聯合查詢以查找與持倉對應的交易記錄（一個持倉可能對應多筆交易）（並非所有參數都必需）。
+如果在指定的 <code>startDateTime</code> 和 <code>endDateTime</code> 內的結果數量超過 300，可以使用輪詢（此時 <code>orderBy</code> 必須設置為 <code>"createdAt"</code>）繼續查詢。第 n 次輪詢請求的 <code>endDateTime</code> 參數應設置為 (n-1) 次輪詢結果中最後一條記錄的 <code>createdAt</code>。獲取所有數據後，應根據 <code>id</code> 字段去重。</p>
+<p><strong>回應參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>如下所示</td>
+</tr>
+</tbody>
+</table>
+<p>物件</p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>hash</td>
+<td>string</td>
+<td>交易哈希</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>string</td>
+<td>taker 錢包地址。</td>
+</tr>
+<tr>
+<td>makerWallet</td>
+<td>string</td>
+<td>maker 錢包地址。</td>
+</tr>
+<tr>
+<td>product</td>
+<td>object</td>
+<td>產品信息。</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>number</td>
+<td>對應的秒級時間戳，例如，1672387200。</td>
+</tr>
+<tr>
+<td>takerAllocationRate</td>
+<td>number</td>
+<td>根據計算時間，估算持有人可從投注池中獲得的比例。到期前，這是估算值。</td>
+</tr>
+<tr>
+<td>triggerTime</td>
+<td>number</td>
+<td>對於 Rangebound，首次突破時間；對於非 Rangebound，結算時間，單位為秒。</td>
+</tr>
+<tr>
+<td>triggerPrice</td>
+<td>number</td>
+<td>對於 Rangebound，首次突破價格；對於非 Rangebound，結算價格。</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>費率。</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>貸款信息（可選）。</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>RCH 價格轉換和空投計算所需的代幣價格。</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>計算的金額。</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>年化信息，適用於非 Surge 產品。</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>賠率信息，適用於 Surge 產品。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>回應範例</strong></p>
+<pre><code>{
+    "value": [{
+        ...
+    }]
+}
+</code></pre><h3 id="隱藏虧損持倉">隱藏虧損持倉</h3>
+<pre><code>POST rfq/position/conceal
+</code></pre><p><strong>輸入參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>必需</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>鏈 ID</td>
+</tr>
+<tr>
+<td>positionIds</td>
+<td>true</td>
+<td>List[string]</td>
+<td>positionId 列表，最多 20 個</td>
+</tr>
+</tbody>
+</table>
+<p><strong>請求範例</strong></p>
+<pre><code>{
+    "positionIds": [
+        "aaaa","bbbb"
+    ],
+    "chainId": 1
+}
+</code></pre><p><strong>回應參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 表示返回結果正常</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>異常情況下返回的錯誤信息</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="獲取待處理交易">獲取待處理交易</h3>
+<p>這主要是為了解決底層持倉數據同步問題。這裡檢索到的數據可能會消失（由於區塊鏈分叉競爭）。</p>
+<pre><code>POST rfq/transactions/pending
+</code></pre><p><strong>輸入參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>必需</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>Int</td>
+<td></td>
+</tr>
+<tr>
+<td>vaults</td>
+<td>false</td>
+<td>list[string]</td>
+<td>合約地址集合；如果未提供，將查詢所有合約。</td>
+</tr>
+<tr>
+<td>taker</td>
+<td>false</td>
+<td>string</td>
+<td>Taker 錢包地址</td>
+</tr>
+<tr>
+<td>maker</td>
+<td>false</td>
+<td>string</td>
+<td>Maker 錢包地址</td>
+</tr>
+</tbody>
+</table>
+<p><strong>回應參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>如下所示</td>
+</tr>
+</tbody>
+</table>
+<p>物件</p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>hash</td>
+<td>string</td>
+<td>交易哈希</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>string</td>
+<td>taker 錢包地址。</td>
+</tr>
+<tr>
+<td>makerWallet</td>
+<td>string</td>
+<td>maker 錢包地址。</td>
+</tr>
+<tr>
+<td>product</td>
+<td>object</td>
+<td>產品信息。</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>number</td>
+<td>對應的秒級時間戳，例如，1672387200。</td>
+</tr>
+<tr>
+<td>takerAllocationRate</td>
+<td>number</td>
+<td>根據計算時間，估算持有人可從投注池中獲得的比例。到期前，這是估算值。</td>
+</tr>
+<tr>
+<td>triggerTime</td>
+<td>number</td>
+<td>對於 Rangebound，首次突破時間；對於非 Rangebound，結算時間，單位為秒。</td>
+</tr>
+<tr>
+<td>triggerPrice</td>
+<td>number</td>
+<td>對於 Rangebound，首次突破價格；對於非 Rangebound，結算價格。</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>費率。</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>貸款信息（可選）。</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>RCH 價格轉換和空投計算所需的代幣價格。</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>計算的金額。</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>年化信息，適用於非 Surge 產品。</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>賠率信息，適用於 Surge 產品。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="獲取-rch-空投歷史">獲取 RCH 空投歷史</h3>
+<pre><code>GET rfq/airdrop/history
+</code></pre><p><strong>輸入參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>必需</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wallet</td>
+<td>true</td>
+<td>string</td>
+<td>錢包地址</td>
+</tr>
+<tr>
+<td>startDateTime</td>
+<td>true</td>
+<td>number</td>
+<td>對應的秒級時間戳（包含），例如，1672387200。</td>
+</tr>
+<tr>
+<td>endDateTime</td>
+<td>true</td>
+<td>number</td>
+<td>對應的秒級時間戳（包含），例如，1672387200。</td>
+</tr>
+<tr>
+<td>orderBy</td>
+<td>false</td>
+<td>string</td>
+<td>"dateTime" 或 "rch"，排序方式："dateTime"（空投時間，默認）或 "rch"（金額）。</td>
+</tr>
+<tr>
+<td>orderDirection</td>
+<td>false</td>
+<td>string</td>
+<td>"desc" 或 "asc"，默認為 "desc"（降序）。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>回應參數</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>如下所示</td>
+</tr>
+</tbody>
+</table>
+<p><strong>物件</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>欄位名稱</strong></th>
+<th><strong>類型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dateTime</td>
+<td>long</td>
+<td>當前的秒級時間戳，例如，1672387200。</td>
+</tr>
+<tr>
+<td>wallet</td>
+<td>string</td>
+<td>錢包地址</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>string</td>
+<td>交易量</td>
+</tr>
+<tr>
+<td>rch</td>
+<td>string</td>
+<td>空投金額，原始值，需要除以 1e18</td>
+</tr>
+<tr>
+<td>merkleProof</td>
+<td>string</td>
+<td>Merkle 證明</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="marketmaker-open-apis.html" class="navigation navigation-prev " aria-label="Previous page: 做市商開放 API">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="subgraphs.html" class="navigation navigation-next " aria-label="Next page: 子圖">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"DAPP 開放 API","level":"1.11.2","depth":2,"next":{"title":"子圖","level":"1.11.3","depth":2,"path":"developer/subgraphs.md","ref":"developer/subgraphs.md","articles":[]},"previous":{"title":"做市商開放 API","level":"1.11.1","depth":2,"path":"developer/marketmaker-open-apis.md","ref":"developer/marketmaker-open-apis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"zh-tw","gitbook":"*"},"file":{"path":"developer/dapp-open-apis.md","mtime":"2025-06-09T07:16:20.367Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"zh-tw"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

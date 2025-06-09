@@ -1,0 +1,704 @@
+
+<!DOCTYPE HTML>
+<html lang="de" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Bug-Bounty-Programm · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="governance.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Suchbegriff eingeben" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org Übersicht
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    Innovationen der nächsten Welle von DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 Willkommen zu den SOFA-Protokollen 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    Fahrplan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guiREADME.md">
+            
+                <span>
+            
+                    
+                    Benutzerhandbuch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guiearn.md">
+            
+                <span>
+            
+                    
+                    Verdienen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guisurge.md">
+            
+                <span>
+            
+                    
+                    Surge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guiclaim.md">
+            
+                <span>
+            
+                    
+                    Ihre $RCH Belohnungen beanspruchen! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../technical-design/">
+            
+                <a href="../technical-design/">
+            
+                    
+                    Technisches Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../technical-design/vault-classification.html">
+            
+                <a href="../technical-design/vault-classification.html">
+            
+                    
+                    Vault-Klassifizierung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../technical-design/risk-prefer.html">
+            
+                <a href="../technical-design/risk-prefer.html">
+            
+                    
+                    Ihre Risikopräferenz definieren
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../technical-design/oracle.html">
+            
+                <a href="../technical-design/oracle.html">
+            
+                    
+                    Oracle-Konstruktion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../technical-design/settlement.html">
+            
+                <a href="../technical-design/settlement.html">
+            
+                    
+                    On-Chain Abrechnungsüberlegungen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../technical-design/fees.html">
+            
+                <a href="../technical-design/fees.html">
+            
+                    
+                    Protokollgebühren
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../technical-design/automator.html">
+            
+                <a href="../technical-design/automator.html">
+            
+                    
+                    Automatisierer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Sicherheit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.7.1" data-path="bug-bounty.html">
+            
+                <a href="bug-bounty.html">
+            
+                    
+                    Bug-Bounty-Programm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="governance.html">
+            
+                <a href="governance.html">
+            
+                    
+                    Governance-Rahmen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="external.html">
+            
+                <a href="external.html">
+            
+                    
+                    Externe Kontingenzen & Risikofaktoren
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    Tokenomics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    Hypothetisches $RCH Float-Szenario (LP + kumulative Airdrops)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA Punkte
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA FAQs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    Entwicklerdokumentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    Market Maker Offene APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    DAPP Offene APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    Subgraphen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    Bereitstellungsverträge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    Market Maker Onboarding-Prozess
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    Links
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Veröffentlicht mit HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Bug-Bounty-Programm</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="bug-bounty-programm">Bug Bounty Programm</h1>
+<p>SOFA.org legt großen Wert auf die Sicherheit der Benutzer und die Robustheit der Plattform. Wir erkennen an, dass Sicherheitsrisiken und Schwachstellen immer existieren werden, egal wie „sicher“ das System erscheint. Um die Mitglieder der Gemeinschaft zu ermutigen, gemeinsam zu unseren Sicherheitsbemühungen beizutragen, haben wir ein Bug Bounty-Programm ins Leben gerufen. Dieses Programm ist darauf ausgelegt, weiße Hacker zu belohnen, die potenzielle Sicherheitsrisiken in unserem Ökosystem entdecken und melden.</p>
+<h2 id="teilnahme-an-unserem-bug-bounty-programm">Teilnahme an unserem Bug Bounty Programm</h2>
+<p>Um am Bug Bounty-Programm von SOFA.org teilzunehmen, beachten Sie bitte die folgenden Schritte:</p>
+<ol>
+<li><strong>Machen Sie sich mit den Bounty-Details vertraut</strong>: Besuchen Sie unsere Projektseite auf unserer Bug Bounty-Programmseite und lesen Sie gründlich die Schwereklassifikationen, Belohnungsrichtlinien und Meldungsanforderungen, die wir bereitgestellt haben. Wir empfehlen, sorgfältig zu lesen, um sicherzustellen, dass Sie verstehen, welche Arten von Schwachstellen für Belohnungen in Frage kommen.</li>
+<li><strong>Führen Sie Sicherheitstests durch</strong>: Beginnen Sie mit dem Testen der Smart Contracts des SOFA-Protokolls, der dApp-Schnittstellen oder der damit verbundenen Infrastruktur, basierend auf Ihrem Fachgebiet. Bitte halten Sie sich an die Prinzipien der verantwortungsvollen Offenlegung und vermeiden Sie Testverhalten, das zu tatsächlichen Vermögensverlusten führen könnte.</li>
+<li><strong>Reichen Sie einen Bericht ein</strong>: Wenn Sie glauben, ein gültiges Sicherheitsproblem gefunden zu haben, reichen Sie bitte einen detaillierten Schwachstellenbericht über das Bug Bounty Programm ein. Ihr Bericht sollte eine vollständige Beschreibung des Problems enthalten, einschließlich der Schritte zur Reproduktion der Schwachstelle, ihrer potenziellen Auswirkungen und (wenn möglich) einen Vorschlag zur Minderung oder Behebung der Schwachstelle.</li>
+<li><strong>Warten Sie auf eine Sicherheitsüberprüfung</strong>: Unser Sicherheitsteam wird Ihren Bericht überprüfen und mit Ihnen zusammenarbeiten, um die Schwachstelle zu verifizieren. Bitte halten Sie die Kommunikationskanäle offen, damit wir das Problem schnell und effizient lösen können.</li>
+<li><strong>Erhalten Sie Ihre Belohnung</strong>: Sobald die Schwere der Schwachstelle verifiziert und Korrekturmaßnahmen umgesetzt wurden, erhalten berechtigte Berichte Belohnungen. Die Höhe der Belohnung wird basierend auf der Schwere und den potenziellen Auswirkungen der Schwachstelle bewertet.</li>
+</ol>
+<h1 id="belohnungskriterien">Belohnungskriterien</h1>
+<p>Die Höhe der Belohnung basiert auf der Schwere der Schwachstelle, die typischerweise in mehrere Stufen von Kritisch bis Niedrig kategorisiert wird. Spezifische Belohnungsbeträge und Kriterien finden Sie auf unserer Seite.</p>
+<h1 id="wichtige-erinnerungen">Wichtige Erinnerungen</h1>
+<ul>
+<li><strong>Geben Sie Probleme nicht öffentlich bekannt</strong>: Bitte geben Sie keine Details öffentlich bekannt, bevor das Problem behoben ist, um potenzielle böswillige Ausnutzung zu vermeiden.</li>
+<li><strong>Bitte halten Sie sich an alle relevanten Regeln</strong>: Halten Sie sich beim Testen bitte an alle geltenden Gesetze und Regeln.</li>
+</ul>
+<p>Wir hoffen, dass wir durch dieses Bug Bounty-Programm gemeinsam mit der Gemeinschaft die Sicherheit und Integrität des SOFA.org-Ökosystems effektiv stärken können. Wir freuen uns darauf, mit Sicherheitsforschern und Experten der Gemeinschaft zu interagieren, um potenzielle Schwachstellen zu entdecken und zu beheben, was zu einem stärkeren, sichereren und zuverlässigeren DeFi-Ökosystem führt, das jeder genießen kann.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Sicherheit">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="governance.html" class="navigation navigation-next " aria-label="Next page: Governance-Rahmen">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Bug-Bounty-Programm","level":"1.7.1","depth":2,"next":{"title":"Governance-Rahmen","level":"1.7.2","depth":2,"path":"security/governance.md","ref":"security/governance.md","articles":[]},"previous":{"title":"Sicherheit","level":"1.7","depth":1,"path":"security/README.md","ref":"security/README.md","articles":[{"title":"Bug-Bounty-Programm","level":"1.7.1","depth":2,"path":"security/bug-bounty.md","ref":"security/bug-bounty.md","articles":[]},{"title":"Governance-Rahmen","level":"1.7.2","depth":2,"path":"security/governance.md","ref":"security/governance.md","articles":[]},{"title":"Externe Kontingenzen & Risikofaktoren","level":"1.7.3","depth":2,"path":"security/external.md","ref":"security/external.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"de","gitbook":"*"},"file":{"path":"security/bug-bounty.md","mtime":"2025-06-06T19:18:48.966Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"de"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

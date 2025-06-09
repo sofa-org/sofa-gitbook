@@ -1,0 +1,733 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>リスク嗜好の定義 · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="oracle.html" />
+    
+    
+    <link rel="prev" href="vault-classification.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org 概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    次世代 DeFi の革新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 SOFA プロトコルへようこそ 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    ロードマップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    ユーザーガイド
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    稼ぐ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    サージ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    $RCH 報酬の請求！ 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    技術設計
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="vault-classification.html">
+            
+                <a href="vault-classification.html">
+            
+                    
+                    ボールト分類
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="risk-prefer.html">
+            
+                <a href="risk-prefer.html">
+            
+                    
+                    リスク嗜好の定義
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="oracle.html">
+            
+                <a href="oracle.html">
+            
+                    
+                    オラクル構築
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="settlement.html">
+            
+                <a href="settlement.html">
+            
+                    
+                    オンチェーン決済の考慮事項
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="fees.html">
+            
+                <a href="fees.html">
+            
+                    
+                    プロトコル手数料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="automator.html">
+            
+                <a href="automator.html">
+            
+                    
+                    オートメーター
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    セキュリティ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    バグバウンティプログラム
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    ガバナンスフレームワーク
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    外部の不測の事態とリスク要因
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    トークノミクス
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    仮想の $RCH フロートシナリオ (LP + 累積エアドロップ)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA ポイント
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA よくある質問
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    開発者ドキュメント
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    マーケットメイカーオープンAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    DAPP オープンAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    サブグラフ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    デプロイメント契約
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    マーケットメイカーのオンボーディングプロセス
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    リンク
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >リスク嗜好の定義</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="リスク嗜好の定義">リスク嗜好の定義</h1>
+<blockquote>
+<p><strong>どの程度の下振れリスクを取ることを望みますか？</strong></p>
+</blockquote>
+<h2 id="アーンプロトコル">アーンプロトコル</h2>
+<p>「アーン」プロトコルカテゴリは、資本の下振れ保護を最大限に求めるリスク回避型の預金者向けに設計されています。アーンボールトは、ユーザーが預けた資本を安全な利回りプロトコル（例：AAVE）に<strong>ステーク</strong>し、基本的な利息を生成します**。その後、その保証された収入の一部を利用して、オプションプレミアムを市場メーカーに資金提供し、上昇の可能性を生み出します。</p>
+<p>最終的な結果は、<strong>下振れ保護を最大化しつつ、ユーザーの方向に市場が好転した場合にはいくらかの上昇の可能性を維持します。</strong></p>
+<p>そのため、<strong>重要な設計要素は、対象となるステーキングプロトコルが提供する受動的利回りが、製品の最悪の支払いを意味のあるレベルで上回る必要があることです。これは、オプションプレミアムを適切に資金提供し、上昇リターンを生成するためです。</strong>したがって、ユーザーがUSDTの代わりにETHを保有している場合、Lidoのような流動的なステーキングプロトコルでETHをstETHに変換し、その後stETHをプロトコルボールトにロックして追加の利回りの蓄積を享受する必要があります。</p>
+<p><img src="../../static/draw6.png" alt=""></img></p>
+<p><img src="../../static/draw7.png" alt=""></img></p>
+<h2 id="サージプロトコル">サージプロトコル</h2>
+<p>より高いリスク・リターンの許容度を持つユーザー向けに、<strong>プロトコルは前払いの資本「アンテ」を伴う高リターン構造も提供します。</strong>サージプロトコルは、資本損失と引き換えに実質的に高いリターンを望む攻撃的なユーザーを対象としています。</p>
+<p><img src="../../static/draw8.png" alt=""></img></p>
+<p>これらのサージベースの製品では、<strong>プロトコルボールトは、ユーザーの元本と市場メーカーのプレミアムの両方を取引開始時にロックします。</strong>これは一種の「ポーカーアンテ」に類似しています。ロックされた資本ポジションは、他のプロトコルに再ステークされることはなく、最終的な支払いに対するコミットされたアンテとして機能します。</p>
+<p>サージレンジバウンド製品を例に挙げてみましょう。基礎資産の価格が最終満期までに厳密にバリア内に留まる場合、ユーザーはアーン版よりも指数関数的に高いリターンを受け取ります。しかし、逆のことが起こった場合、構造は早期に終了し、ロックされた元本はこの戦略の「勝者」として市場メーカーに移転されます。</p>
+<p>再度言いますが、<strong>これらの製品は非常に強い市場の確信を持つユーザーを対象としており、その自信を試すことで元本損失と引き換えに非常に高いリターンを得ることを望んでいます。</strong></p>
+<h2 id="psa-レンジバウンド製品に関する特別な注意">PSA: レンジバウンド製品に関する特別な注意</h2>
+<p>レンジバウンドが実際にどのように機能するかの図解</p>
+<p>理論的には単純ですが、レンジバウンド製品にはいくつかの設計上の課題があります。特にDeFiのオンチェーン互換性に関しては以下の通りです：</p>
+<ul>
+<li>製品は、満期時の「時点」でのチェックではなく、<em>一連の</em> 過去の価格を参照します。</li>
+<li>価格バリアが破られると、製品は「ノックアウト」される可能性があります。</li>
+<li><p>製品は<em>任意の瞬間</em> にノックアウトされる可能性がありますが、技術的には一日中オンチェーンの価格参照を継続的に更新することは実現不可能です。</p>
+<ul>
+<li>そのため、レンジチェックは必然的に「過去を振り返る」ものとなります。</li>
+</ul>
+</li>
+</ul>
+<p>チームは前述の課題に対して以下の設計妥協を行いました：</p>
+<ol>
+<li><p><strong>デイリー範囲チェック：</strong></p>
+<ul>
+<li>ガス料金とオンチェーンTPSの観点から、当社のRangebound製品は過去24時間に製品がノックアウトされたかどうかを<em>デイリー</em><strong> </strong>価格チェック（午後4時OTC+8）のみを行います。</li>
+<li>ノックアウトされた製品は、今後のエクスポージャーなしで終了します。</li>
+</ul>
+</li>
+<li><p><strong>デイリー製品サイクル：</strong></p>
+<ul>
+<li>デイリー範囲チェックと決済のリズムに従い、当社の観察サイクルは常に<em>次の</em>午後4時（OTC+8）期間から始まります。</li>
+<li>それにもかかわらず、ユーザーはいつでもRangebound製品を購読および購入することができ、そのBase+利回りは即座に発生し始めます。</li>
+</ul>
+</li>
+<li><p><strong>早期終了と最終引き出し：</strong></p>
+<ul>
+<li>'ノックアウト'されたRangebound製品は実質的に'ゲームオーバー'ですが、ユーザーの預金はAaveにステークされたままであり、現在のイテレーションではユーザーが元本を引き出すために最終満期を待つ必要があります。</li>
+</ul>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="vault-classification.html" class="navigation navigation-prev " aria-label="Previous page: ボールト分類">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="oracle.html" class="navigation navigation-next " aria-label="Next page: オラクル構築">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"リスク嗜好の定義","level":"1.6.2","depth":2,"next":{"title":"オラクル構築","level":"1.6.3","depth":2,"path":"technical-design/oracle.md","ref":"technical-design/oracle.md","articles":[]},"previous":{"title":"ボールト分類","level":"1.6.1","depth":2,"path":"technical-design/vault-classification.md","ref":"technical-design/vault-classification.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"ja","gitbook":"*"},"file":{"path":"technical-design/risk-prefer.md","mtime":"2025-06-06T18:09:12.423Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"ja"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,792 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>SOFA FAQs · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../developer/" />
+    
+    
+    <link rel="prev" href="../sofa-point/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    Innovating the Next Wave of DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 Welcome To the SOFA Protocols 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    Roadmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    User Guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    Earn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    Surge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    Claiming Your $RCH Rewards! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../technical-design/">
+            
+                <a href="../technical-design/">
+            
+                    
+                    Technical Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../technical-design/vault-classification.html">
+            
+                <a href="../technical-design/vault-classification.html">
+            
+                    
+                    Vault Classification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../technical-design/risk-prefer.html">
+            
+                <a href="../technical-design/risk-prefer.html">
+            
+                    
+                    Defining Your Risk Preference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../technical-design/oracle.html">
+            
+                <a href="../technical-design/oracle.html">
+            
+                    
+                    Oracle Construction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../technical-design/settlement.html">
+            
+                <a href="../technical-design/settlement.html">
+            
+                    
+                    On-Chain Settlement Considerations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../technical-design/fees.html">
+            
+                <a href="../technical-design/fees.html">
+            
+                    
+                    Protocol Fees
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../technical-design/automator.html">
+            
+                <a href="../technical-design/automator.html">
+            
+                    
+                    Automator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    Bug Bounty Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    Governance Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    External Contingencies & Risk Factors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    Tokenomics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    Hypothetical $RCH Float Scenario (LP + Cumulative Airdrops)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA Points
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    SOFA FAQs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    Developer Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    Market Maker Open APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    DAPP Open APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    Subgraphs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    Deployment Contracts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    Market Maker Onboarding Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    Links
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >SOFA FAQs</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="sofa-faqs">SOFA FAQs</h1>
+<h2 id="background">Background</h2>
+<h3 id="1-what-is-sofaorgs-mission-statement">1. What is <a href="https://www.sofa.org/" target="_blank">SOFA.org</a>'s mission statement?</h3>
+<p><a href="https://www.sofa.org/" target="_blank">SOFA.org</a> is a <strong>decentralized, non-profit organization</strong> focused on advancing the DeFi ecosystem. Our modus operandi is to promote the highest DeFi standards, support high-quality projects, and promote adoption of blockchain technologies across mainstream finance.</p>
+<h3 id="2-what-exactly-is-sofaorg-trying-to-build">2. What exactly is <a href="https://www.sofa.org/" target="_blank">SOFA.org</a> trying to build?</h3>
+<p>We are trying to develop a base-layer, settlement framework to handle the settlement of all financial assets on-chain.  Our landing protocols will focus on crypto Structured Products as an asset class.</p>
+<h3 id="3-structured-what">3. Structured What?</h3>
+<p>Structured products are really just packaged products where users get to enjoy high potential yield with strong capital protection.  They usually involve selling options and monetizing volatility, but it is too complicated for the average person.  So the entire structure is wrapped as a simple product for users to pick and choose from our easy to use dApp, and supported by any interested market makers.</p>
+<h3 id="4-is-it-safe--is-my-money-going-to-be-stolen">4. Is it safe?  Is my money going to be stolen?</h3>
+<p>Your assets (and the market maker's) will always be safe and visible on-chain in transparent smart contract vaults.</p>
+<p>The dApp simply connects the user to the product market maker, and an execution is not done until the user commits and the protocol confirms that both sides have the requisite assets.  Upon successful execution, all the assets will be locked in our ERC-1155 vaults on Ethereum.  All of our code is open source and verifiable by anyone.</p>
+<h3 id="5-are-the-sofa-protocols-audited">5. Are the SOFA protocols audited?</h3>
+<p>The initial SOFA protocols have passed a full chain audit with Peckshield, Code4rena, and SigmaPrime.</p>
+<ul>
+<li><a href="https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf" target="_blank">Peckshield</a></li>
+<li><a href="https://code4rena.com/reports/2024-05-sofa-pro-league" target="_blank">Code4rena</a></li>
+<li><a href="https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf" target="_blank">SigmaPrime</a></li>
+</ul>
+<h3 id="6-is-sofaorg-a-market-maker">6. Is <a href="https://www.sofa.org/" target="_blank">SOFA.org</a> a market maker?</h3>
+<p>No, we are infrastructure and protocol builders, pure and simple.</p>
+<h3 id="7-arent-other-projects-doing-something-similar-using-exotic-products">7. Aren't other projects doing something similar using exotic products?</h3>
+<p>Somewhat, but not quite to the scale of our ambition.</p>
+<p>There are certainly other protocols which promise high yielding structures using deposit epochs and other passive methodologies.  We are taking a significantly different approach than most at the moment:</p>
+<ul>
+<li>SOFA is not a market maker.  We are simply the protocol builders.  We do not take or handle user assets at all.  All deposit flow is handled by the on-chain smart-contract and vaults.</li>
+<li>Prices are conducted 'RFQ'-style (Request for Quote) with external market makers, rather than arbitrary fixed epochs.</li>
+<li>Users have full discretion on their product parameters, transaction timing, and the ultimate final execution decision.</li>
+<li>The SOFA protocols are inclusive to and welcome all external market makers.</li>
+<li>Our vaults are designed under the ERC-1155 standard, allowing vital instrument parameters to be immutably stored at the contract level.</li>
+<li>Our authentic position risk tokens, representing secure and transferrable collateral claims that can be recognized on partner DeFi and CeFi platforms in the future.</li>
+<li>We provide open APIs for market makers and developments to encourage maximum participation and growth of the SOFA protocols.</li>
+</ul>
+<h3 id="8-who-are-you-guys-anyway">8. Who are you guys anyway?</h3>
+<p><a href="https://www.sofa.org/" target="_blank">SOFA.org</a> is supported by an experienced team of finance veterans, technology experts, and repeat entrepreneurs who are looking to build a meaningful project that can stand the test of time.  Most of us have been blessed with relatively successful careers and understand the power of the 'long-game' over short-term gains.</p>
+<p>Furthermore, many of us are also natural disrupters with a desire to shake-up the stale financial system, and DeFi offers us that perfect venue to showcase our work in a transparent and verifiable manner.  LFG!</p>
+<h3 id="9-developer-documentation--git-hub">9. Developer documentation / Git-hub?</h3>
+<p>Please see <a href="https://docs.sofa.org/en/developer/" target="_blank">https://docs.sofa.org/en/developer/</a> and <a href="https://github.com/sofa-org/sofa-protocol" target="_blank">https://github.com/sofa-org/sofa-protocol</a></p>
+<h3 id="protocol-explanation">Protocol Explanation</h3>
+<h3 id="10-whats-the-protocol-use-case">10. What's the protocol use-case?</h3>
+<p>Users are able to earn attractive yields / income on their deposits &amp; purchases of structured products on the SOFA protocols.  There will be additional utility token airdrops rewarded exclusively to users as well.</p>
+<h3 id="11-what-are-your-unique-selling-points">11. What are your unique selling points?</h3>
+<p>Users have wide latitude over their product customization, pricing is fair due to openness to any and all 3rd party market maker, products cater to both risk-averse as well as speculative users across different structures, protocol integrity is ensured through multiple audits, and asset security is maximized through the use of transparent smart contract vaults.</p>
+<p>Most importantly, protocol users are heavily rewarded with an innovative, user-centric token airdrop and a tokenomics model emphasizing long-term sustainability above short-term profits.</p>
+<h3 id="12-how-do-the-sofa-protocols-make-money">12. How do the SOFA protocols make money?</h3>
+<p>Settlement fees.  Please see <a href="https://docs.sofa.org/en/technical-design/fees.html" target="_blank">https://docs.sofa.org/en/technical-design/fees.html</a></p>
+<p>The protocol charges users a base fee (based on their option premium) for using our dApp for execution and smart contracts for settlement.  The protocol makes an additional upside fee if (and only if) the user 'wins' from a further upside outcome.</p>
+<h3 id="13-what-does-the-protocol-do-with-its-income">13. What does the protocol do with its income?</h3>
+<p>All protocol earnings are fully recycled to burn RCH tokens daily; there is no protocol 'treasury', so to speak.</p>
+<p>We are generous to a fault.  We know.  Wait until you see our tokenomics.</p>
+<h2 id="tokenomics">Tokenomics</h2>
+<h3 id="14-did-you-really-fair-launch-the-rch-utility-tokens--like-literally-all-of-it">14. Did you really 'fair launch' the $RCH utility tokens?  Like, literally all of it?</h3>
+<p>Yeah we did.  No VCs, no insider allocations.  The core team basically worked <em>pro-bono</em> to accomplish our long-term mission.  See question 8 above.</p>
+<p>In fact, much of the core team even missed out on the early Uniswap purchases - (No) thanks to all you degens!!!!</p>
+<p>Mint TX here:</p>
+<p><a href="https://etherscan.io/tx/0x03c5d2569d9d7d9cf79111aa4afda3dea5b7e4e3bb77c580caf75a88fc08eeb2" target="_blank">https://etherscan.io/tx/0x03c5d2569d9d7d9cf79111aa4afda3dea5b7e4e3bb77c580caf75a88fc08eeb2</a></p>
+<h3 id="15-whats-this-about-burning-750-eth-of-initial-liquidity-at-launch">15. What's this about burning 750 ETH of initial liquidity at launch?</h3>
+<p>Yeah, as if the fair launch wasn't enough.  The DAO agreed to burn the initial 750 ETH of Uniswap LP to lock-in the initial liquidity.</p>
+<p>Burn TX here: <a href="https://etherscan.io/tx/0x3c0ab9ce92e466d1882a83b79f34aa879ba7845bf028779f71390e882f6733e7" target="_blank">https://etherscan.io/tx/0x3c0ab9ce92e466d1882a83b79f34aa879ba7845bf028779f71390e882f6733e7</a></p>
+<h3 id="16-you-guys-crazy--how-are-you-funded">16. You guys crazy.  How are you funded?</h3>
+<p>Out of pocket.  Initial development expenses were funded by our core founding DAO members.</p>
+<h3 id="17--ok-really--whats-the-catch">17. ... Ok really.  What's the catch?</h3>
+<p>... We <em>really</em> wish there was one.</p>
+<h3 id="18-ok-fine--whats-this-rch-token-good-for">18. OK fine.  What's this $RCH token good for?</h3>
+<p>Please see <a href="https://docs.sofa.org/en/tokenomics/" target="_blank">https://docs.sofa.org/en/tokenomics/</a></p>
+<p>$RCH is our utility token.  Fixed deflationary supply, 67% minted on day 1 on uniswap, 33% to be airdropped exclusively to users on a fixed daily schedule over a long period.</p>
+<p>The idea of the utility token is to reward our users and long term token hodlers, and we achieve it with a symbiotic and positive reinforcement loop with our structured product offerings.</p>
+<ul>
+<li>Buyers of SOFA structured products get $RCH airdrops <em>on-top</em> of their normal yield</li>
+<li>SOFA earns settlement fees.  SOFA recycles 100% of earnings to burn $RCH on Uniswap daily.</li>
+<li>Supply goes down, price goes up.  $RCH supply is fixed after all.</li>
+<li>Higher $RCH, higher <em>excess return</em> on our structured products, making them more attractive.</li>
+<li>More buying, virtuous loop repeats.</li>
+</ul>
+<p><strong>Naturally, $RCH supply is long-term deflationary as long as the protocol buyback volumes exceed our daily airdrop emissions.</strong></p>
+<p><strong>Said in another way, the long-term success of our token is contingent on accumulated use of the SOFA protocols in the long-run.  </strong>Sounds pretty fair right?</p>
+<h3 id="19-hey-i-actually-read-your-docs--whats-this-dual-token-system">19. Hey I actually read your docs.  What's this Dual Token system?</h3>
+<p>Please see <a href="https://docs.sofa.org/en/tokenomics/" target="_blank">https://docs.sofa.org/en/tokenomics/</a></p>
+<p>$RCH rewards our users and long-term hodlers from protocol earnings being recycled to burn the coins.  Effectively, we are accruing all the protocol income directly to our end users and token holders by raising the scarcity of the remaining tokens.</p>
+<p>$SOFA is our governance token which will have its own TGE later (&lt;6 months hopefully).  As a decentralized, non-profit, open-source technology organization, all decisions within the <a href="https://www.sofa.org/" target="_blank">SOFA.org</a> ecosystem are determined by $SOFA token votes.  <em>To be clear, as a pure governance token, $SOFA does not participate in any profit sharing within the ecosystem.</em></p>
+<h3 id="20-what-can-the-governance-tokens-vote-on">20. What can the governance tokens vote on?</h3>
+<p>Please see <a href="https://docs.sofa.org/en/tokenomics/" target="_blank">https://docs.sofa.org/en/tokenomics/</a></p>
+<p><em>A sample but non-exhaustive list of voting measures includes:</em></p>
+<ol>
+<li>Types of new products to be onboarded</li>
+<li>Determination of the eligible basket of supported collateral (USDT etc.)</li>
+<li>Admission of new partner protocols into the <a href="https://www.sofa.org/" target="_blank">SOFA.org</a> ecosystem</li>
+<li>Distribution mix % of daily $RCH airdrops between the various on-boarded products</li>
+<li>Distribution mix % of daily $RCH airdrops amongst ecosystem protocols</li>
+<li>Pace of $RCH airdrops</li>
+<li>And other decisions to come as the ecosystem matures</li>
+</ol>
+<h3 id="21-how-can-i-earn-more-rch-and-sofa">21. How can I earn more $RCH and $SOFA</h3>
+<p><strong>$RCH:</strong></p>
+<ul>
+<li>Buy them on Uniswap.  You know you want to.</li>
+<li>Start using the SOFA protocols to earn yields AND airdrops!</li>
+</ul>
+<p><strong>$SOFA:</strong></p>
+<p>They were awarded to our early DAO members, builders, advisors, and core community members that worked tirelessly to make our project a success.  Please contact the SOFA team if you would like to join our ever-growing community if you think you can make a material and positive contribution to our cause.</p>
+<h3 id="22-how-can-i-optimize-rch-airdrop-farming">22. How can I optimize $RCH airdrop farming?</h3>
+<p>TL;DR.  Keep purchasing products on the SOFA protocols!</p>
+<p>No, really.  The daily airdrop allocation is allocated based on a pro-rata of a user's traded premium vs the protocol's total traded premium, calculated and reset daily.  There are too many moving parts for one to 'optimize' airdrop farming, and it's designed as such.</p>
+<p>Please focus on buying the right product with the risk profile that suits your needs!</p>
+<p>For more calculation details, please see <a href="https://docs.sofa.org/en/tokenomics/" target="_blank">https://docs.sofa.org/en/tokenomics/</a></p>
+<h3 id="23-exchange-listing">23. Exchange Listing?</h3>
+<p>$RCH was fair-launched on Uniswap without any prior CEX-listing discussions.  With that being said, a number of CEX have started to list $RCH voluntarily out of their own will.  Please see the Coingecko website for a full list of current markets:</p>
+<p><a href="https://www.coingecko.com/en/coins/rch-token" target="_blank">https://www.coingecko.com/en/coins/rch-token</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../sofa-point/" class="navigation navigation-prev " aria-label="Previous page: $SOFA Points">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../developer/" class="navigation navigation-next " aria-label="Next page: Developer Documentation">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SOFA FAQs","level":"1.10","depth":1,"next":{"title":"Developer Documentation","level":"1.11","depth":1,"path":"developer/README.md","ref":"developer/README.md","articles":[{"title":"Market Maker Open APIs","level":"1.11.1","depth":2,"path":"developer/marketmaker-open-apis.md","ref":"developer/marketmaker-open-apis.md","articles":[]},{"title":"DAPP Open APIs","level":"1.11.2","depth":2,"path":"developer/dapp-open-apis.md","ref":"developer/dapp-open-apis.md","articles":[]},{"title":"Subgraphs","level":"1.11.3","depth":2,"path":"developer/subgraphs.md","ref":"developer/subgraphs.md","articles":[]},{"title":"Deployment Contracts","level":"1.11.4","depth":2,"path":"developer/contracts.md","ref":"developer/contracts.md","articles":[]},{"title":"Market Maker Onboarding Process","level":"1.11.5","depth":2,"path":"developer/marketmaker-onboarding-process.md","ref":"developer/marketmaker-onboarding-process.md","articles":[]}]},"previous":{"title":"$SOFA Points","level":"1.9","depth":1,"path":"sofa-point/README.md","ref":"sofa-point/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"en","gitbook":"*"},"file":{"path":"faq/README.md","mtime":"2025-06-06T12:08:27.416Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

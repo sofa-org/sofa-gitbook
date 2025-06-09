@@ -1,0 +1,756 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Automator · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../security/" />
+    
+    
+    <link rel="prev" href="fees.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    Innovating the Next Wave of DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 Welcome To the SOFA Protocols 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    Roadmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    User Guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    Earn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    Surge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    Claiming Your $RCH Rewards! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Technical Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="vault-classification.html">
+            
+                <a href="vault-classification.html">
+            
+                    
+                    Vault Classification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="risk-prefer.html">
+            
+                <a href="risk-prefer.html">
+            
+                    
+                    Defining Your Risk Preference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="oracle.html">
+            
+                <a href="oracle.html">
+            
+                    
+                    Oracle Construction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="settlement.html">
+            
+                <a href="settlement.html">
+            
+                    
+                    On-Chain Settlement Considerations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="fees.html">
+            
+                <a href="fees.html">
+            
+                    
+                    Protocol Fees
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.6" data-path="automator.html">
+            
+                <a href="automator.html">
+            
+                    
+                    Automator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    Bug Bounty Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    Governance Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    External Contingencies & Risk Factors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    Tokenomics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    Hypothetical $RCH Float Scenario (LP + Cumulative Airdrops)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA Points
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA FAQs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    Developer Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    Market Maker Open APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    DAPP Open APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    Subgraphs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    Deployment Contracts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    Market Maker Onboarding Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    Links
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Automator</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="automator">Automator</h1>
+<h2 id="introduction">Introduction</h2>
+<p>In our mission to democratise option trading for the masses, the SOFA team has created <strong>Automator</strong> as an intuitive way for users to earn strategy yields passively.  By leveraging a community of strategy managers, collectively known as <strong>Optivisors, </strong>users are able to participate in their favourite managed strategies in return for sharing a small upside profit fee.  This win-win model will provide decentralized and on-chain access for depositors to earn a variety of high quality returns with an evolving base of community recognized Optivisors.</p>
+<p><img src="../../static/WpN2bQGaOoLbV5xAyAtuLyhXsWe.png" alt=""></img></p>
+<h2 id="key-automator-features">Key Automator Features</h2>
+<ol>
+<li><p><strong>Community Driven Design.</strong>  The launch of Automator reflects our dedication to community engagement, providing decentralized tools to democratize DeFi options trading journey, while expanding user access to secure yield solutions that will evolve with time.</p>
+</li>
+<li><p><strong>Intuitive Interface</strong>.  Complex option strategies have been distilled into an intuitive and simple to use interface, while offering full on-chain transparency and strategy disclosure consistent with the DeFi ethos.</p>
+</li>
+<li><p><strong>Market Agnostic</strong>.  Benefit from volatility movements in either direction, with SOFA products giving Optivisors full strategy flexibility regardless of market outlook.</p>
+</li>
+<li><p><strong>Substantial Gas Savings</strong>.  Optivisors will be able to 'roll' their on-going strategies on Automator will zero additional gas costs, promoting long-term profitability and sustainability.</p>
+</li>
+</ol>
+<p><img src="../../static/WhuobjfZ6oJLI7xIJxduEgXGsHe.png" alt=""></img></p>
+<h2 id="optivisors-our-community-strategy-champions">Optivisors: Our Community Strategy Champions</h2>
+<p>One of Automator’s standout features lies in its community-driven approach.  By engaging the collective wisdom of our DeFi community, strategy creators, aka Optivisors, are able to design, execute, and monitor ongoing SOFA strategies for the benefit of passive depositers.  In return for their expertise, Optivisors will receive a share of the <em>total</em> strategy upside to create a win-win outcome that aligns economic incentives and promotes long-running engagement.</p>
+<p>As SOFA continues to expand its product offerings and chain connectivity, Optivisors will play an increasingly important role in our ecosystem as their strategies scale in complexity and reach.  Protocol expansion into additional instruments and CeFi connectivity offer feasible milestones that we can look forward to, and we encourage ongoing community feedback to power us towards the next steps.</p>
+<p><img src="../../static/FaqsbCCa5oihmhx6SXFuuJfds7b.png" alt=""></img></p>
+<h2 id="automator-workflow">Automator WorkFlow</h2>
+<p><img src="../../static/automator_workflow.png" alt=""></img></p>
+<h2 id="automator-faq">Automator FAQ</h2>
+<h3 id="a-how-does-automator-work">A. How does Automator work?</h3>
+<p>Automator involves three key participants: <strong>Users</strong>, <strong>Optivisors</strong>, and <strong>Market Makers</strong>.</p>
+<ol>
+<li><p><strong>Users</strong></p>
+<p>Users can select their preferred Automator and deposit tokens. Under the Optivisor’s expertise, the Automator generates returns, which are distributed among participating users. Additionally, users benefit from incentive $RCH token airdrops as part of their participation.</p>
+</li>
+<li><p><strong>Optivisors</strong></p>
+<p>Optivisors are responsible for creating Automators and executing trading strategies—such as bullish and bearish positions—by interacting with SOFA Vaults. As a reward for their expertise, Optivisors earn a share of the profits.</p>
+</li>
+<li><p><strong>Market Makers</strong></p>
+<p>Similar to other SOFA products, Market Makers provide pricing for SOFA Vaults. Optivisors managers leverage these quotes to allocate Automator funds and participate in SOFA Vault strategies. Once these strategies are settled, profits are distributed accordingly.</p>
+</li>
+</ol>
+<h3 id="b-what-fees-will-i-be-charged">B. What fees will I be charged?</h3>
+<p>The protocol charges a 15% service fee on the profits generated by Automators. If no profit is generated, no service fees are charged.</p>
+<p>Optivisors can also set a management fee when creating an Automator. This fee applies only to profits but is recorded as a liability during periods of losses. <strong>The Optivisor can only collect management fees again once the Automator’s cumulative profits turn positive.</strong></p>
+<h3 id="c-how-to-become-an-optivisor-and-create-an-automator">C. How to become an Optivisor and create an Automator?</h3>
+<p>Anyone can create an Automator as an Optivisor. However, each address is limited to creating one Automator per chain and deposit token type. To unlock the strategy quota, the Optivisor must burn 500 $RCH tokens.</p>
+<h3 id="d-how-about-the-gas-fees-within-the-automator">D. How about the gas fees within the Automator?</h3>
+<p>The Optivisor is responsible for covering all gas fees related to transactions executed within the Automator.</p>
+<h3 id="e-how-can-i-withdraw-my-funds-after-depositing-into-an-automator">E. How can I withdraw my funds after depositing into an Automator?</h3>
+<p>Automators function like funds, featuring a redemption lock-up period to manage liquidity and strategy execution. Withdrawals can be initiated anytime but require waiting until the lock-up period ends, which can be up to 30 days, as set by the Optivisor during creation.</p>
+<h3 id="f-what-kinds-of-returns-can-i-expect-with-an-automator">F. What kinds of returns can I expect with an Automator?</h3>
+<p>Automator returns are composed of three key components:</p>
+<ol>
+<li><p><strong>Interest</strong></p>
+<ul>
+<li>Funds deposited into the Automator are automatically staked in low-risk protocols like Aave or Curve, generating passive interest.</li>
+<li>These returns are updated in real-time and distributed to users based on their share when withdrawing.</li>
+</ul>
+</li>
+<li><p><strong>Trading PNL</strong></p>
+<ul>
+<li>Returns generated from the Optivisor’s trading strategies</li>
+<li>These returns are reflected only after the trading strategy expires, allowing the Optivisor to claim the positions. Users receive their share upon withdrawal.</li>
+</ul>
+</li>
+<li><p><strong>$RCH incentive</strong></p>
+<ul>
+<li>$RCH token airdrops earned through the Optivisor’s trading activities.</li>
+<li>Airdrops are distributed daily based on the current holders of the Automator and their respective ownership shares. Users can claim their $RCH tokens directly from the <strong>Claim $RCH</strong> page.</li>
+</ul>
+</li>
+</ol>
+<h3 id="g-what-are-the-risks-associated-with-using-an-automator">G. What are the risks associated with using an Automator?</h3>
+<p>Automators involve risks as the Optivisor manages user funds for options trading and low-risk protocols. The Optivisor decides the balance between using interest earnings or principal for trading, affecting the Automator's risk level. Each Automator has a buffer limit, which can range up to 99.9%, indicating the portion of funds reserved for lower-risk protocols. Users can view the specific buffer for each Automator to select one that aligns with their risk tolerance. SOFA doesn't guarantee risk-free trading, and principal loss is possible. Assess your risk tolerance carefully before participating.</p>
+<h3 id="h-how-is-the-rch-airdrop-generated-and-distributed-to-users-account">H. How is the $RCH airdrop generated and distributed to user's account?</h3>
+<p>$RCH tokens are earned through the Optivisor's trading activities and can be claimed by users afterward, just like in other SOFA Vaults. You can check the $RCH airdrop info here: <a href="https://docs.sofa.org/en/tokenomics/" target="_blank">https://docs.sofa.org/en/tokenomics/</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="fees.html" class="navigation navigation-prev " aria-label="Previous page: Protocol Fees">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../security/" class="navigation navigation-next " aria-label="Next page: Security">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Automator","level":"1.6.6","depth":2,"next":{"title":"Security","level":"1.7","depth":1,"path":"security/README.md","ref":"security/README.md","articles":[{"title":"Bug Bounty Program","level":"1.7.1","depth":2,"path":"security/bug-bounty.md","ref":"security/bug-bounty.md","articles":[]},{"title":"Governance Framework","level":"1.7.2","depth":2,"path":"security/governance.md","ref":"security/governance.md","articles":[]},{"title":"External Contingencies & Risk Factors","level":"1.7.3","depth":2,"path":"security/external.md","ref":"security/external.md","articles":[]}]},"previous":{"title":"Protocol Fees","level":"1.6.5","depth":2,"path":"technical-design/fees.md","ref":"technical-design/fees.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"en","gitbook":"*"},"file":{"path":"technical-design/automator.md","mtime":"2025-06-06T12:08:27.227Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,792 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    <head>
+        <meta charset="UTF-8">
+        <title>$SOFA 積分 · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../faq/" />
+    
+    
+    <link rel="prev" href="../tokenomics/rch-scenario.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org 概覽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    創新下一波 DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 歡迎來到 SOFA 協議 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    路線圖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    用戶指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    賺取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    激增
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    領取您的 $RCH 獎勵！🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../technical-design/">
+            
+                <a href="../technical-design/">
+            
+                    
+                    技術設計
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../technical-design/vault-classification.html">
+            
+                <a href="../technical-design/vault-classification.html">
+            
+                    
+                    保險庫分類
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../technical-design/risk-prefer.html">
+            
+                <a href="../technical-design/risk-prefer.html">
+            
+                    
+                    定義您的風險偏好
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../technical-design/oracle.html">
+            
+                <a href="../technical-design/oracle.html">
+            
+                    
+                    預言機構建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../technical-design/settlement.html">
+            
+                <a href="../technical-design/settlement.html">
+            
+                    
+                    鏈上結算考量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../technical-design/fees.html">
+            
+                <a href="../technical-design/fees.html">
+            
+                    
+                    協議費用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../technical-design/automator.html">
+            
+                <a href="../technical-design/automator.html">
+            
+                    
+                    自動化器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    安全性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    漏洞賞金計劃
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    治理框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    外部應急措施與風險因素
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    代幣經濟學
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    假設的 $RCH 流通情境 (LP + 累積空投)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    $SOFA 積分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA 常見問題
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    開發者文檔
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    做市商開放 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    DAPP 開放 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    子圖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    部署合約
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    做市商入駐流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    連結
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >$SOFA 積分</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="sofa-點數">$SOFA 點數</h1>
+<h2 id="更新">更新</h2>
+<ul>
+<li><p>2025/05/26 新增雙重交易規則</p>
+</li>
+<li><p>2024/11/26 新增自動交易規則</p>
+</li>
+</ul>
+<h2 id="rch-持有者分配計劃">$RCH 持有者分配計劃</h2>
+<h3 id="歷史（大約在10月10日）">歷史（大約在10月10日）</h3>
+<ul>
+<li><p><strong>2024年10月1日，UTC+0 00:00快照：</strong> 將進行快照以記錄每個錢包地址持有多少 $RCH（包括在收益中）。每持有1 $RCH（包括收益產品），將獲得0.1 $SOFA 點數。根據這次10月1日的快照，記錄每個地址的 $SOFA 點數。</p>
+</li>
+<li><p><strong>2024年9月1日，UTC+0 00:00快照：</strong> 將進行另一個快照以記錄每個錢包地址持有的 $RCH（包括收益產品）數量。每持有1 $RCH，將獲得0.1 $SOFA 點數。然而，9月獲得的總 $SOFA 點數不能超過10月獲得的數量（意味著在10月之前賣出的 $RCH 不計點數）。</p>
+</li>
+<li><p><strong>2024年8月1日，UTC+0 00:00快照：</strong> 同上，每個地址每持有1 $RCH 將獲得0.1 $SOFA 點數。同樣，8月的點數不能超過10月獲得的點數。</p>
+</li>
+<li><p><strong>2024年7月1日，UTC+0 00:00快照：</strong> 每個地址每持有1 $RCH 將獲得0.1 $SOFA 點數，限制同樣適用：7月獲得的 $SOFA 點數不能超過10月獲得的點數。</p>
+</li>
+<li><p><strong>2024年11月1日，UTC+0 00:00快照：</strong> 將進行另一個快照，每持有1 $RCH（包括收益產品）將獲得0.1 $SOFA 點數。</p>
+</li>
+</ul>
+<h2 id="交易">交易</h2>
+<h3 id="雙重">雙重</h3>
+<ul>
+<li><p>從2025年4月5日開始。</p>
+</li>
+<li><p>每次用戶存入雙重產品，他們將獲得 $SOFA 點數。點數計算如下：</p>
+<ul>
+<li><p>存款持有 ≤14 天：$SOFA 點數 = 存入代幣數量 x 價格 x 天數 x 0.015。</p>
+</li>
+<li><p>存款持有 (14, 35) 天：$SOFA 點數 = 存入代幣數量 x 價格 x 天數 x 0.025。</p>
+</li>
+<li><p>存款持有 ≥35 天：$SOFA 點數 = 存入代幣數量 x 價格 x 天數 x 0.035。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="自動交易">自動交易</h3>
+<ul>
+<li><p>從11月25日開始</p>
+</li>
+<li><p>如果用戶購買自動交易產品，他們將每天獲得點數。</p>
+<ul>
+<li>每日點數 = 持倉（實際權益）x 價格 x 0.015。</li>
+</ul>
+</li>
+</ul>
+<h3 id="rch-收益交易用戶">$RCH 收益交易用戶</h3>
+<ul>
+<li><p>從9月20日開始。</p>
+</li>
+<li><p>每次用戶將 $RCH 存入收益，他們將根據存款持有的時間獲得 $SOFA 點數。</p>
+<ul>
+<li><p>存款持有 ≤14 天：$SOFA 點數 = 存入 $RCH 數量 x 價格 x 天數 x 0.1。</p>
+</li>
+<li><p>存款持有 (14, 35) 天：$SOFA 點數 = 存入 $RCH 數量 x 價格 x 天數 x 0.2。</p>
+</li>
+<li><p>存款持有 ≥35 天：$SOFA 點數 = 存入 $RCH 數量 x 價格 x 天數 x 0.3。 </p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="rch-激增交易用戶">$RCH 激增交易用戶</h3>
+<ul>
+<li><p>從9月20日開始。</p>
+</li>
+<li><p>每次用戶購買 $RCH 激增，他們將獲得 $SOFA 點數。</p>
+<ul>
+<li>獲得的 $SOFA 點數 = 存入 $RCH 數量 x 價格 x 10。</li>
+</ul>
+</li>
+</ul>
+<h3 id="用其他代幣交易收益的用戶">用其他代幣交易收益的用戶</h3>
+<ul>
+<li><p>從9月20日開始。</p>
+</li>
+<li><p>每次用戶存入非 $RCH 收益，他們將獲得 $SOFA 點數。點數計算如下：</p>
+<ul>
+<li><p>存款持有 ≤14 天：$SOFA 點數 = 存入代幣數量 x 價格 x 天數 x 0.01。</p>
+</li>
+<li><p>存款持有 (14, 35) 天：$SOFA 點數 = 存入代幣數量 x 價格 x 天數 x 0.02。</p>
+</li>
+<li><p>存款持有 ≥35 天：$SOFA 點數 = 存入代幣數量 x 價格 x 天數 x 0.03。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="用其他代幣交易激增的用戶">用其他代幣交易激增的用戶</h3>
+<ul>
+<li><p>從9月20日開始。</p>
+</li>
+<li><p>每次用戶購買非 $RCH 激增，他們將獲得 $SOFA 點數。</p>
+</li>
+<li><p>獲得的 $SOFA 點數 = 存入代幣數量 x 價格 x 2。</p>
+</li>
+</ul>
+<h2 id="遊戲中心-rch-燃燒">遊戲中心 $RCH 燃燒</h2>
+<h3 id="戰鬥塔">戰鬥塔</h3>
+<p>每天將分配總計約20萬至40萬 $SOFA 點數。</p>
+<h3 id="名人堂">名人堂</h3>
+<p>每燃燒1 $RCH，將獲得50 $SOFA 點數。當這部分 $SOFA 點數啟動時，歷史燃燒部分將一次性分配，未來的燃燒將繼續獲得相應的點數。</p>
+<h2 id="社群">社群</h2>
+<h3 id="telegram-遊戲抽獎：">Telegram 遊戲抽獎：</h3>
+<ul>
+<li>參加社群活動以獲得獎勵。</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../tokenomics/rch-scenario.html" class="navigation navigation-prev " aria-label="Previous page: 假設的 $RCH 流通情境 (LP + 累積空投)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../faq/" class="navigation navigation-next " aria-label="Next page: SOFA 常見問題">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"$SOFA 積分","level":"1.9","depth":1,"next":{"title":"SOFA 常見問題","level":"1.10","depth":1,"path":"faq/README.md","ref":"faq/README.md","articles":[]},"previous":{"title":"假設的 $RCH 流通情境 (LP + 累積空投)","level":"1.8.1","depth":2,"path":"tokenomics/rch-scenario.md","ref":"tokenomics/rch-scenario.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"zh-tw","gitbook":"*"},"file":{"path":"sofa-point/README.md","mtime":"2025-06-07T05:10:27.099Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"zh-tw"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,706 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>次世代 DeFi の革新 · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../protocols/" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org 概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    次世代 DeFi の革新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 SOFA プロトコルへようこそ 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    ロードマップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    ユーザーガイド
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    稼ぐ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    サージ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    $RCH 報酬の請求！ 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../technical-design/">
+            
+                <a href="../technical-design/">
+            
+                    
+                    技術設計
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../technical-design/vault-classification.html">
+            
+                <a href="../technical-design/vault-classification.html">
+            
+                    
+                    ボールト分類
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../technical-design/risk-prefer.html">
+            
+                <a href="../technical-design/risk-prefer.html">
+            
+                    
+                    リスク嗜好の定義
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../technical-design/oracle.html">
+            
+                <a href="../technical-design/oracle.html">
+            
+                    
+                    オラクル構築
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../technical-design/settlement.html">
+            
+                <a href="../technical-design/settlement.html">
+            
+                    
+                    オンチェーン決済の考慮事項
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../technical-design/fees.html">
+            
+                <a href="../technical-design/fees.html">
+            
+                    
+                    プロトコル手数料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../technical-design/automator.html">
+            
+                <a href="../technical-design/automator.html">
+            
+                    
+                    オートメーター
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    セキュリティ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    バグバウンティプログラム
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    ガバナンスフレームワーク
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    外部の不測の事態とリスク要因
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    トークノミクス
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    仮想の $RCH フロートシナリオ (LP + 累積エアドロップ)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA ポイント
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA よくある質問
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    開発者ドキュメント
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    マーケットメイカーオープンAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    DAPP オープンAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    サブグラフ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    デプロイメント契約
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    マーケットメイカーのオンボーディングプロセス
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    リンク
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >次世代 DeFi の革新</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><img src="../../static/2.jpg" alt=""></img></p>
+<h1 id="次世代defiの革新">次世代DeFiの革新</h1>
+<h2 id="カウンターパーティのデフォルトは分散化の重要性を厳しく思い出させた">カウンターパーティのデフォルトは分散化の重要性を厳しく思い出させた</h2>
+<p>2022年は、Genesis、Celsius、3AC、FTXの崩壊が私たちのエコシステムの核心を揺るがし、<strong>利益追求の中で多くの人が忘れていた分散化の重要性を思い出させる厳しい現実を提供しました。</strong> 伝統的な金融も、リーマンの崩壊を通じて同様の教訓を得ており、（過剰債務の）カウンターパーティの失敗の連鎖が世界金融システムを危機に陥れました。</p>
+<p>その結果、<strong>GFC後の時代には中央集権的なクリアリングハウスと三者間クリアリングの利用が法制化され、資産保管リスクが十分な資金を持つ（そして高度に規制された）第三者機関に分離・集中されることになりました。</strong> 規制当局は、担保リスクを集中した接点内で管理する方が安全で効率的であると判断し、悪意のある仲介者がバランスシート管理で「いい加減に」行動するのを防ぐことができました。</p>
+<p>今日に目を向けると、<strong>不変のデータ記録、追跡可能な取引、定義可能なパラメータ、運用の透明性、そして卓越したネットワークセキュリティ</strong>を提供する広く利用可能な技術ソリューションがあったとしたら、確かにそのような技術は<strong>グローバルな決済預託所にとって理想的な解決策を提供するでしょう。</strong> </p>
+<h2 id="ブロックチェーンの核心的価値としての「信頼不要」精神の再燃">ブロックチェーンの核心的価値としての「信頼不要」精神の再燃</h2>
+<p>分散化。透明性。不変性。拡張性。真正性。これらはブロックチェーンが提供する主な利点として最もよく口にされる言葉のいくつかです。しかし、私たちは<strong>「信頼不要」</strong>が暗号の核心的価値を最もよく具現化していると感じています。なぜなら、ブロックチェーンは完全に知らない人同士が恣意的な仲介者や特権を持つグループに依存することなく、有効な取引を実行できるようにしたからです。</p>
+<p>さらに、スマートコントラクトの不変性により、カウンターパーティの善意ではなく、コードに絶対的な信頼を置くことができます。したがって、<strong>信頼不要の基盤は、1) コントラクトの不変性と2) オンチェーン資産決済という妥協できない柱の上に築かれています。</strong> これらの核心原則は、中央集権の制約から真に自由なプロトコルを開発するための原動力となります。</p>
+<p>ただし、<strong>分散化の精神は、極端な形の金融無政府状態において責任を免れるのではなく、ユーザーのアクセスと参加を促進することに関するものであるべきです。</strong> ブロックチェーンの実行は匿名である可能性がありますが、取引の向こう側には通常、私たちが尊重すべき社会的な人間がいます。</p>
+<p><strong>集団SOFAプロトコルの開発は、信頼不要の分散化精神を促進する試みですが、プロフェッショナルな責任を維持するための「ベストプラクティス」ガイドラインを確立することも同様に重要です。</strong> それが自己規制または自己課せられたものであっても、私たちのプロトコル設計のすべての部分、契約の透明性、ボールトの分類、公正なローンチトークノミクスは、より責任あるDeFiを構築するための私たちの決意とコミットメントを示しています。模範を示すことで、私たちは信頼不要の分散化がその未来の重要な礎であることを世界に示したいと考えています。</p>
+<h2 id="リスクのトークン化">リスクのトークン化</h2>
+<p>本質的に、<strong>金融商品は最終的にはカウンターパーティに対する支払いと所有権の請求に関する貨幣契約に過ぎません。</strong> それらはさまざまな人為的（および中央集権的）な規制の層によって支配され、物理的および電子的な書類によって法的に記録されています。驚くことではありませんが、前述の多くの言葉を「デジタル」と「ブロックチェーン台帳」に置き換えても、その意味の本質は失われません。</p>
+<p>暗号は、オンチェーンの安全性、'コードは法'のスマートコントラクトフレームワーク、移転可能なデジタル通貨、そして実世界資産のトークン化の分野で驚異的な進展を遂げました。私たちは、革新的なプロダクトボールトを通じて、名目額だけでなく、<strong>他の重要な金融商品パラメータをオンチェーンで記録することにより、リスクのトークン化と呼ばれるプロセスで</strong>本物に複製し参照できるようにしています。結果として得られる出力は、<strong>「ポジショントークン」と呼ばれるものに含まれ、これはチェーンロックされた資産に対する所有権の請求と考えることができますが、標準のERC-20トークンのようにユーザー間で自由に移転可能です。</strong></p>
+<p><img src="../../static/draw3.png" alt=""></img></p>
+<h2 id="使用に基づく報酬を伴う持続可能なトークノミクスモデル">使用に基づく報酬を伴う持続可能なトークノミクスモデル</h2>
+<p>お金は世界を回す原動力であり、自己利益の最大化が安定した均衡の結果としてDeFiの核心的な推進力です。しかし、過去のサイクルでは、構築が不十分なトークノミクスのためにかつて有望だったプロジェクトの数々が（非常に）高いプロフィールで失敗するのを目にしました。内部者やVCによる出口流動性のダンプ、 gimmickyなインフレ実験、価格反射的な需要モデル、または短期的な利益への過度の焦点など、より持続可能な貨幣モデルを促進するためにはまだ多くの作業が必要です。</p>
+<p>これに応じて、SOFA.orgは、プロトコルの使用を通じてのみ得られる固定供給のデフレ型ユーティリティトークンを持つ100%公正なローンチのトークノミクスモデルを展開します。さらに、すべてのプロトコル収益は日々のトークンバーン操作に使用され、すべての利益が<strong>直接</strong>私たちのコアユーザーとホドラーのポケットに再循環されることを保証します。<strong>長期的には、トークン価格は私たちのプロトコルがエコシステムにどれだけの（決済）価値を提供したかの基本的な表現となるでしょう。「取引して稼ぐ」、いかがですか？</strong></p>
+<h2 id="新しい決済基盤としての分散型クリアリング">新しい決済基盤としての分散型クリアリング</h2>
+<p>過去のサイクルから得た知恵をもとに、私たちはDeFiのいくつかの構造的欠陥に直接取り組みながら、その主要な革新を繰り返しています。具体的には、<strong>SOFA.orgの分散型クリアリングボールトの創設は、金融資産がオンチェーンで原子的に決済される方法の基準を確立し、同時に移転可能なポジショントークンを通じてDeFiの資本流動性を促進するという私たちの野心的な試みです。</strong></p>
+<p>関連するインストゥルメントの詳細をスマートコントラクトに直接記録することで、これらの資産をオンチェーンで決済できるだけでなく、プロトコルは一致するポジショントークンを発行して、確定的なデジタル証明を提供することもできます。さらに、これらのポジショントークンは、他のDeFiプロトコルやCeFiプラットフォームに安全な担保として担保に入れることができ、エコシステム全体の資本の流動性を大幅に向上させます。最後に、<strong>私たちの徹底的に設計されたDeFiボールトを、安全で透明性があり、「中立的」な決済オプションとしてブロックチェーン上に持つことで、暗号仲介者による資産の保管に関する懸念を排除し、ユーザーが資本のリターンではなく資本のリターンに集中できるように、完全な安心感を提供しています</strong>。</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: SOFA.org 概要">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../protocols/" class="navigation navigation-next " aria-label="Next page: 🌏 SOFA プロトコルへようこそ 🌏">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"次世代 DeFi の革新","level":"1.2","depth":1,"next":{"title":"🌏 SOFA プロトコルへようこそ 🌏","level":"1.3","depth":1,"path":"protocols/README.md","ref":"protocols/README.md","articles":[]},"previous":{"title":"SOFA.org 概要","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"ja","gitbook":"*"},"file":{"path":"innovating/README.md","mtime":"2025-06-06T18:04:39.256Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"ja"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

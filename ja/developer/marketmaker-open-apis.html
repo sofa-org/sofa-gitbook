@@ -1,0 +1,1472 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>マーケットメイカーオープンAPI · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="dapp-open-apis.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org 概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    次世代 DeFi の革新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 SOFA プロトコルへようこそ 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    ロードマップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    ユーザーガイド
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    稼ぐ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    サージ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    $RCH 報酬の請求！ 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../technical-design/">
+            
+                <a href="../technical-design/">
+            
+                    
+                    技術設計
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../technical-design/vault-classification.html">
+            
+                <a href="../technical-design/vault-classification.html">
+            
+                    
+                    ボールト分類
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../technical-design/risk-prefer.html">
+            
+                <a href="../technical-design/risk-prefer.html">
+            
+                    
+                    リスク嗜好の定義
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../technical-design/oracle.html">
+            
+                <a href="../technical-design/oracle.html">
+            
+                    
+                    オラクル構築
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../technical-design/settlement.html">
+            
+                <a href="../technical-design/settlement.html">
+            
+                    
+                    オンチェーン決済の考慮事項
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../technical-design/fees.html">
+            
+                <a href="../technical-design/fees.html">
+            
+                    
+                    プロトコル手数料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../technical-design/automator.html">
+            
+                <a href="../technical-design/automator.html">
+            
+                    
+                    オートメーター
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    セキュリティ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    バグバウンティプログラム
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    ガバナンスフレームワーク
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    外部の不測の事態とリスク要因
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    トークノミクス
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    仮想の $RCH フロートシナリオ (LP + 累積エアドロップ)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA ポイント
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA よくある質問
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    開発者ドキュメント
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.11.1" data-path="marketmaker-open-apis.html">
+            
+                <a href="marketmaker-open-apis.html">
+            
+                    
+                    マーケットメイカーオープンAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="dapp-open-apis.html">
+            
+                <a href="dapp-open-apis.html">
+            
+                    
+                    DAPP オープンAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="subgraphs.html">
+            
+                <a href="subgraphs.html">
+            
+                    
+                    サブグラフ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="contracts.html">
+            
+                <a href="contracts.html">
+            
+                    
+                    デプロイメント契約
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="marketmaker-onboarding-process.html">
+            
+                <a href="marketmaker-onboarding-process.html">
+            
+                    
+                    マーケットメイカーのオンボーディングプロセス
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    リンク
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >マーケットメイカーオープンAPI</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="マーケットメイカーのオープンapi">マーケットメイカーのオープンAPI</h1>
+<h2 id="仕様">仕様</h2>
+<h3 id="プレフィックス">プレフィックス</h3>
+<ol>
+<li>取引の安全性を確保するため、通信にはHTTPSを使用してください。</li>
+<li>データ交換フォーマットはJSONです。</li>
+<li>UTF-8文字エンコーディングが普遍的に適用されます。</li>
+<li>インターフェース署名アルゴリズムはHMAC-SHA256を利用します。</li>
+<li>UNIXミリ秒タイムスタンプが使用され、1970年1月1日0:00:00からのミリ秒数を表します。</li>
+</ol>
+<h3 id="パラメータ">パラメータ</h3>
+<h4 id="リクエスト">リクエスト</h4>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+<th>remark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H-Request-Id</td>
+<td>string</td>
+<td>[ヘッダー]リクエストID、ユニーク</td>
+</tr>
+<tr>
+<td>H-Api-Key</td>
+<td>string</td>
+<td>[ヘッダー]APIキー</td>
+</tr>
+<tr>
+<td>H-Timestamp</td>
+<td>long</td>
+<td>[ヘッダー]有効なタイムスタンプ、例：1672387200000</td>
+</tr>
+<tr>
+<td>H-Nonce</td>
+<td>string</td>
+<td>[ヘッダー]ランダム文字列</td>
+</tr>
+<tr>
+<td>Authorization</td>
+<td>string</td>
+<td>[ヘッダー]署名、例：[mm_id]-hmac-sha256署名</td>
+</tr>
+</tbody>
+</table>
+<h4 id="レスポンス">レスポンス</h4>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+<th>ramark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>integer</td>
+<td>[ボディ]エラーコード</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>[ボディ]エラー理由</td>
+</tr>
+<tr>
+<td>value</td>
+<td>T</td>
+<td>[ボディ]結果</td>
+</tr>
+</tbody>
+</table>
+<h3 id="署名生成">署名生成</h3>
+<p>当社のRFQプラットフォームでは、リクエストを承認するためにパートナー署名が必要で、その後に検証手続きが行われます。 検証に失敗すると、プラットフォームは<code>401</code> Unauthorizedレスポンスで拒否します。</p>
+<h4 id="署名文字列の構築">署名文字列の構築:</h4>
+<p>署名文字列は5行で構成され、それぞれがパラメータを表します。 各行はセミコロンで終わり、最後の行も含まれます。有効なタイムスタンプとリクエストノンスは、それぞれヘッダーの<code>H-Timestamp</code>と<code>H-Nonce</code>パラメータから取得されます。</p>
+<pre><code>Timestamp;NonceStr;HTTP_METHOD();URI();RequestBody;
+</code></pre><h4 id="署名の生成">署名の生成</h4>
+<p><code>SecretKey</code>を使用して<code>StringToSign</code>を<code>HMAC-SHA256</code>で暗号化します。</p>
+<pre><code>StringToSign = Timestamp + ";" + NonceStr + ";" + UPPERCASE(HTTP_METHOD()) + ";" + URI() + ";" + RequestBody + ";";
+Signature = BASE64_STRING( HMAC-SHA256( BASE64_DECODE(SecretKey), StringToSign ) );
+</code></pre><h4 id="httpヘッダーの設定">HTTPヘッダーの設定</h4>
+<p>リクエストは<code>HTTP Authorization</code>ヘッダーを通じて署名を送信します。<code>Authorization header</code>は二つの部分から構成されています: <strong>認証タイプ</strong>と<strong>署名情報</strong>。</p>
+<pre><code>Authorization: AuthenticationType SignatureInformation
+</code></pre><ol>
+<li>認証タイプ: <code>[mm_id]-hmac-sha256</code></li>
+<li>署名情報: <code>Signature</code></li>
+</ol>
+<pre><code>Authorization: [mm_id]-hmac-sha256 Signature
+</code></pre><p><em>注意:</em></p>
+<ul>
+<li>リクエストメソッドは大文字である必要があります。</li>
+<li>署名に使用される<code>RequestBody</code>はリクエストのボディの内容と一致しなければなりません。</li>
+<li>GETおよびDELETEリクエストの場合、<code>URI</code>にはリクエストパラメータを含める必要があります（例: /api/v1/result?orderId=123）。<ul>
+<li>リクエストボディがない場合（GETリクエストに一般的）、リクエストボディは空の文字列("")である必要があります。</li>
+</ul>
+</li>
+<li>有効なタイムスタンプ（H-Timestamp）はリクエスターによって決定されます。有効なタイムスタンプを超えるリクエストはRFQサーバーによって拒否されます。</li>
+</ul>
+<h2 id="rfq">RFQ</h2>
+<h3 id="dnt-rfq見積もりの提供">DNT RFQ見積もりの提供</h3>
+<pre><code>GET rfq/dnt/quote
+</code></pre><p><strong>パラメータ</strong></p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>required</th>
+<th>type</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>ボールトアドレス</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>チェーンID</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>long</td>
+<td>有効期限（秒単位のタイムスタンプ）、例：1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>下限バリア</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>上限バリア</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>true</td>
+<td>number</td>
+<td>デポジット</td>
+</tr>
+<tr>
+<td>premiumAmount</td>
+<td>true</td>
+<td>number</td>
+<td>プレミアム</td>
+</tr>
+<tr>
+<td>protectedFundingAmount</td>
+<td>false</td>
+<td>number</td>
+<td>保護された利息（RISKYの場合はnull）</td>
+</tr>
+<tr>
+<td>deadline</td>
+<td>true</td>
+<td>long</td>
+<td>見積もりの締切、例：1672387200</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>false</td>
+<td>string</td>
+<td>テイカーウォレットアドレス</td>
+</tr>
+<tr>
+<td>anchorPricesDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>makerCollateralDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>collateralAtRiskDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>totalCollateralDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>underlyingPair</td>
+<td>true</td>
+<td>string</td>
+<td>基本ペア、例：BTC-USDT</td>
+</tr>
+<tr>
+<td>trackingSource</td>
+<td>true</td>
+<td>string</td>
+<td>基本価値を追跡するために使用されるデータソース、例：DERIBIT</td>
+</tr>
+<tr>
+<td>depositCoin</td>
+<td>true</td>
+<td>string</td>
+<td>DNTを購読するために支払われるプレミアムの通貨/コイン</td>
+</tr>
+<tr>
+<td>tradingFeeRate</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>settlementFeeRate</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>true</td>
+<td>string</td>
+<td>タイプ：PROTECTED, RISKY</td>
+</tr>
+</tbody>
+</table>
+<p><strong>レスポンス</strong></p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timestamp</td>
+<td>long</td>
+<td>見積もりのタイムスタンプ</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td></td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>long</td>
+<td>有効期限のタイムスタンプ、例：1672387200</td>
+</tr>
+<tr>
+<td>anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000,30000000000</td>
+</tr>
+<tr>
+<td>makerCollateral</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>totalCollateral</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>collateralAtRisk</td>
+<td>string</td>
+<td>E18</td>
+</tr>
+<tr>
+<td>makerBalanceThreshold</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>deadline</td>
+<td>long</td>
+<td>見積もりの締切タイムスタンプ</td>
+</tr>
+<tr>
+<td>makerWallet</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>signature</td>
+<td>string</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<p>Note:</p>
+<ol>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi><mi>o</mi><mi>l</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>l</mi><mi>A</mi><mi>t</mi><mi>R</mi><mi>i</mi><mi>s</mi><mi>k</mi><mo>−</mo><mi>m</mi><mi>a</mi><mi>k</mi><mi>e</mi><mi>r</mi><mi>C</mi><mi>o</mi><mi>l</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>l</mi><mo>=</mo><mo>=</mo><mi>p</mi><mi>r</mi><mi>e</mi><mi>m</mi><mi>i</mi><mi>u</mi><mi>m</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">collateralAtRisk - makerCollateral ==  premiumAmount</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">c</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">A</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.00773em;">R</span><span class="mord mathit">i</span><span class="mord mathit">s</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mbin">−</span><span class="mord mathit">m</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mrel">=</span><span class="mrel">=</span><span class="mord mathit">p</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">u</span><span class="mord mathit">m</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mi>C</mi><mi>o</mi><mi>l</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>l</mi><mo>−</mo><mi>m</mi><mi>a</mi><mi>k</mi><mi>e</mi><mi>r</mi><mi>C</mi><mi>o</mi><mi>l</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>l</mi><mo>=</mo><mo>=</mo><mi>d</mi><mi>e</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">totalCollateral - makerCollateral == depositAmount</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">t</span><span class="mord mathit">o</span><span class="mord mathit">t</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mbin">−</span><span class="mord mathit">m</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mrel">=</span><span class="mrel">=</span><span class="mord mathit">d</span><span class="mord mathit">e</span><span class="mord mathit">p</span><span class="mord mathit">o</span><span class="mord mathit">s</span><span class="mord mathit">i</span><span class="mord mathit">t</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span></span></span></span></li>
+</ol>
+<p><strong>例</strong></p>
+<p>リクエストURL</p>
+<pre><code>rfq/dnt/quote
+</code></pre><p>パラメータ</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">"rfqId"</span>:<span class="hljs-number">1233992</span>,
+    <span class="hljs-string">"apy"</span>:<span class="hljs-number">0.25</span>,
+    <span class="hljs-string">"tenor"</span>:<span class="hljs-number">7.9</span>,
+    <span class="hljs-string">"fundingAmount"</span>:<span class="hljs-number">0.01</span>,
+    <span class="hljs-string">"depositAmount"</span>:<span class="hljs-number">1</span>,
+    <span class="hljs-string">"premiumCoin"</span>:<span class="hljs-string">"BTC"</span>,
+    <span class="hljs-string">"premiumAmount"</span>:<span class="hljs-number">0.05</span>,
+    <span class="hljs-string">"bookingQuantity"</span>:<span class="hljs-number">1</span>,
+    <span class="hljs-string">"totalAmount"</span>:<span class="hljs-number">0.05</span>,
+    <span class="hljs-string">"payoff"</span>:<span class="hljs-number">1</span>,
+    <span class="hljs-string">"deadline"</span>:<span class="hljs-number">1672279892000</span>,
+    <span class="hljs-string">"signature"</span>:<span class="hljs-string">"dsdkksdsksdk"</span>
+}
+</code></pre>
+<h3 id="ブルベアトレンドrfq見積もりを提供する">ブル/ベアトレンドRFQ見積もりを提供する</h3>
+<pre><code>
+GET rfq/smart-trend/quote
+</code></pre><p><strong>パラメータ</strong></p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>required</th>
+<th>type</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>ボールトアドレス</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>チェーンID</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>long</td>
+<td>有効期限（秒単位のタイムスタンプ）、例：1672387200</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>true</td>
+<td>string</td>
+<td>強気 / 弱気</td>
+</tr>
+<tr>
+<td>lowerStrike</td>
+<td>true</td>
+<td>number</td>
+<td>下限バリア</td>
+</tr>
+<tr>
+<td>upperStrike</td>
+<td>true</td>
+<td>number</td>
+<td>上限バリア</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>true</td>
+<td>number</td>
+<td>デポジット</td>
+</tr>
+<tr>
+<td>premiumAmount</td>
+<td>true</td>
+<td>number</td>
+<td>プレミアム</td>
+</tr>
+<tr>
+<td>protectedFundingAmount</td>
+<td>false</td>
+<td>number</td>
+<td>保護された利息（リスキーな場合はnull）</td>
+</tr>
+<tr>
+<td>deadline</td>
+<td>true</td>
+<td>long</td>
+<td>見積もりの締切、例：1672387200</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>false</td>
+<td>string</td>
+<td>テイカーウォレットアドレス</td>
+</tr>
+<tr>
+<td>anchorPricesDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>makerCollateralDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>collateralAtRiskDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>totalCollateralDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>underlyingPair</td>
+<td>true</td>
+<td>string</td>
+<td>基礎ペア、例：BTC-USDT</td>
+</tr>
+<tr>
+<td>trackingSource</td>
+<td>true</td>
+<td>string</td>
+<td>基礎価値を追跡するために使用されるデータソース、例：DERIBIT</td>
+</tr>
+<tr>
+<td>tradingFeeRate</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>settlementFeeRate</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>depositCoin</td>
+<td>true</td>
+<td>string</td>
+<td>スマートトレンドにサブスクライブするために支払われるプレミアムの通貨/コイン</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>true</td>
+<td>string</td>
+<td>タイプ：保護、リスキー</td>
+</tr>
+</tbody>
+</table>
+<p><strong>レスポンス</strong></p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timestamp</td>
+<td>long</td>
+<td>見積もりのタイムスタンプ</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td></td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>long</td>
+<td>有効期限のタイムスタンプ、例：1672387200</td>
+</tr>
+<tr>
+<td>anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000,30000000000</td>
+</tr>
+<tr>
+<td>makerCollateral</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>totalCollateral</td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+<p>| collateralAtRisk | string       | E18                                |
+| deadline         | long         | 見積もりの締切タイムスタンプ           |
+| makerWallet      | string       |                                    |
+| signature        | string       | .                                   |</p>
+<p>Note:</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mi>r</mi><mi>e</mi><mi>m</mi><mi>i</mi><mi>u</mi><mi>m</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>=</mo><mi>B</mi><mi>o</mi><mi>o</mi><mi>k</mi><mi>i</mi><mi>n</mi><mi>g</mi><mi>Q</mi><mi>u</mi><mi>a</mi><mi>n</mi><mi>t</mi><mi>i</mi><mi>t</mi><mi>y</mi><mo>∗</mo><mi>U</mi><mi>n</mi><mi>i</mi><mi>t</mi><mi>Q</mi><mi>u</mi><mi>o</mi><mi>t</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">PremiumAmount = BookingQuantity * UnitQuotePrice</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">u</span><span class="mord mathit">m</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mord mathit">o</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">Q</span><span class="mord mathit">u</span><span class="mord mathit">a</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mord mathit">i</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mbin">∗</span><span class="mord mathit" style="margin-right:0.10903em;">U</span><span class="mord mathit">n</span><span class="mord mathit">i</span><span class="mord mathit">t</span><span class="mord mathit">Q</span><span class="mord mathit">u</span><span class="mord mathit">o</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mi>a</mi><mi>x</mi><mi>P</mi><mi>a</mi><mi>y</mi><mi>o</mi><mi>u</mi><mi>t</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>=</mo><mi>B</mi><mi>o</mi><mi>o</mi><mi>k</mi><mi>i</mi><mi>n</mi><mi>g</mi><mi>Q</mi><mi>u</mi><mi>a</mi><mi>n</mi><mi>t</mi><mi>i</mi><mi>t</mi><mi>y</mi><mo>∗</mo><mo>(</mo><mi>u</mi><mi>p</mi><mi>p</mi><mi>e</mi><mi>r</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mo>−</mo><mi>l</mi><mi>o</mi><mi>w</mi><mi>e</mi><mi>r</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">MaxPayoutAmount = BookingQuantity * (upperStrike - lowerStrike)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="mord mathit">a</span><span class="mord mathit">x</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">t</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mord mathit">o</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">Q</span><span class="mord mathit">u</span><span class="mord mathit">a</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mord mathit">i</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mbin">∗</span><span class="mopen">(</span><span class="mord mathit">u</span><span class="mord mathit">p</span><span class="mord mathit">p</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mbin">−</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02691em;">w</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mclose">)</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mi>i</mi><mi>n</mi><mi>A</mi><mi>P</mi><mi>Y</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>=</mo><mo>=</mo><mi>p</mi><mi>r</mi><mi>o</mi><mi>j</mi><mi>e</mi><mi>c</mi><mi>t</mi><mi>e</mi><mi>d</mi><mi>F</mi><mi>u</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>n</mi><mi>g</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>−</mo><mi>p</mi><mi>r</mi><mi>e</mi><mi>m</mi><mi>i</mi><mi>u</mi><mi>m</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">MinAPYAmount == projectedFundingAmount - premiumAmount</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.22222em;">Y</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mrel">=</span><span class="mrel">=</span><span class="mord mathit">p</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.05724em;">j</span><span class="mord mathit">e</span><span class="mord mathit">c</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit">d</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">d</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mbin">−</span><span class="mord mathit">p</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">u</span><span class="mord mathit">m</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mi>a</mi><mi>x</mi><mi>A</mi><mi>P</mi><mi>Y</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>=</mo><mo>=</mo><mi>M</mi><mi>i</mi><mi>n</mi><mi>A</mi><mi>P</mi><mi>Y</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>+</mo><mi>M</mi><mi>a</mi><mi>x</mi><mi>P</mi><mi>a</mi><mi>y</mi><mi>o</mi><mi>u</mi><mi>t</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">MaxAPYAmount == MinAPYAmount + MaxPayoutAmount</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="mord mathit">a</span><span class="mord mathit">x</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.22222em;">Y</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mrel">=</span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.22222em;">Y</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mbin">+</span><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="mord mathit">a</span><span class="mord mathit">x</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">t</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>a</mi><mi>k</mi><mi>e</mi><mi>r</mi><mi>C</mi><mi>o</mi><mi>l</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>l</mi><mo>=</mo><mi>M</mi><mi>a</mi><mi>x</mi><mi>P</mi><mi>a</mi><mi>y</mi><mi>o</mi><mi>u</mi><mi>t</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>−</mo><mi>p</mi><mi>r</mi><mi>e</mi><mi>m</mi><mi>i</mi><mi>u</mi><mi>m</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">makerCollateral = MaxPayoutAmount - premiumAmount</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">m</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="mord mathit">a</span><span class="mord mathit">x</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">t</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mbin">−</span><span class="mord mathit">p</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">u</span><span class="mord mathit">m</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi><mi>o</mi><mi>l</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>l</mi><mi>A</mi><mi>t</mi><mi>R</mi><mi>i</mi><mi>s</mi><mi>k</mi><mo>=</mo><mi>M</mi><mi>a</mi><mi>x</mi><mi>P</mi><mi>a</mi><mi>y</mi><mi>o</mi><mi>u</mi><mi>t</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">collateralAtRisk = MaxPayoutAmount</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">c</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">A</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.00773em;">R</span><span class="mord mathit">i</span><span class="mord mathit">s</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="mord mathit">a</span><span class="mord mathit">x</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">t</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mi>C</mi><mi>o</mi><mi>l</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>l</mi><mo>=</mo><mi>d</mi><mi>e</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>+</mo><mi>m</mi><mi>a</mi><mi>k</mi><mi>e</mi><mi>r</mi><mi>C</mi><mi>o</mi><mi>l</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>l</mi></mrow><annotation encoding="application/x-tex">totalCollateral = depositAmount + makerCollateral</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">t</span><span class="mord mathit">o</span><span class="mord mathit">t</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mrel">=</span><span class="mord mathit">d</span><span class="mord mathit">e</span><span class="mord mathit">p</span><span class="mord mathit">o</span><span class="mord mathit">s</span><span class="mord mathit">i</span><span class="mord mathit">t</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mbin">+</span><span class="mord mathit">m</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mi>n</mi><mi>c</mi><mi>h</mi><mi>o</mi><mi>r</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mi>s</mi><mo>=</mo><mo>[</mo><mi>l</mi><mi>o</mi><mi>w</mi><mi>e</mi><mi>r</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mo separator="true">,</mo><mi>u</mi><mi>p</mi><mi>p</mi><mi>e</mi><mi>r</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mo>]</mo></mrow><annotation encoding="application/x-tex">anchorPrices = [lowerStrike, upperStrike]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">a</span><span class="mord mathit">n</span><span class="mord mathit">c</span><span class="mord mathit">h</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span><span class="mord mathit">s</span><span class="mrel">=</span><span class="mopen">[</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02691em;">w</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mpunct">,</span><span class="mord mathit">u</span><span class="mord mathit">p</span><span class="mord mathit">p</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mclose">]</span></span></span></span></li>
+</ul>
+<h3 id="デュアルrfq見積もりを提供する">デュアルRFQ見積もりを提供する</h3>
+<pre><code>GET rfq/dual/quote
+</code></pre><p><strong>パラメータ</strong></p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>required</th>
+<th>type</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>ボールトアドレス</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>チェーンID</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>long</td>
+<td>有効期限（秒単位のタイムスタンプ）、例：1672387200</td>
+</tr>
+<tr>
+<td>strike</td>
+<td>true</td>
+<td>number</td>
+<td>ストライク価格</td>
+</tr>
+<tr>
+<td>type</td>
+<td>true</td>
+<td>string</td>
+<td>CALLまたはPUT</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>true</td>
+<td>number</td>
+<td>デポジット</td>
+</tr>
+<tr>
+<td>deadline</td>
+<td>true</td>
+<td>long</td>
+<td>見積もりの締切、例：1672387200</td>
+</tr>
+<tr>
+<td>refDateTime</td>
+<td>true</td>
+<td>long</td>
+<td>現在のリクエスト時間</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>false</td>
+<td>string</td>
+<td>テイカーウォレットアドレス</td>
+</tr>
+<tr>
+<td>anchorPriceDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>makerCollateralDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>totalCollateralDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>underlyingPair</td>
+<td>true</td>
+<td>string</td>
+<td>アンダーライングペア、例：BTC-USDT</td>
+</tr>
+<tr>
+<td>trackingSource</td>
+<td>true</td>
+<td>string</td>
+<td>アンダーライングの価値を追跡するために使用されるデータソース、例：DERIBIT</td>
+</tr>
+<tr>
+<td>depositCoin</td>
+<td>true</td>
+<td>string</td>
+<td>デュアルに加入するために支払われたプレミアムの通貨/コイン</td>
+</tr>
+<tr>
+<td>depositCoinTokenAddress</td>
+<td>true</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>depositCoinTokenDecimal</td>
+<td>true</td>
+<td>long</td>
+<td></td>
+</tr>
+<tr>
+<td>tradingFeeRate</td>
+<td>true</td>
+<td>number</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response</strong></p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timestamp</td>
+<td>long</td>
+<td>見積もりのタイムスタンプ</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td></td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>long</td>
+<td>有効期限のタイムスタンプ，例：1672387200</td>
+</tr>
+<tr>
+<td>anchorPrice</td>
+<td>string</td>
+<td>20000000000</td>
+</tr>
+<tr>
+<td>makerCollateral</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>totalCollateral</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>deadline</td>
+<td>long</td>
+<td>見積もりの締切タイムスタンプ</td>
+</tr>
+<tr>
+<td>makerWallet</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>signature</td>
+<td>string</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="appendix">Appendix</h2>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1000</td>
+<td>システムエラー。</td>
+</tr>
+<tr>
+<td>2001</td>
+<td>サインエラー。</td>
+</tr>
+<tr>
+<td>2002</td>
+<td>パラメーターエラー。</td>
+</tr>
+<tr>
+<td>3001</td>
+<td>要求された情報は存在しません。</td>
+</tr>
+<tr>
+<td>3002</td>
+<td>入金額が <em>depositRange</em> の範囲外です。</td>
+</tr>
+<tr>
+<td>3003</td>
+<td>最大加入制限に達しました。</td>
+</tr>
+<tr>
+<td>3004</td>
+<td>プレミアム額の差が大きすぎて加入に失敗しました。</td>
+</tr>
+<tr>
+<td>3005</td>
+<td>見積もりに失敗しました。</td>
+</tr>
+<tr>
+<td>3006</td>
+<td>一時的にサービスを提供していません。</td>
+</tr>
+<tr>
+<td>3007</td>
+<td>APIのレート制限を超えました。スローダウンしてください。</td>
+</tr>
+<tr>
+<td>3100</td>
+<td>注文の作成に失敗しました。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Required Functions</strong>：</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mi>r</mi><mi>e</mi><mi>m</mi><mi>i</mi><mi>u</mi><mi>m</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>=</mo><mi>c</mi><mi>o</mi><mi>l</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>l</mi><mi>A</mi><mi>t</mi><mi>R</mi><mi>i</mi><mi>s</mi><mi>k</mi><mo>−</mo><mi>m</mi><mi>a</mi><mi>k</mi><mi>e</mi><mi>r</mi><mi>C</mi><mi>o</mi><mi>l</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>l</mi></mrow><annotation encoding="application/x-tex">premiumAmount = collateralAtRisk - makerCollateral</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">p</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">u</span><span class="mord mathit">m</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mrel">=</span><span class="mord mathit">c</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">A</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.00773em;">R</span><span class="mord mathit">i</span><span class="mord mathit">s</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mbin">−</span><span class="mord mathit">m</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>e</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>=</mo><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mi>C</mi><mi>o</mi><mi>l</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi><mo>−</mo><mi>m</mi><mi>a</mi><mi>k</mi><mi>e</mi><mi>r</mi><mi>C</mi><mi>o</mi><mi>l</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>l</mi></mrow><annotation encoding="application/x-tex">depositAmount = totalCollater - makerCollateral</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">d</span><span class="mord mathit">e</span><span class="mord mathit">p</span><span class="mord mathit">o</span><span class="mord mathit">s</span><span class="mord mathit">i</span><span class="mord mathit">t</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mrel">=</span><span class="mord mathit">t</span><span class="mord mathit">o</span><span class="mord mathit">t</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mbin">−</span><span class="mord mathit">m</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi><mi>o</mi><mi>o</mi><mi>k</mi><mi>i</mi><mi>n</mi><mi>g</mi><mi>Q</mi><mi>u</mi><mi>a</mi><mi>n</mi><mi>t</mi><mi>i</mi><mi>t</mi><mi>y</mi><mo>=</mo><mi>c</mi><mi>o</mi><mi>l</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>l</mi><mi>A</mi><mi>t</mi><mi>R</mi><mi>i</mi><mi>s</mi><mi>k</mi></mrow><annotation encoding="application/x-tex">bookingQuantity = collateralAtRisk</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">b</span><span class="mord mathit">o</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">Q</span><span class="mord mathit">u</span><span class="mord mathit">a</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mord mathit">i</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mrel">=</span><span class="mord mathit">c</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">A</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.00773em;">R</span><span class="mord mathit">i</span><span class="mord mathit">s</span><span class="mord mathit" style="margin-right:0.03148em;">k</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mi>r</mi><mi>o</mi><mi>j</mi><mi>e</mi><mi>c</mi><mi>t</mi><mi>e</mi><mi>d</mi><mi>F</mi><mi>u</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>n</mi><mi>g</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>=</mo><mi>p</mi><mi>r</mi><mi>o</mi><mi>j</mi><mi>e</mi><mi>c</mi><mi>t</mi><mi>e</mi><mi>d</mi><mi>F</mi><mi>u</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>n</mi><mi>g</mi><mi>A</mi><mi>P</mi><mi>Y</mi><mo>∗</mo><mo>(</mo><mi>e</mi><mi>x</mi><mi>p</mi><mi>D</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>T</mi><mi>i</mi><mi>m</mi><mi>e</mi><mo>−</mo><mi>r</mi><mi>e</mi><mi>f</mi><mi>D</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>T</mi><mi>i</mi><mi>m</mi><mi>e</mi><mo>)</mo><mi mathvariant="normal">/</mi><mn>3</mn><mn>6</mn><mn>5</mn></mrow><annotation encoding="application/x-tex">projectedFundingAmount = projectedFundingAPY * (expDateTime - refDateTime) / 365</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">p</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.05724em;">j</span><span class="mord mathit">e</span><span class="mord mathit">c</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit">d</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">d</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mrel">=</span><span class="mord mathit">p</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.05724em;">j</span><span class="mord mathit">e</span><span class="mord mathit">c</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit">d</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">d</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.22222em;">Y</span><span class="mbin">∗</span><span class="mopen">(</span><span class="mord mathit">e</span><span class="mord mathit">x</span><span class="mord mathit">p</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="mord mathit">i</span><span class="mord mathit">m</span><span class="mord mathit">e</span><span class="mbin">−</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="mord mathit">i</span><span class="mord mathit">m</span><span class="mord mathit">e</span><span class="mclose">)</span><span class="mord mathrm">/</span><span class="mord mathrm">3</span><span class="mord mathrm">6</span><span class="mord mathrm">5</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi><mi>e</mi><mi>n</mi><mi>o</mi><mi>r</mi><mo>=</mo><mo>(</mo><mi>e</mi><mi>x</mi><mi>p</mi><mi>D</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>T</mi><mi>i</mi><mi>m</mi><mi>e</mi><mo>−</mo><mi>r</mi><mi>e</mi><mi>f</mi><mi>D</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>T</mi><mi>i</mi><mi>m</mi><mi>e</mi><mo>)</mo><mi mathvariant="normal">/</mi><mn>3</mn><mn>6</mn><mn>5</mn></mrow><annotation encoding="application/x-tex">Tenor = (expDateTime - refDateTime) / 365</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="mord mathit">e</span><span class="mord mathit">n</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mrel">=</span><span class="mopen">(</span><span class="mord mathit">e</span><span class="mord mathit">x</span><span class="mord mathit">p</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="mord mathit">i</span><span class="mord mathit">m</span><span class="mord mathit">e</span><span class="mbin">−</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="mord mathit">i</span><span class="mord mathit">m</span><span class="mord mathit">e</span><span class="mclose">)</span><span class="mord mathrm">/</span><span class="mord mathrm">3</span><span class="mord mathrm">6</span><span class="mord mathrm">5</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>P</mi><mi>Y</mi><mi>I</mi><mi>n</mi><mi>R</mi><mi>a</mi><mi>n</mi><mi>g</mi><mi>e</mi><mo>=</mo><mo>(</mo><mi>p</mi><mi>r</mi><mi>o</mi><mi>j</mi><mi>e</mi><mi>c</mi><mi>t</mi><mi>e</mi><mi>d</mi><mi>F</mi><mi>u</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>n</mi><mi>g</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>−</mo><mi>p</mi><mi>r</mi><mi>e</mi><mi>m</mi><mi>i</mi><mi>u</mi><mi>m</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>+</mo><mi>b</mi><mi>o</mi><mi>o</mi><mi>k</mi><mi>i</mi><mi>n</mi><mi>g</mi><mi>Q</mi><mi>u</mi><mi>a</mi><mi>n</mi><mi>t</mi><mi>i</mi><mi>t</mi><mi>y</mi><mo>)</mo><mi mathvariant="normal">/</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>o</mi><mi>r</mi><mo>=</mo><mi>m</mi><mi>a</mi><mi>k</mi><mi>e</mi><mi>r</mi><mi>C</mi><mi>o</mi><mi>l</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>l</mi><mi mathvariant="normal">/</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>o</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">APYInRange = (projectedFundingAmount - premiumAmount + bookingQuantity) / tenor = makerCollateral / tenor</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.22222em;">Y</span><span class="mord mathit" style="margin-right:0.07847em;">I</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.00773em;">R</span><span class="mord mathit">a</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">e</span><span class="mrel">=</span><span class="mopen">(</span><span class="mord mathit">p</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.05724em;">j</span><span class="mord mathit">e</span><span class="mord mathit">c</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit">d</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">d</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mbin">−</span><span class="mord mathit">p</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">u</span><span class="mord mathit">m</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mbin">+</span><span class="mord mathit">b</span><span class="mord mathit">o</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">Q</span><span class="mord mathit">u</span><span class="mord mathit">a</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mord mathit">i</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mord mathrm">/</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit">n</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mrel">=</span><span class="mord mathit">m</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathrm">/</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit">n</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02778em;">r</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>P</mi><mi>Y</mi><mo>−</mo><mi>P</mi><mi>r</mi><mi>o</mi><mi>t</mi><mi>e</mi><mi>c</mi><mi>t</mi><mi>e</mi><mi>d</mi><mo>=</mo><mo>(</mo><mi>p</mi><mi>r</mi><mi>o</mi><mi>j</mi><mi>e</mi><mi>c</mi><mi>t</mi><mi>e</mi><mi>d</mi><mi>F</mi><mi>u</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>n</mi><mi>g</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>−</mo><mi>p</mi><mi>r</mi><mi>e</mi><mi>m</mi><mi>i</mi><mi>u</mi><mi>m</mi><mi>A</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>)</mo><mi mathvariant="normal">/</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>o</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">APY-Protected = (projectedFundingAmount - premiumAmount) / tenor</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.22222em;">Y</span><span class="mbin">−</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">o</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit">c</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit">d</span><span class="mrel">=</span><span class="mopen">(</span><span class="mord mathit">p</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.05724em;">j</span><span class="mord mathit">e</span><span class="mord mathit">c</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit">d</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">d</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mbin">−</span><span class="mord mathit">p</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">u</span><span class="mord mathit">m</span><span class="mord mathit">A</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">u</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mclose">)</span><span class="mord mathrm">/</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit">n</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02778em;">r</span></span></span></span></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 開発者ドキュメント">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="dapp-open-apis.html" class="navigation navigation-next " aria-label="Next page: DAPP オープンAPI">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"マーケットメイカーオープンAPI","level":"1.11.1","depth":2,"next":{"title":"DAPP オープンAPI","level":"1.11.2","depth":2,"path":"developer/dapp-open-apis.md","ref":"developer/dapp-open-apis.md","articles":[]},"previous":{"title":"開発者ドキュメント","level":"1.11","depth":1,"path":"developer/README.md","ref":"developer/README.md","articles":[{"title":"マーケットメイカーオープンAPI","level":"1.11.1","depth":2,"path":"developer/marketmaker-open-apis.md","ref":"developer/marketmaker-open-apis.md","articles":[]},{"title":"DAPP オープンAPI","level":"1.11.2","depth":2,"path":"developer/dapp-open-apis.md","ref":"developer/dapp-open-apis.md","articles":[]},{"title":"サブグラフ","level":"1.11.3","depth":2,"path":"developer/subgraphs.md","ref":"developer/subgraphs.md","articles":[]},{"title":"デプロイメント契約","level":"1.11.4","depth":2,"path":"developer/contracts.md","ref":"developer/contracts.md","articles":[]},{"title":"マーケットメイカーのオンボーディングプロセス","level":"1.11.5","depth":2,"path":"developer/marketmaker-onboarding-process.md","ref":"developer/marketmaker-onboarding-process.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"ja","gitbook":"*"},"file":{"path":"developer/marketmaker-open-apis.md","mtime":"2025-06-09T07:00:41.935Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"ja"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

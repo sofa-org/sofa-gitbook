@@ -1,0 +1,733 @@
+
+<!DOCTYPE HTML>
+<html lang="de" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Ihre Risikopräferenz definieren · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="oracle.html" />
+    
+    
+    <link rel="prev" href="vault-classification.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Suchbegriff eingeben" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org Übersicht
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    Innovationen der nächsten Welle von DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 Willkommen zu den SOFA-Protokollen 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    Fahrplan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guiREADME.md">
+            
+                <span>
+            
+                    
+                    Benutzerhandbuch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guiearn.md">
+            
+                <span>
+            
+                    
+                    Verdienen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guisurge.md">
+            
+                <span>
+            
+                    
+                    Surge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guiclaim.md">
+            
+                <span>
+            
+                    
+                    Ihre $RCH Belohnungen beanspruchen! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Technisches Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="vault-classification.html">
+            
+                <a href="vault-classification.html">
+            
+                    
+                    Vault-Klassifizierung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="risk-prefer.html">
+            
+                <a href="risk-prefer.html">
+            
+                    
+                    Ihre Risikopräferenz definieren
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="oracle.html">
+            
+                <a href="oracle.html">
+            
+                    
+                    Oracle-Konstruktion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="settlement.html">
+            
+                <a href="settlement.html">
+            
+                    
+                    On-Chain Abrechnungsüberlegungen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="fees.html">
+            
+                <a href="fees.html">
+            
+                    
+                    Protokollgebühren
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="automator.html">
+            
+                <a href="automator.html">
+            
+                    
+                    Automatisierer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    Sicherheit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    Bug-Bounty-Programm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    Governance-Rahmen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    Externe Kontingenzen & Risikofaktoren
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    Tokenomics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    Hypothetisches $RCH Float-Szenario (LP + kumulative Airdrops)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA Punkte
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA FAQs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    Entwicklerdokumentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    Market Maker Offene APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    DAPP Offene APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    Subgraphen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    Bereitstellungsverträge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    Market Maker Onboarding-Prozess
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    Links
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Veröffentlicht mit HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Ihre Risikopräferenz definieren</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="definition-ihrer-risikopräferenz">Definition Ihrer Risikopräferenz</h1>
+<blockquote>
+<p><strong>Wie viel Abwärtsrisiko möchten Sie eingehen?</strong></p>
+</blockquote>
+<h2 id="earn-protokoll">Earn-Protokoll</h2>
+<p>Die Kategorie 'Earn'-Protokoll ist für risikoscheue Einleger konzipiert, die den höchsten Abwärtsschutz ihres Kapitals suchen. Earn-Vaults werden das <strong>eingezahlte Kapital der Nutzer in sicheren Ertragsprotokollen (z. B. AAVE) </strong>staken<strong>, um ein Basisniveau an Zinsen zu generieren</strong>, und einen Teil dieses garantierten Einkommens nutzen, um die Optionsprämie mit Market Makern für Aufwärtspotenzial zu finanzieren.</p>
+<p>Das Endergebnis wird <strong>den Abwärtsschutz maximieren</strong>, während dennoch ein gewisses Aufwärtspotenzial erhalten bleibt, falls sich der Markt günstig in Richtung des Nutzers bewegt.</p>
+<p>Bitte beachten Sie, dass ein <strong>kritischer Entwurfskomponente erfordert, dass die passiven Erträge, die von den berechtigten Staking-Protokollen angeboten werden, signifikant über der schlimmsten Auszahlung des Produkts liegen, um die Optionsprämie ordnungsgemäß zu finanzieren und die Aufwärtsrendite zu generieren</strong>. Sollte der Nutzer ETH anstelle von USDT halten, muss er/sie die ETH in stETH in einem liquiden Staking-Protokoll wie Lido umwandeln, bevor er/sie das stETH in die Protokoll-Vaults sperrt, um von der zusätzlichen Ertragsakkumulation zu profitieren.</p>
+<p><img src="../../static/draw6.png" alt=""></img></p>
+<p><img src="../../static/draw7.png" alt=""></img></p>
+<h2 id="surge-protokoll">Surge-Protokoll</h2>
+<p>Für Nutzer mit einer höheren Risiko-Rendite-Toleranz bietet das <strong>Protokoll auch höhere Ertragsstrukturen mit einem anfänglichen Kapital 'Einsatz'</strong>. Surge-Protokolle richten sich ausschließlich an aggressive Nutzer, die an erheblich hohen Renditen im Austausch für Kapitalverluste interessiert sind.</p>
+<p><img src="../../static/draw8.png" alt=""></img></p>
+<p>Bei diesen auf Surge basierenden Produkten wird das <strong>Protokoll-Vault sowohl das Kapital des Nutzers als auch die Prämie der Market Maker zu Beginn des Handels sperren, </strong>analog zu einer Art 'Poker-Einsatz'**. Die gesperrten Kapitalpositionen werden <em>nicht</em> in andere Protokolle erneut gestakt und dienen als der verpflichtete Einsatz gegen die endgültige Auszahlung.</p>
+<p>Nehmen wir das Surge-Rangebound-Produkt als Beispiel. Sollte der Preis des zugrunde liegenden Vermögenswerts bis zur endgültigen Fälligkeit strikt innerhalb der Grenzen bleiben, erhält der Nutzer eine exponentiell höhere Rendite, als er sie unter der Earn-Version erhalten hätte. Sollte jedoch das Gegenteil eintreten, wird die Struktur vorzeitig beendet, wobei das gesperrte Kapital an den Market Maker als den 'Gewinner' dieser Strategie übertragen wird.</p>
+<p>Noch einmal, <strong>diese Produkte sind für Nutzer gedacht, die eine sehr starke Marktüberzeugung haben und diese Überzeugung testen möchten, in der Hoffnung, eine sehr hohe Rendite im Austausch für Kapitalverluste zu erzielen.</strong></p>
+<h2 id="psa-besondere-anmerkung-zu-rangebound-produkten">PSA: Besondere Anmerkung zu Rangebound-Produkten</h2>
+<p>Bildliche Darstellung, wie Rangebound in der Praxis funktioniert</p>
+<p>Obwohl einfach in der Theorie, hat das Rangebound-Produkt tatsächlich einige Designherausforderungen, insbesondere in Bezug auf die On-Chain-Kompatibilität von DeFi:</p>
+<ul>
+<li>Das Produkt bezieht sich auf eine <em>Reihe</em> historischer Preise, anstatt auf eine 'Punkt-in-der-Zeit'-Überprüfung bei Fälligkeit.</li>
+<li>Das Produkt kann 'ausgeschaltet' werden, wenn die Preisgrenzen überschritten werden.</li>
+<li><p>Das Produkt kann in <em>jeder Sekunde</em> ausgeschaltet werden, aber es ist technisch unpraktisch, die On-Chain-Preisreferenzen kontinuierlich über den Tag hinweg zu aktualisieren.</p>
+<ul>
+<li>Folglich sind Bereichsprüfungen aus Notwendigkeit "rückblickend".</li>
+</ul>
+</li>
+</ul>
+<p>Das Team hat die folgenden Designkompromisse im Hinblick auf die vorhergehenden Herausforderungen getroffen:</p>
+<ol>
+<li><p><strong>Tägliche Bereichsprüfungen:</strong></p>
+<ul>
+<li>Im Interesse der Gasgebühren und der On-Chain-TPS wird unser Rangebound-Produkt nur eine <em>tägliche</em><strong> </strong>Preisprüfung (um 16 Uhr OTC+8) durchführen, um festzustellen, ob das Produkt in den letzten 24 Stunden ausgeknockt wurde.</li>
+<li>Ausgeknockte Produkte werden ohne weitere Exposition in der Zukunft beendet.</li>
+</ul>
+</li>
+<li><p><strong>Tägliche Produktzyklen:</strong></p>
+<ul>
+<li>In Übereinstimmung mit den täglichen Bereichsprüfungen und dem Abrechnungsrhythmus wird unser Beobachtungszyklus immer mit dem _nächsten _16 Uhr (OTC+8) Zeitraum beginnen.</li>
+<li>Dennoch sind die Benutzer frei, jederzeit ein Rangebound-Produkt zu abonnieren und zu kaufen, und ihre Base+ Rendite wird sofort zu akkumulieren beginnen.</li>
+</ul>
+</li>
+<li><p><strong>Frühzeitige Beendigung vs. endgültige Abhebung:</strong></p>
+<ul>
+<li>Rangebound-Produkte, die 'ausgeknockt' sind, sind effektiv 'Spiel vorbei'; jedoch bleiben die Benutzer-Einlagen in Aave gestakt, und wir müssen bis zur endgültigen Fälligkeit warten, damit die Benutzer das Kapital in unserer aktuellen Iteration abheben können.</li>
+</ul>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="vault-classification.html" class="navigation navigation-prev " aria-label="Previous page: Vault-Klassifizierung">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="oracle.html" class="navigation navigation-next " aria-label="Next page: Oracle-Konstruktion">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Ihre Risikopräferenz definieren","level":"1.6.2","depth":2,"next":{"title":"Oracle-Konstruktion","level":"1.6.3","depth":2,"path":"technical-design/oracle.md","ref":"technical-design/oracle.md","articles":[]},"previous":{"title":"Vault-Klassifizierung","level":"1.6.1","depth":2,"path":"technical-design/vault-classification.md","ref":"technical-design/vault-classification.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"de","gitbook":"*"},"file":{"path":"technical-design/risk-prefer.md","mtime":"2025-06-06T19:20:45.701Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"de"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

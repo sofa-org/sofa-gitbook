@@ -1,6 +1,23 @@
 {
   "dependencies": {
-    "gitbook-plugin-mathjax": "^2.0.0",
-    "mathjax": "^2.7.7"
+    "dotenv": "^16.5.0",
+    "gitbook-plugin-back-to-top-button": "^0.1.4",
+    "gitbook-plugin-chapter-fold": "^0.0.4",
+    "gitbook-plugin-katex": "^1.1.4",
+    "honkit-plugin-search-plus": "^1.0.0",
+    "openai": "^5.1.1"
+  },
+  "name": "sofa-gitbook",
+  "version": "1.0.0",
+  "description": "![GitBook](https://img.shields.io/badge/GitBook-Documentation-blue)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "honkit": "^6.0.3"
   }
 }

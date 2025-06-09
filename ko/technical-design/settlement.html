@@ -1,0 +1,723 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <title>온체인 정산 고려사항 · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="fees.html" />
+    
+    
+    <link rel="prev" href="oracle.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org 개요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    다음 DeFi 혁신
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 SOFA 프로토콜에 오신 것을 환영합니다 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    로드맵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    사용자 가이드
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    수익 얻기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    서지
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    $RCH 보상 청구하기! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    기술 설계
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="vault-classification.html">
+            
+                <a href="vault-classification.html">
+            
+                    
+                    금고 분류
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="risk-prefer.html">
+            
+                <a href="risk-prefer.html">
+            
+                    
+                    위험 선호도 정의하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="oracle.html">
+            
+                <a href="oracle.html">
+            
+                    
+                    오라클 구축
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.4" data-path="settlement.html">
+            
+                <a href="settlement.html">
+            
+                    
+                    온체인 정산 고려사항
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="fees.html">
+            
+                <a href="fees.html">
+            
+                    
+                    프로토콜 수수료
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="automator.html">
+            
+                <a href="automator.html">
+            
+                    
+                    자동화기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    보안
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    버그 바운티 프로그램
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    거버넌스 프레임워크
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    외부 비상 사태 및 위험 요소
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    토큰 경제학
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    가상의 $RCH 유동성 시나리오 (LP + 누적 에어드랍)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA 포인트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    개발자 문서
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    시장 조성자 공개 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    DAPP 공개 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    서브그래프
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    배포 계약
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    시장 조성자 온보딩 프로세스
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    링크
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >온체인 정산 고려사항</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="온체인-정산-고려사항">온체인 정산 고려사항</h1>
+<h2 id="정산-물류">정산 물류</h2>
+<blockquote>
+<p><strong>DeFi 세계의 작업 스케줄링 문제</strong></p>
+</blockquote>
+<p>전통적인 시스템에서는 사소한 문제인 <strong>시간 예약 데이터 검색은 블록체인에서 도전적입니다. 스마트 계약에는 기본적인 'Cron과 유사한' 작업 스케줄러가 없기 때문입니다</strong>. 암호화폐에서 가격이 제때 예약되고 업데이트되도록 보장하는 자동화 메커니즘을 어떻게 설계할 수 있을까요?</p>
+<p>Basis Cash나 ESD와 같은 암호화 '알고 스테이블'은 DeFi 부문을 휩쓸며 각 에포크의 끝에서 작업을 진행하고 새로운 정산 가격을 설정하기 위해 <em>수동</em> 트리거가 필요한 '에포크' 간격 접근 방식을 배포했습니다. <strong>보상 메커니즘은 자원봉사자들이 '진행을 트리거'하도록 강제하기 위해 스마트 계약 코드에 내장되었습니다</strong>. 비슷하게, Andre Cronje(Yearn Finance, Fantom)가 설립한 인기 프로젝트인 Keep3r는 이 특정 목적을 위해 사전 요청을 게시하고 지정된 작업 보상을 제공하는 가상 작업 게시판을 만들었습니다.</p>
+<p>어느 쪽 솔루션도 완벽하지 않았습니다. 왜냐하면 <strong>궁극적으로 인간의 개입에 의존했기 때문입니다</strong>(자기 이익에 의해 동기 부여됨). 수동 노력이 필요하다는 점에서 <strong>실제 최종 실행 시간에 대한 불확실성</strong>을 언급할 필요도 없습니다. 이는 정산 고정이 만료 후에도 업데이트되지 않는 불편한 상황을 초래할 수 있으며, 이는 사용자 경험을 불만족스럽게 만들 수 있습니다.</p>
+<p>가격 업데이트를 주기적으로 트리거하는 오프체인 솔루션을 만들고 의존할 수 있을까요? 가능하지만, <strong>프로토콜이 서버 장애와 같은 위험으로 심각하게 손상될 수 있는 중앙 집중식 '지름길'에는 관심이 없습니다</strong>.</p>
+<p>우리의 오라클 섹션에서 다룬 바와 같이, SOFA는 <strong>ChainLink의 자동화 서비스를 정산 가격 소스로 활용합니다</strong>. 그들의 서비스는 신뢰할 수 있고 분산된 자동화 플랫폼을 통해 스마트 계약 기능의 조건부 실행을 가능하게 하며, 현재 수십억 달러의 TVL을 확보한 외부 노드 운영의 검증된 네트워크를 가지고 있습니다.</p>
+<p>마지막으로, <strong>최종 정산 가격이 설정되면 사용자와 시장 조성자는 언제든지 계약을 호출하여 자신의 포지션 토큰을 소각하고 정당한 지급금을 받을 수 있습니다</strong>, 이는 SOFA의 분산 오라클에서 신뢰할 수 있는 데이터 피드를 통해 스마트 계약이 원활하게 처리합니다.</p>
+<h2 id="지급-계산">지급 계산</h2>
+<p>제품 지급을 계산하는 계약은 완전히 표준화되어 있으며, Vault에 독립적이고 담보에 구애받지 않습니다. 대신, <strong>계산 계약은 모델 지급을 계산하기 위해 기본 구조화된 제품의 유형에 의해 정의됩니다</strong>. 몇 가지 지급 예시는 아래에 나와 있습니다:</p>
+<h3 id="범위-제한"><em>범위 제한</em></h3>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mi>a</mi><mi>y</mi><mi>o</mi><mi>f</mi><mi>f</mi><mrow><mi>m</mi><mi>a</mi><mi>k</mi><mi>e</mi><mi>r</mi></mrow><mo>=</mo><mrow><mo fence="true">{</mo><mtable><mtr><mtd><mrow><mi>X</mi><mo separator="true">,</mo><mi>H</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>S</mi><mi>e</mi><mi>t</mi><mi>t</mi><mi>l</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mo>≥</mo><mi>H</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mo>∨</mo><mi>L</mi><mi>o</mi><mi>w</mi><mi>S</mi><mi>e</mi><mi>t</mi><mi>t</mi><mi>l</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mo>≤</mo><mi>L</mi><mi>o</mi><mi>w</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi></mrow></mtd></mtr><mtr><mtd><mrow><mn>0</mn><mo separator="true">,</mo><mi>H</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>S</mi><mi>e</mi><mi>t</mi><mi>t</mi><mi>l</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mo>&lt;</mo><mi>H</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mo>∧</mo><mi>L</mi><mi>o</mi><mi>w</mi><mi>S</mi><mi>e</mi><mi>t</mi><mi>t</mi><mi>l</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mo>&gt;</mo><mi>L</mi><mi>o</mi><mi>w</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi></mrow></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">Payoff{maker}=\begin{cases}X, HighSettlePrice\geq HighStrikePrice\vee LowSettlePrice\leq LowStrikePrice\\  0, HighSettlePrice&lt;HighStrikePrice\wedge LowSettlePrice&gt;LowStrikePrice\end{cases}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.75em;"></span><span class="strut bottom" style="height:3.0000299999999998em;vertical-align:-1.25003em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord textstyle uncramped"><span class="mord mathit">m</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span></span><span class="mrel">=</span><span class="minner textstyle uncramped"><span class="mopen style-wrap reset-textstyle textstyle uncramped" style="top:0em;"><span class="delimsizing size4">{</span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist"><span style="top:-0.6819999999999999em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle uncramped"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">h</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">e</span><span class="mord mathit">t</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span><span class="mrel">≥</span><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">h</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span><span class="mbin">∨</span><span class="mord mathit">L</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02691em;">w</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">e</span><span class="mord mathit">t</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span><span class="mrel">≤</span><span class="mord mathit">L</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02691em;">w</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span></span></span><span style="top:0.7579999999999999em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle uncramped"><span class="mord mathrm">0</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">h</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">e</span><span class="mord mathit">t</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span><span class="mrel">&lt;</span><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">h</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span><span class="mbin">∧</span><span class="mord mathit">L</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02691em;">w</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">e</span><span class="mord mathit">t</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span><span class="mrel">&gt;</span><span class="mord mathit">L</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02691em;">w</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span><span class="mclose sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mi>a</mi><mi>y</mi><mi>o</mi><mi>f</mi><mi>f</mi><mrow><mi>u</mi><mi>s</mi><mi>e</mi><mi>r</mi></mrow><mo>=</mo><mi>X</mi><mo>−</mo><mi>P</mi><mi>a</mi><mi>y</mi><mi>o</mi><mi>f</mi><mi>f</mi><mrow><mi>m</mi><mi>a</mi><mi>k</mi><mi>e</mi><mi>r</mi></mrow></mrow><annotation encoding="application/x-tex">Payoff {user}=X - Payoff {maker}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord textstyle uncramped"><span class="mord mathit">u</span><span class="mord mathit">s</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span></span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="mbin">−</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord textstyle uncramped"><span class="mord mathit">m</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span></span></span></span></span></li>
+</ul>
+<h3 id="스마트-트렌드"><em>스마트 트렌드</em></h3>
+<h4 id="강세-트렌드"><em>강세 트렌드</em></h4>
+<ul>
+<li><p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mi>a</mi><mi>y</mi><mi>o</mi><mi>f</mi><mi>f</mi><mrow><mi>m</mi><mi>a</mi><mi>k</mi><mi>e</mi><mi>r</mi></mrow><mo>=</mo><mrow><mo fence="true">{</mo><mtable><mtr><mtd><mrow><mn>0</mn><mo separator="true">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><mi>t</mi><mi>l</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mo>≥</mo><mi>H</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi>X</mi><mo>×</mo><mfrac><mrow><mi>H</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mo>−</mo><mi>S</mi><mi>e</mi><mi>t</mi><mi>t</mi><mi>l</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>H</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mo>−</mo><mi>L</mi><mi>o</mi><mi>w</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi></mrow></mfrac><mo separator="true">,</mo><mi>L</mi><mi>o</mi><mi>w</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mo>&lt;</mo><mi>S</mi><mi>e</mi><mi>t</mi><mi>t</mi><mi>l</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mo>&lt;</mo><mi>H</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi>X</mi><mo separator="true">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><mi>t</mi><mi>l</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mo>≤</mo><mi>L</mi><mi>o</mi><mi>w</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi></mrow></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">Payoff{maker}=\begin{cases}0, SettlePrice\geq HighStrikePrice\\
+X\times\frac{HighStrikePrice-SettlePrice}{HighStrikePrice-LowStrikePrice},LowStrikePrice&lt;SettlePrice&lt;HighStrikePrice\\
+X, SettlePrice\leq LowStrikePrice\end{cases}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:2.434554em;"></span><span class="strut bottom" style="height:4.369108em;vertical-align:-1.9345539999999999em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord textstyle uncramped"><span class="mord mathit">m</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span></span><span class="mrel">=</span><span class="minner textstyle uncramped"><span class="mopen style-wrap reset-textstyle textstyle uncramped"><span class="delimsizing mult"><span class="vlist"><span style="top:0.9500099999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎩</span></span></span><span style="top:0.9500099999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-0.000010000000000287557em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎨</span></span></span><span style="top:-1.1500100000000002em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-1.4500200000000003em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎧</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist"><span style="top:-1.4265539999999999em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle uncramped"><span class="mord mathrm">0</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">e</span><span class="mord mathit">t</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span><span class="mrel">≥</span><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">h</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span></span></span><span style="top:0.013445999999999958em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle uncramped"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="mbin">×</span><span class="mord reset-textstyle textstyle uncramped"><span class="mopen sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.345em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.08125em;">H</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.03588em;">g</span><span class="mord mathit mtight">h</span><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="mord mathit mtight">t</span><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.03148em;">k</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight" style="margin-right:0.13889em;">P</span><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">c</span><span class="mord mathit mtight">e</span><span class="mbin mtight">−</span><span class="mord mathit mtight">L</span><span class="mord mathit mtight">o</span><span class="mord mathit mtight" style="margin-right:0.02691em;">w</span><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="mord mathit mtight">t</span><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.03148em;">k</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight" style="margin-right:0.13889em;">P</span><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">c</span><span class="mord mathit mtight">e</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.44610799999999995em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathit mtight" style="margin-right:0.08125em;">H</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.03588em;">g</span><span class="mord mathit mtight">h</span><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="mord mathit mtight">t</span><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.03148em;">k</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight" style="margin-right:0.13889em;">P</span><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">c</span><span class="mord mathit mtight">e</span><span class="mbin mtight">−</span><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight">t</span><span class="mord mathit mtight">t</span><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight" style="margin-right:0.13889em;">P</span><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">c</span><span class="mord mathit mtight">e</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mpunct">,</span><span class="mord mathit">L</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02691em;">w</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span><span class="mrel">&lt;</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">e</span><span class="mord mathit">t</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span><span class="mrel">&lt;</span><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">h</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span></span></span><span style="top:1.502554em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle uncramped"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">e</span><span class="mord mathit">t</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span><span class="mrel">≤</span><span class="mord mathit">L</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02691em;">w</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span><span class="mclose sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span></span></span></span></p>
+</li>
+<li><p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mi>a</mi><mi>y</mi><mi>o</mi><mi>f</mi><mi>f</mi><mrow><mi>u</mi><mi>s</mi><mi>e</mi><mi>r</mi></mrow><mo>=</mo><mi>X</mi><mo>−</mo><mi>P</mi><mi>a</mi><mi>y</mi><mi>o</mi><mi>f</mi><mi>f</mi><mrow><mi>m</mi><mi>a</mi><mi>k</mi><mi>e</mi><mi>r</mi></mrow></mrow><annotation encoding="application/x-tex">Payoff {user}=X - Payoff {maker}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord textstyle uncramped"><span class="mord mathit">u</span><span class="mord mathit">s</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span></span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="mbin">−</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord textstyle uncramped"><span class="mord mathit">m</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span></span></span></span></span></p>
+</li>
+</ul>
+<h4 id="약세-트렌드"><em>약세 트렌드</em></h4>
+<ul>
+<li><p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mi>a</mi><mi>y</mi><mi>o</mi><mi>f</mi><mi>f</mi><mrow><mi>m</mi><mi>a</mi><mi>k</mi><mi>e</mi><mi>r</mi></mrow><mo>=</mo><mrow><mo fence="true">{</mo><mtable><mtr><mtd><mrow><mi>X</mi><mo separator="true">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><mi>t</mi><mi>l</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mo>≥</mo><mi>H</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi>X</mi><mo>×</mo><mfrac><mrow><mi>S</mi><mi>e</mi><mi>t</mi><mi>t</mi><mi>l</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mo>−</mo><mi>L</mi><mi>o</mi><mi>w</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi></mrow><mrow><mi>H</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mo>−</mo><mi>L</mi><mi>o</mi><mi>w</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi></mrow></mfrac><mo separator="true">,</mo><mi>L</mi><mi>o</mi><mi>w</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mo>&lt;</mo><mi>S</mi><mi>e</mi><mi>t</mi><mi>t</mi><mi>l</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mo>&lt;</mo><mi>H</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi></mrow></mtd></mtr><mtr><mtd><mrow><mn>0</mn><mo separator="true">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><mi>t</mi><mi>l</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi><mo>≤</mo><mi>L</mi><mi>o</mi><mi>w</mi><mi>S</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>k</mi><mi>e</mi><mi>P</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>e</mi></mrow></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">Payoff{maker}=\begin{cases}X, SettlePrice\geq HighStrikePrice\\
+
+X\times\frac{SettlePrice-LowStrikePrice}{HighStrikePrice-LowStrikePrice},LowStrikePrice&lt;SettlePrice&lt;HighStrikePrice\\
+0, SettlePrice\leq LowStrikePrice\end{cases}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:2.434554em;"></span><span class="strut bottom" style="height:4.369108em;vertical-align:-1.9345539999999999em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord textstyle uncramped"><span class="mord mathit">m</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span></span><span class="mrel">=</span><span class="minner textstyle uncramped"><span class="mopen style-wrap reset-textstyle textstyle uncramped"><span class="delimsizing mult"><span class="vlist"><span style="top:0.9500099999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎩</span></span></span><span style="top:0.9500099999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-0.000010000000000287557em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎨</span></span></span><span style="top:-1.1500100000000002em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-1.4500200000000003em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎧</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist"><span style="top:-1.4265539999999999em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle uncramped"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">e</span><span class="mord mathit">t</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span><span class="mrel">≥</span><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">h</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span></span></span><span style="top:0.013445999999999958em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle uncramped"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="mbin">×</span><span class="mord reset-textstyle textstyle uncramped"><span class="mopen sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.345em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.08125em;">H</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.03588em;">g</span><span class="mord mathit mtight">h</span><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="mord mathit mtight">t</span><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.03148em;">k</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight" style="margin-right:0.13889em;">P</span><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">c</span><span class="mord mathit mtight">e</span><span class="mbin mtight">−</span><span class="mord mathit mtight">L</span><span class="mord mathit mtight">o</span><span class="mord mathit mtight" style="margin-right:0.02691em;">w</span><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="mord mathit mtight">t</span><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.03148em;">k</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight" style="margin-right:0.13889em;">P</span><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">c</span><span class="mord mathit mtight">e</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.394em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight">t</span><span class="mord mathit mtight">t</span><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight" style="margin-right:0.13889em;">P</span><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">c</span><span class="mord mathit mtight">e</span><span class="mbin mtight">−</span><span class="mord mathit mtight">L</span><span class="mord mathit mtight">o</span><span class="mord mathit mtight" style="margin-right:0.02691em;">w</span><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="mord mathit mtight">t</span><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.03148em;">k</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight" style="margin-right:0.13889em;">P</span><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">c</span><span class="mord mathit mtight">e</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mpunct">,</span><span class="mord mathit">L</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02691em;">w</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span><span class="mrel">&lt;</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">e</span><span class="mord mathit">t</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span><span class="mrel">&lt;</span><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">h</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span></span></span><span style="top:1.502554em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle uncramped"><span class="mord mathrm">0</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">e</span><span class="mord mathit">t</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span><span class="mrel">≤</span><span class="mord mathit">L</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02691em;">w</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">e</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span><span class="mclose sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span></span></span></span></p>
+</li>
+<li><p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mi>a</mi><mi>y</mi><mi>o</mi><mi>f</mi><mi>f</mi><mrow><mi>u</mi><mi>s</mi><mi>e</mi><mi>r</mi></mrow><mo>=</mo><mi>X</mi><mo>−</mo><mi>P</mi><mi>a</mi><mi>y</mi><mi>o</mi><mi>f</mi><mi>f</mi><mrow><mi>m</mi><mi>a</mi><mi>k</mi><mi>e</mi><mi>r</mi></mrow></mrow><annotation encoding="application/x-tex">Payoff {user}=X - Payoff {maker}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord textstyle uncramped"><span class="mord mathit">u</span><span class="mord mathit">s</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span></span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="mbin">−</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord textstyle uncramped"><span class="mord mathit">m</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span></span></span></span></span></p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="oracle.html" class="navigation navigation-prev " aria-label="Previous page: 오라클 구축">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="fees.html" class="navigation navigation-next " aria-label="Next page: 프로토콜 수수료">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"온체인 정산 고려사항","level":"1.6.4","depth":2,"next":{"title":"프로토콜 수수료","level":"1.6.5","depth":2,"path":"technical-design/fees.md","ref":"technical-design/fees.md","articles":[]},"previous":{"title":"오라클 구축","level":"1.6.3","depth":2,"path":"technical-design/oracle.md","ref":"technical-design/oracle.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"ko","gitbook":"*"},"file":{"path":"technical-design/settlement.md","mtime":"2025-06-06T17:53:38.261Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"ko"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

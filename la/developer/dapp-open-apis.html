@@ -1,0 +1,3060 @@
+
+<!DOCTYPE HTML>
+<html lang="la" >
+    <head>
+        <meta charset="UTF-8">
+        <title>DAPP Aperta APIs · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="subgraphs.html" />
+    
+    
+    <link rel="prev" href="marketmaker-open-apis.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    Innovatio Proxima Unda DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 Salve Ad SOFA Protocolos 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    Via
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    Dux User
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    Merere
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    Surge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    Reclamationem Tuorum $RCH Praemiorum! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../technical-design/">
+            
+                <a href="../technical-design/">
+            
+                    
+                    Consilium Technicum
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../technical-design/vault-classification.html">
+            
+                <a href="../technical-design/vault-classification.html">
+            
+                    
+                    Classificatio Thesauri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../technical-design/risk-prefer.html">
+            
+                <a href="../technical-design/risk-prefer.html">
+            
+                    
+                    Definire Tuam Praeferentiam Risci
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../technical-design/oracle.html">
+            
+                <a href="../technical-design/oracle.html">
+            
+                    
+                    Constructio Oraculi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../technical-design/settlement.html">
+            
+                <a href="../technical-design/settlement.html">
+            
+                    
+                    Considerationes Solvendi In-Chain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../technical-design/fees.html">
+            
+                <a href="../technical-design/fees.html">
+            
+                    
+                    Feoda Protocoli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../technical-design/automator.html">
+            
+                <a href="../technical-design/automator.html">
+            
+                    
+                    Automator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    Securitas
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    Programma Bug Bounty
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    Structura Gubernationis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    Contingentiae Externae & Factorum Risci
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    Tokenomica
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    Hypotheticum $RCH Flotatio Scenarium (LP + Cumulativa Airdrops)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA Puncta
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA FAQs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Documentatio Prodeveloper
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="marketmaker-open-apis.html">
+            
+                <a href="marketmaker-open-apis.html">
+            
+                    
+                    Mercatus Facitor Aperta APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.2" data-path="dapp-open-apis.html">
+            
+                <a href="dapp-open-apis.html">
+            
+                    
+                    DAPP Aperta APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="subgraphs.html">
+            
+                <a href="subgraphs.html">
+            
+                    
+                    Subgraphi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="contracts.html">
+            
+                <a href="contracts.html">
+            
+                    
+                    Contractus Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="marketmaker-onboarding-process.html">
+            
+                <a href="marketmaker-onboarding-process.html">
+            
+                    
+                    Mercatus Facitor Processus Inscriptio
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    Nexus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >DAPP Aperta APIs</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="dapp-open-apis">DApp Open APIs</h1>
+<p>Nostrum existentem dApp in sofa.org est critica workflow feature et est principalis modus pro usoribus ad interagendum cum SOFA protocollis. Tamen, alios progressus hortamur ut accessum enableant et se coniungant ad SOFA per suas proprias dApps ut maximam nostram ecosystematis incrementum. Consideramus hos esse nostros 'Broker' socios et hortamur partes interestas ut contactum cum SOFA turma pro ulteriori API informatione.</p>
+<h2 id="dnt">DNT</h2>
+<h3 id="recommended-dnt-rfq-list-inquiry">Recommended DNT RFQ list Inquiry</h3>
+<pre><code>GET /rfq/dnt/recommended-list
+</code></pre><p><strong>Input parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>Contract information</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>Chain ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 indicat quod resultatum redditum normale est</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Error message redditum in casu exceptionis</td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>Ut infra demonstratum</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>number</td>
+<td>RFQ ID</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>Chain ID</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>Contract address</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>Risk type: PROTECTED, RISKY</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>Underlying currency</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>Currency pair</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>Subscription currency</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>Lower price</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>Upper price</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>RFQ emptio quantitatis</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>number</td>
+<td>Expiratio temporis (e.g., 1672387200)</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>Tempus incitamentum praesentis pretium; proxima observatio initium tempus ex hoc logica calculatur</td>
+</tr>
+<tr>
+<td>observationStart</td>
+<td>number</td>
+<td>Tempus initium observationis aestimatum pro pulsando in/out ex temporis signo</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>mercaturae et solutionis feodum rate (optio)</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>Informationes de mutuo (optio)</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>Pretium token necessarium pro RCH pretium conversione et airdrop calculatione (optio)</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>Calculatae quantitates (optio)</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>Annuae informationes, praesto pro non-Surge productis (optio)</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>Informationes de probabilitate, praesto pro Surge productis (optio)</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000, 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>Collateralis maker quantitas</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>Totalis collateralis quantitas (Taker+Maker)</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRisk</td>
+<td>string</td>
+<td>Necessarium cum cautum (optio)</td>
+</tr>
+<tr>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>maker aequilibrium limitem</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
+<td>Expiratio temporis (e.g., 1672387200)</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>Fenestra maker (optio)</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>Signatura (optio)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Request Exemplum</strong></p>
+<pre><code>GET rfq/dnt/recommended-list?vault=xxxxxx&amp;chainId=1
+</code></pre><p><strong>Responsio</strong></p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">"code"</span>:<span class="hljs-number">0</span>,
+    <span class="hljs-string">"message"</span>:<span class="hljs-string">""</span>,
+    <span class="hljs-string">"value"</span>:[
+        {
+            <span class="hljs-string">"rfqId"</span>:<span class="hljs-number">1233992</span>,
+            <span class="hljs-string">"riskType"</span>:<span class="hljs-string">"PROTECTED"</span>,
+            <span class="hljs-string">"forCcy"</span>:<span class="hljs-string">"BTC"</span>,
+            <span class="hljs-string">"expiry"</span>:<span class="hljs-number">1672387200</span>,
+            <span class="hljs-string">"lowerBarrier"</span>:<span class="hljs-number">18000</span>,
+            <span class="hljs-string">"upperBarrier"</span>:<span class="hljs-number">24000</span>,
+            <span class="hljs-string">"depositCcy"</span>:<span class="hljs-string">"BTC"</span>,
+            <span class="hljs-string">"depositAmount"</span>: <span class="hljs-number">0.05</span>,
+            <span class="hljs-string">"protectedApy"</span>:<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"deadline"</span>:<span class="hljs-number">1672279892</span>,
+            <span class="hljs-string">"recommended"</span>:<span class="hljs-literal">true</span>,
+            <span class="hljs-string">"quote"</span>:
+                {
+                    <span class="hljs-string">"rfqId"</span>:<span class="hljs-number">1233992</span>,
+                    <span class="hljs-string">"inRangeApy"</span>:<span class="hljs-number">0.25</span>,
+                    <span class="hljs-string">"tenor"</span>:<span class="hljs-number">7.9</span>,
+                    <span class="hljs-string">"fundingAmount"</span>:<span class="hljs-number">0.25</span>,
+                    <span class="hljs-string">"depositAmount"</span>:<span class="hljs-number">1</span>,
+                    <span class="hljs-string">"premiumCoin"</span>:<span class="hljs-string">"BTC"</span>,
+                    <span class="hljs-string">"premiumAmount"</span>:<span class="hljs-number">0.05</span>,
+                    <span class="hljs-string">"bookingQuantity"</span>:<span class="hljs-number">0.3</span>,
+                    <span class="hljs-string">"totalAmount"</span>:<span class="hljs-number">0.05</span>,
+                    <span class="hljs-string">"payoff"</span>:<span class="hljs-number">0.3</span>,
+                    <span class="hljs-string">"deadline"</span>:<span class="hljs-number">1672279892</span>,
+                    <span class="hljs-string">"signature"</span>:<span class="hljs-string">"dsdkksdsksdk"</span>
+                }
+
+        }
+    ]
+}
+</code></pre>
+<h3 id="dnt-inquiry">DNT Inquiry</h3>
+<ul>
+<li>Notes:<ul>
+<li>Quaeso ne transmittas inscriptionem nummariae usoris in pura inquisitione petitione.</li>
+<li>Inscriptionem nummariae usoris tantum transmittenda est cum subscripsione.</li>
+</ul>
+</li>
+</ul>
+<pre><code>GET /rfq/dnt/quote
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>verum</td>
+<td>string</td>
+<td>Informatio contractus</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>verum</td>
+<td>int</td>
+<td>ID catena</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>verum</td>
+<td>number</td>
+<td>Tempus secundarium pro die expirationis, e.g., 1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>verum</td>
+<td>number</td>
+<td>Pretium inferius</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>verum</td>
+<td>number</td>
+<td>Pretium superius</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>verum</td>
+<td>number</td>
+<td>Quantitas emptionis RFQ</td>
+</tr>
+<tr>
+<td>inputApyDefinition</td>
+<td>verum</td>
+<td>string</td>
+<td>Codex subiacens est Enum indicans quomodo input APY computetur: OptimusDefaultAPY, BinanceDntAPY, AaveLendingAPY</td>
+</tr>
+<tr>
+<td>protectedApy</td>
+<td>falsum</td>
+<td>number</td>
+<td>Certum annuum fructum (vacuum pro RISKY, necessarium pro protecto)</td>
+</tr>
+<tr>
+<td>fundingApy</td>
+<td>falsum</td>
+<td>number</td>
+<td>AAVE annuum fructum (vacuum pro RISKY, necessarium pro protecto)</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>falsum</td>
+<td>string</td>
+<td>Informatio publica inscriptionis nancientis</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 indicat quod resultatum reditus normale est</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Nuntius erroris redditus in casu exceptionis</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>Ut infra demonstratum</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>number</td>
+<td>ID RFQ</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>Inscriptionis contractus</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>ID catena</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>Typus periculi: PROTECTUS, RISKY</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>Moneta subiacens</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>Parium monetarum</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>Moneta subscriptionis</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>Pretium inferius</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>Pretium superius</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>Quantitas emptionis RFQ</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>number</td>
+<td>Tempus expirationis (e.g., 1672387200)</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>Tempus incitamentum pretiorum currentium; tempus initii observationis sequentis ex hoc logica computatur</td>
+</tr>
+<tr>
+<td>observationStart</td>
+<td>number</td>
+<td>Tempus initii aestimationis observationis pro knocking in/out secundum tempus</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>Rationem feorum negotiationis et solutionis (optativa)</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>Informatio de mutuo (optativa)</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>Pretium tokenis necessarium pro conversione pretii RCH et calculo airdrop (optativa)</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>Quantitates computatae (optativa)</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>Informatio annua, praesto pro productis non-Surge (optativa)</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>Informatio de probabilitatibus, praesto pro productis Surge (optativa)</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; quoteId</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000, 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>Quantitas collateralis Maker</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>Totalis quantitas collateralis (Taker+Maker)</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRisk</td>
+<td>string</td>
+<td>Necessaria cum cautum (optativa)</td>
+</tr>
+<tr>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>Limite aequilibrii Maker</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
+<td>Tempus expirationis (e.g., 1672387200)</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>Nummorum sacculus Maker (optativa)</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>Signatura (optativa)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dnt-probabilitas-vincendi">DNT Probabilitas Vincendi</h3>
+<p>Probabilitas manendi intra limites usque ad expirationem</p>
+<pre><code>GET rfq/dnt/winning-probabilities
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Requisitum</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>forCcy</td>
+<td>verum</td>
+<td>string</td>
+<td>Moneta subiecta</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>verum</td>
+<td>number</td>
+<td>Tempus secundarium pro die expirationis, e.g., 1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>verum</td>
+<td>number</td>
+<td>Inferior pretium</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>verum</td>
+<td>number</td>
+<td>Superior pretium</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 indicat quod resultatum reditionis normale</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Nuntius erroris redditus in casu exceptionis</td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>Ut infra demonstratum</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>spotPrice</td>
+<td>numerus</td>
+<td>Pretium locatum</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>numerus</td>
+<td></td>
+</tr>
+<tr>
+<td>probabilities</td>
+<td>objectum</td>
+<td>Probabilitas vincendi</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplum Postulationis</strong></p>
+<pre><code>GET rfq/dnt/winning-probabilities?forCcy=BTC&amp;expiry=xxxx&amp;lowerBarrier=xxx&amp;upperBarrier=xxx
+</code></pre><p><strong>Responsio</strong></p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">"code"</span>:<span class="hljs-number">0</span>,
+    <span class="hljs-string">"message"</span>:<span class="hljs-string">""</span>,
+    <span class="hljs-string">"value"</span>: {
+        <span class="hljs-string">"spotPrice"</span>: <span class="hljs-number">62121</span>,
+        <span class="hljs-string">"timestamp"</span>: <span class="hljs-number">1727080594</span>,
+        <span class="hljs-string">"probabilities"</span>: {
+            <span class="hljs-string">"probDntStayInRange"</span>: <span class="hljs-number">0.4</span>,
+            <span class="hljs-string">"probBullTrendItmLowerStrike"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBullTrendItmUpperStrike"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBearTrendItmLowerStrike"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBearTrendItmUpperStrike"</span>: <span class="hljs-literal">null</span>
+        }
+    }
+}
+</code></pre>
+<h2 id="callidus-trend">Callidus Trend</h2>
+<h3 id="consilium-callidi-trend-rfq-indicium">Consilium Callidi Trend RFQ indicium</h3>
+<pre><code>GET rfq/smart-trend/recommended-list
+</code></pre><p><strong>Input parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>verum</td>
+<td>string</td>
+<td>Notitia contractus</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>verum</td>
+<td>int</td>
+<td>ID catena</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 indicat quod resultatum reditus normale</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Nuntius erroris redditus in casu exceptionis</td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>Ut infra demonstratum</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>number</td>
+<td>RFQ ID</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>ID catena</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>Adres contractus</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>Typus periculi: PROTECTUS, PERICULOSUS</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>string</td>
+<td>BULLISH, BEARISH</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>Moneta subiecta</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>Parium monetarum</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>Moneta subscripta</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>Inferior pretium</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>Superior pretium</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>Quantitas emptionis RFQ</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>number</td>
+<td>Tempus expirationis (e.g., 1672387200)</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>Tempus incitamenti pretiorum currentium; tempus initii observationis sequentis ex hoc logica calculatur</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>Rationem mercedis negotiationis et solutionis (optativa)</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>Notitia de mutuo (optativa)</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>Pretium tokenis necessarium pro conversione pretii RCH et calculatione airdrop (optativa)</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>Quantitates calculatae (optativa)</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>Notitia annualis, praesto pro productis non-Surge (optativa)</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>Notitia de probabilitatibus, praesto pro productis Surge (optativa)</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000, 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>Quantitas collateralis Maker</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>Totalis quantitas collateralis (Taker+Maker)</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRisk</td>
+<td>string</td>
+<td>Necessarium cum cautum (optativum)</td>
+</tr>
+<tr>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>Limitem aequilibrii Maker</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
+<td>Tempus expirationis (exempli gratia, 1672387200)</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>Fiscus Maker (optativum)</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>Signatura (optativum)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplum Petitionis</strong></p>
+<pre><code>GET rfq/smart-trend/recommended-list?vault=xxxxxx
+</code></pre><h3 id="inquisitio-de-trend-intelligent">Inquisitio de Trend Intelligent</h3>
+<ul>
+<li>Notae:<ul>
+<li>Quaeso ne transmittas inscriptionem fisco usoris in pura petitione inquisitionis.</li>
+<li>Inscriptionem fisco usoris tantum transmitti debet cum subscripto.</li>
+</ul>
+</li>
+</ul>
+<pre><code>GET /rfq/smart-trend/quote
+</code></pre><p><strong>Parametri Input</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Necessarium</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>verum</td>
+<td>string</td>
+<td>Notitia contractus</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>verum</td>
+<td>int</td>
+<td>ID catenae</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>verum</td>
+<td>number</td>
+<td>Tempus expirationis in secundis, exempli gratia, 1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>verum</td>
+<td>number</td>
+<td>Inferior pretium</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>verum</td>
+<td>number</td>
+<td>Superior pretium</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>verum</td>
+<td>number</td>
+<td>Quantitas emptionis RFQ</td>
+</tr>
+<tr>
+<td>inputApyDefinition</td>
+<td>verum</td>
+<td>string</td>
+<td>Codex subiacens est Enum indicans quomodo input APY calculatur: OptimusDefaultAPY, BinanceDntAPY, AaveLendingAPY</td>
+</tr>
+<tr>
+<td>protectedApy</td>
+<td>falsum</td>
+<td>number</td>
+<td>Certa annua reditus (vacuum pro RISKY, necessarium pro protecto)</td>
+</tr>
+<tr>
+<td>fundingApy</td>
+<td>falsum</td>
+<td>number</td>
+<td>AAVE annua reditus (vacuum pro RISKY, necessarium pro protecto)</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>falsum</td>
+<td>string</td>
+<td>Notitia publica inscriptionis fisco inquirentis</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Parametri Responsionis</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 indicat quod eventus reditus normalis est</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Nuntius erroris redditus in casu exceptionis</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>Ut infra demonstratum est</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>number</td>
+<td>RFQ ID</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>Adressum contractus</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>Chain ID</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>Typus periculi: PROTECTUS, PERICULOSUS</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>string</td>
+<td>BULLISH, BEARISH</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>Moneta subiecta</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>Par monetae</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>Moneta subscritionis</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>Inferior pretium</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>Superior pretium</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>Quantitas emptionis RFQ</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>number</td>
+<td>Tempus expirationis (e.g., 1672387200)</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>Tempus incitamenti praesentis; tempus initii observationis sequentis ex hoc logica calculatur</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>Rationem mercedis negotiationis et solutionis (optativa)</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>Notitia de mutuo (optativa)</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>Pretium tokenis necessarium pro conversione pretii RCH et calculatione airdrop (optativa)</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>Quantitates calculatae (optativa)</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>Notitia annualis, praesto pro productis non-Surge (optativa)</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>Notitia de probabilitatibus, praesto pro productis Surge (optativa)</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; quoteId</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000, 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>Quantitas collateralis fabricatoris</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>Totalis quantitas collateralis (Taker+Maker)</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRisk</td>
+<td>string</td>
+<td>Necessarium cum cautum (optativa)</td>
+</tr>
+<tr>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>Limitem rationis fabricatoris</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
+<td>Tempus expirationis (e.g., 1672387200)</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>Fiscus fabricatoris (optativa)</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>Signatura (optativa)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sapienti-trend-vincendi-probabilitas">Sapienti Trend Vincendi Probabilitas</h3>
+<p>Probabilitas manendi intra fines usque ad expirationem</p>
+<pre><code>GET rfq/smart-trend/winning-probabilities
+</code></pre><p><strong>Input Parametri</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>forCcy</td>
+<td>verum</td>
+<td>string</td>
+<td>Moneta subiecta</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>verum</td>
+<td>numerus</td>
+<td>Timestamp secundi gradus pro die expirationis, e.g., 1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>verum</td>
+<td>numerus</td>
+<td>Inferior pretium</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>verum</td>
+<td>numerus</td>
+<td>Superior pretium</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Responsio Parametri</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 indicat quod resultatum reditus normale est</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Nuntius erroris redditus in casu exceptionis</td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>Ut infra demonstratum</td>
+</tr>
+</tbody>
+</table>
+<p>Objectum</p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>spotPrice</td>
+<td>numerus</td>
+<td>Pretium spot</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>numerus</td>
+<td></td>
+</tr>
+<tr>
+<td>probabilities</td>
+<td>object</td>
+<td>Probabilitas vincendi</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplum Petitionis</strong></p>
+<pre><code>GET rfq/smart-trend/winning-probabilities?forCcy=BTC&amp;expiry=xxxx&amp;lowerStrike=xxx&amp;upperStrike=xxx
+</code></pre><p><strong>Responsum</strong></p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">"code"</span>:<span class="hljs-number">0</span>,
+    <span class="hljs-string">"message"</span>:<span class="hljs-string">""</span>,
+    <span class="hljs-string">"value"</span>: {
+        <span class="hljs-string">"spotPrice"</span>: <span class="hljs-number">62121</span>,
+        <span class="hljs-string">"timestamp"</span>: <span class="hljs-number">1727080594</span>,
+        <span class="hljs-string">"probabilities"</span>: {
+            <span class="hljs-string">"probDntStayInRange"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBullTrendItmLowerStrike"</span>: <span class="hljs-number">0.4</span>,
+            <span class="hljs-string">"probBullTrendItmUpperStrike"</span>: <span class="hljs-number">0.4</span>,
+            <span class="hljs-string">"probBearTrendItmLowerStrike"</span>: <span class="hljs-number">0.6</span>,
+            <span class="hljs-string">"probBearTrendItmUpperStrike"</span>: <span class="hljs-number">0.6</span>
+        }
+    }
+}
+</code></pre>
+<h2 id="interface-generalis">Interface Generalis</h2>
+<h3 id="delere-rfq">Delere RFQ</h3>
+<p>Delere RFQ quod in catena fuit</p>
+<pre><code>POST rfq/remove
+</code></pre><p><strong>Parametri Input</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Requisitum</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>verum</td>
+<td>numerus</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplum Petitionis</strong></p>
+<pre><code>{  
+"rfqId":123456  
+}
+</code></pre><p><strong>Responsio Parametri</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 indicat quod resultatum reditus normale est</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Nuntius erroris redditus in casu exceptionis</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notificatio-transactionis">Notificatio Transactionis</h3>
+<pre><code>POST rfq/trade
+</code></pre><p><strong>Parametri Input</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Requisitum</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>quotes</td>
+<td>verum</td>
+<td>list[object]</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; rfqId</td>
+<td>verum</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; quoteId</td>
+<td>verum</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; txId</td>
+<td>verum</td>
+<td>string</td>
+<td>Hash transactionis</td>
+</tr>
+<tr>
+<td>code</td>
+<td>falsum</td>
+<td>string</td>
+<td>Codex invitationis</td>
+</tr>
+<tr>
+<td>walletType</td>
+<td>falsum</td>
+<td>string</td>
+<td>Typus nummularii, ut MetaMask, OKX Wallet, Coinbase, etc.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplum Postulationis</strong></p>
+<pre><code>{
+    "quotes": [
+        {
+            "rfqId": 123456,
+            "quoteId": 333,
+</code></pre><pre><code class="lang-json">            <span class="hljs-string">"txId"</span>: <span class="hljs-string">"adsswe"</span>
+        }
+    ],
+    <span class="hljs-string">"code"</span>: <span class="hljs-string">"adsswe"</span>
+}
+</code></pre>
+<p><strong>Responsio Parametri</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 indicat quod eventus reditus normalis est</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Nuntius erroris redditus in casu exceptionis</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="index-rerum">Index rerum</h3>
+<pre><code>GET rfq/strike-list
+</code></pre><p><strong>Parametri Input</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Requisitum</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>indexPrice</td>
+<td>verum</td>
+<td>numerus</td>
+<td></td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>falsum</td>
+<td>string</td>
+<td>Pro par BTC-USDT, hic BTC inserere; si non praebetur, configuratio praedefinita adhibebitur.</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>falsum</td>
+<td>string</td>
+<td>Pro par BTC-USDT, hic USDT inserere; si non praebetur, ad USDT revertitur.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplum Petitionis</strong></p>
+<pre><code>{  
+"indexPrice": 3750.8，  
+"forCcy": "WBTC",  
+}
+</code></pre><p><strong>Responsio Parametri</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strikes</td>
+<td>list[number]</td>
+<td>Default commendatus pretium ictus index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="index-expirationis">Index Expirationis</h3>
+<pre><code>GET rfq/expiry-list
+</code></pre><p><strong>Parametri Input</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Necessarium</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>verum</td>
+<td>string</td>
+<td>Contractus oratio</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>verum</td>
+<td>int</td>
+<td>Chain ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplum Postulationis</strong></p>
+<pre><code>{  
+"vault": "XXXXXXXXXXXXXX",  
+"chainId": 1,  
+}
+</code></pre><p><strong>Parametri Responsionis</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>Baseline initium tempus in secundis timestamp</td>
+</tr>
+<tr>
+<td>expiries</td>
+<td>list[number]</td>
+<td>Supportatus index expirationis in secundis timestamp, e.g., 1672387200</td>
+</tr>
+</tbody>
+</table>
+<h3 id="aave-apy">Aave apy</h3>
+<pre><code>GET rfq/aave-apy
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>verum</td>
+<td>numerus</td>
+<td></td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>verum</td>
+<td>string</td>
+<td>USDT</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>numerus</td>
+<td>Chain ID</td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>string</td>
+<td>Moneta depositi</td>
+</tr>
+<tr>
+<td>avgApy</td>
+<td>string</td>
+<td>APY mediocris in catena per praeteritos 30 dies registratum</td>
+</tr>
+<tr>
+<td>currentApy</td>
+<td>string</td>
+<td>Novissimum AAVE APY</td>
+</tr>
+<tr>
+<td>apyUsed</td>
+<td>string</td>
+<td>APY reapse usus in SofaServer ad aestimandum futurum reditum usurae</td>
+</tr>
+<tr>
+<td>apyDefinition</td>
+<td>string</td>
+<td>Definitio calculationis respondens APY</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Example</strong></p>
+<pre><code>{  
+"chainId": 1,  
+"ccy":"USDT",  
+"avgApy":"0.23442",  
+"currentApy":"0.23442",  
+"apyUsed":"0.23442",  
+"apyDefinition":"AAVE_LENDING_APY"  
+}
+</code></pre><h3 id="apy">Apy</h3>
+<pre><code>GET rfq/apy
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Necessarium</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>verum</td>
+<td>numerus</td>
+<td></td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>verum</td>
+<td>string</td>
+<td>USDT</td>
+</tr>
+<tr>
+<td>apyDefinition</td>
+<td>falsum</td>
+<td>string</td>
+<td>Definitio calculationis respondens ad APY; ad AaveLendingApy per defaultum</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Parametri Responsionis</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>numerus</td>
+<td>ID Catenae</td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>string</td>
+<td>Moneta depositi</td>
+</tr>
+<tr>
+<td>avgApy</td>
+<td>string</td>
+<td>APY mediocris in catena per praeteritos 30 dies registrata</td>
+</tr>
+<tr>
+<td>currentApy</td>
+<td>string</td>
+<td>Novissimum APY</td>
+</tr>
+<tr>
+<td>apyUsed</td>
+<td>string</td>
+<td>APY reapse usus in SofaServer ad aestimandum futurum reditum usurae</td>
+</tr>
+<tr>
+<td>apyDefinition</td>
+<td>string</td>
+<td>Definitio calculationis respondens ad APY</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplum Responsionis</strong></p>
+<pre><code>{  
+"chainId": 1,  
+"ccy":"USDT",  
+"avgApy":"0.23442",  
+"currentApy":"0.23442",  
+"apyUsed":"0.23442",  
+"apyDefinition":"AAVE_LENDING_APY"  
+}
+</code></pre><h3 id="accipe-positiones-nummorum">Accipe Positiones Nummorum</h3>
+<pre><code>POST /rfq/position-list
+</code></pre><p><strong>Parametri Input</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Necessarium</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>verum</td>
+<td>Int</td>
+<td></td>
+</tr>
+<tr>
+<td>vaults</td>
+<td>falsum</td>
+<td>list[string]</td>
+<td>Set contractuum inscriptionum; si non praebetur, omnia contracta interrogabuntur.</td>
+</tr>
+<tr>
+<td>claimed</td>
+<td>falsum</td>
+<td>boolean</td>
+<td>Utrum redemptum sit; si non praebetur, positiones omnium status interrogabuntur.</td>
+</tr>
+<tr>
+<td>expired</td>
+<td>falsum</td>
+<td>boolean</td>
+<td>Utrum exspiravit; si non praebetur, positiones omnium status interrogabuntur.</td>
+</tr>
+<tr>
+<td>concealed</td>
+<td>falsum</td>
+<td>boolean</td>
+<td>Utrum occultum sit; si non praebetur, positiones omnium status interrogabuntur.</td>
+</tr>
+<tr>
+<td>positiveReturn</td>
+<td>falsum</td>
+<td>boolean</td>
+<td>Utrum redemptio quantitas maior sit quam 0; si non praebetur, omnes positiones interrogabuntur.</td>
+</tr>
+<tr>
+<td>positiveProfit</td>
+<td>falsum</td>
+<td>boolean</td>
+<td>Utrum reditus principalem superet; si non praebetur, omnes positiones interrogabuntur.</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>falsum</td>
+<td>Int</td>
+<td>Numerus interrogationum; default ad 100, maximum est 300.</td>
+</tr>
+<tr>
+<td>startDateTime</td>
+<td>falsum</td>
+<td>number</td>
+<td>Tempus correspondens in secundis (inclusivum), e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>endDateTime</td>
+<td>falsum</td>
+<td>number</td>
+<td>Tempus correspondens in secundis (inclusivum), e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>orderBy</td>
+<td>falsum</td>
+<td>string</td>
+<td>"createdAt" vel "return", modus ordinationis: "createdAt" (tempus update, default) vel "return" (reditus).</td>
+</tr>
+<tr>
+<td>orderDirection</td>
+<td>falsum</td>
+<td>string</td>
+<td>"desc" vel "asc", default ad "desc" (ordo descendens).</td>
+</tr>
+<tr>
+<td>wallet</td>
+<td>falsum</td>
+<td>string</td>
+<td>Inscriptionis loculi (si vacua, omnes inscriptiones loculorum interrogabuntur).</td>
+</tr>
+</tbody>
+</table>
+<p>Nota: Si numerus eventuum 300 excedit intra specificatum <code>startDateTime</code> et <code>endDateTime</code>, polling adhiberi potest (in hoc casu, <code>orderBy</code> debet poni ad <code>"createdAt"</code>) ut interrogationem continuet. Parametrus <code>endDateTime</code> pro nth polling petitione debet poni ad <code>createdAt</code> ultimi recordis ex (n-1)th polling eventu. Postquam omnia data recuperata sunt, duplicata removenda sunt secundum campum <code>id</code>.</p>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>Ut infra demonstratum</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>Product ID correspondens positioni (convenit <code>productId</code> in The Graph data). Hic ID unicus est intra dimensionem chain + vault et adhiberi potest ad interrogandum positiones saldos.</td>
+</tr>
+<tr>
+<td>positionId</td>
+<td>string</td>
+<td>Position ID, quae unica est intra dimensionem chain.</td>
+</tr>
+<tr>
+<td>product</td>
+<td>object</td>
+<td>Informationes de productum.</td>
+</tr>
+<tr>
+<td>wallet</td>
+<td>string</td>
+<td>Inscriptionis loculi.</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>number</td>
+<td>Tempus correspondens in secundis, e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>updatedAt</td>
+<td>number</td>
+<td>Tempus correspondens in secundis, e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>claimed</td>
+<td>boolean</td>
+<td>Utrum positio redempta sit.</td>
+</tr>
+<tr>
+<td>takerAllocationRate</td>
+<td>number</td>
+<td>Secundum tempus calculationis, aestimat proportionem quam dominus ex piscina sponsionum capere potest. Ante exspirationem, haec est aestimatio.</td>
+</tr>
+<tr>
+<td>triggerTime</td>
+<td>number</td>
+<td>Pro Rangebound, primum tempus rupturae; pro non-Rangebound, tempus solutionis, in secundis.</td>
+</tr>
+<tr>
+<td>triggerPrice</td>
+<td>number</td>
+<td>Pro Rangebound, primum pretium rupturae; pro non-Rangebound, pretium solutionis.</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>Rate mercedis.</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>Informatiō de mutū (optīōnālis).</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>Pretiī tŏkēnōrum necessāria ad conversionem pretiī RCH et calculum airdrop.</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>Calculātae quantitātēs.</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>Informatiō annuālis, praesto pro productīs non-Surge.</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>Informatiō de probabilitātibus, praesto pro productīs Surge.</td>
+</tr>
+<tr>
+<td>claimParams</td>
+<td>object</td>
+<td>Informatiō de parametīs reclamandī.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Example</strong></p>
+<pre><code>{
+    "value": [{
+        ...
+    }]
+}
+</code></pre><h3 id="accipere-transactiones-fiscales">Accipere Transactiones Fiscales</h3>
+<pre><code>POST /rfq/transaction-list
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Nomen Campi</strong></th>
+<th><strong>Requirētur</strong></th>
+<th><strong>Typus</strong></th>
+<th><strong>Descriptiō</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>verum</td>
+<td>Int</td>
+<td></td>
+</tr>
+<tr>
+<td>vaults</td>
+<td>falsum</td>
+<td>list[string]</td>
+<td>Set contractuum adresses; si non praebentur, omnia contracta interrogabuntur.</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>falsum</td>
+<td>Int</td>
+<td>Numerus interrogationum; ad 100, maximum est 300.</td>
+</tr>
+<tr>
+<td>startDateTime</td>
+<td>falsum</td>
+<td>number</td>
+<td>Tempus correspondens in secundis (inclusivum), e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>endDateTime</td>
+<td>falsum</td>
+<td>number</td>
+<td>Tempus correspondens in secundis (inclusivum), e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>orderDirection</td>
+<td>falsum</td>
+<td>string</td>
+<td>"desc" aut "asc", ad "desc" (ordo descendens) per default.</td>
+</tr>
+<tr>
+<td>taker</td>
+<td>falsum</td>
+<td>string</td>
+<td>Adressā fiscā taker</td>
+</tr>
+<tr>
+<td>maker</td>
+<td>falsum</td>
+<td>string</td>
+<td>Adressā fiscā maker</td>
+</tr>
+<tr>
+<td>claimParams</td>
+<td>falsum</td>
+<td>object</td>
+<td>Parametra redemptionis, correspondens ad campum claimParams in data position-list.</td>
+</tr>
+<tr>
+<td>hash</td>
+<td>falsum</td>
+<td>string</td>
+<td>Hash transactionis</td>
+</tr>
+</tbody>
+</table>
+<p>Nota: Parametra taker, maker, et claimParams adhiberi possunt ad coniunctam interrogationem ad inveniendum recorda commercii correspondentia ad positionem (una positio plures commercia correspondere potest) (non omnia parametra requiruntur).
+Si numerus resultatium 300 excedit intra specificatum <code>startDateTime</code> et <code>endDateTime</code>, polling adhiberi potest (in hoc casu, <code>orderBy</code> debet poni ad <code>"createdAt"</code>) ad continuandum interrogationem. Parametrum <code>endDateTime</code> pro nth polling petitione debet poni ad <code>createdAt</code> ultimi recordi ex (n-1)th polling result. Postquam omnia data recepta sunt, duplicata removenda sunt secundum campum <code>id</code>.</p>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>Ut infra demonstratum est</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>hash</td>
+<td>string</td>
+<td>Transactionis hash</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>string</td>
+<td>address pecuniae accipientis.</td>
+</tr>
+<tr>
+<td>makerWallet</td>
+<td>string</td>
+<td>address pecuniae facientis.</td>
+</tr>
+<tr>
+<td>product</td>
+<td>object</td>
+<td>Informationes de producto.</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>number</td>
+<td>Tempus correspondens in secundis, e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>takerAllocationRate</td>
+<td>number</td>
+<td>Secundum tempus calculationis, aestimat proportionem quam dominus ex piscina sponsionum capere potest. Ante expirationem, hoc est aestimatum.</td>
+</tr>
+<tr>
+<td>triggerTime</td>
+<td>number</td>
+<td>Pro Rangebound, primum tempus eruptionis; pro non-Rangebound, tempus solutionis, in secundis.</td>
+</tr>
+<tr>
+<td>triggerPrice</td>
+<td>number</td>
+<td>Pro Rangebound, primum pretium eruptionis; pro non-Rangebound, pretium solutionis.</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>Rate feorum.</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>Informationes de mutuo (optativum).</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>Pretium tokenum necessarium pro conversione RCH et calculatione airdrop.</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>Aestimatae quantitates.</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>Informationes annualizatae, praesto pro non-Surge productis.</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>Informationes de probabilitatibus, praesto pro Surge productis.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Example</strong></p>
+<pre><code>{
+    "value": [{
+        ...
+    }]
+}
+</code></pre><h3 id="occulta-damna-positionum">Occulta damna positionum</h3>
+<pre><code>POST rfq/position/conceal
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>verum</td>
+<td>int</td>
+<td>Chain ID</td>
+</tr>
+<tr>
+<td>positionIds</td>
+<td>verum</td>
+<td>List[string]</td>
+<td>lista positionId，usque ad 20</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Request Example</strong></p>
+<pre><code>{
+    "positionIds": [
+        "aaaa","bbbb"
+    ],
+    "chainId": 1
+}
+</code></pre><p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 indicat quod resultatum redditum normale est</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Nuntius erroris redditus in casu exceptionis</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="get-pending-transactions">Get Pending Transactions</h3>
+<p>Hoc praecipue adhibetur ad quaestionem synchronisationis datae positionis subiacente. Data hic recuperata foris fieri possunt (propter competitionem bifurcationis blockchain).</p>
+<pre><code>POST rfq/transactions/pending
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>verum</td>
+<td>Int</td>
+<td></td>
+</tr>
+<tr>
+<td>vaults</td>
+<td>falsum</td>
+<td>list[string]</td>
+<td>Conjunctio inscriptionum contractuum; si non praebetur, omnes contractus interrogabuntur.</td>
+</tr>
+<tr>
+<td>taker</td>
+<td>falsum</td>
+<td>string</td>
+<td>Inscriptionem wallet taker</td>
+</tr>
+<tr>
+<td>maker</td>
+<td>falsum</td>
+<td>string</td>
+<td>Inscriptionem wallet maker</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>numerus</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>Ut infra demonstratum</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>hash</td>
+<td>string</td>
+<td>Hash transactionis</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>string</td>
+<td>inscriptionem wallet taker.</td>
+</tr>
+<tr>
+<td>makerWallet</td>
+<td>string</td>
+<td>inscriptionem wallet maker.</td>
+</tr>
+<tr>
+<td>product</td>
+<td>object</td>
+<td>Notitia producti.</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>numerus</td>
+<td>Tempus correspondens in secundis, e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>takerAllocationRate</td>
+<td>numerus</td>
+<td>Secundum tempus calculationis, aestimat proportionem quam dominus ex piscina sponsionum capere potest. Ante expirationem, hoc est aestimatum valorem.</td>
+</tr>
+<tr>
+<td>triggerTime</td>
+<td>numerus</td>
+<td>Pro Rangebound, primum tempus eruptionis; pro non-Rangebound, tempus solutionis, in secundis.</td>
+</tr>
+<tr>
+<td>triggerPrice</td>
+<td>numerus</td>
+<td>Pro Rangebound, primum pretium eruptionis; pro non-Rangebound, pretium solutionis.</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>Rate mercedis.</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>Notitia mutui (optativa).</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>Pretium tokenorum necessarium ad conversionem pretii RCH et calculationem airdrop.</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>Aestimatae quantitates.</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>Notitia annualis, praesto pro productis non-Surge.</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>Notitia de probabilitate, praesto pro productis Surge.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="accipe-historiam-airdrop-rch">Accipe Historiam Airdrop RCH</h3>
+<pre><code>GET rfq/airdrop/history
+</code></pre><p><strong>Input Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Required</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wallet</td>
+<td>verum</td>
+<td>string</td>
+<td>Adresae nummariae</td>
+</tr>
+<tr>
+<td>startDateTime</td>
+<td>verum</td>
+<td>number</td>
+<td>Tempus correspondens in secundis (inclusivum), e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>endDateTime</td>
+<td>verum</td>
+<td>number</td>
+<td>Tempus correspondens in secundis (inclusivum), e.g., 1672387200.</td>
+</tr>
+<tr>
+<td>orderBy</td>
+<td>falsum</td>
+<td>string</td>
+<td>"dateTime" vel "rch", modus ordinandi: "dateTime" (tempus airdrop, default) vel "rch" (quantitas).</td>
+</tr>
+<tr>
+<td>orderDirection</td>
+<td>falsum</td>
+<td>string</td>
+<td>"desc" vel "asc", default ad "desc" (ordo descendens).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>Ut infra demonstratum</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dateTime</td>
+<td>long</td>
+<td>Tempus currente in secundis, exempli gratia, 1672387200.</td>
+</tr>
+<tr>
+<td>wallet</td>
+<td>string</td>
+<td>Adresae nummariae</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>string</td>
+<td>volumine negotiationis</td>
+</tr>
+<tr>
+<td>rch</td>
+<td>string</td>
+<td>Quantitas airdrop, valor raw, dividendum est per 1e18</td>
+</tr>
+<tr>
+<td>merkleProof</td>
+<td>string</td>
+<td>Probatio Merkle</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="marketmaker-open-apis.html" class="navigation navigation-prev " aria-label="Previous page: Mercatus Facitor Aperta APIs">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="subgraphs.html" class="navigation navigation-next " aria-label="Next page: Subgraphi">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"DAPP Aperta APIs","level":"1.11.2","depth":2,"next":{"title":"Subgraphi","level":"1.11.3","depth":2,"path":"developer/subgraphs.md","ref":"developer/subgraphs.md","articles":[]},"previous":{"title":"Mercatus Facitor Aperta APIs","level":"1.11.1","depth":2,"path":"developer/marketmaker-open-apis.md","ref":"developer/marketmaker-open-apis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"la","gitbook":"*"},"file":{"path":"developer/dapp-open-apis.md","mtime":"2025-06-09T07:31:39.478Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"la"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

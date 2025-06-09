@@ -1,0 +1,733 @@
+
+<!DOCTYPE HTML>
+<html lang="ru" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Определение вашего уровня риска · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="oracle.html" />
+    
+    
+    <link rel="prev" href="vault-classification.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Введите условия поиска" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Обзор SOFA.org
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    Инновации следующей волны DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 Добро пожаловать в протоколы SOFA 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    Дорожная карта
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    Руководство пользователя
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    Заработок
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    Скачок
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    Получение ваших вознаграждений $RCH! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Технический дизайн
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="vault-classification.html">
+            
+                <a href="vault-classification.html">
+            
+                    
+                    Классификация хранилищ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="risk-prefer.html">
+            
+                <a href="risk-prefer.html">
+            
+                    
+                    Определение вашего уровня риска
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="oracle.html">
+            
+                <a href="oracle.html">
+            
+                    
+                    Конструкция оракула
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="settlement.html">
+            
+                <a href="settlement.html">
+            
+                    
+                    Соображения по расчетам в блокчейне
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="fees.html">
+            
+                <a href="fees.html">
+            
+                    
+                    Комиссии протокола
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="automator.html">
+            
+                <a href="automator.html">
+            
+                    
+                    Автоматизатор
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    Безопасность
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    Программа поощрения за обнаружение ошибок
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    Рамки управления
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    Внешние непредвиденные обстоятельства и факторы риска
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    Токеномика
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    Гипотетический сценарий $RCH (LP + Кумулятивныеairdrops)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA Очки
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    Часто задаваемые вопросы SOFA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    Документация для разработчиков
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    Открытые API для маркетмейкеров
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    Открытые API для DAPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    Субграфы
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    Контракты на развертывание
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    Процесс подключения маркетмейкеров
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    Ссылки
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Опубликовано с помощью HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Определение вашего уровня риска</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="определение-вашей-рисковой-предпочтительности">Определение Вашей Рисковой Предпочтительности</h1>
+<blockquote>
+<p><strong>Какой уровень риска вы готовы принять?</strong></p>
+</blockquote>
+<h2 id="протокол-earn">Протокол Earn</h2>
+<p>Категория протокола 'Earn' предназначена для инвесторов, предпочитающих минимизацию рисков, которые ищут максимальную защиту своего капитала.  Хранилища Earn будут <strong>ставить</strong> депонированный капитал пользователей в безопасные доходные протоколы (например, AAVE), чтобы генерировать базовый уровень процентов**, и использовать часть этого гарантированного дохода для финансирования опционного премиума у маркетмейкеров для получения потенциальной прибыли.</p>
+<p>Конечный результат будет <strong>максимизировать защиту от убытков</strong>, при этом сохраняя некоторый потенциал роста, если рынок будет двигаться в благоприятном направлении для пользователя.</p>
+<p>При этом, пожалуйста, обратите внимание, что <strong>критически важный компонент дизайна требует, чтобы пассивные доходы, предлагаемые подходящими ставочными протоколами, были значительно выше худшего случая выплаты продукта, чтобы правильно финансировать опционный премиум для генерации дохода от роста</strong>.  Таким образом, если пользователь держит ETH вместо USDT, ему/ей нужно будет конвертировать ETH в stETH в ликвидном ставочном протоколе, таком как Lido, прежде чем заблокировать stETH в хранилищах протокола, чтобы воспользоваться дополнительным накоплением дохода.</p>
+<p><img src="../../static/draw6.png" alt=""></img></p>
+<p><img src="../../static/draw7.png" alt=""></img></p>
+<h2 id="протокол-surge">Протокол Surge</h2>
+<p>Для пользователей с более высокой толерантностью к риску и вознаграждению, <strong>протокол также предлагает структуры с более высокой доходностью с первоначальным капиталом 'взносом'</strong>.  Протоколы Surge нацелены исключительно на агрессивных пользователей, которые желают получить значительно высокие доходы в обмен на капитальные потери.</p>
+<p><img src="../../static/draw8.png" alt=""></img></p>
+<p>С этими продуктами на основе Surge, <strong>протокол хранилища будет блокировать как основной капитал пользователя, так и премиум маркетмейкеров на момент начала сделки, </strong>аналогично 'покерному взносу'**. Заблокированные капитальные позиции <em>не</em> будут повторно ставиться в другие протоколы и служат в качестве обязательного взноса против окончательной выплаты.</p>
+<p>Возьмем продукт Surge-Rangebound в качестве примера.  Если цена базового актива останется строго в пределах барьеров до окончательной даты, пользователь получит экспоненциально более высокую доходность, чем он бы получил в версии Earn.  Однако, если произойдет обратное, структура будет досрочно прекращена, а заблокированный основной капитал будет передан маркетмейкеру как 'победителю' этой стратегии.</p>
+<p>Еще раз, <strong>эти продукты предназначены для пользователей, имеющих очень сильную рыночную уверенность и желающих проверить эту уверенность в надежде получить очень высокую доходность в обмен на капитальные потери.</strong></p>
+<h2 id="psa-специальное-примечание-о-продуктах-rangebound">PSA: Специальное Примечание о Продуктах Rangebound</h2>
+<p>Иллюстрация того, как работает Rangebound на практике</p>
+<p>Хотя в теории это просто, продукт Rangebound на самом деле имеет некоторые дизайнерские проблемы, особенно когда дело касается совместимости DeFi с блокчейном:</p>
+<ul>
+<li>Продукт ссылается на <em>серии</em> исторических цен, а не на 'точечную проверку' на момент истечения.</li>
+<li>Продукт может быть 'выбит', если барьеры цен будут нарушены.</li>
+<li><p>Продукт может быть выбит в <em>любой момент</em>, но технически невозможно постоянно обновлять ссылки на цены в блокчейне в течение дня.</p>
+<ul>
+<li>В этом смысле проверки диапазона являются "обратными" по необходимости.</li>
+</ul>
+</li>
+</ul>
+<p>Команда сделала следующие компромиссы в дизайне в ответ на предыдущие вызовы:</p>
+<ol>
+<li><p><strong>Ежедневные проверки диапазона:</strong></p>
+<ul>
+<li>В интересах газовых сборов и TPS в сети, наш продукт Rangebound будет проводить только <em>ежедневную</em> <strong> </strong>проверку цены (в 16:00 OTC+8) на предмет того, был ли продукт выбит за последние 24 часа.</li>
+<li>Выбитые продукты будут завершены без дальнейшего риска.</li>
+</ul>
+</li>
+<li><p><strong>Ежедневные циклы продуктов:</strong></p>
+<ul>
+<li>В соответствии с ежедневными проверками диапазона и графиком расчетов, наш цикл наблюдения всегда будет начинаться с <em>следующего</em> периода в 16:00 (OTC+8).</li>
+<li>Тем не менее, пользователи могут подписываться и приобретать продукт Rangebound в любое время, и их доходность Base+ начнет накапливаться немедленно.</li>
+</ul>
+</li>
+<li><p><strong>Досрочное прекращение против окончательного вывода:</strong></p>
+<ul>
+<li>Продукты Rangebound, которые были 'выбиты', фактически означают 'конец игры'; однако, депозиты пользователей остаются в стейкинге в Aave, и мы должны дождаться окончательной даты погашения, чтобы пользователи могли вывести основной капитал в нашей текущей итерации.</li>
+</ul>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="vault-classification.html" class="navigation navigation-prev " aria-label="Previous page: Классификация хранилищ">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="oracle.html" class="navigation navigation-next " aria-label="Next page: Конструкция оракула">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Определение вашего уровня риска","level":"1.6.2","depth":2,"next":{"title":"Конструкция оракула","level":"1.6.3","depth":2,"path":"technical-design/oracle.md","ref":"technical-design/oracle.md","articles":[]},"previous":{"title":"Классификация хранилищ","level":"1.6.1","depth":2,"path":"technical-design/vault-classification.md","ref":"technical-design/vault-classification.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"ru","gitbook":"*"},"file":{"path":"technical-design/risk-prefer.md","mtime":"2025-06-06T18:55:15.816Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"ru"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,3059 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <title>DAPP 공개 API · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="subgraphs.html" />
+    
+    
+    <link rel="prev" href="marketmaker-open-apis.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org 개요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    다음 DeFi 혁신
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 SOFA 프로토콜에 오신 것을 환영합니다 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    로드맵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    사용자 가이드
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    수익 얻기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    서지
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    $RCH 보상 청구하기! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../technical-design/">
+            
+                <a href="../technical-design/">
+            
+                    
+                    기술 설계
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../technical-design/vault-classification.html">
+            
+                <a href="../technical-design/vault-classification.html">
+            
+                    
+                    금고 분류
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../technical-design/risk-prefer.html">
+            
+                <a href="../technical-design/risk-prefer.html">
+            
+                    
+                    위험 선호도 정의하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../technical-design/oracle.html">
+            
+                <a href="../technical-design/oracle.html">
+            
+                    
+                    오라클 구축
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../technical-design/settlement.html">
+            
+                <a href="../technical-design/settlement.html">
+            
+                    
+                    온체인 정산 고려사항
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../technical-design/fees.html">
+            
+                <a href="../technical-design/fees.html">
+            
+                    
+                    프로토콜 수수료
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../technical-design/automator.html">
+            
+                <a href="../technical-design/automator.html">
+            
+                    
+                    자동화기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    보안
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    버그 바운티 프로그램
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    거버넌스 프레임워크
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    외부 비상 사태 및 위험 요소
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    토큰 경제학
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    가상의 $RCH 유동성 시나리오 (LP + 누적 에어드랍)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA 포인트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    개발자 문서
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="marketmaker-open-apis.html">
+            
+                <a href="marketmaker-open-apis.html">
+            
+                    
+                    시장 조성자 공개 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.2" data-path="dapp-open-apis.html">
+            
+                <a href="dapp-open-apis.html">
+            
+                    
+                    DAPP 공개 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="subgraphs.html">
+            
+                <a href="subgraphs.html">
+            
+                    
+                    서브그래프
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="contracts.html">
+            
+                <a href="contracts.html">
+            
+                    
+                    배포 계약
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="marketmaker-onboarding-process.html">
+            
+                <a href="marketmaker-onboarding-process.html">
+            
+                    
+                    시장 조성자 온보딩 프로세스
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    링크
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >DAPP 공개 API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="dapp-open-apis">DApp Open APIs</h1>
+<p>우리의 기존 dApp인 sofa.org는 중요한 워크플로우 기능이며 사용자가 SOFA 프로토콜과 상호작용하는 주요 방법입니다. 그러나 우리는 다른 개발자들이 자신의 dApp을 통해 SOFA에 접근하고 연결하여 우리의 생태계 성장을 극대화할 것을 권장합니다. 우리는 이들을 '브로커' 파트너로 간주하며, 관심 있는 당사자들은 추가 API 정보에 대해 SOFA 팀에 연락할 것을 권장합니다.</p>
+<h2 id="dnt">DNT</h2>
+<h3 id="추천-dnt-rfq-목록-조회">추천 DNT RFQ 목록 조회</h3>
+<pre><code>GET /rfq/dnt/recommended-list
+</code></pre><p><strong>입력 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>필수</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>계약 정보</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>체인 ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>응답 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0은 반환 결과가 정상임을 나타냅니다</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>예외 발생 시 반환되는 오류 메시지</td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>아래와 같이 표시됩니다</td>
+</tr>
+</tbody>
+</table>
+<p>객체</p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>number</td>
+<td>RFQ ID</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>체인 ID</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>계약 주소</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>위험 유형: PROTECTED, RISKY</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>기초 통화</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>통화 쌍</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>구독 통화</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>하한 가격</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>상한 가격</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>RFQ 구매 금액</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>number</td>
+<td>만료 타임스탬프 (예: 1672387200)</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>현재 가격의 트리거 시간; 다음 관찰 시작 시간은 이 논리를 기반으로 계산됩니다</td>
+</tr>
+<tr>
+<td>observationStart</td>
+<td>number</td>
+<td>타임스탬프를 기반으로 한 관찰 시작 시간의 추정치</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>거래 및 정산 수수료율 (선택 사항)</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>대출 정보 (선택 사항)</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>RCH 가격 변환 및 에어드롭 계산에 필요한 토큰 가격 (선택 사항)</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>계산된 금액 (선택 사항)</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>연간화된 정보, 비서지 제품에 대해 제공 (선택 사항)</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>확률 정보, 서지 제품에 대해 제공 (선택 사항)</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000, 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>메이커의 담보 금액</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>총 담보 금액 (테이커+메이커)</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRisk</td>
+<td>string</td>
+<td>보장이 필요할 때 (선택 사항)</td>
+</tr>
+<tr>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>메이커 잔액 한도</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
+<td>만료 타임스탬프 (예: 1672387200)</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>메이커의 지갑 (선택 사항)</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>서명 (선택 사항)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>요청 예시</strong></p>
+<pre><code>GET rfq/dnt/recommended-list?vault=xxxxxx&amp;chainId=1
+</code></pre><p><strong>응답</strong></p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">"code"</span>:<span class="hljs-number">0</span>,
+    <span class="hljs-string">"message"</span>:<span class="hljs-string">""</span>,
+    <span class="hljs-string">"value"</span>:[
+        {
+            <span class="hljs-string">"rfqId"</span>:<span class="hljs-number">1233992</span>,
+            <span class="hljs-string">"riskType"</span>:<span class="hljs-string">"PROTECTED"</span>,
+            <span class="hljs-string">"forCcy"</span>:<span class="hljs-string">"BTC"</span>,
+            <span class="hljs-string">"expiry"</span>:<span class="hljs-number">1672387200</span>,
+            <span class="hljs-string">"lowerBarrier"</span>:<span class="hljs-number">18000</span>,
+            <span class="hljs-string">"upperBarrier"</span>:<span class="hljs-number">24000</span>,
+            <span class="hljs-string">"depositCcy"</span>:<span class="hljs-string">"BTC"</span>,
+            <span class="hljs-string">"depositAmount"</span>: <span class="hljs-number">0.05</span>,
+            <span class="hljs-string">"protectedApy"</span>:<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"deadline"</span>:<span class="hljs-number">1672279892</span>,
+            <span class="hljs-string">"recommended"</span>:<span class="hljs-literal">true</span>,
+            <span class="hljs-string">"quote"</span>:
+                {
+                    <span class="hljs-string">"rfqId"</span>:<span class="hljs-number">1233992</span>,
+                    <span class="hljs-string">"inRangeApy"</span>:<span class="hljs-number">0.25</span>,
+                    <span class="hljs-string">"tenor"</span>:<span class="hljs-number">7.9</span>,
+                    <span class="hljs-string">"fundingAmount"</span>:<span class="hljs-number">0.25</span>,
+                    <span class="hljs-string">"depositAmount"</span>:<span class="hljs-number">1</span>,
+                    <span class="hljs-string">"premiumCoin"</span>:<span class="hljs-string">"BTC"</span>,
+                    <span class="hljs-string">"premiumAmount"</span>:<span class="hljs-number">0.05</span>,
+                    <span class="hljs-string">"bookingQuantity"</span>:<span class="hljs-number">0.3</span>,
+                    <span class="hljs-string">"totalAmount"</span>:<span class="hljs-number">0.05</span>,
+                    <span class="hljs-string">"payoff"</span>:<span class="hljs-number">0.3</span>,
+                    <span class="hljs-string">"deadline"</span>:<span class="hljs-number">1672279892</span>,
+                    <span class="hljs-string">"signature"</span>:<span class="hljs-string">"dsdkksdsksdk"</span>
+                }
+
+        }
+    ]
+}
+</code></pre>
+<h3 id="dnt-문의">DNT 문의</h3>
+<ul>
+<li>참고:<ul>
+<li>순수 문의 요청 시 사용자의 지갑 주소를 전달하지 마십시오.</li>
+<li>사용자의 지갑 주소는 구독 시에만 전달되어야 합니다.</li>
+</ul>
+</li>
+</ul>
+<pre><code>GET /rfq/dnt/quote
+</code></pre><p><strong>입력 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>필수</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>계약 정보</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>체인 ID</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>number</td>
+<td>만료 날짜에 대한 초 단위 타임스탬프, 예: 1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>하한 가격</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>상한 가격</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>true</td>
+<td>number</td>
+<td>RFQ 구매 금액</td>
+</tr>
+<tr>
+<td>inputApyDefinition</td>
+<td>true</td>
+<td>string</td>
+<td>입력 APY가 계산되는 방식을 나타내는 Enum: OptimusDefaultAPY, BinanceDntAPY, AaveLendingAPY</td>
+</tr>
+<tr>
+<td>protectedApy</td>
+<td>false</td>
+<td>number</td>
+<td>보장된 연간 수익률 (RISKY의 경우 비어 있음, protected의 경우 필수)</td>
+</tr>
+<tr>
+<td>fundingApy</td>
+<td>false</td>
+<td>number</td>
+<td>AAVE 연간 수익률 (RISKY의 경우 비어 있음, protected의 경우 필수)</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>false</td>
+<td>string</td>
+<td>문의자의 지갑 공개 주소 정보</td>
+</tr>
+</tbody>
+</table>
+<p><strong>응답 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0은 반환 결과가 정상임을 나타냅니다.</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>예외 발생 시 반환되는 오류 메시지</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>아래와 같이</td>
+</tr>
+</tbody>
+</table>
+<p>객체</p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>number</td>
+<td>RFQ ID</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>계약 주소</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>체인 ID</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>위험 유형: PROTECTED, RISKY</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>기초 통화</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>통화 쌍</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>구독 통화</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>하한 가격</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>상한 가격</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>RFQ 구매 금액</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>number</td>
+<td>만료 타임스탬프 (예: 1672387200)</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>현재 가격의 트리거 시간; 다음 관찰 시작 시간은 이 논리를 기반으로 계산됩니다.</td>
+</tr>
+<tr>
+<td>observationStart</td>
+<td>number</td>
+<td>타임스탬프를 기반으로 한 인/아웃 관찰의 예상 시작 시간</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>거래 및 정산 수수료율 (선택 사항)</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>대출 정보 (선택 사항)</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>RCH 가격 변환 및 에어드랍 계산에 필요한 토큰 가격 (선택 사항)</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>계산된 금액 (선택 사항)</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>비연속 제품에 대해 사용할 수 있는 연간화 정보 (선택 사항)</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>서지 제품에 대해 사용할 수 있는 확률 정보 (선택 사항)</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; quoteId</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000, 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>메이커의 담보 금액</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>총 담보 금액 (테이커 + 메이커)</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRisk</td>
+<td>string</td>
+<td>보장이 필요할 때 요구됨 (선택 사항)</td>
+</tr>
+<tr>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>메이커 잔액 한도</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
+<td>만료 타임스탬프 (예: 1672387200)</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>메이커의 지갑 (선택 사항)</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>서명 (선택 사항)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dnt-승리-확률">DNT 승리 확률</h3>
+<p>만료까지 경계 내에 머무를 확률</p>
+<pre><code>GET rfq/dnt/winning-probabilities
+</code></pre><p><strong>입력 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>필요 여부</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>forCcy</td>
+<td>true</td>
+<td>string</td>
+<td>기초 통화</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>number</td>
+<td>만료 날짜에 대한 2차 타임스탬프, 예: 1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>하한 가격</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>상한 가격</td>
+</tr>
+</tbody>
+</table>
+<p><strong>응답 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0은 반환 결과가 정상임을 나타냄</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>예외 발생 시 반환되는 오류 메시지</td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>아래와 같이</td>
+</tr>
+</tbody>
+</table>
+<p>Object</p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>spotPrice</td>
+<td>number</td>
+<td>스팟 가격</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>probabilities</td>
+<td>object</td>
+<td>승리 확률</td>
+</tr>
+</tbody>
+</table>
+<p><strong>요청 예시</strong></p>
+<pre><code>GET rfq/dnt/winning-probabilities?forCcy=BTC&amp;expiry=xxxx&amp;lowerBarrier=xxx&amp;upperBarrier=xxx
+</code></pre><p><strong>응답</strong></p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">"code"</span>:<span class="hljs-number">0</span>,
+    <span class="hljs-string">"message"</span>:<span class="hljs-string">""</span>,
+    <span class="hljs-string">"value"</span>: {
+        <span class="hljs-string">"spotPrice"</span>: <span class="hljs-number">62121</span>,
+        <span class="hljs-string">"timestamp"</span>: <span class="hljs-number">1727080594</span>,
+        <span class="hljs-string">"probabilities"</span>: {
+            <span class="hljs-string">"probDntStayInRange"</span>: <span class="hljs-number">0.4</span>,
+            <span class="hljs-string">"probBullTrendItmLowerStrike"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBullTrendItmUpperStrike"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBearTrendItmLowerStrike"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBearTrendItmUpperStrike"</span>: <span class="hljs-literal">null</span>
+        }
+    }
+}
+</code></pre>
+<h2 id="스마트-트렌드">스마트 트렌드</h2>
+<h3 id="추천-스마트-트렌드-rfq-목록-조회">추천 스마트 트렌드 RFQ 목록 조회</h3>
+<pre><code>GET rfq/smart-trend/recommended-list
+</code></pre><p><strong>입력 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>필요 여부</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>계약 정보</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>체인 ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>응답 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0은 반환 결과가 정상임을 나타냅니다.</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>예외 발생 시 반환되는 오류 메시지</td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>아래와 같이</td>
+</tr>
+</tbody>
+</table>
+<p>객체</p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>number</td>
+<td>RFQ ID</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>체인 ID</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>계약 주소</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>위험 유형: PROTECTED, RISKY</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>string</td>
+<td>BULLISH, BEARISH</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>기초 통화</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>통화 쌍</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>가입 통화</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>하한 가격</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>상한 가격</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>RFQ 구매 금액</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>number</td>
+<td>만료 타임스탬프 (예: 1672387200)</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>현재 가격의 트리거 시간; 다음 관측 시작 시간은 이 논리를 기반으로 계산됩니다.</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>거래 및 정산 수수료율 (선택 사항)</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>대출 정보 (선택 사항)</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>RCH 가격 변환 및 에어드랍 계산에 필요한 토큰 가격 (선택 사항)</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>계산된 금액 (선택 사항)</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>연환산 정보, 비서지 제품에 대해 제공 (선택 사항)</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>배당률 정보, 서지 제품에 대해 제공 (선택 사항)</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000, 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>메이커의 담보 금액</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>총 담보 금액 (테이커 + 메이커)</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRisk</td>
+<td>string</td>
+<td>보장될 때 필요 (선택 사항)</td>
+</tr>
+<tr>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>메이커 잔액 기준</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
+<td>만료 타임스탬프 (예: 1672387200)</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>메이커의 지갑 (선택 사항)</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>서명 (선택 사항)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>요청 예시</strong></p>
+<pre><code>GET rfq/smart-trend/recommended-list?vault=xxxxxx
+</code></pre><h3 id="스마트-트렌드-조회">스마트 트렌드 조회</h3>
+<ul>
+<li>주의 사항:<ul>
+<li>순수 조회 요청 시 사용자의 지갑 주소를 전달하지 마십시오.</li>
+<li>사용자의 지갑 주소는 구독 시에만 전달해야 합니다.</li>
+</ul>
+</li>
+</ul>
+<pre><code>GET /rfq/smart-trend/quote
+</code></pre><p><strong>입력 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>필요 여부</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>계약 정보</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>체인 ID</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>number</td>
+<td>만료 날짜의 초 단위 타임스탬프, 예: 1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>하한 가격</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>상한 가격</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>true</td>
+<td>number</td>
+<td>RFQ 구매 금액</td>
+</tr>
+<tr>
+<td>inputApyDefinition</td>
+<td>true</td>
+<td>string</td>
+<td>입력 APY가 계산되는 방법을 나타내는 Enum: OptimusDefaultAPY, BinanceDntAPY, AaveLendingAPY</td>
+</tr>
+<tr>
+<td>protectedApy</td>
+<td>false</td>
+<td>number</td>
+<td>보장된 연간 수익률 (위험한 경우 비워두고, 보호된 경우 필요)</td>
+</tr>
+<tr>
+<td>fundingApy</td>
+<td>false</td>
+<td>number</td>
+<td>AAVE 연간 수익률 (위험한 경우 비워두고, 보호된 경우 필요)</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>false</td>
+<td>string</td>
+<td>문의자의 지갑 공개 주소 정보</td>
+</tr>
+</tbody>
+</table>
+<p><strong>응답 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0은 반환 결과가 정상임을 나타냅니다</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>예외 발생 시 반환되는 오류 메시지</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>아래와 같이</td>
+</tr>
+</tbody>
+</table>
+<p>객체</p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>number</td>
+<td>RFQ ID</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>계약 주소</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>체인 ID</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>위험 유형: PROTECTED, RISKY</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>string</td>
+<td>BULLISH, BEARISH</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>기초 통화</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>통화 쌍</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>구독 통화</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>하한 가격</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>상한 가격</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>RFQ 구매 금액</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>number</td>
+<td>만료 타임스탬프 (예: 1672387200)</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>현재 가격 책정의 트리거 시간; 다음 관측 시작 시간은 이 논리를 기반으로 계산됩니다</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>거래 및 결제 수수료율 (선택 사항)</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>대출 정보 (선택 사항)</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>RCH 가격 변환 및 에어드랍 계산에 필요한 토큰 가격 (선택 사항)</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>계산된 금액 (선택 사항)</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>연간화 정보, 비 서지 제품에 대해 사용 가능 (선택 사항)</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>확률 정보, 서지 제품에 대해 사용 가능 (선택 사항)</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; quoteId</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000, 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>메이커의 담보 금액</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>총 담보 금액 (테이커 + 메이커)</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRisk</td>
+<td>string</td>
+<td>보장이 필요할 때 (선택 사항)</td>
+</tr>
+<tr>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>메이커 잔액 기준</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
+<td>만료 타임스탬프 (예: 1672387200)</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>메이커의 지갑 (선택 사항)</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>서명 (선택 사항)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="스마트-트렌드-승리-확률">스마트 트렌드 승리 확률</h3>
+<p>만료 시까지 경계 내에 머물 확률</p>
+<pre><code>GET rfq/smart-trend/winning-probabilities
+</code></pre><p><strong>입력 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>필수</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>forCcy</td>
+<td>true</td>
+<td>string</td>
+<td>기초 통화</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>number</td>
+<td>만료 날짜에 대한 2차 타임스탬프, 예: 1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>하한 가격</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>상한 가격</td>
+</tr>
+</tbody>
+</table>
+<p><strong>응답 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0은 반환 결과가 정상임을 나타냅니다</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>예외 발생 시 반환되는 오류 메시지</td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>아래와 같이</td>
+</tr>
+</tbody>
+</table>
+<p>객체</p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>spotPrice</td>
+<td>number</td>
+<td>현물 가격</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>probabilities</td>
+<td>object</td>
+<td>승리 확률</td>
+</tr>
+</tbody>
+</table>
+<p><strong>요청 예시</strong></p>
+<pre><code>GET rfq/smart-trend/winning-probabilities?forCcy=BTC&amp;expiry=xxxx&amp;lowerStrike=xxx&amp;upperStrike=xxx
+</code></pre><p><strong>응답</strong></p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">"code"</span>:<span class="hljs-number">0</span>,
+    <span class="hljs-string">"message"</span>:<span class="hljs-string">""</span>,
+    <span class="hljs-string">"value"</span>: {
+        <span class="hljs-string">"spotPrice"</span>: <span class="hljs-number">62121</span>,
+        <span class="hljs-string">"timestamp"</span>: <span class="hljs-number">1727080594</span>,
+        <span class="hljs-string">"probabilities"</span>: {
+            <span class="hljs-string">"probDntStayInRange"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBullTrendItmLowerStrike"</span>: <span class="hljs-number">0.4</span>,
+            <span class="hljs-string">"probBullTrendItmUpperStrike"</span>: <span class="hljs-number">0.4</span>,
+            <span class="hljs-string">"probBearTrendItmLowerStrike"</span>: <span class="hljs-number">0.6</span>,
+            <span class="hljs-string">"probBearTrendItmUpperStrike"</span>: <span class="hljs-number">0.6</span>,
+        }
+    }
+}
+</code></pre>
+<h2 id="일반-인터페이스">일반 인터페이스</h2>
+<h3 id="rfq-삭제">RFQ 삭제</h3>
+<p>온체인에 있는 RFQ를 삭제합니다.</p>
+<pre><code>POST rfq/remove
+</code></pre><p><strong>입력 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>필수</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>true</td>
+<td>number</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>요청 예시</strong></p>
+<pre><code>{  
+"rfqId":123456  
+}
+</code></pre><p><strong>응답 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0은 반환 결과가 정상임을 나타냅니다.</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>예외 발생 시 반환되는 오류 메시지</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="거래-알림">거래 알림</h3>
+<pre><code>POST rfq/trade
+</code></pre><p><strong>입력 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>필수</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>quotes</td>
+<td>true</td>
+<td>list[object]</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; rfqId</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; quoteId</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; txId</td>
+<td>true</td>
+<td>string</td>
+<td>거래 해시</td>
+</tr>
+<tr>
+<td>code</td>
+<td>false</td>
+<td>string</td>
+<td>초대 코드</td>
+</tr>
+<tr>
+<td>walletType</td>
+<td>false</td>
+<td>string</td>
+<td>MetaMask, OKX Wallet, Coinbase 등과 같은 지갑 유형</td>
+</tr>
+</tbody>
+</table>
+<p><strong>요청 예시</strong></p>
+<pre><code>{
+    "quotes": [
+        {
+            "rfqId": 123456,
+            "quoteId": 333,
+</code></pre><pre><code class="lang-json">            <span class="hljs-string">"txId"</span>: <span class="hljs-string">"adsswe"</span>
+        }
+    ],
+    <span class="hljs-string">"code"</span>: <span class="hljs-string">"adsswe"</span>
+}
+</code></pre>
+<p><strong>응답 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0은 반환 결과가 정상임을 나타냅니다.</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>예외 발생 시 반환되는 오류 메시지</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="스트라이크-목록">스트라이크 목록</h3>
+<pre><code>GET rfq/strike-list
+</code></pre><p><strong>입력 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>필수</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>indexPrice</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>false</td>
+<td>string</td>
+<td>BTC-USDT 거래 쌍의 경우, 여기에는 BTC를 입력하십시오. 제공되지 않으면 기본 구성이 사용됩니다.</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>false</td>
+<td>string</td>
+<td>BTC-USDT 거래 쌍의 경우, 여기에는 USDT를 입력하십시오. 제공되지 않으면 기본값은 USDT입니다.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>요청 예시</strong></p>
+<pre><code>{  
+"indexPrice": 3750.8，  
+"forCcy": "WBTC",  
+}
+</code></pre><p><strong>응답 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strikes</td>
+<td>list[number]</td>
+<td>기본 추천 행사가격 목록</td>
+</tr>
+</tbody>
+</table>
+<h3 id="만료-목록">만료 목록</h3>
+<pre><code>GET rfq/expiry-list
+</code></pre><p><strong>입력 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>필수</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>계약 주소</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>체인 ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>요청 예시</strong></p>
+<pre><code>{  
+"vault": "XXXXXXXXXXXXXX",  
+"chainId": 1,  
+}
+</code></pre><p><strong>응답 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>기준 시작 시간(초 단위 타임스탬프)</td>
+</tr>
+<tr>
+<td>expiries</td>
+<td>list[number]</td>
+<td>지원되는 만료 목록(초 단위 타임스탬프), 예: 1672387200</td>
+</tr>
+</tbody>
+</table>
+<h3 id="aave-apy">Aave apy</h3>
+<pre><code>GET rfq/aave-apy
+</code></pre><p><strong>입력 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>필수</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>true</td>
+<td>string</td>
+<td>USDT</td>
+</tr>
+</tbody>
+</table>
+<p><strong>응답 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>number</td>
+<td>체인 ID</td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>string</td>
+<td>입금 통화</td>
+</tr>
+<tr>
+<td>avgApy</td>
+<td>string</td>
+<td>지난 30일 동안 온체인에서 기록된 평균 APY</td>
+</tr>
+<tr>
+<td>currentApy</td>
+<td>string</td>
+<td>최신 AAVE APY</td>
+</tr>
+<tr>
+<td>apyUsed</td>
+<td>string</td>
+<td>미래 이자 수익을 추정하기 위해 SofaServer에서 실제로 사용된 APY</td>
+</tr>
+<tr>
+<td>apyDefinition</td>
+<td>string</td>
+<td>APY에 해당하는 계산 정의</td>
+</tr>
+</tbody>
+</table>
+<p><strong>응답 예시</strong></p>
+<pre><code>{  
+"chainId": 1,  
+"ccy":"USDT",  
+"avgApy":"0.23442",  
+"currentApy":"0.23442",  
+"apyUsed":"0.23442",  
+"apyDefinition":"AAVE_LENDING_APY"  
+}
+</code></pre><h3 id="apy">Apy</h3>
+<pre><code>GET rfq/apy
+</code></pre><p><strong>입력 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>필수</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>true</td>
+<td>string</td>
+<td>USDT</td>
+</tr>
+<tr>
+<td>apyDefinition</td>
+<td>false</td>
+<td>string</td>
+<td>APY에 해당하는 계산 정의; 기본값은 AaveLendingApy</td>
+</tr>
+</tbody>
+</table>
+<p><strong>응답 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>number</td>
+<td>체인 ID</td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>string</td>
+<td>예치 통화</td>
+</tr>
+<tr>
+<td>avgApy</td>
+<td>string</td>
+<td>지난 30일 동안 온체인에 기록된 평균 APY</td>
+</tr>
+<tr>
+<td>currentApy</td>
+<td>string</td>
+<td>최신 APY</td>
+</tr>
+<tr>
+<td>apyUsed</td>
+<td>string</td>
+<td>미래 이자 수익을 추정하기 위해 SofaServer에서 실제로 사용된 APY</td>
+</tr>
+<tr>
+<td>apyDefinition</td>
+<td>string</td>
+<td>APY에 해당하는 계산 정의</td>
+</tr>
+</tbody>
+</table>
+<p><strong>응답 예시</strong></p>
+<pre><code>{  
+"chainId": 1,  
+"ccy":"USDT",  
+"avgApy":"0.23442",  
+"currentApy":"0.23442",  
+"apyUsed":"0.23442",  
+"apyDefinition":"AAVE_LENDING_APY"  
+}
+</code></pre><h3 id="지갑-포지션-가져오기">지갑 포지션 가져오기</h3>
+<pre><code>POST /rfq/position-list
+</code></pre><p><strong>입력 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>필수</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>Int</td>
+<td></td>
+</tr>
+<tr>
+<td>vaults</td>
+<td>false</td>
+<td>list[string]</td>
+<td>계약 주소의 집합; 제공되지 않으면 모든 계약이 조회됩니다.</td>
+</tr>
+<tr>
+<td>claimed</td>
+<td>false</td>
+<td>boolean</td>
+<td>상환되었는지 여부; 제공되지 않으면 모든 상태의 포지션이 조회됩니다.</td>
+</tr>
+<tr>
+<td>expired</td>
+<td>false</td>
+<td>boolean</td>
+<td>만료되었는지 여부; 제공되지 않으면 모든 상태의 포지션이 조회됩니다.</td>
+</tr>
+<tr>
+<td>concealed</td>
+<td>false</td>
+<td>boolean</td>
+<td>숨겨져 있는지 여부; 제공되지 않으면 모든 상태의 포지션이 조회됩니다.</td>
+</tr>
+<tr>
+<td>positiveReturn</td>
+<td>false</td>
+<td>boolean</td>
+<td>상환 금액이 0보다 큰지 여부; 제공되지 않으면 모든 포지션이 조회됩니다.</td>
+</tr>
+<tr>
+<td>positiveProfit</td>
+<td>false</td>
+<td>boolean</td>
+<td>수익이 원금을 초과하는지 여부; 제공되지 않으면 모든 포지션이 조회됩니다.</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>false</td>
+<td>Int</td>
+<td>조회 수; 기본값은 100, 최대값은 300입니다.</td>
+</tr>
+<tr>
+<td>startDateTime</td>
+<td>false</td>
+<td>number</td>
+<td>해당하는 타임스탬프(초 단위, 포함), 예: 1672387200.</td>
+</tr>
+<tr>
+<td>endDateTime</td>
+<td>false</td>
+<td>number</td>
+<td>해당하는 타임스탬프(초 단위, 포함), 예: 1672387200.</td>
+</tr>
+<tr>
+<td>orderBy</td>
+<td>false</td>
+<td>string</td>
+<td>"createdAt" 또는 "return", 정렬 방법: "createdAt" (업데이트 시간, 기본값) 또는 "return" (수익).</td>
+</tr>
+<tr>
+<td>orderDirection</td>
+<td>false</td>
+<td>string</td>
+<td>"desc" 또는 "asc", 기본값은 "desc" (내림차순)입니다.</td>
+</tr>
+<tr>
+<td>wallet</td>
+<td>false</td>
+<td>string</td>
+<td>지갑 주소 (비어 있으면 모든 지갑 주소가 조회됩니다).</td>
+</tr>
+</tbody>
+</table>
+<p>참고: 지정된 <code>startDateTime</code> 및 <code>endDateTime</code> 내에서 결과 수가 300을 초과하면 폴링을 사용할 수 있습니다(이 경우 <code>orderBy</code>는 <code>"createdAt"</code>으로 설정해야 함). n번째 폴링 요청의 <code>endDateTime</code> 매개변수는 (n-1)번째 폴링 결과의 마지막 레코드의 <code>createdAt</code>으로 설정해야 합니다. 모든 데이터를 검색한 후에는 <code>id</code> 필드를 기준으로 중복을 제거해야 합니다.</p>
+<p><strong>응답 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>아래와 같이</td>
+</tr>
+</tbody>
+</table>
+<p>객체</p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>포지션에 해당하는 제품 ID (<code>The Graph</code> 데이터의 <code>productId</code>와 일치). 이 ID는 체인 + 금고 차원 내에서 고유하며 포지션 잔액을 조회하는 데 사용될 수 있습니다.</td>
+</tr>
+<tr>
+<td>positionId</td>
+<td>string</td>
+<td>체인 차원 내에서 고유한 포지션 ID.</td>
+</tr>
+<tr>
+<td>product</td>
+<td>object</td>
+<td>제품 정보.</td>
+</tr>
+<tr>
+<td>wallet</td>
+<td>string</td>
+<td>지갑 주소.</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>number</td>
+<td>해당하는 타임스탬프(초 단위), 예: 1672387200.</td>
+</tr>
+<tr>
+<td>updatedAt</td>
+<td>number</td>
+<td>해당하는 타임스탬프(초 단위), 예: 1672387200.</td>
+</tr>
+<tr>
+<td>claimed</td>
+<td>boolean</td>
+<td>포지션이 상환되었는지 여부.</td>
+</tr>
+<tr>
+<td>takerAllocationRate</td>
+<td>number</td>
+<td>계산 시간에 따라 소유자가 베팅 풀에서 가져갈 수 있는 비율을 추정합니다. 만료 전에는 추정 값입니다.</td>
+</tr>
+<tr>
+<td>triggerTime</td>
+<td>number</td>
+<td>범위 제한의 경우 첫 번째 돌파 시간; 비범위 제한의 경우 정산 시간(초 단위).</td>
+</tr>
+<tr>
+<td>triggerPrice</td>
+<td>number</td>
+<td>범위 제한의 경우 첫 번째 돌파 가격; 비범위 제한의 경우 정산 가격.</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>수수료 비율.</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>대출 정보 (선택 사항).</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>RCH 가격 변환 및 에어드랍 계산에 필요한 토큰 가격.</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>계산된 금액.</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>연간화된 정보, Surge 제품이 아닌 경우에 사용 가능.</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>확률 정보, Surge 제품에 대해 사용 가능.</td>
+</tr>
+<tr>
+<td>claimParams</td>
+<td>object</td>
+<td>청구 매개변수 정보.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>응답 예시</strong></p>
+<pre><code>{
+    "value": [{
+        ...
+    }]
+}
+</code></pre><h3 id="지갑-거래-내역-가져오기">지갑 거래 내역 가져오기</h3>
+<pre><code>POST /rfq/transaction-list
+</code></pre><p><strong>입력 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>필요 여부</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>Int</td>
+<td></td>
+</tr>
+<tr>
+<td>vaults</td>
+<td>false</td>
+<td>list[string]</td>
+<td>계약 주소 집합; 제공되지 않으면 모든 계약이 조회됩니다.</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>false</td>
+<td>Int</td>
+<td>쿼리 수; 기본값은 100, 최대값은 300입니다.</td>
+</tr>
+<tr>
+<td>startDateTime</td>
+<td>false</td>
+<td>number</td>
+<td>해당하는 타임스탬프(초 단위, 포함), 예: 1672387200.</td>
+</tr>
+<tr>
+<td>endDateTime</td>
+<td>false</td>
+<td>number</td>
+<td>해당하는 타임스탬프(초 단위, 포함), 예: 1672387200.</td>
+</tr>
+<tr>
+<td>orderDirection</td>
+<td>false</td>
+<td>string</td>
+<td>"desc" 또는 "asc", 기본값은 "desc"(내림차순)입니다.</td>
+</tr>
+<tr>
+<td>taker</td>
+<td>false</td>
+<td>string</td>
+<td>테이커 지갑 주소</td>
+</tr>
+<tr>
+<td>maker</td>
+<td>false</td>
+<td>string</td>
+<td>메이커 지갑 주소</td>
+</tr>
+<tr>
+<td>claimParams</td>
+<td>false</td>
+<td>object</td>
+<td>청구 매개변수, 포지션 목록 데이터의 claimParams 필드에 해당합니다.</td>
+</tr>
+<tr>
+<td>hash</td>
+<td>false</td>
+<td>string</td>
+<td>거래 해시</td>
+</tr>
+</tbody>
+</table>
+<p>참고: 테이커, 메이커 및 claimParams 매개변수는 포지션에 해당하는 거래 기록을 찾기 위한 공동 쿼리에 사용될 수 있습니다(포지션은 여러 거래에 해당할 수 있음)(모든 매개변수가 필요하지는 않음). 지정된 <code>startDateTime</code> 및 <code>endDateTime</code> 내에서 결과 수가 300을 초과하는 경우, 폴링을 사용할 수 있습니다(이 경우 <code>orderBy</code>는 <code>"createdAt"</code>으로 설정해야 함) 계속 쿼리합니다. n번째 폴링 요청의 <code>endDateTime</code> 매개변수는 (n-1)번째 폴링 결과의 마지막 기록의 <code>createdAt</code>으로 설정해야 합니다. 모든 데이터를 가져온 후에는 <code>id</code> 필드를 기준으로 중복을 제거해야 합니다.</p>
+<p><strong>응답 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>아래와 같이</td>
+</tr>
+</tbody>
+</table>
+<p>객체</p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>hash</td>
+<td>string</td>
+<td>거래 해시</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>string</td>
+<td>테이커 지갑 주소.</td>
+</tr>
+<tr>
+<td>makerWallet</td>
+<td>string</td>
+<td>메이커 지갑 주소.</td>
+</tr>
+<tr>
+<td>product</td>
+<td>object</td>
+<td>제품 정보.</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>number</td>
+<td>초 단위의 해당 타임스탬프, 예: 1672387200.</td>
+</tr>
+<tr>
+<td>takerAllocationRate</td>
+<td>number</td>
+<td>계산 시점을 기준으로 소유자가 베팅 풀에서 가져갈 수 있는 비율을 추정합니다. 만료 전에는 추정 값입니다.</td>
+</tr>
+<tr>
+<td>triggerTime</td>
+<td>number</td>
+<td>범위 제한의 경우 첫 번째 돌파 시간; 비범위 제한의 경우 정산 시간, 초 단위.</td>
+</tr>
+<tr>
+<td>triggerPrice</td>
+<td>number</td>
+<td>범위 제한의 경우 첫 번째 돌파 가격; 비범위 제한의 경우 정산 가격.</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>수수료 비율.</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>대출 정보 (선택 사항).</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>RCH 가격 변환 및 에어드랍 계산에 필요한 토큰 가격.</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>계산된 금액.</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>연간화 정보, 비서지 제품에 대해 제공됩니다.</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>배당률 정보, 서지 제품에 대해 제공됩니다.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>응답 예시</strong></p>
+<pre><code>{
+    "value": [{
+        ...
+    }]
+}
+</code></pre><h3 id="손실-포지션-숨기기">손실 포지션 숨기기</h3>
+<pre><code>POST rfq/position/conceal
+</code></pre><p><strong>입력 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>필수</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>체인 ID</td>
+</tr>
+<tr>
+<td>positionIds</td>
+<td>true</td>
+<td>List[string]</td>
+<td>positionId 목록, 최대 20개</td>
+</tr>
+</tbody>
+</table>
+<p><strong>요청 예시</strong></p>
+<pre><code>{
+    "positionIds": [
+        "aaaa","bbbb"
+    ],
+    "chainId": 1
+}
+</code></pre><p><strong>응답 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0은 반환 결과가 정상임을 나타냅니다</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>예외 발생 시 반환되는 오류 메시지</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="보류-중인-거래-가져오기">보류 중인 거래 가져오기</h3>
+<p>이는 주로 기본 포지션 데이터 동기화 문제를 해결하기 위한 것입니다. 여기서 검색된 데이터는 사라질 수 있습니다 (블록체인 포크 경쟁으로 인해).</p>
+<pre><code>POST rfq/transactions/pending
+</code></pre><p><strong>입력 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>필수</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>Int</td>
+<td></td>
+</tr>
+<tr>
+<td>vaults</td>
+<td>false</td>
+<td>list[string]</td>
+<td>계약 주소 집합; 제공되지 않으면 모든 계약이 조회됩니다.</td>
+</tr>
+<tr>
+<td>taker</td>
+<td>false</td>
+<td>string</td>
+<td>테이커 지갑 주소</td>
+</tr>
+<tr>
+<td>maker</td>
+<td>false</td>
+<td>string</td>
+<td>메이커 지갑 주소</td>
+</tr>
+</tbody>
+</table>
+<p><strong>응답 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>아래와 같이 표시됩니다.</td>
+</tr>
+</tbody>
+</table>
+<p>객체</p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>hash</td>
+<td>string</td>
+<td>거래 해시</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>string</td>
+<td>테이커 지갑 주소.</td>
+</tr>
+<tr>
+<td>makerWallet</td>
+<td>string</td>
+<td>메이커 지갑 주소.</td>
+</tr>
+<tr>
+<td>product</td>
+<td>object</td>
+<td>제품 정보.</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>number</td>
+<td>초 단위의 해당 타임스탬프, 예: 1672387200.</td>
+</tr>
+<tr>
+<td>takerAllocationRate</td>
+<td>number</td>
+<td>계산 시점을 기준으로 소유자가 베팅 풀에서 가져갈 수 있는 비율을 추정합니다. 만료 전에는 추정값입니다.</td>
+</tr>
+<tr>
+<td>triggerTime</td>
+<td>number</td>
+<td>범위 제한의 경우 첫 번째 돌파 시간; 비범위 제한의 경우 정산 시간, 초 단위.</td>
+</tr>
+<tr>
+<td>triggerPrice</td>
+<td>number</td>
+<td>범위 제한의 경우 첫 번째 돌파 가격; 비범위 제한의 경우 정산 가격.</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>수수료 비율.</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>대출 정보 (선택 사항).</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>RCH 가격 변환 및 에어드롭 계산에 필요한 토큰 가격.</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>계산된 금액.</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>연간화 정보, 비서지 제품에 대해 제공됩니다.</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>배당률 정보, 서지 제품에 대해 제공됩니다.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rch-에어드롭-기록-가져오기">RCH 에어드롭 기록 가져오기</h3>
+<pre><code>GET rfq/airdrop/history
+</code></pre><p><strong>입력 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>필수</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wallet</td>
+<td>true</td>
+<td>string</td>
+<td>지갑 주소</td>
+</tr>
+<tr>
+<td>startDateTime</td>
+<td>true</td>
+<td>number</td>
+<td>해당 타임스탬프(초 단위, 포함), 예: 1672387200.</td>
+</tr>
+<tr>
+<td>endDateTime</td>
+<td>true</td>
+<td>number</td>
+<td>해당 타임스탬프(초 단위, 포함), 예: 1672387200.</td>
+</tr>
+<tr>
+<td>orderBy</td>
+<td>false</td>
+<td>string</td>
+<td>"dateTime" 또는 "rch", 정렬 방법: "dateTime" (에어드랍 시간, 기본값) 또는 "rch" (금액).</td>
+</tr>
+<tr>
+<td>orderDirection</td>
+<td>false</td>
+<td>string</td>
+<td>"desc" 또는 "asc", 기본값은 "desc" (내림차순).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>응답 매개변수</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>아래와 같이</td>
+</tr>
+</tbody>
+</table>
+<p>객체</p>
+<table>
+<thead>
+<tr>
+<th><strong>필드 이름</strong></th>
+<th><strong>유형</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dateTime</td>
+<td>long</td>
+<td>현재 타임스탬프(초 단위), 예: 1672387200.</td>
+</tr>
+<tr>
+<td>wallet</td>
+<td>string</td>
+<td>지갑 주소</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>string</td>
+<td>거래량</td>
+</tr>
+<tr>
+<td>rch</td>
+<td>string</td>
+<td>에어드랍 금액, 원시 값, 1e18로 나누어야 함</td>
+</tr>
+<tr>
+<td>merkleProof</td>
+<td>string</td>
+<td>머클 증명</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="marketmaker-open-apis.html" class="navigation navigation-prev " aria-label="Previous page: 시장 조성자 공개 API">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="subgraphs.html" class="navigation navigation-next " aria-label="Next page: 서브그래프">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"DAPP 공개 API","level":"1.11.2","depth":2,"next":{"title":"서브그래프","level":"1.11.3","depth":2,"path":"developer/subgraphs.md","ref":"developer/subgraphs.md","articles":[]},"previous":{"title":"시장 조성자 공개 API","level":"1.11.1","depth":2,"path":"developer/marketmaker-open-apis.md","ref":"developer/marketmaker-open-apis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"ko","gitbook":"*"},"file":{"path":"developer/dapp-open-apis.md","mtime":"2025-06-09T06:54:13.277Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"ko"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

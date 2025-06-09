@@ -1,0 +1,713 @@
+
+<!DOCTYPE HTML>
+<html lang="fr" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Classification des coffres · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="risk-prefer.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Tapez pour rechercher" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Présentation de SOFA.org
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    Innover la prochaine vague de DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 Bienvenue dans les Protocoles SOFA 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    Feuille de route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    Guide de l'utilisateur
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    Gagner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    Surge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    Réclamer vos récompenses $RCH ! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Conception technique
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="vault-classification.html">
+            
+                <a href="vault-classification.html">
+            
+                    
+                    Classification des coffres
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="risk-prefer.html">
+            
+                <a href="risk-prefer.html">
+            
+                    
+                    Définir votre préférence de risque
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="oracle.html">
+            
+                <a href="oracle.html">
+            
+                    
+                    Construction d'oracle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="settlement.html">
+            
+                <a href="settlement.html">
+            
+                    
+                    Considérations sur le règlement en chaîne
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="fees.html">
+            
+                <a href="fees.html">
+            
+                    
+                    Frais de protocole
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="automator.html">
+            
+                <a href="automator.html">
+            
+                    
+                    Automatisateur
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    Sécurité
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    Programme de récompense pour bugs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    Cadre de gouvernance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    Contingences externes et facteurs de risque
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    Tokenomics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    Scénario hypothétique de flottement $RCH (LP + Airdrops cumulés)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    Points $SOFA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    FAQ SOFA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    Documentation pour les développeurs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    APIs ouvertes pour les market makers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    APIs ouvertes pour DAPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    Sous-graphes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    Contrats de déploiement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    Processus d'intégration des market makers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    Liens
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Publié avec HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Classification des coffres</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="classification-des-coffres">Classification des Coffres</h1>
+<p>Le contrat Vault utilise la norme ERC-1155 pour <strong>supporter la fongibilité des Tokens de Position avec le même prix d'exercice et la même date d'expiration</strong>. Les tokens avec des prix d'exercice ou des dates d'expiration différents auront des IDs de Token différents (c'est-à-dire comme un NFT) tout en étant contenus sous le même contrat Vault.</p>
+<p>Le protocole SOFA est conçu avec la flexibilité <strong>de supporter tout type de produit structuré et toute dénomination de garantie</strong>, bien qu'une distinction soit faite sur la question de savoir si le produit sous-jacent contient ou non une fonctionnalité de 'protection du principal'. En tant que tel, nos <strong>conceptions de Coffres sont divisées en 2 grandes catégories de produits explicites appelées 'Gagner' et 'Surge'</strong>.</p>
+<p>Exemple de Taxonomie des Coffres au Lancement de SOFA</p>
+<p><img src="../../static/NON1bznnEocSeJxK0mAuxBR0sqh.png" alt=""></img></p>
+<h2 id="produits-disponibles-au-lancement">Produits Disponibles au Lancement</h2>
+<p>En tant que preuve de concept inaugurale, nous nous concentrerons initialement sur trois structures de produits populaires appelées <strong>'Rangebound' et 'Trend'</strong>. De plus, tous ces produits sont disponibles dans les protocoles Gagner ou Surge. De plus, d'autres types de produits seront continuellement ajoutés en fonction de la demande des utilisateurs et des retours de l'écosystème.</p>
+<h2 id="produits-rangebond">Produits Rangebond</h2>
+<h3 id="aperçu-du-produit">Aperçu du Produit</h3>
+<p>Les produits Rangebound sont un type de produit structuré basé sur des limites de prix. <strong>Les déposants peuvent réaliser un profit si l'actif sous-jacent ne touche pas les barrières prédéfinies pendant la période d'observation avant l'échéance</strong>. Ces produits conviennent aux utilisateurs qui s'attendent à ce que le marché reste dans une phase de consolidation latérale avec une volatilité modérée.</p>
+<p>En se référant au diagramme de paiement ci-dessous, un utilisateur croit que le BTC sera coincé entre une plage définie par les barrières inférieure et supérieure, mais ne veut pas encourir beaucoup de pertes même si cette opinion s'avère incorrecte. Le produit Rangebound garantira à l'utilisateur un rendement de base minimum de (A) même si le prix du Range sort de chaque côté, mais l'utilisateur aura droit à un retour de profit supplémentaire équivalent à (A+B) si les prix restent contenus dans les barrières.</p>
+<p>Pour les options de personnalisation, <strong>l'utilisateur est libre d'ajuster la largeur de la plage de prix, ce qui entraînerait un profil différent de profits de base et de profits supplémentaires selon les niveaux choisis</strong>. Naturellement, spécifier une plage de prix plus étroite représente un pari plus agressif sur une faible volatilité, ce qui entraînerait des rendements supplémentaires plus élevés. À l'inverse, une plage de prix plus large réduirait les profits excédentaires en retour d'une probabilité plus élevée de gagner. Enfin, pour faciliter la gestion, le produit peut être spécifié pour être automatiquement 're-roulé' à l'échéance comme un pari de continuation lors d'une mise à niveau ultérieure du protocole. (La fonction 're-roll' sera déployée dans la prochaine phase de la mise à niveau).</p>
+<p><img src="../../static/Yfu7bNF7soTStDxRAp7u4g31sTe.png" alt=""></img></p>
+<h2 id="produits-trend">Produits Trend</h2>
+<h3 id="aperçu-du-produit">Aperçu du Produit</h3>
+<p>Le <strong>produit Trend est adapté aux déposants qui s'attendent à ce que le marché subisse bientôt une tendance douce et régulière, mais qui désire tout de même une certaine protection contre les baisses</strong>. En définissant à la fois une barrière de prix inférieure et supérieure, les utilisateurs commenceront à accumuler des gains de revenus dès que l'instrument sous-jacent franchit le seuil de prix initial, avec des paiements croissants jusqu'à atteindre un maximum à la 2ème barrière.</p>
+<p>De plus, contrairement au produit Rangebound, le produit Trend n'observe qu'au moment du règlement si le prix de l'actif sous-jacent se situe dans la plage définie pour déterminer le profit final (c'est-à-dire option européenne). <strong>Ce produit est disponible via des expressions haussières et baissières</strong>.</p>
+<p>Par exemple, si un utilisateur est haussier sur le BTC et prédit que dans les sept prochains jours, le prix du BTC restera au-dessus de 68 500 $, mais ne dépassera pas 71 500 $, il peut choisir d'acheter un produit Bull Trend, en fixant 68 500 $ comme limite inférieure et 71 500 $ comme limite supérieure de la plage de profit. En se référant au diagramme ci-dessous, au moment du règlement, l'utilisateur sera éligible à un paiement entre un profit de base de (A) et une limite supérieure de (A+B), selon ce que sera le prix du BTC à ce moment-là.</p>
+<p><img src="../../static/VPCFbWcRso4WYsxeEExu2Wrjsyv.png" alt=""></img></p>
+<h3 id="scénarios-applicables">Scénarios Applicables</h3>
+<p>Le produit pourrait être <strong>adapté aux déposants qui croient qu'un actif connaîtra une forte réaction à un événement économique spécifique, mais qui s'inquiètent également du risque d'une baisse de prix s'ils se trompent</strong> dans leur pronostic de marché.</p>
+<p>Par exemple, l'utilisateur pourrait désirer spéculer sur les prix du BTC lors de la prochaine décision du FOMC, l'événement de halving, ou la prochaine annonce d'approbation d'ETF. Cette stratégie est <strong>appropriée pour les utilisateurs ayant une forte conviction sur le marché concernant ces événements importants mais risqués, et qui souhaitent rester disciplinés dans la gestion des pertes potentielles</strong> si son avis s'avère erroné.</p>
+<h2 id="aileron-de-requin-pour-plus-tard">Aileron de requin (Pour plus tard)</h2>
+<h3 id="aperçu-du-produit">Aperçu du produit</h3>
+<p>Comparé aux produits Rangebound et Trend, le produit 'Aileron de requin' est relativement plus connu sur les marchés TradFi grâce à son nom mémorable. Son design et son rendement sont similaires à ceux des produits Trend (c'est-à-dire une option européenne), avec la <strong>principale exception que le déposant spécule de manière beaucoup plus agressive sur les prix se situant dans une plage particulière</strong>.</p>
+<p>Dit autrement, le produit Aileron de requin <strong>adopte une vision plus conservatrice de la volatilité du marché en sacrifiant plus de potentiel à la hausse lors d'un grand mouvement du marché, en échange de profits plus agressifs dans les limites de prix inférieures</strong>.</p>
+<p>Par exemple, supposons qu'un utilisateur soit haussier sur le BTC, mais qu'il ait une forte conviction qu'il ne franchira pas une certaine limite supérieure à un niveau de résistance technique fort. Dans un tel scénario, l'utilisateur peut choisir d'acheter un produit Aileron de requin haussier avec un profil de rendement comme indiqué dans le diagramme ci-dessous. À la liquidation du produit, l'utilisateur recevra un retour allant de (A) à (A+B) en fonction de l'endroit où se trouve le BTC au comptant ; cependant, contrairement aux produits Trend, notez que le retour <em>diminue</em> à (A+C) en cas de franchissement de la barrière de prix supérieure, offrant un compromis en échange de profits plus agressifs dans la plage précédente.</p>
+<p><img src="../../static/LaiabPyJAokoogxs2luuq7hsslb.png" alt=""></img></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Conception technique">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="risk-prefer.html" class="navigation navigation-next " aria-label="Next page: Définir votre préférence de risque">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Classification des coffres","level":"1.6.1","depth":2,"next":{"title":"Définir votre préférence de risque","level":"1.6.2","depth":2,"path":"technical-design/risk-prefer.md","ref":"technical-design/risk-prefer.md","articles":[]},"previous":{"title":"Conception technique","level":"1.6","depth":1,"path":"technical-design/README.md","ref":"technical-design/README.md","articles":[{"title":"Classification des coffres","level":"1.6.1","depth":2,"path":"technical-design/vault-classification.md","ref":"technical-design/vault-classification.md","articles":[]},{"title":"Définir votre préférence de risque","level":"1.6.2","depth":2,"path":"technical-design/risk-prefer.md","ref":"technical-design/risk-prefer.md","articles":[]},{"title":"Construction d'oracle","level":"1.6.3","depth":2,"path":"technical-design/oracle.md","ref":"technical-design/oracle.md","articles":[]},{"title":"Considérations sur le règlement en chaîne","level":"1.6.4","depth":2,"path":"technical-design/settlement.md","ref":"technical-design/settlement.md","articles":[]},{"title":"Frais de protocole","level":"1.6.5","depth":2,"path":"technical-design/fees.md","ref":"technical-design/fees.md","articles":[]},{"title":"Automatisateur","level":"1.6.6","depth":2,"path":"technical-design/automator.md","ref":"technical-design/automator.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"fr","gitbook":"*"},"file":{"path":"technical-design/vault-classification.md","mtime":"2025-06-06T19:08:11.595Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"fr"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,820 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <title>代币经济学 · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="rch-scenario.html" />
+    
+    
+    <link rel="prev" href="../security/external.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org 概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    创新下一波 DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 欢迎来到 SOFA 协议 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    路线图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    用户指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    赚取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    激增
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    领取您的 $RCH 奖励！🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../technical-design/">
+            
+                <a href="../technical-design/">
+            
+                    
+                    技术设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../technical-design/vault-classification.html">
+            
+                <a href="../technical-design/vault-classification.html">
+            
+                    
+                    保险库分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../technical-design/risk-prefer.html">
+            
+                <a href="../technical-design/risk-prefer.html">
+            
+                    
+                    定义您的风险偏好
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../technical-design/oracle.html">
+            
+                <a href="../technical-design/oracle.html">
+            
+                    
+                    预言机构建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../technical-design/settlement.html">
+            
+                <a href="../technical-design/settlement.html">
+            
+                    
+                    链上结算考虑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../technical-design/fees.html">
+            
+                <a href="../technical-design/fees.html">
+            
+                    
+                    协议费用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../technical-design/automator.html">
+            
+                <a href="../technical-design/automator.html">
+            
+                    
+                    自动化器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    安全性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    漏洞赏金计划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    治理框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    外部应急与风险因素
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    代币经济学
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="rch-scenario.html">
+            
+                <a href="rch-scenario.html">
+            
+                    
+                    假设的 $RCH 流通场景（LP + 累积空投）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA 积分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA 常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    开发者文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    做市商开放 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    DAPP 开放 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    子图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    部署合约
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    做市商入驻流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >代币经济学</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="代币经济学">代币经济学</h1>
+<p>SOFA.org 精心设计了一个双代币模型来运营生态系统的代币经济学。协议的原生效用代币被称为 $RCH，而治理代币则被恰当地命名为 $SOFA。</p>
+<p>让我们探索由 $RCH 和 $SOFA 代币驱动的 SOFA.org 的充满活力的生态系统。</p>
+<h2 id="🤝-认识-rch：效用代币">🤝 <strong>认识 $RCH：效用代币</strong></h2>
+<p>$RCH 是 SOFA 的主要代币，你不能提前购买或从开发者那里获得它。要赚取 $RCH，你必须使用 SOFA.org 的服务或加入后续的推荐计划。这确保了只有活跃用户受益，避免了在其他项目中看到的快速、有害的抛售。每天，<strong>在 SOFA.org 进行交易的用户根据他们的活动获得 $RCH。</strong> 即使是项目开发者在第一天也没有任何 $RCH 的所有权——这有多公平？这种公平启动方法确保了平台的长期成功和真正用户的利益。</p>
+<p><strong>总供应量：</strong>上限为 37,000,000 $RCH。</p>
+<p><strong>预铸供应量：</strong>67%（2500 万）锁定在与 ETH 的 Uniswap 流动性池中。</p>
+<p><strong>空投供应量：</strong>33% 按设定的时间表释放给用户。</p>
+<p><strong>收入使用：</strong>所有 SOFA 协议收入从 Uniswap 购买并销毁 $RCH。</p>
+<p><strong>通缩机制：</strong>增加的交易导致更多的 $RCH 被销毁，减少供应并增加价值。</p>
+<p><strong>长期价值：</strong>$RCH 价格随着协议使用而上升，惠及活跃用户和持有者。</p>
+<p>在项目启动时，<strong>67% 的 $RCH（2500 万代币）被预铸并与约 725 ETH</strong>（约 270 万美元）一起放入以太坊上的 Uniswap V3 池作为初始流动性池。</p>
+<p>请注意，<strong>这初始流动性不属于任何人</strong>。在存入 LP 后，<strong>相应的 Uniswap LP 代币会立即被销毁，确保代币的初始流动性池永远无法被提取。</strong></p>
+<p>这确保了 $RCH 的流通量最终将远低于最初锁定在 LP 中的数量，<strong>从而在 $RCH 的初始价格上设定了一个有效的底价。</strong></p>
+<h3 id="🪂-有人说空投吗">🪂 有人说空投吗?!?!</h3>
+<p>此外，<strong>剩余的 33%（1200 万代币）的 $RCH 将根据预定的释放时间表空投给生态系统用户。</strong></p>
+<p>最初，<strong>在前 180 天内每天将空投 12,500 个 $RCH 代币。</strong> 之后，空投数量将每 180 天递增减少 20%，无限期进行。</p>
+<table>
+<thead>
+<tr>
+<th><strong>启动后天数</strong></th>
+<th><strong>每日空投</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>12,500</td>
+</tr>
+<tr>
+<td>180</td>
+<td>10,000</td>
+</tr>
+<tr>
+<td>360</td>
+<td>8,000</td>
+</tr>
+<tr>
+<td>540</td>
+<td>6,400</td>
+</tr>
+<tr>
+<td>720</td>
+<td>5,120</td>
+</tr>
+<tr>
+<td>900</td>
+<td>4,096</td>
+</tr>
+<tr>
+<td>1080</td>
+<td>3,276.8</td>
+</tr>
+</tbody>
+</table>
+<h3 id="📝其他-rch-备注">📝其他 $RCH 备注</h3>
+<p><strong>正向反身性：</strong>更多的交易会提高 $RCH 的价格，使空投更有价值，并鼓励更多交易。</p>
+<p><strong>自我纠正机制：</strong>如果 $RCH 价格下跌，会有更多代币被销毁，从而稳定价格，直到交易量再次增加。</p>
+<p><strong>无退出抛售：</strong>$RCH 的公平启动防止了突然的大规模抛售，因为在启动时没有人获得 $RCH。</p>
+<p><strong>未来增长：</strong>新的 DeFi 项目可以作为合作伙伴加入 SOFA.org 生态系统。</p>
+<h2 id="获取-rch-代币及空投数学">获取 $RCH 代币及空投数学</h2>
+<p><strong>获取 $RCH 的最佳方式是进行交易</strong>并与 SOFA 生态系统执行交易。每天将有一部分 $RCH 空投给我们的协议用户，<strong>接收到的奖励将根据用户当天的交易量按比例分配</strong>。</p>
+<blockquote>
+<p>💰 RCH = (用户执行的溢价（当天）<em> [金库权重]) / SOFA 处理的总金库加权溢价（当天）</em> 95% (dApp 访问)</p>
+<p>💰 总金库加权溢价 = (总收益溢价 <em> 收益权重) + (总激增溢价 </em> 激增权重)</p>
+</blockquote>
+<h3 id="期权溢价近似">期权溢价近似</h3>
+<p><em>请务必阅读<a href="../technical-design/fees.html">协议费用部分</a>以获取有关溢价计算的更多信息。</em></p>
+<p>对于<strong>基于收益的产品</strong>，由于期权溢价将由 Aave 的存款利息储蓄提供资金，用户存款总额中只有<strong>一小部分将被视为“溢价”</strong>用于空投计算。相反，<strong>Surge 产品的整个购买金额</strong>将有资格被考虑，因为它将完全用于底层期权策略。<em>近似</em>溢价估算如下：</p>
+<table>
+<thead>
+<tr>
+<th><strong>协议</strong></th>
+<th><strong>溢价（近似）</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Earn</td>
+<td>(Aave 的储蓄率 – 产品基础收益率) <em> 到期天数 / 365 </em> 存款价值</td>
+<td>SOFA 仅使用 Aave 利息收入的一部分作为期权溢价以维持最低基础收益</td>
+</tr>
+<tr>
+<td>Surge</td>
+<td>整个购买金额</td>
+<td>整个购买金额用作期权溢价以投机高收益。</td>
+</tr>
+<tr>
+<td>Automator</td>
+<td>Min(takerCollateral, makerCollateral) of mintProducts</td>
+<td>takerCollateral = totalCollateral - makerCollateral</td>
+</tr>
+<tr>
+<td>Dual(CRV)</td>
+<td>makerCollateral</td>
+<td></td>
+</tr>
+<tr>
+<td>Dual(RCH, USDT, crvUSD)</td>
+<td>来自 RCH 质押、AAVE、crvSUD 质押的收益 / 交易费率</td>
+</tr>
+</tbody>
+</table>
+<p>此外，为了激励跨协议的活动，我们在公式末尾加入了一个<strong>金库权重</strong>：</p>
+<p>在 2025/02/18 8:00 UTC 之前，Earn 的权重设置为 <strong>15</strong>，Leverage Earn 为 <strong>15</strong>，Surge 为 <strong>1</strong>，RCH Surge 为 <strong>2</strong>，Automator 为 <strong>2</strong>。
+2025/02/18 8:00 UTC - 2025/04/07 8:00 UTC，它们被设置为 Earn 的 <strong>min(days to expiry, 20)</strong>，Leverage Earn 的 <strong>min(days to expiry, 20)</strong>，Surge 的 <strong>1</strong>，RCH Surge 的 <strong>2</strong>，Automator 的 <strong>abs(0.5 - takerCollateral / (takerCollateral + makerCollateral)) / 0.5 * 4</strong>。</p>
+<p>之后，它们被设置为 Earn 的 <strong>min(days to expiry, 20)</strong>，Leverage Earn 的 <strong>min(days to expiry, 20)</strong>，Surge 的 <strong>1</strong>，RCH Surge 的 <strong>2</strong>，Automator 的 <strong>abs(0.5 - takerCollateral / (takerCollateral + makerCollateral)) / 0.5 * 2</strong>，以及 Dual 的 <strong>2</strong>。</p>
+<p>Automator 空投的 <strong>15%</strong> 将被收取给 RCH 部署者用于 RCH 燃烧。最后，应用一个最终的 <strong>95%</strong> 通用调整因子，以补偿支付给 <a href="../INTRO.md">dApp 经纪人</a> 的空投削减。</p>
+<p>随着 SOFA 的增长和更多协议的加入，您将会意识到这个变量在推动 TVL 方面的重要性，这将成为我们 $SOFA 治理代币持有者可以投票决定的关键参数之一。</p>
+<p><em>注意：系统每天捕获快照。$RCH 代币可在每次交易执行后的 UTC 08:00 进行每日领取。</em></p>
+<h3 id="sofa-earn">SOFA Earn</h3>
+<ul>
+<li><p>SOFA Earn 享有与其他 Earn 产品相同的空投权重。</p>
+</li>
+<li><p>此外，存入 SOFA Earn 的所有 RCH 将获得 5% 的年化存款奖励。</p>
+</li>
+<li><p>相关金库（铸造/销毁/收获）中的每笔交易都会触发利息结算，导致复利奖励，因此收益超过 5%。</p>
+</li>
+<li><p>SOFA Earn 奖励将通过空投每日分发。</p>
+</li>
+</ul>
+<h2 id="🤝-认识-sofa：治理代币">🤝 <strong>认识 $SOFA：治理代币</strong></h2>
+<p><strong>$SOFA 代币是 SOFA.org 生态系统的治理代币</strong>。作为一个去中心化、非盈利、开源的技术组织，SOFA.org 生态系统内的所有决策都由 $SOFA 代币持有者投票决定。<strong>作为纯粹的治理代币，$SOFA 不参与生态系统内的任何利润分享。</strong></p>
+<h2 id="🎤-社区的声音">🎤 社区的声音</h2>
+<p><strong>治理投票相关事项：</strong></p>
+<ol>
+<li>上线的金融产品类型</li>
+<li>支持的抵押品篮子的确定（如 USDT 等）</li>
+<li>新合作协议的加入 SOFA.org 生态系统</li>
+<li>各种上线产品之间每日 $RCH 空投的分配比例</li>
+<li>生态系统协议之间每日 $RCH 空投的分配比例</li>
+<li>$RCH 空投的速度</li>
+<li>以及随着生态系统成熟而出现的其他决策</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../security/external.html" class="navigation navigation-prev " aria-label="Previous page: 外部应急与风险因素">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="rch-scenario.html" class="navigation navigation-next " aria-label="Next page: 假设的 $RCH 流通场景（LP + 累积空投）">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"代币经济学","level":"1.8","depth":1,"next":{"title":"假设的 $RCH 流通场景（LP + 累积空投）","level":"1.8.1","depth":2,"path":"tokenomics/rch-scenario.md","ref":"tokenomics/rch-scenario.md","articles":[]},"previous":{"title":"外部应急与风险因素","level":"1.7.3","depth":2,"path":"security/external.md","ref":"security/external.md","articles":[]},"articles":[{"title":"假设的 $RCH 流通场景（LP + 累积空投）","level":"1.8.1","depth":2,"path":"tokenomics/rch-scenario.md","ref":"tokenomics/rch-scenario.md","articles":[]}],"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"zh","gitbook":"*"},"file":{"path":"tokenomics/README.md","mtime":"2025-06-09T06:35:18.169Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

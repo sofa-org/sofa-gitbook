@@ -1,0 +1,719 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    <head>
+        <meta charset="UTF-8">
+        <title>協議費用 · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="automator.html" />
+    
+    
+    <link rel="prev" href="settlement.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org 概覽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    創新下一波 DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 歡迎來到 SOFA 協議 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    路線圖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    用戶指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    賺取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    激增
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    領取您的 $RCH 獎勵！🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    技術設計
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="vault-classification.html">
+            
+                <a href="vault-classification.html">
+            
+                    
+                    保險庫分類
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="risk-prefer.html">
+            
+                <a href="risk-prefer.html">
+            
+                    
+                    定義您的風險偏好
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="oracle.html">
+            
+                <a href="oracle.html">
+            
+                    
+                    預言機構建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="settlement.html">
+            
+                <a href="settlement.html">
+            
+                    
+                    鏈上結算考量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.5" data-path="fees.html">
+            
+                <a href="fees.html">
+            
+                    
+                    協議費用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="automator.html">
+            
+                <a href="automator.html">
+            
+                    
+                    自動化器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    安全性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    漏洞賞金計劃
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    治理框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    外部應急措施與風險因素
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    代幣經濟學
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    假設的 $RCH 流通情境 (LP + 累積空投)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA 積分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA 常見問題
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    開發者文檔
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    做市商開放 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    DAPP 開放 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    子圖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    部署合約
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    做市商入駐流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    連結
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >協議費用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="協議費用">協議費用</h1>
+<p>在 SOFA，我們致力於創建一個公平透明的金融生態系統，讓用戶可以以民主的方式從做市商那裡購買各種結構化產品，並享有透明和公平的定價。此外，<strong>作為一個完全去中心化的項目，我們希望確保任何協議收益主要與我們的基礎用戶共享</strong>，確保完全的激勵一致性，而不是給予特殊利益集團特權支付。因此，我們設計了一系列費用結構，<strong>以“公平啟動”的代幣經濟學確保適當的價值累積並支持平台的長期持久性</strong>。在 SOFA 內部，不會有風險投資的快樂騎行或退出流動性拋售。</p>
+<h2 id="協議費用">協議費用</h2>
+<blockquote>
+<p>💰 SOFA 將收取用戶期權溢價的 15% 作為基本交易費。此外，如果用戶獲得“贏得”支付，將對總毛利支付收取額外 5% 的結算費。</p>
+</blockquote>
+<h2 id="費用計算">費用計算</h2>
+<p>為了完全透明，請參閱以下我們協議中如何計算費用和支付的示例。</p>
+<p><strong>定義：</strong></p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mi>r</mi><mi>e</mi><mi>m</mi><mi>i</mi><mi>u</mi><mi>m</mi><mo>=</mo><mi>N</mi><mi>o</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mi>a</mi><msub><mi>l</mi><mrow><mi>D</mi><mi>e</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi></mrow></msub><mo>∗</mo><mo>(</mo><mn>1</mn><mo>+</mo><mi>A</mi><mi>A</mi><mi>V</mi><msub><mi>E</mi><mrow><mn>1</mn><mi>M</mi><mi>o</mi><mi>n</mi><mi>t</mi><mi>h</mi><mi>A</mi><mi>v</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>g</mi><mi>e</mi></mrow></msub><mo>−</mo><mi>B</mi><mi>a</mi><mi>s</mi><mi>e</mi><mi>Y</mi><mi>i</mi><mi>e</mi><mi>l</mi><mi>d</mi><msup><mo>)</mo><mrow><mi>F</mi><mi>u</mi><mi>l</mi><mi>l</mi><mi>D</mi><mi>a</mi><mi>y</mi><mi>s</mi><mi mathvariant="normal">/</mi><mn>3</mn><mn>6</mn><mn>5</mn></mrow></msup><mo>−</mo><mi>N</mi><mi>o</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mi>a</mi><msub><mi>l</mi><mrow><mi>D</mi><mi>e</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">Premium = Notional_{Deposit} * (1 + AAVE_{1MonthAverage} - BaseYield)^{Full Days/365} - Notional_{Deposit}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8879999999999999em;"></span><span class="strut bottom" style="height:1.174108em;vertical-align:-0.286108em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">u</span><span class="mord mathit">m</span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mord mathit">o</span><span class="mord mathit">t</span><span class="mord mathit">i</span><span class="mord mathit">o</span><span class="mord mathit">n</span><span class="mord mathit">a</span><span class="mord"><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.01968em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.02778em;">D</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight">p</span><span class="mord mathit mtight">o</span><span class="mord mathit mtight">s</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">t</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">∗</span><span class="mopen">(</span><span class="mord mathrm">1</span><span class="mbin">+</span><span class="mord mathit">A</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.22222em;">V</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathrm mtight">1</span><span class="mord mathit mtight" style="margin-right:0.10903em;">M</span><span class="mord mathit mtight">o</span><span class="mord mathit mtight">n</span><span class="mord mathit mtight">t</span><span class="mord mathit mtight">h</span><span class="mord mathit mtight">A</span><span class="mord mathit mtight" style="margin-right:0.03588em;">v</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span><span class="mord mathit mtight">a</span><span class="mord mathit mtight" style="margin-right:0.03588em;">g</span><span class="mord mathit mtight">e</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">−</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mord mathit">a</span><span class="mord mathit">s</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.22222em;">Y</span><span class="mord mathit">i</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">d</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathit mtight" style="margin-right:0.13889em;">F</span><span class="mord mathit mtight">u</span><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span><span class="mord mathit mtight" style="margin-right:0.02778em;">D</span><span class="mord mathit mtight">a</span><span class="mord mathit mtight" style="margin-right:0.03588em;">y</span><span class="mord mathit mtight">s</span><span class="mord mathrm mtight">/</span><span class="mord mathrm mtight">3</span><span class="mord mathrm mtight">6</span><span class="mord mathrm mtight">5</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">−</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mord mathit">o</span><span class="mord mathit">t</span><span class="mord mathit">i</span><span class="mord mathit">o</span><span class="mord mathit">n</span><span class="mord mathit">a</span><span class="mord"><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.01968em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.02778em;">D</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight">p</span><span class="mord mathit mtight">o</span><span class="mord mathit mtight">s</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">t</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></p>
+<p><em>MM's Collateral = 來自做市商的保險庫鎖定抵押品</em></p>
+<p><strong>觀察窗口：</strong></p>
+<p>從<em>下一個 16:00 (UTC+8) 到到期日 16:00 (UTC+8)</em></p>
+<p><strong>到期時用戶支付：</strong></p>
+<ol>
+<li><p>如果被擊出</p>
+<p> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mi>a</mi><mi>y</mi><mi>o</mi><mi>f</mi><msub><mi>f</mi><mrow><mi>i</mi><mi>n</mi><mi>U</mi><mi>S</mi><mi>D</mi><mi>T</mi></mrow></msub><mo>=</mo><mi>N</mi><mi>o</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mi>a</mi><msub><mi>l</mi><mrow><mi>D</mi><mi>e</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi></mrow></msub><mo>+</mo><mi>A</mi><mi>A</mi><mi>V</mi><mi>E</mi><mi>I</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>e</mi><mi>s</mi><msub><mi>t</mi><mrow><mi>A</mi><mi>c</mi><mi>t</mi><mi>u</mi><mi>a</mi><mi>l</mi></mrow></msub><mo>−</mo><mi>P</mi><mi>r</mi><mi>e</mi><mi>m</mi><mi>i</mi><mi>u</mi><mi>m</mi><mo>∗</mo><mo>(</mo><mn>1</mn><mo>+</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>1</mn><mn>5</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">Payoff_{inUSDT} = Notional_{Deposit} + AAVEInterest_{Actual} - Premium * (1 + 0.15)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.10764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mord mathit mtight">n</span><span class="mord mathit mtight" style="margin-right:0.10903em;">U</span><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="mord mathit mtight" style="margin-right:0.02778em;">D</span><span class="mord mathit mtight" style="margin-right:0.13889em;">T</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mord mathit">o</span><span class="mord mathit">t</span><span class="mord mathit">i</span><span class="mord mathit">o</span><span class="mord mathit">n</span><span class="mord mathit">a</span><span class="mord"><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.01968em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.02778em;">D</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight">p</span><span class="mord mathit mtight">o</span><span class="mord mathit mtight">s</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">t</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">+</span><span class="mord mathit">A</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.22222em;">V</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathit" style="margin-right:0.07847em;">I</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">s</span><span class="mord"><span class="mord mathit">t</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">A</span><span class="mord mathit mtight">c</span><span class="mord mathit mtight">t</span><span class="mord mathit mtight">u</span><span class="mord mathit mtight">a</span><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">−</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">u</span><span class="mord mathit">m</span><span class="mbin">∗</span><span class="mopen">(</span><span class="mord mathrm">1</span><span class="mbin">+</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">1</span><span class="mord mathrm">5</span><span class="mclose">)</span></span></span></span></p>
+</li>
+<li><p>未被擊出</p>
+<p> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mi>a</mi><mi>y</mi><mi>o</mi><mi>f</mi><msub><mi>f</mi><mrow><mi>i</mi><mi>n</mi><mi>U</mi><mi>S</mi><mi>D</mi><mi>T</mi></mrow></msub><mo>=</mo><mi>N</mi><mi>o</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mi>a</mi><msub><mi>l</mi><mrow><mi>D</mi><mi>e</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi></mrow></msub><mo>+</mo><mi>A</mi><mi>A</mi><mi>V</mi><mi>E</mi><mi>I</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>e</mi><mi>s</mi><msub><mi>t</mi><mrow><mi>A</mi><mi>c</mi><mi>t</mi><mi>u</mi><mi>a</mi><mi>l</mi></mrow></msub><mo>+</mo><mi>P</mi><mi>r</mi><mi>e</mi><mi>m</mi><mi>i</mi><mi>u</mi><mi>m</mi><mo>∗</mo><mo>(</mo><mn>1</mn><mo>−</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>1</mn><mn>5</mn><mo>−</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>0</mn><mn>5</mn><mo>)</mo><mo>+</mo><mi>M</mi><msup><mi>M</mi><mrow><mi mathvariant="normal">′</mi></mrow></msup><mi>s</mi><mi>C</mi><mi>o</mi><mi>l</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>l</mi><mo>∗</mo><mo>(</mo><mn>1</mn><mo>−</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>0</mn><mn>5</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">Payoff_{inUSDT} = Notional_{Deposit} + AAVEInterest_{Actual} + Premium * (1 - 0.15 - 0.05) + MM'sCollateral * (1 - 0.05)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.751892em;"></span><span class="strut bottom" style="height:1.038em;vertical-align:-0.286108em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.10764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mord mathit mtight">n</span><span class="mord mathit mtight" style="margin-right:0.10903em;">U</span><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="mord mathit mtight" style="margin-right:0.02778em;">D</span><span class="mord mathit mtight" style="margin-right:0.13889em;">T</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mord mathit">o</span><span class="mord mathit">t</span><span class="mord mathit">i</span><span class="mord mathit">o</span><span class="mord mathit">n</span><span class="mord mathit">a</span><span class="mord"><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.01968em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.02778em;">D</span><span class="mord mathit mtight">e</span><span class="mord mathit mtight">p</span><span class="mord mathit mtight">o</span><span class="mord mathit mtight">s</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">t</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">+</span><span class="mord mathit">A</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.22222em;">V</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathit" style="margin-right:0.07847em;">I</span><span class="mord mathit">n</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">s</span><span class="mord"><span class="mord mathit">t</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">A</span><span class="mord mathit mtight">c</span><span class="mord mathit mtight">t</span><span class="mord mathit mtight">u</span><span class="mord mathit mtight">a</span><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">+</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">u</span><span class="mord mathit">m</span><span class="mbin">∗</span><span class="mopen">(</span><span class="mord mathrm">1</span><span class="mbin">−</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">1</span><span class="mord mathrm">5</span><span class="mbin">−</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">0</span><span class="mord mathrm">5</span><span class="mclose">)</span><span class="mbin">+</span><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="mord"><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathrm mtight">′</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mord mathit">s</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mbin">∗</span><span class="mopen">(</span><span class="mord mathrm">1</span><span class="mbin">−</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">0</span><span class="mord mathrm">5</span><span class="mclose">)</span></span></span></span></p>
+</li>
+</ol>
+<h3 id="數值示例（範圍限制）">數值示例（範圍限制）</h3>
+<p><img src="../../static/fees_formula.png" alt=""></img></p>
+<h3 id="分配瀑布（usdt）">分配瀑布（USDT）</h3>
+<p><img src="../../static/distribution_waterfall.png" alt=""></img></p>
+<h3 id="原生代幣-rch-回購">原生代幣 ($RCH) 回購</h3>
+<blockquote>
+<p><strong>將協議成功與代幣表現對齊</strong></p>
+</blockquote>
+<p>在 SOFA，我們相信<strong>最直接的方法是通過代幣回購來對齊用戶和持有者的激勵</strong>，$RCH 是我們的原生實用代幣。我們將<strong>承諾將所有協議收入專門用於 $RCH 回購</strong>，創造一個由協議使用推動的代幣價格增長的良性循環。</p>
+<p>隨著<strong>固定的通縮供應、系統化的釋放計劃和使用驅動的空投，$RCH 的長期價值增值主要取決於協議收入</strong>，而這本身就是採用成功的直接衡量標準。此外，隨著<strong>代幣空投僅限於協議用戶和支持者</strong>，我們可以確保他們能夠從 SOFA 的長期成功中獲得最大利益，忠實於 DeFi 的商業理想，即“回饋”真正的核心用戶和早期採用者。</p>
+<p><strong>代幣回購邏輯是 SOFA 協議智能合約的一個重要組成部分</strong>。協議管理員將定期觸發此過程，通過支持的 DEX 平台使用協議收入購買並銷毀 $RCH。被銷毀的 $RCH 將不再進入流通，隨著協議使用量的增加，$RCH 的總量將逐漸減少。</p>
+<p>我們的代幣經濟模型的更多細節將在下面的專門部分中介紹。</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="settlement.html" class="navigation navigation-prev " aria-label="Previous page: 鏈上結算考量">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="automator.html" class="navigation navigation-next " aria-label="Next page: 自動化器">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"協議費用","level":"1.6.5","depth":2,"next":{"title":"自動化器","level":"1.6.6","depth":2,"path":"technical-design/automator.md","ref":"technical-design/automator.md","articles":[]},"previous":{"title":"鏈上結算考量","level":"1.6.4","depth":2,"path":"technical-design/settlement.md","ref":"technical-design/settlement.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"zh-tw","gitbook":"*"},"file":{"path":"technical-design/fees.md","mtime":"2025-06-07T05:11:01.498Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"zh-tw"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

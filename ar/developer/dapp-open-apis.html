@@ -1,0 +1,2985 @@
+
+<!DOCTYPE HTML>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <title>واجهات برمجة التطبيقات المفتوحة لـ DAPP · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="subgraphs.html" />
+    
+    
+    <link rel="prev" href="marketmaker-open-apis.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="اكتب للبحث" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    نظرة عامة على SOFA.org
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    ابتكار الموجة التالية من DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 مرحبًا بكم في بروتوكولات SOFA 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    خارطة الطريق
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    دليل المستخدم
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    كسب
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    زيادة
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    مطالبة مكافآت $RCH الخاصة بك! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../technical-design/">
+            
+                <a href="../technical-design/">
+            
+                    
+                    التصميم الفني
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../technical-design/vault-classification.html">
+            
+                <a href="../technical-design/vault-classification.html">
+            
+                    
+                    تصنيف الخزائن
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../technical-design/risk-prefer.html">
+            
+                <a href="../technical-design/risk-prefer.html">
+            
+                    
+                    تحديد تفضيل المخاطر الخاص بك
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../technical-design/oracle.html">
+            
+                <a href="../technical-design/oracle.html">
+            
+                    
+                    بناء الأوركل
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../technical-design/settlement.html">
+            
+                <a href="../technical-design/settlement.html">
+            
+                    
+                    اعتبارات التسوية على السلسلة
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../technical-design/fees.html">
+            
+                <a href="../technical-design/fees.html">
+            
+                    
+                    رسوم البروتوكول
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../technical-design/automator.html">
+            
+                <a href="../technical-design/automator.html">
+            
+                    
+                    المؤتمت
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    الأمان
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    برنامج مكافآت الأخطاء
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    إطار الحوكمة
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    الاحتياطات الخارجية وعوامل المخاطر
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    اقتصاديات الرموز
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    سيناريو افتراضي لارتفاع $RCH (LP + توزيعات جوائز تراكمية)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA نقاط
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    أسئلة شائعة حول SOFA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    وثائق المطورين
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="marketmaker-open-apis.html">
+            
+                <a href="marketmaker-open-apis.html">
+            
+                    
+                    واجهات برمجة التطبيقات المفتوحة لصانع السوق
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.2" data-path="dapp-open-apis.html">
+            
+                <a href="dapp-open-apis.html">
+            
+                    
+                    واجهات برمجة التطبيقات المفتوحة لـ DAPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="subgraphs.html">
+            
+                <a href="subgraphs.html">
+            
+                    
+                    الرسوم البيانية الفرعية
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="contracts.html">
+            
+                <a href="contracts.html">
+            
+                    
+                    عقود النشر
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="marketmaker-onboarding-process.html">
+            
+                <a href="marketmaker-onboarding-process.html">
+            
+                    
+                    عملية انضمام صانع السوق
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    روابط
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            نشرت مع HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >واجهات برمجة التطبيقات المفتوحة لـ DAPP</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="واجهات-برمجة-التطبيقات-المفتوحة-لـ-dapp">واجهات برمجة التطبيقات المفتوحة لـ DApp</h1>
+<p>تعتبر تطبيقاتنا الحالية على sofa.org ميزة حيوية في سير العمل وهي الطريقة الرئيسية التي يتفاعل بها المستخدمون مع بروتوكولات SOFA. ومع ذلك، نشجع المطورين الآخرين على تمكين الوصول والاتصال بـ SOFA من خلال تطبيقاتهم الخاصة أيضًا لتعظيم نمو نظامنا البيئي. نحن نعتبر هؤلاء شركاء "الوسيط" لدينا ونشجع الأطراف المهتمة على الاتصال بفريق SOFA للحصول على مزيد من المعلومات حول واجهات برمجة التطبيقات.</p>
+<h2 id="dnt">DNT</h2>
+<h3 id="استعلام-قائمة-rfq-الموصى-بها-لـ-dnt">استعلام قائمة RFQ الموصى بها لـ DNT</h3>
+<pre><code>GET /rfq/dnt/recommended-list
+</code></pre><p><strong>معلمات الإدخال</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>مطلوب</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>معلومات العقد</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>معرف السلسلة</td>
+</tr>
+</tbody>
+</table>
+<p><strong>معلمات الاستجابة</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 يشير إلى أن النتيجة المرجعة طبيعية</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>رسالة خطأ تم إرجاعها في حالة حدوث استثناء</td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>كما هو موضح أدناه</td>
+</tr>
+</tbody>
+</table>
+<p>كائن</p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>number</td>
+<td>معرف RFQ</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>معرف السلسلة</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>عنوان العقد</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>نوع المخاطر: محمي، محفوف بالمخاطر</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>العملة الأساسية</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>زوج العملات</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>عملة الاشتراك</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>السعر الأدنى</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>السعر الأعلى</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>مبلغ الشراء RFQ</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>number</td>
+<td>طابع زمن انتهاء الصلاحية (على سبيل المثال، 1672387200)</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>وقت تفعيل التسعير الحالي؛ يتم حساب وقت بدء الملاحظة التالي بناءً على هذه المنطق</td>
+</tr>
+<tr>
+<td>observationStart</td>
+<td>number</td>
+<td>الوقت المقدر لبدء الملاحظة للدخول والخروج بناءً على الطابع الزمني</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>معدل رسوم التداول والتسوية (اختياري)</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>معلومات القرض (اختياري)</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>سعر الرمز المطلوب لتحويل سعر RCH وحساب توزيع العملات (اختياري)</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>المبالغ المحسوبة (اختياري)</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>معلومات سنوية، متاحة للمنتجات غير المرتبطة بالزيادة (اختياري)</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>معلومات الاحتمالات، متاحة للمنتجات المرتبطة بالزيادة (اختياري)</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000, 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>مبلغ ضمان الصانع</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>إجمالي مبلغ الضمان (المأخذ + الصانع)</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRisk</td>
+<td>string</td>
+<td>مطلوب عند الضمان (اختياري)</td>
+</tr>
+<tr>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>حد رصيد الصانع</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
+<td>طابع زمن انتهاء الصلاحية (على سبيل المثال، 1672387200)</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>محفظة الصانع (اختياري)</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>التوقيع (اختياري)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>مثال الطلب</strong></p>
+<pre><code>GET rfq/dnt/recommended-list?vault=xxxxxx&amp;chainId=1
+</code></pre><p><strong>الاستجابة</strong></p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">"code"</span>:<span class="hljs-number">0</span>,
+    <span class="hljs-string">"message"</span>:<span class="hljs-string">""</span>,
+    <span class="hljs-string">"value"</span>:[
+        {
+            <span class="hljs-string">"rfqId"</span>:<span class="hljs-number">1233992</span>,
+            <span class="hljs-string">"riskType"</span>:<span class="hljs-string">"PROTECTED"</span>,
+            <span class="hljs-string">"forCcy"</span>:<span class="hljs-string">"BTC"</span>,
+            <span class="hljs-string">"expiry"</span>:<span class="hljs-number">1672387200</span>,
+            <span class="hljs-string">"lowerBarrier"</span>:<span class="hljs-number">18000</span>,
+            <span class="hljs-string">"upperBarrier"</span>:<span class="hljs-number">24000</span>,
+            <span class="hljs-string">"depositCcy"</span>:<span class="hljs-string">"BTC"</span>,
+            <span class="hljs-string">"depositAmount"</span>: <span class="hljs-number">0.05</span>,
+            <span class="hljs-string">"protectedApy"</span>:<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"deadline"</span>:<span class="hljs-number">1672279892</span>,
+            <span class="hljs-string">"recommended"</span>:<span class="hljs-literal">true</span>,
+            <span class="hljs-string">"quote"</span>:
+                {
+                    <span class="hljs-string">"rfqId"</span>:<span class="hljs-number">1233992</span>,
+                    <span class="hljs-string">"inRangeApy"</span>:<span class="hljs-number">0.25</span>,
+                    <span class="hljs-string">"tenor"</span>:<span class="hljs-number">7.9</span>,
+                    <span class="hljs-string">"fundingAmount"</span>:<span class="hljs-number">0.25</span>,
+                    <span class="hljs-string">"depositAmount"</span>:<span class="hljs-number">1</span>,
+                    <span class="hljs-string">"premiumCoin"</span>:<span class="hljs-string">"BTC"</span>,
+                    <span class="hljs-string">"premiumAmount"</span>:<span class="hljs-number">0.05</span>,
+                    <span class="hljs-string">"bookingQuantity"</span>:<span class="hljs-number">0.3</span>,
+                    <span class="hljs-string">"totalAmount"</span>:<span class="hljs-number">0.05</span>,
+                    <span class="hljs-string">"payoff"</span>:<span class="hljs-number">0.3</span>,
+                    <span class="hljs-string">"deadline"</span>:<span class="hljs-number">1672279892</span>,
+                    <span class="hljs-string">"signature"</span>:<span class="hljs-string">"dsdkksdsksdk"</span>
+                }
+
+        }
+    ]
+}
+</code></pre>
+<h3 id="استفسار-dnt">استفسار DNT</h3>
+<ul>
+<li>ملاحظات:<ul>
+<li>يرجى عدم تمرير عنوان محفظة المستخدم في طلب استفسار بسيط.</li>
+<li>يجب تمرير عنوان محفظة المستخدم فقط عند الاشتراك.</li>
+</ul>
+</li>
+</ul>
+<pre><code>GET /rfq/dnt/quote
+</code></pre><p><strong>معلمات الإدخال</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>مطلوب</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>معلومات العقد</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>معرف السلسلة</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>number</td>
+<td>الطابع الزمني الثانوي لتاريخ انتهاء الصلاحية، على سبيل المثال، 1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>السعر الأدنى</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>السعر الأعلى</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>true</td>
+<td>number</td>
+<td>مبلغ شراء RFQ</td>
+</tr>
+<tr>
+<td>inputApyDefinition</td>
+<td>true</td>
+<td>string</td>
+<td>الكود الأساسي هو Enum يشير إلى كيفية حساب APY المدخل: OptimusDefaultAPY، BinanceDntAPY، AaveLendingAPY</td>
+</tr>
+<tr>
+<td>protectedApy</td>
+<td>false</td>
+<td>number</td>
+<td>العائد السنوي المضمون (فارغ لـ RISKY، مطلوب لـ protected)</td>
+</tr>
+<tr>
+<td>fundingApy</td>
+<td>false</td>
+<td>number</td>
+<td>العائد السنوي لـ AAVE (فارغ لـ RISKY، مطلوب لـ protected)</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>false</td>
+<td>string</td>
+<td>معلومات عنوان المحفظة العامة للطالب</td>
+</tr>
+</tbody>
+</table>
+<p><strong>معلمات الاستجابة</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 يشير إلى أن نتيجة الإرجاع طبيعية</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>رسالة الخطأ المعادة في حالة حدوث استثناء</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>كما هو موضح أدناه</td>
+</tr>
+</tbody>
+</table>
+<p>الكائن</p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>number</td>
+<td>معرف RFQ</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>عنوان العقد</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>معرف السلسلة</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>نوع المخاطر: PROTECTED، RISKY</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>العملة الأساسية</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>زوج العملات</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>عملة الاشتراك</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>السعر الأدنى</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>السعر الأعلى</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>مبلغ شراء RFQ</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>number</td>
+<td>الطابع الزمني لانتهاء الصلاحية (على سبيل المثال، 1672387200)</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>وقت تفعيل التسعير الحالي؛ يتم حساب وقت بدء الملاحظة التالية بناءً على هذه المنطق</td>
+</tr>
+<tr>
+<td>observationStart</td>
+<td>number</td>
+<td>الوقت المقدر لبدء الملاحظة للدخول والخروج بناءً على الطابع الزمني</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>معدل رسوم التداول والتسوية (اختياري)</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>معلومات القرض (اختياري)</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>سعر الرمز المميز المطلوب لتحويل سعر RCH وحساب الإيجابيات (اختياري)</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>المبالغ المحسوبة (اختياري)</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>كائن</td>
+<td>معلومات سنوية، متاحة للمنتجات غير المتزايدة (اختياري)</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>كائن</td>
+<td>معلومات الاحتمالات، متاحة للمنتجات المتزايدة (اختياري)</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>كائن</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; quoteId</td>
+<td>رقم</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>قائمة[string]</td>
+<td>20000000000, 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>سلسلة</td>
+<td>مقدار ضمان الصانع</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>سلسلة</td>
+<td>إجمالي مقدار الضمان (المأخذ + الصانع)</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRisk</td>
+<td>سلسلة</td>
+<td>مطلوب عند الضمان (اختياري)</td>
+</tr>
+<tr>
+<td>&gt; makerBalanceThreshold</td>
+<td>سلسلة</td>
+<td>حد رصيد الصانع</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>رقم</td>
+<td>طابع زمني انتهاء الصلاحية (مثل، 1672387200)</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>سلسلة</td>
+<td>محفظة الصانع (اختياري)</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>سلسلة</td>
+<td>التوقيع (اختياري)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="احتمالية-الفوز-بـ-dnt">احتمالية الفوز بـ DNT</h3>
+<p>احتمالية البقاء ضمن الحدود حتى انتهاء الصلاحية</p>
+<pre><code>GET rfq/dnt/winning-probabilities
+</code></pre><p><strong>معلمات الإدخال</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>مطلوب</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>forCcy</td>
+<td>صحيح</td>
+<td>سلسلة</td>
+<td>العملة الأساسية</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>صحيح</td>
+<td>رقم</td>
+<td>طابع زمني من المستوى الثاني لتاريخ انتهاء الصلاحية، مثل، 1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>صحيح</td>
+<td>رقم</td>
+<td>السعر الأدنى</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>صحيح</td>
+<td>رقم</td>
+<td>السعر الأعلى</td>
+</tr>
+</tbody>
+</table>
+<p><strong>معلمات الاستجابة</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>عدد صحيح</td>
+<td>0 يشير إلى أن نتيجة الإرجاع طبيعية</td>
+</tr>
+<tr>
+<td>message</td>
+<td>سلسلة</td>
+<td>رسالة خطأ تم إرجاعها في حالة حدوث استثناء</td>
+</tr>
+<tr>
+<td>value</td>
+<td>قائمة[كائن]</td>
+<td>كما هو موضح أدناه</td>
+</tr>
+</tbody>
+</table>
+<p>كائن</p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>spotPrice</td>
+<td>رقم</td>
+<td>سعر السوق</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>رقم</td>
+<td></td>
+</tr>
+<tr>
+<td>probabilities</td>
+<td>كائن</td>
+<td>احتمال الفوز</td>
+</tr>
+</tbody>
+</table>
+<p><strong>مثال الطلب</strong></p>
+<pre><code>GET rfq/dnt/winning-probabilities?forCcy=BTC&amp;expiry=xxxx&amp;lowerBarrier=xxx&amp;upperBarrier=xxx
+</code></pre><p><strong>الاستجابة</strong></p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">"code"</span>:<span class="hljs-number">0</span>,
+    <span class="hljs-string">"message"</span>:<span class="hljs-string">""</span>,
+    <span class="hljs-string">"value"</span>: {
+        <span class="hljs-string">"spotPrice"</span>: <span class="hljs-number">62121</span>,
+        <span class="hljs-string">"timestamp"</span>: <span class="hljs-number">1727080594</span>,
+        <span class="hljs-string">"probabilities"</span>: {
+            <span class="hljs-string">"probDntStayInRange"</span>: <span class="hljs-number">0.4</span>,
+            <span class="hljs-string">"probBullTrendItmLowerStrike"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBullTrendItmUpperStrike"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBearTrendItmLowerStrike"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBearTrendItmUpperStrike"</span>: <span class="hljs-literal">null</span>
+        }
+    }
+}
+</code></pre>
+<h2 id="الاتجاه-الذكي">الاتجاه الذكي</h2>
+<h3 id="استعلام-قائمة-rfq-للاتجاه-الذكي-الموصى-به">استعلام قائمة RFQ للاتجاه الذكي الموصى به</h3>
+<pre><code>GET rfq/smart-trend/recommended-list
+</code></pre><p><strong>معلمات الإدخال</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>مطلوب</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>صحيح</td>
+<td>سلسلة</td>
+<td>معلومات العقد</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>صحيح</td>
+<td>عدد صحيح</td>
+<td>معرف السلسلة</td>
+</tr>
+</tbody>
+</table>
+<p><strong>معلمات الاستجابة</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>عدد صحيح</td>
+<td>0 يشير إلى أن نتيجة الإرجاع طبيعية</td>
+</tr>
+<tr>
+<td>message</td>
+<td>سلسلة</td>
+<td>رسالة الخطأ المعادة في حالة حدوث استثناء</td>
+</tr>
+<tr>
+<td>value</td>
+<td>قائمة[كائن]</td>
+<td>كما هو موضح أدناه</td>
+</tr>
+</tbody>
+</table>
+<p>كائن</p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>عدد</td>
+<td>معرف RFQ</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>عدد صحيح</td>
+<td>معرف السلسلة</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>سلسلة</td>
+<td>عنوان العقد</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>سلسلة</td>
+<td>نوع المخاطر: محمي، مخاطرة</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>سلسلة</td>
+<td>صعودي، هبوطي</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>سلسلة</td>
+<td>العملة الأساسية</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>سلسلة</td>
+<td>زوج العملات</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>سلسلة</td>
+<td>عملة الاشتراك</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>عدد</td>
+<td>السعر الأدنى</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>عدد</td>
+<td>السعر الأعلى</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>عدد</td>
+<td>مبلغ شراء RFQ</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>عدد</td>
+<td>طابع الزمن لانتهاء الصلاحية (مثل، 1672387200)</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>عدد</td>
+<td>وقت تفعيل التسعير الحالي؛ يتم حساب وقت بدء الملاحظة التالية بناءً على هذه المنطق</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>كائن</td>
+<td>معدل رسوم التداول والتسوية (اختياري)</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>كائن</td>
+<td>معلومات القرض (اختياري)</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>قائمة[كائن]</td>
+<td>سعر الرمز المطلوب لتحويل سعر RCH وحساب الإيجابيات (اختياري)</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>كائن</td>
+<td>المبالغ المحسوبة (اختياري)</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>كائن</td>
+<td>معلومات سنوية، متاحة للمنتجات غير المتزايدة (اختياري)</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>كائن</td>
+<td>معلومات الاحتمالات، متاحة للمنتجات المتزايدة (اختياري)</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>كائن</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>قائمة[سلسلة]</td>
+<td>20000000000، 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>مبلغ ضمان الصانع</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>إجمالي مبلغ الضمان (المأخذ + الصانع)</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRisk</td>
+<td>string</td>
+<td>مطلوب عند الضمان (اختياري)</td>
+</tr>
+<tr>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>حد رصيد الصانع</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
+<td>طابع زمني لانتهاء الصلاحية (مثل، 1672387200)</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>محفظة الصانع (اختياري)</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>التوقيع (اختياري)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>مثال على الطلب</strong></p>
+<pre><code>GET rfq/smart-trend/recommended-list?vault=xxxxxx
+</code></pre><h3 id="استفسار-الاتجاه-الذكي">استفسار الاتجاه الذكي</h3>
+<ul>
+<li>ملاحظات:<ul>
+<li>يرجى عدم تمرير عنوان محفظة المستخدم في طلب استفسار خالص.</li>
+<li>يجب تمرير عنوان محفظة المستخدم فقط عند الاشتراك.</li>
+</ul>
+</li>
+</ul>
+<pre><code>GET /rfq/smart-trend/quote
+</code></pre><p><strong>معلمات الإدخال</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>مطلوب</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>true</td>
+<td>string</td>
+<td>معلومات العقد</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>int</td>
+<td>معرف السلسلة</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>true</td>
+<td>number</td>
+<td>طابع زمني بالثواني لتاريخ انتهاء الصلاحية، مثل، 1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>السعر الأدنى</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>true</td>
+<td>number</td>
+<td>السعر الأعلى</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>true</td>
+<td>number</td>
+<td>مبلغ شراء RFQ</td>
+</tr>
+<tr>
+<td>inputApyDefinition</td>
+<td>true</td>
+<td>string</td>
+<td>الكود الأساسي هو Enum يشير إلى كيفية حساب APY المدخل: OptimusDefaultAPY، BinanceDntAPY، AaveLendingAPY</td>
+</tr>
+<tr>
+<td>protectedApy</td>
+<td>false</td>
+<td>number</td>
+<td>العائد السنوي المضمون (فارغ لـ RISKY، مطلوب لـ protected)</td>
+</tr>
+<tr>
+<td>fundingApy</td>
+<td>false</td>
+<td>number</td>
+<td>العائد السنوي لـ AAVE (فارغ لـ RISKY، مطلوب لـ protected)</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>false</td>
+<td>string</td>
+<td>معلومات عنوان المحفظة العامة للطالب للاستفسار</td>
+</tr>
+</tbody>
+</table>
+<p><strong>معلمات الاستجابة</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 يشير إلى أن نتيجة الإرجاع طبيعية</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>رسالة الخطأ المعادة في حالة حدوث استثناء</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>كما هو موضح أدناه</td>
+</tr>
+</tbody>
+</table>
+<p>كائن</p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>number</td>
+<td>معرف RFQ</td>
+</tr>
+<tr>
+<td>vault</td>
+<td>string</td>
+<td>عنوان العقد</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>int</td>
+<td>معرف السلسلة</td>
+</tr>
+<tr>
+<td>riskType</td>
+<td>string</td>
+<td>نوع المخاطر: محمي، محفوف بالمخاطر</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>string</td>
+<td>صعودي، هبوطي</td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>string</td>
+<td>العملة الأساسية</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>string</td>
+<td>زوج العملات</td>
+</tr>
+<tr>
+<td>depositCcy</td>
+<td>string</td>
+<td>عملة الاشتراك</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>number</td>
+<td>السعر الأدنى</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>number</td>
+<td>السعر الأعلى</td>
+</tr>
+<tr>
+<td>depositAmount</td>
+<td>number</td>
+<td>مبلغ شراء RFQ</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>number</td>
+<td>طابع زمني انتهاء الصلاحية (مثل، 1672387200)</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>وقت تفعيل التسعير الحالي؛ يتم حساب وقت بدء الملاحظة التالية بناءً على هذه المنطق</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>معدل رسوم التداول والتسوية (اختياري)</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>معلومات القرض (اختياري)</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>سعر الرمز المطلوب لتحويل سعر RCH وحساب الإهداء (اختياري)</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>المبالغ المحسوبة (اختياري)</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>معلومات سنوية، متاحة للمنتجات غير المتزايدة (اختياري)</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>معلومات الاحتمالات، متاحة للمنتجات المتزايدة (اختياري)</td>
+</tr>
+<tr>
+<td>quote</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; quoteId</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; anchorPrices</td>
+<td>list[string]</td>
+<td>20000000000، 30000000000</td>
+</tr>
+<tr>
+<td>&gt; makerCollateral</td>
+<td>string</td>
+<td>مبلغ ضمان الصانع</td>
+</tr>
+<tr>
+<td>&gt; totalCollateral</td>
+<td>string</td>
+<td>إجمالي مبلغ الضمان (المأخذ + الصانع)</td>
+</tr>
+<tr>
+<td>&gt; collateralAtRisk</td>
+<td>string</td>
+<td>مطلوب عند الضمان (اختياري)</td>
+</tr>
+<tr>
+<td>&gt; makerBalanceThreshold</td>
+<td>string</td>
+<td>حد رصيد الصانع</td>
+</tr>
+<tr>
+<td>&gt; deadline</td>
+<td>number</td>
+<td>طابع زمني انتهاء الصلاحية (مثل، 1672387200)</td>
+</tr>
+<tr>
+<td>&gt; makerWallet</td>
+<td>string</td>
+<td>محفظة الصانع (اختياري)</td>
+</tr>
+<tr>
+<td>&gt; signature</td>
+<td>string</td>
+<td>التوقيع (اختياري)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="احتمالية-الفوز-في-الاتجاه-الذكي">احتمالية الفوز في الاتجاه الذكي</h3>
+<p>احتمالية البقاء ضمن الحدود حتى انتهاء الصلاحية</p>
+<pre><code>GET rfq/smart-trend/winning-probabilities
+</code></pre><p><strong>معلمات الإدخال</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>مطلوب</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>forCcy</td>
+<td>صحيح</td>
+<td>سلسلة</td>
+<td>العملة الأساسية</td>
+</tr>
+<tr>
+<td>expiry</td>
+<td>صحيح</td>
+<td>رقم</td>
+<td>الطابع الزمني من المستوى الثاني لتاريخ انتهاء الصلاحية، على سبيل المثال، 1672387200</td>
+</tr>
+<tr>
+<td>lowerBarrier</td>
+<td>صحيح</td>
+<td>رقم</td>
+<td>السعر الأدنى</td>
+</tr>
+<tr>
+<td>upperBarrier</td>
+<td>صحيح</td>
+<td>رقم</td>
+<td>السعر الأعلى</td>
+</tr>
+</tbody>
+</table>
+<p><strong>معلمات الاستجابة</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>عدد صحيح</td>
+<td>0 يشير إلى أن نتيجة العودة طبيعية</td>
+</tr>
+<tr>
+<td>message</td>
+<td>سلسلة</td>
+<td>رسالة خطأ تم إرجاعها في حالة حدوث استثناء</td>
+</tr>
+<tr>
+<td>value</td>
+<td>قائمة[كائن]</td>
+<td>كما هو موضح أدناه</td>
+</tr>
+</tbody>
+</table>
+<p>كائن</p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>spotPrice</td>
+<td>رقم</td>
+<td>السعر الفوري</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>رقم</td>
+<td></td>
+</tr>
+<tr>
+<td>probabilities</td>
+<td>كائن</td>
+<td>احتمالية الفوز</td>
+</tr>
+</tbody>
+</table>
+<p><strong>مثال على الطلب</strong></p>
+<pre><code>GET rfq/smart-trend/winning-probabilities?forCcy=BTC&amp;expiry=xxxx&amp;lowerStrike=xxx&amp;upperStrike=xxx
+</code></pre><p><strong>الاستجابة</strong></p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">"code"</span>:<span class="hljs-number">0</span>,
+    <span class="hljs-string">"message"</span>:<span class="hljs-string">""</span>,
+    <span class="hljs-string">"value"</span>: {
+        <span class="hljs-string">"spotPrice"</span>: <span class="hljs-number">62121</span>,
+        <span class="hljs-string">"timestamp"</span>: <span class="hljs-number">1727080594</span>,
+        <span class="hljs-string">"probabilities"</span>: {
+            <span class="hljs-string">"probDntStayInRange"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBullTrendItmLowerStrike"</span>: <span class="hljs-number">0.4</span>,
+            <span class="hljs-string">"probBullTrendItmUpperStrike"</span>: <span class="hljs-number">0.4</span>,
+            <span class="hljs-string">"probBearTrendItmLowerStrike"</span>: <span class="hljs-number">0.6</span>,
+            <span class="hljs-string">"probBearTrendItmUpperStrike"</span>: <span class="hljs-number">0.6</span>,
+        }
+    }
+}
+</code></pre>
+<h2 id="الواجهة-العامة">الواجهة العامة</h2>
+<h3 id="حذف-rfq">حذف RFQ</h3>
+<p>احذف RFQ الذي تم تسجيله على السلسلة</p>
+<pre><code>POST rfq/remove
+</code></pre><p><strong>معلمات الإدخال</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>مطلوب</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rfqId</td>
+<td>صحيح</td>
+<td>رقم</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>مثال على الطلب</strong></p>
+<pre><code>{  
+"rfqId":123456  
+}
+</code></pre><p><strong>معلمات الاستجابة</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 يشير إلى أن نتيجة الإرجاع طبيعية</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>رسالة الخطأ المعادة في حالة حدوث استثناء</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="إشعار-المعاملة">إشعار المعاملة</h3>
+<pre><code>POST rfq/trade
+</code></pre><p><strong>معلمات الإدخال</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>مطلوب</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>quotes</td>
+<td>true</td>
+<td>list[object]</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; rfqId</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; quoteId</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; txId</td>
+<td>true</td>
+<td>string</td>
+<td>تجزئة المعاملة</td>
+</tr>
+<tr>
+<td>code</td>
+<td>false</td>
+<td>string</td>
+<td>رمز الدعوة</td>
+</tr>
+<tr>
+<td>walletType</td>
+<td>false</td>
+<td>string</td>
+<td>نوع المحفظة، مثل MetaMask، OKX Wallet، Coinbase، إلخ.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>مثال على الطلب</strong></p>
+<pre><code>{
+    "quotes": [
+        {
+            "rfqId": 123456,
+            "quoteId": 333,
+</code></pre><pre><code class="lang-json">            <span class="hljs-string">"txId"</span>: <span class="hljs-string">"adsswe"</span>
+        }
+    ],
+    <span class="hljs-string">"code"</span>: <span class="hljs-string">"adsswe"</span>
+}
+</code></pre>
+<p><strong>معلمات الاستجابة</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 يشير إلى أن نتيجة الإرجاع طبيعية</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>رسالة الخطأ المعادة في حالة حدوث استثناء</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="قائمة-الضربات">قائمة الضربات</h3>
+<pre><code>GET rfq/strike-list
+</code></pre><p><strong>معلمات الإدخال</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>مطلوب</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>indexPrice</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>forCcy</td>
+<td>false</td>
+<td>string</td>
+<td>لزوج تداول BTC-USDT، أدخل BTC هنا؛ إذا لم يتم توفيره، سيتم استخدام التكوين الافتراضي.</td>
+</tr>
+<tr>
+<td>domCcy</td>
+<td>false</td>
+<td>string</td>
+<td>لزوج تداول BTC-USDT، أدخل USDT هنا؛ إذا لم يتم توفيره، سيكون الافتراضي هو USDT.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>مثال على الطلب</strong></p>
+<pre><code>{  
+"indexPrice": 3750.8，  
+"forCcy": "WBTC",  
+}
+</code></pre><p><strong>معلمات الاستجابة</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strikes</td>
+<td>قائمة[رقم]</td>
+<td>قائمة أسعار التنفيذ الموصى بها افتراضيًا</td>
+</tr>
+</tbody>
+</table>
+<h3 id="قائمة-انتهاء-الصلاحية">قائمة انتهاء الصلاحية</h3>
+<pre><code>GET rfq/expiry-list
+</code></pre><p><strong>معلمات الإدخال</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>مطلوب</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vault</td>
+<td>صحيح</td>
+<td>سلسلة</td>
+<td>عنوان العقد</td>
+</tr>
+<tr>
+<td>chainId</td>
+<td>صحيح</td>
+<td>عدد صحيح</td>
+<td>معرف السلسلة</td>
+</tr>
+</tbody>
+</table>
+<p><strong>مثال على الطلب</strong></p>
+<pre><code>{  
+"vault": "XXXXXXXXXXXXXX",  
+"chainId": 1,  
+}
+</code></pre><p><strong>معلمات الاستجابة</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timestamp</td>
+<td>رقم</td>
+<td>الوقت الأساسي للبداية في طابع زمني بالثواني</td>
+</tr>
+<tr>
+<td>expiries</td>
+<td>قائمة[رقم]</td>
+<td>قائمة انتهاء الصلاحية المدعومة في طابع زمني بالثواني، مثل 1672387200</td>
+</tr>
+</tbody>
+</table>
+<h3 id="aave-apy">Aave apy</h3>
+<pre><code>GET rfq/aave-apy
+</code></pre><p><strong>معلمات الإدخال</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>مطلوب</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>صحيح</td>
+<td>رقم</td>
+<td></td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>صحيح</td>
+<td>سلسلة</td>
+<td>USDT</td>
+</tr>
+</tbody>
+</table>
+<p><strong>معلمات الاستجابة</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>رقم</td>
+<td>معرف السلسلة</td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>سلسلة</td>
+<td>عملة الإيداع</td>
+</tr>
+<tr>
+<td>avgApy</td>
+<td>سلسلة</td>
+<td>متوسط APY المسجل على السلسلة خلال الثلاثين يومًا الماضية</td>
+</tr>
+<tr>
+<td>currentApy</td>
+<td>سلسلة</td>
+<td>أحدث APY من AAVE</td>
+</tr>
+<tr>
+<td>apyUsed</td>
+<td>سلسلة</td>
+<td>APY المستخدم فعليًا في SofaServer لتقدير دخل الفائدة المستقبلي</td>
+</tr>
+<tr>
+<td>apyDefinition</td>
+<td>سلسلة</td>
+<td>تعريف الحساب المتعلق بـ APY</td>
+</tr>
+</tbody>
+</table>
+<p><strong>مثال على الاستجابة</strong></p>
+<pre><code>{  
+"chainId": 1,  
+"ccy":"USDT",  
+"avgApy":"0.23442",  
+"currentApy":"0.23442",  
+"apyUsed":"0.23442",  
+"apyDefinition":"AAVE_LENDING_APY"  
+}
+</code></pre><h3 id="apy">Apy</h3>
+<pre><code>GET rfq/apy
+</code></pre><p><strong>معلمات الإدخال</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>مطلوب</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>true</td>
+<td>string</td>
+<td>USDT</td>
+</tr>
+<tr>
+<td>apyDefinition</td>
+<td>false</td>
+<td>string</td>
+<td>تعريف الحساب المتعلق بـ APY؛ الافتراضي هو AaveLendingApy</td>
+</tr>
+</tbody>
+</table>
+<p><strong>معلمات الاستجابة</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>number</td>
+<td>معرف السلسلة</td>
+</tr>
+<tr>
+<td>ccy</td>
+<td>string</td>
+<td>عملة الإيداع</td>
+</tr>
+<tr>
+<td>avgApy</td>
+<td>string</td>
+<td>متوسط APY المسجل على السلسلة خلال الثلاثين يومًا الماضية</td>
+</tr>
+<tr>
+<td>currentApy</td>
+<td>string</td>
+<td>أحدث APY</td>
+</tr>
+<tr>
+<td>apyUsed</td>
+<td>string</td>
+<td>APY المستخدم فعليًا في SofaServer لتقدير دخل الفائدة المستقبلي</td>
+</tr>
+<tr>
+<td>apyDefinition</td>
+<td>string</td>
+<td>تعريف الحساب المتعلق بـ APY</td>
+</tr>
+</tbody>
+</table>
+<p><strong>مثال على الاستجابة</strong></p>
+<pre><code>{  
+"chainId": 1,  
+"ccy":"USDT",  
+"avgApy":"0.23442",  
+"currentApy":"0.23442",  
+"apyUsed":"0.23442",  
+"apyDefinition":"AAVE_LENDING_APY"  
+}
+</code></pre><h3 id="الحصول-على-مراكز-المحفظة">الحصول على مراكز المحفظة</h3>
+<pre><code>POST /rfq/position-list
+</code></pre><p><strong>معلمات الإدخال</strong></p>
+<p>| <strong>اسم الحقل</strong> | <strong>مطلوب</strong> | <strong>النوع</strong> | <strong>الوصف</strong> |</p>
+<p>| --- | --- | --- | --- |
+| chainId | true | Int |  |
+| vaults | false | list[string] | مجموعة من عناوين العقود؛ إذا لم يتم تقديمها، سيتم استعلام جميع العقود. |
+| claimed | false | boolean | ما إذا تم استردادها؛ إذا لم يتم تقديمها، سيتم استعلام مواقع جميع الحالات. |
+| expired | false | boolean | ما إذا كانت قد انتهت؛ إذا لم يتم تقديمها، سيتم استعلام مواقع جميع الحالات. |
+| concealed | false | boolean | ما إذا كانت مخفية؛ إذا لم يتم تقديمها، سيتم استعلام مواقع جميع الحالات. |
+| positiveReturn | false | boolean | ما إذا كانت قيمة الاسترداد أكبر من 0؛ إذا لم يتم تقديمها، سيتم استعلام جميع المواقع. |
+| positiveProfit | false | boolean | ما إذا كانت العائدات تتجاوز رأس المال؛ إذا لم يتم تقديمها، سيتم استعلام جميع المواقع. |
+| limit | false | Int | عدد الاستعلامات؛ الافتراضي هو 100، والحد الأقصى هو 300. |
+| startDateTime | false | number | الطابع الزمني المقابل بالثواني (شامل)، على سبيل المثال، 1672387200. |
+| endDateTime | false | number | الطابع الزمني المقابل بالثواني (شامل)، على سبيل المثال، 1672387200. |
+| orderBy | false | string | "createdAt" أو "return"، طريقة الفرز: "createdAt" (وقت التحديث، الافتراضي) أو "return" (العوائد). |
+| orderDirection | false | string | "desc" أو "asc"، الافتراضي هو "desc" (ترتيب تنازلي). |
+| wallet | false | string | عنوان المحفظة (إذا كان فارغًا، سيتم استعلام جميع عناوين المحفظة). |</p>
+<p>ملاحظة: إذا تجاوز عدد النتائج 300 ضمن <code>startDateTime</code> و <code>endDateTime</code> المحددين، يمكن استخدام الاستطلاع (في هذه الحالة، يجب تعيين <code>orderBy</code> إلى <code>"createdAt"</code>) لمتابعة الاستعلام. يجب تعيين معلمة <code>endDateTime</code> لطلب الاستطلاع nth إلى <code>createdAt</code> للسجل الأخير من نتيجة الاستطلاع (n-1). بعد استرداد جميع البيانات، يجب إزالة التكرارات بناءً على حقل <code>id</code>.</p>
+<p><strong>معلمات الاستجابة</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>كما هو موضح أدناه</td>
+</tr>
+</tbody>
+</table>
+<p>كائن</p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>معرف المنتج المقابل للموقع (يتطابق مع <code>productId</code> في بيانات The Graph). هذا المعرف فريد ضمن بُعد السلسلة + الخزنة ويمكن استخدامه لاستعلام أرصدة المواقع.</td>
+</tr>
+<tr>
+<td>positionId</td>
+<td>string</td>
+<td>معرف الموقع، والذي يكون فريدًا ضمن بُعد السلسلة.</td>
+</tr>
+<tr>
+<td>product</td>
+<td>object</td>
+<td>معلومات المنتج.</td>
+</tr>
+<tr>
+<td>wallet</td>
+<td>string</td>
+<td>عنوان المحفظة.</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>number</td>
+<td>الطابع الزمني المقابل بالثواني، على سبيل المثال، 1672387200.</td>
+</tr>
+<tr>
+<td>updatedAt</td>
+<td>number</td>
+<td>الطابع الزمني المقابل بالثواني، على سبيل المثال، 1672387200.</td>
+</tr>
+<tr>
+<td>claimed</td>
+<td>boolean</td>
+<td>ما إذا تم استرداد الموقع.</td>
+</tr>
+<tr>
+<td>takerAllocationRate</td>
+<td>number</td>
+<td>بناءً على وقت الحساب، يقدر النسبة التي يمكن للمالك أخذها من مجموعة الرهانات. قبل انتهاء الصلاحية، هذه قيمة تقديرية.</td>
+</tr>
+<tr>
+<td>triggerTime</td>
+<td>number</td>
+<td>بالنسبة لـ Rangebound، أول وقت اختراق؛ بالنسبة لـ non-Rangebound، وقت التسوية، بالثواني.</td>
+</tr>
+<tr>
+<td>triggerPrice</td>
+<td>number</td>
+<td>بالنسبة لـ Rangebound، أول سعر اختراق؛ بالنسبة لـ non-Rangebound، سعر التسوية.</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>معدل الرسوم.</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>معلومات القرض (اختياري).</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>أسعار الرموز المطلوبة لتحويل سعر RCH وحساب توزيع العملات.</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>المبالغ المحسوبة.</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>معلومات سنوية، متاحة للمنتجات غير المرتبطة بـ Surge.</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>معلومات الاحتمالات، متاحة للمنتجات المرتبطة بـ Surge.</td>
+</tr>
+<tr>
+<td>claimParams</td>
+<td>object</td>
+<td>معلومات معلمات المطالبة.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>مثال على الاستجابة</strong></p>
+<pre><code>{
+    "value": [{
+        ...
+    }]
+}
+</code></pre><h3 id="الحصول-على-معاملات-المحفظة">الحصول على معاملات المحفظة</h3>
+<pre><code>POST /rfq/transaction-list
+</code></pre><p><strong>معلمات الإدخال</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>مطلوب</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>true</td>
+<td>Int</td>
+<td></td>
+</tr>
+<tr>
+<td>vaults</td>
+<td>false</td>
+<td>list[string]</td>
+<td>مجموعة من عناوين العقود؛ إذا لم يتم توفيرها، سيتم استعلام جميع العقود.</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>false</td>
+<td>Int</td>
+<td>عدد الاستعلامات؛ الافتراضي هو 100، والحد الأقصى هو 300.</td>
+</tr>
+<tr>
+<td>startDateTime</td>
+<td>false</td>
+<td>number</td>
+<td>الطابع الزمني المقابل بالثواني (شامل)، على سبيل المثال، 1672387200.</td>
+</tr>
+<tr>
+<td>endDateTime</td>
+<td>false</td>
+<td>number</td>
+<td>الطابع الزمني المقابل بالثواني (شامل)، على سبيل المثال، 1672387200.</td>
+</tr>
+<tr>
+<td>orderDirection</td>
+<td>false</td>
+<td>string</td>
+<td>"desc" أو "asc"، الافتراضي هو "desc" (ترتيب تنازلي).</td>
+</tr>
+<tr>
+<td>taker</td>
+<td>false</td>
+<td>string</td>
+<td>عنوان محفظة المتلقي</td>
+</tr>
+<tr>
+<td>maker</td>
+<td>false</td>
+<td>string</td>
+<td>عنوان محفظة الصانع</td>
+</tr>
+<tr>
+<td>claimParams</td>
+<td>false</td>
+<td>object</td>
+<td>معلمات الاسترداد، المقابلة لحقل claimParams في بيانات قائمة المراكز.</td>
+</tr>
+<tr>
+<td>hash</td>
+<td>false</td>
+<td>string</td>
+<td>تجزئة المعاملة</td>
+</tr>
+</tbody>
+</table>
+<p>ملاحظة: يمكن استخدام معلمات المتلقي، الصانع، وclaimParams لاستعلام مشترك للعثور على سجلات التجارة المقابلة لمركز (قد يتوافق المركز مع عدة تجارات) (ليس من الضروري وجود جميع المعلمات).
+إذا تجاوز عدد النتائج 300 ضمن <code>startDateTime</code> و<code>endDateTime</code> المحددين، يمكن استخدام الاستطلاع (في هذه الحالة، يجب تعيين <code>orderBy</code> إلى <code>"createdAt"</code>) لمتابعة الاستعلام. يجب تعيين معلمة <code>endDateTime</code> لطلب الاستطلاع nth إلى <code>createdAt</code> للسجل الأخير من نتيجة الاستطلاع (n-1). بعد استرداد جميع البيانات، يجب إزالة التكرارات بناءً على حقل <code>id</code>.</p>
+<p><strong>معلمات الاستجابة</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>كما هو موضح أدناه</td>
+</tr>
+</tbody>
+</table>
+<p>كائن</p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>hash</td>
+<td>string</td>
+<td>تجزئة المعاملة</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>string</td>
+<td>عنوان محفظة المشتري.</td>
+</tr>
+<tr>
+<td>makerWallet</td>
+<td>string</td>
+<td>عنوان محفظة البائع.</td>
+</tr>
+<tr>
+<td>product</td>
+<td>object</td>
+<td>معلومات المنتج.</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>number</td>
+<td>الطابع الزمني المقابل بالثواني، على سبيل المثال، 1672387200.</td>
+</tr>
+<tr>
+<td>takerAllocationRate</td>
+<td>number</td>
+<td>بناءً على وقت الحساب، يقدر النسبة التي يمكن للمالك أخذها من مجموعة الرهانات. قبل انتهاء الصلاحية، هذه قيمة تقديرية.</td>
+</tr>
+<tr>
+<td>triggerTime</td>
+<td>number</td>
+<td>بالنسبة للحدود، أول وقت للاختراق؛ بالنسبة لغير الحدود، وقت التسوية، بالثواني.</td>
+</tr>
+<tr>
+<td>triggerPrice</td>
+<td>number</td>
+<td>بالنسبة للحدود، أول سعر للاختراق؛ بالنسبة لغير الحدود، سعر التسوية.</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>معدل الرسوم.</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>معلومات القرض (اختياري).</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>أسعار الرموز المطلوبة لتحويل سعر RCH وحساب توزيع الجوائز.</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>المبالغ المحسوبة.</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>معلومات سنوية، متاحة للمنتجات غير المتزايدة.</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>معلومات الاحتمالات، متاحة للمنتجات المتزايدة.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>مثال على الاستجابة</strong></p>
+<pre><code>{
+    "value": [{
+        ...
+    }]
+}
+</code></pre><h3 id="إخفاء-مراكز-الخسارة">إخفاء مراكز الخسارة</h3>
+<pre><code>POST rfq/position/conceal
+</code></pre><p><strong>معلمات الإدخال</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>مطلوب</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>صحيح</td>
+<td>int</td>
+<td>معرف السلسلة</td>
+</tr>
+<tr>
+<td>positionIds</td>
+<td>صحيح</td>
+<td>List[string]</td>
+<td>قائمة معرفات المواقع، حتى 20</td>
+</tr>
+</tbody>
+</table>
+<p><strong>مثال على الطلب</strong></p>
+<pre><code>{
+    "positionIds": [
+        "aaaa","bbbb"
+    ],
+    "chainId": 1
+}
+</code></pre><p><strong>معلمات الاستجابة</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>0 يشير إلى أن النتيجة المرجعة طبيعية</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>رسالة خطأ تم إرجاعها في حالة حدوث استثناء</td>
+</tr>
+<tr>
+<td>value</td>
+<td>object</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="الحصول-على-المعاملات-المعلقة">الحصول على المعاملات المعلقة</h3>
+<p>هذا يهدف بشكل أساسي إلى معالجة مشكلة مزامنة بيانات المواقع الأساسية. قد تختفي البيانات المسترجعة هنا (بسبب منافسة تفرع blockchain).</p>
+<pre><code>POST rfq/transactions/pending
+</code></pre><p><strong>معلمات الإدخال</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>مطلوب</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chainId</td>
+<td>صحيح</td>
+<td>Int</td>
+<td></td>
+</tr>
+<tr>
+<td>vaults</td>
+<td>غير صحيح</td>
+<td>list[string]</td>
+<td>مجموعة من عناوين العقود؛ إذا لم يتم توفيرها، سيتم استعلام جميع العقود.</td>
+</tr>
+<tr>
+<td>taker</td>
+<td>غير صحيح</td>
+<td>string</td>
+<td>عنوان محفظة المشتري</td>
+</tr>
+<tr>
+<td>maker</td>
+<td>غير صحيح</td>
+<td>string</td>
+<td>عنوان محفظة البائع</td>
+</tr>
+</tbody>
+</table>
+<p><strong>معلمات الاستجابة</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>كما هو موضح أدناه</td>
+</tr>
+</tbody>
+</table>
+<p>كائن</p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>hash</td>
+<td>string</td>
+<td>هاش المعاملة</td>
+</tr>
+<tr>
+<td>takerWallet</td>
+<td>string</td>
+<td>عنوان محفظة المشتري.</td>
+</tr>
+<tr>
+<td>makerWallet</td>
+<td>string</td>
+<td>عنوان محفظة البائع.</td>
+</tr>
+<tr>
+<td>product</td>
+<td>object</td>
+<td>معلومات المنتج.</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>number</td>
+<td>الطابع الزمني المقابل بالثواني، مثل 1672387200.</td>
+</tr>
+<tr>
+<td>takerAllocationRate</td>
+<td>number</td>
+<td>بناءً على وقت الحساب، يقدر النسبة التي يمكن للمالك أخذها من مجموعة الرهانات. قبل انتهاء الصلاحية، هذه قيمة تقديرية.</td>
+</tr>
+<tr>
+<td>triggerTime</td>
+<td>number</td>
+<td>بالنسبة للحدود، أول وقت للاختراق؛ بالنسبة لغير الحدود، وقت التسوية، بالثواني.</td>
+</tr>
+<tr>
+<td>triggerPrice</td>
+<td>number</td>
+<td>بالنسبة للحدود، أول سعر للاختراق؛ بالنسبة لغير الحدود، سعر التسوية.</td>
+</tr>
+<tr>
+<td>feeRate</td>
+<td>object</td>
+<td>معدل الرسوم.</td>
+</tr>
+<tr>
+<td>leverageInfo</td>
+<td>object</td>
+<td>معلومات القرض (اختياري).</td>
+</tr>
+<tr>
+<td>relevantDollarPrices</td>
+<td>list[object]</td>
+<td>أسعار الرموز المطلوبة لتحويل سعر RCH وحساب الإيجابيات.</td>
+</tr>
+<tr>
+<td>amounts</td>
+<td>object</td>
+<td>المبالغ المحسوبة.</td>
+</tr>
+<tr>
+<td>apyInfo</td>
+<td>object</td>
+<td>معلومات سنوية، متاحة للمنتجات غير المتزايدة.</td>
+</tr>
+<tr>
+<td>oddsInfo</td>
+<td>object</td>
+<td>معلومات الاحتمالات، متاحة للمنتجات المتزايدة.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="احصل-على-تاريخ-توزيع-rch">احصل على تاريخ توزيع RCH</h3>
+<pre><code>GET rfq/airdrop/history
+</code></pre><p><strong>معلمات الإدخال</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>مطلوب</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wallet</td>
+<td>true</td>
+<td>string</td>
+<td>عنوان المحفظة</td>
+</tr>
+<tr>
+<td>startDateTime</td>
+<td>true</td>
+<td>number</td>
+<td>الطابع الزمني المقابل بالثواني (شامل)، على سبيل المثال، 1672387200.</td>
+</tr>
+<tr>
+<td>endDateTime</td>
+<td>true</td>
+<td>number</td>
+<td>الطابع الزمني المقابل بالثواني (شامل)، على سبيل المثال، 1672387200.</td>
+</tr>
+<tr>
+<td>orderBy</td>
+<td>false</td>
+<td>string</td>
+<td>"dateTime" أو "rch"، طريقة الفرز: "dateTime" (وقت الإيصال، الافتراضي) أو "rch" (المبلغ).</td>
+</tr>
+<tr>
+<td>orderDirection</td>
+<td>false</td>
+<td>string</td>
+<td>"desc" أو "asc"، الافتراضي هو "desc" (ترتيب تنازلي).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>معلمات الاستجابة</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>list[object]</td>
+<td>كما هو موضح أدناه</td>
+</tr>
+</tbody>
+</table>
+<p>كائن</p>
+<table>
+<thead>
+<tr>
+<th><strong>اسم الحقل</strong></th>
+<th><strong>النوع</strong></th>
+<th><strong>الوصف</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dateTime</td>
+<td>long</td>
+<td>الطابع الزمني الحالي بالثواني، على سبيل المثال، 1672387200.</td>
+</tr>
+<tr>
+<td>wallet</td>
+<td>string</td>
+<td>عنوان المحفظة</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>string</td>
+<td>حجم التداول</td>
+</tr>
+<tr>
+<td>rch</td>
+<td>string</td>
+<td>مقدار الإيصال، القيمة الخام، تحتاج إلى القسمة على 1e18</td>
+</tr>
+<tr>
+<td>merkleProof</td>
+<td>string</td>
+<td>دليل ميركل</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="marketmaker-open-apis.html" class="navigation navigation-prev " aria-label="Previous page: واجهات برمجة التطبيقات المفتوحة لصانع السوق">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="subgraphs.html" class="navigation navigation-next " aria-label="Next page: الرسوم البيانية الفرعية">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"واجهات برمجة التطبيقات المفتوحة لـ DAPP","level":"1.11.2","depth":2,"next":{"title":"الرسوم البيانية الفرعية","level":"1.11.3","depth":2,"path":"developer/subgraphs.md","ref":"developer/subgraphs.md","articles":[]},"previous":{"title":"واجهات برمجة التطبيقات المفتوحة لصانع السوق","level":"1.11.1","depth":2,"path":"developer/marketmaker-open-apis.md","ref":"developer/marketmaker-open-apis.md","articles":[]},"dir":"rtl"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"ar","gitbook":"*"},"file":{"path":"developer/dapp-open-apis.md","mtime":"2025-06-09T07:18:17.813Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"ar"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

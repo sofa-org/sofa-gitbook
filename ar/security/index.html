@@ -1,0 +1,715 @@
+
+<!DOCTYPE HTML>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <title>الأمان · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="bug-bounty.html" />
+    
+    
+    <link rel="prev" href="../technical-design/automator.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="اكتب للبحث" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    نظرة عامة على SOFA.org
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    ابتكار الموجة التالية من DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 مرحبًا بكم في بروتوكولات SOFA 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    خارطة الطريق
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    دليل المستخدم
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    كسب
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    زيادة
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    مطالبة مكافآت $RCH الخاصة بك! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../technical-design/">
+            
+                <a href="../technical-design/">
+            
+                    
+                    التصميم الفني
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../technical-design/vault-classification.html">
+            
+                <a href="../technical-design/vault-classification.html">
+            
+                    
+                    تصنيف الخزائن
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../technical-design/risk-prefer.html">
+            
+                <a href="../technical-design/risk-prefer.html">
+            
+                    
+                    تحديد تفضيل المخاطر الخاص بك
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../technical-design/oracle.html">
+            
+                <a href="../technical-design/oracle.html">
+            
+                    
+                    بناء الأوركل
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../technical-design/settlement.html">
+            
+                <a href="../technical-design/settlement.html">
+            
+                    
+                    اعتبارات التسوية على السلسلة
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../technical-design/fees.html">
+            
+                <a href="../technical-design/fees.html">
+            
+                    
+                    رسوم البروتوكول
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../technical-design/automator.html">
+            
+                <a href="../technical-design/automator.html">
+            
+                    
+                    المؤتمت
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    الأمان
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="bug-bounty.html">
+            
+                <a href="bug-bounty.html">
+            
+                    
+                    برنامج مكافآت الأخطاء
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="governance.html">
+            
+                <a href="governance.html">
+            
+                    
+                    إطار الحوكمة
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="external.html">
+            
+                <a href="external.html">
+            
+                    
+                    الاحتياطات الخارجية وعوامل المخاطر
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    اقتصاديات الرموز
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    سيناريو افتراضي لارتفاع $RCH (LP + توزيعات جوائز تراكمية)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA نقاط
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    أسئلة شائعة حول SOFA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    وثائق المطورين
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    واجهات برمجة التطبيقات المفتوحة لصانع السوق
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    واجهات برمجة التطبيقات المفتوحة لـ DAPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    الرسوم البيانية الفرعية
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    عقود النشر
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    عملية انضمام صانع السوق
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    روابط
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            نشرت مع HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >الأمان</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="الأمان">الأمان</h1>
+<p>الأمان هو حجر الزاوية والأساس وراء أي منصة لامركزية. نحن نعرّف أمان البروتوكول بأنه يشمل سلامة الأصول، وحماية المعلومات الشخصية، وموثوقية العقود الذكية. استجابةً لهذه الاعتبارات، قمنا بتنفيذ سلسلة من تدابير الأمان الصارمة، بدءًا من تصميم العقود إلى مراقبة البروتوكول.</p>
+<h2 id="البساطة-تعني-أمانًا-أكبر">البساطة تعني أمانًا أكبر</h2>
+<p>تتبع العقود الذكية لـ SOFA، التي تحمل الوظائف الأساسية للمنصة، مبدأ "<strong>البساطة تعني أمانًا أكبر</strong>". يسعى هذا المبدأ لتجنب التعقيد غير الضروري لتقليل المخاطر الأمنية المحتملة. تم تصميم التفاعل بين العقود الذكية بدقة لضمان عملية منطقية سلسة وواضحة، مما يقلل من إمكانية الأخطاء والثغرات. علاوة على ذلك، <strong>جميع عقود البروتوكول الذكية مفتوحة المصدر وشفافة، مما يوفر مسارًا كاملاً قابلًا للتدقيق</strong> لأي مراقب من طرف ثالث.</p>
+<h2 id="آلية-الترقية">آلية الترقية</h2>
+<p>ستقوم جميع عقود Vault بالوراثة من عقود OpenZepplin القابلة للترقية. عند الموافقة على تصويت الحوكمة، <strong>يمكن ترقية العقود منطقيًا دون تغيير عنوان محفظة العقد لضمان سلامة الأصول</strong>. تتيح هذه الآلية إصلاح الثغرات وتحسين الوظائف مع الحد الأدنى من الاضطراب.</p>
+<h3 id="تدقيقات-متعددة-للعقود-الذكية">تدقيقات متعددة للعقود الذكية</h3>
+<p><strong>ستواصل SOFA السعي للحصول على تأكيدات تدقيق عقود ذكية احترافية من أفضل شركات الأمان في الصناعة</strong> لتحديد وإصلاح الثغرات الأمنية المحتملة. بحلول إطلاق المشروع، سيكون كود عقد SOFA قد خضع لعدة جولات من الفحوصات الصارمة لتلبية أعلى معايير تدقيق الأمان المتاحة. علاوة على ذلك، ستتكرر نفس عملية التدقيق الدقيقة عند أي ترقيات كبيرة للبروتوكول أو الوظائف.</p>
+<p>يمكنك العثور على تقارير التدقيق الخاصة بنا هنا.</p>
+<ul>
+<li><a href="https://github.com/zenith-security/reports/blob/main/reports/Audit%20Report%20-%20Sofa%20%28May%202024%29.pdf" target="_blank">Code4rena(Zenith)</a></li>
+<li><a href="https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf" target="_blank">Peckshield</a></li>
+<li><a href="https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf" target="_blank">SigmaPrime</a></li>
+<li><a href="https://github.com/zenith-security/reports/blob/main/reports/Audit%20Report%20-%20Sofa%20Automator%28Oct%202024%29.pdf" target="_blank">Automator audited by Code4rena(Zenith)</a></li>
+<li><a href="https://github.com/zenith-security/reports/blob/main/reports/Zenith%20Audit%20Report%20-%20Sofa%20Automator%202.0.pdf" target="_blank">Automator2.0 audited by Code4rena(Zenith)</a></li>
+<li><a href="https://reports.electisec.com/reports/01-2025-Sofa-Protocol" target="_blank">Automator2.0 &amp; Dual Currency audited by yAudit</a></li>
+</ul>
+<h2 id="مراقبة-على-مدار-الساعة-طوال-أيام-الأسبوع-للنشاطات-الشاذة">مراقبة على مدار الساعة طوال أيام الأسبوع للنشاطات الشاذة</h2>
+<p>لضمان سلامة الأصول بشكل مستمر، <strong>قامت SOFA بتنفيذ نظام مراقبة للنشاطات الشاذة على مدار الساعة طوال أيام الأسبوع</strong> لكامل البروتوكول. يمكن لهذا النظام اكتشاف والاستجابة لأنماط أو سلوكيات المعاملات غير العادية في الوقت الفعلي، مثل الهجمات الأمنية المحتملة أو تدفقات الأموال غير الطبيعية. عند اكتشاف التهديدات، يمكن لنظام المراقبة لدينا بسرعة تفعيل التنبيهات واتخاذ الخطوات اللازمة لمنع الضرر للبروتوكول.</p>
+<h2 id="مقاومة-الهجمات-اللامركزية">مقاومة الهجمات اللامركزية</h2>
+<p>بوصفها بروتوكول DeFi أصلي، تعمل SOFA على شبكة خوادم لامركزية، مما يعني أن هناك <strong>مخاطر قليلة من توقف النظام بسبب نقطة فشل واحدة</strong>. مع بنية البلوكشين الموزعة، يتم تكرار البيانات وتخزينها عبر عدة عقد، مما يعزز مرونة النظام ومقاومته للهجمات الإلكترونية.</p>
+<p>تقدم حلول الخوادم اللامركزية المزايا التالية مقارنة بخوادم البيانات التقليدية:</p>
+<ul>
+<li><strong>استقرار معزز</strong>: من خلال توزيع عقد الخدمة في جميع أنحاء العالم، يمكننا ضمان موثوقية عالية لمواقعنا وخدمات dApp، مما يوفر خدمات غير منقطعة لمستخدمي البروتوكول.</li>
+<li><strong>تحسين التوافر</strong>: تضمن البنية اللامركزية عدم وجود عقد مركزية يمكن أن تصبح عنق زجاجة أو نقاط فشل واحدة.</li>
+<li><strong>مقاومة الهجمات</strong>: يحتاج المجرمون إلى اختراق عدة عقد في وقت واحد للتأثير على الخدمة، مما يقلل بشكل كبير من فرصة النجاح ويعزز سلامة البروتوكول.</li>
+</ul>
+<h2 id="حماية-خصوصية-المستخدم">حماية خصوصية المستخدم</h2>
+<p>بالإضافة إلى التمسك بمبادئ اللامركزية لدينا، تُعتبر SOFA مؤيدة كبيرة لخصوصية المستخدم وحماية البيانات. <strong>البروتوكول لا يجمع أو يخزن أي معلومات شخصية يمكن استخدامها لتحديد هوية المستخدمين خارج عناوين محافظهم</strong>.</p>
+<p>من خلال تصميم عقود مدروس، والتحقق المهني من التدقيق، والمراقبة على مدار الساعة، والعمليات اللامركزية، تكرس SOFA جهودها لتوفير بيئة آمنة وموثوقة وتحمي الخصوصية لجميع مستخدمي DeFi.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../technical-design/automator.html" class="navigation navigation-prev " aria-label="Previous page: المؤتمت">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="bug-bounty.html" class="navigation navigation-next " aria-label="Next page: برنامج مكافآت الأخطاء">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"الأمان","level":"1.7","depth":1,"next":{"title":"برنامج مكافآت الأخطاء","level":"1.7.1","depth":2,"path":"security/bug-bounty.md","ref":"security/bug-bounty.md","articles":[]},"previous":{"title":"المؤتمت","level":"1.6.6","depth":2,"path":"technical-design/automator.md","ref":"technical-design/automator.md","articles":[]},"articles":[{"title":"برنامج مكافآت الأخطاء","level":"1.7.1","depth":2,"path":"security/bug-bounty.md","ref":"security/bug-bounty.md","articles":[]},{"title":"إطار الحوكمة","level":"1.7.2","depth":2,"path":"security/governance.md","ref":"security/governance.md","articles":[]},{"title":"الاحتياطات الخارجية وعوامل المخاطر","level":"1.7.3","depth":2,"path":"security/external.md","ref":"security/external.md","articles":[]}],"dir":"rtl"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"ar","gitbook":"*"},"file":{"path":"security/README.md","mtime":"2025-06-06T18:21:38.894Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"ar"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

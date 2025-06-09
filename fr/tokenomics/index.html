@@ -1,0 +1,811 @@
+
+<!DOCTYPE HTML>
+<html lang="fr" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Tokenomics · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="rch-scenario.html" />
+    
+    
+    <link rel="prev" href="../security/external.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Tapez pour rechercher" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Présentation de SOFA.org
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    Innover la prochaine vague de DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 Bienvenue dans les Protocoles SOFA 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    Feuille de route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user-guide/">
+            
+                <a href="../user-guide/">
+            
+                    
+                    Guide de l'utilisateur
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../user-guide/earn.html">
+            
+                <a href="../user-guide/earn.html">
+            
+                    
+                    Gagner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../user-guide/surge.html">
+            
+                <a href="../user-guide/surge.html">
+            
+                    
+                    Surge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../user-guide/claim.html">
+            
+                <a href="../user-guide/claim.html">
+            
+                    
+                    Réclamer vos récompenses $RCH ! 🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../technical-design/">
+            
+                <a href="../technical-design/">
+            
+                    
+                    Conception technique
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../technical-design/vault-classification.html">
+            
+                <a href="../technical-design/vault-classification.html">
+            
+                    
+                    Classification des coffres
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../technical-design/risk-prefer.html">
+            
+                <a href="../technical-design/risk-prefer.html">
+            
+                    
+                    Définir votre préférence de risque
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../technical-design/oracle.html">
+            
+                <a href="../technical-design/oracle.html">
+            
+                    
+                    Construction d'oracle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../technical-design/settlement.html">
+            
+                <a href="../technical-design/settlement.html">
+            
+                    
+                    Considérations sur le règlement en chaîne
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../technical-design/fees.html">
+            
+                <a href="../technical-design/fees.html">
+            
+                    
+                    Frais de protocole
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../technical-design/automator.html">
+            
+                <a href="../technical-design/automator.html">
+            
+                    
+                    Automatisateur
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    Sécurité
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    Programme de récompense pour bugs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    Cadre de gouvernance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    Contingences externes et facteurs de risque
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Tokenomics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="rch-scenario.html">
+            
+                <a href="rch-scenario.html">
+            
+                    
+                    Scénario hypothétique de flottement $RCH (LP + Airdrops cumulés)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    Points $SOFA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    FAQ SOFA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    Documentation pour les développeurs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    APIs ouvertes pour les market makers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    APIs ouvertes pour DAPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    Sous-graphes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    Contrats de déploiement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    Processus d'intégration des market makers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    Liens
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Publié avec HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Tokenomics</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tokenomics">Tokenomics</h1>
+<p>SOFA.org a méticuleusement conçu un modèle à double jeton pour faire fonctionner l'économie des tokens de l'écosystème. Le jeton utilitaire natif du protocole s'appelle $RCH, tandis que le jeton de gouvernance est judicieusement nommé $SOFA.</p>
+<p>Explorons l'écosystème dynamique de SOFA.org, alimenté par les tokens $RCH et $SOFA.</p>
+<h2 id="🤝-rencontrez-rch--le-jeton-utilitaire">🤝 <strong>Rencontrez $RCH : Le Jeton Utilitaire</strong></h2>
+<p>$RCH est le jeton principal de SOFA, et vous ne pouvez pas simplement l'acheter tôt ou l'obtenir des développeurs. Pour gagner des $RCH, vous devez utiliser les services de SOFA.org ou rejoindre des programmes de parrainage ultérieurs. Cela garantit que seuls les utilisateurs actifs en bénéficient, évitant les ventes rapides et nuisibles observées dans d'autres projets. Chaque jour, <strong>les utilisateurs qui effectuent des transactions sur SOFA.org reçoivent des $RCH en fonction de leur activité.</strong> Même les développeurs du projet n'ont aucune propriété de $RCH le jour 1 - à quel point est-ce JUSTE ? Cette méthode de lancement équitable garantit un succès à long terme et des avantages pour les véritables utilisateurs de la plateforme.</p>
+<p><strong>Offre Totale :</strong> Limitée à 37,000,000 $RCH.</p>
+<p><strong>Offre Pré-Mintée :</strong> 67 % (25 millions) verrouillés dans un pool de liquidité Uniswap avec ETH.</p>
+<p><strong>Offre Airdrop :</strong> 33 % libérés aux utilisateurs selon un calendrier fixe.</p>
+<p><strong>Utilisation des Revenus :</strong> Tous les revenus du protocole SOFA achètent et brûlent des $RCH de Uniswap.</p>
+<p><strong>Mécanisme Déflationniste :</strong> L'augmentation des transactions entraîne plus de brûlures de $RCH, réduisant l'offre et augmentant la valeur.</p>
+<p><strong>Valeur à Long Terme :</strong> Le prix de $RCH augmente avec l'utilisation du protocole, bénéficiant aux utilisateurs actifs et aux détenteurs.</p>
+<p>Au lancement du projet, <strong>67 % de $RCH (25 millions de tokens) sont pré-mintés et placés dans le pool V3 de Uniswap sur Ethereum avec ~725 ETH</strong> (~2,7 millions de dollars) comme pool de liquidité initial.</p>
+<p>Veuillez noter, <strong>cette liquidité initiale n'est possédée par personne</strong>. Après le dépôt dans le LP, <strong>les tokens LP Uniswap correspondants sont rapidement détruits, garantissant que le pool de liquidité initial du token ne peut jamais être retiré.</strong></p>
+<p>Cela garantit que la flottabilité de $RCH disponible sera finalement bien inférieure à ce qui était initialement verrouillé dans le LP, <strong>établissant ainsi un plancher effectif sur la valeur de $RCH à son prix initial.</strong></p>
+<h3 id="🪂-quelquun-a-t-il-dit-airdrops">🪂 Quelqu'un a-t-il dit Airdrops?!?!</h3>
+<p>De plus, <strong>les 33 % restants (12 millions de tokens) de $RCH seront airdropés aux utilisateurs de l'écosystème</strong> selon un calendrier de libération prédéterminé.</p>
+<p>Initialement, <strong>12,500 tokens de $RCH seront airdropés quotidiennement pendant les 180 premiers jours.</strong> Après cela, les montants airdropés diminueront de 20 % tous les 180 jours ad infinitum.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Jours après le Lancement</strong></th>
+<th><strong>Airdrop Quotidien</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>12,500</td>
+</tr>
+<tr>
+<td>180</td>
+<td>10,000</td>
+</tr>
+<tr>
+<td>360</td>
+<td>8,000</td>
+</tr>
+<tr>
+<td>540</td>
+<td>6,400</td>
+</tr>
+</tbody>
+</table>
+<p>| 720                   | 5,120             |
+| 900                   | 4,096             |
+| 1080                  | 3,276.8           |</p>
+<h3 id="📝autres-notes-sur-rch">📝Autres notes sur $RCH</h3>
+<p><strong>Réflexivité positive :</strong> Plus de transactions augmentent le prix de $RCH, rendant les airdrops plus précieux et encourageant davantage de transactions.</p>
+<p><strong>Mécanisme auto-correcteur :</strong> Si le prix de $RCH baisse, plus de jetons sont brûlés, stabilisant le prix jusqu'à ce que les transactions reprennent.</p>
+<p><strong>Pas de dumps à la sortie :</strong> Le lancement équitable de $RCH empêche les ventes massives soudaines puisque personne n'obtient $RCH au lancement.</p>
+<p><strong>Croissance future :</strong> De nouveaux projets DeFi peuvent rejoindre l'écosystème SOFA.org en tant que partenaires.</p>
+<h2 id="acquisition-de-jetons-rch-et-mathématiques-des-airdrops">Acquisition de jetons $RCH et mathématiques des airdrops</h2>
+<p><strong>Le meilleur moyen d'obtenir $RCH est de transiger</strong> et d'exécuter des transactions avec l'écosystème SOFA. Un montant fixe de $RCH sera airdropé quotidiennement à nos utilisateurs de protocole, avec <strong>les récompenses reçues réparties au prorata en fonction des volumes de transactions de l'utilisateur au cours de la journée</strong>.</p>
+<blockquote>
+<p>💰 RCH = (Prime exécutée par l'utilisateur (du jour) <em> [Poids du Vault]) / Prime totale pondérée du Vault gérée par SOFA (du jour) </em> 95% (Accès dApp)</p>
+<p>💰 Prime totale pondérée du Vault = (Prime totale gagnée <em> Poids de gain) + (Prime totale de Surge </em> Poids de Surge)</p>
+</blockquote>
+<h3 id="approximation-de-la-prime-doption">Approximation de la prime d'option</h3>
+<p><em>Veuillez vous assurer de lire la <a href="../technical-design/fees.html">section des frais de protocole</a> pour plus d'informations sur les calculs de prime.</em></p>
+<p>Pour les <strong>produits basés sur Earn</strong>, étant donné que la prime d'option sera financée par les économies d'intérêts de dépôt d'Aave, seule une <strong>petite partie du total de dépôt de l'utilisateur sera considérée comme 'prime'</strong> pour les calculs d'airdrop. En revanche, <strong>le montant total d'achat des produits Surge</strong> sera éligible à la considération, car il sera entièrement déployé dans des stratégies d'options sous-jacentes. Une estimation de prime <em>approximative</em> est la suivante :</p>
+<table>
+<thead>
+<tr>
+<th><strong>Protocole</strong></th>
+<th><strong>Prime (Approximation)</strong></th>
+<th><strong>Commentaire</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Earn</td>
+<td>(Taux d'épargne d'Aave – Rendement de base du produit) <em> Maturité (en jours) / 365 </em> Valeur de dépôt</td>
+<td>SOFA utilise seulement une partie des revenus d'intérêts d'Aave pour risquer en tant que prime d'option afin de maintenir un rendement de base minimum</td>
+</tr>
+<tr>
+<td>Surge</td>
+<td>Le montant total acheté</td>
+<td>L'ensemble de l'achat est dépensé comme une prime d'option pour spéculer sur de fortes hausses.</td>
+</tr>
+<tr>
+<td>Automator</td>
+<td>Min(takerCollateral, makerCollateral) de mintProducts</td>
+<td>takerCollateral = totalCollateral - makerCollateral</td>
+</tr>
+<tr>
+<td>Dual(CRV)</td>
+<td>makerCollateral</td>
+<td></td>
+</tr>
+<tr>
+<td>Dual(RCH, USDT, crvUSD)</td>
+<td>Rendements du staking RCH, AAVE, staking crvSUD / tradingFeeRate</td>
+</tr>
+</tbody>
+</table>
+<p>De plus, dans une tentative d'inciter les activités à travers les deux protocoles, nous avons inclus un <strong>Poids du Vault</strong> à la fin de la formule :</p>
+<p>Avant le 18/02/2025 à 8:00 UTC, ils sont fixés à <strong>15</strong> pour Earn, <strong>15</strong> pour Leverage Earn, <strong>1</strong> pour Surge, <strong>2</strong> pour RCH Surge et <strong>2</strong> pour Automator.</p>
+<p>2025/02/18 8:00 UTC - 2025/04/07 8:00 UTC, ils sont fixés à <strong>min(jours avant expiration, 20)</strong> pour Earn, <strong>min(jours avant expiration, 20)</strong> pour Leverage Earn, <strong>1</strong> pour Surge, <strong>2</strong> pour RCH Surge et <strong>abs(0.5 - takerCollateral / (takerCollateral + makerCollateral)) / 0.5 * 4</strong> pour Automator.</p>
+<p>Après cela, ils sont fixés à <strong>min(jours avant expiration, 20)</strong> pour Earn, <strong>min(jours avant expiration, 20)</strong> pour Leverage Earn, <strong>1</strong> pour Surge, <strong>2</strong> pour RCH Surge, <strong>abs(0.5 - takerCollateral / (takerCollateral + makerCollateral)) / 0.5 * 2</strong> pour Automator et <strong>2</strong> pour Dual.</p>
+<p><strong>15%</strong> de l'airdrop Automator sera facturé au RCH Deployer à des fins de brûlage de RCH. Enfin, un facteur d'ajustement universel final de <strong>95%</strong> est appliqué pour tenir compte de la réduction de l'airdrop payée au <a href="../INTRO.md">dApp broker</a>.</p>
+<p>À mesure que SOFA se développe et que des protocoles supplémentaires arrivent, vous pouvez apprécier à quel point cette variable sera importante pour stimuler le TVL, et cela va être l'un des paramètres vitaux qui peuvent être votés par nos détenteurs de jetons de gouvernance $SOFA.</p>
+<p><em>Remarque : Le système capture des instantanés quotidiens. Les jetons $RCH sont disponibles à la réclamation chaque jour à 08:00 UTC après l'exécution de votre transaction.</em></p>
+<h3 id="sofa-earn">SOFA Earn</h3>
+<ul>
+<li><p>SOFA Earn bénéficie du même poids d'airdrop que les autres produits Earn.</p>
+</li>
+<li><p>De plus, tous les RCH déposés dans SOFA Earn recevront une récompense de dépôt de 5% APR.</p>
+</li>
+<li><p>Chaque transaction dans le Vault associé (Mint/Burn/Harvest) déclenche le règlement des intérêts, entraînant des récompenses composées, de sorte que le rendement dépasse 5%.</p>
+</li>
+<li><p>Les récompenses de SOFA Earn seront distribuées quotidiennement par le biais d'airdrops.</p>
+</li>
+</ul>
+<h2 id="🤝-rencontrez-sofa--le-jeton-de-gouvernance">🤝 <strong>Rencontrez $SOFA : Le Jeton de Gouvernance</strong></h2>
+<p>Le <strong>jeton $SOFA est le jeton de gouvernance de l'écosystème SOFA.org</strong>. En tant qu'organisation technologique décentralisée, à but non lucratif et open-source, toutes les décisions au sein de l'écosystème SOFA.org sont déterminées par les votes des détenteurs de jetons $SOFA. <strong>En tant que jeton de gouvernance pur, $SOFA ne participe à aucun partage de bénéfices au sein de l'écosystème.</strong></p>
+<h2 id="🎤-la-voix-de-la-communauté">🎤 La Voix de la Communauté</h2>
+<p><strong>Sujets Relatifs aux Votes de Gouvernance :</strong></p>
+<ol>
+<li>Types de produits financiers à intégrer</li>
+<li>Détermination du panier éligible de garanties prises en charge (USDT, etc.)</li>
+<li>Admission de nouveaux protocoles partenaires dans l'écosystème SOFA.org</li>
+<li>Répartition % des airdrops quotidiens de $RCH entre les différents produits intégrés</li>
+<li>Répartition % des airdrops quotidiens de $RCH parmi les protocoles de l'écosystème</li>
+<li>Rythme des airdrops de $RCH</li>
+<li>Et d'autres décisions à venir à mesure que l'écosystème mûrit</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../security/external.html" class="navigation navigation-prev " aria-label="Previous page: Contingences externes et facteurs de risque">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="rch-scenario.html" class="navigation navigation-next " aria-label="Next page: Scénario hypothétique de flottement $RCH (LP + Airdrops cumulés)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Tokenomics","level":"1.8","depth":1,"next":{"title":"Scénario hypothétique de flottement $RCH (LP + Airdrops cumulés)","level":"1.8.1","depth":2,"path":"tokenomics/rch-scenario.md","ref":"tokenomics/rch-scenario.md","articles":[]},"previous":{"title":"Contingences externes et facteurs de risque","level":"1.7.3","depth":2,"path":"security/external.md","ref":"security/external.md","articles":[]},"articles":[{"title":"Scénario hypothétique de flottement $RCH (LP + Airdrops cumulés)","level":"1.8.1","depth":2,"path":"tokenomics/rch-scenario.md","ref":"tokenomics/rch-scenario.md","articles":[]}],"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"fr","gitbook":"*"},"file":{"path":"tokenomics/README.md","mtime":"2025-06-06T19:08:51.135Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"fr"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

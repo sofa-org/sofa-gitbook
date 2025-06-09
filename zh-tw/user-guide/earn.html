@@ -1,0 +1,778 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    <head>
+        <meta charset="UTF-8">
+        <title>賺取 · SOFA.org Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="SOFA.org">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="surge.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SOFA.org 概覽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../innovating/">
+            
+                <a href="../innovating/">
+            
+                    
+                    創新下一波 DeFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../protocols/">
+            
+                <a href="../protocols/">
+            
+                    
+                    🌏 歡迎來到 SOFA 協議 🌏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../roadmap/">
+            
+                <a href="../roadmap/">
+            
+                    
+                    路線圖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    用戶指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="earn.html">
+            
+                <a href="earn.html">
+            
+                    
+                    賺取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="surge.html">
+            
+                <a href="surge.html">
+            
+                    
+                    激增
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="claim.html">
+            
+                <a href="claim.html">
+            
+                    
+                    領取您的 $RCH 獎勵！🎁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../technical-design/">
+            
+                <a href="../technical-design/">
+            
+                    
+                    技術設計
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../technical-design/vault-classification.html">
+            
+                <a href="../technical-design/vault-classification.html">
+            
+                    
+                    保險庫分類
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../technical-design/risk-prefer.html">
+            
+                <a href="../technical-design/risk-prefer.html">
+            
+                    
+                    定義您的風險偏好
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../technical-design/oracle.html">
+            
+                <a href="../technical-design/oracle.html">
+            
+                    
+                    預言機構建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../technical-design/settlement.html">
+            
+                <a href="../technical-design/settlement.html">
+            
+                    
+                    鏈上結算考量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../technical-design/fees.html">
+            
+                <a href="../technical-design/fees.html">
+            
+                    
+                    協議費用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../technical-design/automator.html">
+            
+                <a href="../technical-design/automator.html">
+            
+                    
+                    自動化器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security/">
+            
+                <a href="../security/">
+            
+                    
+                    安全性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security/bug-bounty.html">
+            
+                <a href="../security/bug-bounty.html">
+            
+                    
+                    漏洞賞金計劃
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security/governance.html">
+            
+                <a href="../security/governance.html">
+            
+                    
+                    治理框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security/external.html">
+            
+                <a href="../security/external.html">
+            
+                    
+                    外部應急措施與風險因素
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tokenomics/">
+            
+                <a href="../tokenomics/">
+            
+                    
+                    代幣經濟學
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tokenomics/rch-scenario.html">
+            
+                <a href="../tokenomics/rch-scenario.html">
+            
+                    
+                    假設的 $RCH 流通情境 (LP + 累積空投)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../sofa-point/">
+            
+                <a href="../sofa-point/">
+            
+                    
+                    $SOFA 積分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    SOFA 常見問題
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../developer/">
+            
+                <a href="../developer/">
+            
+                    
+                    開發者文檔
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../developer/marketmaker-open-apis.html">
+            
+                <a href="../developer/marketmaker-open-apis.html">
+            
+                    
+                    做市商開放 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../developer/dapp-open-apis.html">
+            
+                <a href="../developer/dapp-open-apis.html">
+            
+                    
+                    DAPP 開放 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../developer/subgraphs.html">
+            
+                <a href="../developer/subgraphs.html">
+            
+                    
+                    子圖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../developer/contracts.html">
+            
+                <a href="../developer/contracts.html">
+            
+                    
+                    部署合約
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../developer/marketmaker-onboarding-process.html">
+            
+                <a href="../developer/marketmaker-onboarding-process.html">
+            
+                    
+                    做市商入駐流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../links/">
+            
+                <a href="../links/">
+            
+                    
+                    連結
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >賺取</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="賺取">賺取</h1>
+<h2 id="rangebound"><strong>Rangebound</strong></h2>
+<h3 id="步驟-1：選擇您的產品"><strong>步驟 1：選擇您的產品</strong></h3>
+<p>→ 導航到協議標籤並點擊賺取。
+→ 選擇 <strong>Rangebound</strong> 結構化產品。</p>
+<p>→ 選擇您偏好的基礎資產—BTC 或 ETH。</p>
+<p>→ 選擇為您選擇的資產列出的<strong>熱門交易</strong>之一。</p>
+<p><img src="../../static/Rw2ObN8mhoHykWx7xJduHjstsag.png" alt=""></img></p>
+<h3 id="步驟-2：查看交易詳情"><strong>步驟 2：查看交易詳情</strong></h3>
+<p>→ 彈出窗口將顯示所有相關的交易信息，包括結算日期、下限和上限、基礎收益、基礎+ RCH、潛在收益以及在各種情況下的潛在結果。</p>
+<p>→ 在<strong>存款金額</strong>框中輸入您想要的 USDT 金額
+→ 點擊<strong>存款</strong>
+→ 您的錢包將彈出確認窗口。</p>
+<p><img src="../../static/OobQbfpSpokzqBxylDYuQFgZsTf.png" alt=""></img></p>
+<p><strong>如果您希望自定義任何細節，請進行步驟 3。</strong></p>
+<h3 id="步驟-3：自定義您的交易"><strong>步驟 3：自定義您的交易</strong></h3>
+<p>→ 從賺取主頁或步驟 2 中提到的產品詳情頁面點擊<strong>自定義</strong>圖標</p>
+<p>→ 在自定義頁面上，您可以修改您的交易設置。選擇您想要的參數：</p>
+<p><strong>基礎收益</strong>
+<strong>到期日（即結算日期）</strong>
+<strong>下限價格 (B1) 和上限價格 (B2)</strong>
+<strong>存款金額</strong></p>
+<p>然後點擊<strong>請求報價</strong>。</p>
+<p>→ 設定參數後，點擊<strong>存款</strong>以繼續。</p>
+<p><img src="../../static/W9VVbd93fo8OaYxz699uGa3bsDd.png" alt=""></img></p>
+<h3 id="步驟-4：確認您的交易"><strong>步驟 4：確認您的交易</strong></h3>
+<p>當提示時，與以下窗口互動以確認交易：</p>
+<ol>
+<li><strong>簽名請求</strong>：首先會出現一個簽名請求窗口。點擊<strong>簽名</strong>以授權。</li>
+<li><strong>交易執行</strong>：簽名後，將出現確認窗口。點擊<strong>確認</strong>以完成交易。</li>
+</ol>
+<p>✅ 確保完成這兩個操作以成功執行您的交易。</p>
+<p><img src="../../static/Qbdbb1dHgo6wCVx0SYeuN4Dhsyc.png" alt=""></img></p>
+<p><img src="../../static/D6g0bGMRroELTZxO0JruvNvFsBc.png" alt=""></img></p>
+<h3 id="步驟-5：交易執行"><strong>步驟 5：交易執行</strong></h3>
+<p>→ 恭喜！您的交易已成功提交到鏈上。✅</p>
+<p><img src="../../static/GHHVbPI0royh5RxSOxHuYgtBsOe.png" alt=""></img></p>
+<h3 id="步驟-6：監控您的頭寸"><strong>步驟 6：監控您的頭寸</strong></h3>
+<p>→ 訪問<strong>頭寸</strong>標籤以查看交易執行後的交易詳情。</p>
+<p><img src="../../static/AgV8bAYbVotrzBxs0uauHKnOszg.png" alt=""></img></p>
+<p><img src="../../static/GDLhboxXDoQ7VGxjZAgupxnYsKc.png" alt=""></img></p>
+<h3 id="步驟-7：領取您的收益"><strong>步驟 7：領取您的收益</strong></h3>
+<p>→ 在結算（到期）日期，前往<strong>頭寸</strong>標籤，打開您的交易票據，點擊<strong>領取</strong>以接收您的收益。</p>
+<p><strong>注意：</strong></p>
+<p>對於賺取產品（有保障的），所有存入的金額將在 Aave 協議中進行質押以產生被動收益。此外，Aave 收益的一部分將保留為基礎收益，其餘部分將部署到期權策略中以產生潛在的上行收益。</p>
+<h2 id="牛市趨勢"><strong>牛市趨勢</strong></h2>
+<h3 id="步驟-1：選擇您的產品"><strong>步驟 1：選擇您的產品</strong></h3>
+<p>→ 導航到協議標籤並點擊賺取。</p>
+<p>→ 選擇 <strong>牛市趨勢</strong> 結構化產品。</p>
+<p>→ 選擇您偏好的基礎資產—BTC 或 ETH。</p>
+<p>→ 選擇為您選擇的資產列出的<strong>熱門交易</strong>之一。</p>
+<p><img src="../../static/Zxlnb2K2zoiuyoxjKAyu2Ocpskc.png" alt=""></img></p>
+<h3 id="步驟-2：查看交易詳情"><strong>步驟 2：查看交易詳情</strong></h3>
+<p>→ 彈出窗口將顯示所有相關的交易信息，包括結算日期、下限和上限行使價、基礎收益、基礎+ RCH、潛在收益以及在各種情況下的潛在結果。</p>
+<p>→ 在<strong>存款金額</strong>框中輸入您想要的 USDT 金額
+→ 點擊<strong>存款</strong>
+→ 您的錢包將彈出確認窗口。</p>
+<p><strong>如果您希望自定義任何細節，請進行步驟 3。</strong></p>
+<p><img src="../../static/L1XkbcRFMoFBeoxcW6nu2bLmscb.png" alt=""></img></p>
+<h3 id="步驟-3：自定義您的交易"><strong>步驟 3：自定義您的交易</strong></h3>
+<p>→ 從賺取主頁或步驟 2 中提到的產品詳情頁面點擊<strong>自定義</strong>圖標</p>
+<p>→ 在自定義頁面上，您可以修改您的交易設置。選擇您想要的參數：
+<strong>基礎收益</strong>
+<strong>到期日（即結算日期）</strong>
+<strong>下限行使價 (K1) 和上限行使價 (K2)</strong>
+<strong>存款金額</strong></p>
+<p>然後點擊<strong>請求報價</strong>。</p>
+<p>→ 設定參數後，點擊<strong>存款</strong>以繼續</p>
+<p><img src="../../static/WbHdbcj6foI3QTx0BmZuBQGSsAf.png" alt=""></img></p>
+<h3 id="步驟-4：確認您的交易"><strong>步驟 4：確認您的交易</strong></h3>
+<p>當提示時，與以下窗口互動以確認交易：</p>
+<ol>
+<li><strong>簽名請求</strong>：首先會出現一個簽名請求窗口。點擊<strong>簽名</strong>以授權。</li>
+<li><strong>交易執行</strong>：簽名後，將出現確認窗口。點擊<strong>確認</strong>以完成交易。</li>
+</ol>
+<p>✅ 確保完成這兩個操作以成功執行您的交易。</p>
+<p><img src="../../static/YqE3bsFF8o6RKGxGrDwu5to0s5b.png" alt=""></img></p>
+<p><img src="../../static/EncvbtyNco9nngxnLflu0Q0asdf.png" alt=""></img></p>
+<h3 id="步驟-5：交易執行"><strong>步驟 5：交易執行</strong></h3>
+<p>→ 恭喜！您的交易已成功提交到鏈上。✅</p>
+<p><img src="../../static/WsV9bT399ooDd4xMrjDuScz9seb.png" alt=""></img></p>
+<h3 id="步驟-6：監控您的頭寸"><strong>步驟 6：監控您的頭寸</strong></h3>
+<p>→ 訪問<strong>頭寸</strong>標籤以查看交易執行後的交易詳情。</p>
+<p><img src="../../static/TkaKbxeE6o9ifxxNLtiuoqbTsSe.png" alt=""></img></p>
+<p><img src="../../static/AGc2bUsKqoZMMexoBPPuTZnqsVb.png" alt=""></img></p>
+<h3 id="步驟-7：領取您的收益"><strong>步驟 7：領取您的收益</strong></h3>
+<p>→ 在結算（到期）日期，前往<strong>頭寸</strong>標籤，打開您的交易票據，點擊<strong>領取</strong>以接收您的收益。</p>
+<p><strong>注意：</strong></p>
+<blockquote>
+<p>對於賺取產品（有保障的），所有存入的金額將在 Aave 協議中進行質押以產生被動收益。此外，Aave 收益的一部分將保留為基礎收益，其餘部分將部署到期權策略中以產生潛在的上行收益。</p>
+</blockquote>
+<h2 id="熊市趨勢"><strong>熊市趨勢</strong></h2>
+<p>遵循與牛市趨勢產品相同的步驟。</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 用戶指南">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="surge.html" class="navigation navigation-next " aria-label="Next page: 激增">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"賺取","level":"1.5.1","depth":2,"next":{"title":"激增","level":"1.5.2","depth":2,"path":"user-guide/surge.md","ref":"user-guide/surge.md","articles":[]},"previous":{"title":"用戶指南","level":"1.5","depth":1,"path":"user-guide/README.md","ref":"user-guide/README.md","articles":[{"title":"賺取","level":"1.5.1","depth":2,"path":"user-guide/earn.md","ref":"user-guide/earn.md","articles":[]},{"title":"激增","level":"1.5.2","depth":2,"path":"user-guide/surge.md","ref":"user-guide/surge.md","articles":[]},{"title":"領取您的 $RCH 獎勵！🎁","level":"1.5.3","depth":2,"path":"user-guide/claim.md","ref":"user-guide/claim.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","language":"zh-tw","gitbook":"*"},"file":{"path":"user-guide/earn.md","mtime":"2025-06-07T05:12:52.625Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-06-09T08:06:39.639Z"},"basePath":"..","book":{"language":"zh-tw"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
