@@ -220,3 +220,12 @@
 | SUSDaBearTrendVault(ETH/sUSDa) | 0x46706780749bC41E7Ab99D13BC1B2a74Df40A7DA |
 | SUSDaBullTrendVault(BTC/sUSDa) | 0x5DcEFCa5207c58dCbcf41eF017D1D0EB42d83701 |
 | SUSDaBearTrendVault(BTC/sUSDa) | 0x4573382A9d101EB6DFa1C4B448f939c41fF3e81d |
+
+### USDC
+
+| Name                         | Adresse                                    |
+|------------------------------|--------------------------------------------|
+| USDCBullTrendVault(ETH/USDC) | 0x64bb275066E7275FB0803c3e617Ae3ab2A882fF3 |
+| USDCBearTrendVault(ETH/USDC) | 0x634B69cC4168Cfc1c366078FDeB874AfFBb478b5 |
+| USDCBullTrendVault(BTC/USDC) | 0x088dBBeEC1489c557f8D4fD6146E0590E303d7d9 |
+| USDCBearTrendVault(BTC/USDC) | 0xFFf0d064B1cbf5D4C97D0af56a73a4C7e31DFb0D |
