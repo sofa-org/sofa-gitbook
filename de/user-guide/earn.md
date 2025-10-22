@@ -1,5 +1,7 @@
 # Verdienen
 
+Gehe zu [Verdienen](https://dapp.sofa.org/products/customize?project=Earn)
+
 ## **Rangebound**
 
 ### **Schritt 1: Auswahl Ihres Produkts**
