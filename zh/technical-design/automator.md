@@ -1,6 +1,8 @@
 
 # Automator
 
+前往 [Automator](https://dapp.sofa.org/products?project=Automator)
+
 ## 介绍
 
 为了实现让大众民主化期权交易的使命，SOFA团队创建了**Automator**，为用户提供了一种直观的方式来被动赚取策略收益。通过利用被统称为**Optivisors**的策略管理者社区，用户可以参与他们喜欢的管理策略，以分享小部分收益作为回报。这种双赢模式将为存款人提供去中心化和链上访问，以便通过不断发展的社区认可的Optivisors基础来赚取各种高质量的回报。

@@ -1,5 +1,7 @@
 # Automator
 
+Allez à [Automator](https://dapp.sofa.org/products?project=Automator)
+
 ## Introduction
 
 Dans notre mission de démocratiser le trading d'options pour le grand public, l'équipe SOFA a créé **Automator** comme un moyen intuitif pour les utilisateurs de gagner des rendements de stratégie de manière passive. En s'appuyant sur une communauté de gestionnaires de stratégie, collectivement connus sous le nom de **Optivisors**, les utilisateurs peuvent participer à leurs stratégies gérées préférées en échange d'un petit frais de profit à partager. Ce modèle gagnant-gagnant offrira un accès décentralisé et sur chaîne aux déposants pour gagner une variété de rendements de haute qualité avec une base évolutive d'Optivisors reconnus par la communauté.

@@ -1,8 +1,10 @@
 # Liens
 
-- [Site officiel](https://sofa.org)
-  - [SOFA Earn](https://earn.sofa.org/products)
-  - [SOFA Surge](https://surge.sofa.org/products)
+- [Site officiel](https://www.sofa.org)
+  - [SOFA Earn](https://dapp.sofa.org/products/customize?project=Earn)
+  - [SOFA Surge](https://dapp.sofa.org/products/customize?project=Surge)
+  - [SOFA Dual](https://dapp.sofa.org/products/customize?project=Dual)
+  - [SOFA Automator](https://dapp.sofa.org/products?project=Automator)
 - [Twitter](https://x.com/SOFAorgDAO) 
 - [Discord](https://discord.gg/sofaorg) 
 - [Telegram](http://t.me/SOFAorg) 

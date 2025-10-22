@@ -1,5 +1,7 @@
 # 賺取
 
+前往 [Earn](https://dapp.sofa.org/products/customize?project=Earn)
+
 ## **Rangebound**
 
 ### **步驟 1：選擇您的產品**

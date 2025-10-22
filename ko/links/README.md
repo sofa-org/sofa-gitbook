@@ -1,8 +1,10 @@
 # 링크
 
-- [공식 웹사이트](https://sofa.org)
+- [공식 웹사이트](https://www.sofa.org)
   - [SOFA 수익](https://earn.sofa.org/products)
   - [SOFA 서지](https://surge.sofa.org/products)
+  - [SOFA 듀얼 투자](https://dapp.sofa.org/products/customize?project=Dual)
+  - [SOFA 자동화 투자 도구](https://dapp.sofa.org/products?project=Automator)
 - [트위터](https://x.com/SOFAorgDAO) 
 - [디스코드](https://discord.gg/sofaorg) 
 - [텔레그램](http://t.me/SOFAorg) 

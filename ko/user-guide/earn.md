@@ -1,5 +1,7 @@
 # Earn
 
+[Earn](https://dapp.sofa.org/products/customize?project=Earn)로 이동
+
 ## **Rangebound**
 
 ### **Step 1: 제품 선택하기**

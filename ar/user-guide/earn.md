@@ -1,5 +1,7 @@
 # كسب
 
+اذهب إلى [كسب](https://dapp.sofa.org/products/customize?project=Earn)
+
 ## **محدود النطاق**
 
 ### **الخطوة 1: اختيار منتجك**

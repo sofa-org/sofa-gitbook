@@ -1,5 +1,7 @@
 # Earn
 
+[Earn](https://dapp.sofa.org/products/customize?project=Earn) に移動
+
 ## **レンジバウンド**
 
 ### **ステップ 1: 商品の選択**

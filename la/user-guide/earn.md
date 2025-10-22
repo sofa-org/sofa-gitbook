@@ -1,5 +1,7 @@
 # Merere
 
+I ad [Merere](https://dapp.sofa.org/products/customize?project=Earn)
+
 ## **Limitatus**
 
 ### **Gradus 1: Productum Tuum Seligere**

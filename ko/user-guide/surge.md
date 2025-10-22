@@ -1,5 +1,7 @@
 # 서지
 
+[서지](https://dapp.sofa.org/products/customize?project=Surge)로 이동
+
 ## **범위 제한**
 
 ### **1단계: 제품 선택하기**

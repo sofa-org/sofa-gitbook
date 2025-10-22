@@ -1,8 +1,10 @@
 # 連結
 
-- [官方網站](https://sofa.org)
+- [官方網站](https://www.sofa.org)
   - [SOFA 賺取](https://earn.sofa.org/products)
   - [SOFA 激增](https://surge.sofa.org/products)
+  - [SOFA 雙幣](https://dapp.sofa.org/products/customize?project=Dual)
+  - [SOFA 自動化理財](https://dapp.sofa.org/products?project=Automator)
 - [Twitter](https://x.com/SOFAorgDAO) 
 - [Discord](https://discord.gg/sofaorg) 
 - [Telegram](http://t.me/SOFAorg) 

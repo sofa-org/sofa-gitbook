@@ -1,5 +1,7 @@
 # 收益
 
+前往 [收益](https://dapp.sofa.org/products/customize?project=Earn)
+
 ## **区间限价**
 
 ### **步骤 1：选择您的产品**

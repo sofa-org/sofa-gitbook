@@ -1,5 +1,7 @@
 # Automator
 
+Gehe zu [Automator](https://dapp.sofa.org/products?project=Automator)
+
 ## Einführung
 
 In unserer Mission, den Optionshandel für die Massen zu demokratisieren, hat das SOFA-Team **Automator** als intuitive Möglichkeit geschaffen, damit Benutzer passiv Strategieerträge erzielen können. Durch die Nutzung einer Gemeinschaft von Strategiemanagern, die gemeinsam als **Optivisors** bekannt sind, können Benutzer an ihren bevorzugten verwalteten Strategien teilnehmen, im Austausch für eine kleine Gewinnbeteiligungsgebühr. Dieses Win-Win-Modell wird dezentralen und On-Chain-Zugang für Einleger bieten, um eine Vielzahl von hochwertigen Renditen mit einer sich entwickelnden Basis von gemeinschaftlich anerkannten Optivisors zu erzielen.

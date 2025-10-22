@@ -4,7 +4,7 @@
 
 ## **Was ist SOFA.org?**
 
-SOFA.org ist eine **dezentralisierte, gemeinnützige Organisation**, die sich auf die Förderung des DeFi-Ökosystems konzentriert. Unser Vorgehen besteht darin, die höchsten DeFi-Standards zu fördern, hochwertige Projekte zu unterstützen und die Akzeptanz von Blockchain-Technologien im Mainstream-Finanzwesen voranzutreiben.
+[SOFA.org](https://www.sofa.org) ist eine **dezentralisierte, gemeinnützige Organisation**, die sich auf die Förderung des DeFi-Ökosystems konzentriert. Unser Vorgehen besteht darin, die höchsten DeFi-Standards zu fördern, hochwertige Projekte zu unterstützen und die Akzeptanz von Blockchain-Technologien im Mainstream-Finanzwesen voranzutreiben.
 
 ## SOFA.org wird als DAO agieren und sich auf drei Schlüsselbereiche im DeFi konzentrieren
 

@@ -1,5 +1,7 @@
 # Automator
 
+I ad [Automator](https://dapp.sofa.org/products?project=Automator)
+
 ## Introductio
 
 In nostra missione ad democratizandum optionum negotiationem pro massis, turma SOFA creavit **Automator** ut intuitivum modum pro usoribus ad lucrandum strategiam fructuum passivorum. Per communitatem administrantium strategiarum, communiter notam **Optivisors,** usores possunt participare in suis carissimis strategiarum administratis in compensationem pro parte parva lucri. Hic modelus win-win praebebit accessum decentralizatum et in catena pro depositariis ad lucrandum varias qualitatis altae reditus cum evolvente basi communitatis agnitae Optivisors.
