@@ -3,11 +3,10 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Defining Your Risk Preference · SOFA.org Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="HonKit 6.1.4">
         <meta name="author" content="SOFA.org">
         
         
@@ -17,7 +16,11 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-search-plus/search.css">
                 
             
                 
@@ -25,19 +28,15 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
-                
-            
-                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
                 
             
         
@@ -78,10 +77,14 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -523,8 +526,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
         </a>
     </li>
 </ul>
@@ -557,6 +560,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="defining-your-risk-preference">Defining Your Risk Preference</h1>
@@ -564,26 +570,26 @@
 <p><strong>How much downside risk do you wish to take?</strong></p>
 </blockquote>
 <h2 id="earn-protocol">Earn Protocol</h2>
-<p>The &apos;Earn&apos; protocol category is designed for risk-averse depositors looking for the utmost downside protection of their capital.  Earn vaults will<strong> </strong>stake<strong> users&apos; deposited capital in safe-yielding protocols (eg. AAVE) to generate a base level of interest</strong>, and utilize a portion of that guaranteed income to fund option premium with market makers for upside potential.</p>
-<p>The end result will <strong>maximize downside protection</strong>, while still maintaining some upside potential should the market move favourably in the user&apos;s direction.</p>
-<p>With that being said, please note that a <strong>critical design component requires the passive yields offered by the eligible staking protocols to be meaningfully above the product&apos;s worst-case payout, in order to properly fund the option premium to generate the upside return</strong>.  As such, should the user be holding ETH instead of USDT, he/she will need to convert the ETH into stETH in a liquid staking protocol such as Lido, before locking the stETH into the protocol vaults to benefit from the extra yield accretion.</p>
-<p><img src="../static/draw6.png" alt=""></p>
-<p><img src="../static/draw7.png" alt=""></p>
+<p>The 'Earn' protocol category is designed for risk-averse depositors looking for the utmost downside protection of their capital.  Earn vaults will<strong> </strong>stake<strong> users' deposited capital in safe-yielding protocols (eg. AAVE) to generate a base level of interest</strong>, and utilize a portion of that guaranteed income to fund option premium with market makers for upside potential.</p>
+<p>The end result will <strong>maximize downside protection</strong>, while still maintaining some upside potential should the market move favourably in the user's direction.</p>
+<p>With that being said, please note that a <strong>critical design component requires the passive yields offered by the eligible staking protocols to be meaningfully above the product's worst-case payout, in order to properly fund the option premium to generate the upside return</strong>.  As such, should the user be holding ETH instead of USDT, he/she will need to convert the ETH into stETH in a liquid staking protocol such as Lido, before locking the stETH into the protocol vaults to benefit from the extra yield accretion.</p>
+<p><img src="../static/draw6.png" alt=""></img></p>
+<p><img src="../static/draw7.png" alt=""></img></p>
 <h2 id="surge-protocol">Surge Protocol</h2>
-<p>For users with a greater risk-reward tolerance, the <strong>protocol also offers higher-return structures with an upfront capital &apos;ante&apos;</strong>.  Surge protocols are solely targeted at aggressive users who are desirious of substantially high returns in exchange for capital losses.</p>
-<p><img src="../static/draw8.png" alt=""></p>
-<p>With these Surge-based products, the <strong>protocol vault will lock in both the user&apos;s principal as well as the market makers&apos; premium at trade inception, </strong>analogous to a &apos;poker-ante&apos; of sorts**. The locked capital positions will <em>not</em> be restaked to any other protocols, and it serves as the committed-ante against the final payoff.</p>
-<p>Let&apos;s use the Surge-Rangebound product as an example.  Should the price of the underlying asset remain strictly within the barriers by final maturity, the user will receive an exponentially higher return than he would have under the Earn version.  However, should the opposite happen, the structure will be early-terminated, with the locked principal being transferred to the market maker as the &apos;winner&apos; of this strategy.</p>
+<p>For users with a greater risk-reward tolerance, the <strong>protocol also offers higher-return structures with an upfront capital 'ante'</strong>.  Surge protocols are solely targeted at aggressive users who are desirious of substantially high returns in exchange for capital losses.</p>
+<p><img src="../static/draw8.png" alt=""></img></p>
+<p>With these Surge-based products, the <strong>protocol vault will lock in both the user's principal as well as the market makers' premium at trade inception, </strong>analogous to a 'poker-ante' of sorts**. The locked capital positions will <em>not</em> be restaked to any other protocols, and it serves as the committed-ante against the final payoff.</p>
+<p>Let's use the Surge-Rangebound product as an example.  Should the price of the underlying asset remain strictly within the barriers by final maturity, the user will receive an exponentially higher return than he would have under the Earn version.  However, should the opposite happen, the structure will be early-terminated, with the locked principal being transferred to the market maker as the 'winner' of this strategy.</p>
 <p>Once again, <strong>these products are intended for users holding a very strong market conviction, and would like to put that confidence to test in hopes of earning a very high rate of return in exchange for principal losses.</strong></p>
 <h2 id="psa-special-note-on-rangebound-products">PSA: Special Note on Rangebound Products</h2>
 <p>Pictorial Illustration of How Rangebound Works in Practice</p>
 <p>While simple in theory, the Rangebound product actually has some design challenges, especially when it comes to DeFi on-chain compatibility:</p>
 <ul>
-<li>The product references a <em>series</em> of historical prices, rather than a &apos;point-in-time&apos; check at expiry.</li>
-<li>The product can be &apos;knocked-out&apos; should the price barriers get breached.</li>
-<li><p>The product can be knocked-out at <em>any second</em>, but it&apos;s technically unfeasible to refresh on-chain price references continuously throughout the day.</p>
+<li>The product references a <em>series</em> of historical prices, rather than a 'point-in-time' check at expiry.</li>
+<li>The product can be 'knocked-out' should the price barriers get breached.</li>
+<li><p>The product can be knocked-out at <em>any second</em>, but it's technically unfeasible to refresh on-chain price references continuously throughout the day.</p>
 <ul>
-<li>By extension, range-checks are &quot;backward-looking&quot; out of necessity.</li>
+<li>By extension, range-checks are "backward-looking" out of necessity.</li>
 </ul>
 </li>
 </ul>
@@ -603,7 +609,7 @@
 </li>
 <li><p><strong>Early Termination vs Final Withdrawal:</strong></p>
 <ul>
-<li>Rangebound products which are &apos;knocked out&apos; are effectively &apos;game over&apos;; however, user deposits remain staked in Aave, and we must wait until final maturity for users to withdraw the principal in our current iteration.</li>
+<li>Rangebound products which are 'knocked out' are effectively 'game over'; however, user deposits remain staked in Aave, and we must wait until final maturity for users to withdraw the principal in our current iteration.</li>
 </ul>
 </li>
 </ol>
@@ -611,6 +617,22 @@
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -634,21 +656,65 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Defining Your Risk Preference","level":"1.6.2","depth":2,"next":{"title":"Oracle Construction","level":"1.6.3","depth":2,"path":"technical-design/oracle.md","ref":"technical-design/oracle.md","articles":[]},"previous":{"title":"Vault Classification","level":"1.6.1","depth":2,"path":"technical-design/vault-classification.md","ref":"technical-design/vault-classification.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold","mathjax-pro"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"technical-design/risk-prefer.md","mtime":"2025-05-26T06:40:06.567Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-06-06T09:41:08.507Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Defining Your Risk Preference","level":"1.6.2","depth":2,"next":{"title":"Oracle Construction","level":"1.6.3","depth":2,"path":"technical-design/oracle.md","ref":"technical-design/oracle.md","articles":[]},"previous":{"title":"Vault Classification","level":"1.6.1","depth":2,"path":"technical-design/vault-classification.md","ref":"technical-design/vault-classification.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"livereload":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"technical-design/risk-prefer.md","mtime":"2025-10-28T01:53:29.329Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-10-28T02:01:46.355Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        <script src="../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        <script src="../gitbook/honkit-plugin-search-plus/search.js"></script>
         
     
         
@@ -656,23 +722,15 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
-        
-    
-        
         <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
         
     
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
         
     
 

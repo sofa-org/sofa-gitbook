@@ -3,11 +3,10 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>DAPP Open APIs · SOFA.org Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="HonKit 6.1.4">
         <meta name="author" content="SOFA.org">
         
         
@@ -17,7 +16,11 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-search-plus/search.css">
                 
             
                 
@@ -25,19 +28,15 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
-                
-            
-                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
                 
             
         
@@ -78,10 +77,14 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -523,8 +526,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
         </a>
     </li>
 </ul>
@@ -557,10 +560,13 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="dapp-open-apis">DApp Open APIs</h1>
-<p>Our existing dApp on sofa.org is a critical workflow feature and is the main way for users to interact with the SOFA protocols.  However, we encourage other developers to enable access and connect to SOFA via their own dApps as well to maximize our ecosystem growth.  We consider these to be our &apos;Broker&apos; partners and encourage interested parties to contact the SOFA team for further API information.</p>
+<p>Our existing dApp on sofa.org is a critical workflow feature and is the main way for users to interact with the SOFA protocols.  However, we encourage other developers to enable access and connect to SOFA via their own dApps as well to maximize our ecosystem growth.  We consider these to be our 'Broker' partners and encourage interested parties to contact the SOFA team for further API information.</p>
 <h2 id="dnt">DNT</h2>
 <h3 id="recommended-dnt-rfq-list-inquiry">Recommended DNT RFQ list Inquiry</h3>
 <pre><code>GET /rfq/dnt/recommended-list
@@ -684,7 +690,7 @@
 <tr>
 <td>timestamp</td>
 <td>number</td>
-<td>Current pricing&apos;s trigger time; the next observation start time is calculated based on this logic</td>
+<td>Current pricing's trigger time; the next observation start time is calculated based on this logic</td>
 </tr>
 <tr>
 <td>observationStart</td>
@@ -734,7 +740,7 @@
 <tr>
 <td>&gt; makerCollateral</td>
 <td>string</td>
-<td>Maker&apos;s collateral amount</td>
+<td>Maker's collateral amount</td>
 </tr>
 <tr>
 <td>&gt; totalCollateral</td>
@@ -759,7 +765,7 @@
 <tr>
 <td>&gt; makerWallet</td>
 <td>string</td>
-<td>Maker&apos;s wallet (optional)</td>
+<td>Maker's wallet (optional)</td>
 </tr>
 <tr>
 <td>&gt; signature</td>
@@ -772,35 +778,35 @@
 <pre><code>GET rfq/dnt/recommended-list?vault=xxxxxx&amp;chainId=1
 </code></pre><p><strong>Response</strong></p>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;code&quot;</span>:<span class="hljs-number">0</span>,
-    <span class="hljs-string">&quot;message&quot;</span>:<span class="hljs-string">&quot;&quot;</span>,
-    <span class="hljs-string">&quot;value&quot;</span>:[
+    <span class="hljs-string">"code"</span>:<span class="hljs-number">0</span>,
+    <span class="hljs-string">"message"</span>:<span class="hljs-string">""</span>,
+    <span class="hljs-string">"value"</span>:[
         {
-            <span class="hljs-string">&quot;rfqId&quot;</span>:<span class="hljs-number">1233992</span>,
-            <span class="hljs-string">&quot;riskType&quot;</span>:<span class="hljs-string">&quot;PROTECTED&quot;</span>,
-            <span class="hljs-string">&quot;forCcy&quot;</span>:<span class="hljs-string">&quot;BTC&quot;</span>,
-            <span class="hljs-string">&quot;expiry&quot;</span>:<span class="hljs-number">1672387200</span>,
-            <span class="hljs-string">&quot;lowerBarrier&quot;</span>:<span class="hljs-number">18000</span>,
-            <span class="hljs-string">&quot;upperBarrier&quot;</span>:<span class="hljs-number">24000</span>,
-            <span class="hljs-string">&quot;depositCcy&quot;</span>:<span class="hljs-string">&quot;BTC&quot;</span>,
-            <span class="hljs-string">&quot;depositAmount&quot;</span>: <span class="hljs-number">0.05</span>,
-            <span class="hljs-string">&quot;protectedApy&quot;</span>:<span class="hljs-number">0.01</span>,
-            <span class="hljs-string">&quot;deadline&quot;</span>:<span class="hljs-number">1672279892</span>,
-            <span class="hljs-string">&quot;recommended&quot;</span>:<span class="hljs-literal">true</span>,
-            <span class="hljs-string">&quot;quote&quot;</span>:
+            <span class="hljs-string">"rfqId"</span>:<span class="hljs-number">1233992</span>,
+            <span class="hljs-string">"riskType"</span>:<span class="hljs-string">"PROTECTED"</span>,
+            <span class="hljs-string">"forCcy"</span>:<span class="hljs-string">"BTC"</span>,
+            <span class="hljs-string">"expiry"</span>:<span class="hljs-number">1672387200</span>,
+            <span class="hljs-string">"lowerBarrier"</span>:<span class="hljs-number">18000</span>,
+            <span class="hljs-string">"upperBarrier"</span>:<span class="hljs-number">24000</span>,
+            <span class="hljs-string">"depositCcy"</span>:<span class="hljs-string">"BTC"</span>,
+            <span class="hljs-string">"depositAmount"</span>: <span class="hljs-number">0.05</span>,
+            <span class="hljs-string">"protectedApy"</span>:<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"deadline"</span>:<span class="hljs-number">1672279892</span>,
+            <span class="hljs-string">"recommended"</span>:<span class="hljs-literal">true</span>,
+            <span class="hljs-string">"quote"</span>:
                 {
-                    <span class="hljs-string">&quot;rfqId&quot;</span>:<span class="hljs-number">1233992</span>,
-                    <span class="hljs-string">&quot;inRangeApy&quot;</span>:<span class="hljs-number">0.25</span>,
-                    <span class="hljs-string">&quot;tenor&quot;</span>:<span class="hljs-number">7.9</span>,
-                    <span class="hljs-string">&quot;fundingAmount&quot;</span>:<span class="hljs-number">0.25</span>,
-                    <span class="hljs-string">&quot;depositAmount&quot;</span>:<span class="hljs-number">1</span>,
-                    <span class="hljs-string">&quot;premiumCoin&quot;</span>:<span class="hljs-string">&quot;BTC&quot;</span>,
-                    <span class="hljs-string">&quot;premiumAmount&quot;</span>:<span class="hljs-number">0.05</span>,
-                    <span class="hljs-string">&quot;bookingQuantity&quot;</span>:<span class="hljs-number">0.3</span>,
-                    <span class="hljs-string">&quot;totalAmount&quot;</span>:<span class="hljs-number">0.05</span>,
-                    <span class="hljs-string">&quot;payoff&quot;</span>:<span class="hljs-number">0.3</span>,
-                    <span class="hljs-string">&quot;deadline&quot;</span>:<span class="hljs-number">1672279892</span>,
-                    <span class="hljs-string">&quot;signature&quot;</span>:<span class="hljs-string">&quot;dsdkksdsksdk&quot;</span>
+                    <span class="hljs-string">"rfqId"</span>:<span class="hljs-number">1233992</span>,
+                    <span class="hljs-string">"inRangeApy"</span>:<span class="hljs-number">0.25</span>,
+                    <span class="hljs-string">"tenor"</span>:<span class="hljs-number">7.9</span>,
+                    <span class="hljs-string">"fundingAmount"</span>:<span class="hljs-number">0.25</span>,
+                    <span class="hljs-string">"depositAmount"</span>:<span class="hljs-number">1</span>,
+                    <span class="hljs-string">"premiumCoin"</span>:<span class="hljs-string">"BTC"</span>,
+                    <span class="hljs-string">"premiumAmount"</span>:<span class="hljs-number">0.05</span>,
+                    <span class="hljs-string">"bookingQuantity"</span>:<span class="hljs-number">0.3</span>,
+                    <span class="hljs-string">"totalAmount"</span>:<span class="hljs-number">0.05</span>,
+                    <span class="hljs-string">"payoff"</span>:<span class="hljs-number">0.3</span>,
+                    <span class="hljs-string">"deadline"</span>:<span class="hljs-number">1672279892</span>,
+                    <span class="hljs-string">"signature"</span>:<span class="hljs-string">"dsdkksdsksdk"</span>
                 }
 
         }
@@ -810,8 +816,8 @@
 <h3 id="dnt-inquiry">DNT Inquiry</h3>
 <ul>
 <li>Notes:<ul>
-<li>Please do not pass the user&apos;s wallet address on a pure inquiry request.</li>
-<li>A user&apos;s wallet address should be passed on only upon subscribing.</li>
+<li>Please do not pass the user's wallet address on a pure inquiry request.</li>
+<li>A user's wallet address should be passed on only upon subscribing.</li>
 </ul>
 </li>
 </ul>
@@ -885,7 +891,7 @@
 <td>takerWallet</td>
 <td>false</td>
 <td>string</td>
-<td>Inquirer&apos;s wallet public address information</td>
+<td>Inquirer's wallet public address information</td>
 </tr>
 </tbody>
 </table>
@@ -984,7 +990,7 @@
 <tr>
 <td>timestamp</td>
 <td>number</td>
-<td>Current pricing&apos;s trigger time; the next observation start time is calculated based on this logic</td>
+<td>Current pricing's trigger time; the next observation start time is calculated based on this logic</td>
 </tr>
 <tr>
 <td>observationStart</td>
@@ -1039,7 +1045,7 @@
 <tr>
 <td>&gt; makerCollateral</td>
 <td>string</td>
-<td>Maker&apos;s collateral amount</td>
+<td>Maker's collateral amount</td>
 </tr>
 <tr>
 <td>&gt; totalCollateral</td>
@@ -1064,7 +1070,7 @@
 <tr>
 <td>&gt; makerWallet</td>
 <td>string</td>
-<td>Maker&apos;s wallet (optional)</td>
+<td>Maker's wallet (optional)</td>
 </tr>
 <tr>
 <td>&gt; signature</td>
@@ -1171,17 +1177,17 @@
 <pre><code>GET rfq/dnt/winning-probabilities?forCcy=BTC&amp;expiry=xxxx&amp;lowerBarrier=xxx&amp;upperBarrier=xxx
 </code></pre><p><strong>Response</strong></p>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;code&quot;</span>:<span class="hljs-number">0</span>,
-    <span class="hljs-string">&quot;message&quot;</span>:<span class="hljs-string">&quot;&quot;</span>,
-    <span class="hljs-string">&quot;value&quot;</span>: {
-        <span class="hljs-string">&quot;spotPrice&quot;</span>: <span class="hljs-number">62121</span>,
-        <span class="hljs-string">&quot;timestamp&quot;</span>: <span class="hljs-number">1727080594</span>,
-        <span class="hljs-string">&quot;probabilities&quot;</span>: {
-            <span class="hljs-string">&quot;probDntStayInRange&quot;</span>: <span class="hljs-number">0.4</span>
-            <span class="hljs-string">&quot;probBullTrendItmLowerStrike&quot;</span>: <span class="hljs-literal">null</span>,
-            <span class="hljs-string">&quot;probBullTrendItmUpperStrike&quot;</span>: <span class="hljs-literal">null</span>,
-            <span class="hljs-string">&quot;probBearTrendItmLowerStrike&quot;</span>: <span class="hljs-literal">null</span>,
-            <span class="hljs-string">&quot;probBearTrendItmUpperStrike&quot;</span>: <span class="hljs-literal">null</span>,
+    <span class="hljs-string">"code"</span>:<span class="hljs-number">0</span>,
+    <span class="hljs-string">"message"</span>:<span class="hljs-string">""</span>,
+    <span class="hljs-string">"value"</span>: {
+        <span class="hljs-string">"spotPrice"</span>: <span class="hljs-number">62121</span>,
+        <span class="hljs-string">"timestamp"</span>: <span class="hljs-number">1727080594</span>,
+        <span class="hljs-string">"probabilities"</span>: {
+            <span class="hljs-string">"probDntStayInRange"</span>: <span class="hljs-number">0.4</span>
+            <span class="hljs-string">"probBullTrendItmLowerStrike"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBullTrendItmUpperStrike"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBearTrendItmLowerStrike"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBearTrendItmUpperStrike"</span>: <span class="hljs-literal">null</span>,
         }
     }
 }
@@ -1314,7 +1320,7 @@
 <tr>
 <td>timestamp</td>
 <td>number</td>
-<td>Current pricing&apos;s trigger time; the next observation start time is calculated based on this logic</td>
+<td>Current pricing's trigger time; the next observation start time is calculated based on this logic</td>
 </tr>
 <tr>
 <td>feeRate</td>
@@ -1359,7 +1365,7 @@
 <tr>
 <td>&gt; makerCollateral</td>
 <td>string</td>
-<td>Maker&apos;s collateral amount</td>
+<td>Maker's collateral amount</td>
 </tr>
 <tr>
 <td>&gt; totalCollateral</td>
@@ -1384,7 +1390,7 @@
 <tr>
 <td>&gt; makerWallet</td>
 <td>string</td>
-<td>Maker&apos;s wallet (optional)</td>
+<td>Maker's wallet (optional)</td>
 </tr>
 <tr>
 <td>&gt; signature</td>
@@ -1398,8 +1404,8 @@
 </code></pre><h3 id="smart-trend-inquiry">Smart Trend Inquiry</h3>
 <ul>
 <li>Notes:<ul>
-<li>Please do not pass the user&apos;s wallet address on a pure inquiry request.</li>
-<li>A user&apos;s wallet address should be passed on only upon subscribing.</li>
+<li>Please do not pass the user's wallet address on a pure inquiry request.</li>
+<li>A user's wallet address should be passed on only upon subscribing.</li>
 </ul>
 </li>
 </ul>
@@ -1473,7 +1479,7 @@
 <td>takerWallet</td>
 <td>false</td>
 <td>string</td>
-<td>Inquirer&apos;s wallet public address information</td>
+<td>Inquirer's wallet public address information</td>
 </tr>
 </tbody>
 </table>
@@ -1577,7 +1583,7 @@
 <tr>
 <td>timestamp</td>
 <td>number</td>
-<td>Current pricing&apos;s trigger time; the next observation start time is calculated based on this logic</td>
+<td>Current pricing's trigger time; the next observation start time is calculated based on this logic</td>
 </tr>
 <tr>
 <td>feeRate</td>
@@ -1627,7 +1633,7 @@
 <tr>
 <td>&gt; makerCollateral</td>
 <td>string</td>
-<td>Maker&apos;s collateral amount</td>
+<td>Maker's collateral amount</td>
 </tr>
 <tr>
 <td>&gt; totalCollateral</td>
@@ -1652,7 +1658,7 @@
 <tr>
 <td>&gt; makerWallet</td>
 <td>string</td>
-<td>Maker&apos;s wallet (optional)</td>
+<td>Maker's wallet (optional)</td>
 </tr>
 <tr>
 <td>&gt; signature</td>
@@ -1759,17 +1765,17 @@
 <pre><code>GET rfq/smart-trend/winning-probabilities?forCcy=BTC&amp;expiry=xxxx&amp;lowerStrike=xxx&amp;upperStrike=xxx
 </code></pre><p><strong>Response</strong></p>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;code&quot;</span>:<span class="hljs-number">0</span>,
-    <span class="hljs-string">&quot;message&quot;</span>:<span class="hljs-string">&quot;&quot;</span>,
-    <span class="hljs-string">&quot;value&quot;</span>: {
-        <span class="hljs-string">&quot;spotPrice&quot;</span>: <span class="hljs-number">62121</span>,
-        <span class="hljs-string">&quot;timestamp&quot;</span>: <span class="hljs-number">1727080594</span>,
-        <span class="hljs-string">&quot;probabilities&quot;</span>: {
-            <span class="hljs-string">&quot;probDntStayInRange&quot;</span>: <span class="hljs-literal">null</span>,
-            <span class="hljs-string">&quot;probBullTrendItmLowerStrike&quot;</span>: <span class="hljs-number">0.4</span>,
-            <span class="hljs-string">&quot;probBullTrendItmUpperStrike&quot;</span>: <span class="hljs-number">0.4</span>,
-            <span class="hljs-string">&quot;probBearTrendItmLowerStrike&quot;</span>: <span class="hljs-number">0.6</span>,
-            <span class="hljs-string">&quot;probBearTrendItmUpperStrike&quot;</span>: <span class="hljs-number">0.6</span>,
+    <span class="hljs-string">"code"</span>:<span class="hljs-number">0</span>,
+    <span class="hljs-string">"message"</span>:<span class="hljs-string">""</span>,
+    <span class="hljs-string">"value"</span>: {
+        <span class="hljs-string">"spotPrice"</span>: <span class="hljs-number">62121</span>,
+        <span class="hljs-string">"timestamp"</span>: <span class="hljs-number">1727080594</span>,
+        <span class="hljs-string">"probabilities"</span>: {
+            <span class="hljs-string">"probDntStayInRange"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"probBullTrendItmLowerStrike"</span>: <span class="hljs-number">0.4</span>,
+            <span class="hljs-string">"probBullTrendItmUpperStrike"</span>: <span class="hljs-number">0.4</span>,
+            <span class="hljs-string">"probBearTrendItmLowerStrike"</span>: <span class="hljs-number">0.6</span>,
+            <span class="hljs-string">"probBearTrendItmUpperStrike"</span>: <span class="hljs-number">0.6</span>,
         }
     }
 }
@@ -1799,7 +1805,7 @@
 </table>
 <p><strong>Request Example</strong></p>
 <pre><code>{  
-&quot;rfqId&quot;:123456  
+"rfqId":123456  
 }
 </code></pre><p><strong>Response Parameters</strong></p>
 <table>
@@ -1881,14 +1887,14 @@
 </table>
 <p><strong>Request Example</strong></p>
 <pre><code>{
-    &quot;quotes&quot;: [
+    "quotes": [
         {
-            &quot;rfqId&quot;: 123456,
-            &quot;quoteId&quot;: 333,
-            &quot;txId&quot;: &quot;adsswe&quot;
+            "rfqId": 123456,
+            "quoteId": 333,
+            "txId": "adsswe"
         }
     ],
-    &quot;code&quot;: &quot;adsswe&quot;
+    "code": "adsswe"
 }
 </code></pre><p><strong>Response Parameters</strong></p>
 <table>
@@ -1952,8 +1958,8 @@
 </table>
 <p><strong>Request Example</strong></p>
 <pre><code>{  
-&quot;indexPrice&quot;: 3750.8&#xFF0C;  
-&quot;forCcy&quot;: &quot;WBTC&quot;,  
+"indexPrice": 3750.8，  
+"forCcy": "WBTC",  
 }
 </code></pre><p><strong>Response Parameters</strong></p>
 <table>
@@ -2001,8 +2007,8 @@
 </table>
 <p><strong>Request Example</strong></p>
 <pre><code>{  
-&quot;vault&quot;: &quot;XXXXXXXXXXXXXX&quot;,  
-&quot;chainId&quot;: 1,  
+"vault": "XXXXXXXXXXXXXX",  
+"chainId": 1,  
 }
 </code></pre><p><strong>Response Parameters</strong></p>
 <table>
@@ -2097,12 +2103,12 @@
 </table>
 <p><strong>Response Example</strong></p>
 <pre><code>{  
-&quot;chainId&quot;: 1,  
-&quot;ccy&quot;:&quot;USDT&quot;,  
-&quot;avgApy&quot;:&quot;0.23442&quot;,  
-&quot;currentApy&quot;:&quot;0.23442&quot;,  
-&quot;apyUsed&quot;:&quot;0.23442&quot;,  
-&quot;apyDefinition&quot;:&quot;AAVE_LENDING_APY&quot;  
+"chainId": 1,  
+"ccy":"USDT",  
+"avgApy":"0.23442",  
+"currentApy":"0.23442",  
+"apyUsed":"0.23442",  
+"apyDefinition":"AAVE_LENDING_APY"  
 }
 </code></pre><h3 id="apy">Apy</h3>
 <pre><code>GET rfq/apy
@@ -2181,12 +2187,12 @@
 </table>
 <p><strong>Response Example</strong></p>
 <pre><code>{  
-&quot;chainId&quot;: 1,  
-&quot;ccy&quot;:&quot;USDT&quot;,  
-&quot;avgApy&quot;:&quot;0.23442&quot;,  
-&quot;currentApy&quot;:&quot;0.23442&quot;,  
-&quot;apyUsed&quot;:&quot;0.23442&quot;,  
-&quot;apyDefinition&quot;:&quot;AAVE_LENDING_APY&quot;  
+"chainId": 1,  
+"ccy":"USDT",  
+"avgApy":"0.23442",  
+"currentApy":"0.23442",  
+"apyUsed":"0.23442",  
+"apyDefinition":"AAVE_LENDING_APY"  
 }
 </code></pre><h3 id="get-wallet-positions">Get Wallet Positions</h3>
 <pre><code>POST /rfq/position-list
@@ -2265,13 +2271,13 @@
 <td>orderBy</td>
 <td>false</td>
 <td>string</td>
-<td>&quot;createdAt&quot; or &quot;return&quot;, sorting method: &quot;createdAt&quot; (update time, default) or &quot;return&quot; (returns).</td>
+<td>"createdAt" or "return", sorting method: "createdAt" (update time, default) or "return" (returns).</td>
 </tr>
 <tr>
 <td>orderDirection</td>
 <td>false</td>
 <td>string</td>
-<td>&quot;desc&quot; or &quot;asc&quot;, defaults to &quot;desc&quot; (descending order).</td>
+<td>"desc" or "asc", defaults to "desc" (descending order).</td>
 </tr>
 <tr>
 <td>wallet</td>
@@ -2281,7 +2287,7 @@
 </tr>
 </tbody>
 </table>
-<p>Note: If the number of results exceeds 300 within the specified <code>startDateTime</code> and <code>endDateTime</code>, polling can be used (in this case, <code>orderBy</code> must be set to <code>&quot;createdAt&quot;</code>) to continue querying. The <code>endDateTime</code> parameter for the nth polling request should be set to the <code>createdAt</code> of the last record from the (n-1)th polling result. After retrieving all data, duplicates should be removed based on the <code>id</code> field.</p>
+<p>Note: If the number of results exceeds 300 within the specified <code>startDateTime</code> and <code>endDateTime</code>, polling can be used (in this case, <code>orderBy</code> must be set to <code>"createdAt"</code>) to continue querying. The <code>endDateTime</code> parameter for the nth polling request should be set to the <code>createdAt</code> of the last record from the (n-1)th polling result. After retrieving all data, duplicates should be removed based on the <code>id</code> field.</p>
 <p><strong>Response Parameters</strong></p>
 <table>
 <thead>
@@ -2408,7 +2414,7 @@
 </table>
 <p><strong>Response Example</strong></p>
 <pre><code>{
-    &quot;value&quot;: [{
+    "value": [{
         ...
     }]
 }
@@ -2459,7 +2465,7 @@
 <td>orderDirection</td>
 <td>false</td>
 <td>string</td>
-<td>&quot;desc&quot; or &quot;asc&quot;, defaults to &quot;desc&quot; (descending order).</td>
+<td>"desc" or "asc", defaults to "desc" (descending order).</td>
 </tr>
 <tr>
 <td>taker</td>
@@ -2488,7 +2494,7 @@
 </tbody>
 </table>
 <p>Note: Taker, maker, and claimParams parameters can be used for a joint query to find the trade records corresponding to a position (a position may correspond to multiple trades) (not all parameters are required).
-If the number of results exceeds 300 within the specified <code>startDateTime</code> and <code>endDateTime</code>, polling can be used (in this case, <code>orderBy</code> must be set to <code>&quot;createdAt&quot;</code>) to continue querying. The <code>endDateTime</code> parameter for the nth polling request should be set to the <code>createdAt</code> of the last record from the (n-1)th polling result. After retrieving all data, duplicates should be removed based on the <code>id</code> field.</p>
+If the number of results exceeds 300 within the specified <code>startDateTime</code> and <code>endDateTime</code>, polling can be used (in this case, <code>orderBy</code> must be set to <code>"createdAt"</code>) to continue querying. The <code>endDateTime</code> parameter for the nth polling request should be set to the <code>createdAt</code> of the last record from the (n-1)th polling result. After retrieving all data, duplicates should be removed based on the <code>id</code> field.</p>
 <p><strong>Response Parameters</strong></p>
 <table>
 <thead>
@@ -2605,7 +2611,7 @@ If the number of results exceeds 300 within the specified <code>startDateTime</c
 </table>
 <p><strong>Response Example</strong></p>
 <pre><code>{
-    &quot;value&quot;: [{
+    "value": [{
         ...
     }]
 }
@@ -2632,16 +2638,16 @@ If the number of results exceeds 300 within the specified <code>startDateTime</c
 <td>positionIds</td>
 <td>true</td>
 <td>List[string]</td>
-<td>positionId list&#xFF0C;up to 20</td>
+<td>positionId list，up to 20</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Request Example</strong></p>
 <pre><code>{
-    &quot;positionIds&quot;: [
-        &quot;aaaa&quot;,&quot;bbbb&quot;
+    "positionIds": [
+        "aaaa","bbbb"
     ],
-    &quot;chainId&quot;: 1
+    "chainId": 1
 }
 </code></pre><p><strong>Response Parameters</strong></p>
 <table>
@@ -2859,13 +2865,13 @@ If the number of results exceeds 300 within the specified <code>startDateTime</c
 <td>orderBy</td>
 <td>false</td>
 <td>string</td>
-<td>&quot;dateTime&quot; or &quot;rch&quot;, sorting method: &quot;dateTime&quot; (airdrop time, default) or &quot;rch&quot; (amount).</td>
+<td>"dateTime" or "rch", sorting method: "dateTime" (airdrop time, default) or "rch" (amount).</td>
 </tr>
 <tr>
 <td>orderDirection</td>
 <td>false</td>
 <td>string</td>
-<td>&quot;desc&quot; or &quot;asc&quot;, defaults to &quot;desc&quot; (descending order).</td>
+<td>"desc" or "asc", defaults to "desc" (descending order).</td>
 </tr>
 </tbody>
 </table>
@@ -2937,6 +2943,22 @@ If the number of results exceeds 300 within the specified <code>startDateTime</c
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -2960,21 +2982,65 @@ If the number of results exceeds 300 within the specified <code>startDateTime</c
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"DAPP Open APIs","level":"1.11.2","depth":2,"next":{"title":"Subgraphs","level":"1.11.3","depth":2,"path":"developer/subgraphs.md","ref":"developer/subgraphs.md","articles":[]},"previous":{"title":"Market Maker Open APIs","level":"1.11.1","depth":2,"path":"developer/marketmaker-open-apis.md","ref":"developer/marketmaker-open-apis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold","mathjax-pro"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"developer/dapp-open-apis.md","mtime":"2025-05-26T06:40:06.561Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-06-06T09:41:08.507Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"DAPP Open APIs","level":"1.11.2","depth":2,"next":{"title":"Subgraphs","level":"1.11.3","depth":2,"path":"developer/subgraphs.md","ref":"developer/subgraphs.md","articles":[]},"previous":{"title":"Market Maker Open APIs","level":"1.11.1","depth":2,"path":"developer/marketmaker-open-apis.md","ref":"developer/marketmaker-open-apis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"livereload":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"developer/dapp-open-apis.md","mtime":"2025-10-28T01:53:29.321Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-10-28T02:01:46.355Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        <script src="../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        <script src="../gitbook/honkit-plugin-search-plus/search.js"></script>
         
     
         
@@ -2982,23 +3048,15 @@ If the number of results exceeds 300 within the specified <code>startDateTime</c
         
     
         
-        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
-        
-    
-        
         <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
         
     
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
         
     
 

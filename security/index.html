@@ -3,11 +3,10 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Security · SOFA.org Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="HonKit 6.1.4">
         <meta name="author" content="SOFA.org">
         
         
@@ -17,7 +16,11 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-search-plus/search.css">
                 
             
                 
@@ -25,19 +28,15 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
-                
-            
-                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
                 
             
         
@@ -78,10 +77,14 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -523,8 +526,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
         </a>
     </li>
 </ul>
@@ -557,16 +560,19 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="security">Security</h1>
 <p>Security is the cornerstone and bedrock behind any decentralized platform.  We define protocol security as encompassing asset safety, personal information protection, and smart contract reliability.  In response to these considerations, we have implemented a series of stringent security measures, from contract design to protocol monitoring.</p>
 <h2 id="simple-is-more-secure">Simple is More Secure</h2>
-<p>SOFA&apos;s smart contracts, which carry the platform&apos;s core functionalities, follow the principle of &quot;<strong>simple is more secure</strong>&quot;.  This principle seeks to avoid unnecessary complexity to reduce potential security risks.  The interaction between smart contracts is meticulously designed to ensure a streamlined and clear logical process, thereby minimizing the possibility of errors and vulnerabilities.  Furthermore, <strong>all of the protocol&apos;s smart contracts are open source and transparent, providing a full auditable trial</strong> to any 3rd party observer.</p>
+<p>SOFA's smart contracts, which carry the platform's core functionalities, follow the principle of "<strong>simple is more secure</strong>".  This principle seeks to avoid unnecessary complexity to reduce potential security risks.  The interaction between smart contracts is meticulously designed to ensure a streamlined and clear logical process, thereby minimizing the possibility of errors and vulnerabilities.  Furthermore, <strong>all of the protocol's smart contracts are open source and transparent, providing a full auditable trial</strong> to any 3rd party observer.</p>
 <h2 id="upgrade-mechanism">Upgrade Mechanism</h2>
-<p>All Vault contracts will inherit OpenZepplin&apos;s Upgradeable contracts.  Upon governance vote approval, <strong>contracts can be logically upgraded without changing the contract wallet address to ensure asset safety</strong>.  This mechanism allows vulnerability fixes and function optimization with minimal disruption.</p>
+<p>All Vault contracts will inherit OpenZepplin's Upgradeable contracts.  Upon governance vote approval, <strong>contracts can be logically upgraded without changing the contract wallet address to ensure asset safety</strong>.  This mechanism allows vulnerability fixes and function optimization with minimal disruption.</p>
 <h3 id="multiple-smart-contract-audits">Multiple Smart Contract Audits</h3>
-<p><strong>SOFA will continue to seek professional smart contract audits confirmations from the industry&apos;s top security firms</strong> to identify and fix potential security flaws.  By the project launch, SOFA&apos;s contract code would have undergone several rounds of stringent inspections to meet the highest standard of security audits available.  Furthermore, the same rigorous audit process will be repeated upon any significant protocol or functionality upgrades.</p>
+<p><strong>SOFA will continue to seek professional smart contract audits confirmations from the industry's top security firms</strong> to identify and fix potential security flaws.  By the project launch, SOFA's contract code would have undergone several rounds of stringent inspections to meet the highest standard of security audits available.  Furthermore, the same rigorous audit process will be repeated upon any significant protocol or functionality upgrades.</p>
 <p>Find our audit reports here.</p>
 <ul>
 <li><a href="https://github.com/zenith-security/reports/blob/main/reports/Audit%20Report%20-%20Sofa%20%28May%202024%29.pdf" target="_blank">Code4rena(Zenith)</a></li>
@@ -579,7 +585,7 @@
 <h2 id="247-monitoring-for-anomalous-activity">24/7 Monitoring for Anomalous Activity</h2>
 <p>To continuously ensure asset safety, <strong>SOFA has implemented a 24/7 anomalous activity monitoring system</strong> for the entire protocol.  This system can detect and respond to unusual transaction patterns or behaviors in real-time, such as potential security attacks or abnormal fund flows. Upon detecting threats, our monitoring system can quickly trigger alerts and take necessary steps to prevent protocol damage.</p>
 <h2 id="decentralized-attack-resistance">Decentralized Attack Resistance</h2>
-<p>As a native DeFi protocol, SOFA operates over a decentralized server network, meaning there is <strong>minimal risk of system downtime due to a single point of failure</strong>.  With blockchain&apos;s distributed architecture, data is replicated and stored across various nodes, enhancing the system&apos;s resilience and resistance to cyber attacks.</p>
+<p>As a native DeFi protocol, SOFA operates over a decentralized server network, meaning there is <strong>minimal risk of system downtime due to a single point of failure</strong>.  With blockchain's distributed architecture, data is replicated and stored across various nodes, enhancing the system's resilience and resistance to cyber attacks.</p>
 <p>Decentralized server solutions offer the following advantages over conventional data servers:</p>
 <ul>
 <li><strong>Enhanced Stability</strong>:  By dispersing service nodes worldwide, we can ensure high reliability for our websites and dApp services, providing undisrupted services to protocol users.</li>
@@ -593,6 +599,22 @@
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -616,21 +638,65 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Security","level":"1.7","depth":1,"next":{"title":"Bug Bounty Program","level":"1.7.1","depth":2,"path":"security/bug-bounty.md","ref":"security/bug-bounty.md","articles":[]},"previous":{"title":"Automator","level":"1.6.6","depth":2,"path":"technical-design/automator.md","ref":"technical-design/automator.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold","mathjax-pro"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"security/README.md","mtime":"2025-06-06T09:40:21.024Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-06-06T09:41:08.507Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Security","level":"1.7","depth":1,"next":{"title":"Bug Bounty Program","level":"1.7.1","depth":2,"path":"security/bug-bounty.md","ref":"security/bug-bounty.md","articles":[]},"previous":{"title":"Automator","level":"1.6.6","depth":2,"path":"technical-design/automator.md","ref":"technical-design/automator.md","articles":[]},"articles":[{"title":"Bug Bounty Program","level":"1.7.1","depth":2,"path":"security/bug-bounty.md","ref":"security/bug-bounty.md","articles":[]},{"title":"Governance Framework","level":"1.7.2","depth":2,"path":"security/governance.md","ref":"security/governance.md","articles":[]},{"title":"External Contingencies & Risk Factors","level":"1.7.3","depth":2,"path":"security/external.md","ref":"security/external.md","articles":[]}],"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"livereload":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"security/README.md","mtime":"2025-10-28T01:53:29.325Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-10-28T02:01:46.355Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        <script src="../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        <script src="../gitbook/honkit-plugin-search-plus/search.js"></script>
         
     
         
@@ -638,23 +704,15 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
-        
-    
-        
         <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
         
     
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
         
     
 

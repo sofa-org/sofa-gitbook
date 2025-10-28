@@ -3,11 +3,10 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Oracle Construction · SOFA.org Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="HonKit 6.1.4">
         <meta name="author" content="SOFA.org">
         
         
@@ -17,7 +16,11 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-search-plus/search.css">
                 
             
                 
@@ -25,19 +28,15 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
-                
-            
-                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
                 
             
         
@@ -78,10 +77,14 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -523,8 +526,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
         </a>
     </li>
 </ul>
@@ -557,31 +560,34 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="oracle-construction">Oracle Construction</h1>
 <p>In the world of cryptocurrencies and DeFi, <strong>obtaining off-chain data in a timely and accurate manner is crucial.</strong>  As smart contracts cannot directly access external systems or data sources, oracles serve to bridge this gap by bringing outside information onto the blockchain.  The trustworthy data service must be provided to ensure full settlement transparency and traceability in settlement, while minimizing possible disputes.</p>
-<p>The <strong>ChainLink</strong> oracle service, known for its high degree of decentralization, reliability, and adaptability, has been chosen as SOFA&apos;s primary means of accessing off-chain data.  Furthermore, the use of ChainLink price feeds has the <strong>additional benefit of protecting the protocol against &apos;flash loan attacks&apos;</strong>, while the <strong>source of data feeds will be from reputable trading platforms such as Coinbase</strong> to ensure sanctity of data.</p>
-<p><img src="../static/chainlink.png" alt=""></p>
+<p>The <strong>ChainLink</strong> oracle service, known for its high degree of decentralization, reliability, and adaptability, has been chosen as SOFA's primary means of accessing off-chain data.  Furthermore, the use of ChainLink price feeds has the <strong>additional benefit of protecting the protocol against 'flash loan attacks'</strong>, while the <strong>source of data feeds will be from reputable trading platforms such as Coinbase</strong> to ensure sanctity of data.</p>
+<p><img src="../static/chainlink.png" alt=""></img></p>
 <p>SOFA utilizes <a href="https://www.apro.com" target="_blank">APRO Oracle</a> to protect our assets on multiple chains. The support and protection from <strong>APRO Oracle</strong> allow us to maintain the stability and security of our on-chain assets. For more information, please refer to the <a href="https://docs.apro.com/en" target="_blank">APRO Oracle documentation</a>.</p>
-<p><img src="../static/apro.jpg" alt=""></p>
+<p><img src="../static/apro.jpg" alt=""></img></p>
 <h2 id="spot-price--price-at-expiry">Spot Price / Price at Expiry</h2>
 <p>Obtaining the current price of an underlying asset on-chain through an oracle is typically done in one of two ways:</p>
 <ul>
 <li>calling contracts from DEXs like Uniswap to get the Price or TWAP Price of the underlying asset</li>
 <li>obtaining the asset price through data feeds provided by an oracle service like ChainLink</li>
 </ul>
-<p>Considering the need for the Settlement Price to be as close as possible to CeFi exchange prices (for ease of hedging by users or market makers) and for security reasons (to avoid manipulation and attacks), we have <strong>chosen ChainLink&apos;s Data Feeds as the oracle source for our Price at Expiry</strong>.</p>
-<p>With ChainLink&apos;s decentralized data sources that aggregate pricing information from different exchanges, we ensure that our smart contract executions are based on up-to-date, reliable, and fairest sets of pricing data publicly available.</p>
+<p>Considering the need for the Settlement Price to be as close as possible to CeFi exchange prices (for ease of hedging by users or market makers) and for security reasons (to avoid manipulation and attacks), we have <strong>chosen ChainLink's Data Feeds as the oracle source for our Price at Expiry</strong>.</p>
+<p>With ChainLink's decentralized data sources that aggregate pricing information from different exchanges, we ensure that our smart contract executions are based on up-to-date, reliable, and fairest sets of pricing data publicly available.</p>
 <h2 id="calculated-price-derived-from-historical-closes">Calculated Price Derived from Historical Closes</h2>
 <p>For products like Rangebound, it is necessary to know the highest and lowest prices of the underlying token from mint inception to expiry in order to calculate the final payout.  Common on-chain typically cannot provide this data, given that on-chain oracles do not provide continuous time-series data.</p>
-<p>Instead of deploying our own oracle contracts as a (common) centralization compromise, we have found a solution in <strong>ChainLink&apos;s Functions product</strong>.  Thanks to the latest innovations, we are able to call off-chain APIs in a decentralized manner, and publish the obtained data on-chain through decentralized nodes like a typical data feed.</p>
-<p><img src="../static/KxYlbnS0IoEtX6xAxV1uB0WKsLg.png" alt=""></p>
+<p>Instead of deploying our own oracle contracts as a (common) centralization compromise, we have found a solution in <strong>ChainLink's Functions product</strong>.  Thanks to the latest innovations, we are able to call off-chain APIs in a decentralized manner, and publish the obtained data on-chain through decentralized nodes like a typical data feed.</p>
+<p><img src="../static/KxYlbnS0IoEtX6xAxV1uB0WKsLg.png" alt=""></img></p>
 <h2 id="automation-regular-update-service">Automation Regular Update Service</h2>
-<p>SOFA utilizes ChainLink Automation to guarantee that prices are automatically updated and pushed to the blockchain on a regular basis. ChainLink Automation offers a decentralized network where smart contracts can schedule and automatically execute complex tasks, including interval data updates, trigger events, and even critical contract adjustments.  This <strong>ensures that on-chain prices remain constantly up to date, and offers data confidence to SOFA&apos;s network of connected dApps</strong>.</p>
-<p><img src="../static/FESNbrjpEobC0DxtBz5u6Og0sgf.png" alt=""></p>
+<p>SOFA utilizes ChainLink Automation to guarantee that prices are automatically updated and pushed to the blockchain on a regular basis. ChainLink Automation offers a decentralized network where smart contracts can schedule and automatically execute complex tasks, including interval data updates, trigger events, and even critical contract adjustments.  This <strong>ensures that on-chain prices remain constantly up to date, and offers data confidence to SOFA's network of connected dApps</strong>.</p>
+<p><img src="../static/FESNbrjpEobC0DxtBz5u6Og0sgf.png" alt=""></img></p>
 <h2 id="decentralization-and-traceability">Decentralization and Traceability</h2>
-<p>Staying true to our core DeFi spirit, <strong>SOFA&apos;s price data retrieval process will always be fully decentralized</strong>, offering full audit traceability at the contract level.  Our advocacy for transparent processing ensures that every step within the system is openly verifiable by users, with pricing data details such as provider source and aggregation logic fully observable at all times.</p>
+<p>Staying true to our core DeFi spirit, <strong>SOFA's price data retrieval process will always be fully decentralized</strong>, offering full audit traceability at the contract level.  Our advocacy for transparent processing ensures that every step within the system is openly verifiable by users, with pricing data details such as provider source and aggregation logic fully observable at all times.</p>
 <h2 id="continuous-innovation-in-oracle-services">Continuous Innovation in Oracle Services</h2>
 <p>While ChainLink remains a gold standard for DeFi data reliability, SOFA is continuously exploring and staying informed of the latest innovations in oracle services.  We are cognizant of over-reliance on limited provider sources and will<strong> strive to diversify our protocol inputs as much as technologically possible</strong>.</p>
 <p>In the long-run, SOFA strives to offer users a robust, transparent, decentralized, and sustainable data acquisition system that can safeguard user interests while ensuring operational longevity.</p>
@@ -589,6 +595,22 @@
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -612,21 +634,65 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Oracle Construction","level":"1.6.3","depth":2,"next":{"title":"On-Chain Settlement Considerations","level":"1.6.4","depth":2,"path":"technical-design/settlement.md","ref":"technical-design/settlement.md","articles":[]},"previous":{"title":"Defining Your Risk Preference","level":"1.6.2","depth":2,"path":"technical-design/risk-prefer.md","ref":"technical-design/risk-prefer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-pro","back-to-top-button","code","chapter-fold","mathjax-pro"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"search-pro":{},"back-to-top-button":{},"code":{"copyButtons":true},"chapter-fold":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"technical-design/oracle.md","mtime":"2025-05-26T06:40:06.566Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-06-06T09:41:08.507Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Oracle Construction","level":"1.6.3","depth":2,"next":{"title":"On-Chain Settlement Considerations","level":"1.6.4","depth":2,"path":"technical-design/settlement.md","ref":"technical-design/settlement.md","articles":[]},"previous":{"title":"Defining Your Risk Preference","level":"1.6.2","depth":2,"path":"technical-design/risk-prefer.md","ref":"technical-design/risk-prefer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-lunr","-search","search-plus","back-to-top-button","chapter-fold","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"chapter-fold":{},"katex":{"delimiters":[{"left":"$$","right":"$$","display":true},{"left":"\\[","right":"\\]","display":true},{"left":"\\(","right":"\\)","display":false},{"left":"$","right":"$","display":false}]},"search-plus":{},"livereload":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"SOFA.org","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SOFA.org Documentation","gitbook":"*"},"file":{"path":"technical-design/oracle.md","mtime":"2025-10-28T01:53:29.328Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-10-28T02:01:46.355Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        <script src="../gitbook/honkit-plugin-search-plus/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        <script src="../gitbook/honkit-plugin-search-plus/search.js"></script>
         
     
         
@@ -634,23 +700,15 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
-        
-    
-        
         <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
         
     
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
         
     
 
